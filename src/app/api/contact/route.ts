@@ -28,7 +28,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ ok: false, error: "Invalid email" }, { status: 400 });
     }
 
-    const to = "seref.sahil@change-werkstatt-sahil.de";
+    const to = "seref.sahil@change-werkstatt-sahil.com";
     const from = process.env.CONTACT_FROM_EMAIL; // muss bei Resend verifiziert sein
 
     if (!process.env.RESEND_API_KEY || !from) {

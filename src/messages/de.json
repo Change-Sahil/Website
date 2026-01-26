@@ -32,7 +32,7 @@
       "items": [
         {
           "title": "Umsetzung statt Konzepte",
-          "text": "Klare Struktur, Verantwortung und Umsetzungsbegleitung – ohne übermäßige Folienlast.",
+          "text": "Klare Struktur, Verantwortung und Umsetzungsbegleitung ohne übermäßige Folienlast.",
           "meta": "Pragmatisch · strukturiert · umsetzbar"
         },
         {
@@ -106,14 +106,14 @@
     },
     "ctaPrimary": "Gespräch anfragen",
     "when": {
-      "workshops": "Wenn Klarheit über Ausgangslage, Prioritäten und Entscheidungen benötigt wird und ein strukturierter Start in die Umsetzung erfolgen soll – operativ wie kulturell.",
+      "workshops": "Wenn Klarheit über Ausgangslage, Prioritäten und Entscheidungen benötigt wird und ein strukturierter Start in die Umsetzung erfolgen soll, operativ wie kulturell.",
       "partnership": "Wenn Umsetzung über Monate geführt, gesteuert und im Führungsalltag verankert werden muss.",
       "sparring": "Wenn Führungskräfte in komplexen Situationen Klarheit, Priorisierung und tragfähige Entscheidungen benötigen."
     },
     "teaser": {
-      "workshops": "Strukturierte Werkstatt-Workshops zur Klärung, Ausrichtung und Umsetzung – mit klarem nächsten Schritt.",
-      "partnership": "Monatliche Begleitung, die Führung, Rhythmus und Fortschritt verbindet – bis es im Alltag sitzt.",
-      "sparring": "Vertrauliches Sparring für anspruchsvolle Situationen – klar, pragmatisch, wirksam."
+      "workshops": "Strukturierte Werkstatt-Workshops zur Klärung, Ausrichtung und Umsetzung mit klarem nächsten Schritt.",
+      "partnership": "Monatliche Begleitung, die Führung, Rhythmus und Fortschritt verbindet, bis es im Alltag sitzt.",
+      "sparring": "Vertrauliches Sparring für anspruchsvolle Situationen: klar, pragmatisch, wirksam."
     },
     "topics": {
       "workshops": [
@@ -185,14 +185,14 @@
 
   "how": {
     "kicker": "Unser Vorgehensmodell",
-    "title": "Vom Anlass zur Umsetzung – in drei Schritten.",
+    "title": "Vom Anlass zur Umsetzung in drei Schritten.",
     "subtitle": "Nicht als Konzept, sondern so, dass es im Tagesgeschäft funktioniert: gemeinsam klären, im Alltag führen, konsequent verankern.",
     "stepLabel": "Schritt",
     "outTitle": "Ergebnis",
     "steps": [
       {
         "verb": "Klären",
-        "text": "Wir verstehen Ausgangslage, Engpässe und Dynamiken – und treffen die ersten tragfähigen Entscheidungen zu Zielbild und Prioritäten.",
+        "text": "Wir verstehen Ausgangslage, Engpässe sowie Dynamiken und treffen die ersten tragfähigen Entscheidungen zu Zielbild und Prioritäten.",
         "out": ["Gemeinsames Zielbild", "Top-Prioritäten", "Entscheidungen & nächste Schritte"]
       },
       {
@@ -202,7 +202,7 @@
       },
       {
         "verb": "Verankern",
-        "text": "Wir sichern Wirkung über Nachhalten, Verantwortlichkeiten und kulturelle Anschlussfähigkeit – bis es ohne externe Unterstützung trägt.",
+        "text": "Wir sichern Wirkung über Nachhalten, Verantwortlichkeiten und kulturelle Anschlussfähigkeit, bis es ohne externe Unterstützung trägt.",
         "out": ["Review- und Nachhaltelogik", "Verantwortung im Alltag", "Kultur & Identität integriert"]
       }
     ]
@@ -231,11 +231,11 @@
   "heroTitle": "Erfahrung aus Werk und Führung",
   "heroImage": "/images/about-hero.jpg",
   "intro": [
-    "Über 25 Jahre operative Industrie- und Führungserfahrung verbinden sich mit technischer, betriebswirtschaftlicher und wirtschaftspsychologischer Expertise. Wir begleiten den industriellen Mittelstand dort, wo Konzepte vorhanden sind, die Umsetzung im Alltag jedoch nicht greift – und wo Effizienz, Führung und Unternehmenskultur gemeinsam weiterentwickelt werden müssen.",
+    "Über 25 Jahre operative Industrie- und Führungserfahrung verbinden sich mit technischer, betriebswirtschaftlicher und wirtschaftspsychologischer Expertise. Wir begleiten den industriellen Mittelstand dort, wo Konzepte vorhanden sind, die Umsetzung im Alltag jedoch nicht greift und wo Effizienz, Führung und Unternehmenskultur gemeinsam weiterentwickelt werden müssen.",
     "Unsere Stärke liegt darin, operative Realität und Managementperspektive zusammenzubringen, damit Veränderungen im Arbeitsalltag tragfähig umgesetzt werden."
   ],
   "profileTitle": "Profil",
-  "profileText": "Akzeptanz entsteht, wenn Sprache, Realität und Verantwortung zusammenpassen.\n\nIch arbeite aus eigener Erfahrung im industriellen Umfeld – aus Werk, Führung und Management. Daraus ergibt sich mein Ansatz:\nVeränderungen müssen zur operativen Realität passen, von Führung übernommen werden und im Arbeitsalltag verankert werden.\n\nSo entsteht Umsetzung, die nicht erklärt werden muss, sondern getragen und gelebt wird.",
+  "profileText": "Akzeptanz entsteht, wenn Sprache, Realität und Verantwortung zusammenpassen.\n\nIch arbeite aus eigener Erfahrung aus Werk, Führung und Management im industriellen Umfeld. Daraus ergibt sich mein Ansatz:\nVeränderungen müssen zur operativen Realität passen, von Führung übernommen werden und im Arbeitsalltag verankert werden.\n\nSo entsteht Umsetzung, die nicht erklärt werden muss, sondern getragen und gelebt wird.",
   "bullets": [
     "25+ Jahre Industrie- und Operations-Erfahrung",
     "Standortübergreifender Bereichsleiter (Führung und Steuerung)",
@@ -250,33 +250,33 @@
   "speaking": {
   "eyebrow": "Wissensweitergabe",
   "title": "Vorträge & Lehre",
-  "intro": "In Vorträgen und Lehrformaten spreche ich über Führung, Veränderung und operative Wirklichkeit – nicht aus theoretischer Distanz, sondern aus Verantwortung im Alltag. Ziel ist Orientierung, Einordnung und Anschlussfähigkeit.",
+  "intro": "In Vorträgen und Lehrformaten spreche ich über Führung, Veränderung und operative Wirklichkeit. Nicht aus theoretischer Distanz, sondern aus Verantwortung im Alltag. Ziel ist Orientierung, Einordnung und Anschlussfähigkeit.",
   "topicsTitle": "Typische Themen",
   "topics": [
     {
       "title": "Effizienz und Kultur im Einklang",
       "subtitle": "Warum Transformation scheitert und wie sie gelingt",
-      "description": "Transformation ist kein rein technischer Prozess, sondern immer auch kulturell. Wenn Strategien an der gelebten Realität scheitern, liegt das häufig an der Spannung zwischen Effizienzdruck und Identitätsverlust. Der Vortrag zeigt, wie beide Perspektiven zusammengeführt werden können – damit Veränderung nicht nur geplant, sondern im Alltag verstanden und mitgetragen wird."
+      "description": "Transformation ist kein rein technischer Prozess, sondern immer auch kulturell. Wenn Strategien an der gelebten Realität scheitern, liegt das häufig an der Spannung zwischen Effizienzdruck und Identitätsverlust. Der Vortrag zeigt, wie beide Perspektiven zusammengeführt werden können, damit Veränderung nicht nur geplant, sondern im Alltag verstanden und mitgetragen wird."
     },
     {
       "title": "Shopfloor Leadership",
       "subtitle": "Führung über Rhythmus statt Aktionismus",
-      "description": "Wirkung entsteht dort, wo Wertschöpfung stattfindet. Wenn Führung am Shopfloor durch kurzfristigen Aktionismus ersetzt wird, verliert das System Stabilität. Ich zeige, wie klare Routinen, Kennzahlen und ein verlässlicher Führungsrhythmus Orientierung schaffen – und Verantwortung dort wirksam machen, wo Probleme entstehen."
+      "description": "Wirkung entsteht dort, wo Wertschöpfung stattfindet. Wenn Führung am Shopfloor durch kurzfristigen Aktionismus ersetzt wird, verliert das System Stabilität. Ich zeige, wie klare Routinen, Kennzahlen und ein verlässlicher Führungsrhythmus Orientierung schaffen und Verantwortung dort wirksam machen, wo Probleme entstehen."
     },
     {
       "title": "Lean Management",
       "subtitle": "Wirkung im Alltag statt Methodensammlung",
-      "description": "Lean ist kein Werkzeugkasten, sondern eine Logik der Vereinfachung und des Lernens. Viele Initiativen scheitern nicht an fehlenden Methoden, sondern an fehlender Anschlussfähigkeit im Alltag. Der Impuls fokussiert auf wenige Hebel, die Standards, Problemlösung und Zusammenarbeit stabil machen – ohne Methodenjagd."
+      "description": "Lean ist kein Werkzeugkasten, sondern eine Logik der Vereinfachung und des Lernens. Viele Initiativen scheitern nicht an fehlenden Methoden, sondern an fehlender Anschlussfähigkeit im Alltag. Der Impuls fokussiert auf wenige Hebel, die Standards, Problemlösung und Zusammenarbeit ohne Methodenjagd stabil machen."
     },
     {
       "title": "M&A Integration",
       "subtitle": "Kultur, Identität und Operating Model vor und nach dem Deal",
-      "description": "Der wirtschaftliche Erfolg von Zusammenschlüssen entscheidet sich nach dem Closing – in Zusammenarbeit, Führung und Identität. Basierend auf Praxis und Forschung (DBA) beleuchte ich, wie Kultur- und Identitätsfragen frühzeitig adressiert werden können und wie ein Operating Model entsteht, das Leistungsfähigkeit sichert, ohne die kulturelle DNA zu verlieren."
+      "description": "Der wirtschaftliche Erfolg von Zusammenschlüssen entscheidet sich nach dem Closing: in Zusammenarbeit, Führung und Identität. Basierend auf Praxis und Forschung (DBA) beleuchte ich, wie Kultur- und Identitätsfragen frühzeitig adressiert werden können und wie ein Operating Model entsteht, das Leistungsfähigkeit sichert, ohne die kulturelle DNA zu verlieren."
     },
     {
       "title": "Change Governance",
       "subtitle": "Entscheiden, kommunizieren, verankern",
-      "description": "Veränderung braucht einen klaren Rahmen, sonst entsteht Unklarheit und Reibung. Change Governance ist das Betriebssystem der Transformation: Entscheidungswege, Rollen, Rhythmus und Kommunikation. Der Vortrag zeigt, wie Governance pragmatisch aufgebaut wird – so, dass Entscheidungen greifen, Kommunikation Vertrauen schafft und neue Arbeitsweisen nicht verpuffen."
+      "description": "Veränderung braucht einen klaren Rahmen, sonst entsteht Unklarheit und Reibung. Change Governance ist das Betriebssystem der Transformation: Entscheidungswege, Rollen, Rhythmus und Kommunikation. Der Vortrag zeigt, wie Governance pragmatisch so aufgebaut wird, dass Entscheidungen greifen, Kommunikation Vertrauen schafft und neue Arbeitsweisen nicht verpuffen."
     },
     {
       "title": "Führung im Wandel",
@@ -291,7 +291,7 @@
     "Seminarreihe oder Modulprogramm (2–4 Module)",
     "Lehrveranstaltungen an Hochschulen und Akademien"
   ],
-  "ctaText": "Vorträge schaffen Orientierung, schärfen Begriffe und geben Impulse – und können ein guter Startpunkt für weitere Schritte sein."
+  "ctaText": "Vorträge schaffen Orientierung, schärfen Begriffe und geben Impulse, die ein guter Startpunkt für weitere Schritte sein können."
 },
   "contact": {
     "eyebrow": "Gespräch vereinbaren",
@@ -305,7 +305,7 @@
         "direct": {
       "title": "Direktkontakt",
       "text": "Alternativ erreichen Sie uns auch direkt:",
-      "email": "seref.sahil@change-werkstatt-sahil.de",
+      "email": "seref.sahil@change-werkstatt-sahil.com",
       "phone": "+49 176 840 765 07"
     },
 

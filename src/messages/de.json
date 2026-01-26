@@ -15,6 +15,8 @@
   },
 
   "home": {
+    "blocks": [],
+    "trust": [],
     "hero": {
       "kicker": "Change Workshop & Transformation Advisory",
       "title": "Effizienz und Kultur im Einklang",
@@ -96,6 +98,11 @@
       "topicsTitle": "Typische Anlässe",
       "deliverablesTitle": "Was Sie bekommen",
       "detailsTitle": "Details"
+    },
+    "tags": {
+      "workshops": "Workshops",
+      "partnership": "Partnerschaft",
+      "sparring": "Sparring"
     },
     "ctaPrimary": "Gespräch anfragen",
     "when": {

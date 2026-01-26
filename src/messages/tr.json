@@ -15,6 +15,8 @@
   },
 
   "home": {
+    "blocks": [],
+    "trust": [],
     "hero": {
       "kicker": "Change Workshop & Transformation Advisory",
       "title": "Verimlilik ve kültür dengede",
@@ -96,6 +98,11 @@
       "topicsTitle": "Tipik tetikleyiciler",
       "deliverablesTitle": "Ne elde edersiniz",
       "detailsTitle": "Detaylar"
+    },
+    "tags": {
+      "workshops": "Atölyeler",
+      "partnership": "Ortaklık",
+      "sparring": "Yönetici sparring"
     },
     "ctaPrimary": "Görüşme talep et",
     "when": {

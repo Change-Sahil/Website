@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 
 function asArray<T = unknown>(value: unknown): T[] {
   return Array.isArray(value) ? (value as T[]) : [];
@@ -45,11 +46,15 @@ export default function ApproachPage() {
           {/* IMAGE */}
           <div className="lg:col-span-6">
             <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-              <img
-                src="/images/approach-01.jpg"
-                alt="Arbeiten im Führungs- und Umsetzungsalltag"
-                className="h-[280px] w-full object-cover md:h-[340px] saturate-[0.85] contrast-[1.05]"
-              />
+              <Image
+  src="/images/approach-01.jpg"
+  alt="Arbeiten im Führungs- und Umsetzungsalltag"
+  width={1200}
+  height={900}
+  sizes="(max-width: 768px) 100vw, 50vw"
+  className="h-[280px] w-full object-cover md:h-[340px] saturate-[0.85] contrast-[1.05]"
+/>
+
             </div>
           </div>
         </div>

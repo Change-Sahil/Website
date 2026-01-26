@@ -10,12 +10,49 @@ export default function ContactPage() {
   const d = useTranslations("contact.direct");
 
   const [sending, setSending] = useState(false);
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState<string>("");
+
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setSending(true);
-    setTimeout(() => setSending(false), 700);
+  e.preventDefault();
+  setSending(true);
+  setStatus("idle");
+  setErrorMsg("");
+
+  const form = e.currentTarget;
+  const fd = new FormData(form);
+
+  const payload = {
+    name: String(fd.get("name") ?? ""),
+    email: String(fd.get("email") ?? ""),
+    company: String(fd.get("company") ?? ""),
+    details: String(fd.get("details") ?? ""),
+  };
+
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+
+    if (!res.ok) {
+      const data = await res.json().catch(() => ({}));
+      setStatus("error");
+      setErrorMsg(data?.error || "Senden fehlgeschlagen. Bitte später erneut versuchen.");
+      return;
+    }
+
+    setStatus("success");
+    form.reset();
+  } catch {
+    setStatus("error");
+    setErrorMsg("Netzwerkfehler. Bitte später erneut versuchen.");
+  } finally {
+    setSending(false);
   }
+}
 
   const email = String(d("email"));
   const phoneRaw = String(d("phone"));
@@ -159,6 +196,18 @@ export default function ContactPage() {
       />
       <span style={{ color: "rgba(var(--ink), .74)" }}>{f("consent")}</span>
     </label>
+    
+{status === "success" && (
+  <p className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900">
+    Nachricht wurde gesendet. Vielen Dank!
+  </p>
+)}
+
+{status === "error" && (
+  <p className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-900">
+    {errorMsg}
+  </p>
+)}
 
     <button type="submit" className="btn-primary w-full" disabled={sending}>
       {sending ? f("sending") : f("submit")}

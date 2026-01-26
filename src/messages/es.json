@@ -1,0 +1,319 @@
+{
+  "nav": {
+    "cta": "Solicitar conversación",
+    "home": "Inicio",
+    "services": "Servicios",
+    "approach": "Enfoque",
+    "about": "Sobre nosotros",
+    "speaking": "Conferencias y docencia"
+  },
+  "footer": {
+    "tagline": "Eficiencia y cultura en equilibrio",
+    "imprint": "Aviso legal",
+    "privacy": "Privacidad",
+    "cta": "Solicitar conversación"
+  },
+
+  "home": {
+    "hero": {
+      "kicker": "Change Workshop & Transformation Advisory",
+      "title": "Eficiencia y cultura en equilibrio",
+      "intro": "Acompañamos a empresas industriales medianas en procesos de transformación donde la eficiencia operativa, el liderazgo y la cultura organizacional son igualmente decisivos. Práctico, orientado al liderazgo y eficaz en el trabajo diario.",
+      "ctaPrimary": "Solicitar conversación",
+      "ctaSecondary": "Ver servicios",
+      "chips": ["Excelencia operativa", "Lean", "Liderazgo", "Cultura e identidad", "M&A"]
+    },
+
+    "pillars": {
+      "title": "Lo que nos define",
+      "subtitle": "Ejecución, ritmo y arraigo en el día a día.",
+      "items": [
+        {
+          "title": "Ejecución antes que conceptos",
+          "text": "Estructura clara, responsabilidad y acompañamiento en la implementación, sin exceso de presentaciones.",
+          "meta": "Práctico · estructurado · aplicable"
+        },
+        {
+          "title": "El liderazgo como palanca",
+          "text": "La transformación funciona a través del liderazgo. Empezamos ahí y generamos impacto en procesos, interfaces y equipos.",
+          "meta": "Liderazgo · ritmo · responsabilidad"
+        },
+        {
+          "title": "Impacto antes que métodos",
+          "text": "Los métodos son un medio, no un fin. Lo decisivo es lo que realmente funciona y perdura en la práctica.",
+          "meta": "Medible · eficaz · sostenible"
+        }
+      ]
+    },
+
+    "divider": {
+      "kicker": "Breve. Práctico. Medible.",
+      "title": "Menos abstracción. Más realidad.",
+      "text": "Trabajamos donde se genera el impacto: en rutinas, interfaces y ritmos de liderazgo. No sólo como concepto, sino de forma viable y aplicable en el trabajo diario."
+    },
+    "audienceFocusTitle": "Nos enfocamos en",
+    "audience": {
+  "title": "Para quién y cuándo",
+  "subtitle": "Trabajamos con la dirección, los líderes y los roles operativos clave, e involucramos a los equipos allí donde la implementación, la colaboración y las rutinas diarias deben generar impacto.",
+  "boxTitles": ["Público objetivo", "Foco", "Motivos habituales"],
+  "targets": [
+    "Dirección general y responsables de área",
+    "Mandos y roles operativos clave",
+    "Equipos de producción, logística y áreas relacionadas"
+  ],
+  "topics": [
+    "Estabilidad operativa: entregas, calidad, productividad",
+    "Ritmo de liderazgo: rutinas de shopfloor y seguimiento con KPIs claros",
+    "Colaboración: interfaces, responsabilidades y lógica de decisión",
+    "Cultura e identidad: alineación, aceptación y consolidación",
+    "M&A: identidad y modelo operativo antes y después de la integración"
+  ],
+  "triggers": [
+    "Cuellos de botella, inventario, plazos, problemas de calidad",
+    "Tiempos de cambio (SMED) y complejidad de variantes",
+    "Responsabilidades poco claras y conflictos entre áreas",
+    "Crecimiento, reestructuración, consolidación de planta o líneas",
+    "Sucesión, fusiones y adquisiciones (pre y post integración)"
+  ]
+},
+    "orientation": {
+      "kicker": "Orientación de 15 minutos",
+      "title": "Aclarar rápido. Decidir con criterio.",
+      "text": "En una breve conversación aclaramos el contexto, el objetivo y el formato adecuado (workshop, acompañamiento o sparring).",
+      "ctaPrimary": "Solicitar conversación",
+      "ctaSecondary": "Ver servicios"
+    }
+  },
+
+  "services": {
+  "title": "Cambio efectivo",
+  "intro": "Nuestros formatos combinan liderazgo, estructura y ejecución operativa. Según el contexto, trabajamos de forma puntual para generar claridad, con un ritmo de gestión para dirigir la ejecución o de manera continua para anclar el cambio en el día a día.",
+  "ui": {
+    "kicker": "Servicios",
+    "navTitle": "Formatos",
+    "labels": {
+      "whenTitle": "Cuándo es adecuado",
+      "topicsTitle": "Motivos habituales",
+      "deliverablesTitle": "Qué obtiene",
+      "detailsTitle": "Detalles"
+    },
+    "ctaPrimary": "Solicitar conversación",
+    "when": {
+  "workshops": "Cuando se necesita claridad sobre la situación inicial, las prioridades y las decisiones, y un inicio estructurado de la ejecución, tanto a nivel operativo como cultural.",
+  "partnership": "Cuando la ejecución debe ser guiada, gestionada y anclada en las rutinas de liderazgo a lo largo de varios meses.",
+  "sparring": "Cuando los líderes necesitan claridad, priorización y decisiones sólidas en situaciones complejas."
+},
+    "teaser": {
+      "workshops": "Workshops estructurados para crear claridad, alineación y un inicio práctico de la ejecución.",
+      "partnership": "Acompañamiento mensual que conecta liderazgo, ritmo y avance hasta consolidarlo en el día a día.",
+      "sparring": "Sparring confidencial para situaciones exigentes: claro, pragmático y eficaz."
+    },
+    "topics": {
+      "workshops": [
+        "Lean / Excelencia operativa (estabilidad, calidad, plazos, productividad)",
+        "Prioridades poco claras, bloqueos de decisión o conflictos entre áreas",
+        "Inicio o reinicio de iniciativas de mejora y transformación"
+      ],
+      "partnership": [
+        "Las acciones se diluyen, los estándares no se sostienen, el impacto es limitado",
+        "Las rutinas de liderazgo no funcionan (shopfloor/seguimiento), los KPIs no cambian hábitos",
+        "Colaboración inestable entre áreas: interfaces, responsabilidades, escalado"
+      ],
+      "sparring": [
+        "Decisiones críticas, trade-offs o presión de stakeholders",
+        "Preguntas de cultura/identidad en crecimiento, reestructuración o integración",
+        "Retos de liderazgo: rol, claridad, coherencia e impacto"
+      ]
+    },
+    "cardTitles": {
+      "workshops": "Workshops",
+      "partnership": "Acompañamiento de transformación",
+      "sparring": "Sparring ejecutivo"
+    },
+    "duration": {
+      "workshops": "1–2 días",
+      "partnership": "Mensual",
+      "sparring": "Mensual"
+    },
+    "deliverables": {
+      "workshops": [
+        "Objetivo compartido y prioridades claras",
+        "Decisiones sobre roles, ritmo de liderazgo y estándares",
+        "Hoja de ruta de ejecución (30/60/90 días) aplicable al día a día"
+      ],
+      "partnership": [
+        "Ritmo de gestión con responsabilidades claramente definidas",
+    "Seguimiento sistemático de iniciativas, métricas y resultados",
+    "Integración de la colaboración, la cultura y la identidad organizativa en el liderazgo diario"
+      ],
+      "sparring": [
+        "Claridad en situaciones complejas o críticas",
+        "Priorización y lógica de decisión",
+        "Reflexión confidencial y próximos pasos"
+      ],
+      "speaking": [
+        "Conferencia, formación o docencia adaptada al contexto",
+        "Ejemplos prácticos y enfoque de transferencia",
+        "Diálogo, Q&A y conclusiones aplicables"
+      ]
+    },
+    "cta": {
+      "kicker": "Orientación de 15 minutos",
+      "text": "En una breve conversación aclaramos la situación, el objetivo y el formato adecuado."
+    }
+  }
+},
+  "approach": {
+    "eyebrow": "Nuestra forma de trabajar",
+    "title": "Enfoque",
+    "intro": "Nuestro enfoque está claramente estructurado y orientado de forma consistente a la ejecución en el día a día. Trabajamos con el liderazgo, clarificamos decisiones y anclamos el cambio allí donde las rutinas, la colaboración y la responsabilidad generan impacto.",
+
+    "principlesEyebrow": "Nuestra orientación",
+    "principlesTitle": "Principios",
+    "principles": [
+      "Trabajamos con el liderazgo en la operación diaria: estructuramos roles, establecemos ritmos de decisión y control, y hacemos efectiva la responsabilidad.",
+      "Hacemos el impacto medible: definimos KPIs, estándares y rutinas, y damos seguimiento de forma consistente.",
+      "Anclamos el cambio de manera sostenible: integramos nuevas formas de trabajo en rutinas, colaboración, cultura e identidad."
+    ],
+
+    "how": {
+      "kicker": "Nuestro modelo de actuación",
+      "title": "Del motivo a la ejecución — en tres pasos.",
+      "subtitle": "No como un concepto, sino para que funcione en el día a día: clarificar juntos, liderar en la operación diaria y anclar con constancia.",
+      "stepLabel": "Paso",
+      "outTitle": "Resultado",
+      "steps": [
+        {
+          "verb": "Clarificar",
+          "text": "Entendemos la situación inicial, los cuellos de botella y las dinámicas, y tomamos las primeras decisiones sólidas sobre el objetivo y las prioridades.",
+          "out": ["Objetivo compartido", "Prioridades clave", "Decisiones y próximos pasos"]
+        },
+        {
+          "verb": "Establecer",
+          "text": "Creamos un ritmo de liderazgo y control: rutinas, KPIs y estándares que estabilizan la colaboración y la ejecución.",
+          "out": ["Ritmo de liderazgo", "Conjunto de KPIs y estándares", "Roles e interfaces claros"]
+        },
+        {
+          "verb": "Anclar",
+          "text": "Aseguramos el impacto con seguimiento, responsabilidades y encaje cultural—hasta que funcione sin apoyo externo.",
+          "out": ["Lógica de revisión y seguimiento", "Responsabilidad en el día a día", "Cultura e identidad integradas"]
+        }
+      ]
+    },
+
+    "toolboxEyebrow": "Medios, no fin",
+    "toolboxTitle": "Herramientas",
+    "toolboxSubtitle": "Según necesidad.",
+    "toolbox": [
+      "Gestión en el shopfloor y rutinas de liderazgo",
+      "SMED, análisis de flujo de valor, lógica de mejora continua",
+      "Gobernanza del cambio y arquitectura de comunicación",
+      "Trabajo de cultura e identidad en M&A (pre y post merger)"
+    ],
+
+    "bridge": "Según el contexto y el punto de partida, trabajamos en distintos formatos: desde un taller compacto hasta un acompañamiento a más largo plazo.",
+    "bridgeCta": "Ver servicios →",
+
+    "cta": {
+      "kicker": "Orientación en 15 minutos",
+      "text": "En una breve conversación, aclaramos el motivo, el objetivo y el enfoque adecuado."
+    }
+  },
+  "about": {
+  "title": "Sobre nosotros",
+  "heroTitle": "Experiencia desde la operación y el liderazgo",
+  "heroImage": "/images/about-hero.jpg",
+  "intro": [
+    "Más de 25 años de experiencia operativa en la industria y en liderazgo se combinan con conocimientos técnicos, así como con formación en administración de empresas y psicología organizacional. Acompañamos a empresas industriales medianas allí donde existen conceptos, pero su implementación en el día a día no funciona, y donde eficiencia, liderazgo y cultura deben desarrollarse de forma conjunta.",
+    "Nuestra fortaleza es conectar la realidad operativa con la perspectiva de la dirección, logrando que el cambio tenga impacto real y de forma sostenible en el trabajo diario."
+  ],
+  "profileTitle": "Perfil",
+  "profileText": "La aceptación surge cuando el lenguaje, la realidad y la responsabilidad encajan.\n\nTrabajo desde la experiencia directa en el entorno industrial: en planta, en funciones de liderazgo y en la gestión. De ahí se deriva mi enfoque:\nEl cambio debe ajustarse a la realidad operativa, ser asumido por el liderazgo y quedar anclado en el trabajo cotidiano.\n\nAsí surge una implementación que no necesita ser explicada, sino que se asume y se vive.",
+  "bullets": [
+    "Más de 25 años de experiencia en industria y operaciones",
+    "Responsable de área multisede (liderazgo y control operativo)",
+    "Mecánico industrial de formación · Técnico certificado por el Estado",
+    "Grado en Administración de Empresas · Máster en Psicología Organizacional",
+    "Experiencia internacional en proyectos y transformación",
+    "Doctorado en Administración de Empresas (DBA), fase final"
+  ],
+  "note": "El título de doctor solo se utilizará tras su concesión oficial.",
+  "noteLabel": "Nota"
+},
+  "speaking": {
+  "eyebrow": "Transferencia de conocimiento",
+  "title": "Conferencias y docencia",
+  "intro": "En conferencias y formatos formativos hablo de liderazgo, cambio y realidad operativa — no desde la distancia teórica, sino desde la responsabilidad del día a día. El objetivo es aportar orientación, encuadre claro y aplicabilidad.",
+  "topicsTitle": "Temas habituales",
+  "topics": [
+    {
+      "title": "Eficiencia y cultura en equilibrio",
+      "subtitle": "Por qué fracasa la transformación y qué la hace funcionar",
+      "description": "La transformación no es solo un proceso técnico; también es cultural. Cuando una estrategia no encaja en la realidad cotidiana, suele aparecer la tensión entre presión por eficiencia y pérdida de identidad. Esta charla muestra cómo integrar ambas perspectivas para que el cambio no solo se diseñe, sino que se entienda y se sostenga en la operación diaria."
+    },
+    {
+      "title": "Liderazgo en el shopfloor",
+      "subtitle": "Liderar con ritmo, no con activismo",
+      "description": "El impacto se genera donde ocurre la creación de valor. Cuando el liderazgo en planta se convierte en apagar incendios, el sistema pierde estabilidad. Explico cómo rutinas claras, métricas útiles y una cadencia de liderazgo fiable generan orientación y hacen efectiva la responsabilidad allí donde aparecen los problemas."
+    },
+    {
+      "title": "Lean Management",
+      "subtitle": "Impacto en el día a día, no una colección de métodos",
+      "description": "Lean no es una caja de herramientas; es una lógica de simplificación y aprendizaje. Muchas iniciativas no fallan por falta de métodos, sino porque no encajan en la realidad diaria. El enfoque se centra en pocos palancas que estabilizan estándares, resolución de problemas y colaboración — sin ‘caza de métodos’."
+    },
+    {
+      "title": "Integración M&A",
+      "subtitle": "Cultura, identidad y modelo operativo antes y después del deal",
+      "description": "El éxito económico de una fusión se decide después del cierre: en la colaboración, el liderazgo y la identidad. Con base en práctica y en investigación (DBA), analizo cómo abordar cultura e identidad desde fases tempranas y cómo construir un modelo operativo que preserve el rendimiento sin destruir el ADN cultural que hizo exitosa a la empresa."
+    },
+    {
+      "title": "Gobernanza del cambio",
+      "subtitle": "Decidir, comunicar, integrar",
+      "description": "El cambio necesita un marco claro; si no, dominan la ambigüedad y la fricción. La gobernanza del cambio es el sistema operativo de la transformación: rutas de decisión, roles, cadencia y comunicación. La charla muestra cómo construirla de forma pragmática para que las decisiones funcionen, la comunicación genere confianza y las nuevas formas de trabajo se integren."
+    },
+    {
+      "title": "Liderazgo en tiempos de cambio",
+      "subtitle": "Rol, impacto, responsabilidad",
+      "description": "En fases de transformación cambian las expectativas sobre el liderazgo: del experto al constructor de orientación, responsabilidad y colaboración. Reflexiono sobre cómo mantener eficacia en la incertidumbre, aclarar roles y colocar la responsabilidad donde realmente opera en el día a día."
+    }
+  ],
+  "formatsTitle": "Formatos",
+  "formats": [
+    "Keynote o conferencia (30–60 minutos)",
+    "Formación interna o taller (0,5–2 días)",
+    "Serie de seminarios o programa modular (2–4 módulos)",
+    "Docencia en universidades y academias"
+  ],
+  "ctaText": "Las conferencias aportan orientación, aclaran conceptos y dan impulso — a menudo un buen punto de partida para los siguientes pasos."
+},
+  "contact": {
+  "eyebrow": "Solicitar conversación",
+  "title": "Contacto",
+  "intro": "En una conversación breve y sin compromiso aclaramos si y cómo una colaboración tiene sentido. Normalmente respondemos en un plazo de 24–48 horas.",
+
+  "formEyebrow": "Enviar mensaje",
+  "formIntro": "Describa brevemente su consulta y nos pondremos en contacto con usted a la mayor brevedad.",
+  "responseHint": "Por favor, no envíe información confidencial a través del formulario.",
+
+  "direct": {
+    "title": "Contacto directo",
+    "text": "También puede contactarnos directamente:",
+    "email": "seref.sahil@change-werkstatt-sahil.de",
+    "phone": "+49 176 840 765 07"
+  },
+
+  "form": {
+    "name": "Nombre",
+    "namePlaceholder": "Su nombre",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "Su dirección de correo electrónico",
+    "company": "Empresa (opcional)",
+    "companyPlaceholder": "Empresa",
+    "details": "Mensaje",
+    "detailsPlaceholder": "¿De qué se trata?\nContexto, objetivo, situación actual …",
+    "consent": "Acepto que mis datos sean tratados para fines de contacto.",
+    "submit": "Enviar mensaje",
+    "sending": "Enviando …"
+  }
+}
+}

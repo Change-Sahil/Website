@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========= TOKENS ========= */
+:root{
+  --ink: 14 20 32;         /* deep slate */
+  --muted: 90 102 120;
+  --line: 15 23 42;
+
+  /* brand petrol */
+  --accent: 0 168 165;
+  --accent2: 0 112 125;
+
+  --paper: 255 255 255;
+}
+
+/* ========= BASE ========= */
+html, body { height: 100%; }
+
+body{
+  color: rgb(var(--ink));
+  background: rgb(248, 250, 252); /* clean paper */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection{ background: rgba(var(--accent), .18); }
+
+.muted{ color: rgba(var(--ink), .62); }
+
+/* ========= LAYOUT ========= */
+.page-wrap { @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8; }
+.page-stack { @apply space-y-16 md:space-y-20; }
+
+/* ========= TYPO ========= */
+.section-head{ @apply flex flex-col gap-5 md:flex-row md:items-end md:justify-between; }
+
+.section-eyebrow{
+  @apply inline-flex items-center gap-2 text-[11px] tracking-[0.26em] uppercase;
+  color: rgba(var(--ink), .60);
+}
+
+.section-title{
+  font-size: clamp(1.8rem, 2.7vw, 2.4rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 750;
+  color: rgba(var(--ink), .92);
+}
+
+.title{
+  font-size: clamp(2.2rem, 3.6vw, 3.1rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  font-weight: 780;
+  color: rgba(var(--ink), .94);
+}
+
+.dot{
+  width: 10px; height: 10px; border-radius: 999px; display: inline-block;
+  background: linear-gradient(135deg, rgb(var(--accent)), rgb(var(--accent2)));
+  box-shadow: 0 0 0 7px rgba(0,168,165,.10);
+}
+
+.hr-soft{
+  height: 1px;
+  background: linear-gradient(90deg, rgba(var(--line), .18), rgba(var(--line), .02));
+}
+
+/* ========= BUTTONS ========= */
+.btn-primary{
+  @apply inline-flex items-center justify-center rounded-full font-semibold px-5 py-3;
+  color: rgba(10,15,26,.95);
+  background: linear-gradient(135deg, rgb(var(--accent)), rgb(var(--accent2)));
+  box-shadow: 0 18px 44px rgba(0,168,165,.18);
+}
+
+.btn-secondary{
+  @apply inline-flex items-center justify-center rounded-full font-semibold px-5 py-3;
+  color: rgba(var(--ink), .86);
+  background: rgba(255,255,255,.96);
+  border: 1px solid rgba(var(--line), .12);
+}
+
+/* ========= “NO BIG MILKY PANELS” ========= */
+/* Use these for subtle framing only */
+.panel{
+  border-radius: 22px;
+  border: 1px solid rgba(var(--line), .10);
+  background: rgba(255,255,255,.96);
+  box-shadow: 0 10px 34px rgba(15,23,42,.08);
+  @apply p-6 sm:p-8;
+}
+
+/* premium card: crisp, minimal */
+.card{
+  border-radius: 18px;
+  border: 1px solid rgba(var(--line), .12);
+  background: rgba(255,255,255,.98);
+  box-shadow: 0 10px 26px rgba(15,23,42,.06);
+  @apply p-5 sm:p-6;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 16px 44px rgba(15,23,42,.10);
+  border-color: rgba(var(--accent), .18);
+}
+
+/* ========= TAGS ========= */
+.chip{
+  display:inline-flex; align-items:center;
+  border-radius: 999px;
+  padding: .32rem .64rem;
+  font-size: .75rem;
+  font-weight: 650;
+  color: rgba(var(--ink), .70);
+  background: rgba(255,255,255,.98);
+  border: 1px solid rgba(var(--line), .10);
+}
+
+/* ========= LISTS ========= */
+.list{
+  @apply space-y-3 text-sm leading-6;
+}
+.list li{
+  position: relative;
+  padding-left: 18px;
+  color: rgba(var(--ink), .70);
+}
+.list li::before{
+  content:"";
+  position:absolute;
+  left:0; top:9px;
+  width:6px; height:6px;
+  border-radius:999px;
+  background: rgba(var(--accent), .92);
+  box-shadow: 0 0 0 6px rgba(0,168,165,.08);
+}
+
+/* ========= DARK BLOCK (use sparingly, matches hero) ========= */
+.dark-block{
+  border-radius: 28px;
+  border: 1px solid rgba(255,255,255,.10);
+  background:
+    radial-gradient(900px 520px at 18% 15%, rgba(0, 168, 165, 0.28), transparent 60%),
+    radial-gradient(760px 520px at 86% 22%, rgba(0, 112, 125, 0.22), transparent 58%),
+    linear-gradient(180deg, rgba(10,15,26,0.98), rgba(10,15,26,0.92));
+  box-shadow: 0 40px 120px rgba(0,0,0,.28);
+  overflow: hidden;
+}
+
+/* subtle divider spacing */
+.section-pad{ @apply py-10 sm:py-12; }
+:root {
+  scroll-padding-top: 96px;
+}

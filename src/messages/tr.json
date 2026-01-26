@@ -1,0 +1,319 @@
+{
+  "nav": {
+    "cta": "Görüşme talep et",
+    "home": "Ana sayfa",
+    "services": "Hizmetler",
+    "approach": "Yaklaşım",
+    "about": "Hakkımızda",
+    "speaking": "Konuşmalar ve eğitim"
+  },
+  "footer": {
+    "tagline": "Verimlilik ve kültür dengede",
+    "imprint": "Künye",
+    "privacy": "Gizlilik",
+    "cta": "Görüşme talep et"
+  },
+
+  "home": {
+    "hero": {
+      "kicker": "Change Workshop & Transformation Advisory",
+      "title": "Verimlilik ve kültür dengede",
+      "intro": "Orta ölçekli sanayi şirketlerini, operasyonel verimlilik, liderlik ve kurum kültürünün birlikte belirleyici olduğu dönüşüm süreçlerinde destekliyoruz. Uygulamaya yakın, liderlik odaklı ve günlük işte etkili.",
+      "ctaPrimary": "Görüşme talep et",
+      "ctaSecondary": "Hizmetleri incele",
+      "chips": ["Operasyonel Mükemmellik", "Lean", "Liderlik", "Kültür ve Kimlik", "M&A"]
+    },
+
+    "pillars": {
+      "title": "Bizi tanımlayan ilkeler",
+      "subtitle": "Günlük işte uygulama, ritim ve kalıcılık.",
+      "items": [
+        {
+          "title": "Kavramsallık yerine uygulama",
+          "text": "Net yapı, sorumluluk ve uygulama desteği – gereksiz sunum yükü olmadan.",
+          "meta": "Pratik · yapılandırılmış · uygulanabilir"
+        },
+        {
+          "title": "Kaldıraç olarak liderlik",
+          "text": "Dönüşüm liderlikle gerçekleşir. Oradan başlar, süreçler, arayüzler ve ekiplerde etki yaratırız.",
+          "meta": "Liderlik · ritim · sorumluluk"
+        },
+        {
+          "title": "Yöntemlerden çok etki",
+          "text": "Yöntemler amaç değil araçtır. Önemli olan günlük işte gerçekten işe yarayan ve kalıcı olandır.",
+          "meta": "Ölçülebilir · etkili · sürdürülebilir"
+        }
+      ]
+    },
+
+    "divider": {
+      "kicker": "Kısa. Pratik. Ölçülebilir.",
+      "title": "Daha az soyutlama. Daha çok gerçeklik.",
+      "text": "Etkinin oluştuğu yerde çalışırız: rutinlerde, arayüzlerde ve liderlik ritimlerinde. Günlük işleyişte kalıcı ve uygulanabilir olacak şekilde."
+    },
+    "audienceFocusTitle": "Odaklandığımız konular",
+    "audience": {
+  "title": "Kimler için, ne zaman",
+  "subtitle": "Üst yönetim, liderler ve operasyonel kilit rollerle çalışıyor; uygulamanın, iş birliğinin ve günlük rutinlerin etkili olması gereken noktalarda ekipleri sürece dâhil ediyoruz.",
+  "boxTitles": ["Hedef kitle", "Odak", "Tipik tetikleyiciler"],
+  "targets": [
+    "Genel müdürlük ve fonksiyon/alan yöneticileri",
+    "Liderler ve kritik operasyon rolleri",
+    "Üretim, lojistik ve ilişkili ekipler"
+  ],
+  "topics": [
+    "Operasyonel istikrar: teslimat performansı, kalite, verimlilik",
+    "Liderlik ritmi: shopfloor ve takip rutinleri, net KPI’lar",
+    "İş birliği: arayüzler, sorumluluklar, karar mantığı",
+    "Kültür ve kimlik: hizalanma, sahiplenme ve kalıcılık",
+    "M&A: birleşme/satın alma öncesi ve sonrası kimlik ve operating model"
+  ],
+  "triggers": [
+    "Darboğazlar, stok, çevrim süreleri, kalite problemleri",
+    "Değişim/kurulum süreleri (SMED) ve varyant karmaşıklığı",
+    "Belirsiz sorumluluklar ve arayüz çatışmaları",
+    "Büyüme, yeniden yapılanma, tesis/hat konsolidasyonu",
+    "Halefiyet, birleşmeler ve satın almalar (pre/post-merger)"
+  ]
+},
+    "orientation": {
+      "kicker": "15 dakikalık yönlendirme",
+      "title": "Hızla netleştir. Sağlam karar ver.",
+      "text": "Kısa bir görüşmede durumu, hedefi ve uygun formatı netleştiririz (atölye, ortaklık veya sparring).",
+      "ctaPrimary": "Görüşme talep et",
+      "ctaSecondary": "Hizmetleri incele"
+    }
+  },
+
+  "services": {
+  "title": "Etkili değişim",
+  "intro": "Formatlarımız liderlik, yapı ve operasyonel uygulamayı birleştirir. Duruma bağlı olarak netlik sağlamak için noktasal çalışır, uygulamayı yönlendirmek için bir ritim kurar veya değişimi günlük işleyişe kalıcı olarak yerleştiririz.",
+  "ui": {
+    "kicker": "Hizmetler",
+    "navTitle": "Formatlar",
+    "labels": {
+      "whenTitle": "Ne zaman uygun",
+      "topicsTitle": "Tipik tetikleyiciler",
+      "deliverablesTitle": "Ne elde edersiniz",
+      "detailsTitle": "Detaylar"
+    },
+    "ctaPrimary": "Görüşme talep et",
+    "when": {
+  "workshops": "Mevcut durum, öncelikler ve kararlar konusunda netlik gerektiğinde ve uygulamaya yapılandırılmış bir başlangıç yapılması istendiğinde – operasyonel ve kültürel olarak.",
+  "partnership": "Uygulamanın aylar boyunca yönlendirilmesi, takip edilmesi ve liderlik rutinlerine yerleştirilmesi gerektiğinde.",
+  "sparring": "Liderlerin karmaşık durumlarda netlik, önceliklendirme ve sağlam kararlar almaya ihtiyaç duyduğu durumlarda."
+},
+    "teaser": {
+      "workshops": "Netlik, hizalanma ve uygulamaya dönük başlangıç için yapılandırılmış atölye formatları.",
+      "partnership": "Liderlik, ritim ve ilerlemeyi birleştiren aylık eşlik — günlük işte kalıcı olana kadar.",
+      "sparring": "Zorlu durumlar için gizli sparring: net, pragmatik ve etkili."
+    },
+    "topics": {
+      "workshops": [
+        "Lean / Operasyonel Mükemmellik (istikrar, kalite, çevrim süresi, verimlilik)",
+        "Belirsiz öncelikler, karar tıkanıklıkları veya arayüz çatışmaları",
+        "İyileştirme ve dönüşüm girişimlerinin başlatılması veya yeniden başlatılması"
+      ],
+      "partnership": [
+        "Aksiyonlar sönümlenir, standartlar tutulmaz, etki sınırlı kalır",
+        "Liderlik rutinleri işlemiyor (shopfloor/yönetişim), KPI’lar davranışı yönlendirmiyor",
+        "Birimler arası iş birliği istikrarsız: arayüz, sorumluluk, eskalasyon"
+      ],
+      "sparring": [
+        "Kritik kararlar, zor takaslar veya yüksek paydaş baskısı",
+        "Büyüme, yeniden yapılanma veya entegrasyonda kültür/kimlik soruları",
+        "Liderlik konuları: rol netliği, etki, tutarlılık"
+      ]
+    },
+    "cardTitles": {
+      "workshops": "Atölye formatları",
+      "partnership": "Dönüşüm ortaklığı",
+      "sparring": "Yönetici sparring"
+    },
+    "duration": {
+      "workshops": "1–2 gün",
+      "partnership": "Aylık",
+      "sparring": "Aylık"
+    },
+    "deliverables": {
+      "workshops": [
+        "Ortak hedef resmi ve net öncelikler",
+        "Roller, liderlik ritmi ve standartlar konusunda kararlar",
+        "Günlük işe uygun somut uygulama yol haritası (30/60/90 gün)"
+      ],
+      "partnership": [
+        "Net sorumluluklara sahip bir liderlik ve yönetişim ritmi",
+    "Aksiyonların, göstergelerin ve etkinin sistematik takibi",
+    "İş birliği, kültür ve kurumsal kimliğin günlük liderlik pratiğine yerleştirilmesi"
+      ],
+      "sparring": [
+        "Karmaşık veya kritik durumlarda netlik",
+        "Önceliklendirme ve karar mantığı",
+        "Gizli değerlendirme ve sonraki adımlar"
+      ],
+      "speaking": [
+        "Duruma uygun konuşma, eğitim veya ders formatı",
+        "Pratik örnekler ve transfer yaklaşımı",
+        "Diyalog, Soru-Cevap ve uygulanabilir çıktılar"
+      ]
+    },
+    "cta": {
+      "kicker": "15 dakikalık yönlendirme",
+      "text": "Kısa bir görüşmede durumu, hedefi ve uygun formatı netleştiririz."
+    }
+  }
+},
+  "approach": {
+    "eyebrow": "Çalışma yaklaşımımız",
+    "title": "Yaklaşım",
+    "intro": "Yaklaşımımız net bir şekilde yapılandırılmıştır ve günlük işleyişte uygulamaya odaklanır. Liderlikle çalışır, kararları netleştirir ve değişimi; rutinlerin, iş birliğinin ve sorumluluğun etki ürettiği yerde kalıcı hâle getiririz.",
+
+    "principlesEyebrow": "Duruş ve yön",
+    "principlesTitle": "İlkeler",
+    "principles": [
+      "Günlük işleyişte liderlikle çalışırız: Rolleri netleştirir, karar ve yönetim ritimlerini kurar, sorumluluğu etkin kılarız.",
+      "Etkisini ölçülebilir kılarız: KPI’ları, standartları ve rutinleri tanımlar; tutarlı biçimde takip ederiz.",
+      "Değişimi sürdürülebilir biçimde yerleştiririz: Yeni çalışma biçimlerini rutinlere, iş birliğine, kültüre ve kimliğe entegre ederiz."
+    ],
+
+    "how": {
+      "kicker": "Yaklaşım modelimiz",
+      "title": "Tetikleyiciden uygulamaya — üç adımda.",
+      "subtitle": "Bir konsept olarak değil; günlük işleyişte çalışacak şekilde: birlikte netleştirir, günlükte yönetir, kararlılıkla yerleştiririz.",
+      "stepLabel": "Adım",
+      "outTitle": "Sonuç",
+      "steps": [
+        {
+          "verb": "Netleştir",
+          "text": "Mevcut durumu, darboğazları ve dinamikleri anlarız; hedef resim ve önceliklere dair ilk sağlam kararları veririz.",
+          "out": ["Ortak hedef resim", "Öncelikler", "Kararlar ve sonraki adımlar"]
+        },
+        {
+          "verb": "Kur",
+          "text": "Bir liderlik ve yönetim ritmi oluştururuz: İş birliğini ve uygulamayı istikrara kavuşturan rutinler, KPI’lar ve standartlar.",
+          "out": ["Liderlik ritmi", "KPI seti ve standartlar", "Net roller ve arayüzler"]
+        },
+        {
+          "verb": "Yerleştir",
+          "text": "Takip, sorumluluk ve kültürel uyum üzerinden etkiyi güvence altına alırız—dış destek olmadan işleyecek hâle gelene kadar.",
+          "out": ["Gözden geçirme ve takip mantığı", "Günlükte sorumluluk", "Kültür ve kimlik entegre"]
+        }
+      ]
+    },
+
+    "toolboxEyebrow": "Amaç değil, araç",
+    "toolboxTitle": "Araçlar",
+    "toolboxSubtitle": "İhtiyaca göre seçilir.",
+    "toolbox": [
+      "Shopfloor yönetimi ve liderlik rutinleri",
+      "SMED, değer akışı analizi, sürekli iyileştirme mantığı",
+      "Değişim yönetişimi ve iletişim mimarisi",
+      "M&A’de kültür ve kimlik çalışması (pre ve post merger)"
+    ],
+
+    "bridge": "İhtiyaca ve başlangıç noktasına göre farklı formatlarda çalışırız: odaklı bir atölyeden uzun vadeli eşliğe kadar.",
+    "bridgeCta": "Hizmetleri inceleyin →",
+
+    "cta": {
+      "kicker": "15 dakikalık yönlendirme",
+      "text": "Kısa bir görüşmede durumu, hedef resmi ve doğru yaklaşımı netleştiririz."
+    }
+  },
+"about": {
+  "title": "Hakkımızda",
+  "heroTitle": "Sahadan ve liderlikten gelen deneyim",
+  "heroImage": "/images/about-hero.jpg",
+  "intro": [
+    "25 yılı aşkın operasyonel endüstri ve liderlik deneyimi; teknik uzmanlık ile işletme ve örgütsel psikoloji alanındaki bilgi birikimiyle birleşmektedir. Endüstriyel KOBİ’leri; kavramların mevcut olduğu ancak günlük uygulamada karşılık bulmadığı noktalarda ve verimlilik, liderlik ile kurum kültürünün birlikte geliştirilmesi gereken durumlarda destekliyoruz.",
+    "Gücümüz, operasyonel gerçeklik ile yönetim bakış açısını bir araya getirerek değişimin günlük işleyişte etkili ve kalıcı olmasını sağlamaktır."
+  ],
+  "profileTitle": "Profil",
+  "profileText": "Kabul, dilin, gerçekliğin ve sorumluluğun örtüştüğü yerde ortaya çıkar.\n\nEndüstriyel ortamda; üretim sahasında, liderlikte ve yönetimde edindiğim doğrudan deneyimle çalışıyorum. Bu yaklaşımımı belirler:\nDeğişim, operasyonel gerçekliğe uymalı, liderlik tarafından sahiplenilmeli ve günlük işleyişe yerleşmelidir.\n\nBöylece açıklanmaya ihtiyaç duymayan, benimsenen ve yaşanan bir uygulama ortaya çıkar.",
+  "bullets": [
+    "Endüstri ve operasyonlarda 25+ yıl deneyim",
+    "Lokasyonlar arası bölüm yöneticisi (liderlik ve operasyonel yönetim)",
+    "Eğitimli endüstri mekanikçisi · Devlet onaylı tekniker",
+    "İşletme Lisansı · Örgütsel Psikoloji Yüksek Lisansı",
+    "Uluslararası proje ve dönüşüm deneyimi",
+    "İşletme Doktorası (DBA), bitirme aşamasında"
+  ],
+  "note": "Doktora unvanı, resmi olarak verildikten sonra kullanılacaktır.",
+  "noteLabel": "Not"
+},
+  "speaking": {
+  "eyebrow": "Bilgi aktarımı",
+  "title": "Konuşmalar ve eğitim",
+  "intro": "Konuşma ve eğitim formatlarında liderlik, değişim ve operasyonel gerçeklik üzerine konuşurum — teorik bir mesafeden değil, günlük sorumluluğun içinden. Amaç; yön bulma, doğru çerçeve ve pratik uygulanabilirliktir.",
+  "topicsTitle": "Tipik konular",
+  "topics": [
+    {
+      "title": "Verimlilik ve Kültür Dengesi",
+      "subtitle": "Dönüşüm neden başarısız olur ve nasıl başarıya ulaşır?",
+      "description": "Dönüşüm yalnızca teknik bir süreç değildir; aynı zamanda kültüre ilişkindir. Stratejiler günlük gerçeklikte karşılık bulmadığında, çoğu zaman verimlilik baskısı ile kimlik kaybı arasındaki gerilim devreye girer. Bu konuşma iki perspektifin nasıl birleştirileceğini gösterir; böylece değişim sadece tasarlanmaz, sahada anlaşılır ve sahiplenilir."
+    },
+    {
+      "title": "Shopfloor Liderliği",
+      "subtitle": "Aksiyonizm değil, ritim üzerinden liderlik",
+      "description": "Etki, değer üretiminin olduğu yerde ortaya çıkar. Shopfloor’da liderlik sürekli ‘yangın söndürmeye’ döndüğünde sistem stabilitesini kaybeder. Net rutinler, anlamlı göstergeler ve güvenilir bir liderlik ritmiyle nasıl yön ve sorumluluk oluşturulacağını; problemler nerede çıkıyorsa orada nasıl etkili kılınacağını ele alırım."
+    },
+    {
+      "title": "Yalın Yönetim (Lean)",
+      "subtitle": "Yöntem koleksiyonu değil, günlük etki",
+      "description": "Lean bir araç seti değil; sadeleştirme ve öğrenme mantığıdır. Birçok girişim, yöntem eksikliğinden değil, günlük işe uyum sağlayamadığı için zorlanır. Bu içerik; standartlar, problem çözme ve iş birliğini güçlendiren birkaç temel kaldıraç üzerine odaklanır — ‘yöntem avcılığı’ olmadan."
+    },
+    {
+      "title": "M&A Entegrasyonu",
+      "subtitle": "Anlaşma öncesi ve sonrası kültür, kimlik ve işletim modeli",
+      "description": "Birleşmelerin ekonomik başarısı kapanıştan sonra belirlenir — iş birliği, liderlik ve kimlikte. Saha deneyimi ve DBA araştırmasına dayanarak kültür ve kimlik konularının erken ele alınmasını ve performansı koruyan bir işletim modelinin, şirketin ‘kültürel DNA’sını zedelemeden nasıl kurulacağını tartışırım."
+    },
+    {
+      "title": "Değişim Yönetişimi (Governance)",
+      "subtitle": "Karar al, iletişim kur, yerleştir",
+      "description": "Değişimin net bir çerçeveye ihtiyacı vardır; aksi halde belirsizlik ve sürtünme artar. Change governance dönüşümün işletim sistemidir: karar yolları, roller, ritim ve iletişim. Bu konuşma; kararların uygulanabildiği, iletişimin güven oluşturduğu ve yeni çalışma biçimlerinin kalıcı hale geldiği pratik bir yapı kurmayı ele alır."
+    },
+    {
+      "title": "Değişen Dönemde Liderlik",
+      "subtitle": "Rol, etki, sorumluluk",
+      "description": "Dönüşüm dönemlerinde liderlikten beklenti değişir: uzmandan, yön ve sorumluluk inşa eden bir role geçilir. Belirsizlikte etkili kalmak, rolleri netleştirmek ve sorumluluğu günlük işin gerçekten işlediği yere yerleştirmek üzerine odaklanırım."
+    }
+  ],
+  "formatsTitle": "Formatlar",
+  "formats": [
+    "Keynote veya konuşma (30–60 dakika)",
+    "Kurum içi eğitim veya atölye (0,5–2 gün)",
+    "Seminer serisi veya modül programı (2–4 modül)",
+    "Üniversite ve akademilerde ders/öğretim"
+  ],
+  "ctaText": "Konuşmalar yön verir, kavramları netleştirir ve yeni bir bakış açısı sağlar — çoğu zaman sonraki adımlar için iyi bir başlangıçtır."
+},
+  "contact": {
+  "eyebrow": "Görüşme planla",
+  "title": "İletişim",
+  "intro": "Kısa ve bağlayıcı olmayan bir görüşmede, bir iş birliğinin uygun olup olmadığını ve nasıl ilerlenebileceğini netleştiriyoruz. Genellikle 24–48 saat içinde geri dönüş yaparız.",
+
+  "formEyebrow": "Mesaj gönder",
+  "formIntro": "Talebinizi kısaca paylaşın, en kısa sürede size geri dönelim.",
+  "responseHint": "Lütfen form üzerinden gizli bilgi göndermeyin.",
+
+  "direct": {
+    "title": "Doğrudan iletişim",
+    "text": "Alternatif olarak bize doğrudan da ulaşabilirsiniz:",
+    "email": "seref.sahil@change-werkstatt-sahil.de",
+    "phone": "+49 176 840 765 07"
+  },
+
+  "form": {
+    "name": "Ad",
+    "namePlaceholder": "Adınız",
+    "email": "E-posta",
+    "emailPlaceholder": "E-posta adresiniz",
+    "company": "Şirket (isteğe bağlı)",
+    "companyPlaceholder": "Şirket",
+    "details": "Mesaj",
+    "detailsPlaceholder": "Konu nedir?\nBağlam, hedef, mevcut durum …",
+    "consent": "Benimle iletişime geçilmesi amacıyla bilgilerimin işlenmesini kabul ediyorum.",
+    "submit": "Mesaj gönder",
+    "sending": "Gönderiliyor …"
+  }
+}
+}

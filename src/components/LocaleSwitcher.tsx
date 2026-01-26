@@ -2,7 +2,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useTransition } from "react";
+import { useEffect, useTransition, Suspense } from "react";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
@@ -30,7 +30,7 @@ function stripLocalePrefix(pathname: string) {
   return pathname || "/";
 }
 
-export default function LocaleSwitcher() {
+function LocaleSwitcherInner() {
   const current = useLocale() as Locale;
   const router = useRouter();
   const pathname = usePathname() || "/";
@@ -49,12 +49,10 @@ export default function LocaleSwitcher() {
     requestAnimationFrame(() => {
       window.scrollTo({ top: Number(y), left: 0, behavior: "auto" });
 
-      if (hash) {
+      if (hash && hash.startsWith("#")) {
         requestAnimationFrame(() => {
-          if (hash.startsWith("#")) {
-            const el = document.querySelector(hash);
-            el?.scrollIntoView({ behavior: "auto", block: "start" });
-          }
+          const el = document.querySelector(hash);
+          el?.scrollIntoView({ behavior: "auto", block: "start" });
         });
       }
     });
@@ -104,5 +102,13 @@ export default function LocaleSwitcher() {
         );
       })}
     </div>
+  );
+}
+
+export default function LocaleSwitcher() {
+  return (
+    <Suspense fallback={null}>
+      <LocaleSwitcherInner />
+    </Suspense>
   );
 }

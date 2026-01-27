@@ -16,18 +16,30 @@ export default function AboutPage() {
 
   return (
     <div className="space-y-12 md:space-y-14">
-      {/* HERO */}
+     {/* HERO */}
 <section className="page-wrap py-12 md:py-16">
   <div className="grid items-start gap-10 lg:grid-cols-12">
     <div className="lg:col-span-7">
       <div className="max-w-3xl">
+        {/* Eyebrow */}
         <div className="section-eyebrow">
           <span className="dot" />
           <span>{nav("about")}</span>
         </div>
 
-        <h1 className="mt-4 title">{t("heroTitle")}</h1>
+        {/* Hero Title */}
+        <h1 className="mt-4 title">
+          {t("heroTitle")}
+        </h1>
 
+        {/* Hero Subtitle (optional) */}
+        {t("heroSubtitle", { defaultValue: "" }) && (
+          <p className="mt-3 text-xl leading-8">
+            {t("heroSubtitle")}
+          </p>
+        )}
+
+        {/* Intro Text */}
         <div className="mt-5 space-y-4">
           {intro.map((p, i) => (
             <p key={i} className="text-lg leading-8 muted">
@@ -38,6 +50,7 @@ export default function AboutPage() {
       </div>
     </div>
 
+    {/* Hero Image */}
     <div className="lg:col-span-5">
       <div className="panel overflow-hidden p-0">
         <img
@@ -49,6 +62,7 @@ export default function AboutPage() {
     </div>
   </div>
 </section>
+
       {/* PROFIL */}
       <section className="page-wrap section-pad">
         <div className="section-head">

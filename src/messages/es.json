@@ -18,12 +18,12 @@
     "blocks": [],
     "trust": [],
     "hero": {
-      "kicker": "Change Workshop & Transformation Advisory",
-      "title": "Eficiencia y cultura en equilibrio",
-      "intro": "Acompañamos a empresas industriales medianas en procesos de transformación donde la eficiencia operativa, el liderazgo y la cultura organizacional son igualmente decisivos. Práctico, orientado al liderazgo y eficaz en el trabajo diario.",
-      "ctaPrimary": "Solicitar conversación",
-      "ctaSecondary": "Ver servicios",
-      "chips": ["Excelencia operativa", "Lean", "Liderazgo", "Cultura e identidad", "M&A"]
+      "kicker": "Acompañamiento orientado a la implementación en entornos industriales",
+  "title": "Cuando la eficiencia y el liderazgo deben funcionar en el día a día",
+  "intro": "Acompañamos a empresas industriales medianas en situaciones en las que la estabilidad operativa, el liderazgo y la colaboración son exigidos simultáneamente, independientemente de que los aspectos culturales sean visibles o permanezcan inicialmente latentes.",
+  "ctaPrimary": "Solicitar conversación",
+  "ctaSecondary": "Ver servicios",
+  "chips": ["Implementación", "Liderazgo", "Excelencia operativa", "Cultura e identidad", "M&A"]
     },
 
     "pillars": {
@@ -228,20 +228,22 @@
   },
   "about": {
   "title": "Sobre nosotros",
-  "heroTitle": "Experiencia desde la operación y el liderazgo",
+  "heroTitle": "Implementación en situaciones complejas",
+  "heroSubtitle": "Acompañamiento del liderazgo y la organización en la práctica industrial diaria.",
   "heroImage": "/images/about-hero.jpg",
   "intro": [
-    "Más de 25 años de experiencia operativa en la industria y en liderazgo se combinan con conocimientos técnicos, así como con formación en administración de empresas y psicología organizacional. Acompañamos a empresas industriales medianas allí donde existen conceptos, pero su implementación en el día a día no funciona, y donde eficiencia, liderazgo y cultura deben desarrollarse de forma conjunta.",
-    "Nuestra fortaleza es conectar la realidad operativa con la perspectiva de la dirección, logrando que el cambio tenga impacto real y de forma sostenible en el trabajo diario."
+    "Más de 25 años de experiencia operativa y de liderazgo en la industria se combinan con conocimientos técnicos y formación académica en administración de empresas y psicología organizacional. Acompañamos a empresas industriales medianas allí donde existen objetivos formales, pero la implementación en el día a día no logra consolidarse, y donde eficiencia, liderazgo y cultura organizacional deben desarrollarse conjuntamente.",
+    "Nuestra fortaleza reside en conectar la realidad operativa con la perspectiva directiva, haciendo que los cambios sean viables y sostenibles en la práctica cotidiana."
   ],
   "profileTitle": "Perfil",
-  "profileText": "La aceptación surge cuando el lenguaje, la realidad y la responsabilidad encajan.\n\nTrabajo desde la experiencia directa en el entorno industrial: en planta, en funciones de liderazgo y en la gestión. De ahí se deriva mi enfoque:\nEl cambio debe ajustarse a la realidad operativa, ser asumido por el liderazgo y quedar anclado en el trabajo cotidiano.\n\nAsí surge una implementación que no necesita ser explicada, sino que se asume y se vive.",
+  "profileText": "La aceptación surge cuando el lenguaje, la realidad y la responsabilidad están alineados.\n\nEn procesos de M&A, integración y situaciones de cambio complejas, la implementación rara vez fracasa por la falta de objetivos formales, sino por tensiones culturales y de identidad que permanecen ocultas. El acceso multilingüe a la organización y el análisis científico de estas dinámicas me permiten identificarlas de forma temprana, antes de que generen efectos operativos o políticos.\n\nTrabajo a partir de la experiencia directa en entornos industriales, desde planta, liderazgo y gestión. De ello se deriva mi enfoque:\nEl cambio debe ajustarse a la realidad operativa, ser asumido por el liderazgo y quedar integrado en el trabajo diario.\n\nAsí surge una implementación que no necesita ser explicada, sino que es asumida y vivida.",
   "bullets": [
     "Más de 25 años de experiencia en industria y operaciones",
-    "Responsable de área multisede (liderazgo y control operativo)",
+    "Responsabilidad de liderazgo y gestión en múltiples ubicaciones",
     "Mecánico industrial de formación · Técnico certificado por el Estado",
     "Grado en Administración de Empresas · Máster en Psicología Organizacional",
-    "Experiencia internacional en proyectos y transformación",
+    "Experiencia internacional en proyectos e integración",
+    "Trabajo multilingüe en liderazgo e implementación (Alemán · Inglés · Turco · Español · Árabe)",
     "Doctorado en Administración de Empresas (DBA), fase final"
   ],
   "note": "El título de doctor solo se utilizará tras su concesión oficial.",

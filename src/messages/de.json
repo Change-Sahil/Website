@@ -18,13 +18,13 @@
     "blocks": [],
     "trust": [],
     "hero": {
-      "kicker": "Change Workshop & Transformation Advisory",
-      "title": "Effizienz und Kultur im Einklang",
-      "intro": "Wir begleiten mittelständische Industrieunternehmen in Veränderungsprozessen, in denen operative Effizienz, Führung und Unternehmenskultur gleichermaßen entscheidend sind. Umsetzungsnah, führungsorientiert und wirksam im Arbeitsalltag.",
-      "ctaPrimary": "Gespräch anfragen",
-      "ctaSecondary": "Leistungen ansehen",
-      "chips": ["Operational Excellence", "Lean", "Leadership", "Kultur & Identität", "M&A"]
-    },
+  "kicker": "Umsetzungsnahe Begleitung im industriellen Umfeld",
+  "title": "Wenn Effizienz und Führung im Alltag greifen müssen",
+  "intro": "Wir begleiten mittelständische Industrieunternehmen in Situationen, in denen operative Stabilität, Führung und Zusammenarbeit gleichzeitig gefordert sind, unabhängig davon, ob kulturelle Aspekte sichtbar oder zunächst latent sind.",
+  "ctaPrimary": "Gespräch anfragen",
+  "ctaSecondary": "Leistungen ansehen",
+  "chips": ["Umsetzung", "Führung", "Operational Excellence", "Kultur & Identität", "M&A"]
+},
 
     "pillars": {
       "title": "Wofür wir stehen",
@@ -228,22 +228,24 @@
 },
   "about": {
   "title": "Über uns",
-  "heroTitle": "Erfahrung aus Werk und Führung",
+  "heroTitle": "Umsetzung in komplexen Situationen",
+  "heroSubtitle": "Begleitung von Führung und Organisation im industriellen Alltag.",
   "heroImage": "/images/about-hero.jpg",
   "intro": [
     "Über 25 Jahre operative Industrie- und Führungserfahrung verbinden sich mit technischer, betriebswirtschaftlicher und wirtschaftspsychologischer Expertise. Wir begleiten den industriellen Mittelstand dort, wo Konzepte vorhanden sind, die Umsetzung im Alltag jedoch nicht greift und wo Effizienz, Führung und Unternehmenskultur gemeinsam weiterentwickelt werden müssen.",
     "Unsere Stärke liegt darin, operative Realität und Managementperspektive zusammenzubringen, damit Veränderungen im Arbeitsalltag tragfähig umgesetzt werden."
   ],
   "profileTitle": "Profil",
-  "profileText": "Akzeptanz entsteht, wenn Sprache, Realität und Verantwortung zusammenpassen.\n\nIch arbeite aus eigener Erfahrung aus Werk, Führung und Management im industriellen Umfeld. Daraus ergibt sich mein Ansatz:\nVeränderungen müssen zur operativen Realität passen, von Führung übernommen werden und im Arbeitsalltag verankert werden.\n\nSo entsteht Umsetzung, die nicht erklärt werden muss, sondern getragen und gelebt wird.",
+  "profileText": "Akzeptanz entsteht, wenn Sprache, Realität und Verantwortung zusammenpassen.\n\nIn M&A-, Integrations- und Transformationssituationen scheitert Umsetzung selten an formalen Zielsetzungen, sondern an verdeckten kulturellen und identitätsbezogenen Spannungen. Mehrsprachiger Zugang zur Organisation und die wissenschaftliche Auseinandersetzung mit diesen Zusammenhängen ermöglichen es mir, sie früh sichtbar zu machen, bevor sie operative oder politische Wirkung entfalten.\n\nIch arbeite aus eigener Erfahrung aus Werk, Führung und Management im industriellen Umfeld. Daraus ergibt sich mein Ansatz:\nVeränderungen müssen zur operativen Realität passen, von Führung übernommen werden und im Arbeitsalltag verankert werden.\n\nSo entsteht Umsetzung, die nicht erklärt werden muss, sondern getragen und gelebt wird.",
   "bullets": [
-    "25+ Jahre Industrie- und Operations-Erfahrung",
-    "Standortübergreifender Bereichsleiter (Führung und Steuerung)",
-    "Gelernter Industriemechaniker · Staatlich geprüfter Techniker",
-    "B.A. Betriebswirtschaft · M.Sc. Wirtschaftspsychologie",
-    "Internationale Projekt- und Transformationsarbeit",
-    "Doctor of Business Administration (DBA), Abschlussphase"
-  ],
+  "25+ Jahre Industrie- und Operations-Erfahrung",
+  "Standortübergreifender Bereichsleiter (Führung und Steuerung)",
+  "Gelernter Industriemechaniker · Staatlich geprüfter Techniker",
+  "B.A. Betriebswirtschaft · M.Sc. Wirtschaftspsychologie",
+  "Internationale Projekt- und Transformationsarbeit",
+  "Mehrsprachige Arbeit in Führung und Umsetzung (Deutsch · Englisch · Türkisch · Spanisch · Arabisch)",
+  "Doctor of Business Administration (DBA), Abschlussphase"
+],
   "note": "Der Doktorgrad wird erst nach offizieller Verleihung geführt.",
   "noteLabel": "Hinweis"
 },

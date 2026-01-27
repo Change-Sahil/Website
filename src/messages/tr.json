@@ -18,12 +18,12 @@
     "blocks": [],
     "trust": [],
     "hero": {
-      "kicker": "Change Workshop & Transformation Advisory",
-      "title": "Verimlilik ve kültür dengede",
-      "intro": "Orta ölçekli sanayi şirketlerini, operasyonel verimlilik, liderlik ve kurum kültürünün birlikte belirleyici olduğu dönüşüm süreçlerinde destekliyoruz. Uygulamaya yakın, liderlik odaklı ve günlük işte etkili.",
-      "ctaPrimary": "Görüşme talep et",
-      "ctaSecondary": "Hizmetleri incele",
-      "chips": ["Operasyonel Mükemmellik", "Lean", "Liderlik", "Kültür ve Kimlik", "M&A"]
+      "kicker": "Endüstriyel ortamlarda uygulama odaklı eşlik",
+  "title": "Verimlilik ve liderliğin günlük işleyişte işlemesi gerektiğinde",
+  "intro": "Orta ölçekli sanayi şirketlerini; operasyonel istikrarın, liderliğin ve iş birliğinin aynı anda gerekli olduğu durumlarda, kültürel unsurların açıkça görülüp görülmediğinden bağımsız olarak destekliyoruz.",
+  "ctaPrimary": "Görüşme talep et",
+  "ctaSecondary": "Hizmetleri incele",
+  "chips": ["Uygulama", "Liderlik", "Operasyonel Mükemmellik", "Kültür ve Kimlik", "M&A"]
     },
 
     "pillars": {
@@ -228,23 +228,25 @@
   },
 "about": {
   "title": "Hakkımızda",
-  "heroTitle": "Sahadan ve liderlikten gelen deneyim",
+  "heroTitle": "Karmaşık durumlarda uygulama",
+  "heroSubtitle": "Endüstriyel günlük pratikte liderlik ve organizasyonun eşlik edilmesi.",
   "heroImage": "/images/about-hero.jpg",
   "intro": [
-    "25 yılı aşkın operasyonel endüstri ve liderlik deneyimi; teknik uzmanlık ile işletme ve örgütsel psikoloji alanındaki bilgi birikimiyle birleşmektedir. Endüstriyel KOBİ’leri; kavramların mevcut olduğu ancak günlük uygulamada karşılık bulmadığı noktalarda ve verimlilik, liderlik ile kurum kültürünün birlikte geliştirilmesi gereken durumlarda destekliyoruz.",
-    "Gücümüz, operasyonel gerçeklik ile yönetim bakış açısını bir araya getirerek değişimin günlük işleyişte etkili ve kalıcı olmasını sağlamaktır."
+    "25 yılı aşkın endüstriyel operasyon ve liderlik deneyimi; teknik uzmanlık ile işletme ve örgütsel psikoloji alanındaki akademik birikimle birleşmektedir. Endüstriyel KOBİ’leri, resmi hedeflerin mevcut olduğu ancak günlük uygulamada karşılık bulmadığı ve verimlilik, liderlik ile kurum kültürünün birlikte geliştirilmesi gereken durumlarda destekliyoruz.",
+    "Gücümüz, operasyonel gerçeklik ile yönetim bakış açısını bir araya getirerek değişimin günlük işleyişte uygulanabilir ve kalıcı hale gelmesini sağlamaktır."
   ],
   "profileTitle": "Profil",
-  "profileText": "Kabul, dilin, gerçekliğin ve sorumluluğun örtüştüğü yerde ortaya çıkar.\n\nEndüstriyel ortamda; üretim sahasında, liderlikte ve yönetimde edindiğim doğrudan deneyimle çalışıyorum. Bu yaklaşımımı belirler:\nDeğişim, operasyonel gerçekliğe uymalı, liderlik tarafından sahiplenilmeli ve günlük işleyişe yerleşmelidir.\n\nBöylece açıklanmaya ihtiyaç duymayan, benimsenen ve yaşanan bir uygulama ortaya çıkar.",
+  "profileText": "Kabul, dilin, gerçekliğin ve sorumluluğun örtüştüğü noktada ortaya çıkar.\n\nBirleşme ve satın alma (M&A), entegrasyon ve karmaşık değişim süreçlerinde uygulama çoğu zaman resmi hedeflerin eksikliğinden değil, gizli kalan kültürel ve kimliğe dayalı gerilimlerden dolayı başarısız olur. Organizasyona çok dilli erişim ve bu dinamiklere yönelik bilimsel çalışma, bu gerilimleri erken aşamada fark etmemi ve operasyonel ya da politik etki yaratmadan önce ele almamı sağlar.\n\nEndüstriyel ortamlarda; üretim sahasında, liderlikte ve yönetimde edindiğim doğrudan deneyim, yaklaşımımı belirler:\nDeğişim, operasyonel gerçekliğe uymalı, liderlik tarafından sahiplenilmeli ve günlük işleyişe yerleşmelidir.\n\nBöylece açıklamaya ihtiyaç duymayan, benimsenen ve yaşanan bir uygulama ortaya çıkar.",
   "bullets": [
     "Endüstri ve operasyonlarda 25+ yıl deneyim",
-    "Lokasyonlar arası bölüm yöneticisi (liderlik ve operasyonel yönetim)",
+    "Lokasyonlar arası liderlik ve operasyonel sorumluluk",
     "Eğitimli endüstri mekanikçisi · Devlet onaylı tekniker",
     "İşletme Lisansı · Örgütsel Psikoloji Yüksek Lisansı",
-    "Uluslararası proje ve dönüşüm deneyimi",
+    "Uluslararası proje ve entegrasyon deneyimi",
+    "Liderlik ve uygulamada çok dilli çalışma (Almanca · İngilizce · Türkçe · İspanyolca · Arapça)",
     "İşletme Doktorası (DBA), bitirme aşamasında"
   ],
-  "note": "Doktora unvanı, resmi olarak verildikten sonra kullanılacaktır.",
+  "note": "Doktora unvanı resmi olarak verildikten sonra kullanılacaktır.",
   "noteLabel": "Not"
 },
   "speaking": {

@@ -18,12 +18,13 @@
     "blocks": [],
     "trust": [],
     "hero": {
-      "kicker": "Change Workshop & Transformation Advisory",
-      "title": "Efficiency and Culture in Balance",
-      "intro": "We support mid-sized industrial companies in transformation processes where operational efficiency, leadership and organizational culture are equally critical. Practical, leadership-driven and effective in daily operations.",
-      "ctaPrimary": "Request a conversation",
-      "ctaSecondary": "View services",
-      "chips": ["Operational Excellence", "Lean", "Leadership", "Culture & Identity", "M&A"]
+      "kicker": "Implementation-focused support in industrial environments",
+  "title": "When efficiency and leadership must work in everyday operations",
+  "intro": "We support mid-sized industrial companies in situations where operational stability, leadership and collaboration are required at the same time, regardless of whether cultural aspects are already visible or initially latent.",
+  "ctaPrimary": "Request a conversation",
+  "ctaSecondary": "View services",
+  "chips": ["Implementation", "Leadership", "Operational Excellence", "Culture & Identity", "M&A"]
+
     },
 
     "pillars": {
@@ -228,21 +229,23 @@
   },
 "about": {
   "title": "About",
-  "heroTitle": "Experience from operations and leadership",
+  "heroTitle": "Implementation in complex situations",
+  "heroSubtitle": "Supporting leadership and organization in everyday industrial practice.",
   "heroImage": "/images/about-hero.jpg",
   "intro": [
-    "More than 25 years of hands-on industrial and leadership experience are combined with technical expertise as well as knowledge in business administration and business psychology. We support industrial mid-sized companies where concepts exist, but implementation in daily operations falls short – and where efficiency, leadership and organizational culture must be developed together.",
-    "Our strength lies in connecting operational reality with management perspective, ensuring that change becomes effective and sustainable in everyday work."
+    "More than 25 years of operational and leadership experience in industry are combined with technical expertise as well as academic backgrounds in business administration and business psychology. We support mid-sized industrial companies where formal objectives exist, but implementation in daily operations does not yet take hold – and where efficiency, leadership and organizational culture must be developed together.",
+    "Our strength lies in connecting operational reality with management perspective, enabling change to become workable and sustainable in everyday practice."
   ],
   "profileTitle": "Profile",
-  "profileText": "Acceptance emerges when language, reality and responsibility align.\n\nI work from direct experience in an industrial environment – on the shopfloor, in leadership and in management. This shapes my approach:\nChange must fit operational reality, be taken up by leadership and be anchored in everyday work.\n\nThis is how implementation emerges – not something that needs to be explained, but something that is carried and lived.",
+  "profileText": "Acceptance emerges when language, reality and responsibility align.\n\nIn M&A, integration and complex change situations, implementation rarely fails due to formal objectives, but rather because of hidden cultural and identity-related tensions. Multilingual access to the organization and a scientific focus on these dynamics enable me to recognize them early – before they unfold operational or political impact.\n\nMy work is grounded in direct experience from shopfloor, leadership and management roles in industrial environments. This shapes my approach:\nChange must fit operational reality, be owned by leadership and become anchored in everyday work.\n\nThis is how implementation emerges – not something that needs to be explained, but something that is carried and lived.",
   "bullets": [
     "25+ years of experience in industry and operations",
-    "Cross-site department head (leadership and operational control)",
+    "Cross-site leadership and operational responsibility",
     "Trained industrial mechanic · State-certified technician",
     "B.A. Business Administration · M.Sc. Business Psychology",
-    "International project and transformation experience",
-    "Doctor of Business Administration (DBA), in final phase"
+    "International project and integration experience",
+    "Multilingual work in leadership and implementation (German · English · Turkish · Spanish · Arabic)",
+    "Doctor of Business Administration (DBA), final phase"
   ],
   "note": "The doctoral title will only be used after official conferment.",
   "noteLabel": "Note"

@@ -7,7 +7,6 @@ function getResend() {
   return new Resend(key);
 }
 
-
 function isEmail(s: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
 }
@@ -29,18 +28,17 @@ export async function POST(req: Request) {
     }
 
     const to = "info@change-werkstatt-sahil.com";
-    const from = process.env.CONTACT_FROM_EMAIL; // muss bei Resend verifiziert sein
 
-    if (!process.env.RESEND_API_KEY || !from) {
-      return NextResponse.json({ ok: false, error: "Server misconfigured" }, { status: 500 });
-    }
+    // Muss eine Absenderadresse auf deiner Domain sein (muss nicht zwingend als Postfach existieren,
+    // aber für Zustellbarkeit ist "info@..." als existierendes Postfach ideal)
+    const from = process.env.CONTACT_FROM_EMAIL || "info@change-werkstatt-sahil.com";
 
     const resend = getResend();
-if (!resend) {
-  return NextResponse.json({ ok: false, error: "Missing RESEND_API_KEY" }, { status: 500 });
-}
+    if (!resend) {
+      return NextResponse.json({ ok: false, error: "Missing RESEND_API_KEY" }, { status: 500 });
+    }
 
-    await resend.emails.send({
+    const result = await resend.emails.send({
       from,
       to,
       replyTo: email,
@@ -52,8 +50,15 @@ if (!resend) {
         `\nNachricht:\n${details}\n`,
     });
 
+    // Optional: zum Debuggen in Vercel Logs sichtbar machen
+    console.log("RESEND_RESULT", result);
+
     return NextResponse.json({ ok: true });
-  } catch {
-    return NextResponse.json({ ok: false, error: "Server error" }, { status: 500 });
+  } catch (err: any) {
+    console.error("CONTACT_API_ERROR", err);
+    return NextResponse.json(
+      { ok: false, error: err?.message || "Server error" },
+      { status: 500 }
+    );
   }
 }

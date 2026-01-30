@@ -6,7 +6,9 @@
     "services": "Servicios",
     "approach": "Enfoque",
     "about": "Sobre nosotros",
-    "speaking": "Conferencias y docencia"
+    "speaking": "Conferencias y docencia",
+    "menuOpen": "Abrir menú",
+    "menuClose": "Cerrar menú"
   },
   "footer": {
     "tagline": "Eficiencia y cultura en equilibrio",

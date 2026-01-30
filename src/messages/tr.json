@@ -6,7 +6,9 @@
     "services": "Hizmetler",
     "approach": "Yaklaşım",
     "about": "Hakkımızda",
-    "speaking": "Konuşmalar ve eğitim"
+    "speaking": "Konuşmalar ve eğitim",
+    "menuOpen": "Menüyü aç",
+    "menuClose": "Menüyü kapat"
   },
   "footer": {
     "tagline": "Verimlilik ve kültür dengede",

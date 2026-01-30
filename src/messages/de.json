@@ -6,7 +6,9 @@
     "services": "Leistungen",
     "approach": "Vorgehen",
     "about": "Über uns",
-    "speaking": "Vorträge & Lehre"
+    "speaking": "Vorträge & Lehre",
+    "menuOpen": "Menü öffnen",
+    "menuClose": "Menü schließen"
   },
   "footer": {
     "tagline": "Effizienz und Kultur im Einklang",

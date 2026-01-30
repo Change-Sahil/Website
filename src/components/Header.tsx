@@ -120,7 +120,7 @@ export default function Header() {
             <button
               type="button"
               className="md:hidden inline-flex items-center justify-center rounded-full border border-slate-200 bg-white/90 p-2 text-slate-700 shadow-sm"
-              aria-label={menuOpen ? "Menü schließen" : "Menü öffnen"}
+              aria-label={menuOpen ? tNav("menuClose") : tNav("menuOpen")}
               aria-expanded={menuOpen}
               onClick={() => setMenuOpen((v) => !v)}
             >

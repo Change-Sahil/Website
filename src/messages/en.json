@@ -1,12 +1,14 @@
 {
   "nav": {
     "cta": "Request a conversation",
-    "ctaShort": "CONTACT_XXX",
+    "ctaShort": "Contact",
     "home": "Home",
     "services": "Services",
     "approach": "Approach",
     "about": "About",
-    "speaking": "Speaking & Teaching"
+    "speaking": "Speaking & Teaching",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
   },
   "footer": {
     "tagline": "Efficiency and culture in balance",

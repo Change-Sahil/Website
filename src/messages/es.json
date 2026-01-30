@@ -1,6 +1,7 @@
 {
   "nav": {
     "cta": "Solicitar conversación",
+    "ctaShort": "Contactar",
     "home": "Inicio",
     "services": "Servicios",
     "approach": "Enfoque",
@@ -20,8 +21,8 @@
     "hero": {
       "kicker": "Acompañamiento orientado a la implementación en entornos industriales",
   "title": "Cuando la eficiencia y el liderazgo deben funcionar en el día a día",
-  "intro": "Acompañamos a empresas industriales medianas en situaciones en las que la estabilidad operativa, el liderazgo y la colaboración son exigidos simultáneamente, independientemente de que los aspectos culturales sean visibles o permanezcan inicialmente latentes.",
-  "ctaPrimary": "Solicitar conversación",
+  "intro": "Cuando en las empresas industriales se preparan decisiones, pero su aplicación no logra consolidarse en la práctica diaria, surge una tensión entre liderazgo, estabilidad y colaboración.\n\nPara empresas industriales medianas, creamos el marco en el que surge la claridad, se asume la responsabilidad y la cultura y la identidad ofrecen orientación en el día a día.",
+"ctaPrimary": "Solicitar conversación",
   "ctaSecondary": "Ver servicios",
   "chips": ["Implementación", "Liderazgo", "Excelencia operativa", "Cultura e identidad", "M&A"]
     },
@@ -232,12 +233,12 @@
   "heroSubtitle": "Acompañamiento del liderazgo y la organización en la práctica industrial diaria.",
   "heroImage": "/images/about-hero.jpg",
   "intro": [
-    "Más de 25 años de experiencia operativa y de liderazgo en la industria se combinan con conocimientos técnicos y formación académica en administración de empresas y psicología organizacional. Acompañamos a empresas industriales medianas allí donde existen objetivos formales, pero la implementación en el día a día no logra consolidarse, y donde eficiencia, liderazgo y cultura organizacional deben desarrollarse conjuntamente.",
-    "Nuestra fortaleza reside en conectar la realidad operativa con la perspectiva directiva, haciendo que los cambios sean viables y sostenibles en la práctica cotidiana."
-  ],
-  "profileTitle": "Perfil",
-  "profileText": "La aceptación surge cuando el lenguaje, la realidad y la responsabilidad están alineados.\n\nEn procesos de M&A, integración y situaciones de cambio complejas, la implementación rara vez fracasa por la falta de objetivos formales, sino por tensiones culturales y de identidad que permanecen ocultas. El acceso multilingüe a la organización y el análisis científico de estas dinámicas me permiten identificarlas de forma temprana, antes de que generen efectos operativos o políticos.\n\nTrabajo a partir de la experiencia directa en entornos industriales, desde planta, liderazgo y gestión. De ello se deriva mi enfoque:\nEl cambio debe ajustarse a la realidad operativa, ser asumido por el liderazgo y quedar integrado en el trabajo diario.\n\nAsí surge una implementación que no necesita ser explicada, sino que es asumida y vivida.",
-  "bullets": [
+  "Más de 25 años de experiencia operativa en la industria y en funciones de liderazgo se combinan con conocimientos técnicos, empresariales y de psicología económica. Change-Werkstatt acompaña a empresas industriales medianas allí donde existen conceptos, pero su implementación no se consolida en la práctica diaria, y donde eficiencia, liderazgo y cultura organizativa deben desarrollarse conjuntamente.",
+  "La fortaleza reside en conectar la realidad operativa con la perspectiva directiva, para que el cambio se implemente de forma sostenible y efectiva."
+],
+"profileTitle": "Perfil",
+"profileText": "La aceptación surge cuando el lenguaje, la realidad y la responsabilidad están alineados.\n\nEn situaciones de M&A, integración y transformación, la implementación rara vez fracasa por objetivos formales, sino por tensiones culturales y de identidad ocultas. El acceso multilingüe a las organizaciones y el análisis académico de estos fenómenos permiten hacer visibles estas tensiones de manera temprana, antes de que tengan efectos operativos o políticos.\n\nMi trabajo se basa en experiencia propia en planta, liderazgo y gestión dentro de entornos industriales. De ello se deriva un enfoque claro:\nEl cambio debe encajar con la realidad operativa, ser asumido por el liderazgo y quedar anclado en el trabajo cotidiano.\n\nAsí surge una implementación que no necesita ser explicada, sino que es sostenida y vivida.",
+"bullets": [
     "Más de 25 años de experiencia en industria y operaciones",
     "Responsabilidad de liderazgo y gestión en múltiples ubicaciones",
     "Mecánico industrial de formación · Técnico certificado por el Estado",
@@ -252,7 +253,7 @@
   "speaking": {
   "eyebrow": "Transferencia de conocimiento",
   "title": "Conferencias y docencia",
-  "intro": "En conferencias y formatos formativos hablo de liderazgo, cambio y realidad operativa — no desde la distancia teórica, sino desde la responsabilidad del día a día. El objetivo es aportar orientación, encuadre claro y aplicabilidad.",
+  "intro": "En conferencias y formatos formativos abordo el liderazgo, el cambio y la realidad operativa. No desde una distancia teórica, sino desde la responsabilidad vivida en el día a día organizativo. El objetivo es ofrecer orientación, situar los contextos y generar claridad para la toma de decisiones concretas.",
   "topicsTitle": "Temas habituales",
   "topics": [
     {
@@ -322,7 +323,10 @@
     "detailsPlaceholder": "¿De qué se trata?\nContexto, objetivo, situación actual …",
     "consent": "Acepto que mis datos sean tratados para fines de contacto.",
     "submit": "Enviar mensaje",
-    "sending": "Enviando …"
+    "sending": "Enviando …",
+    "success": "Mensaje enviado. ¡Gracias!",
+    "errorSend": "Error al enviar. Inténtelo de nuevo más tarde.",
+    "errorNetwork": "Error de red. Inténtelo de nuevo más tarde."
   }
 }
 }

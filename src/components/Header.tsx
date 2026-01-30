@@ -10,6 +10,7 @@ import LocaleSwitcher from "./LocaleSwitcher";
 
 export default function Header() {
   const tNav = useTranslations("nav");
+  
   const locale = useLocale();
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -111,8 +112,9 @@ export default function Header() {
               onClick={closeMenu}
             >
               <span className="hidden sm:inline">{tNav("cta")}</span>
-              <span className="sm:hidden">Anfragen</span>
-            </Link>
+              <span className="sm:hidden">{tNav("ctaShort")}</span>
+
+              </Link>
 
             {/* MOBILE HAMBURGER */}
             <button

@@ -1,6 +1,7 @@
 {
   "nav": {
     "cta": "Request a conversation",
+    "ctaShort": "CONTACT_XXX",
     "home": "Home",
     "services": "Services",
     "approach": "Approach",
@@ -20,8 +21,8 @@
     "hero": {
       "kicker": "Implementation-focused support in industrial environments",
   "title": "When efficiency and leadership must work in everyday operations",
-  "intro": "We support mid-sized industrial companies in situations where operational stability, leadership and collaboration are required at the same time, regardless of whether cultural aspects are already visible or initially latent.",
-  "ctaPrimary": "Request a conversation",
+  "intro": "When decisions are being prepared in industrial companies but fail to take effect in everyday operations, a tension emerges between leadership, stability, and collaboration.\n\nFor mid-sized industrial companies, we create the framework in which clarity emerges, responsibility is assumed, and culture and identity provide orientation in daily work.",
+"ctaPrimary": "Request a conversation",
   "ctaSecondary": "View services",
   "chips": ["Implementation", "Leadership", "Operational Excellence", "Culture & Identity", "M&A"]
 
@@ -233,12 +234,12 @@
   "heroSubtitle": "Supporting leadership and organization in everyday industrial practice.",
   "heroImage": "/images/about-hero.jpg",
   "intro": [
-    "More than 25 years of operational and leadership experience in industry are combined with technical expertise as well as academic backgrounds in business administration and business psychology. We support mid-sized industrial companies where formal objectives exist, but implementation in daily operations does not yet take hold – and where efficiency, leadership and organizational culture must be developed together.",
-    "Our strength lies in connecting operational reality with management perspective, enabling change to become workable and sustainable in everyday practice."
-  ],
-  "profileTitle": "Profile",
-  "profileText": "Acceptance emerges when language, reality and responsibility align.\n\nIn M&A, integration and complex change situations, implementation rarely fails due to formal objectives, but rather because of hidden cultural and identity-related tensions. Multilingual access to the organization and a scientific focus on these dynamics enable me to recognize them early – before they unfold operational or political impact.\n\nMy work is grounded in direct experience from shopfloor, leadership and management roles in industrial environments. This shapes my approach:\nChange must fit operational reality, be owned by leadership and become anchored in everyday work.\n\nThis is how implementation emerges – not something that needs to be explained, but something that is carried and lived.",
-  "bullets": [
+  "More than 25 years of operational industry and leadership experience are combined with technical, business, and economic-psychological expertise. Change-Werkstatt supports industrial mid-sized companies where concepts exist but fail to take effect in day-to-day operations, and where efficiency, leadership, and organizational culture need to evolve together.",
+  "The core strength lies in connecting operational reality with management perspective, enabling change to be implemented in a sustainable and effective way."
+],
+"profileTitle": "Profile",
+"profileText": "Acceptance emerges where language, reality, and responsibility align.\n\nIn M&A, integration, and transformation situations, implementation rarely fails due to formal targets, but rather because of hidden cultural and identity-related tensions. Multilingual access to organizations and academic engagement with these dynamics make it possible to identify such tensions early, before they translate into operational or political consequences.\n\nMy work is grounded in firsthand experience across shop floor, leadership, and management roles within industrial environments. This leads to a clear guiding principle:\nChange must fit operational reality, be taken up by leadership, and be embedded in everyday work.\n\nThis is how implementation emerges—without the need for explanation, because it is supported and lived.",
+"bullets": [
     "25+ years of experience in industry and operations",
     "Cross-site leadership and operational responsibility",
     "Trained industrial mechanic · State-certified technician",
@@ -253,7 +254,7 @@
   "speaking": {
   "eyebrow": "Knowledge Transfer",  
   "title": "Talks & Teaching",
-  "intro": "In talks and teaching formats, I speak about leadership, change, and operational reality — not from theoretical distance, but from responsibility in day-to-day practice. The goal is orientation, clear framing, and practical relevance.",
+  "intro": "In talks and teaching formats, I address leadership, change, and operational reality. Not from a theoretical distance, but grounded in lived responsibility within organizational practice. The aim is to provide orientation, put situations into context, and create clarity for concrete decision-making.",
   "topicsTitle": "Typical topics",
   "topics": [
     {
@@ -323,7 +324,10 @@
     "detailsPlaceholder": "What is it about?\nContext, objective, current situation …",
     "consent": "I agree that my information will be processed for the purpose of contacting me.",
     "submit": "Send message",
-    "sending": "Sending …"
+    "sending": "Sending …",
+    "success": "Message sent. Thank you!",
+    "errorSend": "Sending failed. Please try again later.",
+    "errorNetwork": "Network error. Please try again later."
   }
 }
 }

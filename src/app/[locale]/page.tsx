@@ -42,31 +42,33 @@ export default function HomePage() {
       {/* Einstieg (Bild links / Text rechts) – gleiche Flucht wie die nächste Kachel */}
 <section className="mt-6">
   <div className="mx-auto max-w-6xl">
-    <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
-      <div className="lg:col-span-6">
+    <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
+      <div className="lg:col-span-6 lg:pt-4">
         <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
           <Image
             src="/images/home-01.jpg"
             alt="Strategische Ausrichtung"
             width={1600}
             height={1000}
-            className="h-[320px] w-full object-cover md:h-[360px]"
+            className="h-[320px] w-full object-cover md:h-[360px] lg:h-[380px] xl:h-[420px]"
+
           />
         </div>
       </div>
 
-      <div className="lg:col-span-6">
-        <div className="text-[11px] tracking-[0.26em] uppercase text-slate-500">
-          {hero?.kicker ?? ""}
-        </div>
-        <h2 className="mt-3 text-3xl sm:text-4xl font-semibold tracking-[-0.02em] text-slate-900">
-          {hero?.title ?? ""}
-        </h2>
-        <p className="mt-5 max-w-xl text-lg leading-8 text-slate-600">
-  {hero?.intro ?? ""}
-</p>
+      <div className="lg:col-span-6 lg:pt-8">
 
-      </div>
+  <div className="text-[11px] tracking-[0.26em] uppercase text-slate-500">
+    {hero?.kicker ?? ""}
+  </div>
+  <h2 className="mt-3 text-3xl sm:text-4xl font-semibold tracking-[-0.02em] text-slate-900">
+    {hero?.title ?? ""}
+  </h2>
+  <p className="mt-5 max-w-xl text-lg leading-8 text-slate-600 whitespace-pre-line">
+    {hero?.intro ?? ""}
+  </p>
+</div>
+
     </div>
   </div>
 </section>

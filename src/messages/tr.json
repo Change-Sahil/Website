@@ -1,6 +1,7 @@
 {
   "nav": {
     "cta": "Görüşme talep et",
+    "ctaShort": "İletişim",
     "home": "Ana sayfa",
     "services": "Hizmetler",
     "approach": "Yaklaşım",
@@ -20,8 +21,8 @@
     "hero": {
       "kicker": "Endüstriyel ortamlarda uygulama odaklı eşlik",
   "title": "Verimlilik ve liderliğin günlük işleyişte işlemesi gerektiğinde",
-  "intro": "Orta ölçekli sanayi şirketlerini; operasyonel istikrarın, liderliğin ve iş birliğinin aynı anda gerekli olduğu durumlarda, kültürel unsurların açıkça görülüp görülmediğinden bağımsız olarak destekliyoruz.",
-  "ctaPrimary": "Görüşme talep et",
+  "intro": "Sanayi şirketlerinde kararlar hazırlanmasına rağmen günlük işleyişte etkili biçimde hayata geçmediğinde, liderlik, istikrar ve iş birliği arasında bir gerilim ortaya çıkar.\n\nOrta ölçekli sanayi şirketleri için; netliğin oluştuğu, sorumluluğun üstlenildiği ve kültür ile kimliğin günlük işleyişte yön verdiği bir çerçeve oluşturuyoruz.",
+"ctaPrimary": "Görüşme talep et",
   "ctaSecondary": "Hizmetleri incele",
   "chips": ["Uygulama", "Liderlik", "Operasyonel Mükemmellik", "Kültür ve Kimlik", "M&A"]
     },
@@ -232,12 +233,12 @@
   "heroSubtitle": "Endüstriyel günlük pratikte liderlik ve organizasyonun eşlik edilmesi.",
   "heroImage": "/images/about-hero.jpg",
   "intro": [
-    "25 yılı aşkın endüstriyel operasyon ve liderlik deneyimi; teknik uzmanlık ile işletme ve örgütsel psikoloji alanındaki akademik birikimle birleşmektedir. Endüstriyel KOBİ’leri, resmi hedeflerin mevcut olduğu ancak günlük uygulamada karşılık bulmadığı ve verimlilik, liderlik ile kurum kültürünün birlikte geliştirilmesi gereken durumlarda destekliyoruz.",
-    "Gücümüz, operasyonel gerçeklik ile yönetim bakış açısını bir araya getirerek değişimin günlük işleyişte uygulanabilir ve kalıcı hale gelmesini sağlamaktır."
-  ],
-  "profileTitle": "Profil",
-  "profileText": "Kabul, dilin, gerçekliğin ve sorumluluğun örtüştüğü noktada ortaya çıkar.\n\nBirleşme ve satın alma (M&A), entegrasyon ve karmaşık değişim süreçlerinde uygulama çoğu zaman resmi hedeflerin eksikliğinden değil, gizli kalan kültürel ve kimliğe dayalı gerilimlerden dolayı başarısız olur. Organizasyona çok dilli erişim ve bu dinamiklere yönelik bilimsel çalışma, bu gerilimleri erken aşamada fark etmemi ve operasyonel ya da politik etki yaratmadan önce ele almamı sağlar.\n\nEndüstriyel ortamlarda; üretim sahasında, liderlikte ve yönetimde edindiğim doğrudan deneyim, yaklaşımımı belirler:\nDeğişim, operasyonel gerçekliğe uymalı, liderlik tarafından sahiplenilmeli ve günlük işleyişe yerleşmelidir.\n\nBöylece açıklamaya ihtiyaç duymayan, benimsenen ve yaşanan bir uygulama ortaya çıkar.",
-  "bullets": [
+  "25 yılı aşkın operasyonel sanayi ve liderlik deneyimi; teknik, işletme ve iktisadi psikoloji uzmanlığıyla birleşmektedir. Change-Werkstatt, kavramların mevcut olduğu ancak günlük iş pratiğinde karşılık bulmadığı ve verimlilik, liderlik ile kurum kültürünün birlikte geliştirilmesi gereken durumlarda sanayi orta ölçekli işletmelerine eşlik eder.",
+  "Temel güç, operasyonel gerçeklik ile yönetim perspektifini bir araya getirerek değişimin sürdürülebilir ve etkili biçimde hayata geçirilmesini sağlamaktır."
+],
+"profileTitle": "Profil",
+"profileText": "Kabul, dil, gerçeklik ve sorumluluk örtüştüğünde ortaya çıkar.\n\nBirleşme ve satın almalar, entegrasyon ve dönüşüm süreçlerinde uygulama çoğu zaman resmi hedeflerden değil, gizli kültürel ve kimlik temelli gerilimlerden dolayı başarısız olur. Organizasyonlara çok dilli erişim ve bu dinamiklere yönelik akademik çalışma, bu gerilimleri operasyonel ya da politik etki yaratmadan önce erken aşamada görünür kılmayı mümkün kılar.\n\nÇalışmalarım, sanayi ortamlarında üretim, liderlik ve yönetim rollerinde edindiğim doğrudan deneyime dayanmaktadır. Buradan net bir yaklaşım ortaya çıkar:\nDeğişim, operasyonel gerçekliğe uymalı, liderlik tarafından sahiplenilmeli ve günlük iş pratiğine yerleşmelidir.\n\nBu şekilde, açıklanmaya ihtiyaç duymayan; benimsenen ve yaşanan bir uygulama ortaya çıkar.",
+"bullets": [
     "Endüstri ve operasyonlarda 25+ yıl deneyim",
     "Lokasyonlar arası liderlik ve operasyonel sorumluluk",
     "Eğitimli endüstri mekanikçisi · Devlet onaylı tekniker",
@@ -252,7 +253,7 @@
   "speaking": {
   "eyebrow": "Bilgi aktarımı",
   "title": "Konuşmalar ve eğitim",
-  "intro": "Konuşma ve eğitim formatlarında liderlik, değişim ve operasyonel gerçeklik üzerine konuşurum — teorik bir mesafeden değil, günlük sorumluluğun içinden. Amaç; yön bulma, doğru çerçeve ve pratik uygulanabilirliktir.",
+  "intro": "Konuşma ve eğitim formatlarında liderlik, değişim ve operasyonel gerçeklik üzerine odaklanıyorum. Teorik bir mesafeden değil, organizasyonel günlük sorumluluk deneyiminden hareketle. Amaç; yön bulmayı sağlamak, bağlamları netleştirmek ve somut kararlar için açıklık oluşturmaktır.",
   "topicsTitle": "Tipik konular",
   "topics": [
     {
@@ -322,7 +323,10 @@
     "detailsPlaceholder": "Konu nedir?\nBağlam, hedef, mevcut durum …",
     "consent": "Benimle iletişime geçilmesi amacıyla bilgilerimin işlenmesini kabul ediyorum.",
     "submit": "Mesaj gönder",
-    "sending": "Gönderiliyor …"
+    "sending": "Gönderiliyor …",
+    "success": "Mesaj gönderildi. Teşekkürler!",
+    "errorSend": "Gönderme başarısız oldu. Lütfen daha sonra tekrar deneyin.",
+    "errorNetwork": "Ağ hatası. Lütfen daha sonra tekrar deneyin."
   }
 }
 }

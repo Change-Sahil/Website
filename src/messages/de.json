@@ -1,6 +1,7 @@
 {
   "nav": {
     "cta": "Gespräch anfragen",
+    "ctaShort": "Anfragen",
     "home": "Start",
     "services": "Leistungen",
     "approach": "Vorgehen",
@@ -20,15 +21,15 @@
     "hero": {
   "kicker": "Umsetzungsnahe Begleitung im industriellen Umfeld",
   "title": "Wenn Effizienz und Führung im Alltag greifen müssen",
-  "intro": "Wir begleiten mittelständische Industrieunternehmen in Situationen, in denen operative Stabilität, Führung und Zusammenarbeit gleichzeitig gefordert sind, unabhängig davon, ob kulturelle Aspekte sichtbar oder zunächst latent sind.",
-  "ctaPrimary": "Gespräch anfragen",
+  "intro": "Wenn in Industrieunternehmen Entscheidungen vorbereitet werden, ihre Umsetzung im operativen Umfeld jedoch nicht wirksam greift, entsteht ein Spannungsfeld aus Führung, Stabilität und Zusammenarbeit.\n\nWir schaffen für mittelständische Industrieunternehmen den Rahmen, in dem Klarheit entsteht, Verantwortung übernommen wird und Kultur sowie Identität im Alltag Orientierung geben.",
+"ctaPrimary": "Gespräch anfragen",
   "ctaSecondary": "Leistungen ansehen",
   "chips": ["Umsetzung", "Führung", "Operational Excellence", "Kultur & Identität", "M&A"]
 },
 
     "pillars": {
       "title": "Wofür wir stehen",
-      "subtitle": "Umsetzung, Rhythmus und Verankerung im Alltag.",
+      "subtitle": "Umsetzung, Rhythmus und Verankerung in der Praxis.",
       "items": [
         {
           "title": "Umsetzung statt Konzepte",
@@ -50,13 +51,13 @@
 
     "divider": {
       "kicker": "Kurz. Praxisnah. Messbar.",
-      "title": "Weniger Abstraktion. Mehr Alltag.",
+      "title": "Weniger Abstraktion. Mehr operative Realität.",
       "text": "Wir arbeiten dort, wo Wirkung entsteht: in Routinen, Schnittstellen und Führungsrhythmen. Nicht nur als Konzept, sondern so, dass es im Tagesgeschäft tragfähig und anschlussfähig bleibt."
     },
     "audienceFocusTitle": "Wir konzentrieren uns auf",
     "audience": {
   "title": "Für wen und wann",
-  "subtitle": "Wir arbeiten mit Geschäftsführungen, Führungskräften und operativen Schlüsselrollen und binden Teams dort ein, wo Umsetzung, Zusammenarbeit und Routinen im Alltag wirksam werden müssen.",
+  "subtitle": "Wir arbeiten mit Geschäftsführungen, Führungskräften und operativen Schlüsselrollen und binden Teams dort ein, wo Umsetzung, Zusammenarbeit und Routinen in konkreten Arbeitssituationen wirksam werden müssen.",
   "boxTitles": ["Zielgruppen", "Fokus", "Anlässe"],
   "targets": [
     "Geschäftsführungen und Bereichsleitungen",
@@ -232,11 +233,11 @@
   "heroSubtitle": "Begleitung von Führung und Organisation im industriellen Alltag.",
   "heroImage": "/images/about-hero.jpg",
   "intro": [
-    "Über 25 Jahre operative Industrie- und Führungserfahrung verbinden sich mit technischer, betriebswirtschaftlicher und wirtschaftspsychologischer Expertise. Wir begleiten den industriellen Mittelstand dort, wo Konzepte vorhanden sind, die Umsetzung im Alltag jedoch nicht greift und wo Effizienz, Führung und Unternehmenskultur gemeinsam weiterentwickelt werden müssen.",
-    "Unsere Stärke liegt darin, operative Realität und Managementperspektive zusammenzubringen, damit Veränderungen im Arbeitsalltag tragfähig umgesetzt werden."
-  ],
-  "profileTitle": "Profil",
-  "profileText": "Akzeptanz entsteht, wenn Sprache, Realität und Verantwortung zusammenpassen.\n\nIn M&A-, Integrations- und Transformationssituationen scheitert Umsetzung selten an formalen Zielsetzungen, sondern an verdeckten kulturellen und identitätsbezogenen Spannungen. Mehrsprachiger Zugang zur Organisation und die wissenschaftliche Auseinandersetzung mit diesen Zusammenhängen ermöglichen es mir, sie früh sichtbar zu machen, bevor sie operative oder politische Wirkung entfalten.\n\nIch arbeite aus eigener Erfahrung aus Werk, Führung und Management im industriellen Umfeld. Daraus ergibt sich mein Ansatz:\nVeränderungen müssen zur operativen Realität passen, von Führung übernommen werden und im Arbeitsalltag verankert werden.\n\nSo entsteht Umsetzung, die nicht erklärt werden muss, sondern getragen und gelebt wird.",
+  "Über 25 Jahre operative Industrie- und Führungserfahrung verbinden sich mit technischer, betriebswirtschaftlicher und wirtschaftspsychologischer Expertise. Die Change-Werkstatt begleitet den industriellen Mittelstand dort, wo Konzepte vorhanden sind, deren Umsetzung im Arbeitsalltag jedoch nicht greift und wo Effizienz, Führung und Unternehmenskultur gemeinsam weiterentwickelt werden müssen.",
+  "Die Stärke liegt darin, operative Realität und Managementperspektive zusammenzuführen, damit Veränderungen tragfähig umgesetzt und im Alltag wirksam werden."
+],
+"profileTitle": "Profil",
+"profileText": "Akzeptanz entsteht dort, wo Sprache, Realität und Verantwortung zusammenpassen.\n\nIn M&A-, Integrations- und Transformationssituationen scheitert Umsetzung selten an formalen Zielsetzungen, sondern an verdeckten kulturellen und identitätsbezogenen Spannungen. Mehrsprachiger Zugang zur Organisation und die wissenschaftliche Auseinandersetzung mit diesen Zusammenhängen ermöglichen es mir, solche Spannungen früh sichtbar zu machen, bevor sie operative oder politische Wirkung entfalten.\n\nMeine Arbeit basiert auf eigener Erfahrung in Werk, Führung und Management im industriellen Umfeld. Daraus ergibt sich ein klarer Ansatz:\nVeränderungen müssen zur operativen Realität passen, von Führung übernommen werden und im Arbeitsalltag verankert sein.\n\nSo entsteht Umsetzung, die nicht erklärt werden muss, sondern getragen und gelebt wird.",
   "bullets": [
   "25+ Jahre Industrie- und Operations-Erfahrung",
   "Standortübergreifender Bereichsleiter (Führung und Steuerung)",
@@ -252,7 +253,7 @@
   "speaking": {
   "eyebrow": "Wissensweitergabe",
   "title": "Vorträge & Lehre",
-  "intro": "In Vorträgen und Lehrformaten spreche ich über Führung, Veränderung und operative Wirklichkeit. Nicht aus theoretischer Distanz, sondern aus Verantwortung im Alltag. Ziel ist Orientierung, Einordnung und Anschlussfähigkeit.",
+  "intro": "In Vorträgen und Lehrformaten spreche ich über Führung, Veränderung und operative Realität. Nicht aus theoretischer Distanz, sondern aus gelebter Verantwortung im organisationalen Alltag. Ziel ist es, Orientierung zu geben, Zusammenhänge einzuordnen und Anschlussfähigkeit für konkrete Entscheidungen herzustellen.",
   "topicsTitle": "Typische Themen",
   "topics": [
     {
@@ -322,7 +323,10 @@
       "detailsPlaceholder": "Worum geht es?\nKontext, Ziel, aktueller Stand …",
       "consent": "Ich willige ein, dass meine Angaben zur Kontaktaufnahme verarbeitet werden.",
       "submit": "Nachricht senden",
-      "sending": "Wird gesendet …"
+      "sending": "Wird gesendet …",
+      "success": "Nachricht wurde gesendet. Vielen Dank!",
+      "errorSend": "Senden fehlgeschlagen. Bitte später erneut versuchen.",
+      "errorNetwork": "Netzwerkfehler. Bitte später erneut versuchen."
     }
   }
 }

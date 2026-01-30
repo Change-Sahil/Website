@@ -40,7 +40,7 @@ export default function ContactPage() {
     if (!res.ok) {
       const data = await res.json().catch(() => ({}));
       setStatus("error");
-      setErrorMsg(data?.error || "Senden fehlgeschlagen. Bitte später erneut versuchen.");
+      setErrorMsg(data?.error || f("errorSend"));
       return;
     }
 
@@ -48,7 +48,7 @@ export default function ContactPage() {
     form.reset();
   } catch {
     setStatus("error");
-    setErrorMsg("Netzwerkfehler. Bitte später erneut versuchen.");
+    setErrorMsg(f("errorNetwork"));
   } finally {
     setSending(false);
   }
@@ -196,10 +196,10 @@ export default function ContactPage() {
       />
       <span style={{ color: "rgba(var(--ink), .74)" }}>{f("consent")}</span>
     </label>
-    
+
 {status === "success" && (
   <p className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900">
-    Nachricht wurde gesendet. Vielen Dank!
+    {f("success")}
   </p>
 )}
 

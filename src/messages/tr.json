@@ -22,7 +22,7 @@
     "trust": [],
     "hero": {
       "kicker": "Endüstriyel ortamlarda uygulama odaklı eşlik",
-  "title": "Verimlilik ve liderliğin günlük işleyişte işlemesi gerektiğinde",
+  "title": "Verimlilik ve liderliğin birlikte işlemesi gerektiğinde",
   "intro": "Sanayi şirketlerinde kararlar hazırlanmasına rağmen günlük işleyişte etkili biçimde hayata geçmediğinde, liderlik, istikrar ve iş birliği arasında bir gerilim ortaya çıkar.\n\nOrta ölçekli sanayi şirketleri için; netliğin oluştuğu, sorumluluğun üstlenildiği ve kültür ile kimliğin günlük işleyişte yön verdiği bir çerçeve oluşturuyoruz.",
 "ctaPrimary": "Görüşme talep et",
   "ctaSecondary": "Hizmetleri incele",
@@ -45,7 +45,7 @@
         },
         {
           "title": "Yöntemlerden çok etki",
-          "text": "Yöntemler amaç değil araçtır. Önemli olan günlük işte gerçekten işe yarayan ve kalıcı olandır.",
+          "text": "Yöntemler amaç değil araçtır. Asıl önemli olan, sonuçta gerçekten karşılık bulan ve kalıcı olandır.",
           "meta": "Ölçülebilir · etkili · sürdürülebilir"
         }
       ]
@@ -92,7 +92,7 @@
 
   "services": {
   "title": "Etkili değişim",
-  "intro": "Formatlarımız liderlik, yapı ve operasyonel uygulamayı birleştirir. Duruma bağlı olarak netlik sağlamak için noktasal çalışır, uygulamayı yönlendirmek için bir ritim kurar veya değişimi günlük işleyişe kalıcı olarak yerleştiririz.",
+  "intro": "Formatlarımız liderlik, yapı ve operasyonel uygulamayı birleştirir. Duruma bağlı olarak netlik sağlamak için noktasal çalışır, uygulamayı yönlendirmek için bir ritim kurar veya değişimi günlük işleyişe kalıcı olarak yerleştiririz.\n\nÖzellikle şirket birleşme ve satın almaları (M&A) sonrasındaki kültürel entegrasyon veya halefiyet planlaması gibi kritik aşamalarda, moderasyon eşliğindeki geçiş süreçleriyle organizasyonunuzun operasyonel gücünü güvence altına alıyoruz.",
   "ui": {
     "kicker": "Hizmetler",
     "navTitle": "Formatlar",
@@ -115,7 +115,7 @@
 },
     "teaser": {
       "workshops": "Netlik, hizalanma ve uygulamaya dönük başlangıç için yapılandırılmış atölye formatları.",
-      "partnership": "Liderlik, ritim ve ilerlemeyi birleştiren aylık eşlik — günlük işte kalıcı olana kadar.",
+      "partnership": "Uygulama tam olarak yerleşene ve organizasyonel gerçekliğin bir parçası haline gelene kadar liderlik, ritim ve ilerlemeyi birleştiren aylık eşlik süreci.",
       "sparring": "Zorlu durumlar için gizli sparring: net, pragmatik ve etkili."
     },
     "topics": {
@@ -125,9 +125,10 @@
         "İyileştirme ve dönüşüm girişimlerinin başlatılması veya yeniden başlatılması"
       ],
       "partnership": [
-        "Aksiyonlar sönümlenir, standartlar tutulmaz, etki sınırlı kalır",
-        "Liderlik rutinleri işlemiyor (shopfloor/yönetişim), KPI’lar davranışı yönlendirmiyor",
-        "Birimler arası iş birliği istikrarsız: arayüz, sorumluluk, eskalasyon"
+          "Stratejik kararlar alınmıştır ancak organizasyon genelinde kalıcı bir etki yaratmamaktadır",
+          "Liderlik, çelişkili beklentiler, belirsiz roller ve yüksek karar baskısı ile karşı karşıyadır",
+          "Birimler, seviyeler veya lokasyonlar arasındaki tekrar eden gerilimler sürekli dikkat ve enerji tüketmektedir",
+          "Birleşme & satın alma, entegrasyon veya halefiyet gibi geçiş süreçlerindeki kültürel sürtüşmeler, yönlendirme ve iş birliğini zorlaştırmaktadır"
       ],
       "sparring": [
         "Kritik kararlar, zor takaslar veya yüksek paydaş baskısı",
@@ -236,21 +237,18 @@
   "heroImage": "/images/about-hero.jpg",
   "intro": [
   "25 yılı aşkın operasyonel sanayi ve liderlik deneyimi; teknik, işletme ve iktisadi psikoloji uzmanlığıyla birleşmektedir. Change-Werkstatt, kavramların mevcut olduğu ancak günlük iş pratiğinde karşılık bulmadığı ve verimlilik, liderlik ile kurum kültürünün birlikte geliştirilmesi gereken durumlarda sanayi orta ölçekli işletmelerine eşlik eder.",
-  "Temel güç, operasyonel gerçeklik ile yönetim perspektifini bir araya getirerek değişimin sürdürülebilir ve etkili biçimde hayata geçirilmesini sağlamaktır."
+  "Temel güç, operasyonel gerçeklik ile yönetim perspektifini bir araya getirerek değişimin, özellikle kritik geçiş durumlarında, sürdürülebilir ve etkili biçimde hayata geçirilmesini sağlamaktır."
 ],
 "profileTitle": "Profil",
 "profileText": "Kabul, dil, gerçeklik ve sorumluluk örtüştüğünde ortaya çıkar.\n\nBirleşme ve satın almalar, entegrasyon ve dönüşüm süreçlerinde uygulama çoğu zaman resmi hedeflerden değil, gizli kültürel ve kimlik temelli gerilimlerden dolayı başarısız olur. Organizasyonlara çok dilli erişim ve bu dinamiklere yönelik akademik çalışma, bu gerilimleri operasyonel ya da politik etki yaratmadan önce erken aşamada görünür kılmayı mümkün kılar.\n\nÇalışmalarım, sanayi ortamlarında üretim, liderlik ve yönetim rollerinde edindiğim doğrudan deneyime dayanmaktadır. Buradan net bir yaklaşım ortaya çıkar:\nDeğişim, operasyonel gerçekliğe uymalı, liderlik tarafından sahiplenilmeli ve günlük iş pratiğine yerleşmelidir.\n\nBu şekilde, açıklanmaya ihtiyaç duymayan; benimsenen ve yaşanan bir uygulama ortaya çıkar.",
+"bulletsEyebrow": "Çalışmamın temeli",
 "bullets": [
-    "Endüstri ve operasyonlarda 25+ yıl deneyim",
-    "Lokasyonlar arası liderlik ve operasyonel sorumluluk",
-    "Eğitimli endüstri mekanikçisi · Devlet onaylı tekniker",
-    "İşletme Lisansı · Örgütsel Psikoloji Yüksek Lisansı",
-    "Uluslararası proje ve entegrasyon deneyimi",
-    "Liderlik ve uygulamada çok dilli çalışma (Almanca · İngilizce · Türkçe · İspanyolca · Arapça)",
-    "İşletme Doktorası, bitirme aşamasında"
-  ],
-  "note": "Doktora unvanı resmi olarak verildikten sonra kullanılacaktır.",
-  "noteLabel": "Not"
+    "25 yıldan fazla operasyonel uygulama deneyimi; endüstriyel mekanikerlikten tesisler arası Üretim ve Lojistik Bölüm Müdürlüğüne uzanan kariyer yolu",
+    "Değer zinciri boyunca endüstriyel süreç ve iş organizasyonunda köklü deneyim",
+    "İşletme ve çalışma psikolojisi eğitimi · Odak noktası: Liderlik ve Organizasyon",
+    "Yönetim ve uygulamada çok dillilik (Almanca · İngilizce · Türkçe · İspanyolca · Arapça)",
+    "Endüstriyel KOBİ'lerde M&A entegrasyonu, kültür ve kimlik üzerine devam eden doktora çalışması (DBA)"
+  ]  
 },
   "speaking": {
   "eyebrow": "Bilgi aktarımı",

@@ -22,7 +22,7 @@
     "trust": [],
     "hero": {
       "kicker": "Acompañamiento orientado a la implementación en entornos industriales",
-  "title": "Cuando la eficiencia y el liderazgo deben funcionar en el día a día",
+  "title": "Cuando la eficiencia y el liderazgo deben actuar de forma coordinada",
   "intro": "Cuando en las empresas industriales se preparan decisiones, pero su aplicación no logra consolidarse en la práctica diaria, surge una tensión entre liderazgo, estabilidad y colaboración.\n\nPara empresas industriales medianas, creamos el marco en el que surge la claridad, se asume la responsabilidad y la cultura y la identidad ofrecen orientación en el día a día.",
 "ctaPrimary": "Solicitar conversación",
   "ctaSecondary": "Ver servicios",
@@ -45,7 +45,7 @@
         },
         {
           "title": "Impacto antes que métodos",
-          "text": "Los métodos son un medio, no un fin. Lo decisivo es lo que realmente funciona y perdura en la práctica.",
+          "text": "Los métodos son un medio, no un fin. Lo decisivo es lo que en el resultado realmente se asienta y perdura.",
           "meta": "Medible · eficaz · sostenible"
         }
       ]
@@ -92,7 +92,7 @@
 
   "services": {
   "title": "Cambio efectivo",
-  "intro": "Nuestros formatos combinan liderazgo, estructura y ejecución operativa. Según el contexto, trabajamos de forma puntual para generar claridad, con un ritmo de gestión para dirigir la ejecución o de manera continua para anclar el cambio en el día a día.",
+  "intro": "Nuestros formatos combinan liderazgo, estructura y ejecución operativa. Según el contexto, trabajamos de forma puntual para generar claridad, con un ritmo de gestión para dirigir la ejecución o de manera continua para anclar el cambio en el día a día.\n\nEspecialmente en fases críticas como la integración cultural en procesos de M&A o sucesiones empresariales, aseguramos la eficacia operativa de su organización a través de transiciones moderadas.",
   "ui": {
     "kicker": "Servicios",
     "navTitle": "Formatos",
@@ -115,7 +115,7 @@
 },
     "teaser": {
       "workshops": "Workshops estructurados para crear claridad, alineación y un inicio práctico de la ejecución.",
-      "partnership": "Acompañamiento mensual que conecta liderazgo, ritmo y avance hasta consolidarlo en el día a día.",
+      "partnership": "Acompañamiento mensual que conecta liderazgo, ritmo y avance, hasta que la implementación se convierta en parte de la realidad organizacional.",
       "sparring": "Sparring confidencial para situaciones exigentes: claro, pragmático y eficaz."
     },
     "topics": {
@@ -125,9 +125,10 @@
         "Inicio o reinicio de iniciativas de mejora y transformación"
       ],
       "partnership": [
-        "Las acciones se diluyen, los estándares no se sostienen, el impacto es limitado",
-        "Las rutinas de liderazgo no funcionan (shopfloor/seguimiento), los KPIs no cambian hábitos",
-        "Colaboración inestable entre áreas: interfaces, responsabilidades, escalado"
+        "Se han tomado decisiones estratégicas, pero no generan un impacto estable en la organización",
+        "La dirección se enfrenta a expectativas contradictorias, roles poco claros y una alta presión en la toma de decisiones",
+        "Las tensiones recurrentes entre áreas, niveles o ubicaciones consumen de forma constante atención y energía",
+        "Las fricciones culturales en situaciones de transición como M&A, integración o sucesión dificultan la gestión y la colaboración"
       ],
       "sparring": [
         "Decisiones críticas, trade-offs o presión de stakeholders",
@@ -236,21 +237,18 @@
   "heroImage": "/images/about-hero.jpg",
   "intro": [
   "Más de 25 años de experiencia operativa en la industria y en funciones de liderazgo se combinan con conocimientos técnicos, empresariales y de psicología económica. Change-Werkstatt acompaña a empresas industriales medianas allí donde existen conceptos, pero su implementación no se consolida en la práctica diaria, y donde eficiencia, liderazgo y cultura organizativa deben desarrollarse conjuntamente.",
-  "La fortaleza reside en conectar la realidad operativa con la perspectiva directiva, para que el cambio se implemente de forma sostenible y efectiva."
+  "La fortaleza reside en conectar la realidad operativa con la perspectiva directiva, para que el cambio, especialmente en situaciones de transición críticas, se implemente de forma sostenible y efectiva."
 ],
 "profileTitle": "Perfil",
 "profileText": "La aceptación surge cuando el lenguaje, la realidad y la responsabilidad están alineados.\n\nEn situaciones de M&A, integración y transformación, la implementación rara vez fracasa por objetivos formales, sino por tensiones culturales y de identidad ocultas. El acceso multilingüe a las organizaciones y el análisis académico de estos fenómenos permiten hacer visibles estas tensiones de manera temprana, antes de que tengan efectos operativos o políticos.\n\nMi trabajo se basa en experiencia propia en planta, liderazgo y gestión dentro de entornos industriales. De ello se deriva un enfoque claro:\nEl cambio debe encajar con la realidad operativa, ser asumido por el liderazgo y quedar anclado en el trabajo cotidiano.\n\nAsí surge una implementación que no necesita ser explicada, sino que es sostenida y vivida.",
+"bulletsEyebrow": "Fundamento de mi trabajo",
 "bullets": [
-    "Más de 25 años de experiencia en industria y operaciones",
-    "Responsabilidad de liderazgo y gestión en múltiples ubicaciones",
-    "Mecánico industrial de formación · Técnico certificado por el Estado",
-    "Grado en Administración de Empresas · Máster en Psicología Organizacional",
-    "Experiencia internacional en proyectos e integración",
-    "Trabajo multilingüe en liderazgo e implementación (Alemán · Inglés · Turco · Español · Árabe)",
-    "Doctorado en Administración de Empresas, fase final"
-  ],
-  "note": "El título de doctor solo se utilizará tras su concesión oficial.",
-  "noteLabel": "Nota"
+    "Más de 25 años de experiencia práctica operativa, desde mecánico industrial hasta director de producción y logística entre plantas",
+    "Sólida experiencia en procesos industriales y organización del trabajo a lo largo de la cadena de valor",
+    "Formación en administración de empresas y psicología organizacional · Enfoque: Liderazgo y Organización",
+    "Multilingüismo en la dirección y ejecución (alemán · inglés · turco · español · árabe)",
+    "Doctorado en curso (DBA) sobre integración de M&A, cultura e identidad en PYMES industriales"
+  ]
 },
   "speaking": {
   "eyebrow": "Transferencia de conocimiento",

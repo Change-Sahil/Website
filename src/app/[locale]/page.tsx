@@ -50,7 +50,7 @@ export default function HomePage() {
             alt="Strategische Ausrichtung"
             width={1600}
             height={1000}
-            className="h-[320px] w-full object-cover md:h-[360px] lg:h-[380px] xl:h-[420px]"
+            className="h-[320px] w-full object-cover md:h-[360px] lg:h-[370px] xl:h-[410px]"
 
           />
         </div>

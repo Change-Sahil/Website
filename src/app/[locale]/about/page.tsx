@@ -99,25 +99,23 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Bullets */}
+{/* Bullets */}
 <div className="lg:col-span-5">
   <div className="panel">
-    <ul className="list">
+    {/* Eyebrow für Bullets */}
+    <div className="section-eyebrow">
+      <span className="dot" />
+      <span>{t("bulletsEyebrow")}</span>
+    </div>
+
+    <ul className="list mt-4">
       {bullets.map((b, i) => (
         <li key={i}>{b}</li>
       ))}
     </ul>
 
     {/* Hinweis im selben Kasten */}
-    <div className="mt-6 border-t border-slate-200/70 pt-5">
-      <div className="section-eyebrow">
-        <span className="dot" />
-        <span>{t("noteLabel")}</span>
-      </div>
-      <p className="mt-3 text-xs leading-6 text-slate-500">
-        {t("note")}
-      </p>
-    </div>
+    <div className="mt-6 border-t border-slate-200/70 pt-5"></div>
 
     {/* LinkedIn – bewusst ruhig */}
     <p className="mt-4 text-xs text-slate-500">
@@ -133,6 +131,7 @@ export default function AboutPage() {
     </p>
   </div>
 </div>
+
 
           </div>
       </section>

@@ -22,7 +22,7 @@
     "trust": [],
     "hero": {
   "kicker": "Umsetzungsnahe Begleitung im industriellen Umfeld",
-  "title": "Wenn Effizienz und Führung im Alltag greifen müssen",
+  "title": "Wenn Effizienz und Führung ineinander greifen müssen",
   "intro": "Wenn in Industrieunternehmen Entscheidungen vorbereitet werden, ihre Umsetzung im operativen Umfeld jedoch nicht wirksam greift, entsteht ein Spannungsfeld aus Führung, Stabilität und Zusammenarbeit.\n\nWir schaffen für mittelständische Industrieunternehmen den Rahmen, in dem Klarheit entsteht, Verantwortung übernommen wird und Kultur sowie Identität im Alltag Orientierung geben.",
 "ctaPrimary": "Gespräch anfragen",
   "ctaSecondary": "Leistungen ansehen",
@@ -45,7 +45,7 @@
         },
         {
           "title": "Wirkung statt Methoden",
-          "text": "Methoden sind Mittel zum Zweck. Entscheidend ist, was im Alltag tatsächlich ankommt und bleibt.",
+          "text": "Methoden sind Mittel zum Zweck. Entscheidend ist, was im Ergebnis tatsächlich ankommt und bleibt.",
           "meta": "Messbar · wirksam · nachhaltig"
         }
       ]
@@ -92,7 +92,7 @@
 
   "services": {
   "title": "Wirksame Veränderung",
-  "intro": "Unsere Formate verbinden Führung, Struktur und operative Umsetzung. Je nach Anlass arbeiten wir punktuell zur Klärung, im Rhythmus zur Steuerung oder kontinuierlich zur nachhaltigen Verankerung im Alltag.",
+  "intro": "Unsere Formate verbinden Führung, Struktur und operative Umsetzung. Je nach Anlass arbeiten wir punktuell zur Klärung, im Rhythmus zur Steuerung oder kontinuierlich zur nachhaltigen Verankerung im täglichen Betrieb.\n\nBesonders in kritischen Phasen wie der kulturellen Integration bei M&A oder Nachfolgeregelungen sichern wir die operative Schlagkraft Ihrer Organisation durch moderierte Übergänge.",
   "ui": {
     "kicker": "Leistungen",
     "navTitle": "Formate",
@@ -110,13 +110,13 @@
     "ctaPrimary": "Gespräch anfragen",
     "when": {
       "workshops": "Wenn Klarheit über Ausgangslage, Prioritäten und Entscheidungen benötigt wird und ein strukturierter Start in die Umsetzung erfolgen soll, operativ wie kulturell.",
-      "partnership": "Wenn Umsetzung über Monate geführt, gesteuert und im Führungsalltag verankert werden muss.",
-      "sparring": "Wenn Führungskräfte in komplexen Situationen Klarheit, Priorisierung und tragfähige Entscheidungen benötigen."
+      "partnership": "Wenn Umsetzung über Monate hinweg Führung, Klarheit und Kontinuität erfordert.",
+      "sparring": "Wenn Führungskräfte in komplexen Situationen Klarheit, Priorisierung und belastbare Entscheidungen benötigen."
     },
     "teaser": {
-      "workshops": "Strukturierte Werkstatt-Workshops zur Klärung, Ausrichtung und Umsetzung mit klarem nächsten Schritt.",
-      "partnership": "Monatliche Begleitung, die Führung, Rhythmus und Fortschritt verbindet, bis es im Alltag sitzt.",
-      "sparring": "Vertrauliches Sparring für anspruchsvolle Situationen: klar, pragmatisch, wirksam."
+      "workshops": "Strukturierte Werkstatt-Workshops zur Klärung, Ausrichtung und Umsetzung mit eindeutigem nächsten Schritt.",
+      "partnership": "Monatliche Begleitung, die Führung, Rhythmus und Fortschritt verbindet, bis Umsetzung greift und Teil der organisationalen Realität wird.",
+      "sparring": "Vertrauliches Sparring für anspruchsvolle Führungs- und Entscheidungssituationen: klar, pragmatisch, wirksam."
     },
     "topics": {
       "workshops": [
@@ -125,9 +125,10 @@
         "Start oder Neustart von Verbesserungs- und Transformationsinitiativen"
       ],
       "partnership": [
-        "Maßnahmen verlaufen, Standards werden nicht gehalten, Wirkung bleibt aus",
-        "Führungsroutinen greifen nicht (Shopfloor/Steuerung), Kennzahlen führen nicht",
-        "Zusammenspiel der Bereiche ist instabil: Schnittstellen, Verantwortung, Eskalation"
+      "Strategische Entscheidungen sind getroffen, entfalten jedoch keine stabile Wirkung in der Organisation",
+      "Führung ist mit widersprüchlichen Erwartungen, Rollenunklarheit und hohem Entscheidungsdruck konfrontiert",
+      "Wiederkehrende Spannungen zwischen Bereichen, Ebenen oder Standorten binden dauerhaft Aufmerksamkeit und Energie",
+      "Kulturelle Reibungen in Übergangssituationen wie M&A, Integration oder Nachfolge erschweren Steuerung und Zusammenarbeit"
       ],
       "sparring": [
         "Kritische Entscheidungen, Zielkonflikte oder hoher Stakeholder-Druck",
@@ -147,19 +148,19 @@
     },
     "deliverables": {
       "workshops": [
-        "Gemeinsames Zielbild und klare Prioritäten",
+        "Gemeinsames Zielbild und priorisierte Schwerpunkte",
         "Entscheidungen zu Rollen, Führungsrhythmus und Standards",
-        "Konkreter Umsetzungsplan (30/60/90 Tage), der im Alltag trägt"
+        "Konkreter Umsetzungsplan (30/60/90 Tage) mit klaren Verantwortlichkeiten"
       ],
       "partnership": [
-        "Steuerungsrhythmus mit klaren Verantwortlichkeiten",
-        "Nachhalten von Maßnahmen, Kennzahlen und Wirkung",
-        "Verankerung von Zusammenarbeit, Kultur und Identität im Führungsalltag"
+        "Klarer Steuerungsrhythmus mit definierten Verantwortlichkeiten und Entscheidungsfenstern",
+        "Transparenz über Fortschritt, Blockaden und Wirkung von Maßnahmen",
+        "Verankerung von Zusammenarbeit, Kultur und Identität in Führung und Organisation"
       ],
       "sparring": [
         "Klarheit in komplexen oder kritischen Situationen",
-        "Priorisierung und Entscheidungslogik",
-        "Vertrauliche Reflexion und nächste Schritte"
+        "Priorisierung und Entscheidungslogik auf Führungsebene",
+        "Vertrauliche Reflexion und klare nächste Schritte"
       ],
       "speaking": [
         "Impuls, Training oder Lehrformat passend zum Anlass",
@@ -235,22 +236,19 @@
   "heroSubtitle": "Begleitung von Führung und Organisation im industriellen Alltag.",
   "heroImage": "/images/about-hero.jpg",
   "intro": [
-  "Über 25 Jahre operative Industrie- und Führungserfahrung verbinden sich mit technischer, betriebswirtschaftlicher und wirtschaftspsychologischer Expertise. Die Change-Werkstatt begleitet den industriellen Mittelstand dort, wo Konzepte vorhanden sind, deren Umsetzung im Arbeitsalltag jedoch nicht greift und wo Effizienz, Führung und Unternehmenskultur gemeinsam weiterentwickelt werden müssen.",
-  "Die Stärke liegt darin, operative Realität und Managementperspektive zusammenzuführen, damit Veränderungen tragfähig umgesetzt und im Alltag wirksam werden."
+  "Über 25 Jahre operative Industrie- und Führungserfahrung verbinden sich mit technischer, betriebswirtschaftlicher und wirtschaftspsycho-logischer Expertise. Die Change-Werkstatt begleitet den industriellen Mittelstand dort, wo Konzepte vorhanden sind, deren Umsetzung in der Praxis jedoch nicht greift und wo Effizienz, Führung und Unternehmens-kultur gemeinsam weiterentwickelt werden müssen.",
+  "Die Stärke liegt darin, operative Realität und Managementperspektive zusammenzuführen, damit Veränderungen insbesondere in kritischen Übergangssituationen tragfähig und wirksam umgesetzt werden."
 ],
 "profileTitle": "Profil",
 "profileText": "Akzeptanz entsteht dort, wo Sprache, Realität und Verantwortung zusammenpassen.\n\nIn M&A-, Integrations- und Transformationssituationen scheitert Umsetzung selten an formalen Zielsetzungen, sondern an verdeckten kulturellen und identitätsbezogenen Spannungen. Mehrsprachiger Zugang zur Organisation und die wissenschaftliche Auseinandersetzung mit diesen Zusammenhängen ermöglichen es mir, solche Spannungen früh sichtbar zu machen, bevor sie operative oder politische Wirkung entfalten.\n\nMeine Arbeit basiert auf eigener Erfahrung in Werk, Führung und Management im industriellen Umfeld. Daraus ergibt sich ein klarer Ansatz:\nVeränderungen müssen zur operativen Realität passen, von Führung übernommen werden und im Arbeitsalltag verankert sein.\n\nSo entsteht Umsetzung, die nicht erklärt werden muss, sondern getragen und gelebt wird.",
-  "bullets": [
-  "25+ Jahre Industrie- und Operations-Erfahrung",
-  "Standortübergreifender Bereichsleiter (Führung und Steuerung)",
-  "Gelernter Industriemechaniker · Staatlich geprüfter Techniker",
-  "B.A. Betriebswirtschaft · M.Sc. Wirtschaftspsychologie",
-  "Internationale Projekt- und Transformationsarbeit",
-  "Mehrsprachige Arbeit in Führung und Umsetzung (Deutsch · Englisch · Türkisch · Spanisch · Arabisch)",
-  "Doctor of Business Administration, Abschlussphase"
-],
-  "note": "Der Doktorgrad wird erst nach offizieller Verleihung geführt.",
-  "noteLabel": "Hinweis"
+"bulletsEyebrow": "Fundament meiner Arbeit",  
+"bullets": [
+  "25+ Jahre operative Praxiserfahrung, vom Industriemechaniker zur standortübergreifenden Bereichsleitung Produktion & Logistik",
+  "Fundierte Erfahrung in industrieller Prozess- und Arbeitsorganisation entlang der Wertschöpfung",
+  "Betriebswirtschaftliche und wirtschaftspsychologische Ausbildung · Schwerpunkt: Führung und Organisation",
+  "Mehrsprachigkeit in Führung und Umsetzung (Deutsch · Englisch · Türkisch · Spanisch · Arabisch)",
+  "Laufende Promotion (DBA) zu M&A-Integration, Kultur & Identität im industriellen Mittelstand"
+]
 },
   "speaking": {
   "eyebrow": "Wissensweitergabe",

@@ -51,40 +51,43 @@ export default function ServicesPage() {
 
   return (
     <div className="space-y-12 md:space-y-14">
-      {/* HERO */}
-      <section className="page-wrap py-12 md:py-16">
-        <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
-          <div className="lg:col-span-6">
-            <div className="section-eyebrow">
-              <span className="dot" />
-              <span>{ui?.kicker ?? "Formate"}</span>
-            </div>
+ {/* HERO */}
+<section className="page-wrap py-12 md:py-16">
+  <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
+    <div className="lg:col-span-6">
+      <div className="section-eyebrow">
+        <span className="dot" />
+        <span>{ui?.kicker ?? "Formate"}</span>
+      </div>
 
-            <h1 className="mt-4 title">{t("title")}</h1>
-            <p className="mt-5 text-lg leading-8 muted">{t("intro")}</p>
+      <h1 className="mt-4 title">{t("title")}</h1>
+      <p className="mt-5 text-lg leading-8 muted whitespace-pre-line">
+        {t("intro")}
+      </p>
 
-            {/* Reduce CTAs: keep only a secondary navigation link (Header already has CTA) */}
-            <div className="mt-8">
-              <Link href={`/${locale}/approach`} className="btn-secondary">
-                {nav("approach")}
-              </Link>
-            </div>
-          </div>
+      {/* Reduce CTAs: keep only a secondary navigation link (Header already has CTA) */}
+      <div className="mt-8">
+        <Link href={`/${locale}/approach`} className="btn-secondary">
+          {nav("approach")}
+        </Link>
+      </div>
+    </div>
 
-          <div className="lg:col-span-6">
-            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-              <Image
-                src="/images/services-hero.jpg"
-                alt={t("title")}
-                width={1600}
-                height={1000}
-                className="h-[280px] w-full object-cover md:h-[340px] saturate-[0.85] contrast-[1.05]"
-                priority={false}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="lg:col-span-6 lg:-mt-4">
+      <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <Image
+          src="/images/services-hero.jpg"
+          alt={t("title")}
+          width={1600}
+          height={1000}
+          className="h-[380px] w-full object-cover md:h-[440px] saturate-[0.85] contrast-[1.05]"
+          priority={false}
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* AUSWAHL + DETAILS */}
       <section className="page-wrap section-pad">

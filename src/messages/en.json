@@ -22,7 +22,7 @@
     "trust": [],
     "hero": {
       "kicker": "Implementation-focused support in industrial environments",
-  "title": "When efficiency and leadership must work in everyday operations",
+  "title": "When efficiency and leadership must work hand in hand",
   "intro": "When decisions are being prepared in industrial companies but fail to take effect in everyday operations, a tension emerges between leadership, stability, and collaboration.\n\nFor mid-sized industrial companies, we create the framework in which clarity emerges, responsibility is assumed, and culture and identity provide orientation in daily work.",
 "ctaPrimary": "Request a conversation",
   "ctaSecondary": "View services",
@@ -46,7 +46,7 @@
         },
         {
           "title": "Impact over methods",
-          "text": "Methods are a means to an end. What matters is what actually works and lasts in daily operations.",
+          "text": "Methods are a means to an end. What matters is what actually takes hold in the result and remains.",
           "meta": "Measurable · effective · sustainable"
         }
       ]
@@ -93,7 +93,7 @@
 
  "services": {
   "title": "Effective change",
-  "intro": "Our formats combine leadership, structure and operational execution. Depending on the situation, we work selectively to create clarity, in a rhythm to steer execution, or continuously to anchor change in daily operations.",
+  "intro": "Our formats combine leadership, structure and operational execution. Depending on the situation, we work selectively to create clarity, in a rhythm to steer execution, or continuously to anchor change in daily operations.\n\nEspecially in critical phases such as cultural integration during M&A or succession planning, we secure the operational effectiveness of your organization through moderated transitions.",
   "ui": {
     "kicker": "Services",
     "navTitle": "Formats",
@@ -116,7 +116,7 @@
 },
     "teaser": {
       "workshops": "Structured workshop formats to create clarity, alignment and a practical start into execution.",
-      "partnership": "Monthly guidance that connects leadership, rhythm and progress until it sticks in day-to-day operations.",
+      "partnership": "Monthly guidance that connects leadership, rhythm and progress implementation becomes part of the organizational reality.",
       "sparring": "Confidential sparring for demanding situations — clear, pragmatic and effective."
     },
     "topics": {
@@ -126,9 +126,10 @@
         "Kick-off or reset of improvement and transformation initiatives"
       ],
       "partnership": [
-        "Actions fade out, standards don’t hold, impact remains limited",
-        "Leadership routines don’t work (shopfloor/steering), KPIs don’t drive behavior",
-        "Cross-functional collaboration is unstable: interfaces, accountability, escalation"
+        "Strategic decisions have been made but fail to achieve stable impact within the organization",
+        "Leadership is confronted with conflicting expectations, unclear roles, and sustained decision pressure",
+        "Recurring tensions between functions, levels, or locations continuously consume attention and energy",
+        "Cultural frictions in transition phases such as M&A, integration, or succession hinder effective steering and collaboration"
       ],
       "sparring": [
         "Critical decisions, trade-offs or high stakeholder pressure",
@@ -237,21 +238,18 @@
   "heroImage": "/images/about-hero.jpg",
   "intro": [
   "More than 25 years of operational industry and leadership experience are combined with technical, business, and economic-psychological expertise. Change-Werkstatt supports industrial mid-sized companies where concepts exist but fail to take effect in day-to-day operations, and where efficiency, leadership, and organizational culture need to evolve together.",
-  "The core strength lies in connecting operational reality with management perspective, enabling change to be implemented in a sustainable and effective way."
+  "The core strength lies in connecting operational reality with management perspective, enabling change to be implemented in a sustainable and effective way, especially in critical transition situations."
 ],
 "profileTitle": "Profile",
 "profileText": "Acceptance emerges where language, reality, and responsibility align.\n\nIn M&A, integration, and transformation situations, implementation rarely fails due to formal targets, but rather because of hidden cultural and identity-related tensions. Multilingual access to organizations and academic engagement with these dynamics make it possible to identify such tensions early, before they translate into operational or political consequences.\n\nMy work is grounded in firsthand experience across shop floor, leadership, and management roles within industrial environments. This leads to a clear guiding principle:\nChange must fit operational reality, be taken up by leadership, and be embedded in everyday work.\n\nThis is how implementation emerges—without the need for explanation, because it is supported and lived.",
+"bulletsEyebrow": "Foundation of my work",
 "bullets": [
-    "25+ years of experience in industry and operations",
-    "Cross-site leadership and operational responsibility",
-    "Trained industrial mechanic · State-certified technician",
-    "B.A. Business Administration · M.Sc. Business Psychology",
-    "International project and integration experience",
-    "Multilingual work in leadership and implementation (German · English · Turkish · Spanish · Arabic)",
-    "Doctor of Business Administration, final phase"
-  ],
-  "note": "The doctoral title will only be used after official conferment.",
-  "noteLabel": "Note"
+    "25+ years of operative practical experience, from industrial mechanic to cross-site head of production & logistics",
+    "Sound experience in industrial process and work organization along the value chain",
+    "Business and organizational psychology education · Focus: Leadership and Organization",
+    "Multilingualism in leadership and implementation (German · English · Turkish · Spanish · Arabic)",
+    "Ongoing Doctorate (DBA) on M&A integration, culture & identity in industrial SMEs"
+  ]
 },
   "speaking": {
   "eyebrow": "Knowledge Transfer",  

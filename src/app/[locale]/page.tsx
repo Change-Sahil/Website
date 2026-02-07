@@ -137,7 +137,7 @@ export default function HomePage() {
 </div>
 
 
-<h3 className="mt-3 text-2xl font-semibold tracking-[-0.02em] text-slate-900">
+<h3 className="mt-3 text-2xl font-semibold tracking-[-0.02em] text-slate-900 whitespace-pre-line">
   {t("divider.title")}
 </h3>
 
@@ -194,10 +194,9 @@ export default function HomePage() {
             <span>{t("orientation.kicker")}</span>
           </div>
 
-          <h3 className="mt-3 text-2xl md:text-3xl font-semibold tracking-[-0.02em] text-slate-900">
-            {t("orientation.title")}
-          </h3>
-
+         <h3 className="mt-3 text-2xl md:text-3xl font-semibold tracking-[-0.02em] text-slate-900 whitespace-pre-line">
+  {t("orientation.title")}
+</h3>
 
           <p className="mt-4 max-w-xl text-sm md:text-base leading-7 text-slate-600">
             {t("orientation.text")}

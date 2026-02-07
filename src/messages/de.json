@@ -31,7 +31,7 @@
 
     "pillars": {
       "title": "Wofür wir stehen",
-      "subtitle": "Umsetzung, Rhythmus und Verankerung in der Praxis.",
+      "subtitle": "Umsetzung, Rhythmus und Verankerung in der Praxis",
       "items": [
         {
           "title": "Umsetzung statt Konzepte",
@@ -53,7 +53,7 @@
 
     "divider": {
       "kicker": "Kurz. Praxisnah. Messbar.",
-      "title": "Weniger Abstraktion. Mehr operative Realität.",
+      "title": "Weniger Abstraktion\nMehr operative Realität",
       "text": "Wir arbeiten dort, wo Wirkung entsteht: in Routinen, Schnittstellen und Führungsrhythmen. Nicht nur als Konzept, sondern so, dass es im Tagesgeschäft tragfähig und anschlussfähig bleibt."
     },
     "audienceFocusTitle": "Wir konzentrieren uns auf",
@@ -83,7 +83,7 @@
 },
     "orientation": {
       "kicker": "15 Minuten Orientierung",
-      "title": "Kurz klären, fundiert entscheiden.",
+      "title": "Kurz klären\nFundiert entscheiden",
       "text": "In einem kurzen Gespräch ordnen wir Anlass, Zielbild und das passende Format (Workshop, Partnerschaft oder Sparring).",
       "ctaPrimary": "Gespräch anfragen",
       "ctaSecondary": "Leistungen ansehen"
@@ -233,7 +233,7 @@
   "about": {
   "title": "Über uns",
   "heroTitle": "Umsetzung in komplexen Situationen",
-  "heroSubtitle": "Begleitung von Führung und Organisation im industriellen Alltag.",
+  "heroSubtitle": "Begleitung von Führung und Organisation im industriellen Alltag",
   "heroImage": "/images/about-hero.jpg",
   "intro": [
   "Über 25 Jahre operative Industrie- und Führungserfahrung verbinden sich mit technischer, betriebswirtschaftlicher und wirtschaftspsycho-logischer Expertise. Die Change-Werkstatt begleitet den industriellen Mittelstand dort, wo Konzepte vorhanden sind, deren Umsetzung in der Praxis jedoch nicht greift und wo Effizienz, Führung und Unternehmens-kultur gemeinsam weiterentwickelt werden müssen.",

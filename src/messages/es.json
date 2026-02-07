@@ -31,7 +31,7 @@
 
     "pillars": {
       "title": "Lo que nos define",
-      "subtitle": "Ejecución, ritmo y arraigo en el día a día.",
+      "subtitle": "Ejecución, ritmo y arraigo en el día a día",
       "items": [
         {
           "title": "Ejecución antes que conceptos",
@@ -53,7 +53,7 @@
 
     "divider": {
       "kicker": "Breve. Práctico. Medible.",
-      "title": "Menos abstracción. Más realidad.",
+      "title": "Menos abstracción\nMás realidad",
       "text": "Trabajamos donde se genera el impacto: en rutinas, interfaces y ritmos de liderazgo. No sólo como concepto, sino de forma viable y aplicable en el trabajo diario."
     },
     "audienceFocusTitle": "Nos enfocamos en",
@@ -83,7 +83,7 @@
 },
     "orientation": {
       "kicker": "Orientación de 15 minutos",
-      "title": "Aclarar rápido. Decidir con criterio.",
+      "title": "Aclarar rápido\nDecidir con criterio",
       "text": "En una breve conversación aclaramos el contexto, el objetivo y el formato adecuado (workshop, acompañamiento o sparring).",
       "ctaPrimary": "Solicitar conversación",
       "ctaSecondary": "Ver servicios"
@@ -233,7 +233,7 @@
   "about": {
   "title": "Sobre nosotros",
   "heroTitle": "Implementación en situaciones complejas",
-  "heroSubtitle": "Acompañamiento del liderazgo y la organización en la práctica industrial diaria.",
+  "heroSubtitle": "Acompañamiento del liderazgo y la organización en la práctica industrial diaria",
   "heroImage": "/images/about-hero.jpg",
   "intro": [
   "Más de 25 años de experiencia operativa en la industria y en funciones de liderazgo se combinan con conocimientos técnicos, empresariales y de psicología económica. Change-Werkstatt acompaña a empresas industriales medianas allí donde existen conceptos, pero su implementación no se consolida en la práctica diaria, y donde eficiencia, liderazgo y cultura organizativa deben desarrollarse conjuntamente.",

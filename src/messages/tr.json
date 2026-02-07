@@ -31,7 +31,7 @@
 
     "pillars": {
       "title": "Bizi tanımlayan ilkeler",
-      "subtitle": "Günlük işte uygulama, ritim ve kalıcılık.",
+      "subtitle": "Günlük işte uygulama, ritim ve kalıcılık",
       "items": [
         {
           "title": "Kavramsallık yerine uygulama",
@@ -53,7 +53,7 @@
 
     "divider": {
       "kicker": "Kısa. Pratik. Ölçülebilir.",
-      "title": "Daha az soyutlama. Daha çok gerçeklik.",
+      "title": "Daha az soyutlama\nDaha çok gerçeklik",
       "text": "Etkinin oluştuğu yerde çalışırız: rutinlerde, arayüzlerde ve liderlik ritimlerinde. Günlük işleyişte kalıcı ve uygulanabilir olacak şekilde."
     },
     "audienceFocusTitle": "Odaklandığımız konular",
@@ -83,7 +83,7 @@
 },
     "orientation": {
       "kicker": "15 dakikalık yönlendirme",
-      "title": "Hızla netleştir. Sağlam karar ver.",
+      "title": "Hızla netleştir\nSağlam karar ver",
       "text": "Kısa bir görüşmede durumu, hedefi ve uygun formatı netleştiririz (atölye, ortaklık veya sparring).",
       "ctaPrimary": "Görüşme talep et",
       "ctaSecondary": "Hizmetleri incele"
@@ -233,7 +233,7 @@
 "about": {
   "title": "Hakkımızda",
   "heroTitle": "Karmaşık durumlarda uygulama",
-  "heroSubtitle": "Endüstriyel günlük pratikte liderlik ve organizasyonun eşlik edilmesi.",
+  "heroSubtitle": "Endüstriyel günlük pratikte liderlik ve organizasyonun eşlik edilmesi",
   "heroImage": "/images/about-hero.jpg",
   "intro": [
   "25 yılı aşkın operasyonel sanayi ve liderlik deneyimi; teknik, işletme ve iktisadi psikoloji uzmanlığıyla birleşmektedir. Change-Werkstatt, kavramların mevcut olduğu ancak günlük iş pratiğinde karşılık bulmadığı ve verimlilik, liderlik ile kurum kültürünün birlikte geliştirilmesi gereken durumlarda sanayi orta ölçekli işletmelerine eşlik eder.",

@@ -32,7 +32,7 @@
 
     "pillars": {
       "title": "What we stand for",
-      "subtitle": "Execution, rhythm and anchoring in daily work.",
+      "subtitle": "Execution, rhythm and anchoring in daily work",
       "items": [
         {
           "title": "Execution over concepts",
@@ -54,7 +54,7 @@
 
     "divider": {
       "kicker": "Short. Practical. Measurable.",
-      "title": "Less abstraction. More daily reality.",
+      "title": "Less abstraction\nMore daily reality",
       "text": "We work where impact is created: in routines, interfaces and leadership rhythms. Not only as concepts, but in a way that holds up in day-to-day operations."
     },
     "audienceFocusTitle": "We focus on",
@@ -84,7 +84,7 @@
 },
     "orientation": {
       "kicker": "15-minute orientation",
-      "title": "Clarify quickly. Decide with confidence.",
+      "title": "Clarify quickly\nDecide with confidence",
       "text": "In a short conversation, we clarify your situation, target state and the right format (workshop, partnership or sparring).",
       "ctaPrimary": "Request a conversation",
       "ctaSecondary": "View services"
@@ -234,7 +234,7 @@
 "about": {
   "title": "About",
   "heroTitle": "Implementation in complex situations",
-  "heroSubtitle": "Supporting leadership and organization in everyday industrial practice.",
+  "heroSubtitle": "Supporting leadership and organization in everyday industrial practice",
   "heroImage": "/images/about-hero.jpg",
   "intro": [
   "More than 25 years of operational industry and leadership experience are combined with technical, business, and economic-psychological expertise. Change-Werkstatt supports industrial mid-sized companies where concepts exist but fail to take effect in day-to-day operations, and where efficiency, leadership, and organizational culture need to evolve together.",

@@ -36,7 +36,7 @@
       "items": [
         {
           "title": "Execution over concepts",
-          "text": "Clear structure, accountability and hands-on implementation – without excessive slide decks.",
+          "text": "Clear structure, accountability and hands-on implementation, without excessive slide decks.",
           "meta": "Practical · structured · actionable"
         },
         {
@@ -110,7 +110,7 @@
     },
     "ctaPrimary": "Request a conversation",
     "when": {
-  "workshops": "When clarity about the current situation, priorities and decisions is needed and a structured start into execution is required – operationally and culturally.",
+  "workshops": "When clarity about the current situation, priorities and decisions is needed and a structured start into execution is required: operationally and culturally.",
   "partnership": "When execution needs to be guided, steered and anchored in leadership routines over several months.",
   "sparring": "When leaders need clarity, prioritisation and sound decisions in complex situations."
 },

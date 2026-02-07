@@ -35,7 +35,7 @@
       "items": [
         {
           "title": "Kavramsallık yerine uygulama",
-          "text": "Net yapı, sorumluluk ve uygulama desteği – gereksiz sunum yükü olmadan.",
+          "text": "Net yapı, sorumluluk ve uygulama desteği, gereksiz sunum yükü olmadan.",
           "meta": "Pratik · yapılandırılmış · uygulanabilir"
         },
         {
@@ -109,7 +109,7 @@
     },
     "ctaPrimary": "Görüşme talep et",
     "when": {
-  "workshops": "Mevcut durum, öncelikler ve kararlar konusunda netlik gerektiğinde ve uygulamaya yapılandırılmış bir başlangıç yapılması istendiğinde – operasyonel ve kültürel olarak.",
+  "workshops": "Mevcut durum, öncelikler ve kararlar konusunda netlik gerektiğinde ve uygulamaya yapılandırılmış bir başlangıç yapılması istendiğinde: operasyonel ve kültürel olarak.",
   "partnership": "Uygulamanın aylar boyunca yönlendirilmesi, takip edilmesi ve liderlik rutinlerine yerleştirilmesi gerektiğinde.",
   "sparring": "Liderlerin karmaşık durumlarda netlik, önceliklendirme ve sağlam kararlar almaya ihtiyaç duyduğu durumlarda."
 },
@@ -269,7 +269,7 @@
     {
       "title": "Yalın Yönetim (Lean)",
       "subtitle": "Yöntem koleksiyonu değil, günlük etki",
-      "description": "Lean bir araç seti değil; sadeleştirme ve öğrenme mantığıdır. Birçok girişim, yöntem eksikliğinden değil, günlük işe uyum sağlayamadığı için zorlanır. Bu içerik; standartlar, problem çözme ve iş birliğini güçlendiren birkaç temel kaldıraç üzerine odaklanır — ‘yöntem avcılığı’ olmadan."
+      "description": "Lean bir araç seti değil; sadeleştirme ve öğrenme mantığıdır. Birçok girişim, yöntem eksikliğinden değil, günlük işe uyum sağlayamadığı için zorlanır. Bu içerik; standartlar, problem çözme ve iş birliğini güçlendiren birkaç temel kaldıraç üzerine odaklanır, ‘yöntem avcılığı’ olmadan."
     },
     {
       "title": "M&A Entegrasyonu",

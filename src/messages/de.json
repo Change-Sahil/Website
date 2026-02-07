@@ -109,7 +109,7 @@
     },
     "ctaPrimary": "Gespräch anfragen",
     "when": {
-      "workshops": "Wenn Klarheit über Ausgangslage, Prioritäten und Entscheidungen benötigt wird und ein strukturierter Start in die Umsetzung erfolgen soll, operativ wie kulturell.",
+      "workshops": "Wenn Klarheit über Ausgangslage, Prioritäten und Entscheidungen benötigt wird und ein strukturierter Start in die Umsetzung erfolgen soll: operativ wie kulturell.",
       "partnership": "Wenn Umsetzung über Monate hinweg Führung, Klarheit und Kontinuität erfordert.",
       "sparring": "Wenn Führungskräfte in komplexen Situationen Klarheit, Priorisierung und belastbare Entscheidungen benötigen."
     },
@@ -177,12 +177,12 @@
   "approach": {
   "eyebrow": "Unser Ansatz",
   "title": "Vorgehen",
-  "intro": "Unser Vorgehen ist klar strukturiert und konsequent auf Umsetzung im Alltag ausgerichtet. Wir arbeiten mit Führung, klären Entscheidungen und verankern Veränderung dort, wo Routinen, Zusammenarbeit und Verantwortung Wirkung entfalten.",
+  "intro": "Unser Vorgehen ist klar strukturiert und konsequent auf Umsetzung in der Organisation ausgerichtet. Wir arbeiten mit Führung, klären Entscheidungen und verankern Veränderung dort, wo Routinen, Zusammenarbeit und Verantwortung Wirkung entfalten.",
 
   "principlesEyebrow": "Haltung & Orientierung",
   "principlesTitle": "Prinzipien",
   "principles": [
-    "Wir arbeiten mit Führung im Alltag: Wir strukturieren Rollen, etablieren Entscheidungs- und Steuerungsrhythmen und machen Verantwortung wirksam.",
+    "Wir arbeiten mit Führung im laufenden Betrieb: Wir strukturieren Rollen, etablieren Entscheidungs- und Steuerungsrhythmen und machen Verantwortung wirksam.",
     "Wir machen Wirkung messbar: Wir definieren Kennzahlen, Standards und Routinen und halten diese konsequent nach.",
     "Wir verankern Veränderung nachhaltig: Wir integrieren neue Arbeitsweisen in Routinen, Zusammenarbeit sowie Kultur und Identität."
   ],
@@ -190,7 +190,7 @@
   "how": {
     "kicker": "Unser Vorgehensmodell",
     "title": "Vom Anlass zur Umsetzung in drei Schritten.",
-    "subtitle": "Nicht als Konzept, sondern so, dass es im Tagesgeschäft funktioniert: gemeinsam klären, im Alltag führen, konsequent verankern.",
+    "subtitle": "Nicht als Konzept, sondern so, dass es im Tagesgeschäft funktioniert: gemeinsam klären, operativ führen, konsequent verankern.",
     "stepLabel": "Schritt",
     "outTitle": "Ergebnis",
     "steps": [

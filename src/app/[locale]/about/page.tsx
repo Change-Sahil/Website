@@ -117,18 +117,17 @@ export default function AboutPage() {
     {/* Hinweis im selben Kasten */}
     <div className="mt-6 border-t border-slate-200/70 pt-5"></div>
 
-    {/* LinkedIn – bewusst ruhig */}
-    <p className="mt-4 text-xs text-slate-500">
-      LinkedIn:&nbsp;
-      <a
-        href="https://www.linkedin.com/in/seref-sahil-78304aa4/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="underline hover:text-slate-700"
-      >
-        Profil ansehen
-      </a>
-    </p>
+    <p className="mt-4 text-sm text-slate-600">
+  <a
+    href="https://www.linkedin.com/in/seref-sahil-78304aa4/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline underline-offset-2 hover:text-slate-800"
+  >
+    LinkedIn-Profil ansehen
+  </a>
+</p>
+
   </div>
 </div>
 

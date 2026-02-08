@@ -23,7 +23,7 @@
     "hero": {
   "kicker": "Umsetzungsnahe Begleitung im industriellen Umfeld",
   "title": "Wenn Effizienz und Führung ineinander greifen müssen",
-  "intro": "Wenn in Industrieunternehmen Entscheidungen vorbereitet werden, ihre Umsetzung im operativen Umfeld jedoch nicht wirksam greift, entsteht ein Spannungsfeld aus Führung, Stabilität und Zusammenarbeit.\n\nWir schaffen für mittelständische Industrieunternehmen den Rahmen, in dem Klarheit entsteht, Verantwortung übernommen wird und Kultur sowie Identität im Alltag Orientierung geben.",
+"intro": "Wenn in Industrieunternehmen Entscheidungen vorbereitet werden, ihre Umsetzung im operativen Umfeld jedoch nicht wirksam wird, entsteht ein Spannungsfeld aus Führung, Stabilität und Zusammenarbeit.\n\nWir schaffen für mittelständische Industrieunternehmen den Rahmen, in dem Klarheit entsteht, Verantwortung übernommen wird und Kultur sowie Identität im Alltag Orientierung geben.",
 "ctaPrimary": "Gespräch anfragen",
   "ctaSecondary": "Leistungen ansehen",
   "chips": ["Umsetzung", "Führung", "Operational Excellence", "Kultur & Identität", "M&A"]
@@ -40,7 +40,7 @@
         },
         {
           "title": "Führung als Hebel",
-          "text": "Veränderung gelingt über Führung. Wir starten dort und bringen Wirkung in Prozesse, Schnittstellen und Teams.",
+          "text": "Wir begleiten Veränderung dort, wo Führung Verantwortung übernimmt, nicht dort, wo wir sie ersetzen sollen.",
           "meta": "Führung · Rhythmus · Verantwortung"
         },
         {
@@ -115,7 +115,7 @@
     },
     "teaser": {
       "workshops": "Strukturierte Werkstatt-Workshops zur Klärung, Ausrichtung und Umsetzung mit eindeutigem nächsten Schritt.",
-      "partnership": "Monatliche Begleitung, die Führung, Rhythmus und Fortschritt verbindet, bis Umsetzung greift und Teil der organisationalen Realität wird.",
+      "partnership": "Monatliche Begleitung, die Führung, Rhythmus und Fortschritt verbindet, bis Umsetzung greift und Teil der organisationalen Realität wird.\nDie Transformationspartnerschaft versteht sich als zeitlich begrenzte Mitgestaltung und Mitsteuerung von Führungs- und Entscheidungsprozessen in kritischen Phasen, nicht als operative Umsetzung.",
       "sparring": "Vertrauliches Sparring für anspruchsvolle Führungs- und Entscheidungssituationen: klar, pragmatisch, wirksam."
     },
     "topics": {
@@ -153,7 +153,7 @@
         "Konkreter Umsetzungsplan (30/60/90 Tage) mit klaren Verantwortlichkeiten"
       ],
       "partnership": [
-        "Klarer Steuerungsrhythmus mit definierten Verantwortlichkeiten und Entscheidungsfenstern",
+        "Einen klaren, gemeinsam gestalteten Steuerungs- und Entscheidungsrhythmus mit definierten Verantwortlichkeiten auf Führungs- und Organisationsebene",
         "Transparenz über Fortschritt, Blockaden und Wirkung von Maßnahmen",
         "Verankerung von Zusammenarbeit, Kultur und Identität in Führung und Organisation"
       ],
@@ -182,8 +182,8 @@
   "principlesEyebrow": "Haltung & Orientierung",
   "principlesTitle": "Prinzipien",
   "principles": [
-    "Wir arbeiten mit Führung im laufenden Betrieb: Wir strukturieren Rollen, etablieren Entscheidungs- und Steuerungsrhythmen und machen Verantwortung wirksam.",
-    "Wir machen Wirkung messbar: Wir definieren Kennzahlen, Standards und Routinen und halten diese konsequent nach.",
+    "Wir arbeiten im laufenden Betrieb: Wir gestalten gemeinsam mit der Führung klare Rollen, Entscheidungs- und Steuerungsrhythmen, sodass Verantwortung wirksam übernommen werden kann.",
+    "Wir machen Wirkung messbar: Wir definieren gemeinsam relevante Kennzahlen, Standards und Routinen und verankern deren Nachhaltung über Führungs- und Entscheidungsroutinen.",
     "Wir verankern Veränderung nachhaltig: Wir integrieren neue Arbeitsweisen in Routinen, Zusammenarbeit sowie Kultur und Identität."
   ],
 
@@ -201,7 +201,7 @@
       },
       {
         "verb": "Etablieren",
-        "text": "Wir bauen einen Führungs- und Steuerungsrhythmus auf: Routinen, Kennzahlen und Standards, die Zusammenarbeit und Umsetzung stabil machen.",
+        "text": "Wir gestalten und begleiten den Aufbau eines Führungs- und Steuerungsrhythmus, der Klarheit, Priorisierung und Umsetzung stabil ermöglicht.",
         "out": ["Führungsrhythmus", "KPI-Set & Standards", "Klare Rollen und Schnittstellen"]
       },
       {

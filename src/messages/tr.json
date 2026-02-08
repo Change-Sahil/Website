@@ -23,7 +23,7 @@
     "hero": {
       "kicker": "Endüstriyel ortamlarda uygulama odaklı eşlik",
   "title": "Verimlilik ve liderliğin birlikte işlemesi gerektiğinde",
-  "intro": "Sanayi şirketlerinde kararlar hazırlanmasına rağmen günlük işleyişte etkili biçimde hayata geçmediğinde, liderlik, istikrar ve iş birliği arasında bir gerilim ortaya çıkar.\n\nOrta ölçekli sanayi şirketleri için; netliğin oluştuğu, sorumluluğun üstlenildiği ve kültür ile kimliğin günlük işleyişte yön verdiği bir çerçeve oluşturuyoruz.",
+"intro": "Sanayi şirketlerinde kararlar hazırlanmasına rağmen bunların operasyonel uygulamada etkili hâle gelmemesi, liderlik, istikrar ve iş birliği arasında bir gerilim yaratır.\n\nOrta ölçekli sanayi şirketleri için; netliğin oluştuğu, sorumluluğun üstlenildiği ve kültür ile kimliğin günlük işleyişte yön verdiği bir çerçeve oluşturuyoruz.",
 "ctaPrimary": "Görüşme talep et",
   "ctaSecondary": "Hizmetleri incele",
   "chips": ["Uygulama", "Liderlik", "Operasyonel Mükemmellik", "Kültür ve Kimlik", "M&A"]
@@ -40,7 +40,7 @@
         },
         {
           "title": "Kaldıraç olarak liderlik",
-          "text": "Dönüşüm liderlikle gerçekleşir. Oradan başlar, süreçler, arayüzler ve ekiplerde etki yaratırız.",
+          "text": "Değişimi, liderliğin sorumluluk aldığı yerlerde destekleriz; bizim bunu üstlenmemizin beklendiği yerlerde değil.",
           "meta": "Liderlik · ritim · sorumluluk"
         },
         {
@@ -115,7 +115,7 @@
 },
     "teaser": {
       "workshops": "Netlik, hizalanma ve uygulamaya dönük başlangıç için yapılandırılmış atölye formatları.",
-      "partnership": "Uygulama tam olarak yerleşene ve organizasyonel gerçekliğin bir parçası haline gelene kadar liderlik, ritim ve ilerlemeyi birleştiren aylık eşlik süreci.",
+      "partnership": "Uygulama etkisini gösterip organizasyonel gerçekliğin bir parçası haline gelene kadar liderliği, ritmi ve ilerlemeyi birleştiren aylık eşlik.\nDönüşüm ortaklığı, kritik aşamalarda liderlik ve karar alma süreçlerinin zamana bağlı ortak tasarımı ve ortak yönlendirilmesi olarak anlaşılır; operasyonel uygulama değildir.",
       "sparring": "Zorlu durumlar için gizli sparring: net, pragmatik ve etkili."
     },
     "topics": {
@@ -153,7 +153,7 @@
         "Günlük işe uygun somut uygulama yol haritası (30/60/90 gün)"
       ],
       "partnership": [
-        "Net sorumluluklara sahip bir liderlik ve yönetişim ritmi",
+        "Liderlik ve organizasyon düzeyinde tanımlanmış sorumluluklara sahip, birlikte tasarlanmış net bir yönetişim ve karar alma ritmi.",
     "Aksiyonların, göstergelerin ve etkinin sistematik takibi",
     "İş birliği, kültür ve kurumsal kimliğin günlük liderlik pratiğine yerleştirilmesi"
       ],
@@ -182,9 +182,9 @@
     "principlesEyebrow": "Duruş ve yön",
     "principlesTitle": "İlkeler",
     "principles": [
-      "Günlük işleyişte liderlikle çalışırız: Rolleri netleştirir, karar ve yönetim ritimlerini kurar, sorumluluğu etkin kılarız.",
-      "Etkisini ölçülebilir kılarız: KPI’ları, standartları ve rutinleri tanımlar; tutarlı biçimde takip ederiz.",
-      "Değişimi sürdürülebilir biçimde yerleştiririz: Yeni çalışma biçimlerini rutinlere, iş birliğine, kültüre ve kimliğe entegre ederiz."
+      "Devam eden operasyonlar içinde çalışırız: Liderlikle birlikte net roller ile karar alma ve yönetişim ritimlerini tasarlarız; böylece sorumluluk etkin şekilde üstlenilebilir.",
+      "Etkisini ölçülebilir hale getiririz: İlgili göstergeleri, standartları ve rutinleri birlikte tanımlar ve bunların takibini liderlik ve karar alma rutinleri üzerinden kalıcı hale getiririz.",
+      "Değişimi kalıcı olarak yerleştiririz: Yeni çalışma biçimlerini rutinlere, iş birliğine, kültüre ve kimliğe entegre ederiz."
     ],
 
     "how": {
@@ -201,7 +201,7 @@
         },
         {
           "verb": "Kur",
-          "text": "Bir liderlik ve yönetim ritmi oluştururuz: İş birliğini ve uygulamayı istikrara kavuşturan rutinler, KPI’lar ve standartlar.",
+          "text": "Netlik, önceliklendirme ve uygulamayı istikrarlı biçimde mümkün kılan bir liderlik ve yönetişim ritminin oluşturulmasını tasarlar ve bu sürece eşlik ederiz.",
           "out": ["Liderlik ritmi", "KPI seti ve standartlar", "Net roller ve arayüzler"]
         },
         {

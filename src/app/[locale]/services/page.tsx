@@ -145,7 +145,10 @@ export default function ServicesPage() {
 
               <h2 className="mt-3 section-title">{active.title}</h2>
 
-              <p className="mt-4 text-sm md:text-base leading-7 muted">{active.teaser}</p>
+              <p className="mt-4 text-sm md:text-base leading-7 muted whitespace-pre-line">
+              {active.teaser}
+              </p>
+
 
               {/* Meta: Dauer + 2 Tags (unique) */}
               <div className="mt-6 flex flex-wrap gap-2">

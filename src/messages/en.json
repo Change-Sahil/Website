@@ -23,7 +23,7 @@
     "hero": {
       "kicker": "Implementation-focused support in industrial environments",
   "title": "When efficiency and leadership must work hand in hand",
-  "intro": "When decisions are being prepared in industrial companies but fail to take effect in everyday operations, a tension emerges between leadership, stability, and collaboration.\n\nFor mid-sized industrial companies, we create the framework in which clarity emerges, responsibility is assumed, and culture and identity provide orientation in daily work.",
+"intro": "When decisions are prepared in industrial companies but fail to become effective in operational practice, a tension emerges between leadership, stability, and collaboration.\n\nFor mid-sized industrial companies, we create a framework in which clarity emerges, responsibility is assumed, and culture and identity provide orientation in daily work.",
 "ctaPrimary": "Request a conversation",
   "ctaSecondary": "View services",
   "chips": ["Implementation", "Leadership", "Operational Excellence", "Culture & Identity", "M&A"]
@@ -41,7 +41,7 @@
         },
         {
           "title": "Leadership as leverage",
-          "text": "Transformation succeeds through leadership. That’s where we start and create impact across processes, interfaces and teams.",
+          "text": "We support change where leadership takes responsibility, not where we are expected to replace it.",
           "meta": "Leadership · rhythm · accountability"
         },
         {
@@ -116,7 +116,7 @@
 },
     "teaser": {
       "workshops": "Structured workshop formats to create clarity, alignment and a practical start into execution.",
-      "partnership": "Monthly guidance that connects leadership, rhythm and progress implementation becomes part of the organizational reality.",
+      "partnership": "Monthly accompaniment that connects leadership, rhythm, and progress until execution takes hold and becomes part of the organizational reality.\nThe transformation partnership is understood as a time-limited co-design and co-steering of leadership and decision-making processes in critical phases, not as operational execution.",
       "sparring": "Confidential sparring for demanding situations — clear, pragmatic and effective."
     },
     "topics": {
@@ -154,7 +154,7 @@
         "Concrete execution roadmap (30/60/90 days) that works in daily operations"
       ],
       "partnership": [
-    "A clear governance and leadership rhythm with defined responsibilities",
+    "A clear, jointly designed steering and decision-making rhythm with defined responsibilities at leadership and organizational level",
     "Consistent follow-up on initiatives, metrics and impact",
     "Anchoring collaboration, culture and organizational identity in everyday leadership"
       ],
@@ -183,9 +183,9 @@
     "principlesEyebrow": "Our Orientation",
     "principlesTitle": "Principles",
     "principles": [
-      "We work with leadership in daily operations: We structure roles, establish decision and steering cadences, and make accountability effective.",
-      "We make impact measurable: We define KPIs, standards and routines—and follow through consistently.",
-      "We embed change sustainably: We integrate new ways of working into routines, collaboration, culture and identity."
+      "We work within ongoing operations: Together with leadership, we design clear roles as well as decision-making and steering rhythms, enabling responsibility to be effectively assumed.",
+      "We make impact measurable: Together, we define relevant metrics, standards, and routines and embed their follow-up through leadership and decision-making routines.",
+      "We anchor change sustainably: We integrate new ways of working into routines, collaboration, as well as culture and identity."
     ],
 
     "how": {
@@ -202,7 +202,7 @@
         },
         {
           "verb": "Establish",
-          "text": "We set up a leadership and steering cadence: routines, KPIs and standards that stabilize collaboration and execution.",
+          "text": "We design and accompany the establishment of a leadership and steering rhythm that reliably enables clarity, prioritization, and execution.",
           "out": ["Leadership cadence", "KPI set & standards", "Clear roles and interfaces"]
         },
         {

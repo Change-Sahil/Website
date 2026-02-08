@@ -23,7 +23,7 @@
     "hero": {
       "kicker": "Acompañamiento orientado a la implementación en entornos industriales",
   "title": "Cuando la eficiencia y el liderazgo deben actuar de forma coordinada",
-  "intro": "Cuando en las empresas industriales se preparan decisiones, pero su aplicación no logra consolidarse en la práctica diaria, surge una tensión entre liderazgo, estabilidad y colaboración.\n\nPara empresas industriales medianas, creamos el marco en el que surge la claridad, se asume la responsabilidad y la cultura y la identidad ofrecen orientación en el día a día.",
+"intro": "Cuando en las empresas industriales se preparan decisiones, pero estas no llegan a ser efectivas en el entorno operativo, surge una tensión entre liderazgo, estabilidad y colaboración.\n\nPara empresas industriales medianas, creamos el marco en el que surge la claridad, se asume la responsabilidad y la cultura y la identidad ofrecen orientación en el día a día.",
 "ctaPrimary": "Solicitar conversación",
   "ctaSecondary": "Ver servicios",
   "chips": ["Implementación", "Liderazgo", "Excelencia operativa", "Cultura e identidad", "M&A"]
@@ -40,7 +40,7 @@
         },
         {
           "title": "El liderazgo como palanca",
-          "text": "La transformación funciona a través del liderazgo. Empezamos ahí y generamos impacto en procesos, interfaces y equipos.",
+          "text": "Acompañamos el cambio allí donde el liderazgo asume la responsabilidad, no donde se espera que la sustituyamos.",
           "meta": "Liderazgo · ritmo · responsabilidad"
         },
         {
@@ -115,7 +115,7 @@
 },
     "teaser": {
       "workshops": "Workshops estructurados para crear claridad, alineación y un inicio práctico de la ejecución.",
-      "partnership": "Acompañamiento mensual que conecta liderazgo, ritmo y avance, hasta que la implementación se convierta en parte de la realidad organizacional.",
+      "partnership": "Acompañamiento mensual que conecta liderazgo, ritmo y avance hasta que la ejecución se consolida y pasa a formar parte de la realidad organizativa.\nLa asociación de transformación se concibe como una co-creación y co-dirección temporal de los procesos de liderazgo y toma de decisiones en fases críticas, no como ejecución operativa.",
       "sparring": "Sparring confidencial para situaciones exigentes: claro, pragmático y eficaz."
     },
     "topics": {
@@ -153,9 +153,9 @@
         "Hoja de ruta de ejecución (30/60/90 días) aplicable al día a día"
       ],
       "partnership": [
-        "Ritmo de gestión con responsabilidades claramente definidas",
-    "Seguimiento sistemático de iniciativas, métricas y resultados",
-    "Integración de la colaboración, la cultura y la identidad organizativa en el liderazgo diario"
+        "Un ritmo claro de gobierno y toma de decisiones, diseñado conjuntamente, con responsabilidades definidas a nivel de liderazgo y organización.",
+        "Seguimiento sistemático de iniciativas, métricas y resultados",
+        "Integración de la colaboración, la cultura y la identidad organizativa en el liderazgo diario"
       ],
       "sparring": [
         "Claridad en situaciones complejas o críticas",
@@ -182,9 +182,9 @@
     "principlesEyebrow": "Nuestra orientación",
     "principlesTitle": "Principios",
     "principles": [
-      "Trabajamos con el liderazgo en la operación diaria: estructuramos roles, establecemos ritmos de decisión y control, y hacemos efectiva la responsabilidad.",
-      "Hacemos el impacto medible: definimos KPIs, estándares y rutinas, y damos seguimiento de forma consistente.",
-      "Anclamos el cambio de manera sostenible: integramos nuevas formas de trabajo en rutinas, colaboración, cultura e identidad."
+      "Trabajamos en la operación diaria: junto con la dirección, diseñamos roles claros y ritmos de decisión y gobierno, de modo que la responsabilidad pueda asumirse de manera efectiva.",
+      "Hacemos medible el impacto: definimos conjuntamente indicadores, estándares y rutinas relevantes y aseguramos su seguimiento a través de rutinas de liderazgo y toma de decisiones.",
+      "Anclamos el cambio de forma sostenible: integramos nuevas formas de trabajo en las rutinas, la colaboración, así como en la cultura y la identidad."
     ],
 
     "how": {
@@ -201,7 +201,7 @@
         },
         {
           "verb": "Establecer",
-          "text": "Creamos un ritmo de liderazgo y control: rutinas, KPIs y estándares que estabilizan la colaboración y la ejecución.",
+          "text": "Diseñamos y acompañamos la implementación de un ritmo de liderazgo y gobierno que permite de forma estable claridad, priorización y ejecución.",
           "out": ["Ritmo de liderazgo", "Conjunto de KPIs y estándares", "Roles e interfaces claros"]
         },
         {

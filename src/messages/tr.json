@@ -23,7 +23,7 @@
     "hero": {
       "kicker": "Endüstriyel ortamlarda uygulama odaklı eşlik",
   "title": "Verimlilik ve liderliğin birlikte işlemesi gerektiğinde",
-"intro": "Sanayi şirketlerinde kararlar hazırlanmasına rağmen bunların operasyonel uygulamada etkili hâle gelmemesi, liderlik, istikrar ve iş birliği arasında bir gerilim yaratır.\n\nOrta ölçekli sanayi şirketleri için; netliğin oluştuğu, sorumluluğun üstlenildiği ve kültür ile kimliğin günlük işleyişte yön verdiği bir çerçeve oluşturuyoruz.",
+"intro": "Dönüşüm süreçleri veya birleşme ve satın alma (M&A) entegrasyonları tıkandığında, sorun çoğunlukla konseptte değil, liderlik ile güvenilirlik arasındaki dengededir. Bu kritik geçişleri yönetir ve karmaşık dönemlerde iş birliğini yeniden etkili hale getiririz.\n\nBu sayede orta ölçekli sanayi şirketleri için, netliğin oluştuğu, sorumluluğun üstlenildiği ve kültür ile kimliğin günlük hayatta yön verdiği bir çerçeve oluştururuz.",
 "ctaPrimary": "Görüşme talep et",
   "ctaSecondary": "Hizmetleri incele",
   "chips": ["Uygulama", "Liderlik", "Operasyonel Mükemmellik", "Kültür ve Kimlik", "M&A"]
@@ -44,8 +44,8 @@
           "meta": "Liderlik · ritim · sorumluluk"
         },
         {
-          "title": "Yöntemlerden çok etki",
-          "text": "Yöntemler amaç değil araçtır. Asıl önemli olan, sonuçta gerçekten karşılık bulan ve kalıcı olandır.",
+          "title": "Geçişleri etkili hale getirmek",
+          "text": "Verimlilik, kültür ve kimliğin yeniden bir araya gelmesi gerektiğinde, örneğin M&A veya dönüşüm süreçlerinde",
           "meta": "Ölçülebilir · etkili · sürdürülebilir"
         }
       ]

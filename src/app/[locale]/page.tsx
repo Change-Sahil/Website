@@ -55,8 +55,8 @@ export default function HomePage() {
   object-cover
   object-[left_65%]
   md:h-[360px]
-  lg:h-[370px]
-  xl:h-[410px]
+  lg:h-[400px]
+  xl:h-[440px]
 "
 
 

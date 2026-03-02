@@ -4,14 +4,14 @@ import { Suspense } from "react";
 import ApproachClient from "./approach-client";
 
 const BASE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://change-werkstatt-sahil.de";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://change-werkstatt-sahil.de";
 
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const { locale } = params;
+  const { locale } = await params;
 
   const title: Record<string, string> = {
     de: "Vorgehen: Klären, Etablieren, Verankern | Change-Werkstatt Sahil",

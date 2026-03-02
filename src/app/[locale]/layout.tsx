@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import Script from "next/script";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -12,11 +13,10 @@ import { locales, isLocale, type Locale } from "@/i18n/config";
 const BASE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://change-werkstatt-sahil.de";
 
-// Vor Launch: false/false lassen
+// Vor Launch: false/false lassen (zum Launch auf true/true stellen)
 const INDEX = false;
 const FOLLOW = false;
 
-// Next 15/16: params können als Promise kommen -> immer asynchron behandeln
 type LayoutProps = {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
@@ -30,18 +30,27 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const titles: Record<string, string> = {
-    de: "Umsetzungsbegleitung für Industrie & Mittelstand | Change-Werkstatt Sahil",
-    en: "Operational change support for industry & SMEs | Change-Werkstatt Sahil",
-    es: "Acompañamiento operativo en procesos de cambio | Change-Werkstatt Sahil",
-    tr: "Karmaşık uygulama süreçlerinde operasyonel destek | Change-Werkstatt Sahil",
+    de: "Transformationsberatung für Industrie & Mittelstand | M&A, Restrukturierung, Umsetzung",
+    en: "Transformational Change & Implementation Support for Industry & SMEs",
+    es: "Consultoría de transformación e implementación para industria y medianas empresas",
+    tr: "Sanayi ve KOBİ'ler için dönüşüm ve uygulama danışmanlığı",
   };
 
   const descriptions: Record<string, string> = {
-    de: "Begleitung von Führung und Teams in anspruchsvollen Umsetzungssituationen – besonders bei Transformation, M&A und Restrukturierung.",
-    en: "Support for leadership and teams in demanding implementation situations—especially during transformation, M&A and restructuring.",
-    es: "Acompañamos a dirección y equipos en situaciones exigentes de implementación, especialmente en transformación, M&A y reestructuración.",
-    tr: "Liderlik ve ekipleri zorlu uygulama süreçlerinde destekliyoruz—özellikle dönüşüm, M&A ve yeniden yapılanma dönemlerinde.",
+    de: "Wir begleiten Führung und Teams in anspruchsvollen Transformations-, M&A- und Restrukturierungsprojekten. Werkstattansatz mit klarem Fokus auf wirksame Umsetzung.",
+    en: "We support leadership and teams in industrial and mid-market transformations, M&A integrations and restructuring with a hands-on execution mindset.",
+    es: "Acompañamos a líderes y equipos en transformaciones, integraciones M&A y reestructuraciones con un enfoque práctico y orientado a resultados.",
+    tr: "Liderlik ve ekipleri dönüşüm, M&A entegrasyonu ve yeniden yapılanma süreçlerinde uygulama odaklı bir yaklaşımla destekliyoruz.",
   };
+
+  const ogLocale: Record<string, string> = {
+    de: "de_DE",
+    en: "en_US",
+    es: "es_ES",
+    tr: "tr_TR",
+  };
+
+  const url = `${BASE_URL}/${locale}`;
 
   return {
     title: titles[locale] ?? titles.de,
@@ -53,7 +62,7 @@ export async function generateMetadata({
     },
 
     alternates: {
-      canonical: `${BASE_URL}/${locale}`,
+      canonical: url,
       languages: {
         de: `${BASE_URL}/de`,
         en: `${BASE_URL}/en`,
@@ -65,10 +74,10 @@ export async function generateMetadata({
     openGraph: {
       title: titles[locale] ?? titles.de,
       description: descriptions[locale] ?? descriptions.de,
-      url: `${BASE_URL}/${locale}`,
+      url,
       siteName: "Change-Werkstatt Sahil",
       type: "website",
-      locale,
+      locale: ogLocale[locale] ?? "de_DE",
     },
 
     twitter: {
@@ -95,6 +104,36 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
+      {/* Schema.org (unsichtbar) */}
+      <Script
+        id="schema-org"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": `${BASE_URL}/#organization`,
+                name: "Change-Werkstatt Sahil",
+                url: BASE_URL,
+                logo: `${BASE_URL}/apple-touch-icon.png`,
+                sameAs: ["https://www.linkedin.com/in/seref-sahil-78304aa4/"],
+              },
+              {
+                "@type": "WebSite",
+                "@id": `${BASE_URL}/#website`,
+                url: BASE_URL,
+                name: "Change-Werkstatt Sahil",
+                publisher: { "@id": `${BASE_URL}/#organization` },
+                inLanguage: locale,
+              },
+            ],
+          }),
+        }}
+      />
+
       <Header />
       <main className="page-wrap pt-24 pb-10 sm:pt-24 sm:pb-12">
         <div className="page-stack">{children}</div>

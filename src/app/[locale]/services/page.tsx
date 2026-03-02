@@ -1,4 +1,3 @@
-// src/app/[locale]/services/page.tsx
 import type { Metadata } from "next";
 import ServicesClient from "./services-client";
 
@@ -13,17 +12,17 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const title: Record<string, string> = {
-    de: "Leistungen: Workshops, Transformationspartnerschaft, Sparring | Change-Werkstatt Sahil",
-    en: "Services: Workshops, Transformation Partnership, Executive Sparring | Change-Werkstatt Sahil",
-    es: "Servicios: Talleres, Alianza de Transformación, Sparring Ejecutivo | Change-Werkstatt Sahil",
-    tr: "Hizmetler: Atölyeler, Dönüşüm Ortaklığı, Executive Sparring | Change-Werkstatt Sahil",
+    de: "Transformationsberatung, Workshops & Executive Sparring für Industrie",
+    en: "Transformation Consulting, Workshops & Executive Sparring",
+    es: "Consultoría de transformación, talleres y sparring ejecutivo",
+    tr: "Dönüşüm danışmanlığı, atölyeler ve executive sparring",
   };
 
   const description: Record<string, string> = {
-    de: "Formate für Führung und Teams in anspruchsvollen Umsetzungssituationen: Werkstatt-Workshops, Transformationspartnerschaft und Executive Sparring.",
-    en: "Formats for leadership and teams in demanding implementation situations: workshops, transformation partnership and executive sparring.",
-    es: "Formatos para dirección y equipos en situaciones exigentes de implementación: talleres, alianza de transformación y sparring ejecutivo.",
-    tr: "Zorlu uygulama süreçlerinde liderlik ve ekipler için formatlar: atölyeler, dönüşüm ortaklığı ve executive sparring.",
+    de: "Formate für Industrie- und Mittelstandsunternehmen: Transformationspartnerschaft, Werkstatt-Workshops und Executive Sparring für anspruchsvolle Umsetzungssituationen.",
+    en: "Formats for industrial and mid-market companies: transformation partnership, workshops and executive sparring for complex implementation challenges.",
+    es: "Formatos para empresas industriales y medianas: alianza de transformación, talleres y sparring ejecutivo para retos complejos de implementación.",
+    tr: "Sanayi ve orta ölçekli şirketler için formatlar: dönüşüm ortaklığı, atölyeler ve karmaşık uygulama süreçleri için executive sparring.",
   };
 
   const ogLocale: Record<string, string> = {
@@ -54,6 +53,11 @@ export async function generateMetadata({
       siteName: "Change-Werkstatt Sahil",
       type: "website",
       locale: ogLocale[locale] ?? "de_DE",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: title[locale] ?? title.de,
+      description: description[locale] ?? description.de,
     },
   };
 }

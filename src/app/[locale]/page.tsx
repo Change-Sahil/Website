@@ -13,18 +13,26 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
+  // SEO-optimierte (unsichtbare) Titles
   const title: Record<string, string> = {
-    de: "Umsetzungsbegleitung für Industrie & Mittelstand | Change-Werkstatt Sahil",
-    en: "Operational change support for industry & SMEs | Change-Werkstatt Sahil",
-    es: "Acompañamiento operativo en procesos de cambio | Change-Werkstatt Sahil",
-    tr: "Karmaşık uygulama süreçlerinde operasyonel destek | Change-Werkstatt Sahil",
+    de: "Transformationsberatung für Industrie & Mittelstand | M&A, Restrukturierung, Umsetzung",
+    en: "Transformational Change & Implementation Support for Industry & SMEs",
+    es: "Consultoría de transformación e implementación para industria y medianas empresas",
+    tr: "Sanayi ve KOBİ'ler için dönüşüm ve uygulama danışmanlığı",
   };
 
   const description: Record<string, string> = {
-    de: "Begleitung von Führung und Teams in anspruchsvollen Umsetzungssituationen – besonders bei Transformation, M&A und Restrukturierung.",
-    en: "Support for leadership and teams in demanding implementation situations—especially during transformation, M&A and restructuring.",
-    es: "Acompañamos a dirección y equipos en situaciones exigentes de implementación, especialmente en transformación, M&A y reestructuración.",
-    tr: "Liderlik ve ekipleri zorlu uygulama süreçlerinde destekliyoruz—özellikle dönüşüm, M&A ve yeniden yapılanma dönemlerinde.", 
+    de: "Wir begleiten Führung und Teams in anspruchsvollen Transformations-, M&A- und Restrukturierungsprojekten. Werkstattansatz mit klarem Fokus auf wirksame Umsetzung.",
+    en: "We support leadership and teams in industrial and mid-market transformations, M&A integrations and restructuring with a hands-on execution mindset.",
+    es: "Acompañamos a líderes y equipos en transformaciones, integraciones M&A y reestructuraciones con un enfoque práctico y orientado a resultados.",
+    tr: "Liderlik ve ekipleri dönüşüm, M&A entegrasyonu ve yeniden yapılanma süreçlerinde uygulama odaklı bir yaklaşımla destekliyoruz.",
+  };
+
+  const ogLocale: Record<string, string> = {
+    de: "de_DE",
+    en: "en_US",
+    es: "es_ES",
+    tr: "tr_TR",
   };
 
   const url = `${BASE_URL}/${locale}`;
@@ -47,7 +55,12 @@ export async function generateMetadata({
       url,
       siteName: "Change-Werkstatt Sahil",
       type: "website",
-      locale,
+      locale: ogLocale[locale] ?? "de_DE",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: title[locale] ?? title.de,
+      description: description[locale] ?? description.de,
     },
   };
 }

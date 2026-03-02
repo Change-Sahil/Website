@@ -1,4 +1,3 @@
-// src/app/[locale]/approach/page.tsx
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import ApproachClient from "./approach-client";
@@ -14,17 +13,24 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const title: Record<string, string> = {
-    de: "Vorgehen: Klären, Etablieren, Verankern | Change-Werkstatt Sahil",
-    en: "Approach: Clarify, establish, embed | Change-Werkstatt Sahil",
-    es: "Enfoque: Aclarar, establecer, consolidar | Change-Werkstatt Sahil",
-    tr: "Yaklaşım: Netleştir, kur, kalıcılaştır | Change-Werkstatt Sahil",
+    de: "Vorgehen in Transformationsprojekten | Klären, Etablieren, Verankern",
+    en: "Approach in transformation projects | Clarify, establish, embed",
+    es: "Enfoque en proyectos de transformación | Aclarar, establecer, consolidar",
+    tr: "Dönüşüm projelerinde yaklaşım | Netleştir, kur, kalıcılaştır",
   };
 
   const description: Record<string, string> = {
-    de: "Unser Werkstattansatz im laufenden Betrieb: Klarheit schaffen, Führungsrhythmus etablieren und Umsetzung nachhaltig verankern.",
-    en: "Our workshop approach in day-to-day operations: create clarity, establish leadership cadence and embed execution sustainably.",
-    es: "Nuestro enfoque práctico en el día a día: claridad, ritmo de liderazgo y consolidación sostenible de la ejecución.",
-    tr: "Günlük operasyonlarda atölye yaklaşımı: netlik, liderlik ritmi ve sürdürülebilir uygulama.",
+    de: "Strukturiertes Vorgehen in Transformations-, M&A- und Restrukturierungsprojekten: Diagnose, Intervention und nachhaltige Verankerung in Führung und Organisation.",
+    en: "A structured approach for transformations, M&A integrations and restructurings: diagnosis, interventions and sustainable embedding in leadership and organization.",
+    es: "Enfoque estructurado para transformaciones, integraciones M&A y reestructuraciones: diagnóstico, intervención y consolidación sostenible.",
+    tr: "Dönüşüm, M&A entegrasyonu ve yeniden yapılanma süreçleri için yapılandırılmış yaklaşım: teşhis, müdahale ve kalıcılaştırma.",
+  };
+
+  const ogLocale: Record<string, string> = {
+    de: "de_DE",
+    en: "en_US",
+    es: "es_ES",
+    tr: "tr_TR",
   };
 
   const url = `${BASE_URL}/${locale}/approach`;
@@ -47,7 +53,12 @@ export async function generateMetadata({
       url,
       siteName: "Change-Werkstatt Sahil",
       type: "website",
-      locale,
+      locale: ogLocale[locale] ?? "de_DE",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: title[locale] ?? title.de,
+      description: description[locale] ?? description.de,
     },
   };
 }

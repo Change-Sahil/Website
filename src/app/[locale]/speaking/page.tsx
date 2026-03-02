@@ -1,4 +1,3 @@
-// src/app/[locale]/speaking/page.tsx
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import SpeakingClient from "./speaking-client";
@@ -14,17 +13,24 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const title: Record<string, string> = {
-    de: "Vorträge & Lehre zu Führung, Change & Umsetzung | Change-Werkstatt Sahil",
-    en: "Speaking & teaching on leadership, change & execution | Change-Werkstatt Sahil",
-    es: "Ponencias y docencia sobre liderazgo, cambio y ejecución | Change-Werkstatt Sahil",
-    tr: "Liderlik, değişim ve uygulama üzerine konuşmalar | Change-Werkstatt Sahil",
+    de: "Vorträge zu Transformation, Führung & Umsetzung | Industrie",
+    en: "Speaking on transformation, leadership & execution",
+    es: "Ponencias sobre transformación, liderazgo y ejecución",
+    tr: "Dönüşüm, liderlik ve uygulama üzerine konuşmalar",
   };
 
   const description: Record<string, string> = {
-    de: "Keynotes, Trainings und Lehre mit Werkstattfokus: Umsetzung, Führung, Transformation, M&A und Restrukturierung.",
-    en: "Keynotes, trainings and teaching with a practical workshop mindset: execution, leadership, transformation, M&A and restructuring.",
-    es: "Keynotes, talleres y docencia con enfoque práctico: ejecución, liderazgo, transformación, M&A y reestructuración.",
-    tr: "Uygulama odaklı yaklaşım: keynote, eğitim ve dersler—liderlik, dönüşüm, M&A ve yeniden yapılanma.",
+    de: "Keynotes, Trainings und Lehre zu Transformationsführung, Umsetzung im Alltag sowie M&A-Integration und Restrukturierung im industriellen Umfeld.",
+    en: "Keynotes, trainings and teaching on transformation leadership, day-to-day execution, M&A integration and restructuring in industrial contexts.",
+    es: "Keynotes, talleres y docencia sobre liderazgo en transformación, ejecución en el día a día, integración M&A y reestructuración.",
+    tr: "Transformasyon liderliği, günlük uygulama, M&A entegrasyonu ve yeniden yapılanma üzerine keynote ve eğitimler.",
+  };
+
+  const ogLocale: Record<string, string> = {
+    de: "de_DE",
+    en: "en_US",
+    es: "es_ES",
+    tr: "tr_TR",
   };
 
   const url = `${BASE_URL}/${locale}/speaking`;
@@ -47,7 +53,12 @@ export async function generateMetadata({
       url,
       siteName: "Change-Werkstatt Sahil",
       type: "website",
-      locale,
+      locale: ogLocale[locale] ?? "de_DE",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: title[locale] ?? title.de,
+      description: description[locale] ?? description.de,
     },
   };
 }

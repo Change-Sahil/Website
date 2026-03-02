@@ -1,4 +1,3 @@
-// src/app/[locale]/about/page.tsx
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import AboutClient from "./about-client";
@@ -14,17 +13,24 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const title: Record<string, string> = {
-    de: "Über uns: Profil & Erfahrung | Change-Werkstatt Sahil",
-    en: "About: Profile & experience | Change-Werkstatt Sahil",
-    es: "Sobre nosotros: Perfil y experiencia | Change-Werkstatt Sahil",
-    tr: "Hakkımızda: Profil ve deneyim | Change-Werkstatt Sahil",
+    de: "Transformationsberater mit Industrie- und M&A-Erfahrung | Seref Sahil",
+    en: "Transformation advisor with industry & M&A experience | Seref Sahil",
+    es: "Consultor de transformación con experiencia en industria y M&A | Seref Sahil",
+    tr: "Sanayi ve M&A deneyimli dönüşüm danışmanı | Seref Sahil",
   };
 
   const description: Record<string, string> = {
-    de: "Erfahrung aus Industrie, Führung und Organisationsentwicklung – mit Fokus auf wirksame Umsetzung im Alltag.",
-    en: "Experience across industry, leadership and organizational development—focused on execution that works in real operations.",
-    es: "Experiencia en industria, liderazgo y desarrollo organizacional, con foco en ejecución real.",
-    tr: "Sanayi, liderlik ve organizasyonel gelişim deneyimi—gerçek uygulamaya odaklı.",
+    de: "Erfahrung in Industrie, Mittelstand und komplexen Transformationssituationen. Fokus auf Umsetzung, Führung und nachhaltige Performance.",
+    en: "Experience across industry, mid-market and complex transformation situations. Focus on execution, leadership and sustainable performance.",
+    es: "Experiencia en industria, medianas empresas y transformaciones complejas. Enfoque en ejecución, liderazgo y rendimiento sostenible.",
+    tr: "Sanayi, orta ölçekli şirketler ve karmaşık dönüşüm durumlarında deneyim. Odak: uygulama, liderlik ve sürdürülebilir performans.",
+  };
+
+  const ogLocale: Record<string, string> = {
+    de: "de_DE",
+    en: "en_US",
+    es: "es_ES",
+    tr: "tr_TR",
   };
 
   const url = `${BASE_URL}/${locale}/about`;
@@ -47,7 +53,12 @@ export async function generateMetadata({
       url,
       siteName: "Change-Werkstatt Sahil",
       type: "website",
-      locale,
+      locale: ogLocale[locale] ?? "de_DE",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: title[locale] ?? title.de,
+      description: description[locale] ?? description.de,
     },
   };
 }

@@ -24,7 +24,7 @@ export async function generateMetadata({
     de: "Begleitung von Führung und Teams in anspruchsvollen Umsetzungssituationen – besonders bei Transformation, M&A und Restrukturierung.",
     en: "Support for leadership and teams in demanding implementation situations—especially during transformation, M&A and restructuring.",
     es: "Acompañamos a dirección y equipos en situaciones exigentes de implementación, especialmente en transformación, M&A y reestructuración.",
-    tr: "Liderlik ve ekipleri zorlu uygulama süreçlerinde destekliyoruz—özellikle dönüşüm, M&A ve yeniden yapılanma dönemlerinde.",
+    tr: "Liderlik ve ekipleri zorlu uygulama süreçlerinde destekliyoruz—özellikle dönüşüm, M&A ve yeniden yapılanma dönemlerinde.", 
   };
 
   const url = `${BASE_URL}/${locale}`;

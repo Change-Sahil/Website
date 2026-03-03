@@ -194,7 +194,7 @@ export default function DatenschutzPage() {
             Wir können diese Datenschutzerklärung anpassen, wenn sich die Rechts-
             oder Faktenlage ändert oder wenn wir neue Dienste einsetzen.
           </p>
-          <p>Stand: {new Date().toLocaleDateString("de-DE")}</p>
+          <p>Stand: März 2026</p>
         </section>
       </div>
     </div>

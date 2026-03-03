@@ -14,8 +14,8 @@ const BASE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://change-werkstatt-sahil.de";
 
 // Vor Launch: false/false lassen (zum Launch auf true/true stellen)
-const INDEX = false;
-const FOLLOW = false;
+const INDEX = true;
+const FOLLOW = true;
 
 type LayoutProps = {
   children: React.ReactNode;

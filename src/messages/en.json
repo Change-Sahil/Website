@@ -11,11 +11,11 @@
     "menuClose": "Close menu"
   },
   "footer": {
-    "tagline": "Efficiency and culture in balance",
-    "imprint": "Imprint",
-    "privacy": "Privacy",
-    "cta": "Request a conversation"
-  },
+  "location": "Aalen · Germany",
+  "imprint": "Legal notice",
+  "privacy": "Privacy",
+  "bottomLine": "Industry & SMEs · Execution support"
+},
 
   "home": {
     "blocks": [],
@@ -322,12 +322,107 @@
     "companyPlaceholder": "Company",
     "details": "Message",
     "detailsPlaceholder": "What is it about?\nContext, objective, current situation …",
-    "consent": "I agree that my information will be processed for the purpose of contacting me.",
+    "consent": "I consent to the processing of my information for contacting me in accordance with the <privacy>Privacy Policy</privacy>.",
     "submit": "Send message",
     "sending": "Sending …",
     "success": "Message sent. Thank you!",
     "errorSend": "Sending failed. Please try again later.",
     "errorNetwork": "Network error. Please try again later."
   }
-}
+},
+"privacy": {
+    "title": "Privacy Policy",
+    "intro": {
+      "p1": "With this Privacy Policy we inform you about the processing of personal data when you use our website. Personal data is any data that can be used to identify you personally.",
+      "p2": "This website provides information about our services and enables you to contact us."
+    },
+    "controller": {
+      "title": "Controller",
+      "text": "Seref Sahil (Change-Werkstatt Sahil)\nWiesendorfstraße 6\n73433 Aalen\nGermany\nEmail: seref.sahil@change-werkstatt-sahil.com\nPhone: +49 176 84076507"
+    },
+    "purposes": {
+      "title": "Purposes and legal bases",
+      "p1": "We process personal data for the following purposes:",
+      "list": [
+        "Provision of the website (connection data/server logs)",
+        "Handling requests via the contact form",
+        "Communication by email or phone",
+        "IT security and abuse prevention"
+      ],
+      "legal": "The legal bases are in particular Art. 6(1)(b) GDPR (pre-contractual measures/contract), Art. 6(1)(f) GDPR (legitimate interests in secure operation and optimization) and—where required—Art. 6(1)(a) GDPR (consent)."
+    },
+    "hosting": {
+      "title": "Hosting and website delivery",
+      "p1": "Our website is hosted by Vercel Inc. When you access the website, technically necessary data is processed to deliver the website (e.g., IP address, date/time, requested page, referrer URL, browser/operating system).",
+      "p2": "This data is typically processed in server log files and is used to ensure secure and stable operation of the website.",
+      "legal": "Legal basis: Art. 6(1)(f) GDPR (legitimate interest in secure operation)."
+    },
+    "contact": {
+      "title": "Contact and contact form",
+      "p1": "If you contact us via the contact form or email, we process the information you provide (e.g., name, email address, company, message) to handle your request and communicate with you.",
+      "legal": "Legal basis: Art. 6(1)(b) GDPR (pre-contractual measures) and Art. 6(1)(f) GDPR (efficient handling of inquiries).",
+      "retention": "We store inquiries as long as necessary for processing and documentation and then delete them in accordance with statutory retention periods."
+    },
+    "emailProvider": {
+      "title": "Email delivery / service provider (Resend)",
+      "p1": "For sending and delivering emails (e.g., contact inquiries), a technical service provider may be used (e.g., Resend). Personal data (e.g., name, email address, message content) may be processed in this context.",
+      "legal": "Legal basis: Art. 6(1)(b) GDPR (handling your request) and Art. 6(1)(f) GDPR (reliable delivery/communication)."
+    },
+    "analytics": {
+      "title": "Cookies, tracking and Vercel Analytics",
+      "p1": "We do not use marketing or retargeting cookies.",
+      "p2": "We use Vercel Analytics to evaluate the use of our website statistically. Only anonymized usage data (e.g., page views, device type, approximate region) is processed. No user profiles are created and no marketing tracking takes place.",
+      "p3": "Vercel Analytics operates without marketing cookies. Legal basis: Art. 6(1)(f) GDPR (legitimate interest in technical optimization and statistical evaluation).",
+      "future": "If we introduce tracking or marketing tools in the future, we will inform you here separately and obtain consent where required."
+    },
+    "transfers": {
+      "title": "Recipients and international transfers",
+      "p1": "As part of hosting and email delivery, service providers may process data on our behalf. Processing in third countries (e.g., the USA) cannot be ruled out. Where required, we ensure appropriate safeguards (e.g., Standard Contractual Clauses)."
+    },
+    "rights": {
+      "title": "Your rights",
+      "p1": "You have the following rights under the GDPR:",
+      "list": [
+        "Right of access (Art. 15 GDPR)",
+        "Right to rectification (Art. 16 GDPR)",
+        "Right to erasure (Art. 17 GDPR)",
+        "Right to restriction of processing (Art. 18 GDPR)",
+        "Right to data portability (Art. 20 GDPR)",
+        "Right to object (Art. 21 GDPR)",
+        "Right to withdraw consent (Art. 7(3) GDPR)"
+      ],
+      "p2": "You also have the right to lodge a complaint with a supervisory authority (Art. 77 GDPR)."
+    },
+    "security": {
+      "title": "Data security",
+      "p1": "We use appropriate technical and organizational measures to protect your data against loss, misuse and unauthorized access. However, complete security of data transmission over the internet cannot be guaranteed."
+    },
+    "changes": {
+      "title": "Status and changes",
+      "p1": "We may update this Privacy Policy if the legal/factual situation changes or if we introduce new services.",
+      "status": "Status: March 2026"
+    }
+  },
+  "imprint": {
+    "title": "Legal Notice (Imprint)",
+    "tmc": {
+      "title": "Information pursuant to § 5 TMG (Germany)",
+      "text": "Change-Werkstatt Sahil\nSeref Sahil\nWiesendorfstraße 6\n73433 Aalen\nGermany"
+    },
+    "contact": {
+      "text": "Phone: +49 176 84076507\nEmail: seref.sahil@change-werkstatt-sahil.com"
+    },
+    "activity": {
+      "title": "Self-employed professional activity",
+      "text": "Independent consulting on organizational development, leadership and transformation processes."
+    },
+    "vat": {
+      "title": "VAT ID pursuant to § 27a UStG (Germany)",
+      "text": "DE460120074"
+    },
+    "mstv": {
+      "title": "Responsible for content pursuant to § 18(2) MStV (Germany)",
+      "text": "Seref Sahil\nWiesendorfstraße 6\n73433 Aalen"
+    }
+  }
 }

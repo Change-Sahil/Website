@@ -1,12 +1,13 @@
 // src/app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 function getBaseUrl() {
   const raw =
-    process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://change-werkstatt-sahil.de";
+    process.env.NEXT_PUBLIC_SITE_URL?.trim() ||
+    "https://change-werkstatt-sahil.de";
 
-  // Falls jemand versehentlich "change-werkstatt-sahil.de" ohne Protokoll setzt
   if (!raw.startsWith("http://") && !raw.startsWith("https://")) {
     return `https://${raw}`;
   }
@@ -23,7 +24,8 @@ export const metadata: Metadata = {
     template: "%s | Change-Werkstatt Sahil",
   },
 
-  description: "Transformations- und Umsetzungsbegleitung für Industrie & Mittelstand.",
+  description:
+    "Transformations- und Umsetzungsbegleitung für Industrie & Mittelstand.",
 
   icons: {
     icon: [{ url: "/favicon.ico" }],
@@ -33,10 +35,17 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="de" suppressHydrationWarning>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

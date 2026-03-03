@@ -11,11 +11,11 @@
     "menuClose": "Menüyü kapat"
   },
   "footer": {
-    "tagline": "Verimlilik ve kültür dengede",
-    "imprint": "Künye",
-    "privacy": "Gizlilik",
-    "cta": "Görüşme talep et"
-  },
+  "location": "Aalen · Almanya",
+  "imprint": "Künye",
+  "privacy": "Gizlilik",
+  "bottomLine": "Sanayi ve KOBİ’ler · Uygulama desteği"
+},
 
   "home": {
     "blocks": [],
@@ -321,12 +321,107 @@
     "companyPlaceholder": "Şirket",
     "details": "Mesaj",
     "detailsPlaceholder": "Konu nedir?\nBağlam, hedef, mevcut durum …",
-    "consent": "Benimle iletişime geçilmesi amacıyla bilgilerimin işlenmesini kabul ediyorum.",
+    "consent": "Bilgilerimin benimle iletişime geçilmesi amacıyla <privacy>Gizlilik Politikası</privacy> uyarınca işlenmesini kabul ediyorum.",
     "submit": "Mesaj gönder",
     "sending": "Gönderiliyor …",
     "success": "Mesaj gönderildi. Teşekkürler!",
     "errorSend": "Gönderme başarısız oldu. Lütfen daha sonra tekrar deneyin.",
     "errorNetwork": "Ağ hatası. Lütfen daha sonra tekrar deneyin."
   }
-}
+},
+"privacy": {
+    "title": "Gizlilik Politikası",
+    "intro": {
+      "p1": "Bu Gizlilik Politikası ile web sitemizi kullandığınızda kişisel verilerin nasıl işlendiği hakkında bilgi veriyoruz. Kişisel veriler, kimliğinizin belirlenmesine imkân veren tüm verilerdir.",
+      "p2": "Bu web sitesi hizmetlerimiz hakkında bilgi vermek ve bizimle iletişime geçmenizi sağlamak amacıyla kullanılmaktadır."
+    },
+    "controller": {
+      "title": "Veri sorumlusu",
+      "text": "Seref Sahil (Change-Werkstatt Sahil)\nWiesendorfstraße 6\n73433 Aalen\nAlmanya\nE-posta: seref.sahil@change-werkstatt-sahil.com\nTelefon: +49 176 84076507"
+    },
+    "purposes": {
+      "title": "Amaçlar ve hukuki dayanaklar",
+      "p1": "Kişisel verileri aşağıdaki amaçlarla işleriz:",
+      "list": [
+        "Web sitesinin sunulması (bağlantı verileri/sunucu logları)",
+        "İletişim formu üzerinden gelen taleplerin işlenmesi",
+        "E-posta veya telefon ile iletişim",
+        "BT güvenliği ve kötüye kullanımın önlenmesi"
+      ],
+      "legal": "Hukuki dayanaklar özellikle GDPR Madde 6(1)(b) (sözleşme/sözleşme öncesi işlemler), GDPR Madde 6(1)(f) (güvenli işletim ve optimizasyona yönelik meşru menfaat) ve gerekli hallerde GDPR Madde 6(1)(a) (açık rıza) hükümleridir."
+    },
+    "hosting": {
+      "title": "Barındırma ve web sitesinin sunulması",
+      "p1": "Web sitemiz Vercel Inc. tarafından barındırılmaktadır. Siteye eriştiğinizde, web sitesini sunmak için teknik olarak gerekli veriler işlenir (örn. IP adresi, tarih/saat, görüntülenen sayfa, yönlendiren URL, tarayıcı/işletim sistemi).",
+      "p2": "Bu veriler genellikle sunucu log dosyalarında işlenir ve web sitesinin güvenli ve istikrarlı çalışması için kullanılır.",
+      "legal": "Hukuki dayanak: GDPR Madde 6(1)(f) (güvenli işletime ilişkin meşru menfaat)."
+    },
+    "contact": {
+      "title": "İletişim ve iletişim formu",
+      "p1": "İletişim formu veya e-posta yoluyla bizimle iletişime geçtiğinizde, talebinizi değerlendirmek ve sizinle iletişim kurmak için verdiğiniz bilgileri (örn. ad, e-posta, şirket, mesaj) işleriz.",
+      "legal": "Hukuki dayanak: GDPR Madde 6(1)(b) (sözleşme öncesi işlemler) ve GDPR Madde 6(1)(f) (taleplerin etkin şekilde işlenmesi).",
+      "retention": "Talepleri, işlem ve belgeleme için gerekli olduğu sürece saklar, ardından yasal saklama süreleri çerçevesinde sileriz."
+    },
+    "emailProvider": {
+      "title": "E-posta gönderimi / hizmet sağlayıcı (Resend)",
+      "p1": "E-posta gönderimi ve teslimi için (örn. iletişim talepleri) teknik bir hizmet sağlayıcı kullanılabilir (örn. Resend). Bu kapsamda kişisel veriler (örn. ad, e-posta, mesaj içeriği) işlenebilir.",
+      "legal": "Hukuki dayanak: GDPR Madde 6(1)(b) (talebin işlenmesi) ve GDPR Madde 6(1)(f) (güvenilir teslim/iletişim)."
+    },
+    "analytics": {
+      "title": "Çerezler, izleme ve Vercel Analytics",
+      "p1": "Pazarlama veya yeniden hedefleme (retargeting) çerezleri kullanmıyoruz.",
+      "p2": "Web sitemizin kullanımını istatistiksel olarak değerlendirmek için Vercel Analytics kullanıyoruz. Yalnızca anonimleştirilmiş kullanım verileri (örn. sayfa görüntüleme, cihaz türü, yaklaşık bölge) işlenir. Kullanıcı profili oluşturulmaz ve pazarlama amaçlı izleme yapılmaz.",
+      "p3": "Vercel Analytics pazarlama çerezleri kullanmadan çalışır. Hukuki dayanak: GDPR Madde 6(1)(f) (teknik optimizasyon ve istatistiksel değerlendirmeye ilişkin meşru menfaat).",
+      "future": "Gelecekte izleme veya pazarlama araçları kullanılırsa, burada ayrıca bilgilendirme yapılacak ve gerekli hallerde açık rıza alınacaktır."
+    },
+    "transfers": {
+      "title": "Alıcılar ve uluslararası aktarım",
+      "p1": "Barındırma ve e-posta gönderimi kapsamında hizmet sağlayıcılar verileri bizim adımıza işleyebilir. Üçüncü ülkelerde (örn. ABD) işleme ihtimali tamamen dışlanamaz. Gerekli hallerde uygun güvencelerin (örn. Standart Sözleşme Maddeleri) sağlandığından emin oluruz."
+    },
+    "rights": {
+      "title": "Haklarınız",
+      "p1": "GDPR kapsamında aşağıdaki haklara sahipsiniz:",
+      "list": [
+        "Bilgi edinme (GDPR Madde 15)",
+        "Düzeltme (GDPR Madde 16)",
+        "Silme (GDPR Madde 17)",
+        "İşlemenin kısıtlanması (GDPR Madde 18)",
+        "Veri taşınabilirliği (GDPR Madde 20)",
+        "İtiraz (GDPR Madde 21)",
+        "Rızayı geri çekme (GDPR Madde 7(3))"
+      ],
+      "p2": "Ayrıca bir denetim makamına şikâyette bulunma hakkınız vardır (GDPR Madde 77)."
+    },
+    "security": {
+      "title": "Veri güvenliği",
+      "p1": "Verilerinizi kayıp, kötüye kullanım ve yetkisiz erişime karşı korumak için uygun teknik ve organizasyonel önlemler uygularız. Ancak internet üzerinden veri aktarımının tamamen güvenli olduğu garanti edilemez."
+    },
+    "changes": {
+      "title": "Durum ve değişiklikler",
+      "p1": "Hukuki/fiili durumun değişmesi veya yeni hizmetlerin devreye alınması halinde bu metni güncelleyebiliriz.",
+      "status": "Durum: Mart 2026"
+    }
+  },
+  "imprint": {
+    "title": "Künye (Impressum)",
+    "tmc": {
+      "title": "§ 5 TMG uyarınca bilgiler (Almanya)",
+      "text": "Change-Werkstatt Sahil\nSeref Sahil\nWiesendorfstraße 6\n73433 Aalen\nAlmanya"
+    },
+    "contact": {
+      "text": "Telefon: +49 176 84076507\nE-posta: seref.sahil@change-werkstatt-sahil.com"
+    },
+    "activity": {
+      "title": "Serbest meslek faaliyeti",
+      "text": "Organizasyonel gelişim, liderlik ve dönüşüm süreçleri alanlarında serbest danışmanlık."
+    },
+    "vat": {
+      "title": "§ 27a UStG uyarınca KDV Kimlik No (Almanya)",
+      "text": "DE460120074"
+    },
+    "mstv": {
+      "title": "§ 18(2) MStV uyarınca içerik sorumlusu (Almanya)",
+      "text": "Seref Sahil\nWiesendorfstraße 6\n73433 Aalen"
+    }
+  }
 }

@@ -11,11 +11,11 @@
     "menuClose": "Cerrar menú"
   },
   "footer": {
-    "tagline": "Eficiencia y cultura en equilibrio",
-    "imprint": "Aviso legal",
-    "privacy": "Privacidad",
-    "cta": "Solicitar conversación"
-  },
+  "location": "Aalen · Alemania",
+  "imprint": "Aviso legal",
+  "privacy": "Privacidad",
+  "bottomLine": "Industria y pymes · Acompañamiento en la ejecución"
+},
 
   "home": {
     "blocks": [],
@@ -321,12 +321,107 @@
     "companyPlaceholder": "Empresa",
     "details": "Mensaje",
     "detailsPlaceholder": "¿De qué se trata?\nContexto, objetivo, situación actual …",
-    "consent": "Acepto que mis datos sean tratados para fines de contacto.",
+    "consent": "Consiento que mis datos se procesen para contactar conmigo conforme a la <privacy>Política de privacidad</privacy>.",
     "submit": "Enviar mensaje",
     "sending": "Enviando …",
     "success": "Mensaje enviado. ¡Gracias!",
     "errorSend": "Error al enviar. Inténtelo de nuevo más tarde.",
     "errorNetwork": "Error de red. Inténtelo de nuevo más tarde."
   }
-}
+},
+"privacy": {
+    "title": "Política de privacidad",
+    "intro": {
+      "p1": "Con esta Política de privacidad le informamos sobre el tratamiento de datos personales al utilizar nuestro sitio web. Los datos personales son todos los datos con los que se le puede identificar personalmente.",
+      "p2": "Este sitio web sirve para informar sobre nuestros servicios y para ponerse en contacto con nosotros."
+    },
+    "controller": {
+      "title": "Responsable",
+      "text": "Seref Sahil (Change-Werkstatt Sahil)\nWiesendorfstraße 6\n73433 Aalen\nAlemania\nEmail: seref.sahil@change-werkstatt-sahil.com\nTel.: +49 176 84076507"
+    },
+    "purposes": {
+      "title": "Finalidades y bases jurídicas",
+      "p1": "Tratamos datos personales para las siguientes finalidades:",
+      "list": [
+        "Prestación del sitio web (datos de conexión/registros del servidor)",
+        "Gestión de solicitudes mediante el formulario de contacto",
+        "Comunicación por correo electrónico o teléfono",
+        "Seguridad informática y prevención de abusos"
+      ],
+      "legal": "Las bases jurídicas son, en particular, el art. 6.1 b) RGPD (medidas precontractuales/contrato), el art. 6.1 f) RGPD (interés legítimo en un funcionamiento seguro y optimización) y, cuando sea necesario, el art. 6.1 a) RGPD (consentimiento)."
+    },
+    "hosting": {
+      "title": "Alojamiento y entrega del sitio web",
+      "p1": "Nuestro sitio web está alojado en Vercel Inc. Al acceder al sitio web se tratan datos técnicamente necesarios para servirlo (p. ej., dirección IP, fecha/hora, página solicitada, URL de referencia, navegador/sistema operativo).",
+      "p2": "Estos datos se tratan normalmente en registros del servidor y sirven para un funcionamiento seguro y estable del sitio web.",
+      "legal": "Base jurídica: art. 6.1 f) RGPD (interés legítimo en el funcionamiento seguro)."
+    },
+    "contact": {
+      "title": "Contacto y formulario de contacto",
+      "p1": "Si se pone en contacto con nosotros mediante el formulario o por correo electrónico, trataremos la información proporcionada (p. ej., nombre, email, empresa, mensaje) para gestionar su solicitud y comunicarnos con usted.",
+      "legal": "Base jurídica: art. 6.1 b) RGPD (medidas precontractuales) y art. 6.1 f) RGPD (gestión eficiente de consultas).",
+      "retention": "Conservamos las solicitudes durante el tiempo necesario para su tramitación y documentación y después las eliminamos conforme a los plazos legales de conservación."
+    },
+    "emailProvider": {
+      "title": "Envío de correos / proveedor (Resend)",
+      "p1": "Para el envío y la entrega de correos electrónicos (p. ej., solicitudes de contacto) puede utilizarse un proveedor técnico (p. ej., Resend). En este contexto pueden tratarse datos personales (p. ej., nombre, email, contenido del mensaje).",
+      "legal": "Base jurídica: art. 6.1 b) RGPD (gestión de la solicitud) y art. 6.1 f) RGPD (entrega/comunicación fiable)."
+    },
+    "analytics": {
+      "title": "Cookies, seguimiento y Vercel Analytics",
+      "p1": "No utilizamos cookies de marketing ni de retargeting.",
+      "p2": "Utilizamos Vercel Analytics para evaluar estadísticamente el uso de nuestro sitio web. Solo se tratan datos de uso anonimizados (p. ej., páginas vistas, tipo de dispositivo, región aproximada). No se crean perfiles de usuario ni se realiza seguimiento con fines de marketing.",
+      "p3": "Vercel Analytics funciona sin cookies de marketing. Base jurídica: art. 6.1 f) RGPD (interés legítimo en la optimización técnica y evaluación estadística).",
+      "future": "Si en el futuro incorporamos herramientas de seguimiento o marketing, lo informaremos aquí y solicitaremos el consentimiento cuando sea necesario."
+    },
+    "transfers": {
+      "title": "Destinatarios y transferencias internacionales",
+      "p1": "En el marco del alojamiento y del envío de correos, los proveedores pueden tratar datos por cuenta nuestra. No se puede excluir el tratamiento en terceros países (p. ej., EE. UU.). Cuando sea necesario, garantizamos salvaguardas adecuadas (p. ej., cláusulas contractuales tipo)."
+    },
+    "rights": {
+      "title": "Sus derechos",
+      "p1": "Usted tiene los siguientes derechos conforme al RGPD:",
+      "list": [
+        "Acceso (art. 15 RGPD)",
+        "Rectificación (art. 16 RGPD)",
+        "Supresión (art. 17 RGPD)",
+        "Limitación del tratamiento (art. 18 RGPD)",
+        "Portabilidad (art. 20 RGPD)",
+        "Oposición (art. 21 RGPD)",
+        "Retirar el consentimiento (art. 7.3 RGPD)"
+      ],
+      "p2": "También tiene derecho a presentar una reclamación ante una autoridad de control (art. 77 RGPD)."
+    },
+    "security": {
+      "title": "Seguridad de los datos",
+      "p1": "Aplicamos medidas técnicas y organizativas adecuadas para proteger sus datos contra pérdida, uso indebido y acceso no autorizado. No obstante, no puede garantizarse una seguridad absoluta en la transmisión de datos por Internet."
+    },
+    "changes": {
+      "title": "Estado y cambios",
+      "p1": "Podemos actualizar esta Política de privacidad si cambia la situación legal o factual o si incorporamos nuevos servicios.",
+      "status": "Estado: marzo de 2026"
+    }
+  },
+  "imprint": {
+    "title": "Aviso legal (Impressum)",
+    "tmc": {
+      "title": "Información según § 5 TMG (Alemania)",
+      "text": "Change-Werkstatt Sahil\nSeref Sahil\nWiesendorfstraße 6\n73433 Aalen\nAlemania"
+    },
+    "contact": {
+      "text": "Tel.: +49 176 84076507\nEmail: seref.sahil@change-werkstatt-sahil.com"
+    },
+    "activity": {
+      "title": "Actividad profesional independiente",
+      "text": "Consultoría independiente sobre desarrollo organizativo, liderazgo y procesos de transformación."
+    },
+    "vat": {
+      "title": "NIF-IVA según § 27a UStG (Alemania)",
+      "text": "DE460120074"
+    },
+    "mstv": {
+      "title": "Responsable del contenido según § 18(2) MStV (Alemania)",
+      "text": "Seref Sahil\nWiesendorfstraße 6\n73433 Aalen"
+    }
+  }
 }

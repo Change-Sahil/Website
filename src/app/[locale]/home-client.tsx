@@ -150,31 +150,32 @@ export default function HomeClient() {
       </section>
 
       {/* Für wen und wann */}
-      <section className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-[0_18px_55px_rgba(15,23,42,0.07)]">
-        <div className="text-[11px] tracking-[0.26em] uppercase text-slate-500">
-          {audience?.subtitle ?? ""}
-        </div>
-        <h2 className="mt-3 text-2xl sm:text-3xl font-semibold tracking-[-0.02em] text-slate-900">
-          {audience?.title ?? ""}
-        </h2>
+<section className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-[0_18px_55px_rgba(15,23,42,0.07)]">
+  <div className="text-[11px] tracking-[0.26em] uppercase text-slate-500">
+    {audience?.subtitle ?? ""}
+  </div>
+  <h2 className="mt-3 text-2xl sm:text-3xl font-semibold tracking-[-0.02em] text-slate-900">
+    {audience?.title ?? ""}
+  </h2>
 
-        <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50/40 p-6">
-          <div className="text-[11px] tracking-[0.26em] uppercase text-slate-500">
-            {t("audienceFocusTitle")}
-          </div>
-          <ul className="mt-5 space-y-3 text-sm leading-6 text-slate-700">
-            {whenUseful.map((x, i) => (
-              <li key={i} className="flex gap-3">
-                <span
-                  className="mt-2 h-1.5 w-1.5 flex-none rounded-full"
-                  style={{ background: "rgba(0,168,165,0.9)" }}
-                />
-                <span>{x}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+  <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50/40 p-6">
+    <div className="text-[11px] tracking-[0.26em] uppercase text-slate-500">
+      {t("audienceFocusTitle")}
+    </div>
+
+    <ul className="mt-5 grid gap-y-3 text-sm leading-6 text-slate-700 md:grid-cols-2 md:gap-x-10">
+      {whenUseful.map((x, i) => (
+        <li key={i} className="flex min-w-0 gap-3">
+          <span
+            className="mt-2 h-1.5 w-1.5 flex-none rounded-full"
+            style={{ background: "rgba(0,168,165,0.9)" }}
+          />
+          <span className="min-w-0">{x}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
 
       {/* Orientierung */}
       <section className="mt-16">

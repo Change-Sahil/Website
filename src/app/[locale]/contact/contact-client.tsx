@@ -2,9 +2,11 @@
 "use client";
 
 import React, { useState } from "react";
-import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 
-export default function ContactClient() {
+export default function ContactPage() {
+  const locale = useLocale();
   const t = useTranslations("contact");
   const f = useTranslations("contact.form");
   const d = useTranslations("contact.direct");
@@ -87,6 +89,7 @@ export default function ContactClient() {
                   {d("text")}
                 </p>
 
+                {/* Email + Tel untereinander */}
                 <div className="mt-6 grid gap-3">
                   <a
                     href={`mailto:${email}`}
@@ -185,16 +188,26 @@ export default function ContactClient() {
                 />
               </div>
 
-              <label className="mt-1 flex items-start gap-3 rounded-2xl border border-slate-200 bg-white/70 p-4 text-sm">
-                <input
-                  type="checkbox"
-                  required
-                  className="mt-1 h-4 w-4 rounded border-slate-300 text-[rgb(var(--accent))] focus:ring-4 focus:ring-[rgba(0,168,165,.14)]"
-                />
-                <span style={{ color: "rgba(var(--ink), .74)" }}>
-                  {f("consent")}
-                </span>
-              </label>
+              {/* Consent (i18n + Link) */}
+<label className="mt-1 flex items-start gap-3 rounded-2xl border border-slate-200 bg-white/70 p-4 text-sm">
+  <input
+    type="checkbox"
+    required
+    className="mt-1 h-4 w-4 rounded border-slate-300 text-[rgb(var(--accent))] focus:ring-4 focus:ring-[rgba(0,168,165,.14)]"
+  />
+  <span style={{ color: "rgba(var(--ink), .74)" }}>
+    {f.rich("consent", {
+      privacy: (chunks) => (
+        <Link
+          href={`/${locale}/datenschutz`}
+          className="underline underline-offset-2 hover:text-slate-900"
+        >
+          {chunks}
+        </Link>
+      ),
+    })}
+  </span>
+</label>
 
               {status === "success" && (
                 <p className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900">
@@ -208,7 +221,11 @@ export default function ContactClient() {
                 </p>
               )}
 
-              <button type="submit" className="btn-primary w-full" disabled={sending}>
+              <button
+                type="submit"
+                className="btn-primary w-full"
+                disabled={sending}
+              >
                 {sending ? f("sending") : f("submit")}
               </button>
 

@@ -6,48 +6,76 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function Footer() {
-  const tNav = useTranslations("nav");
   const locale = useLocale();
+  const tNav = useTranslations("nav");
+  const tFooter = useTranslations("footer");
 
   const year = new Date().getFullYear();
 
   return (
     <footer className="border-t border-slate-200 bg-white">
-      <div className="mx-auto max-w-6xl px-6 py-5">
-        <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-          {/* Brand */}
-          <Link href={`/${locale}`} className="inline-flex items-center gap-3">
-            <Image
-              src="/window.png"
-              alt="Change-Werkstatt Sahil"
-              width={150}
-              height={34}
-              className="opacity-90"
-            />
-          </Link>
+      <div className="mx-auto max-w-6xl px-6 py-4">
+        {/* Top Row */}
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          
+          {/* Left */}
+          <div className="flex items-center gap-4">
+            <Link href={`/${locale}`} className="inline-flex items-center">
+              <Image
+                src="/window.png"
+                alt="Change-Werkstatt Sahil"
+                width={145}
+                height={34}
+                className="opacity-95"
+              />
+            </Link>
 
-          {/* Links */}
+            <span className="hidden sm:inline text-xs text-slate-500 tracking-wide">
+              {tFooter("location")}
+            </span>
+          </div>
+
+          {/* Navigation */}
           <nav
-            aria-label="Footer"
-            className="flex flex-wrap items-center gap-x-8 gap-y-2 text-sm text-slate-600"
+            aria-label="Footer navigation"
+            className="flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-slate-600"
           >
-            <Link className="hover:text-slate-900" href={`/${locale}/services`}>
+            <Link href={`/${locale}/services`} className="hover:text-slate-900 transition-colors">
               {tNav("services")}
             </Link>
-            <Link className="hover:text-slate-900" href={`/${locale}/contact`}>
+            <Link href={`/${locale}/approach`} className="hover:text-slate-900 transition-colors">
+              {tNav("approach")}
+            </Link>
+            <Link href={`/${locale}/about`} className="hover:text-slate-900 transition-colors">
+              {tNav("about")}
+            </Link>
+            <Link href={`/${locale}/speaking`} className="hover:text-slate-900 transition-colors">
+              {tNav("speaking")}
+            </Link>
+            <Link href={`/${locale}/contact`} className="hover:text-slate-900 transition-colors">
               {tNav("cta")}
             </Link>
-            <Link className="hover:text-slate-900" href={`/${locale}/impressum`}>
-              Impressum
+
+            <span className="hidden sm:inline text-slate-300">|</span>
+
+            <Link href={`/${locale}/impressum`} className="hover:text-slate-900 transition-colors">
+              {tFooter("imprint")}
             </Link>
-            <Link className="hover:text-slate-900" href={`/${locale}/datenschutz`}>
-              Datenschutz
+            <Link href={`/${locale}/datenschutz`} className="hover:text-slate-900 transition-colors">
+              {tFooter("privacy")}
             </Link>
           </nav>
         </div>
 
-        <div className="mt-3 text-xs text-slate-500">
-          © {year} Change-Werkstatt Sahil
+        {/* Mobile location */}
+        <div className="sm:hidden mt-1 text-xs text-slate-500">
+          {tFooter("location")}
+        </div>
+
+        {/* Bottom Row */}
+        <div className="mt-3 flex flex-col gap-1 border-t border-slate-100 pt-3 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+          <div>© {year} Change-Werkstatt Sahil</div>
+          <div className="tracking-wide">{tFooter("bottomLine")}</div>
         </div>
       </div>
     </footer>

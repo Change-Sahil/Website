@@ -11,11 +11,11 @@
     "menuClose": "Menü schließen"
   },
   "footer": {
-    "tagline": "Effizienz und Kultur im Einklang",
-    "imprint": "Impressum",
-    "privacy": "Datenschutz",
-    "cta": "Gespräch anfragen"
-  },
+  "location": "Aalen · Deutschland",
+  "imprint": "Impressum",
+  "privacy": "Datenschutz",
+  "bottomLine": "Industrie & Mittelstand · Umsetzungsbegleitung"
+},
 
   "home": {
     "blocks": [],
@@ -321,13 +321,110 @@
       "companyPlaceholder": "Unternehmen",
       "details": "Nachricht",
       "detailsPlaceholder": "Worum geht es?\nKontext, Ziel, aktueller Stand …",
-      "consent": "Ich willige ein, dass meine Angaben zur Kontaktaufnahme verarbeitet werden.",
+      "consent": "Ich willige ein, dass meine Angaben zur Kontaktaufnahme gemäß der <privacy>Datenschutzerklärung</privacy> verarbeitet werden.",
       "submit": "Nachricht senden",
       "sending": "Wird gesendet …",
       "success": "Nachricht wurde gesendet. Vielen Dank!",
       "errorSend": "Senden fehlgeschlagen. Bitte später erneut versuchen.",
       "errorNetwork": "Netzwerkfehler. Bitte später erneut versuchen."
     }
+
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "intro": {
+      "p1": "Mit dieser Datenschutzerklärung informieren wir Sie über die Verarbeitung personenbezogener Daten bei der Nutzung unserer Website. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.",
+      "p2": "Diese Website dient der Information über unsere Leistungen und der Kontaktaufnahme."
+    },
+    "controller": {
+      "title": "Verantwortlicher",
+      "text": "Seref Sahil (Change-Werkstatt Sahil)\nWiesendorfstraße 6\n73433 Aalen\nDeutschland\nE-Mail: seref.sahil@change-werkstatt-sahil.com\nTelefon: +49 176 84076507"
+    },
+    "purposes": {
+      "title": "Zwecke und Rechtsgrundlagen",
+      "p1": "Wir verarbeiten personenbezogene Daten zu folgenden Zwecken:",
+      "list": [
+        "Bereitstellung der Website (Verbindungsdaten/Server-Logfiles)",
+        "Bearbeitung von Anfragen über das Kontaktformular",
+        "Kommunikation per E-Mail oder Telefon",
+        "IT-Sicherheit und Missbrauchsprävention"
+      ],
+      "legal": "Rechtsgrundlagen sind insbesondere Art. 6 Abs. 1 lit. b DSGVO (Anbahnung/Erfüllung eines Vertrags), Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an sicherem Betrieb und Optimierung) sowie – sofern erforderlich – Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)."
+    },
+    "hosting": {
+      "title": "Hosting und Bereitstellung der Website",
+      "p1": "Unsere Website wird bei Vercel Inc. gehostet. Beim Aufruf der Website werden technisch notwendige Daten verarbeitet, um die Website auszuliefern (z. B. IP-Adresse, Datum/Uhrzeit, abgerufene Seite, Referrer-URL, Browser/Betriebssystem).",
+      "p2": "Diese Daten werden in der Regel in Server-Logfiles verarbeitet und dienen dem sicheren und stabilen Betrieb der Website.",
+      "legal": "Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren Betrieb)."
+    },
+    "contact": {
+      "title": "Kontaktaufnahme und Kontaktformular",
+      "p1": "Wenn Sie uns per Kontaktformular oder E-Mail kontaktieren, verarbeiten wir die von Ihnen gemachten Angaben (z. B. Name, E-Mail-Adresse, Unternehmen, Nachricht), um Ihre Anfrage zu bearbeiten und mit Ihnen zu kommunizieren.",
+      "legal": "Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) sowie Art. 6 Abs. 1 lit. f DSGVO (effiziente Bearbeitung von Anfragen).",
+      "retention": "Wir bewahren Anfragen so lange auf, wie dies zur Bearbeitung und Dokumentation erforderlich ist, und löschen sie anschließend im Rahmen der gesetzlichen Aufbewahrungsfristen."
+    },
+    "emailProvider": {
+      "title": "Versand von E-Mails / Dienstleister (Resend)",
+      "p1": "Für den Versand und die Zustellung von E-Mails (z. B. Kontaktanfragen) kann ein technischer Dienstleister eingesetzt werden (z. B. Resend). Dabei können personenbezogene Daten (z. B. Name, E-Mail-Adresse, Inhalt der Nachricht) verarbeitet werden.",
+      "legal": "Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Bearbeitung der Anfrage) sowie Art. 6 Abs. 1 lit. f DSGVO (zuverlässige Zustellung/Kommunikation)."
+    },
+    "analytics": {
+      "title": "Cookies, Tracking und Vercel Analytics",
+      "p1": "Wir setzen keine Marketing- oder Retargeting-Cookies ein.",
+      "p2": "Zur statistischen Auswertung der Nutzung unserer Website verwenden wir Vercel Analytics. Dabei werden ausschließlich anonymisierte Nutzungsdaten (z. B. Seitenaufrufe, Gerätetyp, ungefähre Herkunftsregion) verarbeitet. Es erfolgt keine Erstellung von Nutzerprofilen und kein Tracking zu Marketingzwecken.",
+      "p3": "Vercel Analytics arbeitet ohne den Einsatz von Marketing-Cookies. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der technischen Optimierung und statistischen Auswertung unserer Website).",
+      "future": "Sollten künftig Tracking- oder Marketing-Tools eingesetzt werden, informieren wir an dieser Stelle gesondert und holen – sofern erforderlich – Ihre Einwilligung ein."
+    },
+    "transfers": {
+      "title": "Empfänger und Drittlandübermittlung",
+      "p1": "Im Rahmen des Hostings und des E-Mail-Versands können Dienstleister Daten in unserem Auftrag verarbeiten. Dabei kann eine Verarbeitung in Drittländern (z. B. USA) nicht ausgeschlossen werden. In diesen Fällen stellen wir sicher, dass geeignete Garantien (z. B. Standardvertragsklauseln) bestehen, sofern erforderlich."
+    },
+    "rights": {
+      "title": "Ihre Rechte",
+      "p1": "Sie haben folgende Rechte nach der DSGVO:",
+      "list": [
+        "Auskunft (Art. 15 DSGVO)",
+        "Berichtigung (Art. 16 DSGVO)",
+        "Löschung (Art. 17 DSGVO)",
+        "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+        "Datenübertragbarkeit (Art. 20 DSGVO)",
+        "Widerspruch gegen Verarbeitung (Art. 21 DSGVO)",
+        "Widerruf einer Einwilligung (Art. 7 Abs. 3 DSGVO)"
+      ],
+      "p2": "Außerdem haben Sie das Recht, sich bei einer Aufsichtsbehörde zu beschweren (Art. 77 DSGVO)."
+    },
+    "security": {
+      "title": "Datensicherheit",
+      "p1": "Wir setzen angemessene technische und organisatorische Maßnahmen ein, um Ihre Daten gegen Verlust, Missbrauch und unbefugten Zugriff zu schützen. Eine vollständige Sicherheit der Datenübertragung im Internet kann jedoch nicht garantiert werden."
+    },
+    "changes": {
+      "title": "Stand und Änderungen",
+      "p1": "Wir können diese Datenschutzerklärung anpassen, wenn sich die Rechts- oder Faktenlage ändert oder wenn wir neue Dienste einsetzen.",
+      "status": "Stand: März 2026"
+    }
+  },
+  "imprint": {
+    "title": "Impressum",
+    "tmc": {
+      "title": "Angaben gemäß § 5 TMG",
+      "text": "Change-Werkstatt Sahil\nSeref Sahil\nWiesendorfstraße 6\n73433 Aalen\nDeutschland"
+    },
+    "contact": {
+      "text": "Telefon: +49 176 84076507\nE-Mail: seref.sahil@change-werkstatt-sahil.com"
+    },
+    "activity": {
+      "title": "Freiberufliche Tätigkeit",
+      "text": "Freiberufliche Beratung zu Organisationsentwicklung, Führung und Transformationsprozessen."
+    },
+    "vat": {
+      "title": "Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG",
+      "text": "DE460120074"
+    },
+    "mstv": {
+      "title": "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV",
+      "text": "Seref Sahil\nWiesendorfstraße 6\n73433 Aalen"
+    }
   }
 }
+
 

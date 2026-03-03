@@ -1,7 +1,7 @@
 // src/components/Header.tsx
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
@@ -10,32 +10,41 @@ import LocaleSwitcher from "./LocaleSwitcher";
 
 export default function Header() {
   const tNav = useTranslations("nav");
-  
   const locale = useLocale();
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const closeMenu = () => setMenuOpen(false);
 
+  // Prevent background scroll when mobile menu is open (premium feel)
+  useEffect(() => {
+    if (!menuOpen) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [menuOpen]);
+
   // helper: marks current page (supports exact match and subroutes)
   const isActive = (href: string) => {
-  if (!pathname) return false;
+    if (!pathname) return false;
 
-  const normalize = (p: string) => (p.length > 1 ? p.replace(/\/$/, "") : p);
-  const current = normalize(pathname);
-  const target = normalize(href);
+    const normalize = (p: string) => (p.length > 1 ? p.replace(/\/$/, "") : p);
+    const current = normalize(pathname);
+    const target = normalize(href);
 
-  // Home should ONLY be active on exact match
-  const home = `/${locale}`;
-  const homeNormalized = normalize(home);
+    // Home should ONLY be active on exact match
+    const home = `/${locale}`;
+    const homeNormalized = normalize(home);
 
-  if (target === homeNormalized) {
-    return current === homeNormalized;
-  }
+    if (target === homeNormalized) {
+      return current === homeNormalized;
+    }
 
-  // All other nav items: exact match OR child routes
-  return current === target || current.startsWith(target + "/");
-};
+    // All other nav items: exact match OR child routes
+    return current === target || current.startsWith(target + "/");
+  };
 
   // unified desktop nav link classes
   const navLinkClass = (href: string) =>
@@ -62,9 +71,9 @@ export default function Header() {
   const hrefSpeaking = `/${locale}/speaking`;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-slate-200/70 bg-white/70 backdrop-blur-md">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="flex items-center justify-between gap-4 py-4">
+        <div className="flex items-center justify-between gap-4 py-3">
           {/* LOGO */}
           <Link href={hrefHome} className="flex items-center" onClick={closeMenu}>
             <Image
@@ -97,7 +106,7 @@ export default function Header() {
 
           {/* RIGHT SIDE */}
           <div className="flex items-center gap-3">
-            {/* DESKTOP LOCALE */}
+            {/* DESKTOP LOCALE (Flags stay) */}
             <div className="hidden md:flex">
               <LocaleSwitcher />
             </div>
@@ -105,7 +114,7 @@ export default function Header() {
             {/* CTA (always visible) */}
             <Link
               href={`/${locale}/contact`}
-              className="inline-flex items-center justify-center rounded-full px-3 py-2 sm:px-4 text-sm font-semibold text-white shadow-sm hover:opacity-95"
+              className="inline-flex items-center justify-center rounded-full px-3 py-2 sm:px-4 text-sm font-semibold text-white transition hover:brightness-95"
               style={{
                 background: "linear-gradient(135deg, rgb(0,168,165), rgb(0,112,125))",
               }}
@@ -113,8 +122,7 @@ export default function Header() {
             >
               <span className="hidden sm:inline">{tNav("cta")}</span>
               <span className="sm:hidden">{tNav("ctaShort")}</span>
-
-              </Link>
+            </Link>
 
             {/* MOBILE HAMBURGER */}
             <button
@@ -146,28 +154,16 @@ export default function Header() {
               <Link className={mobileLinkClass(hrefHome)} href={hrefHome} onClick={closeMenu}>
                 {tNav("home")}
               </Link>
-              <Link
-                className={mobileLinkClass(hrefServices)}
-                href={hrefServices}
-                onClick={closeMenu}
-              >
+              <Link className={mobileLinkClass(hrefServices)} href={hrefServices} onClick={closeMenu}>
                 {tNav("services")}
               </Link>
-              <Link
-                className={mobileLinkClass(hrefApproach)}
-                href={hrefApproach}
-                onClick={closeMenu}
-              >
+              <Link className={mobileLinkClass(hrefApproach)} href={hrefApproach} onClick={closeMenu}>
                 {tNav("approach")}
               </Link>
               <Link className={mobileLinkClass(hrefAbout)} href={hrefAbout} onClick={closeMenu}>
                 {tNav("about")}
               </Link>
-              <Link
-                className={mobileLinkClass(hrefSpeaking)}
-                href={hrefSpeaking}
-                onClick={closeMenu}
-              >
+              <Link className={mobileLinkClass(hrefSpeaking)} href={hrefSpeaking} onClick={closeMenu}>
                 {tNav("speaking")}
               </Link>
 

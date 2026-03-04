@@ -1,7 +1,7 @@
 // src/components/Header.tsx
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
@@ -10,21 +10,12 @@ import LocaleSwitcher from "./LocaleSwitcher";
 
 export default function Header() {
   const tNav = useTranslations("nav");
+
   const locale = useLocale();
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const closeMenu = () => setMenuOpen(false);
-
-  // Prevent background scroll when mobile menu is open (premium feel)
-  useEffect(() => {
-    if (!menuOpen) return;
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = prev;
-    };
-  }, [menuOpen]);
 
   // helper: marks current page (supports exact match and subroutes)
   const isActive = (href: string) => {
@@ -46,16 +37,14 @@ export default function Header() {
     return current === target || current.startsWith(target + "/");
   };
 
-  // unified desktop nav link classes
   const navLinkClass = (href: string) =>
     [
       "relative text-sm text-slate-600 hover:text-slate-900 transition-colors",
       isActive(href)
-        ? "text-slate-900 after:absolute after:left-0 after:right-0 after:-bottom-2 after:h-[2px] after:rounded-full after:bg-[rgb(0,168,165)]"
+        ? "text-slate-900"
         : "",
     ].join(" ");
 
-  // unified mobile nav link classes
   const mobileLinkClass = (href: string) =>
     [
       "block rounded-xl px-3 py-2 text-sm transition-colors",
@@ -71,17 +60,19 @@ export default function Header() {
   const hrefSpeaking = `/${locale}/speaking`;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-slate-200/70 bg-white/70 backdrop-blur-md">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-slate-200/80 bg-white/85 backdrop-blur-md">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="flex items-center justify-between gap-4 py-3">
+        <div className="flex items-center justify-between gap-4 py-4">
           {/* LOGO */}
           <Link href={hrefHome} className="flex items-center" onClick={closeMenu}>
             <Image
-              src="/window.png"
+              src="/logo.png"
               alt="Change-Werkstatt Sahil"
-              width={220}
-              height={50}
+              width={2480}
+              height={555}
               priority
+              sizes="(max-width: 768px) 190px, 240px"
+              className="h-[52px] w-auto -translate-y-[1px] opacity-[0.96] transition-opacity duration-200 hover:opacity-100"
             />
           </Link>
 
@@ -89,24 +80,83 @@ export default function Header() {
           <nav className="hidden items-center gap-6 md:flex">
             <Link className={navLinkClass(hrefHome)} href={hrefHome}>
               {tNav("home")}
+              {isActive(hrefHome) && (
+                <span
+                  aria-hidden
+                  className="absolute left-0 right-0 -bottom-2 h-[2px] rounded-full"
+                  style={{
+                    background:
+                      "linear-gradient(90deg, rgba(0,168,165,0.95), rgba(0,112,125,0.85))",
+                    boxShadow: "0 6px 16px rgba(0,168,165,0.18)",
+                  }}
+                />
+              )}
             </Link>
+
             <Link className={navLinkClass(hrefServices)} href={hrefServices}>
               {tNav("services")}
+              {isActive(hrefServices) && (
+                <span
+                  aria-hidden
+                  className="absolute left-0 right-0 -bottom-2 h-[2px] rounded-full"
+                  style={{
+                    background:
+                      "linear-gradient(90deg, rgba(0,168,165,0.95), rgba(0,112,125,0.85))",
+                    boxShadow: "0 6px 16px rgba(0,168,165,0.18)",
+                  }}
+                />
+              )}
             </Link>
+
             <Link className={navLinkClass(hrefApproach)} href={hrefApproach}>
               {tNav("approach")}
+              {isActive(hrefApproach) && (
+                <span
+                  aria-hidden
+                  className="absolute left-0 right-0 -bottom-2 h-[2px] rounded-full"
+                  style={{
+                    background:
+                      "linear-gradient(90deg, rgba(0,168,165,0.95), rgba(0,112,125,0.85))",
+                    boxShadow: "0 6px 16px rgba(0,168,165,0.18)",
+                  }}
+                />
+              )}
             </Link>
+
             <Link className={navLinkClass(hrefAbout)} href={hrefAbout}>
               {tNav("about")}
+              {isActive(hrefAbout) && (
+                <span
+                  aria-hidden
+                  className="absolute left-0 right-0 -bottom-2 h-[2px] rounded-full"
+                  style={{
+                    background:
+                      "linear-gradient(90deg, rgba(0,168,165,0.95), rgba(0,112,125,0.85))",
+                    boxShadow: "0 6px 16px rgba(0,168,165,0.18)",
+                  }}
+                />
+              )}
             </Link>
+
             <Link className={navLinkClass(hrefSpeaking)} href={hrefSpeaking}>
               {tNav("speaking")}
+              {isActive(hrefSpeaking) && (
+                <span
+                  aria-hidden
+                  className="absolute left-0 right-0 -bottom-2 h-[2px] rounded-full"
+                  style={{
+                    background:
+                      "linear-gradient(90deg, rgba(0,168,165,0.95), rgba(0,112,125,0.85))",
+                    boxShadow: "0 6px 16px rgba(0,168,165,0.18)",
+                  }}
+                />
+              )}
             </Link>
           </nav>
 
           {/* RIGHT SIDE */}
           <div className="flex items-center gap-3">
-            {/* DESKTOP LOCALE (Flags stay) */}
+            {/* DESKTOP LOCALE */}
             <div className="hidden md:flex">
               <LocaleSwitcher />
             </div>
@@ -114,9 +164,12 @@ export default function Header() {
             {/* CTA (always visible) */}
             <Link
               href={`/${locale}/contact`}
-              className="inline-flex items-center justify-center rounded-full px-3 py-2 sm:px-4 text-sm font-semibold text-white transition hover:brightness-95"
+              className="inline-flex items-center justify-center rounded-full px-3 py-2 sm:px-4 text-sm font-semibold text-white shadow-sm hover:opacity-[0.98]"
               style={{
-                background: "linear-gradient(135deg, rgb(0,168,165), rgb(0,112,125))",
+                background:
+                  "linear-gradient(135deg, rgba(0,168,165,0.92), rgba(0,140,150,0.92))",
+                boxShadow:
+                  "0 10px 30px rgba(2,6,23,0.10), inset 0 0 0 1px rgba(255,255,255,0.10)",
               }}
               onClick={closeMenu}
             >
@@ -133,13 +186,23 @@ export default function Header() {
               onClick={() => setMenuOpen((v) => !v)}
             >
               {menuOpen ? (
-                // X icon
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" className="stroke-current">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  className="stroke-current"
+                >
                   <path strokeWidth="2" strokeLinecap="round" d="M6 6l12 12M18 6L6 18" />
                 </svg>
               ) : (
-                // Hamburger icon
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" className="stroke-current">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  className="stroke-current"
+                >
                   <path strokeWidth="2" strokeLinecap="round" d="M4 7h16M4 12h16M4 17h16" />
                 </svg>
               )}
@@ -169,7 +232,6 @@ export default function Header() {
 
               <div className="my-2 border-t border-slate-200/70" />
 
-              {/* MOBILE LOCALE SWITCHER */}
               <div className="px-1 py-1" onClick={closeMenu}>
                 <LocaleSwitcher />
               </div>

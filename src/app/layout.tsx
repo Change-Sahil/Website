@@ -43,7 +43,14 @@ export const metadata: Metadata = {
     ],
   },
 
-  manifest: "/site.webmanifest",
+  // **neu hinzugefügt für Mobile / App-Style**
+  themeColor: "#ffffff",
+
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Change-Werkstatt Sahil",
+  },
 };
 
 export default function RootLayout({

@@ -1,6 +1,7 @@
 // src/app/[locale]/about/about-client.tsx
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 function asArray<T = unknown>(value: unknown): T[] {
@@ -44,11 +45,16 @@ export default function AboutClient() {
 
           <div className="lg:col-span-5">
             <div className="panel overflow-hidden p-0">
-              <img
-                src={t("heroImage")}
-                alt={t("heroTitle")}
-                className="h-[260px] w-full object-cover md:h-[320px]"
-              />
+              <div className="relative h-[420px] w-full md:h-[520px]">
+                <Image
+                  src="/seref-sahil-change-werkstatt.jpg"
+                  alt="Seref Sahil"
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 40vw, 100vw"
+                  className="object-cover object-top"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -77,10 +83,12 @@ export default function AboutClient() {
                       key={i}
                       className={
                         i === 0
-                          ? "text-sm md:text-base font-medium leading-7 text-slate-800"
-                          : "text-sm md:text-base leading-7"
+                          ? "text-sm font-medium leading-7 text-slate-800 md:text-base"
+                          : "text-sm leading-7 md:text-base"
                       }
-                      style={i === 0 ? undefined : { color: "rgba(var(--ink), .74)" }}
+                      style={
+                        i === 0 ? undefined : { color: "rgba(var(--ink), .74)" }
+                      }
                     >
                       {p}
                     </p>

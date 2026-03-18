@@ -213,38 +213,36 @@ export default function AboutClient() {
           <div className="mt-10 grid gap-5 lg:grid-cols-3">
             {testimonials.map((item, i) => (
               <article
-                key={i}
-                className="panel h-full border border-slate-200/70 bg-white/80 px-6 py-7 md:px-7 md:py-8"
-              >
-                <div className="flex h-full flex-col">
-                  <div className="flex-1">
-                    {item.quote && (
-                      <blockquote className="text-[1.04rem] leading-8 text-slate-900 md:text-[1.08rem]">
-                        <span className="mr-1 text-4xl leading-none text-[rgb(var(--accent))] align-top">
-                          “
-                        </span>
-                        {item.quote}
-                        <span className="ml-1 text-4xl leading-none text-[rgb(var(--accent))] align-[-0.35em]">
-                          ”
-                        </span>
-                      </blockquote>
-                    )}
-                  </div>
+  key={i}
+  className="panel h-full border border-slate-200/70 bg-white/80 px-6 py-7 md:px-7 md:py-8"
+>
+  <div className="flex h-full flex-col">
+    {item.quote && (
+      <blockquote className="text-[1rem] leading-8 text-slate-900 hyphens-auto break-words">
+        <span className="mr-1 text-4xl leading-none text-[rgb(var(--accent))] align-top">
+          “
+        </span>
+        {item.quote}
+        <span className="ml-1 text-4xl leading-none text-[rgb(var(--accent))] align-[-0.35em]">
+          ”
+        </span>
+      </blockquote>
+    )}
 
-                  <div className="mt-8 border-t border-slate-200/70 pt-4">
-                    {item.role && (
-                      <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-900 md:text-sm">
-                        {item.role}
-                      </p>
-                    )}
-                    {item.context && (
-                      <p className="mt-2 text-sm leading-6 text-slate-600">
-                        {item.context}
-                      </p>
-                    )}
-                  </div>
-                </div>
-              </article>
+    <div className="mt-auto min-h-[110px] border-t border-slate-200/70 pt-4">
+      {item.role && (
+  <p className="min-h-[20px] text-xs font-semibold uppercase tracking-[0.12em] text-slate-900 md:text-sm">
+    {item.role}
+  </p>
+)}
+      {item.context && (
+        <p className="mt-2 text-sm leading-6 text-slate-600">
+          {item.context}
+        </p>
+      )}
+    </div>
+  </div>
+</article>
             ))}
           </div>
         </section>

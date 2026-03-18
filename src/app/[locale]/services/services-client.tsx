@@ -66,7 +66,7 @@ export default function ServicesClient() {
             </p>
 
             <div className="mt-8">
-              <Link href={`/${locale}/approach`} className="btn-secondary">
+              <Link href={`/${locale}/approach`} className="btn-primary">
                 {nav("approach")}
               </Link>
             </div>

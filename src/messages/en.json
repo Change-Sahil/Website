@@ -18,160 +18,164 @@
 },
 
   "home": {
-    "blocks": [],
-    "trust": [],
-    "hero": {
-      "kicker": "Implementation-focused support in industrial environments",
-  "title": "When efficiency and leadership must work hand in hand",
-"intro": "Where transformations or M&A integrations stall, the issue is usually not the concept, but the balance between leadership and reliability. We moderate these critical transitions and make collaboration effective again in complex phases.\n\nIn this way, we create the framework for mid-sized industrial companies in which clarity emerges, responsibility is assumed, and culture and identity provide orientation in everyday operations.",
-"ctaPrimary": "Request a conversation",
-  "ctaSecondary": "View services",
-  "chips": ["Implementation", "Leadership", "Operational Excellence", "Culture & Identity", "M&A"]
-
-    },
-
-    "pillars": {
-      "title": "What we stand for",
-      "subtitle": "Execution, rhythm and anchoring in daily work",
-      "items": [
-        {
-          "title": "Execution over concepts",
-          "text": "Clear structure, accountability and hands-on implementation, without excessive slide decks.",
-          "meta": "Practical · structured · actionable"
-        },
-        {
-          "title": "Leadership as leverage",
-          "text": "We support change where leadership takes responsibility, not where we are expected to replace it.",
-          "meta": "Leadership · rhythm · accountability"
-        },
-        {
-          "title": "Making transitions effective",
-          "text": "When efficiency, culture and identity need to come together anew, e.g. in M&A or transformation",
-          "meta": "Measurable · effective · sustainable"
-        }
-      ]
-    },
-
-    "divider": {
-      "kicker": "Short. Practical. Measurable.",
-      "title": "Less abstraction\nMore daily reality",
-      "text": "We work where impact is created: in routines, interfaces and leadership rhythms. Not only as concepts, but in a way that holds up in day-to-day operations."
-    },
-    "audienceFocusTitle": "We focus on",
-    "audience": {
-  "title": "For whom and when",
-  "subtitle": "Leadership and teams in complex implementation situations",
-  "boxTitles": ["Target groups", "Focus", "Typical triggers"],
-  "targets": [
-    "Managing directors and heads of functions",
-    "Leaders and key operational roles",
-    "Teams in production, logistics and adjacent areas"
-  ],
-  "topics": [
-    "Operational stability: delivery performance, quality, productivity",
-    "Leadership rhythm: shopfloor and steering routines with clear KPIs",
-    "Collaboration: interfaces, accountability, decision logic",
-    "Culture & identity: alignment, buy-in and anchoring",
-    "M&A: identity and operating model before and after the deal"
-  ],
-  "triggers": [
-    "Bottlenecks, inventory, lead times, quality issues",
-    "Changeover times (SMED) and variant complexity",
-    "Unclear responsibilities and conflicts at interfaces",
-    "Growth, restructuring, site or line consolidation",
-    "Succession, mergers and acquisitions (pre- and post-merger)"
-  ]
-},
-    "orientation": {
-      "kicker": "15-minute orientation",
-      "title": "Clarify quickly\nDecide with confidence",
-      "text": "In a short conversation, we clarify your situation, target state and the right format (workshop, partnership or sparring).",
-      "ctaPrimary": "Request a conversation",
-      "ctaSecondary": "View services"
-    }
+  "blocks": [],
+  "trust": [],
+  "hero": {
+    "kicker": "Hands-on support in industrial environments",
+    "title": "When efficiency, leadership and execution need to come together",
+    "intro": "When transformations, restructurings or M&A integrations lose momentum, the issue is rarely the concept. It is that leadership, collaboration and operational reality do not align sufficiently. This is exactly where we work.\n\nWe support industrial SMEs in regaining clarity, commitment and effective execution in complex situations."
   },
+
+  "pillars": {
+    "title": "What distinguishes our work",
+    "subtitle": "Execution, leadership and sustainable integration in practice",
+    "items": [
+      {
+        "title": "Execution instead of conceptual overload",
+        "text": "Change is not only prepared but made effective within the organization, with clear structure, responsibility and without unnecessary complexity."
+      },
+      {
+        "title": "Clarity in responsibility and alignment",
+        "text": "We do not work with additional programs next to the organization, but within ongoing operations. Where decisions are made, responsibility is taken and results are created."
+      },
+      {
+        "title": "Experience from shop floor, leadership and management",
+        "text": "Our perspective is based on direct responsibility in operational and leadership roles within industrial environments."
+      }
+    ]
+  },
+
+  "divider": {
+    "kicker": "Concise. Practical. Effective.",
+    "title": "Less abstraction\nMore operational reality",
+    "text": "Change rarely fails due to lack of intent, but due to unclear responsibilities and insufficient alignment. We create the structure that enables leadership to act and collaboration to function."
+  },
+
+  "audience": {
+    "title": "Where our support is particularly valuable",
+    "subtitle": "Where execution must work under real conditions",
+    "boxTitles": [
+      "Typical contexts",
+      "How the need often becomes visible"
+    ],
+    "targets": [
+      "Where responsibility for execution is taken, regardless of role or hierarchy",
+      "In areas where leadership, communication and collaboration must function under pressure",
+      "In industrial SMEs where change must be integrated effectively, not organized as an additional layer",
+      "In phases where operational reality, leadership logic and cultural orientation need to reconnect"
+    ],
+    "triggers": [
+      "Change is decided but lacks sufficient commitment",
+      "New structures emerge but collaboration and orientation remain unstable",
+      "Initiatives start but fail to create lasting impact in operations",
+      "Responsibility, alignment and communication lose clarity",
+      "Complexity increases faster than leadership and organization can handle"
+    ]
+  },
+
+  "orientation": {
+    "kicker": "15 minutes orientation",
+    "title": "Clarify briefly\nDecide with confidence",
+    "text": "In a short conversation, we structure the situation, define the target and identify the appropriate format, workshop, partnership or sparring.",
+    "ctaPrimary": "Request a call",
+    "ctaSecondary": "View services"
+  }
+},
 
  "services": {
   "title": "Effective change",
-  "intro": "Our formats combine leadership, structure and operational execution. Depending on the situation, we work selectively to create clarity, in a rhythm to steer execution, or continuously to anchor change in daily operations.\n\nEspecially in critical phases such as cultural integration during M&A or succession planning, we secure the operational effectiveness of your organization through moderated transitions.",
+  "intro": "Our formats combine leadership, structure and operational execution. Depending on the situation, we work selectively to create clarity, in rhythm to provide direction, or continuously to anchor change sustainably in daily operations.\n\nEspecially in critical phases such as cultural integration during M&A or succession processes, we protect your organization’s operational effectiveness through well-guided transitions.",
+  "themes": {
+    "kicker": "Focus areas",
+    "title": "What we work on in the collaboration",
+    "intro": "The concrete design depends on the situation, the target state and the structure of the organization. At the center are leadership, collaboration and cultural orientation in the operational context.",
+    "items": [
+  "Leadership, roles and decision-making capability",
+  "Alignment and collaboration across interfaces",
+  "Steering and stabilizing operational processes in production, logistics and quality",
+  "Communication in change and transition situations",
+  "Culture and identity in transformation, M&A and succession",
+  "Anchoring new ways of working in day-to-day operations"
+]
+  },
   "ui": {
     "kicker": "Services",
     "navTitle": "Formats",
     "labels": {
-      "whenTitle": "When it makes sense",
-      "topicsTitle": "Typical triggers",
+      "whenTitle": "When useful",
+      "topicsTitle": "Typical situations",
       "deliverablesTitle": "What you get",
       "detailsTitle": "Details"
     },
     "tags": {
       "workshops": "Workshops",
       "partnership": "Partnership",
-      "sparring": "Executive sparring"
+      "sparring": "Sparring"
     },
-    "ctaPrimary": "Request a conversation",
+    "ctaPrimary": "Request a call",
     "when": {
-  "workshops": "When clarity about the current situation, priorities and decisions is needed and a structured start into execution is required: operationally and culturally.",
-  "partnership": "When execution needs to be guided, steered and anchored in leadership routines over several months.",
-  "sparring": "When leaders need clarity, prioritisation and sound decisions in complex situations."
-},
+      "workshops": "When clarity is needed regarding the starting point, priorities and decisions, and when a structured start into implementation is required, operationally as well as culturally.",
+      "partnership": "When implementation over several months requires leadership, clarity and continuity.",
+      "sparring": "When leaders need clarity, prioritization and sound decisions in complex situations."
+    },
     "teaser": {
-      "workshops": "Structured workshop formats to create clarity, alignment and a practical start into execution.",
-      "partnership": "Monthly accompaniment that connects leadership, rhythm, and progress until execution takes hold and becomes part of the organizational reality.\nThe transformation partnership is understood as a time-limited co-design and co-steering of leadership and decision-making processes in critical phases, not as operational execution.",
-      "sparring": "Confidential sparring for demanding situations — clear, pragmatic and effective."
+      "workshops": "Structured workshop formats for clarification, alignment and implementation with a clearly defined next step.",
+      "partnership": "Monthly support that connects leadership, rhythm and progress until implementation takes hold and becomes part of organizational reality.\nThe transformation partnership is understood as a time-limited co-design and co-steering of leadership and decision-making processes in critical phases, not as operational execution.",
+      "sparring": "Confidential sparring for demanding leadership and decision-making situations: clear, pragmatic, effective."
     },
     "topics": {
       "workshops": [
         "Lean / Operational Excellence (stability, quality, lead time, productivity)",
         "Unclear priorities, decision bottlenecks or interface conflicts",
-        "Kick-off or reset of improvement and transformation initiatives"
+        "Start or restart of improvement and transformation initiatives"
       ],
       "partnership": [
-        "Strategic decisions have been made but fail to achieve stable impact within the organization",
-        "Leadership is confronted with conflicting expectations, unclear roles, and sustained decision pressure",
-        "Recurring tensions between functions, levels, or locations continuously consume attention and energy",
-        "Cultural frictions in transition phases such as M&A, integration, or succession hinder effective steering and collaboration"
+        "Strategic decisions have been made, but do not create stable impact in the organization",
+        "Leadership is confronted with conflicting expectations, unclear roles and high decision pressure",
+        "Recurring tensions between functions, levels or sites consume attention and energy over time",
+        "Cultural friction in transition situations such as M&A, integration or succession complicates steering and collaboration"
       ],
       "sparring": [
-        "Critical decisions, trade-offs or high stakeholder pressure",
-        "Culture/identity questions during growth, restructuring or integration",
-        "Leadership challenges: role clarity, impact, consistency"
+        "Critical decisions, conflicting goals or high stakeholder pressure",
+        "Culture and identity issues in growth, restructuring or integration",
+        "Leadership questions: role, impact, clarity and consistency"
       ]
     },
     "cardTitles": {
-      "workshops": "Workshop formats",
+      "workshops": "Workshop sessions",
       "partnership": "Transformation partnership",
       "sparring": "Executive sparring"
     },
     "duration": {
-      "workshops": "1–2 days",
+      "workshops": "1-2 days",
       "partnership": "Monthly",
       "sparring": "Monthly"
     },
     "deliverables": {
       "workshops": [
-        "Shared target state and clear priorities",
+        "A shared target picture and prioritized focus areas",
         "Decisions on roles, leadership rhythm and standards",
-        "Concrete execution roadmap (30/60/90 days) that works in daily operations"
+        "A concrete implementation plan (30/60/90 days) with clear responsibilities"
       ],
       "partnership": [
-    "A clear, jointly designed steering and decision-making rhythm with defined responsibilities at leadership and organizational level",
-    "Consistent follow-up on initiatives, metrics and impact",
-    "Anchoring collaboration, culture and organizational identity in everyday leadership"
+        "A clear, jointly designed steering and decision rhythm with defined responsibilities at leadership and organizational level",
+        "Transparency on progress, blockers and the impact of measures",
+        "Anchoring collaboration, culture and identity in leadership and organization"
       ],
       "sparring": [
         "Clarity in complex or critical situations",
-        "Prioritization and decision logic",
-        "Confidential reflection and next steps"
+        "Prioritization and decision logic at leadership level",
+        "Confidential reflection and clear next steps"
       ],
       "speaking": [
         "Keynote, training or teaching format tailored to the occasion",
-        "Practical examples and a clear transfer approach",
-        "Dialogue, Q&A and actionable takeaways"
+        "Practical examples and transfer logic",
+        "Dialogue, Q&A and relevance for the audience"
       ]
     },
     "cta": {
-      "kicker": "15-minute orientation",
-      "text": "In a short conversation, we clarify the situation, the target state and the right format."
+      "kicker": "15 minutes of orientation",
+      "text": "In a short conversation, we clarify the situation, target picture and the appropriate format."
     }
   }
 },
@@ -235,21 +239,72 @@
   "title": "About",
   "heroTitle": "Implementation in complex situations",
   "heroSubtitle": "Supporting leadership and organization in everyday industrial practice",
-  "heroImage": "/images/about-hero.jpg",
+  "heroImage": "/seref-sahil-change-werkstatt.jpg",
+  "heroImageAlt": "Seref Sahil",
   "intro": [
-  "More than 25 years of operational industry and leadership experience are combined with technical, business, and economic-psychological expertise. Change-Werkstatt supports industrial mid-sized companies where concepts exist but fail to take effect in day-to-day operations, and where efficiency, leadership, and organizational culture need to evolve together.",
-  "The core strength lies in connecting operational reality with management perspective, enabling change to be implemented in a sustainable and effective way, especially in critical transition situations."
-],
-"profileTitle": "Profile",
-"profileText": "Acceptance emerges where language, reality, and responsibility align.\n\nIn M&A, integration, and transformation situations, implementation rarely fails due to formal targets, but rather because of hidden cultural and identity-related tensions. Multilingual access to organizations and academic engagement with these dynamics make it possible to identify such tensions early, before they translate into operational or political consequences.\n\nMy work is grounded in firsthand experience across shop floor, leadership, and management roles within industrial environments. This leads to a clear guiding principle:\nChange must fit operational reality, be taken up by leadership, and be embedded in everyday work.\n\nThis is how implementation emerges—without the need for explanation, because it is supported and lived.",
-"bulletsEyebrow": "Foundation of my work",
-"bullets": [
-    "25+ years of operative practical experience, from industrial mechanic to cross-site head of production & logistics",
-    "Sound experience in industrial process and work organization along the value chain",
-    "Business and organizational psychology education · Focus: Leadership and Organization",
-    "Multilingualism in leadership and implementation (German · English · Turkish · Spanish · Arabic)",
-    "Ongoing Doctorate (DBA) on M&A integration, culture & identity in industrial SMEs"
-  ]
+    "More than 25 years of operational industry and leadership experience are combined with technical, business, and organizational psychology expertise. Change-Werkstatt supports industrial mid-sized companies where concepts exist but fail to take effect in day-to-day operations, and where efficiency, leadership, and organizational culture need to evolve together.",
+    "The core strength lies in connecting operational reality with management perspective, enabling change to be implemented in a sustainable and effective way, especially in critical transition situations."
+  ],
+  "profileTitle": "Profile",
+  "profileText": "Acceptance emerges where language, reality, and responsibility align.\n\nIn M&A, integration, and transformation situations, implementation rarely fails due to formal targets, but rather because of hidden cultural and identity-related tensions. Multilingual access to organizations and academic engagement with these dynamics make it possible to identify such tensions early, before they translate into operational or political consequences.\n\nMy work is grounded in firsthand experience across shop floor, leadership, and management roles within industrial environments. This leads to a clear guiding principle:\nChange must fit operational reality, be taken up by leadership, and be embedded in everyday work.\n\nThis is how implementation emerges — not because it is explained, but because it is understood and carried.",
+  "bulletsEyebrow": "Foundation of the work",
+  "bullets": [
+    "25+ years of operational experience, from industrial mechanic to cross-site head of production & logistics",
+    "Strong expertise in industrial processes and work organization across the value chain",
+    "Background in business administration and organizational psychology, focused on leadership and organization",
+    "Multilingual leadership and implementation: German, English, Turkish, Spanish, Arabic",
+    "Ongoing DBA on M&A integration, culture, and identity in industrial SMEs"
+  ],
+  "linkedInLabel": "View LinkedIn profile",
+  "practiceEyebrow": "Project experience",
+  "practiceTitle": "Experience from practice",
+  "practiceIntro": "Not case studies from a classroom, but experience from real transformation, integration, and leadership situations in industrial environments — with responsibility, resistance, and measurable results.",
+  "practiceItems": [
+    {
+      "title": "Post-merger integration",
+      "text": "Cross-site integration after acquisitions: leadership structures, process ownership, cultural alignment, and capability development over several years."
+    },
+    {
+      "title": "Lean & operational excellence",
+      "text": "Implementation and stabilization of continuous improvement, SMED, 5S, and value stream optimization — not as a method rollout, but as leadership practice in daily operations."
+    },
+    {
+      "title": "Reorganization & leadership development",
+      "text": "Building cross-site leadership structures and developing leaders in matrix organizations under ongoing operations."
+    },
+    {
+      "title": "Restructuring & cultural anchoring",
+      "text": "Supporting restructuring phases with a focus on leadership clarity, communication, and sustainable embedding of change in daily work."
+    },
+    {
+      "title": "ISO certification & management systems",
+      "text": "Successful support of ISO 9001 recertification processes, including reorganization in production environments as a foundation for sustainable quality management."
+    },
+    {
+      "title": "Value stream & interface alignment",
+      "text": "Optimization of value streams in matrix organizations: budget responsibility, cost center control, and multi-project management across production and logistics."
+    }
+  ],
+  "testimonialsEyebrow": "What others say",
+  "testimonialsTitle": "Voices from collaboration",
+  "testimonialsIntro": "The following feedback comes from real leadership and implementation situations in industrial environments — from the time before Change-Werkstatt was founded.",
+  "testimonials": [
+  {
+    "quote": "Strong professional clarity, sharp analytical judgment, and a valuable sparring partner for executive management.",
+    "role": "Executive management",
+    "context": "Industrial mid-sized company · Transformation and integration"
+  },
+  {
+    "quote": "Strong focus on teamwork and the ability to sustainably improve organizational effectiveness through continuous improvement.",
+    "role": "HR leadership",
+    "context": "Manufacturing company · Lean and organizational development"
+  },
+  {
+    "quote": "Clear and consistent in difficult decision-making situations, with the full trust of senior management.",
+    "role": "Senior management",
+    "context": "Industrial company · Restructuring and leadership development"
+  }
+]
 },
   "speaking": {
   "eyebrow": "Knowledge Transfer",  

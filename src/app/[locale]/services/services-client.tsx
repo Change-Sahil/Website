@@ -24,6 +24,7 @@ export default function ServicesClient() {
 
   const ui = t.raw("ui") as any;
   const titles = ui?.cardTitles as Partial<Record<Key, string>>;
+  const themes = asArray<string>(t.raw("themes.items"));
 
   const cards = useMemo(() => {
     return KEYS.map((k) => ({
@@ -48,10 +49,9 @@ export default function ServicesClient() {
   const cta = t.raw("ui.cta") as any;
 
   return (
-    <div className="space-y-12 md:space-y-14">
-
+    <div className="space-y-8 md:space-y-10">
       {/* HERO */}
-      <section className="page-wrap py-12 md:py-16">
+      <section className="page-wrap pt-10 pb-4 md:pt-12 md:pb-6">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
           <div className="lg:col-span-6 min-w-0">
             <div className="section-eyebrow">
@@ -87,10 +87,44 @@ export default function ServicesClient() {
         </div>
       </section>
 
-      {/* AUSWAHL + DETAILS */}
-      <section className="page-wrap section-pad">
-        <div className="grid gap-8 lg:grid-cols-12">
+      {/* THEMENSCHWERPUNKTE */}
+      <section className="page-wrap pt-10 pb-4 md:pt-12 md:pb-6">
+        <div className="panel">
+          <div className="max-w-3xl">
+            <div className="section-eyebrow">
+              <span className="dot" />
+              <span>{t("themes.kicker")}</span>
+            </div>
 
+            <h2 className="mt-3 section-title">{t("themes.title")}</h2>
+
+            <p className="mt-4 text-base leading-7 muted">
+              {t("themes.intro")}
+            </p>
+          </div>
+
+          <div className="mt-6 grid gap-5 md:grid-cols-2">
+  {themes.map((item, i) => (
+    <div
+      key={i}
+      className="rounded-2xl border border-slate-200 bg-white px-5 py-4"
+    >
+      <div className="flex items-start min-w-0 gap-3">
+        <span
+          className="mt-2 h-1.5 w-1.5 flex-none rounded-full"
+          style={{ background: "rgba(0,168,165,0.9)" }}
+        />
+        <p className="min-w-0 text-sm leading-6 text-slate-700">{item}</p>
+      </div>
+    </div>
+  ))}
+</div>
+        </div>
+      </section>
+
+      {/* AUSWAHL + DETAILS */}
+      <section className="page-wrap py-8 md:py-10">
+        <div className="grid gap-8 lg:grid-cols-12">
           {/* LINKS */}
           <div className="lg:col-span-4 min-w-0">
             <div className="panel">
@@ -142,7 +176,6 @@ export default function ServicesClient() {
                 <span>{t("ui.labels.detailsTitle")}</span>
               </div>
 
-              {/* FIX FÜR MOBILE OVERFLOW */}
               <h2 className="mt-3 section-title break-words hyphens-auto max-w-full">
                 {active.title}
               </h2>
@@ -161,12 +194,12 @@ export default function ServicesClient() {
               <div className="mt-8 hr-soft" />
 
               <div className="mt-8 grid gap-10 lg:grid-cols-12">
-
                 <div className="lg:col-span-6 min-w-0">
                   <div className="section-eyebrow">
                     <span className="dot" />
                     <span>{t("ui.labels.whenTitle")}</span>
                   </div>
+
                   <p
                     className="mt-3 text-sm leading-7 break-words"
                     style={{ color: "rgba(var(--ink), .74)" }}
@@ -180,6 +213,7 @@ export default function ServicesClient() {
                         <span className="dot" />
                         <span>{t("ui.labels.topicsTitle")}</span>
                       </div>
+
                       <ul className="mt-4 list break-words">
                         {active.topics.map((x, i) => (
                           <li key={i}>{x}</li>
@@ -201,16 +235,14 @@ export default function ServicesClient() {
                     ))}
                   </ul>
                 </div>
-
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
       {/* CTA */}
-      <section className="page-wrap pb-16 md:pb-20">
+      <section className="page-wrap pt-8 pb-12 md:pt-10 md:pb-16">
         <div className="dark-block p-8 sm:p-10">
           <div className="flex flex-wrap items-center justify-between gap-8">
             <div className="min-w-0">
@@ -239,7 +271,6 @@ export default function ServicesClient() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }

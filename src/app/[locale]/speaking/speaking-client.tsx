@@ -25,10 +25,10 @@ export default function SpeakingClient() {
   const [openIndex, setOpenIndex] = React.useState<number | null>(null);
 
   return (
-    <div className="space-y-12 md:space-y-16">
+    <div className="page-stack">
 
       {/* ── HERO (kein Reveal) ── */}
-      <section className="page-wrap py-12 md:py-16">
+      <section className="py-8 md:py-10">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
           <div className="lg:col-span-7">
             <div className="section-eyebrow">
@@ -64,7 +64,7 @@ export default function SpeakingClient() {
       </section>
 
       {/* ── CONTENT ── */}
-      <section className="page-wrap section-pad">
+      <section className="section-pad">
         <div className="grid gap-8 lg:grid-cols-12">
 
           {/* Akkordeon */}

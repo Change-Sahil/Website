@@ -87,14 +87,11 @@ export default function Header() {
 
           {/* LOGO */}
           <Link href={hrefHome} className="flex items-center" onClick={closeMenu}>
-            <Image
-              src="/logo.png"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/Change-Werkstatt_Vector.svg"
               alt="Change-Werkstatt Sahil"
-              width={2480}
-              height={555}
-              priority
-              sizes="(max-width: 768px) 190px, 240px"
-              className="h-[52px] w-auto -translate-y-[1px] opacity-[0.96] transition-opacity duration-200 hover:opacity-100"
+              className="h-[54px] w-auto -translate-y-[1px] transition-opacity duration-200 hover:opacity-95"
             />
           </Link>
 

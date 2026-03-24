@@ -48,10 +48,10 @@ export default function ServicesClient() {
   const cta = ui?.cta;
 
   return (
-    <div className="space-y-8 md:space-y-10">
+    <div className="page-stack">
 
       {/* ── HERO (kein Reveal) ── */}
-      <section className="page-wrap pt-10 pb-4 md:pt-12 md:pb-6">
+      <section className="pt-10 pb-4 md:pt-12 md:pb-6">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
           <div className="lg:col-span-6 min-w-0">
             <div className="section-eyebrow">
@@ -84,7 +84,7 @@ export default function ServicesClient() {
 
       {/* ── THEMENSCHWERPUNKTE ── */}
       <Reveal>
-        <section className="page-wrap pt-10 pb-4 md:pt-12 md:pb-6">
+        <section className="pt-10 pb-4 md:pt-12 md:pb-6">
           <div className="panel">
             <div className="max-w-3xl">
               <div className="section-eyebrow">
@@ -113,7 +113,7 @@ export default function ServicesClient() {
 
       {/* ── AUSWAHL + DETAILS ── */}
       <Reveal>
-        <section className="page-wrap py-8 md:py-10">
+        <section className="py-8 md:py-10">
           <div className="grid gap-8 lg:grid-cols-12">
 
             {/* LINKS – Tabs */}
@@ -211,7 +211,7 @@ export default function ServicesClient() {
 
       {/* ── CTA ── */}
       <Reveal>
-        <section className="page-wrap pt-8 pb-12 md:pt-10 md:pb-16">
+        <section className="pt-8 pb-12 md:pt-10 md:pb-16">
           <div className="dark-block p-8 sm:p-10">
             <div className="flex flex-wrap items-center justify-between gap-8">
               <div className="min-w-0">

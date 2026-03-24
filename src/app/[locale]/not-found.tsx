@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function NotFound() {
   const locale = useLocale();
+  const t = useTranslations("notFound");
 
   return (
     <div className="flex min-h-[62vh] flex-col items-center justify-center px-6 py-20 text-center">
@@ -15,19 +16,19 @@ export default function NotFound() {
       </div>
 
       <h1 className="mt-5 text-4xl font-bold tracking-[-0.03em] text-slate-900 sm:text-5xl">
-        Seite nicht gefunden
+        {t("title")}
       </h1>
 
       <p className="mt-5 max-w-md text-base leading-7 muted">
-        Die gesuchte Seite existiert leider nicht oder wurde verschoben.
+        {t("text")}
       </p>
 
       <div className="mt-10 flex flex-wrap justify-center gap-4">
         <Link href={`/${locale}`} className="btn-primary">
-          Zur Startseite
+          {t("home")}
         </Link>
         <Link href={`/${locale}/contact`} className="btn-secondary">
-          Kontakt aufnehmen
+          {t("contact")}
         </Link>
       </div>
 

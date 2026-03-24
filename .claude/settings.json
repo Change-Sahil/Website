@@ -3,7 +3,25 @@
     "allow": [
       "Bash(grep -rn \"ui\\\\|Container\\\\|PageHeader\\\\|Section\\\\|Card\\\\|Badge\\\\|ButtonLink\\\\|List\" c:/Users/seref/change-werkstatt-sahil/src --include=*.tsx --include=*.ts -l)",
       "Bash(npm uninstall:*)",
-      "Bash(node -e \":*)"
+      "Bash(node -e \":*)",
+      "Read(//c/Users/seref/**)",
+      "Bash(npx create-next-app@latest poker-gruppe --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack --yes)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(find /c/Users/seref/poker-gruppe/node_modules/@supabase/postgrest-js -name *.d.ts)",
+      "Bash(head -5 grep -n \"testimonialsTitle\\\\|\"\"speaking\"\"\" \"c:/Users/seref/change-werkstatt-sahil/src/messages/tr.json\")",
+      "Bash(head -5 grep -n \"testimonialsTitle\\\\|\"\"speaking\"\"\" \"c:/Users/seref/change-werkstatt-sahil/src/messages/es.json\")",
+      "Bash(sed -n '304,312p' \"c:/Users/seref/change-werkstatt-sahil/src/messages/de.json\")",
+      "Bash(sed -n '304,312p' \"c:/Users/seref/change-werkstatt-sahil/src/messages/en.json\")"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\seref\\poker-gruppe\\src\\app",
+      "C:\\Users\\seref\\poker-gruppe\\src",
+      "C:\\Users\\seref\\poker-gruppe\\src\\app\\api\\sessions\\[id]",
+      "C:\\Users\\seref\\poker-gruppe\\supabase",
+      "C:\\Users\\seref\\poker-gruppe",
+      "c:\\Users\\seref\\change-werkstatt-sahil\\src\\app\\[locale]\\about",
+      "c:\\Users\\seref\\change-werkstatt-sahil\\src\\app\\[locale]\\services"
     ]
   }
 }

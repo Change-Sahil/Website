@@ -20,10 +20,10 @@ export default function ApproachClient() {
   const toolbox    = asArray<string>(t.raw("toolbox"));
 
   return (
-    <div className="space-y-12 md:space-y-14">
+    <div className="page-stack">
 
       {/* ── HERO (kein Reveal) ── */}
-      <section className="page-wrap py-12 md:py-16">
+      <section className="py-8 md:py-10">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-6">
             <div className="max-w-2xl">
@@ -59,7 +59,7 @@ export default function ApproachClient() {
 
       {/* ── PRINZIPIEN ── */}
       <Reveal>
-        <section className="page-wrap section-pad">
+        <section className="section-pad">
           <div className="section-head">
             <div>
               <div className="section-eyebrow">
@@ -88,7 +88,7 @@ export default function ApproachClient() {
       </Reveal>
 
       {/* ── VORGEHENSMODELL ── */}
-      <section className="page-wrap section-pad">
+      <section className="section-pad">
         <Reveal>
           <div className="section-head">
             <div>
@@ -148,7 +148,7 @@ export default function ApproachClient() {
       </section>
 
       {/* ── WERKZEUGE ── */}
-      <section className="page-wrap section-pad">
+      <section className="section-pad">
         <Reveal>
           <div className="section-head">
             <div>
@@ -192,7 +192,7 @@ export default function ApproachClient() {
 
       {/* ── CTA ── */}
       <Reveal>
-        <section className="page-wrap pb-16 md:pb-20">
+        <section className="pb-16 md:pb-20">
           <div className="dark-block p-8 sm:p-10">
             <div className="flex flex-wrap items-center justify-between gap-8">
               <div>

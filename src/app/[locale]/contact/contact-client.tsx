@@ -64,7 +64,7 @@ export default function ContactPage() {
     "hover:border-slate-300";
 
   return (
-    <div className="space-y-12">
+    <div className="page-stack">
       <Reveal>
         <section className="panel shadow-[0_18px_55px_rgba(15,23,42,0.07)]">
           <div className="grid gap-10 md:grid-cols-2 md:items-start">

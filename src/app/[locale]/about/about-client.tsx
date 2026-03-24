@@ -1,8 +1,9 @@
 // src/app/[locale]/about/about-client.tsx
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Reveal } from "@/components/Reveal";
 import { blurDataURL } from "@/lib/blur";
 
@@ -14,6 +15,7 @@ type PracticeItem = { title?: string; text?: string };
 type TestimonialItem = { quote?: string; role?: string; context?: string };
 
 export default function AboutClient() {
+  const locale = useLocale();
   const t   = useTranslations("about");
   const nav = useTranslations("nav");
 
@@ -26,10 +28,10 @@ export default function AboutClient() {
   const hasTestimonialsSection = !!t("testimonialsTitle", { defaultValue: "" }) && testimonials.length > 0;
 
   return (
-    <div className="space-y-14 md:space-y-16">
+    <div className="page-stack">
 
       {/* ── HERO (kein Reveal) ── */}
-      <section className="page-wrap py-12 md:py-16">
+      <section className="py-8 md:py-10">
         <div className="grid items-start gap-10 lg:grid-cols-12">
           <div className="lg:col-span-7">
             <div className="max-w-3xl">
@@ -70,7 +72,7 @@ export default function AboutClient() {
 
       {/* ── PROFIL ── */}
       <Reveal>
-        <section className="page-wrap section-pad">
+        <section className="section-pad">
           <div className="section-head">
             <div>
               <div className="section-eyebrow">
@@ -131,7 +133,7 @@ export default function AboutClient() {
 
       {/* ── ERFAHRUNG AUS DER PRAXIS ── */}
       {hasPracticeSection && (
-        <section className="page-wrap section-pad">
+        <section className="section-pad">
           <Reveal>
             <div className="max-w-3xl">
               <div className="section-eyebrow">
@@ -169,7 +171,7 @@ export default function AboutClient() {
 
       {/* ── TESTIMONIALS ── */}
       {hasTestimonialsSection && (
-        <section className="page-wrap section-pad">
+        <section className="section-pad">
           <Reveal>
             <div className="max-w-3xl">
               <div className="section-eyebrow">
@@ -212,6 +214,28 @@ export default function AboutClient() {
           </div>
         </section>
       )}
+
+      {/* ── CTA ── */}
+      <Reveal>
+        <section className="pb-6 md:pb-8">
+          <div className="dark-block p-8 sm:p-10">
+            <div className="flex flex-wrap items-center justify-between gap-8">
+              <div>
+                <div className="section-eyebrow" style={{ color: "rgba(255,255,255,.70)" }}>
+                  <span className="dot" style={{ boxShadow: "0 0 0 7px rgba(0,168,165,.16)" }} />
+                  <span>{t("cta.kicker")}</span>
+                </div>
+                <p className="mt-4 max-w-xl whitespace-pre-line" style={{ color: "rgba(255,255,255,.72)", lineHeight: 1.7 }}>
+                  {t("cta.text")}
+                </p>
+              </div>
+              <div>
+                <Link href={`/${locale}/contact`} className="btn-primary">{nav("cta")}</Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </Reveal>
 
     </div>
   );

@@ -1,14 +1,23 @@
 // src/app/layout.tsx
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+
+// Inter Variable Font – unterstützt alle Gewichte 100–900,
+// inkl. der im CSS genutzten Zwischenwerte (650, 750, 780).
+// latin-ext deckt türkische Sonderzeichen (ğ, ı, ş, ü …) ab.
+const inter = Inter({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 function getBaseUrl() {
   const raw =
     process.env.NEXT_PUBLIC_SITE_URL?.trim() ||
     "https://change-werkstatt-sahil.de";
 
-  // Falls jemand versehentlich ohne Protokoll setzt
   if (!raw.startsWith("http://") && !raw.startsWith("https://")) {
     return `https://${raw}`;
   }
@@ -43,7 +52,6 @@ export const metadata: Metadata = {
     ],
   },
 
-  // **neu hinzugefügt für Mobile / App-Style**
   themeColor: "#ffffff",
 
   appleWebApp: {
@@ -59,7 +67,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="de" suppressHydrationWarning>
+    <html lang="de" suppressHydrationWarning className={inter.variable}>
       <body>
         {children}
         <Analytics />

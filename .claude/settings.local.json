@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(ts|js|json\\)$\")",
+      "Bash(grep -rn \"panel-elev\\\\|panel-soft\\\\|hover-lift\\\\|hover-3d\\\\|icon-puck\\\\|icon-dot\\\\|step-card\\\\|step-num\\\\|kicker-dot\\\\|hero-inset\\\\|kicker\\\\b\" c:/Users/seref/change-werkstatt-sahil/src --include=*.tsx --include=*.ts --include=*.css)"
+    ]
+  }
+}

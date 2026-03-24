@@ -311,6 +311,7 @@
   "title": "Talks & Teaching",
   "intro": "In talks and teaching formats, I address leadership, change, and operational reality. Not from a theoretical distance, but grounded in lived responsibility within organizational practice. The aim is to provide orientation, put situations into context, and create clarity for concrete decision-making.",
   "topicsTitle": "Typical topics",
+  "topicsHint": "Click a topic for details",
   "topics": [
     {
       "title": "Efficiency and Culture in Balance",

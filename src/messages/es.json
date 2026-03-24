@@ -311,6 +311,7 @@
   "title": "Conferencias y docencia",
   "intro": "En conferencias y formatos formativos abordo el liderazgo, el cambio y la realidad operativa. No desde una distancia teórica, sino desde la responsabilidad vivida en el día a día organizativo. El objetivo es ofrecer orientación, situar los contextos y generar claridad para la toma de decisiones concretas.",
   "topicsTitle": "Temas habituales",
+  "topicsHint": "Haz clic en un tema para ver los detalles",
   "topics": [
     {
       "title": "Eficiencia y cultura en equilibrio",

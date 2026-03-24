@@ -78,12 +78,21 @@ export async function generateMetadata({
       siteName: "Change-Werkstatt Sahil",
       type: "website",
       locale: ogLocale[locale] ?? "de_DE",
+      images: [
+        {
+          url: `${BASE_URL}/images/home-01.jpg`,
+          width: 1600,
+          height: 1000,
+          alt: "Change-Werkstatt Sahil",
+        },
+      ],
     },
 
     twitter: {
       card: "summary_large_image",
       title: titles[locale] ?? titles.de,
       description: descriptions[locale] ?? descriptions.de,
+      images: [`${BASE_URL}/images/home-01.jpg`],
     },
   };
 }
@@ -119,6 +128,15 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
                 name: "Change-Werkstatt Sahil",
                 url: BASE_URL,
                 logo: `${BASE_URL}/apple-touch-icon.png`,
+                sameAs: ["https://www.linkedin.com/in/seref-sahil-78304aa4/"],
+              },
+              {
+                "@type": "Person",
+                "@id": `${BASE_URL}/#person`,
+                name: "Seref Sahil",
+                url: `${BASE_URL}/de/about`,
+                jobTitle: "Transformationsberater",
+                worksFor: { "@id": `${BASE_URL}/#organization` },
                 sameAs: ["https://www.linkedin.com/in/seref-sahil-78304aa4/"],
               },
               {

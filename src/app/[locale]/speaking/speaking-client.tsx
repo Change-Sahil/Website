@@ -5,30 +5,29 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { Reveal } from "@/components/Reveal";
+import { blurDataURL } from "@/lib/blur";
 
 function asArray<T = unknown>(value: unknown): T[] {
   return Array.isArray(value) ? (value as T[]) : [];
 }
 
-type Topic = {
-  title: string;
-  subtitle: string;
-  description: string;
-};
+type Topic = { title: string; subtitle: string; description: string };
 
 export default function SpeakingClient() {
   const locale = useLocale();
-  const t = useTranslations("speaking");
+  const t   = useTranslations("speaking");
   const nav = useTranslations("nav");
 
-  const topics = asArray<Topic>(t.raw("topics"));
+  const topics  = asArray<Topic>(t.raw("topics"));
   const formats = asArray<string>(t.raw("formats"));
 
   const [openIndex, setOpenIndex] = React.useState<number | null>(null);
 
   return (
     <div className="space-y-12 md:space-y-16">
-      {/* HERO */}
+
+      {/* ── HERO (kein Reveal) ── */}
       <section className="page-wrap py-12 md:py-16">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
           <div className="lg:col-span-7">
@@ -36,11 +35,8 @@ export default function SpeakingClient() {
               <span className="dot" />
               <span>{t("eyebrow")}</span>
             </div>
-
             <h1 className="mt-4 title">{t("title")}</h1>
-            <p className="mt-5 max-w-2xl text-base leading-7 muted md:text-lg">
-              {t("intro")}
-            </p>
+            <p className="mt-5 max-w-2xl text-base leading-7 muted md:text-lg">{t("intro")}</p>
           </div>
 
           <div className="lg:col-span-5">
@@ -57,75 +53,96 @@ export default function SpeakingClient() {
                 alt={t("title")}
                 width={1200}
                 height={900}
-                className="h-[420px] w-full object-cover md:h-[340px] saturate-[0.9] contrast-[1.05]"
                 priority
+                placeholder="blur"
+                blurDataURL={blurDataURL}
+                className="h-[420px] w-full object-cover md:h-[340px] saturate-[0.9] contrast-[1.05]"
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* CONTENT */}
+      {/* ── CONTENT ── */}
       <section className="page-wrap section-pad">
         <div className="grid gap-8 lg:grid-cols-12">
-          <div className="lg:col-span-7">
+
+          {/* Akkordeon */}
+          <Reveal className="lg:col-span-7">
             <div className="panel h-full">
               <div className="section-eyebrow">
                 <span className="dot" />
                 <span>{t("topicsTitle")}</span>
               </div>
+              <p className="mt-2 text-xs tracking-wide" style={{ color: "rgba(var(--accent), .80)" }}>
+                ↓ {t("topicsHint")}
+              </p>
 
-              <div className="mt-6">
+              <div className="mt-5">
                 {topics.map((topic, i) => {
                   const open = openIndex === i;
                   return (
                     <div key={i} className={i === 0 ? "" : "border-t border-slate-200/70"}>
                       <button
                         type="button"
-                        onClick={() => setOpenIndex(open ? null : i)}
+                        id={`accordion-trigger-${i}`}
                         aria-expanded={open}
-                        className="flex w-full items-start justify-between gap-4 py-4 text-left"
+                        aria-controls={`accordion-panel-${i}`}
+                        onClick={() => setOpenIndex(open ? null : i)}
+                        className="flex w-full items-start justify-between gap-4 py-4 text-left group"
                       >
                         <div className="flex gap-3">
                           <span
                             aria-hidden
-                            className="mt-[10px] h-2 w-2 flex-none rounded-full"
+                            className="mt-[10px] h-2 w-2 flex-none rounded-full transition-all duration-200"
                             style={{
-                              background: "rgba(var(--accent), .92)",
-                              boxShadow: "0 0 0 8px rgba(0,168,165,.08)",
+                              background: open ? "rgb(var(--accent))" : "rgba(var(--accent), .60)",
+                              boxShadow: open ? "0 0 0 8px rgba(0,168,165,.12)" : "0 0 0 6px rgba(0,168,165,.06)",
                             }}
                           />
                           <div>
                             <p
-                              className="text-[15px] font-medium leading-7"
-                              style={{ color: "rgba(var(--ink), .88)" }}
+                              className="text-[15px] font-medium leading-7 transition-colors duration-150"
+                              style={{ color: open ? "rgba(var(--ink), .95)" : "rgba(var(--ink), .88)" }}
                             >
                               {topic.title}
                             </p>
-                            <p className="mt-1 text-sm leading-6 text-slate-500">
-                              {topic.subtitle}
-                            </p>
+                            <p className="mt-1 text-sm leading-6 text-slate-500">{topic.subtitle}</p>
                           </div>
                         </div>
-
-                        <span className="mt-1 select-none text-slate-400">{open ? "–" : "+"}</span>
+                        <span
+                          aria-hidden
+                          className="mt-1 flex-none flex items-center justify-center w-6 h-6 rounded-full text-sm font-medium select-none transition-all duration-200"
+                          style={{
+                            transform: open ? "rotate(45deg)" : "none",
+                            background: open ? "rgba(var(--accent), .12)" : "rgba(var(--ink), .06)",
+                            color: open ? "rgb(var(--accent))" : "rgba(var(--ink), .45)",
+                          }}
+                        >
+                          +
+                        </span>
                       </button>
 
-                      {open && (
-                        <div className="pb-5 pl-5 pr-2">
-                          <p className="text-sm leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
-                            {topic.description}
-                          </p>
-                        </div>
-                      )}
+                      <div
+                        id={`accordion-panel-${i}`}
+                        role="region"
+                        aria-labelledby={`accordion-trigger-${i}`}
+                        hidden={!open}
+                        className="pb-5 pl-5 pr-2"
+                      >
+                        <p className="text-sm leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
+                          {topic.description}
+                        </p>
+                      </div>
                     </div>
                   );
                 })}
               </div>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="lg:col-span-5">
+          {/* Formate */}
+          <Reveal className="lg:col-span-5" delay={80}>
             <div className="panel">
               <div className="section-eyebrow">
                 <span className="dot" />
@@ -138,14 +155,9 @@ export default function SpeakingClient() {
                     <span
                       aria-hidden
                       className="mt-[10px] h-2 w-2 flex-none rounded-full"
-                      style={{
-                        background: "rgba(var(--accent), .92)",
-                        boxShadow: "0 0 0 8px rgba(0,168,165,.08)",
-                      }}
+                      style={{ background: "rgba(var(--accent), .92)", boxShadow: "0 0 0 8px rgba(0,168,165,.08)" }}
                     />
-                    <p className="text-[15px] leading-7" style={{ color: "rgba(var(--ink), .78)" }}>
-                      {x}
-                    </p>
+                    <p className="text-[15px] leading-7" style={{ color: "rgba(var(--ink), .78)" }}>{x}</p>
                   </li>
                 ))}
               </ul>
@@ -157,20 +169,17 @@ export default function SpeakingClient() {
               </p>
 
               <div className="mt-7">
-                <Link href={`/${locale}/contact`} className="btn-primary">
-                  {nav("cta")}
-                </Link>
+                <Link href={`/${locale}/contact`} className="btn-primary">{nav("cta")}</Link>
               </div>
-
               <div className="mt-3">
-                <Link href={`/${locale}/services`} className="btn-secondary">
-                  {nav("services")}
-                </Link>
+                <Link href={`/${locale}/services`} className="btn-secondary">{nav("services")}</Link>
               </div>
             </div>
-          </div>
+          </Reveal>
+
         </div>
       </section>
+
     </div>
   );
 }

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -rn \"ui\\\\|Container\\\\|PageHeader\\\\|Section\\\\|Card\\\\|Badge\\\\|ButtonLink\\\\|List\" c:/Users/seref/change-werkstatt-sahil/src --include=*.tsx --include=*.ts -l)",
+      "Bash(npm uninstall:*)",
+      "Bash(node -e \":*)"
+    ]
+  }
+}

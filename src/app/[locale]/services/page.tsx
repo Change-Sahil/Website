@@ -53,11 +53,13 @@ export async function generateMetadata({
       siteName: "Change-Werkstatt Sahil",
       type: "website",
       locale: ogLocale[locale] ?? "de_DE",
+      images: [{ url: `${BASE_URL}/images/services-hero.jpg`, width: 1600, height: 1000, alt: "Change-Werkstatt Sahil – Leistungen" }],
     },
     twitter: {
       card: "summary_large_image",
       title: title[locale] ?? title.de,
       description: description[locale] ?? description.de,
+      images: [`${BASE_URL}/images/services-hero.jpg`],
     },
   };
 }

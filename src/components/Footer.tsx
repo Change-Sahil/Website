@@ -16,19 +16,19 @@ export default function Footer() {
       <div className="h-px bg-gradient-to-r from-transparent via-[rgba(0,168,165,0.28)] to-transparent" />
       <div className="border-t border-slate-100" />
 
-      <div className="page-wrap py-5 sm:py-6">
+      <div className="page-wrap py-4 sm:py-5">
 
         {/* Haupt-Zeile: Logo + Navigation */}
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
 
           {/* Links: Logo + Standort */}
-          <div className="flex flex-col gap-2">
+          <div className="flex items-center gap-4">
             <Link href={`/${locale}`} className="inline-flex items-center transition-opacity hover:opacity-90">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/Change-Werkstatt_Vector.svg"
                 alt="Change-Werkstatt Sahil"
-                className="h-[38px] w-auto"
+                className="h-[40px] w-auto"
               />
             </Link>
             <p className="text-xs leading-5 text-slate-400 tracking-wide">
@@ -51,10 +51,10 @@ export default function Footer() {
         </div>
 
         {/* Trennlinie */}
-        <div className="mt-6 h-px bg-gradient-to-r from-slate-100 via-slate-200/60 to-slate-100" />
+        <div className="mt-4 h-px bg-gradient-to-r from-slate-100 via-slate-200/60 to-slate-100" />
 
         {/* Untere Zeile: Copyright + Legal */}
-        <div className="mt-4 flex flex-col gap-2 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-3 flex flex-col gap-2 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-4">
             <span>© {year} Change-Werkstatt Sahil</span>
             <Link href={`/${locale}/impressum`}   className="hover:text-slate-600 transition-colors duration-150">{tFooter("imprint")}</Link>

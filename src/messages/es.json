@@ -361,7 +361,7 @@
   "contact": {
     "eyebrow": "Solicitar conversación",
     "title": "Contacto",
-    "intro": "En una conversación breve y sin compromiso aclaramos si y cómo una colaboración tiene sentido. Normalmente respondemos en un plazo de 24–48 horas.",
+    "intro": "En una conversación breve y sin compromiso aclaramos si y cómo una colaboración tiene sentido. Escríbanos, reserve una cita directamente o llámenos. Normalmente respondemos en un plazo de 24–48 horas.",
     "formEyebrow": "Enviar mensaje",
     "formIntro": "Describa brevemente su consulta y nos pondremos en contacto con usted a la mayor brevedad.",
     "responseHint": "Por favor, no envíe información confidencial a través del formulario.",
@@ -386,7 +386,12 @@
       "success": "Mensaje enviado. ¡Gracias!",
       "errorSend": "Error al enviar. Inténtelo de nuevo más tarde.",
       "errorNetwork": "Error de red. Inténtelo de nuevo más tarde."
-    }
+    },
+    "tabMessage": "Enviar mensaje",
+    "tabSchedule": "Reservar cita",
+    "scheduleHint": "Elija un momento conveniente para una primera conversación – directamente y sin rodeos.",
+    "scheduleButton": "Reservar cita ahora",
+    "scheduleNote": "Abre Microsoft Bookings en una nueva pestaña."
   },
   "privacy": {
     "title": "Política de privacidad",

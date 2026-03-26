@@ -361,7 +361,7 @@
   "contact": {
     "eyebrow": "Görüşme planla",
     "title": "İletişim",
-    "intro": "Kısa ve bağlayıcı olmayan bir görüşmede, bir iş birliğinin uygun olup olmadığını ve nasıl ilerlenebileceğini netleştiriyoruz. Genellikle 24–48 saat içinde geri dönüş yaparız.",
+    "intro": "Kısa ve bağlayıcı olmayan bir görüşmede, bir iş birliğinin uygun olup olmadığını ve nasıl ilerlenebileceğini netleştiriyoruz. Bize mesaj gönderin, doğrudan randevu alın veya arayın. Genellikle 24–48 saat içinde geri dönüş yaparız.",
     "formEyebrow": "Mesaj gönder",
     "formIntro": "Talebinizi kısaca paylaşın, en kısa sürede size geri dönelim.",
     "responseHint": "Lütfen form üzerinden gizli bilgi göndermeyin.",
@@ -386,7 +386,12 @@
       "success": "Mesaj gönderildi. Teşekkürler!",
       "errorSend": "Gönderme başarısız oldu. Lütfen daha sonra tekrar deneyin.",
       "errorNetwork": "Ağ hatası. Lütfen daha sonra tekrar deneyin."
-    }
+    },
+    "tabMessage": "Mesaj gönder",
+    "tabSchedule": "Randevu al",
+    "scheduleHint": "İlk görüşme için size uygun bir zaman seçin – doğrudan ve zahmetsizce.",
+    "scheduleButton": "Randevuyu şimdi alın",
+    "scheduleNote": "Microsoft Bookings yeni bir sekmede açılır."
   },
   "privacy": {
     "title": "Gizlilik Politikası",

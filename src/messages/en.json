@@ -361,7 +361,7 @@
   "contact": {
     "eyebrow": "Schedule a conversation",
     "title": "Contact",
-    "intro": "In a brief, non-binding conversation, we clarify whether and how a collaboration makes sense. We usually get back to you within 24–48 hours.",
+    "intro": "In a brief, non-binding conversation, we clarify whether and how a collaboration makes sense. Send us a message, book an appointment directly, or give us a call. We usually get back to you within 24–48 hours.",
     "formEyebrow": "Send a message",
     "formIntro": "Briefly describe your request and we will get back to you shortly.",
     "responseHint": "Please do not send any confidential information via this form.",
@@ -386,7 +386,12 @@
       "success": "Message sent. Thank you!",
       "errorSend": "Sending failed. Please try again later.",
       "errorNetwork": "Network error. Please try again later."
-    }
+    },
+    "tabMessage": "Send a message",
+    "tabSchedule": "Book a meeting",
+    "scheduleHint": "Choose a convenient time for an initial conversation – directly and without detours.",
+    "scheduleButton": "Book appointment now",
+    "scheduleNote": "Opens Microsoft Bookings in a new tab."
   },
   "privacy": {
     "title": "Privacy Policy",

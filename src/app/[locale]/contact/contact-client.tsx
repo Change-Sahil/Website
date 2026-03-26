@@ -57,6 +57,13 @@ export default function ContactPage() {
   const phoneRaw = String(d("phone"));
   const phoneHref = phoneRaw.replace(/[^\d+]/g, "");
 
+  const bookingUrl = ({
+    de: "https://outlook.office.com/bookwithme/user/6de68b0b8be247aea52fe665683a25e3@change-werkstatt-sahil.com/meetingtype/6IciwIU95kSU87UB6uKcUA2?anonymous",
+    en: "https://outlook.office.com/bookwithme/user/6de68b0b8be247aea52fe665683a25e3@change-werkstatt-sahil.com/meetingtype/LTbeWL46bUWoOR-oXljwUA2?anonymous",
+    tr: "https://outlook.office.com/bookwithme/user/6de68b0b8be247aea52fe665683a25e3@change-werkstatt-sahil.com/meetingtype/wh5p9216QE6pcRhcpP0fQA2?anonymous",
+    es: "https://outlook.office.com/bookwithme/user/6de68b0b8be247aea52fe665683a25e3@change-werkstatt-sahil.com/meetingtype/xp-hh-yFWkSVpnYPdqC0Eg2?anonymous",
+  } as Record<string, string>)[locale] ?? "https://outlook.office.com/bookwithme/user/6de68b0b8be247aea52fe665683a25e3@change-werkstatt-sahil.com/meetingtype/6IciwIU95kSU87UB6uKcUA2?anonymous";
+
   const inputClass =
     "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition-all duration-150 " +
     "placeholder:text-slate-400 " +
@@ -67,10 +74,10 @@ export default function ContactPage() {
     <div className="page-stack">
       <Reveal>
         <section className="panel shadow-[0_18px_55px_rgba(15,23,42,0.07)]">
-          <div className="grid gap-10 md:grid-cols-2 md:items-start">
+          <div className="grid gap-10 md:grid-cols-2 md:items-stretch">
 
             {/* LINKS */}
-            <div>
+            <div className="flex flex-col">
               <div className="section-eyebrow">
                 <span className="dot" />
                 <span>{t("eyebrow")}</span>
@@ -78,7 +85,30 @@ export default function ContactPage() {
               <h1 className="mt-6 title">{t("title")}</h1>
               <p className="mt-4 max-w-2xl text-base leading-7 muted md:text-lg">{t("intro")}</p>
 
-              <div className="mt-10">
+              {/* Termin buchen */}
+              <div className="mt-8 panel" style={{ background: "rgba(0,168,165,.04)", border: "1px solid rgba(0,168,165,.18)" }}>
+                <div className="section-eyebrow">
+                  <span className="dot" />
+                  <span>{t("tabSchedule")}</span>
+                </div>
+                <p className="mt-3 text-sm leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
+                  {t("scheduleHint")}
+                </p>
+                <a
+                  href={bookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary mt-5 w-full text-center block"
+                >
+                  {t("scheduleButton")}
+                </a>
+                <p className="mt-3 text-xs text-center" style={{ color: "rgba(var(--ink), .45)" }}>
+                  {t("scheduleNote")}
+                </p>
+              </div>
+
+              {/* Direktkontakt */}
+              <div className="mt-auto pt-8">
                 <div className="panel">
                   <div className="section-eyebrow">
                     <span className="dot" />
@@ -116,9 +146,9 @@ export default function ContactPage() {
                 {t("formIntro")}
               </p>
 
-              <div className="mt-6 hr-soft" />
+              <div className="mt-5 hr-soft" />
 
-              <form onSubmit={onSubmit} className="mt-6 grid gap-5">
+              <form onSubmit={onSubmit} className="mt-5 grid gap-5">
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div className="space-y-2">
                     <label className="block text-sm font-semibold text-slate-900">{f("name")}</label>

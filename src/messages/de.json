@@ -361,7 +361,7 @@
   "contact": {
     "eyebrow": "Gespräch vereinbaren",
     "title": "Kontakt",
-    "intro": "Wir klären in einem unverbindlichen Gespräch, ob und wie eine Zusammenarbeit sinnvoll ist. Rückmeldung in der Regel innerhalb von 24–48 Stunden.",
+    "intro": "Wir klären in einem unverbindlichen Gespräch, ob und wie eine Zusammenarbeit sinnvoll ist. Schreiben Sie uns, buchen Sie direkt einen Termin oder rufen Sie an. Rückmeldung in der Regel innerhalb von 24–48 Stunden.",
     "formEyebrow": "Nachricht senden",
     "formIntro": "Schreiben Sie uns kurz Ihr Anliegen, wir melden uns zeitnah.",
     "responseHint": "Bitte keine vertraulichen Informationen über das Formular senden.",
@@ -386,7 +386,12 @@
       "success": "Nachricht wurde gesendet. Vielen Dank!",
       "errorSend": "Senden fehlgeschlagen. Bitte später erneut versuchen.",
       "errorNetwork": "Netzwerkfehler. Bitte später erneut versuchen."
-    }
+    },
+    "tabMessage": "Nachricht schreiben",
+    "tabSchedule": "Termin buchen",
+    "scheduleHint": "Wählen Sie einen passenden Termin für ein erstes Gespräch – direkt und ohne Umwege.",
+    "scheduleButton": "Termin jetzt buchen",
+    "scheduleNote": "Öffnet Microsoft Bookings in einem neuen Tab."
   },
   "privacy": {
     "title": "Datenschutzerklärung",

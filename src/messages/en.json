@@ -45,7 +45,7 @@
     "divider": {
       "kicker": "Concise. Practical. Effective.",
       "title": "Less abstraction\nMore operational reality",
-      "text": "Change rarely fails due to lack of intent, but due to unclear responsibilities and insufficient alignment. We create the structure that enables leadership to act and collaboration to function."
+      "text": "Change rarely fails due to lack of intent, but due to unclear responsibilities and insufficient alignment. Together with you, I create the structure that enables leadership to act and collaboration to function."
     },
     "audience": {
       "title": "Where my support is particularly valuable",
@@ -77,7 +77,7 @@
     }
   },
   "services": {
-    "title": "Effective change",
+    "title": "Effective execution in the organisation",
     "intro": "Collaboration almost always begins with a clearly defined situation. And evolves, when it’s a good fit, into an ongoing partnership.\n\nDepending on the occasion, I work on a focused basis to create clarity, in a recurring rhythm to provide guidance, or continuously to embed change sustainably in day-to-day operations.",
     "themes": {
       "kicker": "Focus areas",
@@ -140,6 +140,11 @@
         "workshops": "Workshop sessions",
         "partnership": "Transformation partnership",
         "sparring": "Executive sparring"
+      },
+      "tabRole": {
+        "workshops": "Entry & clarification",
+        "partnership": "Continuous support",
+        "sparring": "Focused decisions"
       },
       "duration": {
         "workshops": "1-2 days",
@@ -404,8 +409,8 @@
   "privacy": {
     "title": "Privacy Policy",
     "intro": {
-      "p1": "With this Privacy Policy we inform you about the processing of personal data when you use our website. Personal data is any data that can be used to identify you personally.",
-      "p2": "This website provides information about our services and enables you to contact us."
+      "p1": "With this Privacy Policy I inform you about the processing of personal data when you use my website. Personal data is any data that can be used to identify you personally.",
+      "p2": "This website provides information about my services and enables you to contact me."
     },
     "controller": {
       "title": "Controller",
@@ -413,7 +418,7 @@
     },
     "purposes": {
       "title": "Purposes and legal bases",
-      "p1": "We process personal data for the following purposes:",
+      "p1": "I process personal data for the following purposes:",
       "list": [
         "Provision of the website (connection data/server logs)",
         "Handling requests via the contact form",
@@ -424,15 +429,15 @@
     },
     "hosting": {
       "title": "Hosting and website delivery",
-      "p1": "Our website is hosted by Vercel Inc. When you access the website, technically necessary data is processed to deliver the website (e.g., IP address, date/time, requested page, referrer URL, browser/operating system).",
+      "p1": "My website is hosted by Vercel Inc. When you access the website, technically necessary data is processed to deliver the website (e.g., IP address, date/time, requested page, referrer URL, browser/operating system).",
       "p2": "This data is typically processed in server log files and is used to ensure secure and stable operation of the website.",
       "legal": "Legal basis: Art. 6(1)(f) GDPR (legitimate interest in secure operation)."
     },
     "contact": {
       "title": "Contact and contact form",
-      "p1": "If you contact us via the contact form or email, we process the information you provide (e.g., name, email address, company, message) to handle your request and communicate with you.",
+      "p1": "If you contact me via the contact form or email, I process the information you provide (e.g., name, email address, company, message) to handle your request and communicate with you.",
       "legal": "Legal basis: Art. 6(1)(b) GDPR (pre-contractual measures) and Art. 6(1)(f) GDPR (efficient handling of inquiries).",
-      "retention": "We store inquiries as long as necessary for processing and documentation and then delete them in accordance with statutory retention periods."
+      "retention": "I store inquiries as long as necessary for processing and documentation and then delete them in accordance with statutory retention periods."
     },
     "emailProvider": {
       "title": "Email delivery / service provider (Resend)",
@@ -441,14 +446,14 @@
     },
     "analytics": {
       "title": "Cookies, tracking and Vercel Analytics",
-      "p1": "We do not use marketing or retargeting cookies.",
-      "p2": "We use Vercel Analytics to evaluate the use of our website statistically. Only anonymized usage data (e.g., page views, device type, approximate region) is processed. No user profiles are created and no marketing tracking takes place.",
+      "p1": "I do not use marketing or retargeting cookies.",
+      "p2": "I use Vercel Analytics to evaluate the use of my website statistically. Only anonymized usage data (e.g., page views, device type, approximate region) is processed. No user profiles are created and no marketing tracking takes place.",
       "p3": "Vercel Analytics operates without marketing cookies. Legal basis: Art. 6(1)(f) GDPR (legitimate interest in technical optimization and statistical evaluation).",
-      "future": "If we introduce tracking or marketing tools in the future, we will inform you here separately and obtain consent where required."
+      "future": "If I introduce tracking or marketing tools in the future, I will inform you here separately and obtain consent where required."
     },
     "transfers": {
       "title": "Recipients and international transfers",
-      "p1": "As part of hosting and email delivery, service providers may process data on our behalf. Processing in third countries (e.g., the USA) cannot be ruled out. Where required, we ensure appropriate safeguards (e.g., Standard Contractual Clauses)."
+      "p1": "As part of hosting and email delivery, service providers may process data on my behalf. Processing in third countries (e.g., the USA) cannot be ruled out. Where required, I ensure appropriate safeguards (e.g., Standard Contractual Clauses)."
     },
     "rights": {
       "title": "Your rights",
@@ -466,11 +471,11 @@
     },
     "security": {
       "title": "Data security",
-      "p1": "We use appropriate technical and organizational measures to protect your data against loss, misuse and unauthorized access. However, complete security of data transmission over the internet cannot be guaranteed."
+      "p1": "I use appropriate technical and organizational measures to protect your data against loss, misuse and unauthorized access. However, complete security of data transmission over the internet cannot be guaranteed."
     },
     "changes": {
       "title": "Status and changes",
-      "p1": "We may update this Privacy Policy if the legal/factual situation changes or if we introduce new services.",
+      "p1": "I may update this Privacy Policy if the legal/factual situation changes or if I introduce new services.",
       "status": "Status: March 2026"
     }
   },

@@ -45,7 +45,7 @@
     "divider": {
       "kicker": "Kurz. Praxisnah. Wirksam.",
       "title": "Weniger Abstraktion\nMehr operative Realität",
-      "text": "Veränderung scheitert selten am Willen, sondern an unklarer Verantwortung und fehlender Abstimmung. Wir schaffen die Struktur, in der Führung handlungsfähig wird und Zusammenarbeit funktioniert."
+      "text": "Veränderung scheitert selten am Willen, sondern an unklarer Verantwortung und fehlender Abstimmung. Ich schaffe gemeinsam mit Ihnen die Struktur, in der Führung handlungsfähig wird und Zusammenarbeit funktioniert."
     },
     "audience": {
       "title": "Wo meine Begleitung besonders hilfreich ist",
@@ -77,7 +77,7 @@
     }
   },
   "services": {
-    "title": "Wirksame Veränderung",
+    "title": "Wirksame Umsetzung in der Organisation",
     "intro": "Die Zusammenarbeit beginnt fast immer mit einer klar abgegrenzten Situation. Und entwickelt sich, wenn es passt, in eine kontinuierliche Begleitung.\n\nJe nach Anlass arbeite ich punktuell zur Klärung, im Rhythmus zur Steuerung oder kontinuierlich zur nachhaltigen Verankerung im täglichen Betrieb.",
     "themes": {
       "kicker": "Themenschwerpunkte",
@@ -140,6 +140,11 @@
         "workshops": "Werkstatt-Workshops",
         "partnership": "Transformationspartnerschaft",
         "sparring": "Executive Sparring"
+      },
+      "tabRole": {
+        "workshops": "Einstieg & Klärung",
+        "partnership": "Kontinuierliche Begleitung",
+        "sparring": "Fokussierte Entscheidungen"
       },
       "duration": {
         "workshops": "1-2 Tage",
@@ -404,8 +409,8 @@
   "privacy": {
     "title": "Datenschutzerklärung",
     "intro": {
-      "p1": "Mit dieser Datenschutzerklärung informieren wir Sie über die Verarbeitung personenbezogener Daten bei der Nutzung unserer Website. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.",
-      "p2": "Diese Website dient der Information über unsere Leistungen und der Kontaktaufnahme."
+      "p1": "Mit dieser Datenschutzerklärung informiere ich Sie über die Verarbeitung personenbezogener Daten bei der Nutzung meiner Website. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.",
+      "p2": "Diese Website dient der Information über meine Leistungen und der Kontaktaufnahme."
     },
     "controller": {
       "title": "Verantwortlicher",
@@ -413,7 +418,7 @@
     },
     "purposes": {
       "title": "Zwecke und Rechtsgrundlagen",
-      "p1": "Wir verarbeiten personenbezogene Daten zu folgenden Zwecken:",
+      "p1": "Ich verarbeite personenbezogene Daten zu folgenden Zwecken:",
       "list": [
         "Bereitstellung der Website (Verbindungsdaten/Server-Logfiles)",
         "Bearbeitung von Anfragen über das Kontaktformular",
@@ -424,15 +429,15 @@
     },
     "hosting": {
       "title": "Hosting und Bereitstellung der Website",
-      "p1": "Unsere Website wird bei Vercel Inc. gehostet. Beim Aufruf der Website werden technisch notwendige Daten verarbeitet, um die Website auszuliefern (z. B. IP-Adresse, Datum/Uhrzeit, abgerufene Seite, Referrer-URL, Browser/Betriebssystem).",
+      "p1": "Meine Website wird bei Vercel Inc. gehostet. Beim Aufruf der Website werden technisch notwendige Daten verarbeitet, um die Website auszuliefern (z. B. IP-Adresse, Datum/Uhrzeit, abgerufene Seite, Referrer-URL, Browser/Betriebssystem).",
       "p2": "Diese Daten werden in der Regel in Server-Logfiles verarbeitet und dienen dem sicheren und stabilen Betrieb der Website.",
       "legal": "Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren Betrieb)."
     },
     "contact": {
       "title": "Kontaktaufnahme und Kontaktformular",
-      "p1": "Wenn Sie uns per Kontaktformular oder E-Mail kontaktieren, verarbeiten wir die von Ihnen gemachten Angaben (z. B. Name, E-Mail-Adresse, Unternehmen, Nachricht), um Ihre Anfrage zu bearbeiten und mit Ihnen zu kommunizieren.",
+      "p1": "Wenn Sie mich per Kontaktformular oder E-Mail kontaktieren, verarbeite ich die von Ihnen gemachten Angaben (z. B. Name, E-Mail-Adresse, Unternehmen, Nachricht), um Ihre Anfrage zu bearbeiten und mit Ihnen zu kommunizieren.",
       "legal": "Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) sowie Art. 6 Abs. 1 lit. f DSGVO (effiziente Bearbeitung von Anfragen).",
-      "retention": "Wir bewahren Anfragen so lange auf, wie dies zur Bearbeitung und Dokumentation erforderlich ist, und löschen sie anschließend im Rahmen der gesetzlichen Aufbewahrungsfristen."
+      "retention": "Ich bewahre Anfragen so lange auf, wie dies zur Bearbeitung und Dokumentation erforderlich ist, und lösche sie anschließend im Rahmen der gesetzlichen Aufbewahrungsfristen."
     },
     "emailProvider": {
       "title": "Versand von E-Mails / Dienstleister (Resend)",
@@ -441,14 +446,14 @@
     },
     "analytics": {
       "title": "Cookies, Tracking und Vercel Analytics",
-      "p1": "Wir setzen keine Marketing- oder Retargeting-Cookies ein.",
-      "p2": "Zur statistischen Auswertung der Nutzung unserer Website verwenden wir Vercel Analytics. Dabei werden ausschließlich anonymisierte Nutzungsdaten (z. B. Seitenaufrufe, Gerätetyp, ungefähre Herkunftsregion) verarbeitet. Es erfolgt keine Erstellung von Nutzerprofilen und kein Tracking zu Marketingzwecken.",
-      "p3": "Vercel Analytics arbeitet ohne den Einsatz von Marketing-Cookies. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der technischen Optimierung und statistischen Auswertung unserer Website).",
-      "future": "Sollten künftig Tracking- oder Marketing-Tools eingesetzt werden, informieren wir an dieser Stelle gesondert und holen – sofern erforderlich – Ihre Einwilligung ein."
+      "p1": "Ich setze keine Marketing- oder Retargeting-Cookies ein.",
+      "p2": "Zur statistischen Auswertung der Nutzung meiner Website verwende ich Vercel Analytics. Dabei werden ausschließlich anonymisierte Nutzungsdaten (z. B. Seitenaufrufe, Gerätetyp, ungefähre Herkunftsregion) verarbeitet. Es erfolgt keine Erstellung von Nutzerprofilen und kein Tracking zu Marketingzwecken.",
+      "p3": "Vercel Analytics arbeitet ohne den Einsatz von Marketing-Cookies. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der technischen Optimierung und statistischen Auswertung meiner Website).",
+      "future": "Sollten künftig Tracking- oder Marketing-Tools eingesetzt werden, informiere ich an dieser Stelle gesondert und hole – sofern erforderlich – Ihre Einwilligung ein."
     },
     "transfers": {
       "title": "Empfänger und Drittlandübermittlung",
-      "p1": "Im Rahmen des Hostings und des E-Mail-Versands können Dienstleister Daten in unserem Auftrag verarbeiten. Dabei kann eine Verarbeitung in Drittländern (z. B. USA) nicht ausgeschlossen werden. In diesen Fällen stellen wir sicher, dass geeignete Garantien (z. B. Standardvertragsklauseln) bestehen, sofern erforderlich."
+      "p1": "Im Rahmen des Hostings und des E-Mail-Versands können Dienstleister Daten in meinem Auftrag verarbeiten. Dabei kann eine Verarbeitung in Drittländern (z. B. USA) nicht ausgeschlossen werden. In diesen Fällen stelle ich sicher, dass geeignete Garantien (z. B. Standardvertragsklauseln) bestehen, sofern erforderlich."
     },
     "rights": {
       "title": "Ihre Rechte",
@@ -466,11 +471,11 @@
     },
     "security": {
       "title": "Datensicherheit",
-      "p1": "Wir setzen angemessene technische und organisatorische Maßnahmen ein, um Ihre Daten gegen Verlust, Missbrauch und unbefugten Zugriff zu schützen. Eine vollständige Sicherheit der Datenübertragung im Internet kann jedoch nicht garantiert werden."
+      "p1": "Ich setze angemessene technische und organisatorische Maßnahmen ein, um Ihre Daten gegen Verlust, Missbrauch und unbefugten Zugriff zu schützen. Eine vollständige Sicherheit der Datenübertragung im Internet kann jedoch nicht garantiert werden."
     },
     "changes": {
       "title": "Stand und Änderungen",
-      "p1": "Wir können diese Datenschutzerklärung anpassen, wenn sich die Rechts- oder Faktenlage ändert oder wenn wir neue Dienste einsetzen.",
+      "p1": "Ich kann diese Datenschutzerklärung anpassen, wenn sich die Rechts- oder Faktenlage ändert oder wenn ich neue Dienste einsetze.",
       "status": "Stand: März 2026"
     }
   },

@@ -44,6 +44,7 @@ export interface ServiceUi {
   kicker: string;
   navTitle: string;
   cardTitles: Record<ServiceKey, string>;
+  tabRole: Record<ServiceKey, string>;
   teaser: Record<string, string>;
   when: Record<string, string>;
   tags: Record<string, string[]>;

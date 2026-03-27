@@ -45,7 +45,7 @@
     "divider": {
       "kicker": "Kısa. Pratik. Etkili.",
       "title": "Daha az soyutluk\nDaha fazla operasyonel gerçeklik",
-      "text": "Değişim çoğunlukla isteksizlikten değil, belirsiz sorumluluklar ve yetersiz uyumdan dolayı başarısız olur. Liderliğin harekete geçebildiği ve iş birliğinin çalıştığı yapıyı kurarız."
+      "text": "Değişim çoğunlukla isteksizlikten değil, belirsiz sorumluluklar ve yetersiz uyumdan dolayı başarısız olur. Sizinle birlikte, liderliğin harekete geçebildiği ve iş birliğinin çalıştığı yapıyı kuruyorum."
     },
     "audience": {
       "title": "Eşliğimin özellikle değer yarattığı durumlar",
@@ -77,7 +77,7 @@
     }
   },
   "services": {
-    "title": "Etkili değişim",
+    "title": "Organizasyonda etkili uygulama",
     "intro": "İş birliği neredeyse her zaman belirgin biçimde tanımlanmış bir durumla başlar. Ve uygun olduğunda sürekli bir eşliğe dönüşür.\n\nDuruma göre netlik sağlamak için noktasal, yön vermek için belirli bir ritimde veya değişimi günlük işleyişe kalıcı biçimde yerleştirmek için sürekli çalışıyorum.",
     "themes": {
       "kicker": "Odak alanları",
@@ -140,6 +140,11 @@
         "workshops": "Atölye çalışmaları",
         "partnership": "Dönüşüm ortaklığı",
         "sparring": "Executive Sparring"
+      },
+      "tabRole": {
+        "workshops": "Başlangıç & Netleştirme",
+        "partnership": "Sürekli Eşlik",
+        "sparring": "Odaklanmış Kararlar"
       },
       "duration": {
         "workshops": "1-2 gün",
@@ -404,8 +409,8 @@
   "privacy": {
     "title": "Gizlilik Politikası",
     "intro": {
-      "p1": "Bu Gizlilik Politikası ile web sitemizi kullandığınızda kişisel verilerin nasıl işlendiği hakkında bilgi veriyoruz. Kişisel veriler, kimliğinizin belirlenmesine imkân veren tüm verilerdir.",
-      "p2": "Bu web sitesi hizmetlerimiz hakkında bilgi vermek ve bizimle iletişime geçmenizi sağlamak amacıyla kullanılmaktadır."
+      "p1": "Bu Gizlilik Politikası ile web sitemi kullandığınızda kişisel verilerin nasıl işlendiği hakkında bilgi veriyorum. Kişisel veriler, kimliğinizin belirlenmesine imkân veren tüm verilerdir.",
+      "p2": "Bu web sitesi hizmetlerim hakkında bilgi vermek ve benimle iletişime geçmenizi sağlamak amacıyla kullanılmaktadır."
     },
     "controller": {
       "title": "Veri sorumlusu",
@@ -413,7 +418,7 @@
     },
     "purposes": {
       "title": "Amaçlar ve hukuki dayanaklar",
-      "p1": "Kişisel verileri aşağıdaki amaçlarla işleriz:",
+      "p1": "Kişisel verileri aşağıdaki amaçlarla işliyorum:",
       "list": [
         "Web sitesinin sunulması (bağlantı verileri/sunucu logları)",
         "İletişim formu üzerinden gelen taleplerin işlenmesi",
@@ -424,15 +429,15 @@
     },
     "hosting": {
       "title": "Barındırma ve web sitesinin sunulması",
-      "p1": "Web sitemiz Vercel Inc. tarafından barındırılmaktadır. Siteye eriştiğinizde, web sitesini sunmak için teknik olarak gerekli veriler işlenir (örn. IP adresi, tarih/saat, görüntülenen sayfa, yönlendiren URL, tarayıcı/işletim sistemi).",
+      "p1": "Web sitem Vercel Inc. tarafından barındırılmaktadır. Siteye eriştiğinizde, web sitesini sunmak için teknik olarak gerekli veriler işlenir (örn. IP adresi, tarih/saat, görüntülenen sayfa, yönlendiren URL, tarayıcı/işletim sistemi).",
       "p2": "Bu veriler genellikle sunucu log dosyalarında işlenir ve web sitesinin güvenli ve istikrarlı çalışması için kullanılır.",
       "legal": "Hukuki dayanak: GDPR Madde 6(1)(f) (güvenli işletime ilişkin meşru menfaat)."
     },
     "contact": {
       "title": "İletişim ve iletişim formu",
-      "p1": "İletişim formu veya e-posta yoluyla bizimle iletişime geçtiğinizde, talebinizi değerlendirmek ve sizinle iletişim kurmak için verdiğiniz bilgileri (örn. ad, e-posta, şirket, mesaj) işleriz.",
+      "p1": "İletişim formu veya e-posta yoluyla benimle iletişime geçtiğinizde, talebinizi değerlendirmek ve sizinle iletişim kurmak için verdiğiniz bilgileri (örn. ad, e-posta, şirket, mesaj) işliyorum.",
       "legal": "Hukuki dayanak: GDPR Madde 6(1)(b) (sözleşme öncesi işlemler) ve GDPR Madde 6(1)(f) (taleplerin etkin şekilde işlenmesi).",
-      "retention": "Talepleri, işlem ve belgeleme için gerekli olduğu sürece saklar, ardından yasal saklama süreleri çerçevesinde sileriz."
+      "retention": "Talepleri, işlem ve belgeleme için gerekli olduğu sürece saklarım, ardından yasal saklama süreleri çerçevesinde silerim."
     },
     "emailProvider": {
       "title": "E-posta gönderimi / hizmet sağlayıcı (Resend)",
@@ -441,14 +446,14 @@
     },
     "analytics": {
       "title": "Çerezler, izleme ve Vercel Analytics",
-      "p1": "Pazarlama veya yeniden hedefleme (retargeting) çerezleri kullanmıyoruz.",
-      "p2": "Web sitemizin kullanımını istatistiksel olarak değerlendirmek için Vercel Analytics kullanıyoruz. Yalnızca anonimleştirilmiş kullanım verileri (örn. sayfa görüntüleme, cihaz türü, yaklaşık bölge) işlenir. Kullanıcı profili oluşturulmaz ve pazarlama amaçlı izleme yapılmaz.",
+      "p1": "Pazarlama veya yeniden hedefleme (retargeting) çerezleri kullanmıyorum.",
+      "p2": "Web sitemi istatistiksel olarak değerlendirmek için Vercel Analytics kullanıyorum. Yalnızca anonimleştirilmiş kullanım verileri (örn. sayfa görüntüleme, cihaz türü, yaklaşık bölge) işlenir. Kullanıcı profili oluşturulmaz ve pazarlama amaçlı izleme yapılmaz.",
       "p3": "Vercel Analytics pazarlama çerezleri kullanmadan çalışır. Hukuki dayanak: GDPR Madde 6(1)(f) (teknik optimizasyon ve istatistiksel değerlendirmeye ilişkin meşru menfaat).",
       "future": "Gelecekte izleme veya pazarlama araçları kullanılırsa, burada ayrıca bilgilendirme yapılacak ve gerekli hallerde açık rıza alınacaktır."
     },
     "transfers": {
       "title": "Alıcılar ve uluslararası aktarım",
-      "p1": "Barındırma ve e-posta gönderimi kapsamında hizmet sağlayıcılar verileri bizim adımıza işleyebilir. Üçüncü ülkelerde (örn. ABD) işleme ihtimali tamamen dışlanamaz. Gerekli hallerde uygun güvencelerin (örn. Standart Sözleşme Maddeleri) sağlandığından emin oluruz."
+      "p1": "Barındırma ve e-posta gönderimi kapsamında hizmet sağlayıcılar verileri benim adıma işleyebilir. Üçüncü ülkelerde (örn. ABD) işleme ihtimali tamamen dışlanamaz. Gerekli hallerde uygun güvencelerin (örn. Standart Sözleşme Maddeleri) sağlandığından emin olurum."
     },
     "rights": {
       "title": "Haklarınız",
@@ -466,11 +471,11 @@
     },
     "security": {
       "title": "Veri güvenliği",
-      "p1": "Verilerinizi kayıp, kötüye kullanım ve yetkisiz erişime karşı korumak için uygun teknik ve organizasyonel önlemler uygularız. Ancak internet üzerinden veri aktarımının tamamen güvenli olduğu garanti edilemez."
+      "p1": "Verilerinizi kayıp, kötüye kullanım ve yetkisiz erişime karşı korumak için uygun teknik ve organizasyonel önlemler uyguluyorum. Ancak internet üzerinden veri aktarımının tamamen güvenli olduğu garanti edilemez."
     },
     "changes": {
       "title": "Durum ve değişiklikler",
-      "p1": "Hukuki/fiili durumun değişmesi veya yeni hizmetlerin devreye alınması halinde bu metni güncelleyebiliriz.",
+      "p1": "Hukuki/fiili durumun değişmesi veya yeni hizmetlerin devreye alınması halinde bu metni güncelleyebilirim.",
       "status": "Durum: Mart 2026"
     }
   },

@@ -45,7 +45,7 @@
     "divider": {
       "kicker": "Concreto. Práctico. Eficaz.",
       "title": "Menos abstracción\nMás realidad operativa",
-      "text": "El cambio rara vez falla por falta de intención, sino por responsabilidades poco claras y falta de coordinación. Creamos la estructura que permite que el liderazgo actúe y que la colaboración funcione."
+      "text": "El cambio rara vez falla por falta de intención, sino por responsabilidades poco claras y falta de coordinación. Junto a usted, creo la estructura que permite que el liderazgo actúe y que la colaboración funcione."
     },
     "audience": {
       "title": "Dónde mi acompañamiento es especialmente valioso",
@@ -77,7 +77,7 @@
     }
   },
   "services": {
-    "title": "Cambio efectivo",
+    "title": "Implementación efectiva en la organización",
     "intro": "La colaboración comienza casi siempre con una situación claramente delimitada. Y se desarrolla, cuando encaja, en un acompañamiento continuo.\n\nSegún la situación, trabajo de forma puntual para generar claridad, con un ritmo definido para orientar, o de manera continua para anclar el cambio de forma sostenible en la operación diaria.",
     "themes": {
       "kicker": "Áreas de enfoque",
@@ -140,6 +140,11 @@
         "workshops": "Workshops de taller",
         "partnership": "Alianza de transformación",
         "sparring": "Executive Sparring"
+      },
+      "tabRole": {
+        "workshops": "Inicio & clarificación",
+        "partnership": "Acompañamiento continuo",
+        "sparring": "Decisiones enfocadas"
       },
       "duration": {
         "workshops": "1-2 días",
@@ -404,8 +409,8 @@
   "privacy": {
     "title": "Política de privacidad",
     "intro": {
-      "p1": "Con esta Política de privacidad le informamos sobre el tratamiento de datos personales al utilizar nuestro sitio web. Los datos personales son todos los datos con los que se le puede identificar personalmente.",
-      "p2": "Este sitio web sirve para informar sobre nuestros servicios y para ponerse en contacto con nosotros."
+      "p1": "Con esta Política de privacidad le informo sobre el tratamiento de datos personales al utilizar mi sitio web. Los datos personales son todos los datos con los que se le puede identificar personalmente.",
+      "p2": "Este sitio web sirve para informar sobre mis servicios y para ponerse en contacto conmigo."
     },
     "controller": {
       "title": "Responsable",
@@ -413,7 +418,7 @@
     },
     "purposes": {
       "title": "Finalidades y bases jurídicas",
-      "p1": "Tratamos datos personales para las siguientes finalidades:",
+      "p1": "Trato datos personales para las siguientes finalidades:",
       "list": [
         "Prestación del sitio web (datos de conexión/registros del servidor)",
         "Gestión de solicitudes mediante el formulario de contacto",
@@ -424,15 +429,15 @@
     },
     "hosting": {
       "title": "Alojamiento y entrega del sitio web",
-      "p1": "Nuestro sitio web está alojado en Vercel Inc. Al acceder al sitio web se tratan datos técnicamente necesarios para servirlo (p. ej., dirección IP, fecha/hora, página solicitada, URL de referencia, navegador/sistema operativo).",
+      "p1": "Mi sitio web está alojado en Vercel Inc. Al acceder al sitio web se tratan datos técnicamente necesarios para servirlo (p. ej., dirección IP, fecha/hora, página solicitada, URL de referencia, navegador/sistema operativo).",
       "p2": "Estos datos se tratan normalmente en registros del servidor y sirven para un funcionamiento seguro y estable del sitio web.",
       "legal": "Base jurídica: art. 6.1 f) RGPD (interés legítimo en el funcionamiento seguro)."
     },
     "contact": {
       "title": "Contacto y formulario de contacto",
-      "p1": "Si se pone en contacto con nosotros mediante el formulario o por correo electrónico, trataremos la información proporcionada (p. ej., nombre, email, empresa, mensaje) para gestionar su solicitud y comunicarnos con usted.",
+      "p1": "Si se pone en contacto conmigo mediante el formulario o por correo electrónico, trataré la información proporcionada (p. ej., nombre, email, empresa, mensaje) para gestionar su solicitud y comunicarme con usted.",
       "legal": "Base jurídica: art. 6.1 b) RGPD (medidas precontractuales) y art. 6.1 f) RGPD (gestión eficiente de consultas).",
-      "retention": "Conservamos las solicitudes durante el tiempo necesario para su tramitación y documentación y después las eliminamos conforme a los plazos legales de conservación."
+      "retention": "Conservo las solicitudes durante el tiempo necesario para su tramitación y documentación y después las elimino conforme a los plazos legales de conservación."
     },
     "emailProvider": {
       "title": "Envío de correos / proveedor (Resend)",
@@ -441,14 +446,14 @@
     },
     "analytics": {
       "title": "Cookies, seguimiento y Vercel Analytics",
-      "p1": "No utilizamos cookies de marketing ni de retargeting.",
-      "p2": "Utilizamos Vercel Analytics para evaluar estadísticamente el uso de nuestro sitio web. Solo se tratan datos de uso anonimizados (p. ej., páginas vistas, tipo de dispositivo, región aproximada). No se crean perfiles de usuario ni se realiza seguimiento con fines de marketing.",
+      "p1": "No utilizo cookies de marketing ni de retargeting.",
+      "p2": "Utilizo Vercel Analytics para evaluar estadísticamente el uso de mi sitio web. Solo se tratan datos de uso anonimizados (p. ej., páginas vistas, tipo de dispositivo, región aproximada). No se crean perfiles de usuario ni se realiza seguimiento con fines de marketing.",
       "p3": "Vercel Analytics funciona sin cookies de marketing. Base jurídica: art. 6.1 f) RGPD (interés legítimo en la optimización técnica y evaluación estadística).",
-      "future": "Si en el futuro incorporamos herramientas de seguimiento o marketing, lo informaremos aquí y solicitaremos el consentimiento cuando sea necesario."
+      "future": "Si en el futuro incorporo herramientas de seguimiento o marketing, lo informaré aquí y solicitaré el consentimiento cuando sea necesario."
     },
     "transfers": {
       "title": "Destinatarios y transferencias internacionales",
-      "p1": "En el marco del alojamiento y del envío de correos, los proveedores pueden tratar datos por cuenta nuestra. No se puede excluir el tratamiento en terceros países (p. ej., EE. UU.). Cuando sea necesario, garantizamos salvaguardas adecuadas (p. ej., cláusulas contractuales tipo)."
+      "p1": "En el marco del alojamiento y del envío de correos, los proveedores pueden tratar datos por cuenta mía. No se puede excluir el tratamiento en terceros países (p. ej., EE. UU.). Cuando sea necesario, garantizo salvaguardas adecuadas (p. ej., cláusulas contractuales tipo)."
     },
     "rights": {
       "title": "Sus derechos",
@@ -466,11 +471,11 @@
     },
     "security": {
       "title": "Seguridad de los datos",
-      "p1": "Aplicamos medidas técnicas y organizativas adecuadas para proteger sus datos contra pérdida, uso indebido y acceso no autorizado. No obstante, no puede garantizarse una seguridad absoluta en la transmisión de datos por Internet."
+      "p1": "Aplico medidas técnicas y organizativas adecuadas para proteger sus datos contra pérdida, uso indebido y acceso no autorizado. No obstante, no puede garantizarse una seguridad absoluta en la transmisión de datos por Internet."
     },
     "changes": {
       "title": "Estado y cambios",
-      "p1": "Podemos actualizar esta Política de privacidad si cambia la situación legal o factual o si incorporamos nuevos servicios.",
+      "p1": "Puedo actualizar esta Política de privacidad si cambia la situación legal o factual o si incorporo nuevos servicios.",
       "status": "Estado: marzo de 2026"
     }
   },

@@ -28,18 +28,21 @@ export default function ServicesClient() {
   const titles = ui?.cardTitles;
   const themes = asArray<string>(t.raw("themes.items"));
 
+  const tabRoles = ui?.tabRole;
+
   const cards = useMemo(() => KEYS.map((k) => ({
     key: k,
     title:       titles?.[k] ?? k,
+    role:        tabRoles?.[k] ?? "",
     teaser:      t(`ui.teaser.${k}`),
     when:        t(`ui.when.${k}`),
     tags:        asArray<string>(t.raw(`ui.tags.${k}`)),
     duration:    t(`ui.duration.${k}`),
     deliverables: asArray<string>(t.raw(`ui.deliverables.${k}`)),
     topics:      asArray<string>(t.raw(`ui.topics.${k}`)),
-  })), [t, titles]);
+  })), [t, titles, tabRoles]);
 
-  const [activeKey, setActiveKey] = useState<ServiceKey>("workshops");
+  const [activeKey, setActiveKey] = useState<ServiceKey>("partnership");
   const active = cards.find((c) => c.key === activeKey) ?? cards[0];
   const tagsWithoutDuration = active.duration
     ? active.tags.filter((x) => x.trim() !== active.duration.trim())
@@ -142,8 +145,15 @@ export default function ServicesClient() {
                             : "border border-[rgba(15,23,42,0.10)] bg-[rgba(255,255,255,0.98)] hover:border-[rgba(15,23,42,0.18)] hover:bg-white",
                         ].join(" ")}
                       >
-                        <span className="text-sm font-semibold break-words" style={{ color: "rgba(var(--ink), .90)" }}>
-                          {c.title}
+                        <span className="flex flex-col gap-0.5">
+                          <span className="text-sm font-semibold break-words" style={{ color: "rgba(var(--ink), .90)" }}>
+                            {c.title}
+                          </span>
+                          {c.role && (
+                            <span className="text-xs" style={{ color: isActive ? "rgb(var(--accent))" : "rgba(var(--ink), .45)" }}>
+                              {c.role}
+                            </span>
+                          )}
                         </span>
                         <span aria-hidden style={{ color: "rgba(var(--ink), .45)" }}>→</span>
                       </button>

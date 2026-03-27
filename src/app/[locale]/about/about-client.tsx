@@ -45,7 +45,7 @@ export default function AboutClient() {
               )}
               <div className="mt-5 space-y-4">
                 {intro.map((p, i) => (
-                  <p key={i} className="text-lg leading-8 muted">{p}</p>
+                  <p key={i} className="text-lg leading-8 muted whitespace-pre-line">{p}</p>
                 ))}
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function AboutClient() {
 
           <div className="lg:col-span-5">
             <div className="panel overflow-hidden p-0">
-              <div className="relative h-[420px] w-full md:h-[520px]">
+              <div className="relative h-[380px] w-full md:h-[470px]">
                 <Image
                   src={t("heroImage", { defaultValue: "/seref-sahil-change-werkstatt.jpg" })}
                   alt={t("heroImageAlt", { defaultValue: "Seref Sahil" })}
@@ -130,6 +130,22 @@ export default function AboutClient() {
           </div>
         </section>
       </Reveal>
+
+      {/* ── POSITIONIERUNG ── */}
+      {t("clarityText", { defaultValue: "" }) && (
+        <Reveal>
+          <section className="py-2">
+            <div
+              className="panel px-8 py-7"
+              style={{ borderLeft: "3px solid rgb(var(--accent))", background: "rgba(0,168,165,.04)", borderRadius: "0 16px 16px 0" }}
+            >
+              <p className="text-base leading-8" style={{ color: "rgba(var(--ink), .85)", fontWeight: 500 }}>
+                {t("clarityText")}
+              </p>
+            </div>
+          </section>
+        </Reveal>
+      )}
 
       {/* ── ERFAHRUNG AUS DER PRAXIS ── */}
       {hasPracticeSection && (

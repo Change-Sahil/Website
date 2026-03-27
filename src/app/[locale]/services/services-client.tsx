@@ -163,11 +163,6 @@ export default function ServicesClient() {
                 <h2 className="mt-3 section-title break-words hyphens-auto max-w-full">{active.title}</h2>
                 <p className="mt-4 text-sm md:text-base leading-7 muted whitespace-pre-line">{active.teaser}</p>
 
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {active.duration ? <Chip>{active.duration}</Chip> : null}
-                  {tagsWithoutDuration.slice(0, 2).map((tag, i) => <Chip key={i}>{tag}</Chip>)}
-                </div>
-
                 <div className="mt-8 hr-soft" />
 
                 <div className="mt-8 grid gap-10 lg:grid-cols-12">
@@ -200,6 +195,17 @@ export default function ServicesClient() {
                     <ul className="mt-4 list break-words">
                       {active.deliverables.map((x, i) => <li key={i}>{x}</li>)}
                     </ul>
+                    {active.duration && (
+                      <div className="mt-8">
+                        <div className="section-eyebrow">
+                          <span className="dot" />
+                          <span>{t("ui.labels.durationTitle")}</span>
+                        </div>
+                        <p className="mt-1 text-sm" style={{ color: "rgba(var(--ink), .74)" }}>
+                          {active.duration}
+                        </p>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

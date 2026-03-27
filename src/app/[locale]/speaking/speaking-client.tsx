@@ -36,7 +36,7 @@ export default function SpeakingClient() {
               <span>{t("eyebrow")}</span>
             </div>
             <h1 className="mt-4 title">{t("title")}</h1>
-            <p className="mt-5 max-w-2xl text-base leading-7 muted md:text-lg">{t("intro")}</p>
+            <p className="mt-5 max-w-2xl text-base leading-7 muted md:text-lg whitespace-pre-line">{t("intro")}</p>
           </div>
 
           <div className="lg:col-span-5">
@@ -148,8 +148,9 @@ export default function SpeakingClient() {
                 <span className="dot" />
                 <span>{t("formatsTitle")}</span>
               </div>
+              <p className="mt-2 text-sm leading-6" style={{ color: "rgba(var(--ink), .60)" }}>{t("formatsSubtitle")}</p>
 
-              <ul className="mt-6 space-y-3">
+              <ul className="mt-5 space-y-3">
                 {formats.map((x, i) => (
                   <li key={i} className="flex gap-3">
                     <span
@@ -162,23 +163,40 @@ export default function SpeakingClient() {
                 ))}
               </ul>
 
-              <div className="mt-8 hr-soft" />
+              <div className="mt-6 hr-soft" />
 
-              <p className="mt-6 text-sm leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
+              <p className="mt-5 text-sm leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
                 {t("ctaText")}
               </p>
 
-              <div className="mt-7">
-                <Link href={`/${locale}/contact`} className="btn-primary">{nav("cta")}</Link>
-              </div>
-              <div className="mt-3">
-                <Link href={`/${locale}/services`} className="btn-secondary">{nav("services")}</Link>
+              <div className="mt-5">
+                <Link href={`/${locale}/services`} className="btn-primary">{nav("services")}</Link>
               </div>
             </div>
           </Reveal>
 
         </div>
       </section>
+
+      {/* ── CTA ── */}
+      <Reveal>
+        <section className="pt-4 pb-12 md:pb-16">
+          <div className="dark-block p-8 sm:p-10">
+            <div className="flex flex-wrap items-center justify-between gap-8">
+              <div>
+                <div className="section-eyebrow" style={{ color: "rgba(255,255,255,.70)" }}>
+                  <span className="dot" style={{ boxShadow: "0 0 0 7px rgba(0,168,165,.16)" }} />
+                  <span>{t("cta.kicker")}</span>
+                </div>
+                <p className="mt-4 max-w-2xl" style={{ color: "rgba(255,255,255,.72)", lineHeight: 1.7 }}>
+                  {t("cta.text")}
+                </p>
+              </div>
+              <Link href={`/${locale}/contact`} className="btn-primary">{nav("cta")}</Link>
+            </div>
+          </div>
+        </section>
+      </Reveal>
 
     </div>
   );

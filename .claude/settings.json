@@ -14,7 +14,13 @@
       "Bash(sed -n '304,312p' \"c:/Users/seref/change-werkstatt-sahil/src/messages/de.json\")",
       "Bash(sed -n '304,312p' \"c:/Users/seref/change-werkstatt-sahil/src/messages/en.json\")",
       "Bash(sed -n '363,366p' \"c:\\\\Users\\\\seref\\\\change-werkstatt-sahil\\\\src\\\\messages\\\\tr.json\")",
-      "Bash(sed -n '363,366p' \"c:\\\\Users\\\\seref\\\\change-werkstatt-sahil\\\\src\\\\messages\\\\es.json\")"
+      "Bash(sed -n '363,366p' \"c:\\\\Users\\\\seref\\\\change-werkstatt-sahil\\\\src\\\\messages\\\\es.json\")",
+      "Bash(sed -n '22,77p' \"c:/Users/seref/change-werkstatt-sahil/src/messages/tr.json\")",
+      "Bash(sed -n '22,77p' \"c:/Users/seref/change-werkstatt-sahil/src/messages/es.json\")",
+      "Bash(sed -n '170,174p' \"c:/Users/seref/change-werkstatt-sahil/src/messages/tr.json\")",
+      "Bash(sed -n '170,174p' \"c:/Users/seref/change-werkstatt-sahil/src/messages/es.json\")",
+      "Bash(sed -n '98,104p' \"c:/Users/seref/change-werkstatt-sahil/src/messages/tr.json\")",
+      "Bash(sed -n '98,104p' \"c:/Users/seref/change-werkstatt-sahil/src/messages/es.json\")"
     ],
     "additionalDirectories": [
       "C:\\Users\\seref\\poker-gruppe\\src\\app",

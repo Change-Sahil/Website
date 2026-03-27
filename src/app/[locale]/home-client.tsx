@@ -30,8 +30,8 @@ export default function HomeClient() {
 
       {/* ── HERO (kein Reveal – above the fold) ── */}
       <section className="mt-6">
-        <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
-            <div className="lg:col-span-6 lg:pt-4">
+        <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
+            <div className="lg:col-span-6">
               <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
                 <Image
                   src="/images/home-01.jpg"
@@ -46,7 +46,7 @@ export default function HomeClient() {
               </div>
             </div>
 
-            <div className="lg:col-span-6 lg:pt-8">
+            <div className="lg:col-span-6">
               <div className="section-eyebrow"><span>{hero?.kicker ?? ""}</span></div>
               <h1 className="mt-3 text-3xl font-[760] leading-[1.12] tracking-[-0.025em] sm:text-4xl" style={{ color: "rgba(var(--ink),.94)" }}>{hero?.title ?? ""}</h1>
               <p className="mt-5 max-w-xl text-lg leading-8 muted whitespace-pre-line">

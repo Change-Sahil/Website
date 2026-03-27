@@ -5,7 +5,7 @@
     "home": "Inicio",
     "services": "Servicios",
     "approach": "Enfoque",
-    "about": "Sobre nosotros",
+    "about": "Sobre mí",
     "speaking": "Conferencias y docencia",
     "menuOpen": "Abrir menú",
     "menuClose": "Cerrar menú"
@@ -22,23 +22,23 @@
     "hero": {
       "kicker": "Acompañamiento cercano a la ejecución en entornos industriales",
       "title": "Cuando eficiencia, liderazgo y ejecución deben encajar",
-      "intro": "Cuando transformaciones, reestructuraciones o integraciones M&A pierden impulso, el problema rara vez es el concepto. Es que el liderazgo, la colaboración y la realidad operativa no están suficientemente alineados. Justo ahí es donde trabajamos.\n\nApoyamos a empresas industriales medianas para recuperar claridad, compromiso y ejecución efectiva en situaciones complejas."
+      "intro": "El cambio está decidido. Las decisiones están tomadas. Y aun así, en la práctica apenas ocurre nada. Exactamente en estas situaciones es cuando entro. Donde se decide 'arriba' y abajo nada arraiga.\n\nTrabajo con la dirección y directamente en el shopfloor de empresas de producción. No con conceptos, sino con la pregunta de por qué la ejecución no funciona y qué debe cambiar concretamente. No en la sala de reuniones, sino donde las decisiones deben tener efecto. En situaciones de liderazgo. En coordinaciones. En la planta."
     },
     "pillars": {
-      "title": "Qué distingue nuestro trabajo",
+      "title": "Qué distingue mi trabajo",
       "subtitle": "Ejecución, liderazgo y anclaje en la práctica",
       "items": [
         {
           "title": "Ejecución en lugar de sobrecarga conceptual",
-          "text": "El cambio no solo se prepara, sino que se hace efectivo dentro de la organización, con estructura clara, responsabilidad y sin complejidad innecesaria."
+          "text": "El cambio no se planifica encima de todo lo demás, sino que se hace efectivo dentro de la operación. Con estructura clara, responsabilidades aclaradas y sin añadir nueva complejidad."
         },
         {
           "title": "Claridad en responsabilidad y coordinación",
-          "text": "No trabajamos con programas adicionales fuera de la organización, sino dentro de la operación diaria. Donde se toman decisiones, se asume responsabilidad y se generan resultados."
+          "text": "No trabajo con programas adicionales junto a la organización, sino dentro de la operación diaria. Donde se toman decisiones, se asume responsabilidad y emergen resultados."
         },
         {
           "title": "Experiencia en planta, liderazgo y dirección",
-          "text": "Nuestra perspectiva se basa en experiencia directa en funciones operativas y de liderazgo dentro de entornos industriales."
+          "text": "Mi perspectiva se basa en responsabilidad directa en funciones operativas y de liderazgo dentro de entornos industriales. Forjada en la responsabilidad sobre el terreno, afinada en paralelo a través del estudio y la investigación."
         }
       ]
     },
@@ -48,7 +48,7 @@
       "text": "El cambio rara vez falla por falta de intención, sino por responsabilidades poco claras y falta de coordinación. Creamos la estructura que permite que el liderazgo actúe y que la colaboración funcione."
     },
     "audience": {
-      "title": "Dónde nuestro acompañamiento es especialmente valioso",
+      "title": "Dónde mi acompañamiento es especialmente valioso",
       "subtitle": "Donde la ejecución debe funcionar bajo condiciones reales",
       "boxTitles": [
         "Contextos típicos",
@@ -71,18 +71,18 @@
     "orientation": {
       "kicker": "15 minutos de orientación",
       "title": "Aclarar brevemente.\nDecidir con criterio.",
-      "text": "En una conversación breve estructuramos la situación, definimos el objetivo y el formato adecuado.",
+      "text": "Si no está seguro de si esta es su situación actual, lo aclaramos en una breve conversación.",
       "ctaPrimary": "Solicitar conversación",
       "ctaSecondary": "Ver servicios"
     }
   },
   "services": {
     "title": "Cambio efectivo",
-    "intro": "Nuestros formatos combinan liderazgo, estructura y ejecución operativa. Según la situación, trabajamos de forma puntual para generar claridad, con un ritmo definido para orientar, o de manera continua para anclar el cambio de forma sostenible en la operación diaria.\n\nEspecialmente en fases críticas como la integración cultural en procesos de M&A o sucesión, protegemos la capacidad operativa de su organización mediante transiciones bien guiadas.",
+    "intro": "La colaboración comienza casi siempre con una situación claramente delimitada. Y se desarrolla, cuando encaja, en un acompañamiento continuo.\n\nSegún la situación, trabajo de forma puntual para generar claridad, con un ritmo definido para orientar, o de manera continua para anclar el cambio de forma sostenible en la operación diaria.",
     "themes": {
       "kicker": "Áreas de enfoque",
-      "title": "En qué apoyamos de forma concreta",
-      "intro": "Según la situación y el formato, trabajamos en los temas que permiten liderazgo, colaboración y ejecución efectiva en el contexto operativo.",
+      "title": "En qué apoyo de forma concreta",
+      "intro": "Según la situación y el formato, trabajo en los temas que permiten liderazgo, colaboración y ejecución efectiva en el contexto operativo.",
       "items": [
         "Liderazgo, roles y capacidad de decisión",
         "Coordinación y colaboración entre áreas",
@@ -99,7 +99,8 @@
         "whenTitle": "Cuándo es útil",
         "topicsTitle": "Situaciones típicas",
         "deliverablesTitle": "Qué obtiene",
-        "detailsTitle": "Detalles"
+        "detailsTitle": "Detalles",
+        "durationTitle": "Duración"
       },
       "tags": {
         "workshops": "Workshops",
@@ -114,8 +115,8 @@
       },
       "teaser": {
         "workshops": "Workshops estructurados para clarificar, alinear e implementar con un siguiente paso claramente definido.",
-        "partnership": "Acompañamiento mensual que conecta liderazgo, ritmo y avance hasta que la implementación se consolida y pasa a formar parte de la realidad organizativa.\nLa alianza de transformación se entiende como una co-configuración y co-dirección limitada en el tiempo de procesos de liderazgo y decisión en fases críticas, no como ejecución operativa.",
-        "sparring": "Sparring confidencial para situaciones exigentes de liderazgo y decisión: claro, pragmático y eficaz."
+        "partnership": "Cuando el cambio debe sostenerse durante meses, un solo workshop no es suficiente. Se necesita un ritmo estable de liderazgo y toma de decisiones.\n\nAcompañamiento mensual que conecta liderazgo, ritmo y avance hasta que la implementación se consolida y pasa a formar parte de la realidad organizativa. La alianza de transformación se entiende como una co-configuración y co-dirección limitada en el tiempo de procesos de liderazgo y decisión en fases críticas, no como ejecución operativa.",
+        "sparring": "Executive Sparring no es un formato de coaching. Es el trabajo concentrado en decisiones concretas que no pueden delegarse.\n\nSparring confidencial para situaciones exigentes de liderazgo y decisión: claro, pragmático y eficaz."
       },
       "topics": {
         "workshops": [
@@ -169,27 +170,28 @@
       },
       "cta": {
         "kicker": "15 minutos de orientación",
-        "text": "En una conversación breve aclaramos la situación, el objetivo y el formato adecuado."
+        "text": "Muchos mandatos comienzan con un workshop o sparring y luego, cuando se necesita generar impacto, evolucionan hacia un acompañamiento más largo. Si no está seguro de dónde se encuentra su situación actualmente, lo aclaramos en una breve conversación."
       }
     }
   },
   "approach": {
-    "eyebrow": "Nuestra forma de trabajar",
+    "eyebrow": "Mi enfoque",
     "title": "Enfoque",
-    "intro": "Nuestro enfoque está claramente estructurado y orientado de forma consistente a la ejecución en el día a día. Trabajamos con el liderazgo, clarificamos decisiones y anclamos el cambio allí donde las rutinas, la colaboración y la responsabilidad generan impacto.",
-    "principlesEyebrow": "Nuestra orientación",
+    "intro": "El cambio rara vez fracasa por falta de conceptos. Fracasa porque las decisiones no se asumen, no se priorizan o no se ejecutan de manera consistente.\n\nAquí es exactamente donde intervengo, en la interacción entre liderazgo, priorización y ejecución en la operación diaria.",
+    "principlesEyebrow": "Orientación",
     "principlesTitle": "Principios",
     "principles": [
-      "Trabajamos en la operación diaria: junto con la dirección, diseñamos roles claros y ritmos de decisión y gobierno, de modo que la responsabilidad pueda asumirse de manera efectiva.",
-      "Hacemos medible el impacto: definimos conjuntamente indicadores, estándares y rutinas relevantes y aseguramos su seguimiento a través de rutinas de liderazgo y toma de decisiones.",
-      "Anclamos el cambio de forma sostenible: integramos nuevas formas de trabajo en las rutinas, la colaboración, así como en la cultura y la identidad."
+      "Trabajo en la operación diaria: junto con la dirección, diseñamos roles claros y ritmos de decisión y gobierno, de modo que la responsabilidad pueda asumirse de manera efectiva.",
+      "Hago medible el impacto: definimos conjuntamente indicadores, estándares y rutinas relevantes y aseguramos su seguimiento a través de rutinas de liderazgo y toma de decisiones.",
+      "Anclo el cambio de forma sostenible: integramos nuevas formas de trabajo en las rutinas, la colaboración, así como en la cultura y la identidad."
     ],
     "how": {
-      "kicker": "Nuestro modelo de actuación",
+      "kicker": "Mi modelo de actuación",
       "title": "Del motivo a la ejecución — en tres pasos.",
       "subtitle": "No como un concepto, sino para que funcione en el día a día: clarificar juntos, liderar en la operación diaria y anclar con constancia.",
       "stepLabel": "Paso",
       "outTitle": "Resultado",
+      "restriction": "Este enfoque no es adecuado para todas las situaciones. Tiene sentido cuando ya está claro que el cambio es necesario, pero no está funcionando.",
       "steps": [
         {
           "verb": "Clarificar",
@@ -204,18 +206,18 @@
           "verb": "Establecer",
           "text": "Diseñamos y acompañamos la implementación de un ritmo de liderazgo y gobierno que permite de forma estable claridad, priorización y ejecución.",
           "out": [
-            "Ritmo de liderazgo",
-            "Conjunto de KPIs y estándares",
-            "Roles e interfaces claros"
+            "Las decisiones se toman con mayor claridad",
+            "Las reuniones se vuelven más cortas y vinculantes",
+            "La responsabilidad se hace tangible"
           ]
         },
         {
           "verb": "Anclar",
           "text": "Aseguramos el impacto con seguimiento, responsabilidades y encaje cultural—hasta que funcione sin apoyo externo.",
           "out": [
-            "Lógica de revisión y seguimiento",
-            "Responsabilidad en el día a día",
-            "Cultura e identidad integradas"
+            "Se sostiene sin apoyo externo",
+            "El cambio forma parte del trabajo diario",
+            "El liderazgo conduce de forma independiente"
           ]
         }
       ]
@@ -229,25 +231,26 @@
       "Gobernanza del cambio y arquitectura de comunicación",
       "Trabajo de cultura e identidad en M&A (pre y post merger)"
     ],
-    "bridge": "Según el contexto y el punto de partida, trabajamos en distintos formatos: desde un taller compacto hasta un acompañamiento a más largo plazo.",
+    "bridge": "Según el contexto y el punto de partida, trabajo en distintos formatos: desde un taller compacto hasta un acompañamiento a más largo plazo.",
     "bridgeCta": "Ver servicios →",
     "cta": {
       "kicker": "Orientación en 15 minutos",
-      "text": "En una breve conversación, aclaramos el motivo, el objetivo y el enfoque adecuado."
+      "text": "En una breve conversación aclaramos si esta es su situación y qué formato encaja."
     }
   },
   "about": {
-    "title": "Sobre nosotros",
-    "heroTitle": "Implementación en situaciones complejas",
-    "heroSubtitle": "Acompañamiento del liderazgo y la organización en la práctica industrial diaria",
+    "title": "Sobre mí",
+    "heroTitle": "Ejecución en situaciones complejas",
+    "heroSubtitle": "",
     "heroImage": "/seref-sahil-change-werkstatt.jpg",
     "heroImageAlt": "Seref Sahil",
     "intro": [
-      "Más de 25 años de experiencia operativa en la industria y en liderazgo se combinan con conocimientos técnicos, empresariales y de psicología organizacional. Change-Werkstatt acompaña a empresas industriales medianas donde existen conceptos, pero su implementación no se consolida en la práctica diaria, y donde eficiencia, liderazgo y cultura organizativa deben desarrollarse conjuntamente.",
-      "La fortaleza reside en conectar la realidad operativa con la perspectiva directiva, permitiendo implementar cambios de forma sostenible y efectiva, especialmente en situaciones de transición críticas."
+      "Conozco estas situaciones no por talleres, sino por responsabilidad.\nDesde la producción y el liderazgo. Desde fases en las que hubo que tomar decisiones bajo presión.",
+      "Hoy trabajo con líderes y organizaciones en pymes industriales exactamente en estos puntos.\nDonde el cambio está decidido pero no está funcionando.\nDonde eficiencia, liderazgo y cultura organizacional deben volver a alinearse."
     ],
     "profileTitle": "Perfil",
-    "profileText": "La aceptación surge cuando el lenguaje, la realidad y la responsabilidad están alineados.\n\nEn situaciones de M&A, integración y transformación, la implementación rara vez fracasa por objetivos formales, sino por tensiones culturales y de identidad ocultas. El acceso multilingüe a las organizaciones y el análisis de estas dinámicas permiten hacer visibles estas tensiones de forma temprana.\n\nMi trabajo se basa en experiencia directa en planta, liderazgo y gestión en entornos industriales. De ello se deriva un principio claro:\nEl cambio debe encajar con la realidad operativa, ser asumido por el liderazgo y quedar anclado en el trabajo cotidiano.\n\nAsí surge una implementación que no necesita ser explicada, sino que es comprendida y sostenida.",
+    "profileText": "La aceptación surge cuando el lenguaje, la realidad y la responsabilidad están alineados.\n\nEn situaciones de M&A, integración y transformación, la implementación rara vez fracasa por objetivos formales, sino por tensiones culturales e identitarias encubiertas. Mi acceso multilingüe a las organizaciones y mi trabajo académico sobre estas dinámicas me permiten hacer visibles esas tensiones de forma temprana, antes de que tengan impacto operativo o político.\n\nMi trabajo se basa en experiencia directa en producción, liderazgo y gestión en entornos industriales. De ahí surge un enfoque claro: el cambio debe encajar con la realidad operativa, ser asumido por el liderazgo y estar anclado en el trabajo diario.\n\nAsí es como surge una ejecución que no necesita explicarse, sino que se asume y se vive.",
+    "clarityText": "No asumo ejecución operativa. Sin responsabilidad de proyecto. Sin función de línea. Trabajo en el punto donde se decide cómo se lidera y se prioriza.",
     "bulletsEyebrow": "Fundamento del trabajo",
     "bullets": [
       "Más de 25 años de experiencia operativa, desde mecánico industrial hasta dirección de producción y logística entre plantas",
@@ -259,7 +262,7 @@
     "linkedInLabel": "Ver perfil de LinkedIn",
     "practiceEyebrow": "Experiencia de proyectos",
     "practiceTitle": "Experiencia práctica",
-    "practiceIntro": "No se trata de estudios de caso teóricos, sino de experiencia real en transformación, integración y liderazgo en entornos industriales, con responsabilidad, resistencia y resultados medibles.",
+    "practiceIntro": "Cuando las áreas no colaboran entre sí. Cuando las medidas se deciden pero no se implementan. Cuando el liderazgo se encuentra entre la presión, las expectativas y la realidad. De esas situaciones proviene mi experiencia, no de casos de estudio.",
     "practiceItems": [
       {
         "title": "Integración post-fusión",
@@ -314,7 +317,7 @@
   "speaking": {
     "eyebrow": "Transferencia de conocimiento",
     "title": "Conferencias y docencia",
-    "intro": "En conferencias y formatos formativos abordo el liderazgo, el cambio y la realidad operativa. No desde una distancia teórica, sino desde la responsabilidad vivida en el día a día organizativo. El objetivo es ofrecer orientación, situar los contextos y generar claridad para la toma de decisiones concretas.",
+    "intro": "Las conferencias y los formatos docentes no son un sustituto del trabajo real. Sirven para hacer visibles las conexiones y abrir debates.\n\nHablo sobre liderazgo, cambio y realidad operativa. No desde una distancia teórica, sino desde la responsabilidad en la realidad organizativa.",
     "topicsTitle": "Temas habituales",
     "topicsHint": "Haz clic en un tema para ver los detalles",
     "topics": [
@@ -350,24 +353,29 @@
       }
     ],
     "formatsTitle": "Formatos",
+    "formatsSubtitle": "Los formatos se diferencian en alcance, no en exigencia.",
     "formats": [
       "Keynote o conferencia (30–60 minutos)",
       "Formación interna o taller (0,5–2 días)",
       "Serie de seminarios o programa modular (2–4 módulos)",
       "Docencia en universidades y academias"
     ],
-    "ctaText": "Las conferencias aportan orientación, clarifican conceptos y son un buen punto de partida. El impacto sostenible, sin embargo, solo se logra cuando el liderazgo y la ejecución continúan en el día a día."
+    "ctaText": "En muchos casos, una conferencia es el punto de partida. El trabajo real comienza después, en la ejecución.",
+    "cta": {
+      "kicker": "Orientación en 15 minutos",
+      "text": "Si está considerando si una conferencia o taller es el punto de partida adecuado, hablemos."
+    }
   },
   "contact": {
     "eyebrow": "Solicitar conversación",
     "title": "Contacto",
-    "intro": "En una conversación breve y sin compromiso aclaramos si y cómo una colaboración tiene sentido. Escríbanos, reserve una cita directamente o llámenos. Normalmente respondemos en un plazo de 24–48 horas.",
+    "intro": "Aclaro en una conversación breve y sin compromiso si y cómo una colaboración tiene sentido para su situación. Escríbame o reserve una cita directamente. Normalmente respondo en un plazo de 24–48 horas.",
     "formEyebrow": "Enviar mensaje",
-    "formIntro": "Describa brevemente su consulta y nos pondremos en contacto con usted a la mayor brevedad.",
+    "formIntro": "Describa brevemente su situación, le responderé a la mayor brevedad.",
     "responseHint": "Por favor, no envíe información confidencial a través del formulario.",
     "direct": {
       "title": "Contacto directo",
-      "text": "También puede contactarnos directamente:",
+      "text": "También puede contactarme directamente:",
       "email": "info@change-werkstatt-sahil.com",
       "phone": "+49 176 840 765 07"
     },
@@ -379,9 +387,9 @@
       "company": "Empresa (opcional)",
       "companyPlaceholder": "Empresa",
       "details": "Mensaje",
-      "detailsPlaceholder": "¿De qué se trata?\nContexto, objetivo, situación actual …",
+      "detailsPlaceholder": "¿De qué se trata concretamente?\nSituación de partida, estado actual, objetivo …",
       "consent": "Consiento que mis datos se procesen para contactar conmigo conforme a la <privacy>Política de privacidad</privacy>.",
-      "submit": "Enviar mensaje",
+      "submit": "Enviar solicitud",
       "sending": "Enviando …",
       "success": "Mensaje enviado. ¡Gracias!",
       "errorSend": "Error al enviar. Inténtelo de nuevo más tarde.",
@@ -389,9 +397,9 @@
     },
     "tabMessage": "Enviar mensaje",
     "tabSchedule": "Reservar cita",
-    "scheduleHint": "Elija un momento conveniente para una primera conversación – directamente y sin rodeos.",
+    "scheduleHint": "Elija un momento para una primera conversación. Directamente y sin rodeos.",
     "scheduleButton": "Reservar cita ahora",
-    "scheduleNote": "Abre Microsoft Bookings en una nueva pestaña."
+    "scheduleNote": "Reserva de cita en una nueva pestaña."
   },
   "privacy": {
     "title": "Política de privacidad",

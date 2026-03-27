@@ -32,7 +32,7 @@ export default function ApproachClient() {
                 <span>{t("eyebrow")}</span>
               </div>
               <h1 className="mt-4 title">{t("title")}</h1>
-              <p className="mt-5 text-lg leading-8 muted">{t("intro")}</p>
+              <p className="mt-5 text-lg leading-8 muted whitespace-pre-line">{t("intro")}</p>
               <div className="mt-8">
                 <Link href={`/${locale}/services`} className="btn-primary">{nav("services")}</Link>
               </div>
@@ -145,6 +145,9 @@ export default function ApproachClient() {
             ))}
           </div>
         </div>
+        <Reveal delay={100}>
+          <p className="mt-6 max-w-3xl text-sm leading-7 muted">{t("how.restriction")}</p>
+        </Reveal>
       </section>
 
       {/* ── WERKZEUGE ── */}

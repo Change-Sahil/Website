@@ -5,7 +5,7 @@
     "home": "Start",
     "services": "Leistungen",
     "approach": "Vorgehen",
-    "about": "Über uns",
+    "about": "Über mich",
     "speaking": "Vorträge & Lehre",
     "menuOpen": "Menü öffnen",
     "menuClose": "Menü schließen"
@@ -22,23 +22,23 @@
     "hero": {
       "kicker": "Umsetzungsnahe Begleitung im industriellen Umfeld",
       "title": "Wenn Effizienz, Führung und Umsetzung zusammenfinden müssen",
-      "intro": "Wo Transformationen, Restrukturierungen oder M&A-Integrationen ins Stocken geraten, fehlt es meist nicht am Konzept, sondern daran, dass Führung, Zusammenarbeit und operative Realität nicht ausreichend zusammenpassen. Genau an dieser Schnittstelle arbeiten wir.\n\nSo unterstützen wir mittelständische Industrieunternehmen dabei, in komplexen Phasen wieder Klarheit, Verbindlichkeit und wirksame Umsetzung zu erreichen."
+      "intro": "Veränderung ist beschlossen. Entscheidungen sind getroffen. Und trotzdem passiert im Betrieb zu wenig. Genau in diesen Situationen komme ich dazu. Dort, wo 'oben' entschieden wird und es 'unten' nicht trägt.\n\nIch arbeite mit der Führung und direkt auf dem Shopfloor in produzierenden Unternehmen. Nicht an Konzepten, sondern an der Frage, warum Umsetzung nicht greift und was sich konkret ändern muss. Nicht im Besprechungsraum, sondern dort, wo Entscheidungen Wirkung entfalten sollen. In Führungssituationen. In Abstimmungen. Im Betrieb."
     },
     "pillars": {
-      "title": "Was unsere Arbeit unterscheidet",
+      "title": "Was meine Arbeit unterscheidet",
       "subtitle": "Umsetzung, Führung und Verankerung in der Praxis",
       "items": [
         {
           "title": "Umsetzung statt Konzeptlast",
-          "text": "Veränderung wird nicht nur vorbereitet, sondern in der Organisation wirksam gemacht, mit klarer Struktur, Verantwortung und ohne zusätzliche Komplexität."
+          "text": "Veränderung wird nicht zusätzlich geplant, sondern im Betrieb wirksam gemacht. Mit klarer Struktur, geklärten Verantwortlichkeiten und ohne neue Komplexität."
         },
         {
           "title": "Klarheit in Verantwortung und Abstimmung",
-          "text": "Wir arbeiten nicht mit zusätzlichen Programmen neben der Organisation, sondern im laufenden Betrieb. Dort, wo Entscheidungen getroffen, Verantwortung übernommen und Ergebnisse erzeugt werden."
+          "text": "Ich arbeite nicht mit zusätzlichen Programmen neben der Organisation, sondern im laufenden Betrieb. Dort, wo entschieden, Verantwortung übernommen und Ergebnisse entstehen."
         },
         {
           "title": "Erfahrung aus Werk, Führung und Management",
-          "text": "Unsere Perspektive beruht auf eigener Verantwortung in operativen und führungsbezogenen Rollen im industriellen Umfeld."
+          "text": "Meine Perspektive beruht auf eigener Verantwortung in operativen und führungsbezogenen Rollen im industriellen Umfeld. Gewachsen aus Verantwortung im Betrieb, parallel geschärft durch Studium und Forschung."
         }
       ]
     },
@@ -48,7 +48,7 @@
       "text": "Veränderung scheitert selten am Willen, sondern an unklarer Verantwortung und fehlender Abstimmung. Wir schaffen die Struktur, in der Führung handlungsfähig wird und Zusammenarbeit funktioniert."
     },
     "audience": {
-      "title": "Wo unsere Begleitung besonders hilfreich ist",
+      "title": "Wo meine Begleitung besonders hilfreich ist",
       "subtitle": "Dort, wo Umsetzung unter realen Bedingungen gelingen muss",
       "boxTitles": [
         "Typische Kontexte",
@@ -71,18 +71,18 @@
     "orientation": {
       "kicker": "15 Minuten Orientierung",
       "title": "Kurz klären.\nFundiert entscheiden.",
-      "text": "In einem kurzen Gespräch ordnen wir Anlass, Zielbild und das passende Format.",
+      "text": "Wenn Sie unsicher sind, ob das gerade Ihre Situation ist, klären wir das in einem kurzen Gespräch.",
       "ctaPrimary": "Gespräch anfragen",
       "ctaSecondary": "Leistungen ansehen"
     }
   },
   "services": {
     "title": "Wirksame Veränderung",
-    "intro": "Unsere Formate verbinden Führung, Struktur und operative Umsetzung. Je nach Anlass arbeiten wir punktuell zur Klärung, im Rhythmus zur Steuerung oder kontinuierlich zur nachhaltigen Verankerung im täglichen Betrieb.\n\nBesonders in kritischen Phasen wie der kulturellen Integration bei M&A oder Nachfolgeregelungen sichern wir die operative Schlagkraft Ihrer Organisation durch moderierte Übergänge.",
+    "intro": "Die Zusammenarbeit beginnt fast immer mit einer klar abgegrenzten Situation. Und entwickelt sich, wenn es passt, in eine kontinuierliche Begleitung.\n\nJe nach Anlass arbeite ich punktuell zur Klärung, im Rhythmus zur Steuerung oder kontinuierlich zur nachhaltigen Verankerung im täglichen Betrieb.",
     "themes": {
       "kicker": "Themenschwerpunkte",
-      "title": "Wobei wir konkret unterstützen",
-      "intro": "Je nach Anlass und Format arbeiten wir an den Themen, die Führung, Zusammenarbeit und wirksame Umsetzung im operativen Kontext tragen.",
+      "title": "Wobei ich konkret unterstütze",
+      "intro": "Je nach Anlass und Format arbeite ich an den Themen, die Führung, Zusammenarbeit und wirksame Umsetzung im operativen Kontext tragen.",
       "items": [
         "Führung, Rollen und Entscheidungsfähigkeit",
         "Abstimmung und Zusammenarbeit an Schnittstellen",
@@ -99,7 +99,8 @@
         "whenTitle": "Wann sinnvoll",
         "topicsTitle": "Typische Anlässe",
         "deliverablesTitle": "Was Sie bekommen",
-        "detailsTitle": "Details"
+        "detailsTitle": "Details",
+        "durationTitle": "Laufzeit"
       },
       "tags": {
         "workshops": "Workshops",
@@ -114,8 +115,8 @@
       },
       "teaser": {
         "workshops": "Strukturierte Werkstatt-Workshops zur Klärung, Ausrichtung und Umsetzung mit eindeutigem nächsten Schritt.",
-        "partnership": "Monatliche Begleitung, die Führung, Rhythmus und Fortschritt verbindet, bis Umsetzung greift und Teil der organisationalen Realität wird.\nDie Transformationspartnerschaft versteht sich als zeitlich begrenzte Mitgestaltung und Mitsteuerung von Führungs- und Entscheidungsprozessen in kritischen Phasen, nicht als operative Umsetzung.",
-        "sparring": "Vertrauliches Sparring für anspruchsvolle Führungs- und Entscheidungssituationen: klar, pragmatisch, wirksam."
+        "partnership": "Wenn Veränderung über Monate hinweg getragen werden muss, reicht ein einzelner Workshop nicht. Dann braucht es einen stabilen Führungs- und Entscheidungsrhythmus.\n\nMonatliche Begleitung, die Führung, Rhythmus und Fortschritt verbindet, bis Umsetzung greift und Teil der organisationalen Realität wird. Die Transformationspartnerschaft versteht sich als zeitlich begrenzte Mitgestaltung und Mitsteuerung von Führungs- und Entscheidungsprozessen in kritischen Phasen, nicht als operative Umsetzung.",
+        "sparring": "Executive Sparring ist kein Coachingformat. Es ist die konzentrierte Arbeit an konkreten Entscheidungen, die nicht delegierbar sind.\n\nVertrauliches Sparring für anspruchsvolle Führungs- und Entscheidungssituationen: klar, pragmatisch, wirksam."
       },
       "topics": {
         "workshops": [
@@ -169,27 +170,28 @@
       },
       "cta": {
         "kicker": "15 Minuten Orientierung",
-        "text": "In einem kurzen Gespräch klären wir Anlass, Zielbild und das passende Format."
+        "text": "Viele Mandate beginnen mit einem Workshop oder Sparring und gehen dann, wenn Wirkung entstehen soll, in eine längere Begleitung über. Wenn Sie unsicher sind, wo Ihre Situation gerade steht, klären wir das in einem kurzen Gespräch."
       }
     }
   },
   "approach": {
-    "eyebrow": "Unser Ansatz",
+    "eyebrow": "Mein Ansatz",
     "title": "Vorgehen",
-    "intro": "Unser Vorgehen ist klar strukturiert und konsequent auf Umsetzung in der Organisation ausgerichtet. Wir arbeiten mit Führung, klären Entscheidungen und verankern Veränderung dort, wo Routinen, Zusammenarbeit und Verantwortung Wirkung entfalten.",
+    "intro": "Veränderung scheitert selten an fehlenden Konzepten. Sie scheitert daran, dass Entscheidungen nicht getragen, priorisiert oder konsequent umgesetzt werden.\n\nGenau dort setze ich an, im Zusammenspiel von Führung, Priorisierung und Umsetzung im laufenden Betrieb.",
     "principlesEyebrow": "Haltung & Orientierung",
     "principlesTitle": "Prinzipien",
     "principles": [
-      "Wir arbeiten im laufenden Betrieb: Wir gestalten gemeinsam mit der Führung klare Rollen, Entscheidungs- und Steuerungsrhythmen, sodass Verantwortung wirksam übernommen werden kann.",
-      "Wir machen Wirkung messbar: Wir definieren gemeinsam relevante Kennzahlen, Standards und Routinen und verankern deren Nachhaltung über Führungs- und Entscheidungsroutinen.",
-      "Wir verankern Veränderung nachhaltig: Wir integrieren neue Arbeitsweisen in Routinen, Zusammenarbeit sowie Kultur und Identität."
+      "Ich arbeite im laufenden Betrieb: Wir gestalten gemeinsam mit der Führung klare Rollen, Entscheidungs- und Steuerungsrhythmen, sodass Verantwortung wirksam übernommen werden kann.",
+      "Ich mache Wirkung messbar: Wir definieren gemeinsam relevante Kennzahlen, Standards und Routinen und verankern deren Nachhaltung über Führungs- und Entscheidungsroutinen.",
+      "Ich verankere Veränderung nachhaltig: Wir integrieren neue Arbeitsweisen in Routinen, Zusammenarbeit sowie Kultur und Identität."
     ],
     "how": {
-      "kicker": "Unser Vorgehensmodell",
+      "kicker": "Mein Vorgehensmodell",
       "title": "Vom Anlass zur Umsetzung in drei Schritten.",
       "subtitle": "Nicht als Konzept, sondern so, dass es im Tagesgeschäft funktioniert: gemeinsam klären, operativ führen, konsequent verankern.",
       "stepLabel": "Schritt",
       "outTitle": "Ergebnis",
+      "restriction": "Dieses Vorgehen ist nicht für jede Situation gedacht. Es ist sinnvoll, wenn bereits klar ist, dass Veränderung notwendig ist, aber nicht greift.",
       "steps": [
         {
           "verb": "Klären",
@@ -204,18 +206,18 @@
           "verb": "Etablieren",
           "text": "Wir gestalten und begleiten den Aufbau eines Führungs- und Steuerungsrhythmus, der Klarheit, Priorisierung und Umsetzung stabil ermöglicht.",
           "out": [
-            "Führungsrhythmus",
-            "KPI-Set & Standards",
-            "Klare Rollen und Schnittstellen"
+            "Entscheidungen werden klarer getroffen",
+            "Abstimmungen werden kürzer und verbindlicher",
+            "Verantwortung ist spürbar"
           ]
         },
         {
           "verb": "Verankern",
           "text": "Wir sichern Wirkung über Nachhalten, Verantwortlichkeiten und kulturelle Anschlussfähigkeit, bis es ohne externe Unterstützung trägt.",
           "out": [
-            "Review- und Nachhaltelogik",
-            "Verantwortung im Alltag",
-            "Kultur & Identität integriert"
+            "Es trägt ohne externe Unterstützung",
+            "Veränderung ist Teil des Alltags",
+            "Die Führung steuert eigenständig nach"
           ]
         }
       ]
@@ -229,25 +231,26 @@
       "Change Governance und Kommunikationsarchitektur",
       "Kultur- und Identitätsarbeit in M&A (Pre- und Post-Merger)"
     ],
-    "bridge": "Je nach Anlass und Ausgangslage arbeiten wir in unterschiedlichen Formaten: vom kompakten Workshop bis zur längerfristigen Begleitung.",
+    "bridge": "Je nach Anlass und Ausgangslage arbeite ich in unterschiedlichen Formaten: vom kompakten Workshop bis zur längerfristigen Begleitung.",
     "bridgeCta": "Leistungen ansehen →",
     "cta": {
       "kicker": "15 Minuten Orientierung",
-      "text": "In einem kurzen Gespräch klären wir Anlass, Zielbild und das passende Vorgehen."
+      "text": "In einem kurzen Gespräch klären wir, ob das gerade Ihre Situation ist und welches Format passt."
     }
   },
   "about": {
-    "title": "Über uns",
+    "title": "Über mich",
     "heroTitle": "Umsetzung in komplexen Situationen",
-    "heroSubtitle": "Begleitung von Führung und Organisation im industriellen Alltag",
+    "heroSubtitle": "",
     "heroImage": "/seref-sahil-change-werkstatt.jpg",
     "heroImageAlt": "Seref Sahil",
     "intro": [
-      "Über 25 Jahre operative Industrie- und Führungserfahrung verbinden sich mit technischer, betriebswirtschaftlicher und wirtschaftspsychologischer Expertise. Die Change-Werkstatt begleitet den industriellen Mittelstand dort, wo Konzepte vorhanden sind, deren Umsetzung in der Praxis jedoch nicht greift und wo Effizienz, Führung und Unternehmenskultur gemeinsam weiterentwickelt werden müssen.",
-      "Die Stärke liegt darin, operative Realität und Managementperspektive zusammenzuführen, damit Veränderungen insbesondere in kritischen Übergangssituationen tragfähig und wirksam umgesetzt werden."
+      "Ich kenne diese Situationen nicht aus Workshops, sondern aus Verantwortung.\nAus Produktion und Führung. Aus Phasen, in denen Entscheidungen unter Druck getroffen werden mussten.",
+      "Heute arbeite ich mit Führungskräften und Organisationen im industriellen Mittelstand genau an diesen Punkten.\nDort, wo Veränderung entschieden ist, aber nicht greift.\nWo Effizienz, Führung und Unternehmenskultur zusammengeführt werden müssen."
     ],
     "profileTitle": "Profil",
-    "profileText": "Akzeptanz entsteht dort, wo Sprache, Realität und Verantwortung zusammenpassen.\n\nIn M&A-, Integrations- und Transformationssituationen scheitert Umsetzung selten an formalen Zielsetzungen, sondern an verdeckten kulturellen und identitätsbezogenen Spannungen. Mehrsprachiger Zugang zur Organisation und die wissenschaftliche Auseinandersetzung mit diesen Zusammenhängen ermöglichen es, solche Spannungen früh sichtbar zu machen, bevor sie operative oder politische Wirkung entfalten.\n\nDie Arbeit basiert auf eigener Erfahrung in Werk, Führung und Management im industriellen Umfeld. Daraus ergibt sich ein klarer Ansatz:\nVeränderungen müssen zur operativen Realität passen, von Führung übernommen werden und im Arbeitsalltag verankert sein.\n\nSo entsteht Umsetzung, die nicht erklärt werden muss, sondern getragen und gelebt wird.",
+    "profileText": "Akzeptanz entsteht dort, wo Sprache, Realität und Verantwortung zusammenpassen.\n\nIn M&A-, Integrations- und Transformationssituationen scheitert Umsetzung selten an formalen Zielsetzungen, sondern an verdeckten kulturellen und identitätsbezogenen Spannungen. Mein mehrsprachiger Zugang zur Organisation und die wissenschaftliche Auseinandersetzung mit diesen Zusammenhängen ermöglichen es, solche Spannungen früh sichtbar zu machen, bevor sie operative oder politische Wirkung entfalten.\n\nMeine Arbeit basiert auf eigener Erfahrung in Werk, Führung und Management im industriellen Umfeld. Daraus ergibt sich ein klarer Ansatz: Veränderungen müssen zur operativen Realität passen, von Führung übernommen werden und im Arbeitsalltag verankert sein.\n\nSo entsteht Umsetzung, die nicht erklärt werden muss, sondern getragen und gelebt wird.",
+    "clarityText": "Ich übernehme keine operative Umsetzung. Keine Projektverantwortung. Keine Linienfunktion. Ich arbeite an der Stelle, an der entschieden wird, wie geführt und priorisiert wird.",
     "bulletsEyebrow": "Fundament der Arbeit",
     "bullets": [
       "25+ Jahre operative Praxiserfahrung, vom Industriemechaniker zur standortübergreifenden Bereichsleitung Produktion & Logistik",
@@ -259,7 +262,7 @@
     "linkedInLabel": "LinkedIn-Profil ansehen",
     "practiceEyebrow": "Projekterfahrung",
     "practiceTitle": "Erfahrung aus der Praxis",
-    "practiceIntro": "Keine Fallstudien aus dem Seminarraum, sondern Erfahrung aus konkreten Transformations-, Integrations- und Führungssituationen im industriellen Alltag, mit Verantwortung, Widerstand und messbaren Ergebnissen.",
+    "practiceIntro": "Wenn Bereiche nicht zusammenarbeiten. Wenn Maßnahmen beschlossen, aber nicht umgesetzt werden. Wenn Führung zwischen Druck, Erwartungen und Realität steht. Aus solchen Situationen stammt meine Erfahrung, nicht aus Fallstudien.",
     "practiceItems": [
       {
         "title": "Post-Merger-Integration",
@@ -314,7 +317,7 @@
   "speaking": {
     "eyebrow": "Wissensweitergabe",
     "title": "Vorträge & Lehre",
-    "intro": "In Vorträgen und Lehrformaten spreche ich über Führung, Veränderung und operative Realität. Nicht aus theoretischer Distanz, sondern aus gelebter Verantwortung im organisationalen Alltag. Ziel ist es, Orientierung zu geben, Zusammenhänge einzuordnen und Anschlussfähigkeit für konkrete Entscheidungen herzustellen.",
+    "intro": "Vorträge und Lehrformate sind kein Ersatz für die eigentliche Arbeit. Sie dienen dazu, Zusammenhänge sichtbar zu machen und Diskussionen zu öffnen.\n\nIch spreche über Führung, Veränderung und operative Realität. Nicht aus theoretischer Distanz, sondern aus Verantwortung in der organisationalen Realität.",
     "topicsTitle": "Typische Themen",
     "topicsHint": "Thema anklicken für Details",
     "topics": [
@@ -350,24 +353,29 @@
       }
     ],
     "formatsTitle": "Formate",
+    "formatsSubtitle": "Die Formate unterscheiden sich im Umfang, nicht im Anspruch.",
     "formats": [
       "Keynote oder Impulsvortrag (30–60 Minuten)",
       "Inhouse-Training oder Workshop (0,5–2 Tage)",
       "Seminarreihe oder Modulprogramm (2–4 Module)",
       "Lehrveranstaltungen an Hochschulen und Akademien"
     ],
-    "ctaText": "Vorträge schaffen Orientierung, schärfen Begriffe und sind ein sinnvoller Einstieg. Nachhaltige Wirkung entsteht jedoch erst, wenn Führung und Umsetzung im Alltag weitergeführt werden."
+    "ctaText": "In vielen Fällen ist ein Vortrag der Einstieg. Die eigentliche Arbeit beginnt danach, in der Umsetzung.",
+    "cta": {
+      "kicker": "15 Minuten Orientierung",
+      "text": "Wenn Sie überlegen, ob ein Vortrag oder Workshop der richtige Einstieg ist, sprechen wir darüber."
+    }
   },
   "contact": {
     "eyebrow": "Gespräch vereinbaren",
     "title": "Kontakt",
-    "intro": "Wir klären in einem unverbindlichen Gespräch, ob und wie eine Zusammenarbeit sinnvoll ist. Schreiben Sie uns, buchen Sie direkt einen Termin oder rufen Sie an. Rückmeldung in der Regel innerhalb von 24–48 Stunden.",
+    "intro": "Ich kläre in einem unverbindlichen Gespräch, ob und wie eine Zusammenarbeit in Ihrer Situation sinnvoll ist. Schreiben Sie mir oder buchen Sie direkt einen Termin. Rückmeldung in der Regel innerhalb von 24–48 Stunden.",
     "formEyebrow": "Nachricht senden",
-    "formIntro": "Schreiben Sie uns kurz Ihr Anliegen, wir melden uns zeitnah.",
+    "formIntro": "Beschreiben Sie kurz Ihre Situation, ich melde mich zeitnah.",
     "responseHint": "Bitte keine vertraulichen Informationen über das Formular senden.",
     "direct": {
       "title": "Direktkontakt",
-      "text": "Alternativ erreichen Sie uns auch direkt:",
+      "text": "Alternativ erreichen Sie mich auch direkt:",
       "email": "info@change-werkstatt-sahil.com",
       "phone": "+49 176 840 765 07"
     },
@@ -379,9 +387,9 @@
       "company": "Unternehmen (optional)",
       "companyPlaceholder": "Unternehmen",
       "details": "Nachricht",
-      "detailsPlaceholder": "Worum geht es?\nKontext, Ziel, aktueller Stand …",
+      "detailsPlaceholder": "Worum geht es konkret?\nAusgangssituation, aktueller Stand, Zielbild …",
       "consent": "Ich willige ein, dass meine Angaben zur Kontaktaufnahme gemäß der <privacy>Datenschutzerklärung</privacy> verarbeitet werden.",
-      "submit": "Nachricht senden",
+      "submit": "Anfrage senden",
       "sending": "Wird gesendet …",
       "success": "Nachricht wurde gesendet. Vielen Dank!",
       "errorSend": "Senden fehlgeschlagen. Bitte später erneut versuchen.",
@@ -389,9 +397,9 @@
     },
     "tabMessage": "Nachricht schreiben",
     "tabSchedule": "Termin buchen",
-    "scheduleHint": "Wählen Sie einen passenden Termin für ein erstes Gespräch – direkt und ohne Umwege.",
+    "scheduleHint": "Wählen Sie einen Termin für ein erstes Gespräch. Direkt und ohne Umwege.",
     "scheduleButton": "Termin jetzt buchen",
-    "scheduleNote": "Öffnet Microsoft Bookings in einem neuen Tab."
+    "scheduleNote": "Terminbuchung in einem neuen Tab."
   },
   "privacy": {
     "title": "Datenschutzerklärung",

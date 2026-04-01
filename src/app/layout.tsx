@@ -1,5 +1,5 @@
 // src/app/layout.tsx
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
@@ -26,6 +26,10 @@ function getBaseUrl() {
 
 const BASE_URL = getBaseUrl();
 
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 
@@ -51,8 +55,6 @@ export const metadata: Metadata = {
       { rel: "android-chrome", url: "/android-chrome-512x512.png" },
     ],
   },
-
-  themeColor: "#ffffff",
 
   appleWebApp: {
     capable: true,

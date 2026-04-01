@@ -91,7 +91,7 @@ export default function ContactPage() {
                   <span className="dot" />
                   <span>{t("tabSchedule")}</span>
                 </div>
-                <p className="mt-3 text-sm leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
+                <p className="mt-3 text-[15px] leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
                   {t("scheduleHint")}
                 </p>
                 <a
@@ -114,7 +114,7 @@ export default function ContactPage() {
                     <span className="dot" />
                     <span>{d("title")}</span>
                   </div>
-                  <p className="mt-3 text-sm leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
+                  <p className="mt-3 text-[15px] leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
                     {d("text")}
                   </p>
                   <div className="mt-6 grid gap-3">
@@ -142,7 +142,7 @@ export default function ContactPage() {
                 <span className="dot" />
                 <span>{t("formEyebrow")}</span>
               </div>
-              <p className="mt-3 text-sm leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
+              <p className="mt-3 text-[15px] leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
                 {t("formIntro")}
               </p>
 

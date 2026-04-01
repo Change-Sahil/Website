@@ -14,15 +14,15 @@
     "location": "Aalen · Almanya",
     "imprint": "Künye",
     "privacy": "Gizlilik",
-    "bottomLine": "Sanayi ve KOBİ’ler · Uygulama desteği"
+    "bottomLine": "İmalat KOBİ’leri · Uygulama işe yaramadığında"
   },
   "home": {
     "blocks": [],
     "trust": [],
     "hero": {
-      "kicker": "Endüstriyel ortamda uygulamaya yakın eşlik",
-      "title": "Verimlilik, liderlik ve uygulama birlikte çalışmak zorunda olduğunda",
-      "intro": "Değişim kararı alındı. Yönlendirmeler yapıldı. Ama işletmede yeterince ilerleme yok. Tam olarak bu durumlarda devreye giriyorum. 'Üstte' karar verilirken 'aşağıda' tutunmayan yerlerde.\n\nYönetimle ve üretim yapan şirketlerde doğrudan sahada çalışıyorum. Konseptler üzerine değil, uygulamanın neden işlemediği ve somut olarak neyin değişmesi gerektiği üzerine. Toplantı odasında değil, kararların etkisini göstermesi gereken yerde. Liderlik durumlarında. Koordinasyonda. Sahada."
+      "kicker": "İmalat sektöründeki genel müdürler ve fabrika müdürleri için",
+      "title": "Kararınız verildi. Peki işletmede neden bu kadar az şey değişiyor?",
+      "intro": "Neden genellikle irade eksikliğinden değil. Belirsiz liderlikten, netleştirilmemiş sorumluluktan ve kritik noktalardaki koordinasyon eksikliğinden kaynaklanır. Tam da buraya devreye giriyorum.\n\nİmalat şirketlerinde yönetimle ve doğrudan üretim sahasında çalışıyorum. Kavramlara değil, liderlik durumlarına, koordinasyona ve günlük operasyona odaklanarak."
     },
     "pillars": {
       "title": "Çalışmamı farklı kılan",
@@ -42,42 +42,44 @@
         }
       ]
     },
+    "externalReason": "İç bilgi nadiren sorundur. Eksik olan, organizasyonel çıkar kaygısı olmayan bir değerlendirmedir. Herkesin hissettiği ama kimsenin sonuçlarına katlanmadan söyleyemediği şeyi dile getiren biri.",
     "divider": {
       "kicker": "Kısa. Pratik. Etkili.",
       "title": "Daha az soyutluk\nDaha fazla operasyonel gerçeklik",
-      "text": "Değişim çoğunlukla isteksizlikten değil, belirsiz sorumluluklar ve yetersiz uyumdan dolayı başarısız olur. Sizinle birlikte, liderliğin harekete geçebildiği ve iş birliğinin çalıştığı yapıyı kuruyorum."
+      "text": "Farklı açılardan deneyimimin kombinasyonunu elde edersiniz: işletmede birinci elden operasyonel sorumluluk, M&A, kültürel entegrasyon ve organizasyon geliştirme konularında akademik derinlik ve beş dilde doğrudan yönetim ve çalışanlarla çalışabilme yetkinliği."
     },
     "audience": {
-      "title": "Eşliğimin özellikle değer yarattığı durumlar",
-      "subtitle": "Uygulamanın gerçek koşullarda işlemesi gereken yerler",
+      "title": "Kimlerle çalışıyorum ve ne zaman somutlaşıyor",
+      "subtitle": "İmalat KOBİ’lerinde tipik müvekkiller ve durumlar",
       "boxTitles": [
-        "Tipik bağlamlar",
-        "İhtiyacın nasıl ortaya çıktığı"
+        "Beni kim görevlendiriyor",
+        "Somut sorun"
       ],
       "targets": [
-        "Rol veya hiyerarşiden bağımsız olarak uygulama sorumluluğunun üstlenildiği yerlerde",
-        "Liderlik, iletişim ve iş birliğinin baskı altında çalışması gereken alanlarda",
-        "Değişimin ek bir katman olarak değil, etkin şekilde entegre edilmesi gereken endüstriyel KOBİ’lerde",
-        "Operasyonel gerçeklik, liderlik mantığı ve kültürel yönün yeniden uyum sağlaması gereken dönemlerde"
+        "Bir satın alma geçirmiş ve entegrasyonun duraksadığını, kültürlerin bir araya gelmediğini fark eden",
+        "Yıllardır Lean uyguluyor ancak rakamlar neredeyse hiç iyileşmiyor ve yönetim konuyu taşımıyor",
+        "Karar vermiş ama işletmeye ulaşamıyor ve bunun neden olduğunu artık bilemiyor",
+        "Kağıt üzerinde işleyen ama gerçekte yaşatılmayan yeni bir liderlik yapısı kurmuş olan",
+        "Büyüme, yeniden yapılanma veya liderlik değişikliğinin ardından görev, süreç ve sorumluluğun artık yeni gerçekliğe uymadığını fark eden"
       ],
       "triggers": [
-        "Değişim kararı alınmıştır ancak yeterli bağlılık oluşmaz",
-        "Yeni yapılar oluşur ancak iş birliği ve yön bulma zayıf kalır",
-        "Girişimler başlar ancak kalıcı etki oluşturmaz",
-        "Sorumluluk, koordinasyon ve iletişim netliğini kaybeder",
-        "Karmaşıklık, organizasyonun taşıyabileceğinden daha hızlı artar"
+        "Bir satın alımın ardından, eski ve yeni yapılar arasında resmi olarak kimsenin dile getirmediği ama herkesin operasyonel olarak hissettiği kültürel gerilimler ortaya çıkıyor",
+        "Kararlar liderlik düzeyinde alınıyor ancak üretim sahasında ne değişmesi gerektiği ve kimin sorumlu olduğu belirsiz kalıyor",
+        "Çok lokasyonlu veya matris bir liderlik yapısı işlemesi gerekiyor ancak sorumluluklar ve karar yolları kalıcı olarak belirsiz kalıyor",
+        "Bir Lean uygulaması veya sürekli iyileştirme girişimi aylardır sürüyor ancak KPI’lar, liderlik davranışları ve saha rutinleri henüz değişmedi",
+        "Resmi sorumluluklar yeniden dağıtıldı ancak günlük işlerde her zaman karar verenler karar vermeye devam ediyor"
       ]
     },
     "orientation": {
       "kicker": "15 dakika yön bulma",
       "title": "Kısa netleştirme.\nSağlam karar.",
-      "text": "Bu durumun şu an sizin durumunuz olup olmadığından emin değilseniz, bunu kısa bir görüşmede netleştiririz.",
+      "text": "Çözümsüz kalan her şey maliyete yol açar: koordinasyon döngülerinde zaman, liderlik sürtüşmesinde enerji, hayata geçmeyen kararlarda güvenilirlik.\n\nBunun şu an sizin durumunuz olup olmadığını merak ediyorsanız, bunu 15 dakikada netleştirebiliriz.",
       "ctaPrimary": "Görüşme talep et",
       "ctaSecondary": "Hizmetleri incele"
     }
   },
   "services": {
-    "title": "Organizasyonda etkili uygulama",
+    "title": "Sizin için ne yapıyorum",
     "intro": "İş birliği neredeyse her zaman belirgin biçimde tanımlanmış bir durumla başlar. Ve uygun olduğunda sürekli bir eşliğe dönüşür.\n\nDuruma göre netlik sağlamak için noktasal, yön vermek için belirli bir ritimde veya değişimi günlük işleyişe kalıcı biçimde yerleştirmek için sürekli çalışıyorum.",
     "themes": {
       "kicker": "Odak alanları",
@@ -105,18 +107,18 @@
       "tags": {
         "workshops": "Atölye",
         "partnership": "Ortaklık",
-        "sparring": "Sparring"
+        "sparring": "Karar"
       },
       "ctaPrimary": "Görüşme talep et",
       "when": {
         "workshops": "Başlangıç durumu, öncelikler ve kararlar konusunda netliğe ihtiyaç duyulduğunda ve uygulamaya hem operasyonel hem kültürel olarak yapılandırılmış bir başlangıç gerektiğinde.",
         "partnership": "Uygulamanın aylar boyunca liderlik, netlik ve süreklilik gerektirdiği durumlarda.",
-        "sparring": "Liderlerin karmaşık durumlarda netliğe, önceliklendirmeye ve sağlam kararlara ihtiyaç duyduğu durumlarda."
+        "sparring": "Devredemeyeceğiniz ve sağlam bir dış değerlendirmeye ihtiyaç duyduğunuz bir kararla karşılaştığınızda."
       },
       "teaser": {
-        "workshops": "Net bir sonraki adımla birlikte açıklık, yön ve uygulama sağlayan yapılandırılmış atölye çalışmaları.",
-        "partnership": "Değişimin aylarca taşınması gerektiğinde tek bir atölye yeterli olmaz. O zaman istikrarlı bir liderlik ve karar ritmine ihtiyaç vardır.\n\nUygulama yerleşip organizasyonel gerçekliğin parçası haline gelene kadar liderlik, ritim ve ilerlemeyi birleştiren aylık eşlik. Dönüşüm ortaklığı, kritik aşamalarda liderlik ve karar süreçlerinin zamanla sınırlı ortak tasarımı ve ortak yönlendirilmesi olarak görülür, operasyonel uygulama olarak değil.",
-        "sparring": "Executive Sparring bir koçluk formatı değildir. Devredilemez somut kararlar üzerinde yoğunlaşılmış çalışmadır.\n\nZorlayıcı liderlik ve karar durumları için gizli sparring: net, pragmatik ve etkili."
+        "workshops": "Bir veya iki ortak günün ardından gerçek darboğazın nerede olduğunu, kimin ne için sorumlu olduğunu ve önümüzdeki 90 günde ne olacağını biliyorsunuz. Nereden başlamanız gerektiği sorusu artık ortaya çıkmıyor. Konsept değil. Etkili bir ilk adım.",
+        "partnership": "Değişimin aylarca sürdürülmesi gerektiğinde tek bir atölye yetmez. İstikrarlı bir liderlik ve karar ritmi gereklidir.\n\nUygulama hayata geçip organizasyonel gerçekliğin parçası olana kadar liderliği, ritmi ve ilerlemeyi birbirine bağlayan aylık destek. Uygulama ortaklığı, operasyonel uygulama değil, kritik aşamalarda liderlik ve karar süreçlerinin zaman sınırlı ortak tasarımı ve ortak yönetimidir. Doğru kaldıraçta çalışıp çalışmadığınızı artık tek başınıza değerlendirmeniz gerekmiyor.",
+        "sparring": "Devredemeyeceğiniz ve yalnız almak istemediğiniz bir kararla karşı karşıyasınız. Koçluk değil. Genel tavsiyeler değil. Sağlam bir değerlendirme ve net bir sonraki adım."
       },
       "topics": {
         "workshops": [
@@ -137,14 +139,14 @@
         ]
       },
       "cardTitles": {
-        "workshops": "Atölye çalışmaları",
-        "partnership": "Dönüşüm ortaklığı",
-        "sparring": "Executive Sparring"
+        "workshops": "Netleştirme Atölyesi",
+        "partnership": "Uygulama Ortaklığı",
+        "sparring": "Karar Netliği"
       },
       "tabRole": {
         "workshops": "Başlangıç & Netleştirme",
-        "partnership": "Sürekli Eşlik",
-        "sparring": "Odaklanmış Kararlar"
+        "partnership": "Sürekli uygulama",
+        "sparring": "Kritik kararlar"
       },
       "duration": {
         "workshops": "1-2 gün",
@@ -245,7 +247,7 @@
   },
   "about": {
     "title": "Hakkımda",
-    "heroTitle": "Karmaşık durumlarda uygulama",
+    "heroTitle": "İşletmeyi, liderliği ve arkasındaki baskıyı tanıyorum.",
     "heroSubtitle": "",
     "heroImage": "/seref-sahil-change-werkstatt.jpg",
     "heroImageAlt": "Seref Sahil",

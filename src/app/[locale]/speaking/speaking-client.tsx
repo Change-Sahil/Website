@@ -107,7 +107,7 @@ export default function SpeakingClient() {
                             >
                               {topic.title}
                             </p>
-                            <p className="mt-1 text-sm leading-6 text-slate-500">{topic.subtitle}</p>
+                            <p className="mt-1 text-[15px] leading-6 text-slate-500">{topic.subtitle}</p>
                           </div>
                         </div>
                         <span
@@ -130,7 +130,7 @@ export default function SpeakingClient() {
                         hidden={!open}
                         className="pb-5 pl-5 pr-2"
                       >
-                        <p className="text-sm leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
+                        <p className="text-[15px] leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
                           {topic.description}
                         </p>
                       </div>
@@ -148,7 +148,7 @@ export default function SpeakingClient() {
                 <span className="dot" />
                 <span>{t("formatsTitle")}</span>
               </div>
-              <p className="mt-2 text-sm leading-6" style={{ color: "rgba(var(--ink), .60)" }}>{t("formatsSubtitle")}</p>
+              <p className="mt-2 text-[15px] leading-6" style={{ color: "rgba(var(--ink), .60)" }}>{t("formatsSubtitle")}</p>
 
               <ul className="mt-5 space-y-3">
                 {formats.map((x, i) => (
@@ -165,12 +165,12 @@ export default function SpeakingClient() {
 
               <div className="mt-6 hr-soft" />
 
-              <p className="mt-5 text-sm leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
+              <p className="mt-5 text-[15px] leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
                 {t("ctaText")}
               </p>
 
               <div className="mt-5">
-                <Link href={`/${locale}/services`} className="btn-primary">{nav("services")}</Link>
+                <Link href={`/${locale}/contact`} className="btn-primary">{nav("cta")}</Link>
               </div>
             </div>
           </Reveal>

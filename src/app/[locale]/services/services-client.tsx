@@ -104,7 +104,7 @@ export default function ServicesClient() {
                   <div className="rounded-2xl border border-slate-200 bg-white px-5 py-4 h-full">
                     <div className="flex items-start min-w-0 gap-3">
                       <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-accent-90" />
-                      <p className="min-w-0 text-sm leading-6 text-slate-700">{item}</p>
+                      <p className="min-w-0 text-[15px] leading-6 text-slate-700">{item}</p>
                     </div>
                   </div>
                 </Reveal>
@@ -171,7 +171,7 @@ export default function ServicesClient() {
                   <span>{t("ui.labels.detailsTitle")}</span>
                 </div>
                 <h2 className="mt-3 section-title break-words hyphens-auto max-w-full">{active.title}</h2>
-                <p className="mt-4 text-sm md:text-base leading-7 muted whitespace-pre-line">{active.teaser}</p>
+                <p className="mt-4 text-[15px] leading-7 muted whitespace-pre-line">{active.teaser}</p>
 
                 <div className="mt-8 hr-soft" />
 
@@ -181,7 +181,7 @@ export default function ServicesClient() {
                       <span className="dot" />
                       <span>{t("ui.labels.whenTitle")}</span>
                     </div>
-                    <p className="mt-3 text-sm leading-7 break-words" style={{ color: "rgba(var(--ink), .74)" }}>
+                    <p className="mt-3 text-[15px] leading-7 break-words" style={{ color: "rgba(var(--ink), .74)" }}>
                       {active.when}
                     </p>
                     {active.topics.length ? (

@@ -58,14 +58,14 @@ export default function HomeClient() {
 
       {/* ── ZIELGRUPPEN ── */}
       <Reveal>
-        <section className="panel">
+        <section>
           <div className="section-eyebrow"><span className="dot" /><span>{audience?.subtitle ?? ""}</span></div>
           <h2 className="mt-3 section-title">{audience?.title ?? ""}</h2>
 
-          <div className="mt-6 grid gap-6 lg:grid-cols-2">
+          <div className="mt-6 grid gap-6 lg:grid-cols-[5.3fr_6.7fr]">
             <div className="rounded-2xl border border-slate-200 bg-slate-50/40 p-6">
               <div className="section-eyebrow"><span>{audience?.boxTitles?.[0] ?? ""}</span></div>
-              <ul className="mt-5 grid gap-y-3 text-sm leading-7 text-slate-700">
+              <ul className="mt-5 grid gap-y-3 text-[15px] leading-7 text-slate-700">
                 {targets.map((x, i) => (
                   <li key={i} className="flex min-w-0 gap-3">
                     <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-accent-90" />
@@ -77,7 +77,7 @@ export default function HomeClient() {
 
             <div className="rounded-2xl border border-slate-200 bg-slate-50/40 p-6">
               <div className="section-eyebrow"><span>{audience?.boxTitles?.[1] ?? ""}</span></div>
-              <ul className="mt-5 grid gap-y-3 text-sm leading-7 text-slate-700">
+              <ul className="mt-5 grid gap-y-3 text-[15px] leading-7 text-slate-700">
                 {triggers.map((x, i) => (
                   <li key={i} className="flex min-w-0 gap-3">
                     <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-accent-90" />
@@ -95,6 +95,21 @@ export default function HomeClient() {
         <Reveal>
           <div className="section-eyebrow"><span className="dot" /><span>{pillars?.subtitle ?? ""}</span></div>
           <h2 className="mt-3 section-title">{pillars?.title ?? ""}</h2>
+        </Reveal>
+
+        {/* Warum extern */}
+        <Reveal delay={40}>
+          <div
+            className="mt-8 px-6 py-5 text-[15px] leading-7"
+            style={{
+              borderLeft: "3px solid rgb(var(--accent))",
+              background: "rgba(0,168,165,.04)",
+              borderRadius: "0 14px 14px 0",
+              color: "rgba(var(--ink), .82)",
+            }}
+          >
+            {t("externalReason")}
+          </div>
         </Reveal>
 
         {/* Bild + Text */}
@@ -115,7 +130,7 @@ export default function HomeClient() {
               <div>
                 <div className="section-eyebrow"><span className="dot" /><span>{t("divider.kicker")}</span></div>
                 <h3 className="mt-3 section-title">{t("divider.title")}</h3>
-                <p className="mt-4 max-w-md text-sm leading-7 muted">{t("divider.text")}</p>
+                <p className="mt-4 max-w-md text-[15px] leading-7 muted">{t("divider.text")}</p>
               </div>
             </div>
           </div>
@@ -132,7 +147,7 @@ export default function HomeClient() {
                     {String(i + 1).padStart(2, "0")}
                   </div>
                 </div>
-                <p className="mt-3 text-sm leading-7 muted">{p.text}</p>
+                <p className="mt-3 text-[15px] leading-7 muted">{p.text}</p>
               </div>
             </Reveal>
           ))}
@@ -146,7 +161,7 @@ export default function HomeClient() {
             <div className="lg:col-span-7">
               <div className="section-eyebrow"><span className="dot" /><span>{t("orientation.kicker")}</span></div>
               <h3 className="mt-3 section-title">{t("orientation.title")}</h3>
-              <p className="mt-4 max-w-xl text-sm leading-7 muted md:text-base">
+              <p className="mt-4 max-w-xl text-[15px] leading-7 muted whitespace-pre-line">
                 {t("orientation.text")}
               </p>
               <div className="mt-6 flex flex-wrap gap-3">

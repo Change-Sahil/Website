@@ -94,8 +94,8 @@ export default function AboutClient() {
                         key={i}
                         className={
                           i === 0
-                            ? "text-sm font-medium leading-7 text-slate-800 md:text-base"
-                            : "text-sm leading-7 md:text-base text-slate-700"
+                            ? "text-[15px] font-medium leading-7 text-slate-800"
+                            : "text-[15px] leading-7 text-slate-700"
                         }
                       >
                         {p}

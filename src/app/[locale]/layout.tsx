@@ -37,10 +37,10 @@ export async function generateMetadata({
   };
 
   const descriptions: Record<string, string> = {
-    de: "Wir begleiten Führung und Teams in anspruchsvollen Transformations-, M&A- und Restrukturierungsprojekten. Werkstattansatz mit klarem Fokus auf wirksame Umsetzung.",
-    en: "We support leadership and teams in industrial and mid-market transformations, M&A integrations and restructuring with a hands-on execution mindset.",
-    es: "Acompañamos a líderes y equipos en transformaciones, integraciones M&A y reestructuraciones con un enfoque práctico y orientado a resultados.",
-    tr: "Liderlik ve ekipleri dönüşüm, M&A entegrasyonu ve yeniden yapılanma süreçlerinde uygulama odaklı bir yaklaşımla destekliyoruz.",
+    de: "Ich begleite Führung und Teams in anspruchsvollen Transformations-, M&A- und Restrukturierungsprojekten. Werkstattansatz mit klarem Fokus auf wirksame Umsetzung.",
+    en: "I support leadership and teams in industrial and mid-market transformations, M&A integrations and restructuring with a hands-on execution mindset.",
+    es: "Acompaño a líderes y equipos en transformaciones, integraciones M&A y reestructuraciones con un enfoque práctico y orientado a resultados.",
+    tr: "Liderlik ve ekipleri dönüşüm, M&A entegrasyonu ve yeniden yapılanma süreçlerinde uygulama odaklı bir yaklaşımla destekliyorum.",
   };
 
   const ogLocale: Record<string, string> = {

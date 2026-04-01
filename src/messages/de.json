@@ -14,15 +14,15 @@
     "location": "Aalen · Deutschland",
     "imprint": "Impressum",
     "privacy": "Datenschutz",
-    "bottomLine": "Industrie & Mittelstand · Umsetzungsbegleitung"
+    "bottomLine": "Produzierender Mittelstand · Wenn Umsetzung nicht greift"
   },
   "home": {
     "blocks": [],
     "trust": [],
     "hero": {
-      "kicker": "Umsetzungsnahe Begleitung im industriellen Umfeld",
-      "title": "Wenn Effizienz, Führung und Umsetzung zusammenfinden müssen",
-      "intro": "Veränderung ist beschlossen. Entscheidungen sind getroffen. Und trotzdem passiert im Betrieb zu wenig. Genau in diesen Situationen komme ich dazu. Dort, wo 'oben' entschieden wird und es 'unten' nicht trägt.\n\nIch arbeite mit der Führung und direkt auf dem Shopfloor in produzierenden Unternehmen. Nicht an Konzepten, sondern an der Frage, warum Umsetzung nicht greift und was sich konkret ändern muss. Nicht im Besprechungsraum, sondern dort, wo Entscheidungen Wirkung entfalten sollen. In Führungssituationen. In Abstimmungen. Im Betrieb."
+      "kicker": "Für Geschäftsführer und Werksleiter im produzierenden Mittelstand",
+      "title": "Ihre Entscheidung ist gefallen. Warum bewegt sich im Betrieb trotzdem zu wenig?",
+      "intro": "Der Grund liegt selten am fehlenden Willen. Er liegt an unklarer Führung, ungeklärten Verantwortlichkeiten und fehlender Abstimmung an den entscheidenden Stellen. Genau dort komme ich dazu.\n\nIch arbeite mit der Führung und direkt auf dem Shopfloor in produzierenden Unternehmen. Nicht an Konzepten, sondern an der Frage, warum Umsetzung nicht greift und was sich konkret ändern muss. Nicht im Besprechungsraum, sondern dort, wo Entscheidungen Wirkung entfalten sollen. In Führungssituationen. In Abstimmungen. Im Betrieb."
     },
     "pillars": {
       "title": "Was meine Arbeit unterscheidet",
@@ -42,43 +42,45 @@
         }
       ]
     },
+    "externalReason": "Internes Wissen ist selten das Problem. Was fehlt, ist eine Einschätzung ohne organisationale Eigeninteressen. Jemand, der benennt, was alle spüren, aber niemand intern ohne Konsequenzen aussprechen kann.",
     "divider": {
       "kicker": "Kurz. Praxisnah. Wirksam.",
       "title": "Weniger Abstraktion\nMehr operative Realität",
-      "text": "Veränderung scheitert selten am Willen, sondern an unklarer Verantwortung und fehlender Abstimmung. Ich schaffe gemeinsam mit Ihnen die Struktur, in der Führung handlungsfähig wird und Zusammenarbeit funktioniert."
+      "text": "Sie bekommen die Kombination meiner Expertise aus verschiedenen Zugängen: operative Verantwortung im Betrieb aus erster Hand, wissenschaftliche Tiefe zu M&A, Kulturintegration und Organisationsentwicklung, und die Fähigkeit, in fünf Sprachen direkt mit Führung und Belegschaft zu arbeiten."
     },
     "audience": {
-      "title": "Wo meine Begleitung besonders hilfreich ist",
-      "subtitle": "Dort, wo Umsetzung unter realen Bedingungen gelingen muss",
+      "title": "Für wen ich arbeite und wann es konkret wird",
+      "subtitle": "Typische Auftraggeber und Situationen im produzierenden Mittelstand",
       "boxTitles": [
-        "Typische Kontexte",
-        "Woran sich der Bedarf oft zeigt"
+        "Wer mich beauftragt",
+        "Das konkrete Problem"
       ],
       "targets": [
-        "Überall dort, wo Menschen Umsetzung verbindlich voranbringen sollen, unabhängig von Funktion oder Hierarchie",
-        "In Bereichen, in denen Führung, Kommunikation und Zusammenarbeit unter Belastung funktionieren müssen",
-        "In Organisationen des industriellen Mittelstands, in denen Veränderung nicht zusätzlich organisiert, sondern wirksam integriert werden soll",
-        "In Phasen, in denen operative Realität, Führungslogik und kulturelle Orientierung wieder zusammenfinden müssen"
+        "Wer eine Übernahme hinter sich hat und merkt, dass die Integration stockt und die Kulturen nicht zusammenfinden",
+        "Wer seit Jahren Lean betreibt, aber die Kennzahlen sich kaum bewegen und die Führung das Thema nicht trägt",
+        "Wer entschieden hat, aber im Betrieb nicht ankommt und nicht mehr weiß, woran das liegt",
+        "Wer eine neue Führungsstruktur aufgebaut hat, die auf dem Papier funktioniert, aber in der Realität nicht gelebt wird",
+        "Wer nach Wachstum, Restrukturierung oder einem Führungswechsel merkt, dass Zuständigkeiten, Abläufe und Verantwortung nicht mehr zur neuen Realität passen"
       ],
       "triggers": [
-        "Veränderung ist beschlossen, gewinnt aber keine ausreichende Verbindlichkeit",
-        "Neue Strukturen entstehen, doch Zusammenarbeit und Orientierung bleiben instabil",
-        "Initiativen laufen an, ohne im Betrieb dauerhaft Wirkung zu entfalten",
-        "Verantwortung, Abstimmung und Kommunikation verlieren an Klarheit",
-        "Komplexität steigt schneller, als Führung und Organisation sie tragen können"
+        "Nach einer Übernahme entstehen kulturelle Spannungen zwischen alten und neuen Strukturen, die offiziell niemand benennt, aber alle operativ spüren",
+        "Entscheidungen werden auf Führungsebene getroffen, aber am Shopfloor ist unklar, was sich konkret ändern soll und wer das verantwortet",
+        "Eine standortübergreifende oder matrixartige Führungsstruktur soll funktionieren, aber Verantwortlichkeiten und Entscheidungswege bleiben dauerhaft unklar",
+        "Eine Lean-Einführung oder KVP-Initiative läuft seit Monaten, aber Kennzahlen, Führungsverhalten und Shopfloor-Routinen haben sich noch nicht verändert",
+        "Formale Zuständigkeiten wurden neu verteilt, aber im Alltag entscheiden weiterhin die, die es schon immer getan haben"
       ]
     },
     "orientation": {
       "kicker": "15 Minuten Orientierung",
       "title": "Kurz klären.\nFundiert entscheiden.",
-      "text": "Wenn Sie unsicher sind, ob das gerade Ihre Situation ist, klären wir das in einem kurzen Gespräch.",
+      "text": "Was ungeklärt bleibt, kostet: Zeit in Abstimmungsschleifen, Energie in Führungsreibung, Glaubwürdigkeit in Entscheidungen, die nicht ankommen.\n\nWenn Sie sich fragen, ob das gerade Ihre Situation ist, klären wir das in 15 Minuten.",
       "ctaPrimary": "Gespräch anfragen",
       "ctaSecondary": "Leistungen ansehen"
     }
   },
   "services": {
-    "title": "Wirksame Umsetzung in der Organisation",
-    "intro": "Die Zusammenarbeit beginnt fast immer mit einer klar abgegrenzten Situation. Und entwickelt sich, wenn es passt, in eine kontinuierliche Begleitung.\n\nJe nach Anlass arbeite ich punktuell zur Klärung, im Rhythmus zur Steuerung oder kontinuierlich zur nachhaltigen Verankerung im täglichen Betrieb.",
+    "title": "Was Sie von mir bekommen",
+    "intro": "Die Zusammenarbeit beginnt fast immer mit einer klar abgegrenzten Situation. Ein konkreter Anlass, eine konkrete Frage, ein erster überschaubarer Schritt.\n\nJe nach Situation arbeite ich einmalig zur Klärung, im Rhythmus zur Steuerung oder kontinuierlich bis Umsetzung im Tagesgeschäft trägt.",
     "themes": {
       "kicker": "Themenschwerpunkte",
       "title": "Wobei ich konkret unterstütze",
@@ -105,18 +107,18 @@
       "tags": {
         "workshops": "Workshops",
         "partnership": "Partnerschaft",
-        "sparring": "Sparring"
+        "sparring": "Entscheidung"
       },
       "ctaPrimary": "Gespräch anfragen",
       "when": {
         "workshops": "Wenn Klarheit über Ausgangslage, Prioritäten und Entscheidungen benötigt wird und ein strukturierter Start in die Umsetzung erfolgen soll: operativ wie kulturell.",
         "partnership": "Wenn Umsetzung über Monate hinweg Führung, Klarheit und Kontinuität erfordert.",
-        "sparring": "Wenn Führungskräfte in komplexen Situationen Klarheit, Priorisierung und belastbare Entscheidungen benötigen."
+        "sparring": "Wenn Sie vor einer Entscheidung stehen, die Sie nicht delegieren können und bei der Sie eine fundierte externe Einschätzung benötigen."
       },
       "teaser": {
-        "workshops": "Strukturierte Werkstatt-Workshops zur Klärung, Ausrichtung und Umsetzung mit eindeutigem nächsten Schritt.",
-        "partnership": "Wenn Veränderung über Monate hinweg getragen werden muss, reicht ein einzelner Workshop nicht. Dann braucht es einen stabilen Führungs- und Entscheidungsrhythmus.\n\nMonatliche Begleitung, die Führung, Rhythmus und Fortschritt verbindet, bis Umsetzung greift und Teil der organisationalen Realität wird. Die Transformationspartnerschaft versteht sich als zeitlich begrenzte Mitgestaltung und Mitsteuerung von Führungs- und Entscheidungsprozessen in kritischen Phasen, nicht als operative Umsetzung.",
-        "sparring": "Executive Sparring ist kein Coachingformat. Es ist die konzentrierte Arbeit an konkreten Entscheidungen, die nicht delegierbar sind.\n\nVertrauliches Sparring für anspruchsvolle Führungs- und Entscheidungssituationen: klar, pragmatisch, wirksam."
+        "workshops": "Nach einem oder zwei gemeinsamen Tagen wissen Sie, wo der eigentliche Engpass liegt, wer konkret was verantwortet, und was in den nächsten 90 Tagen passiert. Die Frage, womit Sie anfangen sollen, stellt sich danach nicht mehr. Kein Konzept. Ein erster wirkungsvoller Schritt.",
+        "partnership": "Wenn Veränderung über Monate hinweg getragen werden muss, reicht ein einzelner Workshop nicht. Dann braucht es einen stabilen Führungs- und Entscheidungsrhythmus.\n\nMonatliche Begleitung, die Führung, Rhythmus und Fortschritt verbindet, bis Umsetzung greift und Teil der organisationalen Realität wird. Die Umsetzungspartnerschaft versteht sich als zeitlich begrenzte Mitgestaltung und Mitsteuerung von Führungs- und Entscheidungsprozessen in kritischen Phasen, nicht als operative Umsetzung. Sie müssen nicht mehr allein einschätzen, ob Sie noch am richtigen Hebel arbeiten.",
+        "sparring": "Sie stehen vor einer Entscheidung, die Sie nicht delegieren können und nicht allein treffen wollen. Kein Coaching. Keine allgemeinen Empfehlungen. Sondern eine fundierte Einschätzung und ein klarer nächster Schritt."
       },
       "topics": {
         "workshops": [
@@ -137,14 +139,14 @@
         ]
       },
       "cardTitles": {
-        "workshops": "Werkstatt-Workshops",
-        "partnership": "Transformationspartnerschaft",
-        "sparring": "Executive Sparring"
+        "workshops": "Klärungsworkshop",
+        "partnership": "Umsetzungspartnerschaft",
+        "sparring": "Entscheidungsklarheit"
       },
       "tabRole": {
         "workshops": "Einstieg & Klärung",
-        "partnership": "Kontinuierliche Begleitung",
-        "sparring": "Fokussierte Entscheidungen"
+        "partnership": "Kontinuierliche Umsetzung",
+        "sparring": "Kritische Entscheidungen"
       },
       "duration": {
         "workshops": "1-2 Tage",
@@ -245,7 +247,7 @@
   },
   "about": {
     "title": "Über mich",
-    "heroTitle": "Umsetzung in komplexen Situationen",
+    "heroTitle": "Ich kenne den Betrieb, die Führung und den Druck dahinter.",
     "heroSubtitle": "",
     "heroImage": "/seref-sahil-change-werkstatt.jpg",
     "heroImageAlt": "Seref Sahil",

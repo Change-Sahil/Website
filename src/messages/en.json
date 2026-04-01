@@ -14,15 +14,15 @@
     "location": "Aalen · Germany",
     "imprint": "Legal notice",
     "privacy": "Privacy",
-    "bottomLine": "Industry & SMEs · Execution support"
+    "bottomLine": "Manufacturing SMEs · When execution stalls"
   },
   "home": {
     "blocks": [],
     "trust": [],
     "hero": {
-      "kicker": "Hands-on support in industrial environments",
-      "title": "When efficiency, leadership and execution need to come together",
-      "intro": "Change has been decided. Directions have been set. And yet, implementation stalls. This is exactly where I step in. Where decisions are made 'at the top' and nothing holds 'on the ground'.\n\nI work with leadership and directly on the shopfloor in manufacturing companies. Not on concepts, but on the question of why implementation isn't working and what needs to change concretely. Not in the meeting room, but where decisions need to take effect. In leadership situations. In coordination. On the floor."
+      "kicker": "For managing directors and plant managers in manufacturing SMEs",
+      "title": "Your decision has been made. Why is so little changing in operations?",
+      "intro": "The reason is rarely a lack of will. It lies in unclear leadership, unresolved responsibilities and missing alignment at the critical points. That is exactly where I step in.\n\nI work with leadership and directly on the shopfloor in manufacturing companies. Not on concepts, but in leadership situations, coordination and day-to-day operations."
     },
     "pillars": {
       "title": "What distinguishes my work",
@@ -42,42 +42,44 @@
         }
       ]
     },
+    "externalReason": "Internal knowledge is rarely the problem. What is missing is an assessment without organisational self-interest. Someone who names what everyone senses but no one internally can say without consequences.",
     "divider": {
       "kicker": "Concise. Practical. Effective.",
       "title": "Less abstraction\nMore operational reality",
-      "text": "Change rarely fails due to lack of intent, but due to unclear responsibilities and insufficient alignment. Together with you, I create the structure that enables leadership to act and collaboration to function."
+      "text": "You get the combination of my expertise from different angles: hands-on operational responsibility in manufacturing, academic depth on M&A, cultural integration and organisational development, and the ability to work in five languages directly with leadership and workforce."
     },
     "audience": {
-      "title": "Where my support is particularly valuable",
-      "subtitle": "Where execution must work under real conditions",
+      "title": "Who I work with and when it becomes concrete",
+      "subtitle": "Typical clients and situations in manufacturing SMEs",
       "boxTitles": [
-        "Typical contexts",
-        "How the need often becomes visible"
+        "Who hires me",
+        "The concrete problem"
       ],
       "targets": [
-        "Where responsibility for execution is taken, regardless of role or hierarchy",
-        "In areas where leadership, communication and collaboration must function under pressure",
-        "In industrial SMEs where change must be integrated effectively, not organized as an additional layer",
-        "In phases where operational reality, leadership logic and cultural orientation need to reconnect"
+        "Those who have gone through an acquisition and notice that integration is stalling and the cultures are not coming together",
+        "Those who have been running Lean for years but the numbers barely move and leadership is not carrying the topic",
+        "Those who have decided but are not reaching the organisation and no longer know why",
+        "Those who have built a new leadership structure that works on paper but is not being lived in reality",
+        "Those who after growth, restructuring or a leadership change notice that responsibilities, processes and accountability no longer fit the new reality"
       ],
       "triggers": [
-        "Change is decided but lacks sufficient commitment",
-        "New structures emerge but collaboration and orientation remain unstable",
-        "Initiatives start but fail to create lasting impact in operations",
-        "Responsibility, alignment and communication lose clarity",
-        "Complexity increases faster than leadership and organization can handle"
+        "After an acquisition, cultural tensions arise between old and new structures that no one officially names but everyone feels operationally",
+        "Decisions are made at leadership level but on the shopfloor it is unclear what should change concretely and who is accountable",
+        "A cross-site or matrix leadership structure is supposed to work but responsibilities and decision paths remain permanently unclear",
+        "A Lean implementation or continuous improvement initiative has been running for months but KPIs, leadership behaviour and shopfloor routines have not changed",
+        "Formal responsibilities have been redistributed but in day-to-day operations those who always decided still decide"
       ]
     },
     "orientation": {
       "kicker": "15 minutes orientation",
       "title": "Clarify briefly.\nDecide with confidence.",
-      "text": "If you're unsure whether this is your situation right now, we can clarify that in a brief call.",
+      "text": "What remains unresolved costs: time in coordination loops, energy in leadership friction, credibility in decisions that do not land.\n\nIf you are wondering whether this is your situation right now, we can clarify that in 15 minutes.",
       "ctaPrimary": "Request a call",
       "ctaSecondary": "View services"
     }
   },
   "services": {
-    "title": "Effective execution in the organisation",
+    "title": "What you get from me",
     "intro": "Collaboration almost always begins with a clearly defined situation. And evolves, when it’s a good fit, into an ongoing partnership.\n\nDepending on the occasion, I work on a focused basis to create clarity, in a recurring rhythm to provide guidance, or continuously to embed change sustainably in day-to-day operations.",
     "themes": {
       "kicker": "Focus areas",
@@ -105,18 +107,18 @@
       "tags": {
         "workshops": "Workshops",
         "partnership": "Partnership",
-        "sparring": "Sparring"
+        "sparring": "Decision"
       },
       "ctaPrimary": "Request a call",
       "when": {
         "workshops": "When clarity is needed regarding the starting point, priorities and decisions, and when a structured start into implementation is required, operationally as well as culturally.",
         "partnership": "When implementation over several months requires leadership, clarity and continuity.",
-        "sparring": "When leaders need clarity, prioritization and sound decisions in complex situations."
+        "sparring": "When you face a decision you cannot delegate and for which you need a well-founded external assessment."
       },
       "teaser": {
-        "workshops": "Structured workshop formats for clarification, alignment and implementation with a clearly defined next step.",
-        "partnership": "When change needs to be sustained over months, a single workshop is not enough. What's needed is a stable leadership and decision-making rhythm.\n\nMonthly support that connects leadership, rhythm and progress until implementation takes hold and becomes part of organizational reality. The transformation partnership is a time-limited co-design and co-steering of leadership and decision-making processes in critical phases, not operational execution.",
-        "sparring": "Executive Sparring is not a coaching format. It is focused work on concrete decisions that cannot be delegated.\n\nConfidential sparring for demanding leadership and decision-making situations: clear, pragmatic, effective."
+        "workshops": "After one or two days together you know where the real bottleneck is, who is concretely responsible for what, and what happens in the next 90 days. The question of where to start no longer arises. No concept. A first effective step.",
+        "partnership": "When change needs to be sustained over months, a single workshop is not enough. A stable leadership and decision rhythm is required.\n\nMonthly support that connects leadership, rhythm and progress until implementation takes hold and becomes part of organisational reality. The implementation partnership is a time-limited co-design and co-management of leadership and decision processes in critical phases, not operational execution. You no longer need to assess alone whether you are still working on the right lever.",
+        "sparring": "You face a decision you cannot delegate and do not want to make alone. No coaching. No general recommendations. A sound assessment and a clear next step."
       },
       "topics": {
         "workshops": [
@@ -137,14 +139,14 @@
         ]
       },
       "cardTitles": {
-        "workshops": "Workshop sessions",
-        "partnership": "Transformation partnership",
-        "sparring": "Executive sparring"
+        "workshops": "Clarification Workshop",
+        "partnership": "Implementation Partnership",
+        "sparring": "Decision Clarity"
       },
       "tabRole": {
         "workshops": "Entry & clarification",
-        "partnership": "Continuous support",
-        "sparring": "Focused decisions"
+        "partnership": "Ongoing implementation",
+        "sparring": "Critical decisions"
       },
       "duration": {
         "workshops": "1-2 days",
@@ -245,7 +247,7 @@
   },
   "about": {
     "title": "About me",
-    "heroTitle": "Execution in complex situations",
+    "heroTitle": "I know the operation, the leadership and the pressure behind it.",
     "heroSubtitle": "",
     "heroImage": "/seref-sahil-change-werkstatt.jpg",
     "heroImageAlt": "Seref Sahil",

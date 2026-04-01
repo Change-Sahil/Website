@@ -14,15 +14,15 @@
     "location": "Aalen · Alemania",
     "imprint": "Aviso legal",
     "privacy": "Privacidad",
-    "bottomLine": "Industria y pymes · Acompañamiento en la ejecución"
+    "bottomLine": "Pymes industriales · Cuando la ejecución no funciona"
   },
   "home": {
     "blocks": [],
     "trust": [],
     "hero": {
-      "kicker": "Acompañamiento cercano a la ejecución en entornos industriales",
-      "title": "Cuando eficiencia, liderazgo y ejecución deben encajar",
-      "intro": "El cambio está decidido. Las decisiones están tomadas. Y aun así, en la práctica apenas ocurre nada. Exactamente en estas situaciones es cuando entro. Donde se decide 'arriba' y abajo nada arraiga.\n\nTrabajo con la dirección y directamente en el shopfloor de empresas de producción. No con conceptos, sino con la pregunta de por qué la ejecución no funciona y qué debe cambiar concretamente. No en la sala de reuniones, sino donde las decisiones deben tener efecto. En situaciones de liderazgo. En coordinaciones. En la planta."
+      "kicker": "Para directores generales y directores de planta en pymes industriales",
+      "title": "La decisión está tomada. ¿Por qué sigue cambiando tan poco en la operación?",
+      "intro": "El motivo rara vez es la falta de voluntad. Está en el liderazgo poco claro, las responsabilidades sin definir y la falta de coordinación en los puntos críticos. Ahí es exactamente donde entro.\n\nTrabajo con la dirección y directamente en el shopfloor en empresas industriales. No en conceptos, sino en situaciones de liderazgo, coordinación y en la operación diaria."
     },
     "pillars": {
       "title": "Qué distingue mi trabajo",
@@ -42,42 +42,44 @@
         }
       ]
     },
+    "externalReason": "El conocimiento interno rara vez es el problema. Lo que falta es una evaluación sin intereses organizativos propios. Alguien que nombre lo que todos perciben pero nadie puede decir internamente sin consecuencias.",
     "divider": {
       "kicker": "Concreto. Práctico. Eficaz.",
       "title": "Menos abstracción\nMás realidad operativa",
-      "text": "El cambio rara vez falla por falta de intención, sino por responsabilidades poco claras y falta de coordinación. Junto a usted, creo la estructura que permite que el liderazgo actúe y que la colaboración funcione."
+      "text": "Obtiene la combinación de mi experiencia desde distintos ángulos: responsabilidad operativa de primera mano en la empresa, profundidad académica en M&A, integración cultural y desarrollo organizativo, y la capacidad de trabajar en cinco idiomas directamente con la dirección y los equipos."
     },
     "audience": {
-      "title": "Dónde mi acompañamiento es especialmente valioso",
-      "subtitle": "Donde la ejecución debe funcionar bajo condiciones reales",
+      "title": "Con quién trabajo y cuándo se concreta",
+      "subtitle": "Clientes y situaciones típicas en pymes industriales",
       "boxTitles": [
-        "Contextos típicos",
-        "Cómo suele manifestarse la necesidad"
+        "Quién me contrata",
+        "El problema concreto"
       ],
       "targets": [
-        "Donde se asume responsabilidad por la ejecución, independientemente del rol o jerarquía",
-        "En áreas donde liderazgo, comunicación y colaboración deben funcionar bajo presión",
-        "En pymes industriales donde el cambio debe integrarse eficazmente y no añadirse como capa adicional",
-        "En fases donde la realidad operativa, la lógica de liderazgo y la orientación cultural deben volver a alinearse"
+        "Quien ha pasado por una adquisición y nota que la integración se estanca y las culturas no se encuentran",
+        "Quien lleva años aplicando Lean pero los indicadores apenas se mueven y la dirección no sostiene el tema",
+        "Quien ha decidido pero no llega a calar en la organización y ya no sabe por qué",
+        "Quien ha construido una nueva estructura de liderazgo que funciona sobre el papel pero no se vive en la realidad",
+        "Quien tras un crecimiento, reestructuración o cambio de liderazgo nota que responsabilidades, procesos y rendición de cuentas ya no encajan con la nueva realidad"
       ],
       "triggers": [
-        "El cambio está decidido pero no genera suficiente compromiso",
-        "Surgen nuevas estructuras pero la colaboración y la orientación siguen siendo inestables",
-        "Las iniciativas arrancan pero no generan impacto duradero en la operación",
-        "La responsabilidad, la coordinación y la comunicación pierden claridad",
-        "La complejidad aumenta más rápido de lo que la organización puede gestionar"
+        "Tras una adquisición surgen tensiones culturales entre estructuras antiguas y nuevas que nadie nombra oficialmente pero todos perciben operativamente",
+        "Las decisiones se toman a nivel directivo pero en el shopfloor no está claro qué debe cambiar concretamente ni quién es responsable",
+        "Una estructura de liderazgo matricial o multisede debe funcionar pero las responsabilidades y las vías de decisión permanecen permanentemente poco claras",
+        "Una iniciativa Lean o de mejora continua lleva meses en marcha pero los indicadores, el comportamiento directivo y las rutinas en planta aún no han cambiado",
+        "Las responsabilidades formales se han redistribuido pero en el día a día siguen decidiendo quienes siempre lo han hecho"
       ]
     },
     "orientation": {
       "kicker": "15 minutos de orientación",
       "title": "Aclarar brevemente.\nDecidir con criterio.",
-      "text": "Si no está seguro de si esta es su situación actual, lo aclaramos en una breve conversación.",
+      "text": "Lo que queda sin resolver tiene un coste: tiempo en bucles de coordinación, energía en fricciones de liderazgo, credibilidad en decisiones que no aterrizan.\n\nSi se pregunta si esta es su situación ahora mismo, lo aclaramos en 15 minutos.",
       "ctaPrimary": "Solicitar conversación",
       "ctaSecondary": "Ver servicios"
     }
   },
   "services": {
-    "title": "Implementación efectiva en la organización",
+    "title": "Qué obtiene de mí",
     "intro": "La colaboración comienza casi siempre con una situación claramente delimitada. Y se desarrolla, cuando encaja, en un acompañamiento continuo.\n\nSegún la situación, trabajo de forma puntual para generar claridad, con un ritmo definido para orientar, o de manera continua para anclar el cambio de forma sostenible en la operación diaria.",
     "themes": {
       "kicker": "Áreas de enfoque",
@@ -105,18 +107,18 @@
       "tags": {
         "workshops": "Workshops",
         "partnership": "Acompañamiento",
-        "sparring": "Sparring"
+        "sparring": "Decisión"
       },
       "ctaPrimary": "Solicitar conversación",
       "when": {
         "workshops": "Cuando se necesita claridad sobre la situación inicial, las prioridades y las decisiones, y cuando se requiere un inicio estructurado de la implementación, tanto en lo operativo como en lo cultural.",
         "partnership": "Cuando la implementación durante varios meses requiere liderazgo, claridad y continuidad.",
-        "sparring": "Cuando los directivos necesitan claridad, priorización y decisiones sólidas en situaciones complejas."
+        "sparring": "Cuando se enfrenta a una decisión que no puede delegar y para la que necesita una valoración externa fundamentada."
       },
       "teaser": {
-        "workshops": "Workshops estructurados para clarificar, alinear e implementar con un siguiente paso claramente definido.",
-        "partnership": "Cuando el cambio debe sostenerse durante meses, un solo workshop no es suficiente. Se necesita un ritmo estable de liderazgo y toma de decisiones.\n\nAcompañamiento mensual que conecta liderazgo, ritmo y avance hasta que la implementación se consolida y pasa a formar parte de la realidad organizativa. La alianza de transformación se entiende como una co-configuración y co-dirección limitada en el tiempo de procesos de liderazgo y decisión en fases críticas, no como ejecución operativa.",
-        "sparring": "Executive Sparring no es un formato de coaching. Es el trabajo concentrado en decisiones concretas que no pueden delegarse.\n\nSparring confidencial para situaciones exigentes de liderazgo y decisión: claro, pragmático y eficaz."
+        "workshops": "Tras uno o dos días juntos sabe dónde está el verdadero cuello de botella, quién es concretamente responsable de qué y qué ocurre en los próximos 90 días. La pregunta por dónde empezar deja de plantearse. Sin conceptos. Un primer paso efectivo.",
+        "partnership": "Cuando el cambio debe sostenerse durante meses, un solo taller no basta. Se necesita un ritmo estable de liderazgo y toma de decisiones.\n\nAcompañamiento mensual que conecta liderazgo, ritmo y avance hasta que la implementación se consolida y pasa a formar parte de la realidad organizativa. La alianza de implementación se entiende como una co-configuración y co-dirección limitada en el tiempo de procesos de liderazgo y decisión en fases críticas, no como ejecución operativa. Ya no es necesario que evalúe solo si todavía está trabajando en la palanca correcta.",
+        "sparring": "Se enfrenta a una decisión que no puede delegar y que no quiere tomar solo. Sin coaching. Sin recomendaciones generales. Una valoración sólida y un siguiente paso claro."
       },
       "topics": {
         "workshops": [
@@ -137,14 +139,14 @@
         ]
       },
       "cardTitles": {
-        "workshops": "Workshops de taller",
-        "partnership": "Alianza de transformación",
-        "sparring": "Executive Sparring"
+        "workshops": "Taller de clarificación",
+        "partnership": "Alianza de implementación",
+        "sparring": "Claridad en la decisión"
       },
       "tabRole": {
         "workshops": "Inicio & clarificación",
-        "partnership": "Acompañamiento continuo",
-        "sparring": "Decisiones enfocadas"
+        "partnership": "Implementación continua",
+        "sparring": "Decisiones críticas"
       },
       "duration": {
         "workshops": "1-2 días",
@@ -245,7 +247,7 @@
   },
   "about": {
     "title": "Sobre mí",
-    "heroTitle": "Ejecución en situaciones complejas",
+    "heroTitle": "Conozco la operación, el liderazgo y la presión detrás de todo ello.",
     "heroSubtitle": "",
     "heroImage": "/seref-sahil-change-werkstatt.jpg",
     "heroImageAlt": "Seref Sahil",

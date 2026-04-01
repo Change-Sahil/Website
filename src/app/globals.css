@@ -145,7 +145,8 @@ body {
 
 /* ========= LISTS ========= */
 .list {
-  @apply space-y-3 text-sm leading-6;
+  @apply space-y-3 leading-6;
+  font-size: 0.9375rem;
 }
 .list li {
   position: relative;

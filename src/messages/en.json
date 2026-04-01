@@ -1,7 +1,7 @@
 {
   "nav": {
-    "cta": "Request a conversation",
-    "ctaShort": "Contact",
+    "cta": "Request a consultation",
+    "ctaShort": "Request",
     "home": "Home",
     "services": "Services",
     "approach": "Approach",
@@ -14,39 +14,39 @@
     "location": "Aalen · Germany",
     "imprint": "Legal notice",
     "privacy": "Privacy",
-    "bottomLine": "Manufacturing SMEs · When execution stalls"
+    "bottomLine": "Manufacturing SMEs · When execution does not take hold"
   },
   "home": {
     "blocks": [],
     "trust": [],
     "hero": {
       "kicker": "For managing directors and plant managers in manufacturing SMEs",
-      "title": "Your decision has been made. Why is so little changing in operations?",
-      "intro": "The reason is rarely a lack of will. It lies in unclear leadership, unresolved responsibilities and missing alignment at the critical points. That is exactly where I step in.\n\nI work with leadership and directly on the shopfloor in manufacturing companies. Not on concepts, but in leadership situations, coordination and day-to-day operations."
+      "title": "The decision has been made. Why is so little changing in operations?",
+      "intro": "The reason is rarely a lack of will. It lies in unclear leadership, unresolved responsibilities, and a lack of alignment at the critical points. That is exactly where I come in.\n\nI work with leadership and directly on the shop floor in manufacturing companies. Not on concepts, but on the question of why execution is not taking hold and what specifically needs to change. Not in the meeting room, but where decisions are meant to have an effect. In leadership situations. In coordination. In operations."
     },
     "pillars": {
       "title": "What distinguishes my work",
-      "subtitle": "Execution, leadership and sustainable integration in practice",
+      "subtitle": "Execution, leadership, and practical embedding",
       "items": [
         {
-          "title": "Execution instead of conceptual overload",
-          "text": "Change is not planned on top of everything else, but made effective within operations. With clear structure, clarified responsibilities and without adding new complexity."
+          "title": "Execution instead of concept-heavy work",
+          "text": "Change is not planned on top of everything else, but made effective within operations. With clear structure, clarified responsibilities, and without adding new complexity."
         },
         {
           "title": "Clarity in responsibility and alignment",
-          "text": "I do not work with additional programs alongside the organization, but within ongoing operations. Where decisions are made, responsibility is taken and results emerge."
+          "text": "I do not work with additional programs alongside the organization, but within ongoing operations. Where decisions are made, responsibility is taken, and results emerge."
         },
         {
-          "title": "Experience from shop floor, leadership and management",
-          "text": "My perspective is grounded in direct responsibility in operational and leadership roles within industrial environments. Grown from accountability on the floor, sharpened in parallel through study and research."
+          "title": "Experience from shop floor, leadership, and management",
+          "text": "My perspective is grounded in direct responsibility in operational and leadership roles within industrial environments. It has grown out of accountability in operations and has been sharpened in parallel through study and research."
         }
       ]
     },
-    "externalReason": "Internal knowledge is rarely the problem. What is missing is an assessment without organisational self-interest. Someone who names what everyone senses but no one internally can say without consequences.",
+    "externalReason": "Internal knowledge is rarely the problem. What is missing is an assessment without organizational self-interest. Someone who names what everyone senses, but no one internally can say without consequences.",
     "divider": {
       "kicker": "Concise. Practical. Effective.",
       "title": "Less abstraction\nMore operational reality",
-      "text": "You get the combination of my expertise from different angles: hands-on operational responsibility in manufacturing, academic depth on M&A, cultural integration and organisational development, and the ability to work in five languages directly with leadership and workforce."
+      "text": "You get the combination of my expertise from different angles: firsthand operational responsibility in manufacturing, academic depth in M&A, cultural integration, and organizational development, and the ability to work directly with leadership and workforce in five languages."
     },
     "audience": {
       "title": "Who I work with and when it becomes concrete",
@@ -57,48 +57,48 @@
       ],
       "targets": [
         "Those who have gone through an acquisition and notice that integration is stalling and the cultures are not coming together",
-        "Those who have been running Lean for years but the numbers barely move and leadership is not carrying the topic",
-        "Those who have decided but are not reaching the organisation and no longer know why",
-        "Those who have built a new leadership structure that works on paper but is not being lived in reality",
-        "Those who after growth, restructuring or a leadership change notice that responsibilities, processes and accountability no longer fit the new reality"
+        "Those who have been running Lean for years, but the numbers barely move and leadership is not backing it",
+        "Those who have made decisions, but nothing is landing in the organization and they no longer know why",
+        "Those who have built a new leadership structure that works on paper, but is not actually being practiced",
+        "Those who, after growth, restructuring, or a leadership change, notice that responsibilities, processes, and accountability no longer fit the new reality"
       ],
       "triggers": [
-        "After an acquisition, cultural tensions arise between old and new structures that no one officially names but everyone feels operationally",
-        "Decisions are made at leadership level but on the shopfloor it is unclear what should change concretely and who is accountable",
-        "A cross-site or matrix leadership structure is supposed to work but responsibilities and decision paths remain permanently unclear",
-        "A Lean implementation or continuous improvement initiative has been running for months but KPIs, leadership behaviour and shopfloor routines have not changed",
-        "Formal responsibilities have been redistributed but in day-to-day operations those who always decided still decide"
+        "After an acquisition, cultural tensions arise between old and new structures that no one officially names, but everyone feels operationally",
+        "Decisions are made at leadership level, but on the shop floor it is unclear what should change specifically and who is accountable",
+        "A cross-site or matrix leadership structure is supposed to work, but responsibilities and decision paths remain permanently unclear",
+        "A Lean implementation or continuous improvement initiative has been running for months, but KPIs, leadership behavior, and shop floor routines have still not changed",
+        "Formal responsibilities have been redistributed, but in day-to-day operations those who have always decided still decide"
       ]
     },
     "orientation": {
-      "kicker": "15 minutes orientation",
+      "kicker": "15-minute orientation",
       "title": "Clarify briefly.\nDecide with confidence.",
-      "text": "What remains unresolved costs: time in coordination loops, energy in leadership friction, credibility in decisions that do not land.\n\nIf you are wondering whether this is your situation right now, we can clarify that in 15 minutes.",
-      "ctaPrimary": "Request a call",
+      "text": "What remains unresolved comes at a cost: time in coordination loops, energy in leadership friction, and credibility in decisions that do not land.\n\nIf you are wondering whether this is your situation right now, we can clarify that in 15 minutes.",
+      "ctaPrimary": "Request a consultation",
       "ctaSecondary": "View services"
     }
   },
   "services": {
     "title": "What you get from me",
-    "intro": "Collaboration almost always begins with a clearly defined situation. And evolves, when it’s a good fit, into an ongoing partnership.\n\nDepending on the occasion, I work on a focused basis to create clarity, in a recurring rhythm to provide guidance, or continuously to embed change sustainably in day-to-day operations.",
+    "intro": "The collaboration almost always begins with a clearly defined situation. A specific trigger, a specific question, an initial step that is manageable in scope.\n\nDepending on the situation, I work on a one-off basis to create clarity, in a recurring rhythm to provide guidance, or continuously until execution is sustained in day-to-day operations.",
     "themes": {
       "kicker": "Focus areas",
       "title": "Where I provide concrete support",
-      "intro": "Depending on the occasion and format, I work on the topics that underpin leadership, collaboration and effective execution in operational contexts.",
+      "intro": "Depending on the situation and format, I work on the topics that support leadership, collaboration, and effective execution in operational contexts.",
       "items": [
-        "Leadership, roles and decision-making capability",
+        "Leadership, roles, and decision-making capability",
         "Alignment and collaboration across interfaces",
-        "Steering and stabilizing operational processes in production, logistics and quality",
+        "Steering and stabilizing operational processes in production, logistics, and quality",
         "Communication in change and transition situations",
-        "Culture and identity in transformation, M&A and succession",
-        "Anchoring new ways of working in day-to-day operations"
+        "Culture and identity in transformation, M&A, and succession",
+        "Embedding new ways of working in ongoing operations"
       ]
     },
     "ui": {
       "kicker": "Services",
       "navTitle": "Formats",
       "labels": {
-        "whenTitle": "When useful",
+        "whenTitle": "When it makes sense",
         "topicsTitle": "Typical situations",
         "deliverablesTitle": "What you get",
         "detailsTitle": "Details",
@@ -107,35 +107,35 @@
       "tags": {
         "workshops": "Workshops",
         "partnership": "Partnership",
-        "sparring": "Decision"
+        "sparring": "Decision Sparring"
       },
-      "ctaPrimary": "Request a call",
+      "ctaPrimary": "Request a consultation",
       "when": {
-        "workshops": "When clarity is needed regarding the starting point, priorities and decisions, and when a structured start into implementation is required, operationally as well as culturally.",
-        "partnership": "When implementation over several months requires leadership, clarity and continuity.",
-        "sparring": "When you face a decision you cannot delegate and for which you need a well-founded external assessment."
+        "workshops": "When clarity is needed on the starting point, priorities, and decisions, and when a structured start to execution is needed, operationally as well as culturally.",
+        "partnership": "When execution over several months requires leadership, clarity, and continuity.",
+        "sparring": "When you are facing a decision you cannot delegate and for which you need a well-founded external assessment."
       },
       "teaser": {
-        "workshops": "After one or two days together you know where the real bottleneck is, who is concretely responsible for what, and what happens in the next 90 days. The question of where to start no longer arises. No concept. A first effective step.",
-        "partnership": "When change needs to be sustained over months, a single workshop is not enough. A stable leadership and decision rhythm is required.\n\nMonthly support that connects leadership, rhythm and progress until implementation takes hold and becomes part of organisational reality. The implementation partnership is a time-limited co-design and co-management of leadership and decision processes in critical phases, not operational execution. You no longer need to assess alone whether you are still working on the right lever.",
-        "sparring": "You face a decision you cannot delegate and do not want to make alone. No coaching. No general recommendations. A sound assessment and a clear next step."
+        "workshops": "After one or two days together, you know where the real bottleneck lies, who is specifically responsible for what, and what will happen over the next 90 days. The question of where to start no longer arises. Not a concept. A first effective step.",
+        "partnership": "When change needs to be carried over months, a single workshop is not enough. What is needed is a stable leadership and decision rhythm.\n\nMonthly support that connects leadership, rhythm, and progress until execution takes hold and becomes part of organizational reality. The implementation partnership is understood as a time-limited co-design and co-steering of leadership and decision-making processes in critical phases, not as operational execution. You no longer have to figure out on your own whether you are still working on the right lever.",
+        "sparring": "You are facing a decision you cannot delegate and do not want to make alone. No coaching. No general recommendations. A sound assessment and a clear next step."
       },
       "topics": {
         "workshops": [
           "Lean / Operational Excellence (stability, quality, lead time, productivity)",
-          "Unclear priorities, decision bottlenecks or interface conflicts",
+          "Unclear priorities, decision bottlenecks, or interface conflicts",
           "Start or restart of improvement and transformation initiatives"
         ],
         "partnership": [
           "Strategic decisions have been made, but do not create stable impact in the organization",
-          "Leadership is confronted with conflicting expectations, unclear roles and high decision pressure",
-          "Recurring tensions between functions, levels or sites consume attention and energy over time",
-          "Cultural friction in transition situations such as M&A, integration or succession complicates steering and collaboration"
+          "Leadership is confronted with conflicting expectations, unclear roles, and high decision pressure",
+          "Recurring tensions between functions, levels, or sites consume attention and energy over time",
+          "Cultural friction in transition situations such as M&A, integration, or succession complicates steering and collaboration"
         ],
         "sparring": [
-          "Critical decisions, conflicting goals or high stakeholder pressure",
-          "Culture and identity issues in growth, restructuring or integration",
-          "Leadership questions: role, impact, clarity and consistency"
+          "Critical decisions, goal conflicts, or high stakeholder pressure",
+          "Culture and identity questions in growth, restructuring, or integration",
+          "Leadership questions: role, impact, clarity, and consequence"
         ]
       },
       "cardTitles": {
@@ -145,7 +145,7 @@
       },
       "tabRole": {
         "workshops": "Entry & clarification",
-        "partnership": "Ongoing implementation",
+        "partnership": "Continuous execution",
         "sparring": "Critical decisions"
       },
       "duration": {
@@ -155,14 +155,14 @@
       },
       "deliverables": {
         "workshops": [
-          "A shared target picture and prioritized focus areas",
-          "Decisions on roles, leadership rhythm and standards",
-          "A concrete implementation plan (30/60/90 days) with clear responsibilities"
+          "A shared target state and prioritized focus areas",
+          "Decisions on roles, leadership rhythm, and standards",
+          "A concrete execution plan (30/60/90 days) with clear responsibilities"
         ],
         "partnership": [
-          "A clear, jointly designed steering and decision rhythm with defined responsibilities at leadership and organizational level",
-          "Transparency on progress, blockers and the impact of measures",
-          "Anchoring collaboration, culture and identity in leadership and organization"
+          "A clear steering and decision rhythm, jointly designed, with defined responsibilities at leadership and organizational level",
+          "Transparency on progress, blockers, and the effect of measures",
+          "Embedding collaboration, culture, and identity in leadership and organization"
         ],
         "sparring": [
           "Clarity in complex or critical situations",
@@ -170,39 +170,39 @@
           "Confidential reflection and clear next steps"
         ],
         "speaking": [
-          "Keynote, training or teaching format tailored to the occasion",
+          "A keynote, training, or teaching format suited to the occasion",
           "Practical examples and transfer logic",
-          "Dialogue, Q&A and relevance for the audience"
+          "Dialogue, Q&A, and relevance for the audience"
         ]
       },
       "cta": {
-        "kicker": "15 minutes of orientation",
-        "text": "Many engagements begin with a workshop or sparring and then, when impact is needed, evolve into a longer partnership. If you're unsure where your situation currently stands, we can clarify that in a brief conversation."
+        "kicker": "15-minute orientation",
+        "text": "Many engagements begin with a workshop or sparring and then, when impact is meant to emerge, move into a longer support format. If you are unsure where your situation currently stands, we can clarify that in a brief conversation."
       }
     }
   },
   "approach": {
     "eyebrow": "My approach",
     "title": "Approach",
-    "intro": "Change rarely fails due to missing concepts. It fails because decisions aren't owned, prioritized, or consistently executed.\n\nThis is exactly where I step in — at the intersection of leadership, prioritization and execution in ongoing operations.",
-    "principlesEyebrow": "Orientation",
+    "intro": "Change rarely fails because of missing concepts. It fails because decisions are not carried, not prioritized, or not executed consistently.\n\nThat is exactly where I step in, in the interplay of leadership, prioritization, and execution in ongoing operations.",
+    "principlesEyebrow": "Mindset & Orientation",
     "principlesTitle": "Principles",
     "principles": [
-      "I work within ongoing operations: Together with leadership, we design clear roles as well as decision-making and steering rhythms, enabling responsibility to be effectively assumed.",
-      "I make impact measurable: Together, we define relevant metrics, standards, and routines and embed their follow-up through leadership and decision-making routines.",
-      "I anchor change sustainably: We integrate new ways of working into routines, collaboration, as well as culture and identity."
+      "I work within ongoing operations: together with leadership, we shape clear roles as well as decision-making and steering rhythms so that responsibility can be effectively assumed.",
+      "I make impact measurable: together, we define relevant metrics, standards, and routines and embed their follow-up through leadership and decision-making routines.",
+      "I embed change sustainably: we integrate new ways of working into routines, collaboration, as well as culture and identity."
     ],
     "how": {
       "kicker": "My process model",
-      "title": "From trigger to execution — in three steps.",
-      "subtitle": "Not as a concept, but so it works in the day-to-day: clarify together, lead in daily operations, embed consistently.",
+      "title": "From trigger to execution in three steps.",
+      "subtitle": "Not as a concept, but in a way that works in day-to-day operations: clarify together, lead operationally, embed consistently.",
       "stepLabel": "Step",
       "outTitle": "Outcome",
-      "restriction": "This approach is not right for every situation. It makes sense when it is already clear that change is necessary, but not taking hold.",
+      "restriction": "This approach is not intended for every situation. It makes sense when it is already clear that change is necessary, but is not taking hold.",
       "steps": [
         {
           "verb": "Clarify",
-          "text": "We understand the current situation, constraints and dynamics—and make the first robust decisions on target state and priorities.",
+          "text": "We understand the starting point, bottlenecks, and dynamics, and make the first robust decisions on target state and priorities.",
           "out": [
             "Shared target state",
             "Top priorities",
@@ -211,34 +211,34 @@
         },
         {
           "verb": "Establish",
-          "text": "We design and accompany the establishment of a leadership and steering rhythm that reliably enables clarity, prioritization, and execution.",
+          "text": "We design and support the establishment of a leadership and steering rhythm that reliably enables clarity, prioritization, and execution.",
           "out": [
             "Decisions are made more clearly",
-            "Meetings become shorter and more binding",
-            "Accountability becomes tangible"
+            "Coordination becomes shorter and more binding",
+            "Responsibility becomes tangible"
           ]
         },
         {
           "verb": "Embed",
-          "text": "We secure impact through follow-up, accountability and cultural fit—until it runs without external support.",
+          "text": "We secure impact through follow-up, responsibilities, and cultural fit until it works without external support.",
           "out": [
-            "It holds without external support",
-            "Change is part of everyday work",
+            "It works without external support",
+            "Change becomes part of everyday work",
             "Leadership steers independently"
           ]
         }
       ]
     },
-    "toolboxEyebrow": "Means, not an end",
+    "toolboxEyebrow": "Means to an end",
     "toolboxTitle": "Tools",
     "toolboxSubtitle": "Selected as needed.",
     "toolbox": [
-      "Shopfloor management and leadership routines",
+      "Shop floor management and leadership routines",
       "SMED, value stream analysis, continuous improvement logic",
       "Change governance and communication architecture",
       "Culture and identity work in M&A (pre- and post-merger)"
     ],
-    "bridge": "Depending on the situation and starting point, I work in different formats—from a focused workshop to longer-term support.",
+    "bridge": "Depending on the situation and starting point, I work in different formats, from a focused workshop to longer-term support.",
     "bridgeCta": "View services →",
     "cta": {
       "kicker": "15-minute orientation",
@@ -247,142 +247,143 @@
   },
   "about": {
     "title": "About me",
-    "heroTitle": "I know the operation, the leadership and the pressure behind it.",
+    "heroTitle": "I know operations, leadership, and the pressure behind them.",
     "heroSubtitle": "",
     "heroImage": "/seref-sahil-change-werkstatt.jpg",
     "heroImageAlt": "Seref Sahil",
     "intro": [
-      "I know these situations not from workshops, but from responsibility.\nFrom production and leadership. From phases where decisions had to be made under pressure.",
-      "Today I work with leaders and organizations in industrial SMEs at exactly these points.\nWhere change has been decided but isn't taking hold.\nWhere efficiency, leadership and organizational culture need to come together."
+      "I know these situations not from workshops, but from responsibility.\nFrom production and leadership. From phases in which decisions had to be made under pressure.",
+      "Today I work with leaders and organizations in industrial SMEs on exactly these points.\nWhere change has been decided, but is not taking hold.\nWhere efficiency, leadership, and corporate culture need to be brought together."
     ],
     "profileTitle": "Profile",
-    "profileText": "Acceptance emerges where language, reality, and responsibility align.\n\nIn M&A, integration, and transformation situations, implementation rarely fails due to formal targets, but rather because of hidden cultural and identity-related tensions. My multilingual access to organizations and academic engagement with these dynamics make it possible to identify such tensions early, before they translate into operational or political consequences.\n\nMy work is grounded in firsthand experience across shop floor, leadership, and management roles within industrial environments. This leads to a clear approach: change must fit operational reality, be taken up by leadership, and be embedded in everyday work.\n\nThis is how implementation emerges — not as something that needs to be explained, but as something that is owned and lived.",
-    "clarityText": "I do not take on operational execution. No project responsibility. No line function. I work at the point where decisions are made about how to lead and prioritize.",
+    "profileText": "Acceptance emerges where language, reality, and responsibility fit together.\n\nIn M&A, integration, and transformation situations, execution rarely fails because of formal targets, but because of hidden cultural and identity-related tensions. My multilingual access to organizations and my academic work on these dynamics make it possible to surface such tensions early, before they unfold operationally or politically.\n\nMy work is grounded in firsthand experience in plant, leadership, and management roles within industrial environments. This leads to a clear approach: change must fit operational reality, be owned by leadership, and be embedded in everyday work.\n\nThis is how execution emerges, not as something that needs to be explained, but as something that is carried and lived."
+    ,
+    "clarityText": "I do not take on operational execution. No project responsibility. No line role. I work at the point where decisions are made about how leadership and prioritization are handled.",
     "bulletsEyebrow": "Foundation of the work",
     "bullets": [
       "25+ years of operational experience, from industrial mechanic to cross-site head of production & logistics",
-      "Strong expertise in industrial processes and work organization across the value chain",
-      "Background in business administration and organizational psychology, focused on leadership and organization",
-      "Multilingual leadership and implementation: German, English, Turkish, Spanish, Arabic",
+      "Strong experience in industrial process and work organization across the value chain",
+      "Training in business administration and business psychology, with a focus on leadership and organization",
+      "Multilingual leadership and execution: German, English, Turkish, Spanish, and Arabic",
       "Ongoing DBA on M&A integration, culture, and identity in industrial SMEs"
     ],
     "linkedInLabel": "View LinkedIn profile",
     "practiceEyebrow": "Project experience",
     "practiceTitle": "Experience from practice",
-    "practiceIntro": "When departments fail to work together. When measures are decided but not implemented. When leadership stands between pressure, expectations and reality. That is where my experience comes from — not from case studies.",
+    "practiceIntro": "When functions do not work together. When measures are decided, but not implemented. When leadership stands between pressure, expectations, and reality. That is where my experience comes from, not from case studies.",
     "practiceItems": [
       {
         "title": "Post-merger integration",
-        "text": "Cross-site integration after acquisitions: leadership structures, process ownership, cultural alignment, and capability development over several years."
+        "text": "Cross-site support after an acquisition: leadership structures, process responsibility, culture work, and capability development over several years."
       },
       {
-        "title": "Lean & operational excellence",
-        "text": "Implementation and stabilization of continuous improvement, SMED, 5S, and value stream optimization — not as a method rollout, but as leadership practice in daily operations."
+        "title": "Lean & Operational Excellence",
+        "text": "Introduction and stabilization of continuous improvement, SMED, 5S, and value stream optimization, not as a method rollout, but as leadership work in day-to-day operations."
       },
       {
         "title": "Reorganization & leadership development",
-        "text": "Building cross-site leadership structures and developing leaders in matrix organizations under ongoing operations."
+        "text": "Building cross-site leadership structures and developing leaders in matrix organizations during ongoing operations."
       },
       {
-        "title": "Restructuring & cultural anchoring",
-        "text": "Supporting restructuring phases with a focus on leadership clarity, communication, and sustainable embedding of change in daily work."
+        "title": "Restructuring & cultural embedding",
+        "text": "Support through restructuring phases with a focus on leadership clarity, communication, and the sustainable embedding of change in everyday work."
       },
       {
         "title": "ISO certification & management systems",
-        "text": "Successful support of ISO 9001 recertification processes, including reorganization in production environments as a foundation for sustainable quality management."
+        "text": "Successful support of recertification processes under DIN ISO 9001, including reorganization in the production environment as a basis for sustainable quality assurance."
       },
       {
-        "title": "Value stream & interface alignment",
-        "text": "Optimization of value streams in matrix organizations: budget responsibility, cost center control, and multi-project management across production and logistics."
+        "title": "Value stream & interface clarification",
+        "text": "Optimization of value streams in matrix organizations: budget responsibility, cost center steering, and multi-project management in production and logistics."
       }
     ],
     "testimonialsEyebrow": "What others say",
     "testimonialsTitle": "Voices from collaboration",
-    "testimonialsIntro": "The following feedback comes from real leadership and implementation situations in industrial environments — from the time before Change-Werkstatt was founded.",
+    "testimonialsIntro": "The following assessments come from real leadership and execution situations in industrial environments, from the time before the founding of Change-Werkstatt.",
     "testimonials": [
       {
-        "quote": "Strong professional clarity, sharp analytical judgment, and a valuable sparring partner for executive management.",
+        "quote": "High professional clarity, strong analytical judgment, and a valuable sparring partner for executive management.",
         "role": "Executive management",
-        "context": "Industrial mid-sized company · Transformation and integration"
+        "context": "Medium-sized industrial company · Transformation and integration process"
       },
       {
-        "quote": "Strong focus on teamwork and the ability to sustainably improve organizational effectiveness through continuous improvement.",
+        "quote": "Strong focus on teamwork and the ability to sustainably increase organizational effectiveness through continuous improvement.",
         "role": "HR leadership",
-        "context": "Manufacturing company · Lean and organizational development"
+        "context": "Manufacturing company · Lean & organizational development"
       },
       {
-        "quote": "Clear and consistent in difficult decision-making situations, with the full trust of senior management.",
-        "role": "Senior management",
-        "context": "Industrial company · Restructuring and leadership development"
+        "quote": "Clear and consistent in difficult decision situations and trusted unreservedly by senior management.",
+        "role": "Division leadership & management",
+        "context": "Industrial company · Restructuring & leadership development"
       }
     ],
     "cta": {
-      "kicker": "Next Step",
-      "text": "Theory is good. Effective implementation is better.\nIf you have a situation where exactly that becomes decisive, let's talk."
+      "kicker": "Next step",
+      "text": "Theory is good. Effective execution is better.\nIf you have a situation in which exactly that becomes decisive, let us talk."
     }
   },
   "speaking": {
-    "eyebrow": "Knowledge Transfer",
-    "title": "Talks & Teaching",
-    "intro": "Talks and teaching formats are not a substitute for the actual work. They serve to make connections visible and open up discussions.\n\nI speak about leadership, change and operational reality. Not from a theoretical distance, but from responsibility within the organization.",
+    "eyebrow": "Knowledge transfer",
+    "title": "Speaking & Teaching",
+    "intro": "Talks and teaching formats are not a substitute for the actual work. They serve to make connections visible and open up discussion.\n\nI speak about leadership, change, and operational reality. Not from theoretical distance, but from responsibility within the organization.",
     "topicsTitle": "Typical topics",
-    "topicsHint": "Click a topic for details",
+    "topicsHint": "Click on a topic for details",
     "topics": [
       {
-        "title": "Efficiency and Culture in Balance",
-        "subtitle": "Why transformations fail — and what makes them work",
-        "description": "Transformation is never purely technical; it is always cultural as well. When strategies fail in everyday reality, it is often the tension between efficiency pressure and loss of identity. This talk shows how to connect both perspectives so change is not only designed, but understood and carried in daily operations."
+        "title": "Efficiency and culture in alignment",
+        "subtitle": "Why transformation fails and how it succeeds",
+        "description": "Transformation is not a purely technical process. It is always cultural as well. When strategies fail against lived reality, the reason often lies in the tension between pressure for efficiency and loss of identity. The talk shows how both perspectives can be brought together so that change is not only planned, but understood and carried in everyday work."
       },
       {
-        "title": "Shopfloor Leadership",
-        "subtitle": "Leading through rhythm, not firefighting",
-        "description": "Impact is created where value is produced. When shopfloor leadership is replaced by constant firefighting, stability is lost. I show how clear routines, meaningful metrics, and a reliable leadership cadence create orientation — and make accountability effective where problems actually arise."
+        "title": "Shopfloor leadership",
+        "subtitle": "Leadership through rhythm, not actionism",
+        "description": "Impact emerges where value creation takes place. When leadership on the shop floor is replaced by short-term actionism, the system loses stability. I show how clear routines, metrics, and a reliable leadership rhythm create orientation and make responsibility effective where problems arise."
       },
       {
-        "title": "Lean Management",
-        "subtitle": "Daily impact instead of a toolbox obsession",
-        "description": "Lean is not a toolbox; it is a logic of simplification and learning. Many initiatives fail not because methods are missing, but because they do not fit daily reality. This impulse focuses on a few levers that stabilize standards, problem solving, and collaboration — without ‘method hunting’."
+        "title": "Lean management",
+        "subtitle": "Impact in everyday work, not a collection of methods",
+        "description": "Lean is not a toolbox, but a logic of simplification and learning. Many initiatives fail not because methods are missing, but because they do not connect to everyday work. The session focuses on a few levers that stabilize standards, problem solving, and collaboration without turning into a hunt for methods."
       },
       {
-        "title": "M&A Integration",
-        "subtitle": "Culture, identity, and the operating model before and after the deal",
-        "description": "The economic success of mergers is decided after closing — in collaboration, leadership, and identity. Drawing on practice and DBA research, I highlight how culture and identity can be addressed early and how an operating model can be shaped to protect performance without destroying the cultural DNA that made the business successful."
+        "title": "M&A integration",
+        "subtitle": "Culture, identity, and operating model before and after the deal",
+        "description": "The economic success of mergers is decided after closing, in collaboration, leadership, and identity. Based on practice and research (DBA), I show how questions of culture and identity can be addressed early and how an operating model can emerge that secures performance without losing cultural DNA."
       },
       {
-        "title": "Change Governance",
+        "title": "Change governance",
         "subtitle": "Decide, communicate, embed",
-        "description": "Change needs a clear frame; otherwise ambiguity and friction take over. Change governance is the operating system of transformation: decision paths, roles, cadence, and communication. This talk shows how to build governance pragmatically so decisions stick, communication builds trust, and new ways of working don’t fade out."
+        "description": "Change needs a clear framework. Otherwise ambiguity and friction take over. Change governance is the operating system of transformation: decision paths, roles, rhythm, and communication. The talk shows how governance can be built pragmatically so that decisions take hold, communication builds trust, and new ways of working do not fizzle out."
       },
       {
-        "title": "Leadership in Transition",
-        "subtitle": "Role, impact, accountability",
-        "description": "In transformation phases, expectations on leaders shift markedly: from subject-matter expert to a builder of orientation, accountability, and collaboration. I reflect on how leadership stays effective under uncertainty, how roles are clarified, and how accountability is placed where it truly matters in daily operations."
+        "title": "Leadership in transition",
+        "subtitle": "Role, impact, responsibility",
+        "description": "In transformation phases, expectations of leadership change significantly, away from the pure expert and toward the shaper of orientation, responsibility, and collaboration. I reflect on how leadership remains effective in uncertainty, how roles are clarified, and how responsibility is placed where it actually has an effect in everyday work."
       }
     ],
     "formatsTitle": "Formats",
-    "formatsSubtitle": "The formats differ in scope, not in standard.",
+    "formatsSubtitle": "The formats differ in scope, not in ambition.",
     "formats": [
       "Keynote or talk (30–60 minutes)",
       "In-house training or workshop (0.5–2 days)",
       "Seminar series or modular program (2–4 modules)",
-      "Teaching formats at universities and academies"
+      "Teaching at universities and academies"
     ],
-    "ctaText": "In many cases, a talk is the starting point. The real work begins afterwards, in execution.",
+    "ctaText": "In many cases, a talk is the starting point. The actual work begins afterwards, in execution.",
     "cta": {
       "kicker": "15-minute orientation",
-      "text": "If you are considering whether a talk or workshop is the right starting point, let's talk about it."
+      "text": "If you are considering whether a talk or workshop is the right starting point, let us talk."
     }
   },
   "contact": {
     "eyebrow": "Schedule a conversation",
     "title": "Contact",
-    "intro": "I clarify in a brief, non-binding conversation whether and how a collaboration makes sense for your situation. Send me a message or book an appointment directly. I usually get back to you within 24–48 hours.",
+    "intro": "In a non-binding conversation, I clarify whether and how collaboration makes sense in your situation. Write to me or book an appointment directly. I usually respond within 24–48 hours.",
     "formEyebrow": "Send a message",
-    "formIntro": "Briefly describe your situation, I will get back to you shortly.",
-    "responseHint": "Please do not send any confidential information via this form.",
+    "formIntro": "Briefly describe your situation and I will get back to you promptly.",
+    "responseHint": "Please do not send any confidential information via the form.",
     "direct": {
       "title": "Direct contact",
-      "text": "Alternatively, you can reach me directly:",
+      "text": "Alternatively, you can also reach me directly:",
       "email": "info@change-werkstatt-sahil.com",
       "phone": "+49 176 840 765 07"
     },
@@ -394,25 +395,25 @@
       "company": "Company (optional)",
       "companyPlaceholder": "Company",
       "details": "Message",
-      "detailsPlaceholder": "What is it about specifically?\nStarting point, current status, target picture …",
-      "consent": "I consent to the processing of my information for contacting me in accordance with the <privacy>Privacy Policy</privacy>.",
+      "detailsPlaceholder": "What is it about specifically?\nStarting point, current status, target state …",
+      "consent": "I consent to my data being processed for the purpose of contacting me in accordance with the <privacy>Privacy Policy</privacy>.",
       "submit": "Send request",
       "sending": "Sending …",
       "success": "Message sent. Thank you!",
       "errorSend": "Sending failed. Please try again later.",
       "errorNetwork": "Network error. Please try again later."
     },
-    "tabMessage": "Send a message",
-    "tabSchedule": "Book a meeting",
-    "scheduleHint": "Choose a time for an initial conversation. Directly and without detours.",
-    "scheduleButton": "Book appointment now",
-    "scheduleNote": "Appointment booking in a new tab."
+    "tabMessage": "Write a message",
+    "tabSchedule": "Book an appointment",
+    "scheduleHint": "Choose a time for an initial conversation. Direct and straightforward.",
+    "scheduleButton": "Book an appointment now",
+    "scheduleNote": "Appointment booking opens in a new tab."
   },
   "privacy": {
     "title": "Privacy Policy",
     "intro": {
-      "p1": "With this Privacy Policy I inform you about the processing of personal data when you use my website. Personal data is any data that can be used to identify you personally.",
-      "p2": "This website provides information about my services and enables you to contact me."
+      "p1": "With this Privacy Policy, I inform you about the processing of personal data when you use my website. Personal data is any data by which you can be personally identified.",
+      "p2": "This website serves to provide information about my services and to enable contact."
     },
     "controller": {
       "title": "Controller",
@@ -422,84 +423,84 @@
       "title": "Purposes and legal bases",
       "p1": "I process personal data for the following purposes:",
       "list": [
-        "Provision of the website (connection data/server logs)",
-        "Handling requests via the contact form",
+        "Provision of the website (connection data/server log files)",
+        "Handling inquiries via the contact form",
         "Communication by email or phone",
         "IT security and abuse prevention"
       ],
-      "legal": "The legal bases are in particular Art. 6(1)(b) GDPR (pre-contractual measures/contract), Art. 6(1)(f) GDPR (legitimate interests in secure operation and optimization) and—where required—Art. 6(1)(a) GDPR (consent)."
+      "legal": "The legal bases are, in particular, Art. 6(1)(b) GDPR (steps prior to entering into a contract/performance of a contract), Art. 6(1)(f) GDPR (legitimate interest in secure operation and optimization), and, where required, Art. 6(1)(a) GDPR (consent)."
     },
     "hosting": {
-      "title": "Hosting and website delivery",
-      "p1": "My website is hosted by Vercel Inc. When you access the website, technically necessary data is processed to deliver the website (e.g., IP address, date/time, requested page, referrer URL, browser/operating system).",
-      "p2": "This data is typically processed in server log files and is used to ensure secure and stable operation of the website.",
-      "legal": "Legal basis: Art. 6(1)(f) GDPR (legitimate interest in secure operation)."
+      "title": "Hosting and provision of the website",
+      "p1": "My website is hosted by Vercel Inc. When you access the website, technically necessary data is processed in order to deliver the website (e.g. IP address, date/time, requested page, referrer URL, browser/operating system).",
+      "p2": "This data is generally processed in server log files and serves the secure and stable operation of the website.",
+      "legal": "The legal basis is Art. 6(1)(f) GDPR (legitimate interest in secure operation)."
     },
     "contact": {
       "title": "Contact and contact form",
-      "p1": "If you contact me via the contact form or email, I process the information you provide (e.g., name, email address, company, message) to handle your request and communicate with you.",
-      "legal": "Legal basis: Art. 6(1)(b) GDPR (pre-contractual measures) and Art. 6(1)(f) GDPR (efficient handling of inquiries).",
-      "retention": "I store inquiries as long as necessary for processing and documentation and then delete them in accordance with statutory retention periods."
+      "p1": "If you contact me via the contact form or by email, I process the information you provide (e.g. name, email address, company, message) in order to handle your inquiry and communicate with you.",
+      "legal": "The legal basis is Art. 6(1)(b) GDPR (pre-contractual measures) and Art. 6(1)(f) GDPR (efficient handling of inquiries).",
+      "retention": "I keep inquiries for as long as this is necessary for processing and documentation and then delete them in accordance with the statutory retention periods."
     },
     "emailProvider": {
-      "title": "Email delivery / service provider (Resend)",
-      "p1": "For sending and delivering emails (e.g., contact inquiries), a technical service provider may be used (e.g., Resend). Personal data (e.g., name, email address, message content) may be processed in this context.",
-      "legal": "Legal basis: Art. 6(1)(b) GDPR (handling your request) and Art. 6(1)(f) GDPR (reliable delivery/communication)."
+      "title": "Sending emails / service provider (Resend)",
+      "p1": "A technical service provider may be used for the sending and delivery of emails (e.g. contact inquiries) (e.g. Resend). In this context, personal data (e.g. name, email address, message content) may be processed.",
+      "legal": "The legal basis is Art. 6(1)(b) GDPR (handling the inquiry) and Art. 6(1)(f) GDPR (reliable delivery/communication)."
     },
     "analytics": {
-      "title": "Cookies, tracking and Vercel Analytics",
-      "p1": "I do not use marketing or retargeting cookies.",
-      "p2": "I use Vercel Analytics to evaluate the use of my website statistically. Only anonymized usage data (e.g., page views, device type, approximate region) is processed. No user profiles are created and no marketing tracking takes place.",
-      "p3": "Vercel Analytics operates without marketing cookies. Legal basis: Art. 6(1)(f) GDPR (legitimate interest in technical optimization and statistical evaluation).",
-      "future": "If I introduce tracking or marketing tools in the future, I will inform you here separately and obtain consent where required."
+      "title": "Cookies, tracking, and Vercel Analytics",
+      "p1": "I do not use any marketing or retargeting cookies.",
+      "p2": "I use Vercel Analytics to analyze the use of my website statistically. Only anonymized usage data (e.g. page views, device type, approximate region) is processed. No user profiles are created and no tracking takes place for marketing purposes.",
+      "p3": "Vercel Analytics works without the use of marketing cookies. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in the technical optimization and statistical analysis of my website).",
+      "future": "Should tracking or marketing tools be introduced in the future, I will provide separate information here and obtain your consent where required."
     },
     "transfers": {
-      "title": "Recipients and international transfers",
-      "p1": "As part of hosting and email delivery, service providers may process data on my behalf. Processing in third countries (e.g., the USA) cannot be ruled out. Where required, I ensure appropriate safeguards (e.g., Standard Contractual Clauses)."
+      "title": "Recipients and transfers to third countries",
+      "p1": "As part of hosting and email delivery, service providers may process data on my behalf. Processing in third countries (e.g. USA) cannot be ruled out. In such cases, I ensure that appropriate safeguards (e.g. Standard Contractual Clauses) are in place where required."
     },
     "rights": {
       "title": "Your rights",
       "p1": "You have the following rights under the GDPR:",
       "list": [
-        "Right of access (Art. 15 GDPR)",
-        "Right to rectification (Art. 16 GDPR)",
-        "Right to erasure (Art. 17 GDPR)",
-        "Right to restriction of processing (Art. 18 GDPR)",
-        "Right to data portability (Art. 20 GDPR)",
-        "Right to object (Art. 21 GDPR)",
-        "Right to withdraw consent (Art. 7(3) GDPR)"
+        "Access (Art. 15 GDPR)",
+        "Rectification (Art. 16 GDPR)",
+        "Erasure (Art. 17 GDPR)",
+        "Restriction of processing (Art. 18 GDPR)",
+        "Data portability (Art. 20 GDPR)",
+        "Objection to processing (Art. 21 GDPR)",
+        "Withdrawal of consent (Art. 7(3) GDPR)"
       ],
       "p2": "You also have the right to lodge a complaint with a supervisory authority (Art. 77 GDPR)."
     },
     "security": {
       "title": "Data security",
-      "p1": "I use appropriate technical and organizational measures to protect your data against loss, misuse and unauthorized access. However, complete security of data transmission over the internet cannot be guaranteed."
+      "p1": "I use appropriate technical and organizational measures to protect your data against loss, misuse, and unauthorized access. However, complete security of data transmission on the internet cannot be guaranteed."
     },
     "changes": {
       "title": "Status and changes",
-      "p1": "I may update this Privacy Policy if the legal/factual situation changes or if I introduce new services.",
+      "p1": "I may adapt this Privacy Policy if the legal or factual situation changes or if I introduce new services.",
       "status": "Status: March 2026"
     }
   },
   "imprint": {
     "title": "Legal Notice (Imprint)",
     "tmc": {
-      "title": "Information pursuant to § 5 TMG (Germany)",
+      "title": "Information pursuant to § 5 TMG",
       "text": "Change-Werkstatt Sahil\nSeref Sahil\nWiesendorfstraße 6\n73433 Aalen\nGermany"
     },
     "contact": {
       "text": "Phone: +49 176 84076507\nEmail: seref.sahil@change-werkstatt-sahil.com"
     },
     "activity": {
-      "title": "Self-employed professional activity",
-      "text": "Independent consulting on organizational development, leadership and transformation processes."
+      "title": "Freelance activity",
+      "text": "Consulting on organizational development, leadership, and transformation processes."
     },
     "vat": {
-      "title": "VAT ID pursuant to § 27a UStG (Germany)",
+      "title": "VAT identification number pursuant to § 27a UStG",
       "text": "DE460120074"
     },
     "mstv": {
-      "title": "Responsible for content pursuant to § 18(2) MStV (Germany)",
+      "title": "Responsible for content pursuant to § 18 para. 2 MStV",
       "text": "Seref Sahil\nWiesendorfstraße 6\n73433 Aalen"
     }
   },

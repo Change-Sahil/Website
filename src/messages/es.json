@@ -1,7 +1,7 @@
 {
   "nav": {
-    "cta": "Solicitar conversación",
-    "ctaShort": "Contactar",
+    "cta": "Solicitar una consulta",
+    "ctaShort": "Solicitar",
     "home": "Inicio",
     "services": "Servicios",
     "approach": "Enfoque",
@@ -22,31 +22,31 @@
     "hero": {
       "kicker": "Para directores generales y directores de planta en pymes industriales",
       "title": "La decisión está tomada. ¿Por qué sigue cambiando tan poco en la operación?",
-      "intro": "El motivo rara vez es la falta de voluntad. Está en el liderazgo poco claro, las responsabilidades sin definir y la falta de coordinación en los puntos críticos. Ahí es exactamente donde entro.\n\nTrabajo con la dirección y directamente en el shopfloor en empresas industriales. No en conceptos, sino en situaciones de liderazgo, coordinación y en la operación diaria."
+      "intro": "El motivo rara vez es la falta de voluntad. Está en un liderazgo poco claro, responsabilidades sin definir y falta de coordinación en los puntos críticos. Ahí es exactamente donde entro.\n\nTrabajo con la dirección y directamente en el shopfloor de empresas industriales. No en conceptos, sino en la cuestión de por qué la ejecución no funciona y qué debe cambiar en concreto. No en la sala de reuniones, sino allí donde las decisiones deben producir efecto. En situaciones de liderazgo. En la coordinación. En la operación."
     },
     "pillars": {
       "title": "Qué distingue mi trabajo",
       "subtitle": "Ejecución, liderazgo y anclaje en la práctica",
       "items": [
         {
-          "title": "Ejecución en lugar de sobrecarga conceptual",
-          "text": "El cambio no se planifica encima de todo lo demás, sino que se hace efectivo dentro de la operación. Con estructura clara, responsabilidades aclaradas y sin añadir nueva complejidad."
+          "title": "Ejecución en lugar de conceptos excesivos",
+          "text": "El cambio no se planifica por encima de todo lo demás, sino que se hace efectivo dentro de la operación. Con estructura clara, responsabilidades aclaradas y sin añadir nueva complejidad."
         },
         {
           "title": "Claridad en responsabilidad y coordinación",
-          "text": "No trabajo con programas adicionales junto a la organización, sino dentro de la operación diaria. Donde se toman decisiones, se asume responsabilidad y emergen resultados."
+          "text": "No trabajo con programas adicionales al margen de la organización, sino dentro de la operación diaria. Allí donde se toman decisiones, se asume responsabilidad y se generan resultados."
         },
         {
           "title": "Experiencia en planta, liderazgo y dirección",
-          "text": "Mi perspectiva se basa en responsabilidad directa en funciones operativas y de liderazgo dentro de entornos industriales. Forjada en la responsabilidad sobre el terreno, afinada en paralelo a través del estudio y la investigación."
+          "text": "Mi perspectiva se basa en la responsabilidad directa asumida en funciones operativas y de liderazgo dentro de entornos industriales. Forjada en la responsabilidad en la operación, afinada en paralelo a través del estudio y la investigación."
         }
       ]
     },
-    "externalReason": "El conocimiento interno rara vez es el problema. Lo que falta es una evaluación sin intereses organizativos propios. Alguien que nombre lo que todos perciben pero nadie puede decir internamente sin consecuencias.",
+    "externalReason": "El conocimiento interno rara vez es el problema. Lo que falta es una valoración sin intereses organizativos propios. Alguien que nombre lo que todos perciben pero que nadie dentro puede decir sin consecuencias.",
     "divider": {
-      "kicker": "Concreto. Práctico. Eficaz.",
+      "kicker": "Breve. Práctico. Eficaz.",
       "title": "Menos abstracción\nMás realidad operativa",
-      "text": "Obtiene la combinación de mi experiencia desde distintos ángulos: responsabilidad operativa de primera mano en la empresa, profundidad académica en M&A, integración cultural y desarrollo organizativo, y la capacidad de trabajar en cinco idiomas directamente con la dirección y los equipos."
+      "text": "Obtiene la combinación de mi experiencia desde distintos ángulos: responsabilidad operativa de primera mano en la empresa, profundidad académica en M&A, integración cultural y desarrollo organizativo, y la capacidad de trabajar en cinco idiomas directamente con la dirección y la plantilla."
     },
     "audience": {
       "title": "Con quién trabajo y cuándo se concreta",
@@ -56,49 +56,49 @@
         "El problema concreto"
       ],
       "targets": [
-        "Quien ha pasado por una adquisición y nota que la integración se estanca y las culturas no se encuentran",
-        "Quien lleva años aplicando Lean pero los indicadores apenas se mueven y la dirección no sostiene el tema",
-        "Quien ha decidido pero no llega a calar en la organización y ya no sabe por qué",
-        "Quien ha construido una nueva estructura de liderazgo que funciona sobre el papel pero no se vive en la realidad",
-        "Quien tras un crecimiento, reestructuración o cambio de liderazgo nota que responsabilidades, procesos y rendición de cuentas ya no encajan con la nueva realidad"
+        "Quien ha pasado por una adquisición y nota que la integración se estanca y que las culturas no terminan de encontrarse",
+        "Quien lleva años aplicando Lean, pero los indicadores apenas se mueven y la dirección no sostiene el tema",
+        "Quien ha decidido, pero eso no termina de llegar a la organización y ya no sabe por qué",
+        "Quien ha construido una nueva estructura de liderazgo que funciona sobre el papel, pero no se vive en la realidad",
+        "Quien, tras un crecimiento, una reestructuración o un cambio de liderazgo, nota que responsabilidades, procesos y rendición de cuentas ya no encajan con la nueva realidad"
       ],
       "triggers": [
-        "Tras una adquisición surgen tensiones culturales entre estructuras antiguas y nuevas que nadie nombra oficialmente pero todos perciben operativamente",
-        "Las decisiones se toman a nivel directivo pero en el shopfloor no está claro qué debe cambiar concretamente ni quién es responsable",
-        "Una estructura de liderazgo matricial o multisede debe funcionar pero las responsabilidades y las vías de decisión permanecen permanentemente poco claras",
-        "Una iniciativa Lean o de mejora continua lleva meses en marcha pero los indicadores, el comportamiento directivo y las rutinas en planta aún no han cambiado",
-        "Las responsabilidades formales se han redistribuido pero en el día a día siguen decidiendo quienes siempre lo han hecho"
+        "Tras una adquisición surgen tensiones culturales entre estructuras antiguas y nuevas que nadie nombra oficialmente, pero que todos perciben operativamente",
+        "Las decisiones se toman a nivel directivo, pero en el shopfloor no está claro qué debe cambiar en concreto ni quién es responsable de ello",
+        "Una estructura de liderazgo matricial o multisede debe funcionar, pero las responsabilidades y las vías de decisión permanecen permanentemente poco claras",
+        "Una iniciativa Lean o de mejora continua lleva meses en marcha, pero los indicadores, el comportamiento directivo y las rutinas en planta todavía no han cambiado",
+        "Las responsabilidades formales se han redistribuido, pero en el día a día siguen decidiendo quienes siempre lo han hecho"
       ]
     },
     "orientation": {
       "kicker": "15 minutos de orientación",
       "title": "Aclarar brevemente.\nDecidir con criterio.",
-      "text": "Lo que queda sin resolver tiene un coste: tiempo en bucles de coordinación, energía en fricciones de liderazgo, credibilidad en decisiones que no aterrizan.\n\nSi se pregunta si esta es su situación ahora mismo, lo aclaramos en 15 minutos.",
-      "ctaPrimary": "Solicitar conversación",
+      "text": "Lo que queda sin resolver tiene un coste: tiempo en bucles de coordinación, energía en fricciones de liderazgo y credibilidad en decisiones que no aterrizan.\n\nSi se pregunta si esta es su situación ahora mismo, lo aclaramos en 15 minutos.",
+      "ctaPrimary": "Solicitar una consulta",
       "ctaSecondary": "Ver servicios"
     }
   },
   "services": {
     "title": "Qué obtiene de mí",
-    "intro": "La colaboración comienza casi siempre con una situación claramente delimitada. Y se desarrolla, cuando encaja, en un acompañamiento continuo.\n\nSegún la situación, trabajo de forma puntual para generar claridad, con un ritmo definido para orientar, o de manera continua para anclar el cambio de forma sostenible en la operación diaria.",
+    "intro": "La colaboración comienza casi siempre con una situación claramente delimitada. Un motivo concreto, una pregunta concreta, un primer paso manejable.\n\nSegún la situación, trabajo de forma puntual para generar claridad, con un ritmo definido para orientar, o de manera continua hasta que la ejecución se sostenga en la operación diaria.",
     "themes": {
       "kicker": "Áreas de enfoque",
       "title": "En qué apoyo de forma concreta",
-      "intro": "Según la situación y el formato, trabajo en los temas que permiten liderazgo, colaboración y ejecución efectiva en el contexto operativo.",
+      "intro": "Según la situación y el formato, trabajo en los temas que sostienen el liderazgo, la colaboración y una ejecución eficaz en el contexto operativo.",
       "items": [
         "Liderazgo, roles y capacidad de decisión",
-        "Coordinación y colaboración entre áreas",
+        "Coordinación y colaboración entre interfaces",
         "Dirección y estabilización de procesos operativos en producción, logística y calidad",
         "Comunicación en situaciones de cambio y transición",
         "Cultura e identidad en transformación, M&A y sucesión",
-        "Integración de nuevas formas de trabajo en la operación diaria"
+        "Anclaje de nuevas formas de trabajo en la operación diaria"
       ]
     },
     "ui": {
       "kicker": "Servicios",
       "navTitle": "Formatos",
       "labels": {
-        "whenTitle": "Cuándo es útil",
+        "whenTitle": "Cuándo tiene sentido",
         "topicsTitle": "Situaciones típicas",
         "deliverablesTitle": "Qué obtiene",
         "detailsTitle": "Detalles",
@@ -107,45 +107,45 @@
       "tags": {
         "workshops": "Workshops",
         "partnership": "Acompañamiento",
-        "sparring": "Decisión"
+        "sparring": "Sparring de decisión"
       },
-      "ctaPrimary": "Solicitar conversación",
+      "ctaPrimary": "Solicitar una consulta",
       "when": {
-        "workshops": "Cuando se necesita claridad sobre la situación inicial, las prioridades y las decisiones, y cuando se requiere un inicio estructurado de la implementación, tanto en lo operativo como en lo cultural.",
-        "partnership": "Cuando la implementación durante varios meses requiere liderazgo, claridad y continuidad.",
+        "workshops": "Cuando se necesita claridad sobre la situación de partida, las prioridades y las decisiones, y cuando hace falta un inicio estructurado de la ejecución, tanto en lo operativo como en lo cultural.",
+        "partnership": "Cuando la ejecución durante varios meses requiere liderazgo, claridad y continuidad.",
         "sparring": "Cuando se enfrenta a una decisión que no puede delegar y para la que necesita una valoración externa fundamentada."
       },
       "teaser": {
-        "workshops": "Tras uno o dos días juntos sabe dónde está el verdadero cuello de botella, quién es concretamente responsable de qué y qué ocurre en los próximos 90 días. La pregunta por dónde empezar deja de plantearse. Sin conceptos. Un primer paso efectivo.",
-        "partnership": "Cuando el cambio debe sostenerse durante meses, un solo taller no basta. Se necesita un ritmo estable de liderazgo y toma de decisiones.\n\nAcompañamiento mensual que conecta liderazgo, ritmo y avance hasta que la implementación se consolida y pasa a formar parte de la realidad organizativa. La alianza de implementación se entiende como una co-configuración y co-dirección limitada en el tiempo de procesos de liderazgo y decisión en fases críticas, no como ejecución operativa. Ya no es necesario que evalúe solo si todavía está trabajando en la palanca correcta.",
+        "workshops": "Tras uno o dos días juntos, sabe dónde está el verdadero cuello de botella, quién es concretamente responsable de qué y qué ocurrirá en los próximos 90 días. La pregunta de por dónde empezar deja de plantearse. No un concepto. Un primer paso efectivo.",
+        "partnership": "Cuando el cambio debe sostenerse durante meses, un solo workshop no basta. Hace falta un ritmo estable de liderazgo y toma de decisiones.\n\nAcompañamiento mensual que conecta liderazgo, ritmo y avance hasta que la ejecución funcione y pase a formar parte de la realidad organizativa. La alianza de implementación se entiende como una co-configuración y co-dirección limitada en el tiempo de procesos de liderazgo y decisión en fases críticas, no como ejecución operativa. Ya no tiene que evaluar usted solo si sigue trabajando en la palanca adecuada.",
         "sparring": "Se enfrenta a una decisión que no puede delegar y que no quiere tomar solo. Sin coaching. Sin recomendaciones generales. Una valoración sólida y un siguiente paso claro."
       },
       "topics": {
         "workshops": [
           "Lean / Excelencia Operativa (estabilidad, calidad, tiempo de ciclo, productividad)",
-          "Prioridades poco claras, bloqueos en decisiones o conflictos en interfaces",
+          "Prioridades poco claras, bloqueos de decisión o conflictos en interfaces",
           "Inicio o reinicio de iniciativas de mejora y transformación"
         ],
         "partnership": [
           "Las decisiones estratégicas ya están tomadas, pero no generan un efecto estable en la organización",
           "El liderazgo se enfrenta a expectativas contradictorias, falta de claridad de roles y alta presión de decisión",
           "Tensiones recurrentes entre áreas, niveles o centros consumen atención y energía de forma permanente",
-          "Las fricciones culturales en transiciones como M&A, integración o sucesión dificultan la coordinación y la colaboración"
+          "Las fricciones culturales en transiciones como M&A, integración o sucesión dificultan la dirección y la colaboración"
         ],
         "sparring": [
           "Decisiones críticas, conflictos de objetivos o alta presión de stakeholders",
           "Cuestiones de cultura e identidad en crecimiento, reestructuración o integración",
-          "Preguntas de liderazgo: rol, impacto, claridad y coherencia"
+          "Preguntas de liderazgo: rol, impacto, claridad y consecuencia"
         ]
       },
       "cardTitles": {
-        "workshops": "Taller de clarificación",
+        "workshops": "Workshop de clarificación",
         "partnership": "Alianza de implementación",
         "sparring": "Claridad en la decisión"
       },
       "tabRole": {
-        "workshops": "Inicio & clarificación",
-        "partnership": "Implementación continua",
+        "workshops": "Inicio y clarificación",
+        "partnership": "Ejecución continua",
         "sparring": "Decisiones críticas"
       },
       "duration": {
@@ -155,13 +155,13 @@
       },
       "deliverables": {
         "workshops": [
-          "Una visión compartida del objetivo y prioridades definidas",
+          "Una imagen compartida del objetivo y focos priorizados",
           "Decisiones sobre roles, ritmo de liderazgo y estándares",
-          "Un plan concreto de implementación (30/60/90 días) con responsabilidades claras"
+          "Un plan concreto de ejecución (30/60/90 días) con responsabilidades claras"
         ],
         "partnership": [
           "Un ritmo claro de dirección y decisión, diseñado conjuntamente, con responsabilidades definidas a nivel de liderazgo y organización",
-          "Transparencia sobre avances, bloqueos y efectos de las medidas",
+          "Transparencia sobre avances, bloqueos y efecto de las medidas",
           "Anclaje de colaboración, cultura e identidad en liderazgo y organización"
         ],
         "sparring": [
@@ -170,39 +170,39 @@
           "Reflexión confidencial y próximos pasos claros"
         ],
         "speaking": [
-          "Conferencia, formación o formato docente adaptado a la ocasión",
+          "Conferencia, formación o formato docente adecuado a la ocasión",
           "Ejemplos prácticos y lógica de transferencia",
           "Diálogo, preguntas y respuestas y conexión con la audiencia"
         ]
       },
       "cta": {
         "kicker": "15 minutos de orientación",
-        "text": "Muchos mandatos comienzan con un workshop o sparring y luego, cuando se necesita generar impacto, evolucionan hacia un acompañamiento más largo. Si no está seguro de dónde se encuentra su situación actualmente, lo aclaramos en una breve conversación."
+        "text": "Muchos mandatos comienzan con un workshop o sparring y luego, cuando debe generarse impacto, pasan a un acompañamiento más prolongado. Si no está seguro de dónde se encuentra su situación actualmente, lo aclaramos en una breve conversación."
       }
     }
   },
   "approach": {
     "eyebrow": "Mi enfoque",
     "title": "Enfoque",
-    "intro": "El cambio rara vez fracasa por falta de conceptos. Fracasa porque las decisiones no se asumen, no se priorizan o no se ejecutan de manera consistente.\n\nAquí es exactamente donde intervengo, en la interacción entre liderazgo, priorización y ejecución en la operación diaria.",
-    "principlesEyebrow": "Orientación",
+    "intro": "El cambio rara vez fracasa por falta de conceptos. Fracasa porque las decisiones no se sostienen, no se priorizan o no se ejecutan de manera consistente.\n\nAquí es exactamente donde intervengo, en la interacción entre liderazgo, priorización y ejecución en la operación diaria.",
+    "principlesEyebrow": "Actitud y orientación",
     "principlesTitle": "Principios",
     "principles": [
-      "Trabajo en la operación diaria: junto con la dirección, diseñamos roles claros y ritmos de decisión y gobierno, de modo que la responsabilidad pueda asumirse de manera efectiva.",
-      "Hago medible el impacto: definimos conjuntamente indicadores, estándares y rutinas relevantes y aseguramos su seguimiento a través de rutinas de liderazgo y toma de decisiones.",
-      "Anclo el cambio de forma sostenible: integramos nuevas formas de trabajo en las rutinas, la colaboración, así como en la cultura y la identidad."
+      "Trabajo en la operación diaria: junto con la dirección, configuramos roles claros y ritmos de decisión y dirección, de modo que la responsabilidad pueda asumirse de forma efectiva.",
+      "Hago medible el impacto: definimos conjuntamente indicadores, estándares y rutinas relevantes y consolidamos su seguimiento a través de rutinas de liderazgo y toma de decisiones.",
+      "Anclo el cambio de forma sostenible: integramos nuevas formas de trabajo en las rutinas, la colaboración, la cultura y la identidad."
     ],
     "how": {
       "kicker": "Mi modelo de actuación",
-      "title": "Del motivo a la ejecución — en tres pasos.",
-      "subtitle": "No como un concepto, sino para que funcione en el día a día: clarificar juntos, liderar en la operación diaria y anclar con constancia.",
+      "title": "Del motivo a la ejecución en tres pasos.",
+      "subtitle": "No como un concepto, sino para que funcione en el día a día: clarificar juntos, liderar operativamente y anclar con consistencia.",
       "stepLabel": "Paso",
       "outTitle": "Resultado",
-      "restriction": "Este enfoque no es adecuado para todas las situaciones. Tiene sentido cuando ya está claro que el cambio es necesario, pero no está funcionando.",
+      "restriction": "Este enfoque no está pensado para todas las situaciones. Tiene sentido cuando ya está claro que el cambio es necesario, pero no funciona.",
       "steps": [
         {
           "verb": "Clarificar",
-          "text": "Entendemos la situación inicial, los cuellos de botella y las dinámicas, y tomamos las primeras decisiones sólidas sobre el objetivo y las prioridades.",
+          "text": "Entendemos la situación de partida, los cuellos de botella y las dinámicas, y tomamos las primeras decisiones sólidas sobre el objetivo y las prioridades.",
           "out": [
             "Objetivo compartido",
             "Prioridades clave",
@@ -211,174 +211,174 @@
         },
         {
           "verb": "Establecer",
-          "text": "Diseñamos y acompañamos la implementación de un ritmo de liderazgo y gobierno que permite de forma estable claridad, priorización y ejecución.",
+          "text": "Diseñamos y acompañamos la implantación de un ritmo de liderazgo y dirección que permite de forma estable claridad, priorización y ejecución.",
           "out": [
             "Las decisiones se toman con mayor claridad",
-            "Las reuniones se vuelven más cortas y vinculantes",
+            "La coordinación se vuelve más corta y vinculante",
             "La responsabilidad se hace tangible"
           ]
         },
         {
           "verb": "Anclar",
-          "text": "Aseguramos el impacto con seguimiento, responsabilidades y encaje cultural—hasta que funcione sin apoyo externo.",
+          "text": "Aseguramos el impacto mediante seguimiento, responsabilidades y encaje cultural, hasta que funcione sin apoyo externo.",
           "out": [
-            "Se sostiene sin apoyo externo",
-            "El cambio forma parte del trabajo diario",
-            "El liderazgo conduce de forma independiente"
+            "Funciona sin apoyo externo",
+            "El cambio forma parte del día a día",
+            "El liderazgo dirige de forma autónoma"
           ]
         }
       ]
     },
-    "toolboxEyebrow": "Medios, no fin",
+    "toolboxEyebrow": "Medios para un fin",
     "toolboxTitle": "Herramientas",
     "toolboxSubtitle": "Según necesidad.",
     "toolbox": [
-      "Gestión en el shopfloor y rutinas de liderazgo",
+      "Shopfloor management y rutinas de liderazgo",
       "SMED, análisis de flujo de valor, lógica de mejora continua",
       "Gobernanza del cambio y arquitectura de comunicación",
-      "Trabajo de cultura e identidad en M&A (pre y post merger)"
+      "Trabajo sobre cultura e identidad en M&A (pre y post merger)"
     ],
-    "bridge": "Según el contexto y el punto de partida, trabajo en distintos formatos: desde un taller compacto hasta un acompañamiento a más largo plazo.",
+    "bridge": "Según el contexto y el punto de partida, trabajo en distintos formatos, desde un workshop compacto hasta un acompañamiento a más largo plazo.",
     "bridgeCta": "Ver servicios →",
     "cta": {
-      "kicker": "Orientación en 15 minutos",
+      "kicker": "15 minutos de orientación",
       "text": "En una breve conversación aclaramos si esta es su situación y qué formato encaja."
     }
   },
   "about": {
     "title": "Sobre mí",
-    "heroTitle": "Conozco la operación, el liderazgo y la presión detrás de todo ello.",
+    "heroTitle": "Conozco la operación, el liderazgo y la presión que hay detrás.",
     "heroSubtitle": "",
     "heroImage": "/seref-sahil-change-werkstatt.jpg",
     "heroImageAlt": "Seref Sahil",
     "intro": [
-      "Conozco estas situaciones no por talleres, sino por responsabilidad.\nDesde la producción y el liderazgo. Desde fases en las que hubo que tomar decisiones bajo presión.",
-      "Hoy trabajo con líderes y organizaciones en pymes industriales exactamente en estos puntos.\nDonde el cambio está decidido pero no está funcionando.\nDonde eficiencia, liderazgo y cultura organizacional deben volver a alinearse."
+      "Conozco estas situaciones no por workshops, sino por responsabilidad.\nDesde la producción y el liderazgo. Desde fases en las que hubo que tomar decisiones bajo presión.",
+      "Hoy trabajo con líderes y organizaciones en pymes industriales exactamente en estos puntos.\nDonde el cambio está decidido, pero no funciona.\nDonde eficiencia, liderazgo y cultura empresarial deben reunirse."
     ],
     "profileTitle": "Perfil",
-    "profileText": "La aceptación surge cuando el lenguaje, la realidad y la responsabilidad están alineados.\n\nEn situaciones de M&A, integración y transformación, la implementación rara vez fracasa por objetivos formales, sino por tensiones culturales e identitarias encubiertas. Mi acceso multilingüe a las organizaciones y mi trabajo académico sobre estas dinámicas me permiten hacer visibles esas tensiones de forma temprana, antes de que tengan impacto operativo o político.\n\nMi trabajo se basa en experiencia directa en producción, liderazgo y gestión en entornos industriales. De ahí surge un enfoque claro: el cambio debe encajar con la realidad operativa, ser asumido por el liderazgo y estar anclado en el trabajo diario.\n\nAsí es como surge una ejecución que no necesita explicarse, sino que se asume y se vive.",
-    "clarityText": "No asumo ejecución operativa. Sin responsabilidad de proyecto. Sin función de línea. Trabajo en el punto donde se decide cómo se lidera y se prioriza.",
-    "bulletsEyebrow": "Fundamento del trabajo",
+    "profileText": "La aceptación surge allí donde el lenguaje, la realidad y la responsabilidad encajan.\n\nEn situaciones de M&A, integración y transformación, la ejecución rara vez fracasa por objetivos formales, sino por tensiones culturales y de identidad ocultas. Mi acceso multilingüe a las organizaciones y mi trabajo académico sobre estas dinámicas me permiten hacer visibles esas tensiones de forma temprana, antes de que desplieguen efectos operativos o políticos.\n\nMi trabajo se basa en experiencia directa en planta, liderazgo y dirección dentro de entornos industriales. De ahí surge un enfoque claro: el cambio debe encajar con la realidad operativa, ser asumido por el liderazgo y estar anclado en el trabajo diario.\n\nAsí surge una ejecución que no necesita explicación, sino que se sostiene y se vive.",
+    "clarityText": "No asumo ejecución operativa. Ninguna responsabilidad de proyecto. Ninguna función de línea. Trabajo en el punto en el que se decide cómo se lidera y se prioriza.",
+    "bulletsEyebrow": "Base del trabajo",
     "bullets": [
-      "Más de 25 años de experiencia operativa, desde mecánico industrial hasta dirección de producción y logística entre plantas",
-      "Experiencia sólida en procesos industriales y organización del trabajo a lo largo de la cadena de valor",
-      "Formación en administración de empresas y psicología organizacional, con enfoque en liderazgo y organización",
-      "Multilingüismo en liderazgo e implementación: alemán, inglés, turco, español y árabe",
-      "Doctorado en curso (DBA) sobre integración M&A, cultura e identidad en PYMES industriales"
+      "Más de 25 años de experiencia operativa, desde mecánico industrial hasta dirección interplanta de producción y logística",
+      "Experiencia sólida en organización industrial de procesos y del trabajo a lo largo de la cadena de valor",
+      "Formación en administración de empresas y psicología empresarial, con foco en liderazgo y organización",
+      "Multilingüismo en liderazgo y ejecución: alemán, inglés, turco, español y árabe",
+      "Doctorado en curso (DBA) sobre integración M&A, cultura e identidad en pymes industriales"
     ],
     "linkedInLabel": "Ver perfil de LinkedIn",
     "practiceEyebrow": "Experiencia de proyectos",
-    "practiceTitle": "Experiencia práctica",
-    "practiceIntro": "Cuando las áreas no colaboran entre sí. Cuando las medidas se deciden pero no se implementan. Cuando el liderazgo se encuentra entre la presión, las expectativas y la realidad. De esas situaciones proviene mi experiencia, no de casos de estudio.",
+    "practiceTitle": "Experiencia desde la práctica",
+    "practiceIntro": "Cuando las áreas no trabajan juntas. Cuando se deciden medidas, pero no se aplican. Cuando el liderazgo está entre la presión, las expectativas y la realidad. De esas situaciones proviene mi experiencia, no de estudios de caso.",
     "practiceItems": [
       {
-        "title": "Integración post-fusión",
-        "text": "Integración entre plantas tras adquisiciones: estructuras de liderazgo, responsabilidad de procesos, alineación cultural y desarrollo de capacidades."
+        "title": "Integración post-merger",
+        "text": "Acompañamiento interplanta tras una adquisición: estructuras de liderazgo, responsabilidad de procesos, trabajo cultural y desarrollo de capacidades a lo largo de varios años."
       },
       {
-        "title": "Lean y excelencia operativa",
-        "text": "Implementación y consolidación de mejora continua, SMED, 5S y optimización de flujos de valor como práctica de liderazgo en el día a día."
+        "title": "Lean y Excelencia Operativa",
+        "text": "Introducción y consolidación de mejora continua, SMED, 5S y optimización de flujos de valor, no como despliegue de métodos, sino como trabajo de liderazgo en la operación diaria."
       },
       {
         "title": "Reorganización y desarrollo del liderazgo",
-        "text": "Construcción de estructuras de liderazgo y desarrollo de directivos en organizaciones matriciales bajo operación continua."
+        "text": "Construcción de estructuras de liderazgo interplanta y desarrollo de directivos en organizaciones matriciales bajo operación continua."
       },
       {
         "title": "Reestructuración y anclaje cultural",
-        "text": "Acompañamiento de procesos de reestructuración con foco en claridad de liderazgo, comunicación y consolidación sostenible del cambio."
+        "text": "Acompañamiento de fases de reestructuración con foco en claridad de liderazgo, comunicación y anclaje sostenible del cambio en el trabajo diario."
       },
       {
         "title": "Certificación ISO y sistemas de gestión",
-        "text": "Apoyo en recertificaciones ISO 9001 y reorganización como base para una gestión de calidad sostenible."
+        "text": "Acompañamiento exitoso de procesos de recertificación conforme a DIN ISO 9001, incluida la reorganización en entornos de producción como base de una garantía de calidad sostenible."
       },
       {
-        "title": "Optimización de flujos de valor y coordinación",
-        "text": "Optimización de flujos de valor en organizaciones matriciales: responsabilidad presupuestaria, control de centros de coste y gestión multiproyecto en producción y logística."
+        "title": "Clarificación de flujos de valor e interfaces",
+        "text": "Optimización de flujos de valor en organizaciones matriciales: responsabilidad presupuestaria, gestión de centros de coste y gestión multiproyecto en producción y logística."
       }
     ],
     "testimonialsEyebrow": "Lo que dicen otros",
     "testimonialsTitle": "Voces de la colaboración",
-    "testimonialsIntro": "Las siguientes valoraciones provienen de situaciones reales de liderazgo y ejecución en entornos industriales, anteriores a la fundación de Change-Werkstatt.",
+    "testimonialsIntro": "Las siguientes valoraciones proceden de situaciones reales de liderazgo y ejecución en entornos industriales, de la etapa anterior a la fundación de Change-Werkstatt.",
     "testimonials": [
       {
-        "quote": "Alta claridad profesional, sólido criterio analítico y un valioso interlocutor para la dirección.",
+        "quote": "Alta claridad profesional, sólido criterio analítico y un valioso sparring partner para la dirección.",
         "role": "Dirección",
-        "context": "Empresa industrial mediana · Transformación e integración"
+        "context": "Empresa industrial mediana · Proceso de transformación e integración"
       },
       {
-        "quote": "Fuerte enfoque en el trabajo en equipo y capacidad para mejorar de forma sostenible la eficacia organizativa mediante mejora continua.",
+        "quote": "Fuerte enfoque en el trabajo en equipo y capacidad para aumentar de forma sostenible la eficacia organizativa mediante mejora continua.",
         "role": "Dirección de RR. HH.",
-        "context": "Empresa productiva · Lean y desarrollo organizativo"
+        "context": "Empresa manufacturera · Lean y desarrollo organizativo"
       },
       {
-        "quote": "Claridad y coherencia en situaciones de decisión difíciles, con la plena confianza de la dirección.",
-        "role": "Alta dirección",
+        "quote": "Claro y consistente en situaciones de decisión difíciles, con la plena confianza de la alta dirección.",
+        "role": "Dirección de área y management",
         "context": "Empresa industrial · Reestructuración y desarrollo del liderazgo"
       }
     ],
     "cta": {
-      "kicker": "Próximo paso",
-      "text": "La teoría está bien. La implementación eficaz es mejor.\nSi tiene una situación en la que exactamente eso se vuelve decisivo, hablemos."
+      "kicker": "Siguiente paso",
+      "text": "La teoría está bien. La ejecución eficaz es mejor.\nSi tiene una situación en la que exactamente eso se vuelve decisivo, hablemos."
     }
   },
   "speaking": {
     "eyebrow": "Transferencia de conocimiento",
     "title": "Conferencias y docencia",
-    "intro": "Las conferencias y los formatos docentes no son un sustituto del trabajo real. Sirven para hacer visibles las conexiones y abrir debates.\n\nHablo sobre liderazgo, cambio y realidad operativa. No desde una distancia teórica, sino desde la responsabilidad en la organización.",
+    "intro": "Las conferencias y los formatos docentes no sustituyen el trabajo real. Sirven para hacer visibles las conexiones y abrir el debate.\n\nHablo sobre liderazgo, cambio y realidad operativa. No desde una distancia teórica, sino desde la responsabilidad dentro de la organización.",
     "topicsTitle": "Temas habituales",
-    "topicsHint": "Haz clic en un tema para ver los detalles",
+    "topicsHint": "Haga clic en un tema para ver los detalles",
     "topics": [
       {
         "title": "Eficiencia y cultura en equilibrio",
-        "subtitle": "Por qué fracasa la transformación y qué la hace funcionar",
-        "description": "La transformación no es solo un proceso técnico; también es cultural. Cuando una estrategia no encaja en la realidad cotidiana, suele aparecer la tensión entre presión por eficiencia y pérdida de identidad. Esta charla muestra cómo integrar ambas perspectivas para que el cambio no solo se diseñe, sino que se entienda y se sostenga en la operación diaria."
+        "subtitle": "Por qué fracasa la transformación y cómo funciona",
+        "description": "La transformación no es un proceso puramente técnico, también es cultural. Cuando las estrategias fracasan ante la realidad vivida, la razón suele estar en la tensión entre la presión por la eficiencia y la pérdida de identidad. La conferencia muestra cómo reunir ambas perspectivas para que el cambio no solo se planifique, sino que también se entienda y se sostenga en el trabajo diario."
       },
       {
-        "title": "Liderazgo en el shopfloor",
-        "subtitle": "Liderar con ritmo, no con activismo",
-        "description": "El impacto se genera donde ocurre la creación de valor. Cuando el liderazgo en planta se convierte en apagar incendios, el sistema pierde estabilidad. Explico cómo rutinas claras, métricas útiles y una cadencia de liderazgo fiable generan orientación y hacen efectiva la responsabilidad allí donde aparecen los problemas."
+        "title": "Shopfloor Leadership",
+        "subtitle": "Liderazgo a través del ritmo, no del activismo",
+        "description": "El impacto surge allí donde tiene lugar la creación de valor. Cuando el liderazgo en el shopfloor es sustituido por activismo a corto plazo, el sistema pierde estabilidad. Muestro cómo rutinas claras, indicadores y un ritmo de liderazgo fiable crean orientación y hacen efectiva la responsabilidad allí donde surgen los problemas."
       },
       {
         "title": "Lean Management",
         "subtitle": "Impacto en el día a día, no una colección de métodos",
-        "description": "Lean no es una caja de herramientas; es una lógica de simplificación y aprendizaje. Muchas iniciativas no fallan por falta de métodos, sino porque no encajan en la realidad diaria. El enfoque se centra en pocos palancas que estabilizan estándares, resolución de problemas y colaboración, sin ‘caza de métodos’."
+        "description": "Lean no es una caja de herramientas, sino una lógica de simplificación y aprendizaje. Muchas iniciativas fracasan no por falta de métodos, sino porque no conectan con el trabajo diario. La intervención se centra en unas pocas palancas que estabilizan estándares, resolución de problemas y colaboración, sin convertirse en una caza de métodos."
       },
       {
         "title": "Integración M&A",
         "subtitle": "Cultura, identidad y modelo operativo antes y después del deal",
-        "description": "El éxito económico de una fusión se decide después del cierre: en la colaboración, el liderazgo y la identidad. Con base en práctica y en investigación (DBA), analizo cómo abordar cultura e identidad desde fases tempranas y cómo construir un modelo operativo que preserve el rendimiento sin destruir el ADN cultural que hizo exitosa a la empresa."
+        "description": "El éxito económico de las fusiones se decide después del closing, en la colaboración, el liderazgo y la identidad. A partir de la práctica y de la investigación (DBA), muestro cómo abordar las cuestiones de cultura e identidad desde una fase temprana y cómo puede surgir un modelo operativo que asegure el rendimiento sin perder el ADN cultural."
       },
       {
         "title": "Gobernanza del cambio",
-        "subtitle": "Decidir, comunicar, integrar",
-        "description": "El cambio necesita un marco claro; si no, dominan la ambigüedad y la fricción. La gobernanza del cambio es el sistema operativo de la transformación: rutas de decisión, roles, cadencia y comunicación. La charla muestra cómo construirla de forma pragmática para que las decisiones funcionen, la comunicación genere confianza y las nuevas formas de trabajo se integren."
+        "subtitle": "Decidir, comunicar, anclar",
+        "description": "El cambio necesita un marco claro. De lo contrario, dominan la ambigüedad y la fricción. La gobernanza del cambio es el sistema operativo de la transformación: vías de decisión, roles, ritmo y comunicación. La conferencia muestra cómo construir una gobernanza pragmática para que las decisiones funcionen, la comunicación genere confianza y las nuevas formas de trabajo no se diluyan."
       },
       {
-        "title": "Liderazgo en tiempos de cambio",
-        "subtitle": "Rol, impacto, responsabilidad",
-        "description": "En fases de transformación cambian las expectativas sobre el liderazgo: del experto al constructor de orientación, responsabilidad y colaboración. Reflexiono sobre cómo mantener eficacia en la incertidumbre, aclarar roles y colocar la responsabilidad donde realmente opera en el día a día."
+        "title": "Liderazgo en transición",
+        "subtitle": "Rol, impacto y responsabilidad",
+        "description": "En fases de transformación, las expectativas sobre el liderazgo cambian de forma significativa, desde el puro experto hacia quien genera orientación, responsabilidad y colaboración. Reflexiono sobre cómo el liderazgo sigue siendo eficaz en la incertidumbre, cómo se clarifican los roles y cómo se sitúa la responsabilidad allí donde realmente produce efecto en el trabajo diario."
       }
     ],
     "formatsTitle": "Formatos",
     "formatsSubtitle": "Los formatos se diferencian en alcance, no en exigencia.",
     "formats": [
       "Keynote o conferencia (30–60 minutos)",
-      "Formación interna o taller (0,5–2 días)",
+      "Formación interna o workshop (0,5–2 días)",
       "Serie de seminarios o programa modular (2–4 módulos)",
       "Docencia en universidades y academias"
     ],
     "ctaText": "En muchos casos, una conferencia es el punto de partida. El trabajo real comienza después, en la ejecución.",
     "cta": {
-      "kicker": "Orientación en 15 minutos",
-      "text": "Si está considerando si una conferencia o taller es el punto de partida adecuado, hablemos."
+      "kicker": "15 minutos de orientación",
+      "text": "Si está considerando si una conferencia o un workshop son el punto de partida adecuado, hablemos."
     }
   },
   "contact": {
-    "eyebrow": "Solicitar conversación",
+    "eyebrow": "Concertar una conversación",
     "title": "Contacto",
-    "intro": "Aclaro en una conversación breve y sin compromiso si y cómo una colaboración tiene sentido para su situación. Escríbame o reserve una cita directamente. Normalmente respondo en un plazo de 24–48 horas.",
+    "intro": "Aclaro en una conversación breve y sin compromiso si una colaboración tiene sentido en su situación y de qué manera. Escríbame o reserve una cita directamente. Normalmente respondo en un plazo de 24–48 horas.",
     "formEyebrow": "Enviar mensaje",
-    "formIntro": "Describa brevemente su situación, le responderé a la mayor brevedad.",
+    "formIntro": "Describa brevemente su situación y le responderé con rapidez.",
     "responseHint": "Por favor, no envíe información confidencial a través del formulario.",
     "direct": {
       "title": "Contacto directo",
@@ -394,68 +394,68 @@
       "company": "Empresa (opcional)",
       "companyPlaceholder": "Empresa",
       "details": "Mensaje",
-      "detailsPlaceholder": "¿De qué se trata concretamente?\nSituación de partida, estado actual, objetivo …",
-      "consent": "Consiento que mis datos se procesen para contactar conmigo conforme a la <privacy>Política de privacidad</privacy>.",
+      "detailsPlaceholder": "¿De qué se trata concretamente?\nSituación de partida, estado actual, imagen objetivo …",
+      "consent": "Consiento que mis datos se procesen para ponerse en contacto conmigo conforme a la <privacy>Política de privacidad</privacy>.",
       "submit": "Enviar solicitud",
       "sending": "Enviando …",
-      "success": "Mensaje enviado. ¡Gracias!",
+      "success": "Mensaje enviado. Muchas gracias.",
       "errorSend": "Error al enviar. Inténtelo de nuevo más tarde.",
       "errorNetwork": "Error de red. Inténtelo de nuevo más tarde."
     },
-    "tabMessage": "Enviar mensaje",
-    "tabSchedule": "Reservar cita",
-    "scheduleHint": "Elija un momento para una primera conversación. Directamente y sin rodeos.",
+    "tabMessage": "Escribir mensaje",
+    "tabSchedule": "Reservar una cita",
+    "scheduleHint": "Elija un momento para una primera conversación. Directo y sin rodeos.",
     "scheduleButton": "Reservar cita ahora",
-    "scheduleNote": "Reserva de cita en una nueva pestaña."
+    "scheduleNote": "La reserva se abre en una nueva pestaña."
   },
   "privacy": {
     "title": "Política de privacidad",
     "intro": {
-      "p1": "Con esta Política de privacidad le informo sobre el tratamiento de datos personales al utilizar mi sitio web. Los datos personales son todos los datos con los que se le puede identificar personalmente.",
+      "p1": "Con esta Política de privacidad le informo sobre el tratamiento de datos personales al utilizar mi sitio web. Los datos personales son todos aquellos con los que se le puede identificar personalmente.",
       "p2": "Este sitio web sirve para informar sobre mis servicios y para ponerse en contacto conmigo."
     },
     "controller": {
       "title": "Responsable",
-      "text": "Seref Sahil (Change-Werkstatt Sahil)\nWiesendorfstraße 6\n73433 Aalen\nAlemania\nEmail: seref.sahil@change-werkstatt-sahil.com\nTel.: +49 176 84076507"
+      "text": "Seref Sahil (Change-Werkstatt Sahil)\nWiesendorfstraße 6\n73433 Aalen\nAlemania\nEmail: seref.sahil@change-werkstatt-sahil.com\nTeléfono: +49 176 84076507"
     },
     "purposes": {
       "title": "Finalidades y bases jurídicas",
       "p1": "Trato datos personales para las siguientes finalidades:",
       "list": [
         "Prestación del sitio web (datos de conexión/registros del servidor)",
-        "Gestión de solicitudes mediante el formulario de contacto",
+        "Gestión de solicitudes a través del formulario de contacto",
         "Comunicación por correo electrónico o teléfono",
         "Seguridad informática y prevención de abusos"
       ],
-      "legal": "Las bases jurídicas son, en particular, el art. 6.1 b) RGPD (medidas precontractuales/contrato), el art. 6.1 f) RGPD (interés legítimo en un funcionamiento seguro y optimización) y, cuando sea necesario, el art. 6.1 a) RGPD (consentimiento)."
+      "legal": "Las bases jurídicas son, en particular, el art. 6.1 b) RGPD (medidas precontractuales/ejecución de un contrato), el art. 6.1 f) RGPD (interés legítimo en un funcionamiento seguro y en la optimización) y, cuando sea necesario, el art. 6.1 a) RGPD (consentimiento)."
     },
     "hosting": {
-      "title": "Alojamiento y entrega del sitio web",
-      "p1": "Mi sitio web está alojado en Vercel Inc. Al acceder al sitio web se tratan datos técnicamente necesarios para servirlo (p. ej., dirección IP, fecha/hora, página solicitada, URL de referencia, navegador/sistema operativo).",
-      "p2": "Estos datos se tratan normalmente en registros del servidor y sirven para un funcionamiento seguro y estable del sitio web.",
-      "legal": "Base jurídica: art. 6.1 f) RGPD (interés legítimo en el funcionamiento seguro)."
+      "title": "Alojamiento y puesta a disposición del sitio web",
+      "p1": "Mi sitio web está alojado en Vercel Inc. Al acceder al sitio web se tratan datos técnicamente necesarios para poder mostrarlo (p. ej., dirección IP, fecha/hora, página solicitada, URL de referencia, navegador/sistema operativo).",
+      "p2": "Estos datos se tratan normalmente en registros del servidor y sirven para el funcionamiento seguro y estable del sitio web.",
+      "legal": "La base jurídica es el art. 6.1 f) RGPD (interés legítimo en el funcionamiento seguro)."
     },
     "contact": {
       "title": "Contacto y formulario de contacto",
-      "p1": "Si se pone en contacto conmigo mediante el formulario o por correo electrónico, trataré la información proporcionada (p. ej., nombre, email, empresa, mensaje) para gestionar su solicitud y comunicarme con usted.",
-      "legal": "Base jurídica: art. 6.1 b) RGPD (medidas precontractuales) y art. 6.1 f) RGPD (gestión eficiente de consultas).",
-      "retention": "Conservo las solicitudes durante el tiempo necesario para su tramitación y documentación y después las elimino conforme a los plazos legales de conservación."
+      "p1": "Si se pone en contacto conmigo mediante el formulario o por correo electrónico, trataré la información proporcionada (p. ej., nombre, dirección de correo electrónico, empresa, mensaje) para gestionar su solicitud y comunicarme con usted.",
+      "legal": "La base jurídica es el art. 6.1 b) RGPD (medidas precontractuales) y el art. 6.1 f) RGPD (gestión eficiente de consultas).",
+      "retention": "Conservo las solicitudes durante el tiempo necesario para su gestión y documentación, y después las elimino conforme a los plazos legales de conservación."
     },
     "emailProvider": {
-      "title": "Envío de correos / proveedor (Resend)",
-      "p1": "Para el envío y la entrega de correos electrónicos (p. ej., solicitudes de contacto) puede utilizarse un proveedor técnico (p. ej., Resend). En este contexto pueden tratarse datos personales (p. ej., nombre, email, contenido del mensaje).",
-      "legal": "Base jurídica: art. 6.1 b) RGPD (gestión de la solicitud) y art. 6.1 f) RGPD (entrega/comunicación fiable)."
+      "title": "Envío de correos electrónicos / proveedor de servicios (Resend)",
+      "p1": "Para el envío y la entrega de correos electrónicos (p. ej., solicitudes de contacto) puede utilizarse un proveedor técnico (p. ej., Resend). En este contexto pueden tratarse datos personales (p. ej., nombre, dirección de correo electrónico, contenido del mensaje).",
+      "legal": "La base jurídica es el art. 6.1 b) RGPD (gestión de la solicitud) y el art. 6.1 f) RGPD (entrega/comunicación fiable)."
     },
     "analytics": {
       "title": "Cookies, seguimiento y Vercel Analytics",
       "p1": "No utilizo cookies de marketing ni de retargeting.",
       "p2": "Utilizo Vercel Analytics para evaluar estadísticamente el uso de mi sitio web. Solo se tratan datos de uso anonimizados (p. ej., páginas vistas, tipo de dispositivo, región aproximada). No se crean perfiles de usuario ni se realiza seguimiento con fines de marketing.",
-      "p3": "Vercel Analytics funciona sin cookies de marketing. Base jurídica: art. 6.1 f) RGPD (interés legítimo en la optimización técnica y evaluación estadística).",
-      "future": "Si en el futuro incorporo herramientas de seguimiento o marketing, lo informaré aquí y solicitaré el consentimiento cuando sea necesario."
+      "p3": "Vercel Analytics funciona sin utilizar cookies de marketing. La base jurídica es el art. 6.1 f) RGPD (interés legítimo en la optimización técnica y la evaluación estadística de mi sitio web).",
+      "future": "Si en el futuro se utilizan herramientas de seguimiento o marketing, informaré de ello aquí por separado y solicitaré su consentimiento cuando sea necesario."
     },
     "transfers": {
-      "title": "Destinatarios y transferencias internacionales",
-      "p1": "En el marco del alojamiento y del envío de correos, los proveedores pueden tratar datos por cuenta mía. No se puede excluir el tratamiento en terceros países (p. ej., EE. UU.). Cuando sea necesario, garantizo salvaguardas adecuadas (p. ej., cláusulas contractuales tipo)."
+      "title": "Destinatarios y transferencias a terceros países",
+      "p1": "En el marco del alojamiento y del envío de correos, los proveedores pueden tratar datos por cuenta mía. No se puede excluir el tratamiento en terceros países (p. ej., EE. UU.). En esos casos, me aseguro de que existan garantías adecuadas (p. ej., cláusulas contractuales tipo), cuando sea necesario."
     },
     "rights": {
       "title": "Sus derechos",
@@ -465,47 +465,47 @@
         "Rectificación (art. 16 RGPD)",
         "Supresión (art. 17 RGPD)",
         "Limitación del tratamiento (art. 18 RGPD)",
-        "Portabilidad (art. 20 RGPD)",
-        "Oposición (art. 21 RGPD)",
-        "Retirar el consentimiento (art. 7.3 RGPD)"
+        "Portabilidad de los datos (art. 20 RGPD)",
+        "Oposición al tratamiento (art. 21 RGPD)",
+        "Retirada del consentimiento (art. 7.3 RGPD)"
       ],
-      "p2": "También tiene derecho a presentar una reclamación ante una autoridad de control (art. 77 RGPD)."
+      "p2": "Además, tiene derecho a presentar una reclamación ante una autoridad de control (art. 77 RGPD)."
     },
     "security": {
       "title": "Seguridad de los datos",
-      "p1": "Aplico medidas técnicas y organizativas adecuadas para proteger sus datos contra pérdida, uso indebido y acceso no autorizado. No obstante, no puede garantizarse una seguridad absoluta en la transmisión de datos por Internet."
+      "p1": "Aplico medidas técnicas y organizativas adecuadas para proteger sus datos contra pérdida, uso indebido y acceso no autorizado. No obstante, no puede garantizarse por completo la seguridad de la transmisión de datos por internet."
     },
     "changes": {
       "title": "Estado y cambios",
-      "p1": "Puedo actualizar esta Política de privacidad si cambia la situación legal o factual o si incorporo nuevos servicios.",
+      "p1": "Puedo adaptar esta Política de privacidad si cambia la situación jurídica o fáctica o si introduzco nuevos servicios.",
       "status": "Estado: marzo de 2026"
     }
   },
   "imprint": {
     "title": "Aviso legal (Impressum)",
     "tmc": {
-      "title": "Información según § 5 TMG (Alemania)",
+      "title": "Información según § 5 TMG",
       "text": "Change-Werkstatt Sahil\nSeref Sahil\nWiesendorfstraße 6\n73433 Aalen\nAlemania"
     },
     "contact": {
-      "text": "Tel.: +49 176 84076507\nEmail: seref.sahil@change-werkstatt-sahil.com"
+      "text": "Teléfono: +49 176 84076507\nEmail: seref.sahil@change-werkstatt-sahil.com"
     },
     "activity": {
       "title": "Actividad profesional independiente",
-      "text": "Consultoría independiente sobre desarrollo organizativo, liderazgo y procesos de transformación."
+      "text": "Consultoría sobre desarrollo organizativo, liderazgo y procesos de transformación."
     },
     "vat": {
-      "title": "NIF-IVA según § 27a UStG (Alemania)",
+      "title": "Número de identificación fiscal a efectos de IVA según § 27a UStG",
       "text": "DE460120074"
     },
     "mstv": {
-      "title": "Responsable del contenido según § 18(2) MStV (Alemania)",
+      "title": "Responsable del contenido según § 18 apdo. 2 MStV",
       "text": "Seref Sahil\nWiesendorfstraße 6\n73433 Aalen"
     }
   },
   "notFound": {
     "title": "Página no encontrada",
-    "text": "La página que busca no existe o ha sido movida.",
+    "text": "La página que busca no existe o ha sido trasladada.",
     "home": "Ir al inicio",
     "contact": "Ponerse en contacto"
   }

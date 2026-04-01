@@ -57,9 +57,9 @@
       ],
       "targets": [
         "Bir satın almanın ardından entegrasyonun durakladığını ve kültürlerin bir araya gelmediğini fark edenler",
-        "Yıllardır Lean uygulayan ama rakamların neredeyse hiç değişmediğini ve liderliğin konuyu sahiplenmediğini görenler",
-        "Karar vermiş ama bunun işletmede karşılık bulmadığını ve artık nedenini anlayamayanlar",
+        "İşletmede karşılık bulmayan bir karar almış olanlar ve bunun nedenini artık anlayamayanlar",
         "Kâğıt üzerinde işleyen ama gerçekte yaşanmayan yeni bir liderlik yapısı kuranlar",
+        "Yıllardır Lean uygulayan ama rakamların neredeyse hiç değişmediğini ve liderliğin konuyu sahiplenmediğini görenler",
         "Büyüme, yeniden yapılanma veya bir liderlik değişikliğinin ardından sorumlulukların, süreçlerin ve görevlerin artık yeni gerçekliğe uymadığını fark edenler"
       ],
       "triggers": [

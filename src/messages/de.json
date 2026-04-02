@@ -99,6 +99,7 @@
       "navTitle": "Formate",
       "labels": {
         "whenTitle": "Wann sinnvoll",
+        "notSuitableTitle": "Nicht passend, wenn",
         "topicsTitle": "Typische Anlässe",
         "deliverablesTitle": "Was Sie bekommen",
         "detailsTitle": "Details",
@@ -119,6 +120,21 @@
         "workshops": "Nach einem oder zwei gemeinsamen Tagen wissen Sie, wo der eigentliche Engpass liegt, wer konkret was verantwortet, und was in den nächsten 90 Tagen passiert. Die Frage, womit Sie anfangen sollen, stellt sich danach nicht mehr. Kein Konzept. Ein erster wirkungsvoller Schritt.",
         "partnership": "Wenn Veränderung über Monate hinweg getragen werden muss, reicht ein einzelner Workshop nicht. Dann braucht es einen stabilen Führungs- und Entscheidungsrhythmus.\n\nMonatliche Begleitung, die Führung, Rhythmus und Fortschritt verbindet, bis Umsetzung greift und Teil der organisationalen Realität wird. Die Umsetzungspartnerschaft versteht sich als zeitlich begrenzte Mitgestaltung und Mitsteuerung von Führungs- und Entscheidungsprozessen in kritischen Phasen, nicht als operative Umsetzung. Sie müssen nicht mehr allein einschätzen, ob Sie noch am richtigen Hebel arbeiten.",
         "sparring": "Sie stehen vor einer Entscheidung, die Sie nicht delegieren können und nicht allein treffen wollen. Kein Coaching. Keine allgemeinen Empfehlungen. Sondern eine fundierte Einschätzung und ein klarer nächster Schritt."
+      },
+      "notSuitable": {
+        "workshops": [
+          "Der Auftrag darin besteht, eine intern bereits getroffene Entscheidung extern zu legitimieren",
+          "Entscheidungen vermieden oder vertagt werden sollen"
+        ],
+        "partnership": [
+          "Operative Umsetzung vollständig ausgelagert werden soll",
+          "Führung nicht aktiv eingebunden ist",
+          "Der Fokus auf Methoden liegt, nicht auf deren wirksamer Umsetzung"
+        ],
+        "sparring": [
+          "Das eigentliche Problem noch nicht benannt werden kann oder soll",
+          "Keine Bereitschaft für klare Konsequenzen besteht"
+        ]
       },
       "topics": {
         "workshops": [
@@ -188,13 +204,13 @@
     "principlesEyebrow": "Haltung & Orientierung",
     "principlesTitle": "Prinzipien",
     "principles": [
-      "Ich arbeite im laufenden Betrieb: Wir gestalten gemeinsam mit der Führung klare Rollen, Entscheidungs- und Steuerungsrhythmen, sodass Verantwortung wirksam übernommen werden kann.",
-      "Ich mache Wirkung messbar: Wir definieren gemeinsam relevante Kennzahlen, Standards und Routinen und verankern deren Nachhaltung über Führungs- und Entscheidungsroutinen.",
-      "Ich verankere Veränderung nachhaltig: Wir integrieren neue Arbeitsweisen in Routinen, Zusammenarbeit sowie Kultur und Identität."
+      "Im laufenden Betrieb arbeiten:\nGemeinsam mit der Führung entstehen klare Rollen, Entscheidungs- und Steuerungsrhythmen, sodass Verantwortung wirksam übernommen werden kann.",
+      "Wirkung messbar machen:\nRelevante Kennzahlen, Standards und Routinen werden gemeinsam definiert und über Führungs- und Entscheidungsroutinen nachgehalten.",
+      "Veränderung nachhaltig verankern:\nNeue Arbeitsweisen werden in Routinen, Zusammenarbeit sowie Kultur und Identität integriert."
     ],
     "how": {
       "kicker": "Mein Vorgehensmodell",
-      "title": "Vom Anlass zur Umsetzung in drei Schritten.",
+      "title": "Vom Anlass zur Umsetzung in drei Schritten",
       "subtitle": "Nicht als Konzept, sondern so, dass es im Tagesgeschäft funktioniert: gemeinsam klären, operativ führen, konsequent verankern.",
       "stepLabel": "Schritt",
       "outTitle": "Ergebnis",
@@ -202,7 +218,7 @@
       "steps": [
         {
           "verb": "Klären",
-          "text": "Wir verstehen Ausgangslage, Engpässe sowie Dynamiken und treffen die ersten tragfähigen Entscheidungen zu Zielbild und Prioritäten.",
+          "text": "Ich verstehe die Ausgangslage, Engpässe und Dynamiken und schaffe die Grundlage für erste tragfähige Entscheidungen zu Zielbild und Prioritäten.",
           "out": [
             "Gemeinsames Zielbild",
             "Top-Prioritäten",
@@ -211,7 +227,7 @@
         },
         {
           "verb": "Etablieren",
-          "text": "Wir gestalten und begleiten den Aufbau eines Führungs- und Steuerungsrhythmus, der Klarheit, Priorisierung und Umsetzung stabil ermöglicht.",
+          "text": "Ich gestalte und begleite den Aufbau eines Führungs- und Steuerungsrhythmus, der Klarheit, Priorisierung und Umsetzung stabil ermöglicht.",
           "out": [
             "Entscheidungen werden klarer getroffen",
             "Abstimmungen werden kürzer und verbindlicher",
@@ -220,7 +236,7 @@
         },
         {
           "verb": "Verankern",
-          "text": "Wir sichern Wirkung über Nachhalten, Verantwortlichkeiten und kulturelle Anschlussfähigkeit, bis es ohne externe Unterstützung trägt.",
+          "text": "Ich sichere die Wirkung über Nachhalten, Verantwortlichkeiten und kulturelle Anschlussfähigkeit, bis sie ohne externe Impulse zum System gehört.",
           "out": [
             "Es trägt ohne externe Unterstützung",
             "Veränderung ist Teil des Alltags",
@@ -258,11 +274,11 @@
     "profileTitle": "Profil",
     "profileText": "Akzeptanz entsteht dort, wo Sprache, Realität und Verantwortung zusammenpassen.\n\nIn M&A-, Integrations- und Transformationssituationen scheitert Umsetzung selten an formalen Zielsetzungen, sondern an verdeckten kulturellen und identitätsbezogenen Spannungen. Mein mehrsprachiger Zugang zur Organisation und die wissenschaftliche Auseinandersetzung mit diesen Zusammenhängen ermöglichen es, solche Spannungen früh sichtbar zu machen, bevor sie operative oder politische Wirkung entfalten.\n\nMeine Arbeit basiert auf eigener Erfahrung in Werk, Führung und Management im industriellen Umfeld. Daraus ergibt sich ein klarer Ansatz: Veränderungen müssen zur operativen Realität passen, von Führung übernommen werden und im Arbeitsalltag verankert sein.\n\nSo entsteht Umsetzung, die nicht erklärt werden muss, sondern getragen und gelebt wird.",
     "clarityText": "Ich übernehme keine operative Umsetzung. Keine Projektverantwortung. Keine Linienfunktion. Ich arbeite an der Stelle, an der entschieden wird, wie geführt und priorisiert wird.",
-    "bulletsEyebrow": "Fundament der Arbeit",
+    "bulletsEyebrow": "Fundament meiner Arbeit",
     "bullets": [
       "25+ Jahre operative Praxiserfahrung, vom Industriemechaniker zur standortübergreifenden Bereichsleitung Produktion & Logistik",
       "Fundierte Erfahrung in industrieller Prozess- und Arbeitsorganisation entlang der Wertschöpfung",
-      "Betriebswirtschaftliche und wirtschaftspsychologische Ausbildung mit Schwerpunkt auf Führung und Organisation",
+      "Technische, betriebswirtschaftliche und wirtschaftspsychologische Ausbildung mit Schwerpunkt auf Führung und Organisation",
       "Mehrsprachigkeit in Führung und Umsetzung: Deutsch, Englisch, Türkisch, Spanisch und Arabisch",
       "Laufende Promotion (DBA) zu M&A-Integration, Kultur und Identität im industriellen Mittelstand"
     ],
@@ -402,6 +418,13 @@
       "errorSend": "Senden fehlgeschlagen. Bitte später erneut versuchen.",
       "errorNetwork": "Netzwerkfehler. Bitte später erneut versuchen."
     },
+    "stepsTitle": "So beginnt unsere Zusammenarbeit",
+    "steps": [
+      "Kurzes Orientierungsgespräch",
+      "Einordnung der Situation",
+      "Auswahl des passenden Formats",
+      "Start innerhalb weniger Tage"
+    ],
     "tabMessage": "Nachricht schreiben",
     "tabSchedule": "Termin buchen",
     "scheduleHint": "Wählen Sie einen Termin für ein erstes Gespräch. Direkt und ohne Umwege.",

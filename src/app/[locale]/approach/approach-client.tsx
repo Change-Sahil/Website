@@ -72,16 +72,23 @@ export default function ApproachClient() {
 
           <div className="mt-8 panel">
             <ul className="space-y-5">
-              {principles.map((p, i) => (
-                <li key={i} className="flex gap-4">
-                  <span
-                    aria-hidden
-                    className="mt-[10px] h-2 w-2 flex-none rounded-full"
-                    style={{ background: "rgba(var(--accent), .92)", boxShadow: "0 0 0 8px rgba(0,168,165,.08)" }}
-                  />
-                  <p className="text-[15px] leading-7" style={{ color: "rgba(var(--ink), .78)" }}>{p}</p>
-                </li>
-              ))}
+              {principles.map((p, i) => {
+                const split = p.indexOf(":\n");
+                const title = split >= 0 ? p.slice(0, split) : null;
+                const body  = split >= 0 ? p.slice(split + 2) : p;
+                return (
+                  <li key={i} className="flex gap-4">
+                    <span
+                      aria-hidden
+                      style={{ marginTop: 10, width: 10, height: 10, flexShrink: 0, borderRadius: 999, display: "inline-block", background: "rgb(148,163,184)", boxShadow: "0 0 0 7px rgba(148,163,184,.20)" }}
+                    />
+                    <p className="text-[15px] leading-7" style={{ color: "rgba(var(--ink), .78)" }}>
+                      {title && <><span className="font-semibold" style={{ color: "rgba(var(--ink), .88)" }}>{title}</span><br /></>}
+                      {body}
+                    </p>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </section>
@@ -146,7 +153,10 @@ export default function ApproachClient() {
           </div>
         </div>
         <Reveal delay={100}>
-          <p className="mt-6 max-w-3xl text-sm leading-7 muted">{t("how.restriction")}</p>
+          <div className="mt-6 flex items-start gap-3 max-w-3xl">
+            <span aria-hidden style={{ color: "rgb(var(--accent))", fontSize: "1rem", lineHeight: "1.75rem", flexShrink: 0 }}>✦</span>
+            <p className="text-sm leading-7 muted">{t("how.restriction")}</p>
+          </div>
         </Reveal>
       </section>
 
@@ -172,8 +182,7 @@ export default function ApproachClient() {
                 <div className="flex items-start gap-4">
                   <span
                     aria-hidden
-                    className="mt-[9px] h-2 w-2 flex-none rounded-full"
-                    style={{ background: "rgba(var(--accent), .92)", boxShadow: "0 0 0 8px rgba(0,168,165,.08)" }}
+                    style={{ marginTop: 9, width: 10, height: 10, flexShrink: 0, borderRadius: 999, display: "inline-block", background: "rgb(148,163,184)", boxShadow: "0 0 0 7px rgba(148,163,184,.20)" }}
                   />
                   <p className="text-[15px] leading-7" style={{ color: "rgba(var(--ink), .78)" }}>{x}</p>
                 </div>
@@ -185,9 +194,12 @@ export default function ApproachClient() {
         <Reveal delay={100}>
           <div className="mt-10">
             <div className="hr-soft" />
-            <p className="mt-6 max-w-3xl text-sm leading-7 muted">{t("bridge")}</p>
+            <div className="mt-6 flex items-start gap-3 max-w-3xl">
+              <span aria-hidden style={{ color: "rgb(var(--accent))", fontSize: "1rem", lineHeight: "1.75rem", flexShrink: 0 }}>✦</span>
+              <p className="text-sm leading-7 muted">{t("bridge")}</p>
+            </div>
             <div className="mt-5">
-              <Link href={`/${locale}/services`} className="btn-secondary">{t("bridgeCta")}</Link>
+              <Link href={`/${locale}/services`} className="btn-primary">{t("bridgeCta")}</Link>
             </div>
           </div>
         </Reveal>

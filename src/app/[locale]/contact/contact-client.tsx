@@ -12,6 +12,8 @@ export default function ContactPage() {
   const f = useTranslations("contact.form");
   const d = useTranslations("contact.direct");
 
+  const steps = (t.raw("steps") as string[]) ?? [];
+
   const [sending, setSending]   = useState(false);
   const [status, setStatus]     = useState<"idle" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState<string>("");
@@ -72,8 +74,9 @@ export default function ContactPage() {
 
   return (
     <div className="page-stack">
+
       <Reveal>
-        <section className="panel shadow-[0_18px_55px_rgba(15,23,42,0.07)]">
+        <section className="panel shadow-[0_18px_55px_rgba(15,23,42,0.07)] mt-6 md:mt-10">
           <div className="grid gap-10 md:grid-cols-2 md:items-stretch">
 
             {/* LINKS */}
@@ -213,6 +216,29 @@ export default function ContactPage() {
 
           </div>
         </section>
+      </Reveal>
+
+      {/* ── SO BEGINNT DIE ZUSAMMENARBEIT ── */}
+      <Reveal>
+        <div className="dark-block p-8 sm:p-10">
+          <div className="section-eyebrow" style={{ color: "rgba(255,255,255,.70)" }}>
+            <span className="dot" style={{ boxShadow: "0 0 0 7px rgba(0,168,165,.16)" }} />
+            <span>{t("stepsTitle")}</span>
+          </div>
+          <ol className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {steps.map((step, i) => (
+              <li key={i} className="flex items-center gap-3">
+                <span
+                  className="flex h-7 w-7 flex-none items-center justify-center rounded-full text-[11px] font-semibold"
+                  style={{ background: "rgba(0,168,165,.25)", color: "rgb(var(--accent))" }}
+                >
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="text-[15px] leading-6" style={{ color: "rgba(255,255,255,.78)" }}>{step}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
       </Reveal>
     </div>
   );

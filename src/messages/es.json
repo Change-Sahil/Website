@@ -99,6 +99,7 @@
       "navTitle": "Formatos",
       "labels": {
         "whenTitle": "Cuándo tiene sentido",
+        "notSuitableTitle": "No es la opción adecuada cuando",
         "topicsTitle": "Situaciones típicas",
         "deliverablesTitle": "Qué obtiene",
         "detailsTitle": "Detalles",
@@ -119,6 +120,21 @@
         "workshops": "Tras uno o dos días juntos, sabe dónde está el verdadero cuello de botella, quién es concretamente responsable de qué y qué ocurrirá en los próximos 90 días. La pregunta de por dónde empezar deja de plantearse. No un concepto. Un primer paso efectivo.",
         "partnership": "Cuando el cambio debe sostenerse durante meses, un solo workshop no basta. Hace falta un ritmo estable de liderazgo y toma de decisiones.\n\nAcompañamiento mensual que conecta liderazgo, ritmo y avance hasta que la ejecución funcione y pase a formar parte de la realidad organizativa. La alianza de implementación se entiende como una co-configuración y co-dirección limitada en el tiempo de procesos de liderazgo y decisión en fases críticas, no como ejecución operativa. Ya no tiene que evaluar usted solo si sigue trabajando en la palanca adecuada.",
         "sparring": "Se enfrenta a una decisión que no puede delegar y que no quiere tomar solo. Sin coaching. Sin recomendaciones generales. Una valoración sólida y un siguiente paso claro."
+      },
+      "notSuitable": {
+        "workshops": [
+          "El encargo consiste en legitimar externamente una decisión ya tomada internamente",
+          "Se pretende evitar o aplazar decisiones"
+        ],
+        "partnership": [
+          "La ejecución operativa se va a externalizar por completo",
+          "El liderazgo no está activamente implicado",
+          "El foco está en los métodos, no en su implementación efectiva"
+        ],
+        "sparring": [
+          "El problema real aún no puede o no debe ser nombrado",
+          "No existe disposición a asumir consecuencias claras"
+        ]
       },
       "topics": {
         "workshops": [
@@ -188,13 +204,13 @@
     "principlesEyebrow": "Actitud y orientación",
     "principlesTitle": "Principios",
     "principles": [
-      "Trabajo en la operación diaria: junto con la dirección, configuramos roles claros y ritmos de decisión y dirección, de modo que la responsabilidad pueda asumirse de forma efectiva.",
-      "Hago medible el impacto: definimos conjuntamente indicadores, estándares y rutinas relevantes y consolidamos su seguimiento a través de rutinas de liderazgo y toma de decisiones.",
-      "Anclo el cambio de forma sostenible: integramos nuevas formas de trabajo en las rutinas, la colaboración, la cultura y la identidad."
+      "Trabajar en la operación diaria:\nJunto con la dirección se configuran roles claros y ritmos de decisión y dirección, de modo que la responsabilidad pueda asumirse de forma efectiva.",
+      "Hacer medible el impacto:\nLos indicadores, estándares y rutinas relevantes se definen conjuntamente y se hace su seguimiento a través de rutinas de liderazgo y toma de decisiones.",
+      "Anclar el cambio de forma sostenible:\nLas nuevas formas de trabajo se integran en las rutinas, la colaboración, la cultura y la identidad."
     ],
     "how": {
       "kicker": "Mi modelo de actuación",
-      "title": "Del motivo a la ejecución en tres pasos.",
+      "title": "Del motivo a la ejecución en tres pasos",
       "subtitle": "No como un concepto, sino para que funcione en el día a día: clarificar juntos, liderar operativamente y anclar con consistencia.",
       "stepLabel": "Paso",
       "outTitle": "Resultado",
@@ -202,7 +218,7 @@
       "steps": [
         {
           "verb": "Clarificar",
-          "text": "Entendemos la situación de partida, los cuellos de botella y las dinámicas, y tomamos las primeras decisiones sólidas sobre el objetivo y las prioridades.",
+          "text": "Entiendo la situación de partida, los cuellos de botella y las dinámicas y creo la base para las primeras decisiones sólidas sobre el objetivo y las prioridades.",
           "out": [
             "Objetivo compartido",
             "Prioridades clave",
@@ -211,7 +227,7 @@
         },
         {
           "verb": "Establecer",
-          "text": "Diseñamos y acompañamos la implantación de un ritmo de liderazgo y dirección que permite de forma estable claridad, priorización y ejecución.",
+          "text": "Diseño y acompaño la implantación de un ritmo de liderazgo y dirección que permite de forma estable claridad, priorización y ejecución.",
           "out": [
             "Las decisiones se toman con mayor claridad",
             "La coordinación se vuelve más corta y vinculante",
@@ -220,7 +236,7 @@
         },
         {
           "verb": "Anclar",
-          "text": "Aseguramos el impacto mediante seguimiento, responsabilidades y encaje cultural, hasta que funcione sin apoyo externo.",
+          "text": "Aseguro el impacto mediante seguimiento, responsabilidades y encaje cultural, hasta que forme parte del sistema sin necesidad de impulsos externos.",
           "out": [
             "Funciona sin apoyo externo",
             "El cambio forma parte del día a día",
@@ -258,11 +274,11 @@
     "profileTitle": "Perfil",
     "profileText": "La aceptación surge allí donde el lenguaje, la realidad y la responsabilidad encajan.\n\nEn situaciones de M&A, integración y transformación, la ejecución rara vez fracasa por objetivos formales, sino por tensiones culturales y de identidad ocultas. Mi acceso multilingüe a las organizaciones y mi trabajo académico sobre estas dinámicas me permiten hacer visibles esas tensiones de forma temprana, antes de que desplieguen efectos operativos o políticos.\n\nMi trabajo se basa en experiencia directa en planta, liderazgo y dirección dentro de entornos industriales. De ahí surge un enfoque claro: el cambio debe encajar con la realidad operativa, ser asumido por el liderazgo y estar anclado en el trabajo diario.\n\nAsí surge una ejecución que no necesita explicación, sino que se sostiene y se vive.",
     "clarityText": "No asumo ejecución operativa. Ninguna responsabilidad de proyecto. Ninguna función de línea. Trabajo en el punto en el que se decide cómo se lidera y se prioriza.",
-    "bulletsEyebrow": "Base del trabajo",
+    "bulletsEyebrow": "Base de mi trabajo",
     "bullets": [
       "Más de 25 años de experiencia operativa, desde mecánico industrial hasta dirección interplanta de producción y logística",
       "Experiencia sólida en organización industrial de procesos y del trabajo a lo largo de la cadena de valor",
-      "Formación en administración de empresas y psicología empresarial, con foco en liderazgo y organización",
+      "Formación técnica, en administración de empresas y psicología empresarial, con foco en liderazgo y organización",
       "Multilingüismo en liderazgo y ejecución: alemán, inglés, turco, español y árabe",
       "Doctorado en curso (DBA) sobre integración M&A, cultura e identidad en pymes industriales"
     ],
@@ -402,6 +418,13 @@
       "errorSend": "Error al enviar. Inténtelo de nuevo más tarde.",
       "errorNetwork": "Error de red. Inténtelo de nuevo más tarde."
     },
+    "stepsTitle": "Así comienza nuestra colaboración",
+    "steps": [
+      "Breve conversación de orientación",
+      "Evaluación de la situación",
+      "Selección del formato adecuado",
+      "Inicio en pocos días"
+    ],
     "tabMessage": "Escribir mensaje",
     "tabSchedule": "Reservar una cita",
     "scheduleHint": "Elija un momento para una primera conversación. Directo y sin rodeos.",

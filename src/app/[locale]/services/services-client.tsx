@@ -15,9 +15,6 @@ function asArray<T = unknown>(value: unknown): T[] {
   return Array.isArray(value) ? (value as T[]) : [];
 }
 
-function Chip({ children }: { children: React.ReactNode }) {
-  return <span className="chip">{children}</span>;
-}
 
 export default function ServicesClient() {
   const locale = useLocale();
@@ -32,22 +29,19 @@ export default function ServicesClient() {
 
   const cards = useMemo(() => KEYS.map((k) => ({
     key: k,
-    title:       titles?.[k] ?? k,
-    role:        tabRoles?.[k] ?? "",
-    teaser:      t(`ui.teaser.${k}`),
-    when:        t(`ui.when.${k}`),
-    tags:        asArray<string>(t.raw(`ui.tags.${k}`)),
-    duration:    t(`ui.duration.${k}`),
+    title:        titles?.[k] ?? k,
+    role:         tabRoles?.[k] ?? "",
+    teaser:       t(`ui.teaser.${k}`),
+    when:         t(`ui.when.${k}`),
+    notSuitable:  asArray<string>(t.raw(`ui.notSuitable.${k}`)),
+    tags:         asArray<string>(t.raw(`ui.tags.${k}`)),
+    duration:     t(`ui.duration.${k}`),
     deliverables: asArray<string>(t.raw(`ui.deliverables.${k}`)),
-    topics:      asArray<string>(t.raw(`ui.topics.${k}`)),
+    topics:       asArray<string>(t.raw(`ui.topics.${k}`)),
   })), [t, titles, tabRoles]);
 
   const [activeKey, setActiveKey] = useState<ServiceKey>("partnership");
   const active = cards.find((c) => c.key === activeKey) ?? cards[0];
-  const tagsWithoutDuration = active.duration
-    ? active.tags.filter((x) => x.trim() !== active.duration.trim())
-    : active.tags;
-
   const cta = ui?.cta;
 
   return (
@@ -181,7 +175,7 @@ export default function ServicesClient() {
                       <span className="dot" />
                       <span>{t("ui.labels.whenTitle")}</span>
                     </div>
-                    <p className="mt-3 text-[15px] leading-7 break-words" style={{ color: "rgba(var(--ink), .74)" }}>
+                    <p className="mt-3 pl-[18px] text-[15px] leading-7 break-words" style={{ color: "rgba(var(--ink), .74)" }}>
                       {active.when}
                     </p>
                     {active.topics.length ? (
@@ -198,6 +192,22 @@ export default function ServicesClient() {
                   </div>
 
                   <div className="lg:col-span-6 min-w-0">
+                    {active.notSuitable.length ? (
+                      <div className="mb-8">
+                        <div className="inline-flex items-center gap-2 text-[11px] tracking-[0.26em] uppercase" style={{ color: "rgba(var(--ink), .35)" }}>
+                          <span style={{ width: 10, height: 10, borderRadius: 999, display: "inline-block", flexShrink: 0, background: "rgb(148,163,184)", boxShadow: "0 0 0 7px rgba(148,163,184,.20)" }} />
+                          <span>{t("ui.labels.notSuitableTitle")}</span>
+                        </div>
+                        <ul className="mt-2 grid gap-y-1.5">
+                          {active.notSuitable.map((x, i) => (
+                            <li key={i} className="flex min-w-0 gap-3 text-[13px] leading-6" style={{ color: "rgba(var(--ink), .40)" }}>
+                              <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-slate-300" />
+                              <span className="min-w-0">{x}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
                     <div className="section-eyebrow">
                       <span className="dot" />
                       <span>{t("ui.labels.deliverablesTitle")}</span>
@@ -211,7 +221,7 @@ export default function ServicesClient() {
                           <span className="dot" />
                           <span>{t("ui.labels.durationTitle")}</span>
                         </div>
-                        <p className="mt-1 text-sm" style={{ color: "rgba(var(--ink), .74)" }}>
+                        <p className="mt-1 pl-[18px] text-sm" style={{ color: "rgba(var(--ink), .74)" }}>
                           {active.duration}
                         </p>
                       </div>

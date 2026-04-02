@@ -53,7 +53,7 @@ export default function AboutClient() {
 
           <div className="lg:col-span-5">
             <div className="panel overflow-hidden p-0">
-              <div className="relative h-[380px] w-full md:h-[470px]">
+              <div className="relative h-[400px] w-full md:h-[520px]">
                 <Image
                   src={t("heroImage", { defaultValue: "/seref-sahil-change-werkstatt.jpg" })}
                   alt={t("heroImageAlt", { defaultValue: "Seref Sahil" })}
@@ -62,7 +62,7 @@ export default function AboutClient() {
                   sizes="(min-width: 1024px) 40vw, 100vw"
                   placeholder="blur"
                   blurDataURL={blurDataURL}
-                  className="object-cover object-top"
+                  className="object-cover object-[center_15%]"
                 />
               </div>
             </div>

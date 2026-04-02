@@ -99,6 +99,7 @@
       "navTitle": "Formatlar",
       "labels": {
         "whenTitle": "Ne zaman anlamlı",
+        "notSuitableTitle": "Doğru tercih değil, eğer",
         "topicsTitle": "Tipik durumlar",
         "deliverablesTitle": "Ne elde edersiniz",
         "detailsTitle": "Detaylar",
@@ -119,6 +120,21 @@
         "workshops": "Bir veya iki günün ardından gerçek darboğazın nerede olduğunu, kimin somut olarak neden sorumlu olduğunu ve önümüzdeki 90 günde ne olacağını bilirsiniz. Nereden başlamanız gerektiği sorusu artık ortadan kalkar. Konsept değil. Etkili bir ilk adım.",
         "partnership": "Değişimin aylar boyunca taşınması gerektiğinde tek bir atölye yeterli olmaz. İstikrarlı bir liderlik ve karar ritmi gerekir.\n\nUygulama işleyip organizasyonel gerçekliğin parçası hâline gelene kadar liderliği, ritmi ve ilerlemeyi birbirine bağlayan aylık destek. Uygulama ortaklığı, operasyonel uygulama değil, kritik aşamalarda liderlik ve karar süreçlerinin zaman sınırlı ortak tasarımı ve ortak yönlendirilmesi olarak anlaşılır. Hâlâ doğru kaldıraç üzerinde çalışıp çalışmadığınızı artık tek başınıza değerlendirmek zorunda kalmazsınız.",
         "sparring": "Devredemeyeceğiniz ve tek başınıza almak istemediğiniz bir kararla karşı karşıyasınız. Koçluk değil. Genel tavsiyeler değil. Sağlam bir değerlendirme ve net bir sonraki adım."
+      },
+      "notSuitable": {
+        "workshops": [
+          "Görev, dahili olarak alınmış bir kararı dışarıdan meşrulaştırmaktan ibaretse",
+          "Kararlar ertelenmek veya atlatılmak isteniyorsa"
+        ],
+        "partnership": [
+          "Operasyonel uygulama tamamen dış kaynağa devredilecekse",
+          "Liderlik aktif olarak dahil değilse",
+          "Odak yöntemlerin kendisinde, uygulamalarının etkinliğinde değilse"
+        ],
+        "sparring": [
+          "Asıl sorun henüz dile getirilemiyor veya getirilmek istenmiyor",
+          "Açık sonuçlara hazırlık yoksa"
+        ]
       },
       "topics": {
         "workshops": [
@@ -188,13 +204,13 @@
     "principlesEyebrow": "Duruş ve yönelim",
     "principlesTitle": "İlkeler",
     "principles": [
-      "Devam eden operasyonun içinde çalışırım: liderlikle birlikte net roller ile karar ve yönlendirme ritimlerini şekillendiririz; böylece sorumluluk etkili biçimde üstlenilebilir.",
-      "Etkiyi ölçülebilir kılarım: ilgili göstergeleri, standartları ve rutinleri birlikte tanımlar, bunların takibini liderlik ve karar rutinleri üzerinden kalıcı hâle getiririz.",
-      "Değişimi kalıcı biçimde yerleştiririm: yeni çalışma biçimlerini rutinlere, iş birliğine, kültüre ve kimliğe entegre ederiz."
+      "Devam eden operasyonun içinde çalışmak:\nLiderlikle birlikte net roller ile karar ve yönlendirme ritimleri oluşturulur; böylece sorumluluk etkili biçimde üstlenilebilir.",
+      "Etkiyi ölçülebilir kılmak:\nİlgili göstergeler, standartlar ve rutinler birlikte tanımlanır ve liderlik ile karar rutinleri üzerinden takip edilir.",
+      "Değişimi kalıcı biçimde yerleştirmek:\nYeni çalışma biçimleri rutinlere, iş birliğine, kültüre ve kimliğe entegre edilir."
     ],
     "how": {
       "kicker": "Benim ilerleme modelim",
-      "title": "Tetikleyiciden uygulamaya üç adımda.",
+      "title": "Tetikleyiciden uygulamaya üç adımda",
       "subtitle": "Bir konsept olarak değil, günlük işleyişte çalışacak şekilde: birlikte netleştirir, operasyonel olarak yönetir ve tutarlı biçimde yerleştiririz.",
       "stepLabel": "Adım",
       "outTitle": "Sonuç",
@@ -202,7 +218,7 @@
       "steps": [
         {
           "verb": "Netleştir",
-          "text": "Başlangıç durumunu, darboğazları ve dinamikleri anlar, hedef resmi ve önceliklere ilişkin ilk sağlam kararları veririz.",
+          "text": "Başlangıç durumunu, darboğazları ve dinamikleri anlıyor; hedef resmi ve önceliklere ilişkin ilk sağlam kararların temelini oluşturuyorum.",
           "out": [
             "Ortak hedef resmi",
             "En önemli öncelikler",
@@ -211,7 +227,7 @@
         },
         {
           "verb": "Kur",
-          "text": "Netliği, önceliklendirmeyi ve uygulamayı istikrarlı biçimde mümkün kılan bir liderlik ve yönlendirme ritminin kurulmasını tasarlar ve buna eşlik ederiz.",
+          "text": "Netliği, önceliklendirmeyi ve uygulamayı istikrarlı biçimde mümkün kılan bir liderlik ve yönlendirme ritminin kurulmasını tasarlıyor ve buna eşlik ediyorum.",
           "out": [
             "Kararlar daha net alınır",
             "Koordinasyon daha kısa ve bağlayıcı olur",
@@ -220,7 +236,7 @@
         },
         {
           "verb": "Yerleştir",
-          "text": "Takip, sorumluluklar ve kültürel uyum yoluyla etkiyi güvence altına alırız, ta ki dış destek olmadan işleyecek duruma gelene kadar.",
+          "text": "Takip, sorumluluklar ve kültürel uyum yoluyla etkiyi güvence altına alıyorum; ta ki dış müdahale olmaksızın sistemin bir parçası hâline gelene kadar.",
           "out": [
             "Dış destek olmadan işler",
             "Değişim günlük işin parçası olur",
@@ -258,11 +274,11 @@
     "profileTitle": "Profil",
     "profileText": "Kabul, dil, gerçeklik ve sorumluluk birbirine uyduğunda ortaya çıkar.\n\nM&A, entegrasyon ve dönüşüm durumlarında uygulama nadiren resmî hedefler nedeniyle başarısız olur; asıl neden çoğu zaman gizli kültürel ve kimlikle ilgili gerilimlerdir. Organizasyonlara çok dilli erişimim ve bu dinamikler üzerine akademik çalışmam, bu tür gerilimleri erken aşamada görünür kılmayı mümkün hâle getirir, daha operasyonel veya politik etki ortaya çıkmadan önce.\n\nÇalışmam, endüstriyel ortamda saha, liderlik ve yönetim rollerinde edindiğim doğrudan deneyime dayanır. Bundan net bir yaklaşım ortaya çıkar: değişim operasyonel gerçekliğe uymalı, liderlik tarafından sahiplenilmeli ve günlük işe yerleşmelidir.\n\nBöylece açıklanması gerekmeyen, sahiplenilen ve yaşanan bir uygulama ortaya çıkar.",
     "clarityText": "Operasyonel uygulamayı üstlenmem. Proje sorumluluğu yok. Hat fonksiyonu yok. Nasıl yönetileceği ve nasıl önceliklendirileceği konusunda kararların alındığı noktada çalışırım.",
-    "bulletsEyebrow": "Çalışmanın temeli",
+    "bulletsEyebrow": "Çalışmamın temeli",
     "bullets": [
       "25+ yıllık operasyonel deneyim, endüstriyel mekanikerlikten lokasyonlar arası üretim ve lojistik yöneticiliğine",
       "Değer zinciri boyunca endüstriyel süreç ve iş organizasyonunda güçlü deneyim",
-      "İşletme ve iş psikolojisi eğitimi, odak noktası liderlik ve organizasyon",
+      "Teknik, işletme ve iş psikolojisi eğitimi, odak noktası liderlik ve organizasyon",
       "Liderlik ve uygulamada çok dillilik: Almanca, İngilizce, Türkçe, İspanyolca ve Arapça",
       "Endüstriyel KOBİ’lerde M&A entegrasyonu, kültür ve kimlik üzerine devam eden DBA çalışması"
     ],
@@ -402,6 +418,13 @@
       "errorSend": "Gönderim başarısız oldu. Lütfen daha sonra tekrar deneyin.",
       "errorNetwork": "Ağ hatası. Lütfen daha sonra tekrar deneyin."
     },
+    "stepsTitle": "Birlikte nasıl başlıyoruz",
+    "steps": [
+      "Kısa bir yönlendirme görüşmesi",
+      "Durumun değerlendirilmesi",
+      "Uygun formatın seçilmesi",
+      "Birkaç gün içinde başlangıç"
+    ],
     "tabMessage": "Mesaj yaz",
     "tabSchedule": "Randevu al",
     "scheduleHint": "İlk görüşme için bir zaman seçin. Doğrudan ve net.",

@@ -99,6 +99,7 @@
       "navTitle": "Formats",
       "labels": {
         "whenTitle": "When it makes sense",
+        "notSuitableTitle": "Not the right fit when",
         "topicsTitle": "Typical situations",
         "deliverablesTitle": "What you get",
         "detailsTitle": "Details",
@@ -119,6 +120,21 @@
         "workshops": "After one or two days together, you know where the real bottleneck lies, who is specifically responsible for what, and what will happen over the next 90 days. The question of where to start no longer arises. Not a concept. A first effective step.",
         "partnership": "When change needs to be carried over months, a single workshop is not enough. What is needed is a stable leadership and decision rhythm.\n\nMonthly support that connects leadership, rhythm, and progress until execution takes hold and becomes part of organizational reality. The implementation partnership is understood as a time-limited co-design and co-steering of leadership and decision-making processes in critical phases, not as operational execution. You no longer have to figure out on your own whether you are still working on the right lever.",
         "sparring": "You are facing a decision you cannot delegate and do not want to make alone. No coaching. No general recommendations. A sound assessment and a clear next step."
+      },
+      "notSuitable": {
+        "workshops": [
+          "The mandate is to externally legitimise a decision that has already been made internally",
+          "Decisions are to be avoided or deferred"
+        ],
+        "partnership": [
+          "Operational execution is to be fully outsourced",
+          "Leadership is not actively involved",
+          "The focus is on methods, not on their effective implementation"
+        ],
+        "sparring": [
+          "The real problem cannot or should not yet be named",
+          "There is no willingness to accept clear consequences"
+        ]
       },
       "topics": {
         "workshops": [
@@ -188,13 +204,13 @@
     "principlesEyebrow": "Mindset & Orientation",
     "principlesTitle": "Principles",
     "principles": [
-      "I work within ongoing operations: together with leadership, we shape clear roles as well as decision-making and steering rhythms so that responsibility can be effectively assumed.",
-      "I make impact measurable: together, we define relevant metrics, standards, and routines and embed their follow-up through leadership and decision-making routines.",
-      "I embed change sustainably: we integrate new ways of working into routines, collaboration, as well as culture and identity."
+      "Working within ongoing operations:\nClear roles and decision-making and steering rhythms are developed together with leadership so that responsibility can be effectively assumed.",
+      "Making impact measurable:\nRelevant metrics, standards, and routines are defined together and followed up through leadership and decision-making routines.",
+      "Embedding change sustainably:\nNew ways of working are integrated into routines, collaboration, as well as culture and identity."
     ],
     "how": {
       "kicker": "My process model",
-      "title": "From trigger to execution in three steps.",
+      "title": "From trigger to execution in three steps",
       "subtitle": "Not as a concept, but in a way that works in day-to-day operations: clarify together, lead operationally, embed consistently.",
       "stepLabel": "Step",
       "outTitle": "Outcome",
@@ -202,7 +218,7 @@
       "steps": [
         {
           "verb": "Clarify",
-          "text": "We understand the starting point, bottlenecks, and dynamics, and make the first robust decisions on target state and priorities.",
+          "text": "I understand the starting point, bottlenecks, and dynamics and create the foundation for first robust decisions on target state and priorities.",
           "out": [
             "Shared target state",
             "Top priorities",
@@ -211,7 +227,7 @@
         },
         {
           "verb": "Establish",
-          "text": "We design and support the establishment of a leadership and steering rhythm that reliably enables clarity, prioritization, and execution.",
+          "text": "I design and support the establishment of a leadership and steering rhythm that reliably enables clarity, prioritization, and execution.",
           "out": [
             "Decisions are made more clearly",
             "Coordination becomes shorter and more binding",
@@ -220,7 +236,7 @@
         },
         {
           "verb": "Embed",
-          "text": "We secure impact through follow-up, responsibilities, and cultural fit until it works without external support.",
+          "text": "I secure impact through follow-up, responsibilities, and cultural fit, until it belongs to the system without external input.",
           "out": [
             "It works without external support",
             "Change becomes part of everyday work",
@@ -259,11 +275,11 @@
     "profileText": "Acceptance emerges where language, reality, and responsibility fit together.\n\nIn M&A, integration, and transformation situations, execution rarely fails because of formal targets, but because of hidden cultural and identity-related tensions. My multilingual access to organizations and my academic work on these dynamics make it possible to surface such tensions early, before they unfold operationally or politically.\n\nMy work is grounded in firsthand experience in plant, leadership, and management roles within industrial environments. This leads to a clear approach: change must fit operational reality, be owned by leadership, and be embedded in everyday work.\n\nThis is how execution emerges, not as something that needs to be explained, but as something that is carried and lived."
     ,
     "clarityText": "I do not take on operational execution. No project responsibility. No line role. I work at the point where decisions are made about how leadership and prioritization are handled.",
-    "bulletsEyebrow": "Foundation of the work",
+    "bulletsEyebrow": "Foundation of my work",
     "bullets": [
       "25+ years of operational experience, from industrial mechanic to cross-site head of production & logistics",
       "Strong experience in industrial process and work organization across the value chain",
-      "Training in business administration and business psychology, with a focus on leadership and organization",
+      "Technical, business administration and business psychology training, with a focus on leadership and organization",
       "Multilingual leadership and execution: German, English, Turkish, Spanish, and Arabic",
       "Ongoing DBA on M&A integration, culture, and identity in industrial SMEs"
     ],
@@ -403,6 +419,13 @@
       "errorSend": "Sending failed. Please try again later.",
       "errorNetwork": "Network error. Please try again later."
     },
+    "stepsTitle": "How our collaboration begins",
+    "steps": [
+      "Brief orientation conversation",
+      "Assessment of the situation",
+      "Selection of the right format",
+      "Start within a few days"
+    ],
     "tabMessage": "Write a message",
     "tabSchedule": "Book an appointment",
     "scheduleHint": "Choose a time for an initial conversation. Direct and straightforward.",

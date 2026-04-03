@@ -54,13 +54,13 @@ export async function generateMetadata({
       siteName: "Change-Werkstatt Sahil",
       type: "website",
       locale: ogLocale[locale] ?? "de_DE",
-      images: [{ url: `${BASE_URL}/images/approach-01.jpg`, width: 1200, height: 900, alt: "Change-Werkstatt Sahil – Vorgehen" }],
+      images: [{ url: `${BASE_URL}/seref-sahil-change-werkstatt.jpg`, width: 1200, height: 1600, alt: "Seref Sahil – Change-Werkstatt Sahil" }],
     },
     twitter: {
       card: "summary_large_image",
       title: title[locale] ?? title.de,
       description: description[locale] ?? description.de,
-      images: [`${BASE_URL}/images/approach-01.jpg`],
+      images: [`${BASE_URL}/seref-sahil-change-werkstatt.jpg`],
     },
   };
 }

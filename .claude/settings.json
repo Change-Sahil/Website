@@ -21,7 +21,9 @@
       "Bash(sed -n '170,174p' \"c:/Users/seref/change-werkstatt-sahil/src/messages/es.json\")",
       "Bash(sed -n '98,104p' \"c:/Users/seref/change-werkstatt-sahil/src/messages/tr.json\")",
       "Bash(sed -n '98,104p' \"c:/Users/seref/change-werkstatt-sahil/src/messages/es.json\")",
-      "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/seref/change-werkstatt-sahil/src/messages/de.json'', ''utf8''\\)\\); console.log\\(''valid''\\)\")"
+      "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/seref/change-werkstatt-sahil/src/messages/de.json'', ''utf8''\\)\\); console.log\\(''valid''\\)\")",
+      "Bash(ls c:/Users/seref/change-werkstatt-sahil/public/*.jpg)",
+      "Bash(ls c:/Users/seref/change-werkstatt-sahil/public/*.png)"
     ],
     "additionalDirectories": [
       "C:\\Users\\seref\\poker-gruppe\\src\\app",

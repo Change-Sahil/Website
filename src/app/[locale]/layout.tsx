@@ -80,10 +80,10 @@ export async function generateMetadata({
       locale: ogLocale[locale] ?? "de_DE",
       images: [
         {
-          url: `${BASE_URL}/images/home-01.jpg`,
-          width: 1600,
-          height: 1000,
-          alt: "Change-Werkstatt Sahil",
+          url: `${BASE_URL}/seref-sahil-change-werkstatt.jpg`,
+          width: 1200,
+          height: 1600,
+          alt: "Seref Sahil – Change-Werkstatt Sahil",
         },
       ],
     },
@@ -92,7 +92,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: titles[locale] ?? titles.de,
       description: descriptions[locale] ?? descriptions.de,
-      images: [`${BASE_URL}/images/home-01.jpg`],
+      images: [`${BASE_URL}/seref-sahil-change-werkstatt.jpg`],
     },
   };
 }

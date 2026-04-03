@@ -22,10 +22,10 @@ export async function generateMetadata({
   };
 
   const description: Record<string, string> = {
-    de: "Wir begleiten Führung und Teams in anspruchsvollen Transformations-, M&A- und Restrukturierungsprojekten. Werkstattansatz mit klarem Fokus auf wirksame Umsetzung.",
-    en: "We support leadership and teams in industrial and mid-market transformations, M&A integrations and restructuring with a hands-on execution mindset.",
-    es: "Acompañamos a líderes y equipos en transformaciones, integraciones M&A y reestructuraciones con un enfoque práctico y orientado a resultados.",
-    tr: "Liderlik ve ekipleri dönüşüm, M&A entegrasyonu ve yeniden yapılanma süreçlerinde uygulama odaklı bir yaklaşımla destekliyoruz.",
+    de: "Ich begleite Führung und Teams in anspruchsvollen Transformations-, M&A- und Restrukturierungsprojekten. Werkstattansatz mit klarem Fokus auf wirksame Umsetzung.",
+    en: "I support leadership and teams in industrial and mid-market transformations, M&A integrations and restructuring with a hands-on execution mindset.",
+    es: "Acompaño a líderes y equipos en transformaciones, integraciones M&A y reestructuraciones con un enfoque práctico y orientado a resultados.",
+    tr: "Liderlik ve ekipleri dönüşüm, M&A entegrasyonu ve yeniden yapılanma süreçlerinde uygulama odaklı bir yaklaşımla destekliyorum.",
   };
 
   const ogLocale: Record<string, string> = {
@@ -56,13 +56,13 @@ export async function generateMetadata({
       siteName: "Change-Werkstatt Sahil",
       type: "website",
       locale: ogLocale[locale] ?? "de_DE",
-      images: [{ url: `${BASE_URL}/images/home-01.jpg`, width: 1600, height: 1000, alt: "Change-Werkstatt Sahil" }],
+      images: [{ url: `${BASE_URL}/seref-sahil-change-werkstatt.jpg`, width: 1200, height: 1600, alt: "Seref Sahil – Change-Werkstatt Sahil" }],
     },
     twitter: {
       card: "summary_large_image",
       title: title[locale] ?? title.de,
       description: description[locale] ?? description.de,
-      images: [`${BASE_URL}/images/home-01.jpg`],
+      images: [`${BASE_URL}/seref-sahil-change-werkstatt.jpg`],
     },
   };
 }

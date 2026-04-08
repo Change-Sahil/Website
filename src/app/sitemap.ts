@@ -4,36 +4,32 @@ import type { MetadataRoute } from "next";
 const BASE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://change-werkstatt-sahil.de";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
-    "/de",
-    "/de/services",
-    "/de/approach",
-    "/de/about",
-    "/de/contact",
-    "/de/speaking",
-    "/en",
-    "/en/services",
-    "/en/approach",
-    "/en/about",
-    "/en/contact",
-    "/en/speaking",
-    "/es",
-    "/es/services",
-    "/es/approach",
-    "/es/about",
-    "/es/contact",
-    "/es/speaking",
-    "/tr",
-    "/tr/services",
-    "/tr/approach",
-    "/tr/about",
-    "/tr/contact",
-    "/tr/speaking",
-  ] as const;
+const locales = ["de", "en", "es", "tr"] as const;
+const pages   = ["", "/services", "/approach", "/about", "/contact", "/speaking"] as const;
 
-  return routes.map((path) => ({
-    url: new URL(path, BASE_URL).toString(),
-    lastModified: new Date(),
-  }));
+export default function sitemap(): MetadataRoute.Sitemap {
+  const entries: MetadataRoute.Sitemap = [];
+
+  for (const page of pages) {
+    for (const locale of locales) {
+      const url = `${BASE_URL}/${locale}${page}`;
+
+      // Alternates: alle Sprachversionen dieser Seite
+      const languages: Record<string, string> = {};
+      for (const l of locales) {
+        languages[l] = `${BASE_URL}/${l}${page}`;
+      }
+      languages["x-default"] = `${BASE_URL}/de${page}`;
+
+      entries.push({
+        url,
+        lastModified:  new Date(),
+        changeFrequency: page === "" ? "weekly" : "monthly",
+        priority:      page === "" ? 1.0 : 0.8,
+        alternates:    { languages },
+      });
+    }
+  }
+
+  return entries;
 }

@@ -59,7 +59,7 @@
         "Those who have gone through an acquisition and notice that integration is stalling and the cultures are not coming together",
         "Those who have made a decision that is not landing in the organization and no longer know why",
         "Those who have built a new leadership structure that works on paper, but is not actually being practiced",
-        "Those who have been running Lean for years, but the numbers barely move and leadership is not backing it",
+        "Those who run Lean, but the numbers barely move and leadership is not backing it",
         "Those who, after growth, restructuring, or a leadership change, notice that responsibilities, processes, and accountability no longer fit the new reality"
       ],
       "triggers": [
@@ -114,7 +114,7 @@
       "when": {
         "workshops": "When clarity is needed on the starting point, priorities, and decisions, and when a structured start to execution is needed, operationally as well as culturally.",
         "partnership": "When execution over several months requires leadership, clarity, and continuity.",
-        "sparring": "When you are facing a decision you cannot delegate and for which you need a well-founded external assessment."
+        "sparring": "When internal alignment has stalled and no clear decision is emerging\nWhen conflicting interests are blocking decisions\nWhen an independent perspective is needed to create clarity"
       },
       "teaser": {
         "workshops": "After one or two days together, you know where the real bottleneck lies, who is specifically responsible for what, and what will happen over the next 90 days. The question of where to start no longer arises. Not a concept. A first effective step.",

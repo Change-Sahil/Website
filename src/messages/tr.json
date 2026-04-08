@@ -59,7 +59,7 @@
         "Bir satın almanın ardından entegrasyonun durakladığını ve kültürlerin bir araya gelmediğini fark edenler",
         "İşletmede karşılık bulmayan bir karar almış olanlar ve bunun nedenini artık anlayamayanlar",
         "Kâğıt üzerinde işleyen ama gerçekte yaşanmayan yeni bir liderlik yapısı kuranlar",
-        "Yıllardır Lean uygulayan ama rakamların neredeyse hiç değişmediğini ve liderliğin konuyu sahiplenmediğini görenler",
+        "Lean uygulayan ama rakamların neredeyse hiç değişmediğini ve liderliğin konuyu sahiplenmediğini görenler",
         "Büyüme, yeniden yapılanma veya bir liderlik değişikliğinin ardından sorumlulukların, süreçlerin ve görevlerin artık yeni gerçekliğe uymadığını fark edenler"
       ],
       "triggers": [
@@ -114,7 +114,7 @@
       "when": {
         "workshops": "Başlangıç durumu, öncelikler ve kararlar konusunda netliğe ihtiyaç duyulduğunda ve uygulamaya hem operasyonel hem kültürel olarak yapılandırılmış bir başlangıç gerektiğinde.",
         "partnership": "Uygulamanın aylar boyunca liderlik, netlik ve süreklilik gerektirdiği durumlarda.",
-        "sparring": "Devredemeyeceğiniz ve sağlam bir dış değerlendirmeye ihtiyaç duyduğunuz bir kararla karşı karşıya olduğunuzda."
+        "sparring": "İç uyum süreci tıkandığında ve net bir karar oluşmadığında\nFarklı çıkarlar kararları engellediğinde\nNetlik sağlamak için bağımsız bir değerlendirme gerektiğinde"
       },
       "teaser": {
         "workshops": "Bir veya iki günün ardından gerçek darboğazın nerede olduğunu, kimin somut olarak neden sorumlu olduğunu ve önümüzdeki 90 günde ne olacağını bilirsiniz. Nereden başlamanız gerektiği sorusu artık ortadan kalkar. Konsept değil. Etkili bir ilk adım.",

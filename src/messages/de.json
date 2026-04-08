@@ -59,7 +59,7 @@
         "Wer eine Übernahme hinter sich hat und merkt, dass die Integration stockt und die Kulturen nicht zusammenfinden",
         "Wer eine Entscheidung getroffen hat, die im Betrieb nicht ankommt, und nicht mehr weiß, woran das liegt",
         "Wer eine neue Führungsstruktur aufgebaut hat, die auf dem Papier funktioniert, aber in der Realität nicht gelebt wird",
-        "Wer seit Jahren Lean betreibt, aber die Kennzahlen sich kaum bewegen und die Führung das Thema nicht trägt",
+        "Wer Lean betreibt, aber die Kennzahlen sich kaum bewegen und die Führung das Thema nicht trägt",
         "Wer nach Wachstum, Restrukturierung oder einem Führungswechsel merkt, dass Zuständigkeiten, Abläufe und Verantwortung nicht mehr zur neuen Realität passen"
       ],
       "triggers": [
@@ -114,7 +114,7 @@
       "when": {
         "workshops": "Wenn Klarheit über Ausgangslage, Prioritäten und Entscheidungen benötigt wird und ein strukturierter Start in die Umsetzung erfolgen soll: operativ wie kulturell.",
         "partnership": "Wenn Umsetzung über Monate hinweg Führung, Klarheit und Kontinuität erfordert.",
-        "sparring": "Wenn Sie vor einer Entscheidung stehen, die Sie nicht delegieren können und bei der Sie eine fundierte externe Einschätzung benötigen."
+        "sparring": "Wenn interne Abstimmungen festgefahren sind und keine klare Entscheidung entsteht\nWenn unterschiedliche Interessen Entscheidungen blockieren\nWenn eine unabhängige Einordnung notwendig ist, um Klarheit zu schaffen"
       },
       "teaser": {
         "workshops": "Nach einem oder zwei gemeinsamen Tagen wissen Sie, wo der eigentliche Engpass liegt, wer konkret was verantwortet, und was in den nächsten 90 Tagen passiert. Die Frage, womit Sie anfangen sollen, stellt sich danach nicht mehr. Kein Konzept. Ein erster wirkungsvoller Schritt.",

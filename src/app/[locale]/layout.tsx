@@ -122,30 +122,141 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@graph": [
-              {
-                "@type": "Organization",
-                "@id": `${BASE_URL}/#organization`,
-                name: "Change-Werkstatt Sahil",
-                url: BASE_URL,
-                logo: `${BASE_URL}/apple-touch-icon.png`,
-                sameAs: ["https://www.linkedin.com/in/seref-sahil-78304aa4/"],
-              },
+              // ── Person ──────────────────────────────────────────────
               {
                 "@type": "Person",
                 "@id": `${BASE_URL}/#person`,
                 name: "Seref Sahil",
                 url: `${BASE_URL}/de/about`,
+                image: `${BASE_URL}/seref-sahil-change-werkstatt.jpg`,
                 jobTitle: "Transformationsberater",
+                description: "Transformationsberater mit 25+ Jahren operativer Erfahrung in Produktion und Führung. Spezialist für M&A-Integration, Restrukturierung, Führungswechsel und Umsetzungsbegleitung im produzierenden Mittelstand.",
                 worksFor: { "@id": `${BASE_URL}/#organization` },
-                sameAs: ["https://www.linkedin.com/in/seref-sahil-78304aa4/"],
+                knowsAbout: [
+                  "Transformationsberatung",
+                  "M&A-Integration",
+                  "Restrukturierung",
+                  "Führungsentwicklung",
+                  "Operational Excellence",
+                  "Lean Management",
+                  "Post-Merger-Integration",
+                  "Organisationsentwicklung",
+                  "Unternehmenskultur",
+                  "Change Management",
+                  "Produzierender Mittelstand",
+                  "Shopfloor Management",
+                ],
+                knowsLanguage: ["de", "en", "tr", "es", "ar"],
+                sameAs: [
+                  "https://www.linkedin.com/in/seref-sahil-78304aa4/",
+                ],
               },
+              // ── Organization / ProfessionalService ──────────────────
+              {
+                "@type": ["Organization", "ProfessionalService"],
+                "@id": `${BASE_URL}/#organization`,
+                name: "Change-Werkstatt Sahil",
+                alternateName: "Change-Werkstatt",
+                url: BASE_URL,
+                logo: `${BASE_URL}/apple-touch-icon.png`,
+                image: `${BASE_URL}/seref-sahil-change-werkstatt.jpg`,
+                founder: { "@id": `${BASE_URL}/#person` },
+                description: "Beratung für Transformations-, Restrukturierungs- und M&A-Situationen im produzierenden Mittelstand. Fokus auf wirksame Umsetzung, Führungsklarheit und nachhaltige Verankerung — direkt im Betrieb, nicht im Besprechungsraum.",
+                slogan: "Wenn Umsetzung nicht greift",
+                areaServed: [
+                  { "@type": "Country", name: "Deutschland" },
+                  { "@type": "Country", name: "Österreich" },
+                  { "@type": "Country", name: "Schweiz" },
+                  { "@type": "Continent", name: "Europe" },
+                ],
+                serviceType: [
+                  "Transformationsberatung",
+                  "M&A-Integrationsbegleitung",
+                  "Restrukturierungsbegleitung",
+                  "Führungskräfteentwicklung",
+                  "Executive Sparring",
+                  "Werkstatt-Workshops",
+                  "Umsetzungsbegleitung",
+                ],
+                knowsAbout: [
+                  "Transformationsberatung produzierender Mittelstand",
+                  "M&A-Integration Industrie",
+                  "Restrukturierung Fertigung",
+                  "Lean Management",
+                  "Operational Excellence",
+                  "Führungsentwicklung",
+                  "Post-Merger-Integration",
+                  "Shopfloor Management",
+                ],
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Aalen",
+                  addressCountry: "DE",
+                },
+                sameAs: [
+                  "https://www.linkedin.com/in/seref-sahil-78304aa4/",
+                ],
+              },
+              // ── WebSite ──────────────────────────────────────────────
               {
                 "@type": "WebSite",
                 "@id": `${BASE_URL}/#website`,
                 url: BASE_URL,
                 name: "Change-Werkstatt Sahil",
                 publisher: { "@id": `${BASE_URL}/#organization` },
-                inLanguage: locale,
+                inLanguage: ["de", "en", "tr", "es"],
+                potentialAction: {
+                  "@type": "SearchAction",
+                  target: `${BASE_URL}/de/contact`,
+                  query: "Transformationsberatung Mittelstand",
+                },
+              },
+              // ── FAQPage ──────────────────────────────────────────────
+              {
+                "@type": "FAQPage",
+                "@id": `${BASE_URL}/#faq`,
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "Was macht Seref Sahil als Transformationsberater?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Seref Sahil begleitet Führungsteams in produzierenden Mittelständlern durch anspruchsvolle Veränderungssituationen: M&A-Integrationen, Restrukturierungen, Führungswechsel, Wachstumsphasen und Unternehmensnachfolge. Er arbeitet direkt im Betrieb — nicht an Konzepten, sondern an der Frage, warum Umsetzung nicht greift und was sich konkret ändern muss.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Für wen ist die Change-Werkstatt Sahil geeignet?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Die Change-Werkstatt richtet sich an Geschäftsführer, Werksleiter und Führungsteams in produzierenden Unternehmen mit 50–2.000 Mitarbeitenden, die gerade in einer messbaren Veränderungssituation stecken und Unterstützung bei der wirksamen Umsetzung benötigen.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Welche Formate bietet die Change-Werkstatt Sahil an?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Es gibt drei Formate: Transformationspartnerschaft (mehrmonatige Begleitung direkt im Betrieb), Werkstatt-Workshops (strukturierte Arbeitssessions für konkrete Fragestellungen) und Executive Sparring (vertraulicher Sparringspartner für Führungsentscheidungen).",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Was unterscheidet die Change-Werkstatt Sahil von klassischer Unternehmensberatung?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Kein Konzept, das erklärt werden muss — sondern Begleitung, die wirkt. Seref Sahil arbeitet nicht im Besprechungsraum, sondern dort, wo Entscheidungen Wirkung entfalten sollen: in Führungssituationen, in Abstimmungen, im Betrieb. Mit 25+ Jahren eigener Praxiserfahrung in Produktion und Führung.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "In welchen Sprachen arbeitet Seref Sahil?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Seref Sahil arbeitet mehrsprachig: Deutsch, Englisch, Türkisch, Spanisch und Arabisch. Diese Mehrsprachigkeit ermöglicht es, kulturelle und identitätsbezogene Spannungen in internationalen Transformationssituationen früh sichtbar zu machen.",
+                    },
+                  },
+                ],
               },
             ],
           }),

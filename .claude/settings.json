@@ -23,7 +23,11 @@
       "Bash(sed -n '98,104p' \"c:/Users/seref/change-werkstatt-sahil/src/messages/es.json\")",
       "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/seref/change-werkstatt-sahil/src/messages/de.json'', ''utf8''\\)\\); console.log\\(''valid''\\)\")",
       "Bash(ls c:/Users/seref/change-werkstatt-sahil/public/*.jpg)",
-      "Bash(ls c:/Users/seref/change-werkstatt-sahil/public/*.png)"
+      "Bash(ls c:/Users/seref/change-werkstatt-sahil/public/*.png)",
+      "Bash(powershell -Command ':*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\seref\\\\change-werkstatt-sahil\\\\create-shortcut.ps1\")",
+      "Bash(powershell -Command \"[Environment]::GetFolderPath\\('Desktop'\\)\")",
+      "Bash(where node:*)"
     ],
     "additionalDirectories": [
       "C:\\Users\\seref\\poker-gruppe\\src\\app",

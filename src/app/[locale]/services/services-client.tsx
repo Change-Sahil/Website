@@ -175,9 +175,20 @@ export default function ServicesClient() {
                       <span className="dot" />
                       <span>{t("ui.labels.whenTitle")}</span>
                     </div>
-                    <p className="mt-3 pl-[18px] text-[15px] leading-7 break-words" style={{ color: "rgba(var(--ink), .74)" }}>
-                      {active.when}
-                    </p>
+                    {active.when.includes('\n') ? (
+                      <ul className="mt-3 grid gap-y-2">
+                        {active.when.split('\n').map((line, i) => (
+                          <li key={i} className="flex gap-3 text-[15px] leading-7 break-words" style={{ color: "rgba(var(--ink), .74)" }}>
+                            <span className="mt-[11px] h-1.5 w-1.5 flex-none rounded-full" style={{ background: "rgb(var(--accent))" }} />
+                            <span>{line}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="mt-3 pl-[18px] text-[15px] leading-7 break-words" style={{ color: "rgba(var(--ink), .74)" }}>
+                        {active.when}
+                      </p>
+                    )}
                     {active.topics.length ? (
                       <div className="mt-8">
                         <div className="section-eyebrow">

@@ -59,7 +59,7 @@
         "Quien ha pasado por una adquisición y nota que la integración se estanca y que las culturas no terminan de encontrarse",
         "Quien ha tomado una decisión que no termina de llegar a la organización y ya no sabe por qué",
         "Quien ha construido una nueva estructura de liderazgo que funciona sobre el papel, pero no se vive en la realidad",
-        "Quien lleva años aplicando Lean, pero los indicadores apenas se mueven y la dirección no sostiene el tema",
+        "Quien aplica Lean, pero los indicadores apenas se mueven y la dirección no sostiene el tema",
         "Quien, tras un crecimiento, una reestructuración o un cambio de liderazgo, nota que responsabilidades, procesos y rendición de cuentas ya no encajan con la nueva realidad"
       ],
       "triggers": [
@@ -114,7 +114,7 @@
       "when": {
         "workshops": "Cuando se necesita claridad sobre la situación de partida, las prioridades y las decisiones, y cuando hace falta un inicio estructurado de la ejecución, tanto en lo operativo como en lo cultural.",
         "partnership": "Cuando la ejecución durante varios meses requiere liderazgo, claridad y continuidad.",
-        "sparring": "Cuando se enfrenta a una decisión que no puede delegar y para la que necesita una valoración externa fundamentada."
+        "sparring": "Cuando la coordinación interna está bloqueada y no surge ninguna decisión clara\nCuando intereses divergentes impiden avanzar\nCuando se necesita una perspectiva independiente para crear claridad"
       },
       "teaser": {
         "workshops": "Tras uno o dos días juntos, sabe dónde está el verdadero cuello de botella, quién es concretamente responsable de qué y qué ocurrirá en los próximos 90 días. La pregunta de por dónde empezar deja de plantearse. No un concepto. Un primer paso efectivo.",

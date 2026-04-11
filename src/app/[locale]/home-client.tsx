@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Reveal } from "@/components/Reveal";
 import { blurDataURL } from "@/lib/blur";
@@ -24,6 +25,7 @@ export default function HomeClient() {
   const pillarItems = asArray<{ title: string; text: string; meta?: string }>(pillars?.items);
   const targets  = asArray<string>(audience?.targets);
   const triggers = asArray<string>(audience?.triggers);
+  const [activeTab, setActiveTab] = useState<0 | 1>(0);
 
   return (
     <div className="space-y-14 md:space-y-16">
@@ -62,23 +64,44 @@ export default function HomeClient() {
           <div className="section-eyebrow"><span className="dot" /><span>{audience?.subtitle ?? ""}</span></div>
           <h2 className="mt-3 section-title">{audience?.title ?? ""}</h2>
 
-          <div className="mt-6 grid gap-6 lg:grid-cols-[5.3fr_6.7fr]">
-            <div className="rounded-2xl border border-slate-200 bg-slate-50/40 p-6">
-              <div className="section-eyebrow"><span>{audience?.boxTitles?.[0] ?? ""}</span></div>
-              <ul className="mt-5 grid gap-y-3 text-[15px] leading-7 text-slate-700">
-                {targets.map((x, i) => (
-                  <li key={i} className="flex min-w-0 gap-3">
-                    <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-accent-90" />
-                    <span className="min-w-0">{x}</span>
-                  </li>
-                ))}
-              </ul>
+          <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50/40 overflow-hidden">
+            {/* Tab-Leiste */}
+            <div className="flex border-b border-slate-200">
+              {[audience?.boxTitles?.[0] ?? "", audience?.boxTitles?.[1] ?? ""].map((label, i) => (
+                <button
+                  key={i}
+                  onClick={() => setActiveTab(i as 0 | 1)}
+                  className="group flex-1 px-6 py-4 text-left transition-colors"
+                  style={{
+                    background: activeTab === i ? "#fff" : "transparent",
+                    borderBottom: activeTab === i ? "2px solid rgb(var(--accent))" : "2px solid transparent",
+                    marginBottom: "-1px",
+                    cursor: activeTab === i ? "default" : "pointer",
+                  }}
+                >
+                  <span
+                    className="flex items-center gap-2 text-[11px] font-[700] tracking-[0.20em] uppercase transition-colors"
+                    style={{ color: activeTab === i ? "rgb(var(--accent))" : "rgba(var(--ink),.55)" }}
+                  >
+                    {label}
+                    {activeTab === i ? (
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style={{ flexShrink: 0 }}>
+                        <path d="M6 2v8M2 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    ) : (
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style={{ opacity: 0.5, flexShrink: 0 }}>
+                        <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    )}
+                  </span>
+                </button>
+              ))}
             </div>
 
-            <div className="rounded-2xl border border-slate-200 bg-slate-50/40 p-6">
-              <div className="section-eyebrow"><span>{audience?.boxTitles?.[1] ?? ""}</span></div>
-              <ul className="mt-5 grid gap-y-3 text-[15px] leading-7 text-slate-700">
-                {triggers.map((x, i) => (
+            {/* Tab-Inhalt */}
+            <div className="p-6">
+              <ul className="grid gap-y-3 text-[15px] leading-7 text-slate-700">
+                {(activeTab === 0 ? targets : triggers).map((x, i) => (
                   <li key={i} className="flex min-w-0 gap-3">
                     <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-accent-90" />
                     <span className="min-w-0">{x}</span>

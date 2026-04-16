@@ -7,6 +7,7 @@
     "approach": "Approach",
     "about": "About",
     "speaking": "Speaking & Teaching",
+    "contact": "Contact",
     "menuOpen": "Open menu",
     "menuClose": "Close menu"
   },
@@ -166,8 +167,8 @@
       },
       "duration": {
         "workshops": "1-2 days",
-        "partnership": "Monthly",
-        "sparring": "Monthly"
+        "partnership": "Collaboration is structured on a monthly basis, aligned with the situation and the dynamics of progress.",
+        "sparring": "Collaboration is structured on a monthly basis, aligned with the situation and the dynamics of progress."
       },
       "deliverables": {
         "workshops": [
@@ -274,7 +275,7 @@
     "profileTitle": "Profile",
     "profileText": "Acceptance emerges where language, reality, and responsibility fit together.\n\nIn M&A, integration, and transformation situations, execution rarely fails because of formal targets, but because of hidden cultural and identity-related tensions. My multilingual access to organizations and my academic work on these dynamics make it possible to surface such tensions early, before they unfold operationally or politically.\n\nMy work is grounded in firsthand experience in plant, leadership, and management roles within industrial environments. This leads to a clear approach: change must fit operational reality, be owned by leadership, and be embedded in everyday work.\n\nThis is how execution emerges, not as something that needs to be explained, but as something that is carried and lived."
     ,
-    "clarityText": "I do not take on operational execution. No project responsibility. No line role. I work at the point where decisions are made about how leadership and prioritization are handled.",
+    "clarityText": "I do not take on operational execution, project responsibility, or line management roles.\nI support leadership in enabling, steering, and making implementation effective.",
     "bulletsEyebrow": "Foundation of my work",
     "bullets": [
       "25+ years of operational experience: from summer jobs to cross-site responsibility for production and logistics",

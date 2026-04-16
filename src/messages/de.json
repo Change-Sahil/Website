@@ -7,6 +7,7 @@
     "approach": "Vorgehen",
     "about": "Über mich",
     "speaking": "Vorträge & Lehre",
+    "contact": "Kontakt",
     "menuOpen": "Menü öffnen",
     "menuClose": "Menü schließen"
   },
@@ -45,7 +46,7 @@
     "externalReason": "Internes Wissen ist selten das Problem. Was fehlt, ist eine Einschätzung ohne organisationale Eigeninteressen. Jemand, der benennt, was alle spüren, aber niemand intern ohne Konsequenzen aussprechen kann.",
     "divider": {
       "kicker": "Kurz. Praxisnah. Wirksam.",
-      "title": "Weniger Abstraktion\nMehr operative Realität",
+      "title": "Weniger Abstraktion.\nMehr operative Realität.",
       "text": "Sie bekommen die Kombination meiner Expertise aus verschiedenen Zugängen: operative Verantwortung im Betrieb aus erster Hand, wissenschaftliche Tiefe zu M&A, Kulturintegration und Organisationsentwicklung, und die Fähigkeit, in fünf Sprachen direkt mit Führung und Belegschaft zu arbeiten."
     },
     "audience": {
@@ -166,8 +167,8 @@
       },
       "duration": {
         "workshops": "1-2 Tage",
-        "partnership": "Monatlich",
-        "sparring": "Monatlich"
+        "partnership": "Die Zusammenarbeit erfolgt monatsweise und orientiert sich an der jeweiligen Situation und Fortschrittsdynamik.",
+        "sparring": "Die Zusammenarbeit erfolgt monatsweise und orientiert sich an der jeweiligen Situation und Fortschrittsdynamik."
       },
       "deliverables": {
         "workshops": [
@@ -273,7 +274,7 @@
     ],
     "profileTitle": "Profil",
     "profileText": "Akzeptanz entsteht dort, wo Sprache, Realität und Verantwortung zusammenpassen.\n\nIn M&A-, Integrations- und Transformationssituationen scheitert Umsetzung selten an formalen Zielsetzungen, sondern an verdeckten kulturellen und identitätsbezogenen Spannungen. Mein mehrsprachiger Zugang zur Organisation und die wissenschaftliche Auseinandersetzung mit diesen Zusammenhängen ermöglichen es, solche Spannungen früh sichtbar zu machen, bevor sie operative oder politische Wirkung entfalten.\n\nMeine Arbeit basiert auf eigener Erfahrung in Werk, Führung und Management im industriellen Umfeld. Daraus ergibt sich ein klarer Ansatz: Veränderungen müssen zur operativen Realität passen, von Führung übernommen werden und im Arbeitsalltag verankert sein.\n\nSo entsteht Umsetzung, die nicht erklärt werden muss, sondern getragen und gelebt wird.",
-    "clarityText": "Ich übernehme keine operative Umsetzung. Keine Projektverantwortung. Keine Linienfunktion. Ich arbeite an der Stelle, an der entschieden wird, wie geführt und priorisiert wird.",
+    "clarityText": "Ich übernehme keine operative Umsetzung, keine Projektverantwortung und keine Linienfunktion.\nIch begleite die Führung dabei, Umsetzung zu ermöglichen, zu steuern und wirksam zu machen.",
     "bulletsEyebrow": "Fundament meiner Arbeit",
     "bullets": [
       "25+ Jahre operative Praxiserfahrung: vom Ferienjob bis zur standortübergreifenden Verantwortung für Produktion und Logistik",

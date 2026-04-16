@@ -7,6 +7,7 @@
     "approach": "Enfoque",
     "about": "Sobre mí",
     "speaking": "Conferencias y docencia",
+    "contact": "Contacto",
     "menuOpen": "Abrir menú",
     "menuClose": "Cerrar menú"
   },
@@ -166,8 +167,8 @@
       },
       "duration": {
         "workshops": "1-2 días",
-        "partnership": "Mensual",
-        "sparring": "Mensual"
+        "partnership": "La colaboración se estructura de forma mensual y se adapta a la situación y a la dinámica de avance.",
+        "sparring": "La colaboración se estructura de forma mensual y se adapta a la situación y a la dinámica de avance."
       },
       "deliverables": {
         "workshops": [
@@ -273,7 +274,7 @@
     ],
     "profileTitle": "Perfil",
     "profileText": "La aceptación surge allí donde el lenguaje, la realidad y la responsabilidad encajan.\n\nEn situaciones de M&A, integración y transformación, la ejecución rara vez fracasa por objetivos formales, sino por tensiones culturales y de identidad ocultas. Mi acceso multilingüe a las organizaciones y mi trabajo académico sobre estas dinámicas me permiten hacer visibles esas tensiones de forma temprana, antes de que desplieguen efectos operativos o políticos.\n\nMi trabajo se basa en experiencia directa en planta, liderazgo y dirección dentro de entornos industriales. De ahí surge un enfoque claro: el cambio debe encajar con la realidad operativa, ser asumido por el liderazgo y estar anclado en el trabajo diario.\n\nAsí surge una ejecución que no necesita explicación, sino que se sostiene y se vive.",
-    "clarityText": "No asumo ejecución operativa. Ninguna responsabilidad de proyecto. Ninguna función de línea. Trabajo en el punto en el que se decide cómo se lidera y se prioriza.",
+    "clarityText": "No asumo ejecución operativa, responsabilidad de proyecto ni funciones de línea.\nAcompaño a la dirección para posibilitar, orientar y hacer efectiva la implementación.",
     "bulletsEyebrow": "Base de mi trabajo",
     "bullets": [
       "Más de 25 años de experiencia operativa: desde trabajos de verano hasta la responsabilidad interplanta de producción y logística",

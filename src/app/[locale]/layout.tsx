@@ -153,7 +153,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
               },
               // ── Organization / ProfessionalService ──────────────────
               {
-                "@type": ["Organization", "ProfessionalService"],
+                "@type": ["Organization", "ProfessionalService", "LocalBusiness"],
                 "@id": `${BASE_URL}/#organization`,
                 name: "Change-Werkstatt Sahil",
                 alternateName: "Change-Werkstatt",
@@ -163,6 +163,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
                 founder: { "@id": `${BASE_URL}/#person` },
                 description: "Beratung für Transformations-, Restrukturierungs- und M&A-Situationen im produzierenden Mittelstand. Fokus auf wirksame Umsetzung, Führungsklarheit und nachhaltige Verankerung — direkt im Betrieb, nicht im Besprechungsraum.",
                 slogan: "Wenn Umsetzung nicht greift",
+                priceRange: "€€€",
                 areaServed: [
                   { "@type": "Country", name: "Deutschland" },
                   { "@type": "Country", name: "Österreich" },
@@ -177,6 +178,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
                   "Executive Sparring",
                   "Werkstatt-Workshops",
                   "Umsetzungsbegleitung",
+                  "Unternehmensberatung",
                 ],
                 knowsAbout: [
                   "Transformationsberatung produzierender Mittelstand",
@@ -187,11 +189,20 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
                   "Führungsentwicklung",
                   "Post-Merger-Integration",
                   "Shopfloor Management",
+                  "Unternehmensberatung Aalen",
                 ],
                 address: {
                   "@type": "PostalAddress",
+                  streetAddress: "Aalen",
                   addressLocality: "Aalen",
+                  postalCode: "73430",
+                  addressRegion: "Baden-Württemberg",
                   addressCountry: "DE",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 48.8374,
+                  longitude: 10.0931,
                 },
                 sameAs: [
                   "https://www.linkedin.com/in/seref-sahil-78304aa4/",

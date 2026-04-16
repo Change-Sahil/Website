@@ -68,6 +68,7 @@ export default function Header() {
   const hrefApproach = `/${locale}/approach`;
   const hrefAbout    = `/${locale}/about`;
   const hrefSpeaking = `/${locale}/speaking`;
+  const hrefContact  = `/${locale}/contact`;
 
   const activeBar = (
     <span
@@ -103,6 +104,7 @@ export default function Header() {
               { href: hrefApproach, label: tNav("approach") },
               { href: hrefAbout,    label: tNav("about") },
               { href: hrefSpeaking, label: tNav("speaking") },
+              { href: hrefContact,  label: tNav("contact") },
             ].map(({ href, label }) => (
               <Link key={href} className={navLinkClass(href)} href={href}>
                 {label}
@@ -175,6 +177,7 @@ export default function Header() {
               <Link className={mobileLinkClass(hrefApproach)} href={hrefApproach} onClick={closeMenu}>{tNav("approach")}</Link>
               <Link className={mobileLinkClass(hrefAbout)}    href={hrefAbout}    onClick={closeMenu}>{tNav("about")}</Link>
               <Link className={mobileLinkClass(hrefSpeaking)} href={hrefSpeaking} onClick={closeMenu}>{tNav("speaking")}</Link>
+              <Link className={mobileLinkClass(hrefContact)}  href={hrefContact}  onClick={closeMenu}>{tNav("contact")}</Link>
               <div className="my-2 border-t border-slate-200/70" />
               <div className="px-1 py-1" onClick={closeMenu}>
                 <LocaleSwitcher />

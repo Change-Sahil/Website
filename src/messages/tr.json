@@ -7,6 +7,7 @@
     "approach": "Yaklaşım",
     "about": "Hakkımda",
     "speaking": "Konuşmalar ve eğitim",
+    "contact": "İletişim",
     "menuOpen": "Menüyü aç",
     "menuClose": "Menüyü kapat"
   },
@@ -166,8 +167,8 @@
       },
       "duration": {
         "workshops": "1-2 gün",
-        "partnership": "Aylık",
-        "sparring": "Aylık"
+        "partnership": "İşbirliği aylık bazda yapılandırılmış olup duruma ve ilerleme dinamiğine göre şekillenir.",
+        "sparring": "İşbirliği aylık bazda yapılandırılmış olup duruma ve ilerleme dinamiğine göre şekillenir."
       },
       "deliverables": {
         "workshops": [
@@ -273,7 +274,7 @@
     ],
     "profileTitle": "Profil",
     "profileText": "Kabul, dil, gerçeklik ve sorumluluk birbirine uyduğunda ortaya çıkar.\n\nM&A, entegrasyon ve dönüşüm durumlarında uygulama nadiren resmî hedefler nedeniyle başarısız olur; asıl neden çoğu zaman gizli kültürel ve kimlikle ilgili gerilimlerdir. Organizasyonlara çok dilli erişimim ve bu dinamikler üzerine akademik çalışmam, bu tür gerilimleri erken aşamada görünür kılmayı mümkün hâle getirir, daha operasyonel veya politik etki ortaya çıkmadan önce.\n\nÇalışmam, endüstriyel ortamda saha, liderlik ve yönetim rollerinde edindiğim doğrudan deneyime dayanır. Bundan net bir yaklaşım ortaya çıkar: değişim operasyonel gerçekliğe uymalı, liderlik tarafından sahiplenilmeli ve günlük işe yerleşmelidir.\n\nBöylece açıklanması gerekmeyen, sahiplenilen ve yaşanan bir uygulama ortaya çıkar.",
-    "clarityText": "Operasyonel uygulamayı üstlenmem. Proje sorumluluğu yok. Hat fonksiyonu yok. Nasıl yönetileceği ve nasıl önceliklendirileceği konusunda kararların alındığı noktada çalışırım.",
+    "clarityText": "Operasyonel uygulama, proje sorumluluğu veya hat yönetimi üstlenmiyorum.\nLiderliği, uygulamayı mümkün kılmak, yönlendirmek ve etkili hale getirmek konusunda destekliyorum.",
     "bulletsEyebrow": "Çalışmamın temeli",
     "bullets": [
       "25+ yıllık operasyonel deneyim: yaz işlerinden üretim ve lojistikte lokasyonlar arası sorumluluğa",

@@ -21,7 +21,7 @@
     "blocks": [],
     "trust": [],
     "hero": {
-      "kicker": "Für Geschäftsführer und Werksleiter im produzierenden Mittelstand",
+      "kicker": "Für Geschäftsführer und Werkleiter im produzierenden Mittelstand",
       "title": "Ihre Entscheidung ist gefallen. Warum bewegt sich im Betrieb trotzdem zu wenig?",
       "intro": "Der Grund liegt selten am fehlenden Willen. Er liegt an unklarer Führung, ungeklärten Verantwortlichkeiten und fehlender Abstimmung an den entscheidenden Stellen. Genau dort komme ich dazu.\n\nIch arbeite mit der Führung und direkt auf dem Shopfloor in produzierenden Unternehmen. Nicht an Konzepten, sondern an der Frage, warum Umsetzung nicht greift und was sich konkret ändern muss. Nicht im Besprechungsraum, sondern dort, wo Entscheidungen Wirkung entfalten sollen. In Führungssituationen. In Abstimmungen. Im Betrieb."
     },
@@ -51,7 +51,7 @@
     },
     "audience": {
       "title": "Für wen ich arbeite und wann es konkret wird",
-      "subtitle": "Typische Auftraggeber und Situationen im produzierenden Mittelstand",
+      "subtitle": "Typische Auftraggeber und Situationen",
       "boxTitles": [
         "Wer mich beauftragt",
         "Das konkrete Problem"
@@ -119,7 +119,7 @@
       },
       "teaser": {
         "workshops": "Nach einem oder zwei gemeinsamen Tagen wissen Sie, wo der eigentliche Engpass liegt, wer konkret was verantwortet, und was in den nächsten 90 Tagen passiert. Die Frage, womit Sie anfangen sollen, stellt sich danach nicht mehr. Kein Konzept. Ein erster wirkungsvoller Schritt.",
-        "partnership": "Wenn Veränderung über Monate hinweg getragen werden muss, reicht ein einzelner Workshop nicht. Dann braucht es einen stabilen Führungs- und Entscheidungsrhythmus.\n\nMonatliche Begleitung, die Führung, Rhythmus und Fortschritt verbindet, bis Umsetzung greift und Teil der organisationalen Realität wird. Die Umsetzungspartnerschaft versteht sich als zeitlich begrenzte Mitgestaltung und Mitsteuerung von Führungs- und Entscheidungsprozessen in kritischen Phasen, nicht als operative Umsetzung. Sie müssen nicht mehr allein einschätzen, ob Sie noch am richtigen Hebel arbeiten.",
+        "partnership": "Wenn Veränderung über Monate hinweg getragen werden muss, reicht ein einzelner Workshop nicht. Dann braucht es einen stabilen Führungs- und Entscheidungsrhythmus.\n\nDie Umsetzungspartnerschaft bedeutet nicht, dass ich jeden Tag bei Ihnen bin. Sie erfolgt beispielsweise durch 1 bis 2 feste Präsenztage pro Woche in Ihrem Betrieb oder durch wöchentliche, intensive Steuerungstermine mit den Verantwortlichen. Die Umsetzungspartnerschaft versteht sich als zeitlich begrenzte Mitgestaltung und Mitsteuerung von Führungs- und Entscheidungsprozessen in kritischen Phasen, nicht als operative Umsetzung.\n\nMein Ziel ist es, mich selbst überflüssig zu machen: Ich bleibe an Ihrer Seite, bis Ihre Führungskräfte den Rhythmus selbstständig tragen und die Veränderung Teil des Alltags geworden ist.",
         "sparring": "Sie stehen vor einer Entscheidung, die Sie nicht delegieren können und nicht allein treffen wollen. Kein Coaching. Keine allgemeinen Empfehlungen. Sondern eine fundierte Einschätzung und ein klarer nächster Schritt."
       },
       "notSuitable": {
@@ -160,10 +160,20 @@
         "partnership": "Umsetzungspartnerschaft",
         "sparring": "Entscheidungsklarheit"
       },
+      "tagline": {
+        "workshops": "Kein Konzept. Ein erster wirkungsvoller Schritt.",
+        "partnership": "Ich bleibe, bis Ihr Team die Umsetzung selbst trägt.",
+        "sparring": "Kein Coaching. Eine fundierte Einschätzung."
+      },
       "tabRole": {
         "workshops": "Einstieg & Klärung",
         "partnership": "Kontinuierliche Umsetzung",
         "sparring": "Kritische Entscheidungen"
+      },
+      "durationShort": {
+        "workshops": "1–2 Tage",
+        "partnership": "Mehrere Monate",
+        "sparring": "Mehrere Monate"
       },
       "duration": {
         "workshops": "1-2 Tage",
@@ -251,9 +261,9 @@
     "toolboxSubtitle": "Auswahlweise, je nach Bedarf.",
     "toolbox": [
       "Shopfloor Management und Führungsroutinen",
-      "SMED, Wertstromanalyse, KVP-Logik",
-      "Change Governance und Kommunikationsarchitektur",
-      "Kultur- und Identitätsarbeit in M&A (Pre- und Post-Merger)"
+      "Rüstzeitoptimierung, fließende Abläufe und systematische Problemlösung",
+      "Klare Entscheidungswege und verlässliche Kommunikation",
+      "Kulturelle Integration und Identitätsarbeit vor und nach Übernahmen"
     ],
     "bridge": "Je nach Anlass und Ausgangslage arbeite ich in unterschiedlichen Formaten: vom kompakten Workshop bis zur längerfristigen Begleitung.",
     "bridgeCta": "Leistungen ansehen →",
@@ -274,7 +284,7 @@
     ],
     "profileTitle": "Profil",
     "profileText": "Akzeptanz entsteht dort, wo Sprache, Realität und Verantwortung zusammenpassen.\n\nIn M&A-, Integrations- und Transformationssituationen scheitert Umsetzung selten an formalen Zielsetzungen, sondern an verdeckten kulturellen und identitätsbezogenen Spannungen. Mein mehrsprachiger Zugang zur Organisation und die wissenschaftliche Auseinandersetzung mit diesen Zusammenhängen ermöglichen es, solche Spannungen früh sichtbar zu machen, bevor sie operative oder politische Wirkung entfalten.\n\nMeine Arbeit basiert auf eigener Erfahrung in Werk, Führung und Management im industriellen Umfeld. Daraus ergibt sich ein klarer Ansatz: Veränderungen müssen zur operativen Realität passen, von Führung übernommen werden und im Arbeitsalltag verankert sein.\n\nSo entsteht Umsetzung, die nicht erklärt werden muss, sondern getragen und gelebt wird.",
-    "clarityText": "Ich übernehme keine operative Umsetzung, keine Projektverantwortung und keine Linienfunktion.\nIch begleite die Führung dabei, Umsetzung zu ermöglichen, zu steuern und wirksam zu machen.",
+    "clarityText": "Ich arbeite direkt mit Ihnen auf dem Shopfloor, übernehme aber bewusst nicht den Job Ihrer Führungskräfte. Meine Rolle ist es, als Sparringspartner zu agieren: Ich moderiere kritische Schnittstellen, etabliere verbindliche Führungsroutinen und helfe, verdeckte Spannungen direkt dort aufzulösen, wo sie entstehen. So befähige ich Ihr Team, die Umsetzung selbst erfolgreich zu steuern, anstatt eine Abhängigkeit von mir als externem Dienstleister aufzubauen.",
     "bulletsEyebrow": "Fundament meiner Arbeit",
     "bullets": [
       "25+ Jahre operative Praxiserfahrung: vom Ferienjob bis zur standortübergreifenden Verantwortung für Produktion und Logistik",
@@ -286,7 +296,7 @@
     "linkedInLabel": "LinkedIn-Profil ansehen",
     "practiceEyebrow": "Projekterfahrung",
     "practiceTitle": "Erfahrung aus der Praxis",
-    "practiceIntro": "Wenn Bereiche nicht zusammenarbeiten. Wenn Maßnahmen beschlossen, aber nicht umgesetzt werden. Wenn Führung zwischen Druck, Erwartungen und Realität steht. Aus solchen Situationen stammt meine Erfahrung, nicht aus Fallstudien.",
+    "practiceIntro": "Ich war 25 Jahre lang auf Ihrer Seite des Tisches, vom Ferienjob bis zur standortübergreifenden Produktionsleitung. Ich kenne den Betrieb, die Führung und den Druck aus eigener Erfahrung, nicht aus Fallstudien. Deshalb arbeite ich heute nicht wie ein klassischer Berater mit abstrakten Konzepten, sondern bringe den Pragmatismus eines erfahrenen Insiders mit, der weiß, wie Entscheidungen in der operativen Realität tatsächlich umgesetzt werden.",
     "practiceItems": [
       {
         "title": "Post-Merger-Integration",
@@ -294,11 +304,11 @@
       },
       {
         "title": "Lean & Operational Excellence",
-        "text": "Einführung und Verstetigung von KVP, SMED, 5S und Wertstromoptimierung: nicht als Methoden-Rollout, sondern als Führungsarbeit im Tagesgeschäft."
+        "text": "Einführung und Verstetigung effizienter Produktions- und Rüstprozesse: nicht als Methoden-Rollout, sondern als Führungsarbeit im Tagesgeschäft."
       },
       {
         "title": "Reorganisation & Führungsentwicklung",
-        "text": "Aufbau standortübergreifender Führungsstrukturen und Entwicklung von Führungskräften in Matrix-Organisationen unter laufendem Betrieb."
+        "text": "Aufbau standortübergreifender Führungsstrukturen und Klärung von Verantwortlichkeiten über Bereichsgrenzen hinweg unter laufendem Betrieb."
       },
       {
         "title": "Restrukturierung & Kulturverankerung",
@@ -310,7 +320,7 @@
       },
       {
         "title": "Wertstrom- & Schnittstellenklärung",
-        "text": "Optimierung von Wertströmen in Matrix-Organisationen: Budgetverantwortung, Kostenstellensteuerung und Multiprojektmanagement in Fertigung und Logistik."
+        "text": "Reibungslose Abläufe an kritischen Schnittstellen: Budgetverantwortung, Kostenstellensteuerung und Multiprojektmanagement in Fertigung und Logistik."
       }
     ],
     "testimonialsEyebrow": "Was andere sagen",
@@ -362,12 +372,12 @@
       },
       {
         "title": "M&A Integration",
-        "subtitle": "Kultur, Identität und Operating Model vor und nach dem Deal",
+        "subtitle": "Kultur, Identität und funktionierende Betriebsmodelle",
         "description": "Der wirtschaftliche Erfolg von Zusammenschlüssen entscheidet sich nach dem Closing: in Zusammenarbeit, Führung und Identität. Basierend auf Praxis und Forschung (DBA) beleuchte ich, wie Kultur- und Identitätsfragen frühzeitig adressiert werden können und wie ein Operating Model entsteht, das Leistungsfähigkeit sichert, ohne die kulturelle DNA zu verlieren."
       },
       {
         "title": "Change Governance",
-        "subtitle": "Entscheiden, kommunizieren, verankern",
+        "subtitle": "Das Betriebssystem der Transformation",
         "description": "Veränderung braucht einen klaren Rahmen, sonst entsteht Unklarheit und Reibung. Change Governance ist das Betriebssystem der Transformation: Entscheidungswege, Rollen, Rhythmus und Kommunikation. Der Vortrag zeigt, wie Governance pragmatisch so aufgebaut wird, dass Entscheidungen greifen, Kommunikation Vertrauen schafft und neue Arbeitsweisen nicht verpuffen."
       },
       {

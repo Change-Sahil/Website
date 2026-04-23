@@ -119,7 +119,7 @@
       },
       "teaser": {
         "workshops": "Bir veya iki günün ardından gerçek darboğazın nerede olduğunu, kimin somut olarak neden sorumlu olduğunu ve önümüzdeki 90 günde ne olacağını bilirsiniz. Nereden başlamanız gerektiği sorusu artık ortadan kalkar. Konsept değil. Etkili bir ilk adım.",
-        "partnership": "Değişimin aylar boyunca taşınması gerektiğinde tek bir atölye yeterli olmaz. İstikrarlı bir liderlik ve karar ritmi gerekir.\n\nUygulama işleyip organizasyonel gerçekliğin parçası hâline gelene kadar liderliği, ritmi ve ilerlemeyi birbirine bağlayan aylık destek. Uygulama ortaklığı, operasyonel uygulama değil, kritik aşamalarda liderlik ve karar süreçlerinin zaman sınırlı ortak tasarımı ve ortak yönlendirilmesi olarak anlaşılır. Hâlâ doğru kaldıraç üzerinde çalışıp çalışmadığınızı artık tek başınıza değerlendirmek zorunda kalmazsınız.",
+        "partnership": "Değişimin aylar boyunca taşınması gerektiğinde tek bir atölye yeterli olmaz. İstikrarlı bir liderlik ve karar ritmi gerekir.\n\nUygulama ortaklığı, her gün yanınızda olduğum anlamına gelmez. Örneğin haftada 1-2 sabit saha gününüyle ya da sorumlularla haftalık yoğun yönlendirme toplantılarıyla gerçekleşir. Ortaklık, operasyonel uygulama değil, kritik aşamalarda liderlik ve karar süreçlerinin zaman sınırlı ortak tasarımı ve yönlendirilmesi olarak anlaşılır.\n\nHedefim kendimi gereksiz kılmaktır: Liderleriniz ritmi bağımsız olarak taşıyana ve değişim günlük hayatın parçası hâline gelene kadar yanınızda kalırım.",
         "sparring": "Devredemeyeceğiniz ve tek başınıza almak istemediğiniz bir kararla karşı karşıyasınız. Koçluk değil. Genel tavsiyeler değil. Sağlam bir değerlendirme ve net bir sonraki adım."
       },
       "notSuitable": {
@@ -160,10 +160,20 @@
         "partnership": "Uygulama Ortaklığı",
         "sparring": "Karar Netliği"
       },
+      "tagline": {
+        "workshops": "Konsept yok. Etkili bir ilk adım.",
+        "partnership": "Ekibiniz uygulamayı kendi başına taşıyana kadar yanınızdayım.",
+        "sparring": "Koçluk yok. Bağımsız ve sağlam bir değerlendirme."
+      },
       "tabRole": {
         "workshops": "Başlangıç ve netleştirme",
         "partnership": "Sürekli uygulama",
         "sparring": "Kritik kararlar"
+      },
+      "durationShort": {
+        "workshops": "1–2 gün",
+        "partnership": "Birkaç ay",
+        "sparring": "Birkaç ay"
       },
       "duration": {
         "workshops": "1-2 gün",
@@ -251,9 +261,9 @@
     "toolboxSubtitle": "İhtiyaca göre seçilir.",
     "toolbox": [
       "Shopfloor yönetimi ve liderlik rutinleri",
-      "SMED, değer akışı analizi, sürekli iyileştirme mantığı",
-      "Change governance ve iletişim mimarisi",
-      "M&A’de kültür ve kimlik çalışması (pre ve post merger)"
+      "Hazırlık süresi optimizasyonu, akıcı süreçler ve sistematik problem çözme",
+      "Net karar yolları ve güvenilir iletişim",
+      "Devralma öncesi ve sonrası kültürel entegrasyon ve kimlik çalışması"
     ],
     "bridge": "Duruma ve başlangıç noktasına göre farklı formatlarda çalışırım, odaklı bir atölyeden daha uzun süreli eşliğe kadar.",
     "bridgeCta": "Hizmetleri incele →",
@@ -274,7 +284,7 @@
     ],
     "profileTitle": "Profil",
     "profileText": "Kabul, dil, gerçeklik ve sorumluluk birbirine uyduğunda ortaya çıkar.\n\nM&A, entegrasyon ve dönüşüm durumlarında uygulama nadiren resmî hedefler nedeniyle başarısız olur; asıl neden çoğu zaman gizli kültürel ve kimlikle ilgili gerilimlerdir. Organizasyonlara çok dilli erişimim ve bu dinamikler üzerine akademik çalışmam, bu tür gerilimleri erken aşamada görünür kılmayı mümkün hâle getirir, daha operasyonel veya politik etki ortaya çıkmadan önce.\n\nÇalışmam, endüstriyel ortamda saha, liderlik ve yönetim rollerinde edindiğim doğrudan deneyime dayanır. Bundan net bir yaklaşım ortaya çıkar: değişim operasyonel gerçekliğe uymalı, liderlik tarafından sahiplenilmeli ve günlük işe yerleşmelidir.\n\nBöylece açıklanması gerekmeyen, sahiplenilen ve yaşanan bir uygulama ortaya çıkar.",
-    "clarityText": "Operasyonel uygulama, proje sorumluluğu veya hat yönetimi üstlenmiyorum.\nLiderliği, uygulamayı mümkün kılmak, yönlendirmek ve etkili hale getirmek konusunda destekliyorum.",
+    "clarityText": "Doğrudan sahada sizinle birlikte çalışıyorum, ancak bilinçli olarak liderlerinizin yerini almıyorum. Rolüm bir sparring ortağı olarak hareket etmek: kritik arayüzleri kolaylaştırıyor, bağlayıcı liderlik rutinleri oluşturuyor ve gizli gerilimleri tam da ortaya çıktığı yerde çözmeye yardımcı oluyorum. Bu sayede ekibinizi uygulamayı kendi başına başarılı biçimde yönetecek şekilde güçlendiriyorum; bana, harici bir danışmana bağımlılık yaratmak yerine.",
     "bulletsEyebrow": "Çalışmamın temeli",
     "bullets": [
       "25+ yıllık operasyonel deneyim: yaz işlerinden üretim ve lojistikte lokasyonlar arası sorumluluğa",
@@ -286,7 +296,7 @@
     "linkedInLabel": "LinkedIn profilini görüntüle",
     "practiceEyebrow": "Proje deneyimi",
     "practiceTitle": "Pratikten gelen deneyim",
-    "practiceIntro": "Birimler birlikte çalışmadığında. Önlemler kararlaştırıldığı hâlde uygulanmadığında. Liderlik baskı, beklenti ve gerçeklik arasında kaldığında. Deneyimim vaka çalışmalarından değil, bu tür durumlardan gelir.",
+    "practiceIntro": "25 yıl boyunca masanızın öbür tarafında yer aldım – yaz işlerinden lokasyonlar arası üretim liderliğine kadar. Fabrikayı, liderliği ve baskıyı vaka çalışmalarından değil, bizzat yaşayarak tanıyorum. Bu nedenle bugün soyut kavramlarla çalışan klasik bir danışman gibi değil, kararların operasyonel gerçeklikte nasıl hayata geçirildiğini bilen deneyimli bir içeriden pragmatizmiyle çalışıyorum.",
     "practiceItems": [
       {
         "title": "Post-merger entegrasyonu",
@@ -294,11 +304,11 @@
       },
       {
         "title": "Lean ve Operasyonel Mükemmellik",
-        "text": "Sürekli iyileştirme, SMED, 5S ve değer akışı optimizasyonunun, yöntem yayılımı olarak değil, günlük işte liderlik çalışması olarak devreye alınması ve kalıcı hâle getirilmesi."
+        "text": "Verimli üretim ve hazırlık süreçlerinin, yöntem yayılımı olarak değil, günlük işte liderlik çalışması olarak devreye alınması ve kalıcı hâle getirilmesi."
       },
       {
         "title": "Yeniden organizasyon ve liderlik gelişimi",
-        "text": "Devam eden operasyon sırasında matris organizasyonlarda lokasyonlar arası liderlik yapılarının kurulması ve liderlerin geliştirilmesi."
+        "text": "Devam eden operasyon sırasında lokasyonlar arası liderlik yapılarının kurulması ve alan sınırları ötesinde sorumlulukların netleştirilmesi."
       },
       {
         "title": "Yeniden yapılanma ve kültürel yerleşim",
@@ -310,7 +320,7 @@
       },
       {
         "title": "Değer akışı ve arayüz netleştirmesi",
-        "text": "Matris organizasyonlarda değer akışlarının optimize edilmesi: bütçe sorumluluğu, maliyet merkezi yönlendirmesi ve üretim ile lojistikte çok projeli yönetim."
+        "text": "Kritik arayüzlerde akıcı süreçler: bütçe sorumluluğu, maliyet merkezi yönlendirmesi ve üretim ile lojistikte çok projeli yönetim."
       }
     ],
     "testimonialsEyebrow": "Başkaları ne diyor",
@@ -362,12 +372,12 @@
       },
       {
         "title": "M&A entegrasyonu",
-        "subtitle": "Anlaşma öncesi ve sonrası kültür, kimlik ve işletim modeli",
+        "subtitle": "İşleyen kültür, kimlik ve operasyonel modeller",
         "description": "Birleşmelerin ekonomik başarısı closing sonrasında, iş birliğinde, liderlikte ve kimlikte belirlenir. Pratik ve araştırmaya (DBA) dayanarak kültür ve kimlik sorularının nasıl erken ele alınabileceğini ve performansı güvence altına alan bir işletim modelinin kültürel DNA’yı kaybetmeden nasıl ortaya çıkabileceğini gösteriyorum."
       },
       {
         "title": "Change governance",
-        "subtitle": "Karar ver, iletişim kur, yerleştir",
+        "subtitle": "Dönüşümün işletim sistemi",
         "description": "Değişim net bir çerçeveye ihtiyaç duyar. Aksi takdirde belirsizlik ve sürtünme hâkim olur. Change governance, dönüşümün işletim sistemidir: karar yolları, roller, ritim ve iletişim. Bu konuşma, kararların işlemesini, iletişimin güven yaratmasını ve yeni çalışma biçimlerinin sönüp gitmemesini sağlayacak bir yönetişimin nasıl pragmatik biçimde kurulabileceğini gösterir."
       },
       {

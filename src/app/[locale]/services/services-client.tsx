@@ -1,9 +1,9 @@
 // src/app/[locale]/services/services-client.tsx
 "use client";
 
+import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Reveal } from "@/components/Reveal";
 import { blurDataURL } from "@/lib/blur";
@@ -42,6 +42,17 @@ export default function ServicesClient() {
 
   const [activeKey, setActiveKey] = useState<ServiceKey>("partnership");
   const active = cards.find((c) => c.key === activeKey) ?? cards[0];
+  const detailRef = React.useRef<HTMLElement>(null);
+  const tilesRef = React.useRef<HTMLElement>(null);
+
+  function selectFormat(key: ServiceKey) {
+    setActiveKey(key);
+    setTimeout(() => {
+      if (!tilesRef.current) return;
+      const top = tilesRef.current.getBoundingClientRect().top + window.scrollY - 90;
+      window.scrollTo({ top, behavior: "smooth" });
+    }, 50);
+  }
   const cta = ui?.cta;
 
   return (
@@ -108,58 +119,53 @@ export default function ServicesClient() {
         </section>
       </Reveal>
 
+      {/* ── SCHAUFENSTER-KACHELN ── */}
+      <Reveal>
+        <section className="pt-6 pb-2 md:pt-8 md:pb-3" ref={tilesRef}>
+          <div className="section-eyebrow mb-4 pl-6 sm:pl-8">
+            <span className="dot" />
+            <span>{ui?.navTitle ?? "Formate"}</span>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-3">
+            {cards.map((c) => {
+              const tagline = t(`ui.tagline.${c.key}`);
+              const isActive = c.key === activeKey;
+              return (
+                <button
+                  key={c.key}
+                  type="button"
+                  onClick={() => selectFormat(c.key)}
+                  className="text-left rounded-2xl border px-5 py-5 transition-all duration-200 w-full"
+                  style={{
+                    borderColor: isActive ? "rgba(0,168,165,0.45)" : "rgba(15,23,42,0.10)",
+                    background: isActive ? "rgba(0,168,165,0.05)" : "#fff",
+                    boxShadow: isActive ? "0 0 0 1px rgba(0,168,165,0.20)" : "none",
+                  }}
+                >
+                  <div className="flex items-start justify-between gap-2 mb-3">
+                    <span className="text-sm font-semibold" style={{ color: "rgba(var(--ink),.90)" }}>{c.title}</span>
+                    <span className="shrink-0 rounded-full px-2.5 py-0.5 text-[11px] font-semibold whitespace-nowrap" style={{ background: "rgba(var(--accent),.10)", color: "rgb(var(--accent))" }}>
+                      {t(`ui.durationShort.${c.key}`)}
+                    </span>
+                  </div>
+                  <p className="text-[13px] leading-5" style={{ color: "rgba(var(--ink),.55)" }}>{tagline}</p>
+                  <div className="mt-3 text-[12px] font-semibold" style={{ color: isActive ? "rgb(var(--accent))" : "rgba(var(--ink),.35)" }}>
+                    {isActive ? "↓ Details" : "→ Details"}
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </section>
+      </Reveal>
+
       {/* ── AUSWAHL + DETAILS ── */}
       <Reveal>
-        <section className="py-8 md:py-10">
-          <div className="grid gap-8 lg:grid-cols-12">
-
-            {/* LINKS – Tabs */}
-            <div className="lg:col-span-4 min-w-0">
-              <div className="panel">
-                <div className="section-eyebrow">
-                  <span className="dot" />
-                  <span>{ui?.navTitle ?? "Schnellnavigation"}</span>
-                </div>
-                <div className="mt-5 grid gap-2" role="tablist" aria-label={ui?.navTitle ?? "Formate"}>
-                  {cards.map((c) => {
-                    const isActive = c.key === activeKey;
-                    return (
-                      <button
-                        key={c.key}
-                        type="button"
-                        role="tab"
-                        id={`tab-${c.key}`}
-                        aria-selected={isActive}
-                        aria-controls={`panel-${c.key}`}
-                        onClick={() => setActiveKey(c.key)}
-                        className={[
-                          "flex w-full items-center justify-between rounded-2xl px-4 py-3 text-left transition-all duration-200",
-                          isActive
-                            ? "border border-[rgba(0,168,165,0.35)] bg-[rgba(0,168,165,0.06)]"
-                            : "border border-[rgba(15,23,42,0.10)] bg-[rgba(255,255,255,0.98)] hover:border-[rgba(15,23,42,0.18)] hover:bg-white",
-                        ].join(" ")}
-                      >
-                        <span className="flex flex-col gap-0.5">
-                          <span className="text-sm font-semibold break-words" style={{ color: "rgba(var(--ink), .90)" }}>
-                            {c.title}
-                          </span>
-                          {c.role && (
-                            <span className="text-xs" style={{ color: isActive ? "rgb(var(--accent))" : "rgba(var(--ink), .45)" }}>
-                              {c.role}
-                            </span>
-                          )}
-                        </span>
-                        <span aria-hidden style={{ color: "rgba(var(--ink), .45)" }}>→</span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-
-            {/* RECHTS – Panel */}
-            <div className="lg:col-span-8 min-w-0" role="tabpanel" id={`panel-${activeKey}`} aria-labelledby={`tab-${activeKey}`}>
-              <div className="panel h-full min-w-0">
+        <section className="pt-2 pb-8 md:pt-3 md:pb-10" ref={detailRef}>
+          <div>
+            {/* DETAIL PANEL – full width */}
+            <div role="tabpanel" id={`panel-${activeKey}`}>
+              <div className="panel min-w-0">
                 <div className="section-eyebrow">
                   <span className="dot" />
                   <span>{t("ui.labels.detailsTitle")}</span>
@@ -169,8 +175,8 @@ export default function ServicesClient() {
 
                 <div className="mt-8 hr-soft" />
 
-                <div className="mt-8 grid gap-10 lg:grid-cols-12">
-                  <div className="lg:col-span-6 min-w-0">
+                <div className="mt-8 grid gap-10 md:grid-cols-2">
+                  <div className="min-w-0">
                     <div className="section-eyebrow">
                       <span className="dot" />
                       <span>{t("ui.labels.whenTitle")}</span>
@@ -202,17 +208,20 @@ export default function ServicesClient() {
                     ) : null}
                   </div>
 
-                  <div className="lg:col-span-6 min-w-0">
+                  <div className="min-w-0">
                     {active.notSuitable.length ? (
-                      <div className="mb-8">
-                        <div className="inline-flex items-center gap-2 text-[11px] tracking-[0.26em] uppercase" style={{ color: "rgba(var(--ink), .35)" }}>
-                          <span style={{ width: 10, height: 10, borderRadius: 999, display: "inline-block", flexShrink: 0, background: "rgb(148,163,184)", boxShadow: "0 0 0 7px rgba(148,163,184,.20)" }} />
+                      <div className="mb-8 rounded-2xl border px-5 py-4" style={{ borderColor: "rgba(239,68,68,.20)", background: "rgba(239,68,68,.03)" }}>
+                        <div className="inline-flex items-center gap-2 text-[11px] tracking-[0.20em] uppercase font-semibold" style={{ color: "rgba(185,28,28,.75)" }}>
+                          <svg width="13" height="13" viewBox="0 0 20 20" fill="none" aria-hidden style={{ flexShrink: 0 }}>
+                            <circle cx="10" cy="10" r="9" stroke="currentColor" strokeWidth="1.8"/>
+                            <path d="M10 6v5M10 14v.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
+                          </svg>
                           <span>{t("ui.labels.notSuitableTitle")}</span>
                         </div>
-                        <ul className="mt-2 grid gap-y-1.5">
+                        <ul className="mt-3 grid gap-y-2">
                           {active.notSuitable.map((x, i) => (
-                            <li key={i} className="flex min-w-0 gap-3 text-[13px] leading-6" style={{ color: "rgba(var(--ink), .40)" }}>
-                              <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-slate-300" />
+                            <li key={i} className="flex min-w-0 gap-3 text-[13px] leading-6" style={{ color: "rgba(var(--ink), .70)" }}>
+                              <span className="mt-[9px] h-1.5 w-1.5 flex-none rounded-full" style={{ background: "rgba(185,28,28,.45)" }} />
                               <span className="min-w-0">{x}</span>
                             </li>
                           ))}

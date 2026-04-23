@@ -119,7 +119,7 @@
       },
       "teaser": {
         "workshops": "After one or two days together, you know where the real bottleneck lies, who is specifically responsible for what, and what will happen over the next 90 days. The question of where to start no longer arises. Not a concept. A first effective step.",
-        "partnership": "When change needs to be carried over months, a single workshop is not enough. What is needed is a stable leadership and decision rhythm.\n\nThe implementation partnership does not mean I am with you every day. It takes place through, for example, 1 to 2 fixed on-site days per week at your facility, or through weekly, intensive steering sessions with those responsible. The partnership is understood as a time-limited co-design and co-steering of leadership and decision-making processes in critical phases, not as operational execution.\n\nMy goal is to make myself redundant: I stay by your side until your leaders carry the rhythm independently and change has become part of everyday life.",
+        "partnership": "When change needs to be sustained over months, a single workshop is not enough. It requires a stable leadership and decision-making rhythm.\n\nThe implementation partnership does not mean I am with you every day. It takes place, for example, through 1 to 2 fixed days on-site per week or through intensive weekly steering meetings with the decision-makers. The implementation partnership is not an outsourcing of your operational execution. Instead, I act directly on the shop floor as your sparring partner: I moderate critical interfaces, establish binding leadership routines, and help resolve hidden tensions exactly where they arise.\n\nMy goal is to make myself redundant: I remain by your side until your leadership team can sustain the rhythm independently and the change has become a natural part of everyday operations.",
         "sparring": "You are facing a decision you cannot delegate and do not want to make alone. No coaching. No general recommendations. A sound assessment and a clear next step."
       },
       "notSuitable": {
@@ -283,21 +283,21 @@
       "Today I work with leaders and organizations in industrial SMEs on exactly these points.\nWhere change has been decided, but is not taking hold.\nWhere efficiency, leadership, and corporate culture need to be brought together."
     ],
     "profileTitle": "Profile",
-    "profileText": "Acceptance emerges where language, reality, and responsibility fit together.\n\nIn M&A, integration, and transformation situations, execution rarely fails because of formal targets, but because of hidden cultural and identity-related tensions. My multilingual access to organizations and my academic work on these dynamics make it possible to surface such tensions early, before they unfold operationally or politically.\n\nMy work is grounded in firsthand experience in plant, leadership, and management roles within industrial environments. This leads to a clear approach: change must fit operational reality, be owned by leadership, and be embedded in everyday work.\n\nThis is how execution emerges, not as something that needs to be explained, but as something that is carried and lived."
+    "profileText": "Acceptance emerges where language, reality, and responsibility fit together.\n\nIn M&A, integration, and transformation situations, execution rarely fails because of formal targets, but because of hidden cultural and identity-related tensions. My multilingual access to organizations and my academic work on these dynamics make it possible to surface such tensions early, before they unfold operationally or politically.\n\nMy research in M&A integration focuses not on academic debate but on identifying costly pitfalls that arise when culture and identity are ignored after a deal.\n\nMy work is grounded in firsthand experience in plant, leadership, and management roles within industrial environments. This leads to a clear approach: change must fit operational reality, be owned by leadership, and be embedded in everyday work.\n\nThis is how execution emerges, not as something that needs to be explained, but as something that is carried and lived."
     ,
-    "clarityText": "I work directly alongside you on the shopfloor, but deliberately do not take over the job of your leaders. My role is to act as a sparring partner: I facilitate critical interfaces, establish binding leadership routines, and help resolve hidden tensions right where they arise. This enables your team to steer implementation successfully on their own, rather than building a dependency on me as an external consultant.",
+    "clarityText": "I work directly with you on the shop floor, but I consciously avoid taking over the jobs of your leadership team. My role is to act as a sparring partner: I moderate critical interfaces, establish binding leadership routines, and help resolve hidden tensions exactly where they arise. In doing so, I empower your team to successfully drive the implementation themselves, rather than creating a dependency on me as an external service provider.",
     "bulletsEyebrow": "Foundation of my work",
     "bullets": [
       "25+ years of operational experience: from summer jobs to cross-site responsibility for production and logistics",
       "15 years of continuous professional development: from mechanical engineering through business administration and business psychology, with a focus on leadership and organization",
       "Design and organization of industrial processes along the value chain, complemented by Six Sigma and REFA certification",
-      "Ongoing DBA on M&A integration, culture, and identity in industrial SMEs",
+      "Ongoing practice-oriented doctorate (Doctor of Business Administration) on M&A integration, culture, and identity in industrial SMEs",
       "Multilingual collaboration in leadership and execution: German, English, Turkish, Spanish, and Arabic"
     ],
     "linkedInLabel": "View LinkedIn profile",
     "practiceEyebrow": "Project experience",
     "practiceTitle": "Experience from practice",
-    "practiceIntro": "I spent 25 years on your side of the table — from a summer job to cross-site production leadership. I know the plant, the leadership challenges, and the pressure from my own experience, not from case studies. That is why I do not work like a classic consultant with abstract concepts, but bring the pragmatism of an experienced insider who knows how decisions are actually implemented in operational reality.",
+    "practiceIntro": "For 25 years, I was on your side of the table – from a summer job to multi-site production management. I know the operations, the leadership dynamics, and the pressure from first-hand experience, not from case studies. That is why I do not operate like a traditional consultant with abstract concepts. Instead, I bring the pragmatism of an experienced insider who knows exactly how decisions are actually executed in operational reality.",
     "practiceItems": [
       {
         "title": "Post-merger integration",
@@ -374,7 +374,7 @@
       {
         "title": "M&A integration",
         "subtitle": "Culture, identity, and operational models that work",
-        "description": "The economic success of mergers is decided after closing, in collaboration, leadership, and identity. Based on practice and research (DBA), I show how questions of culture and identity can be addressed early and how an operating model can emerge that secures performance without losing cultural DNA."
+        "description": "The economic success of mergers is decided after closing, in collaboration, leadership, and identity. Based on operational practice and applied research, I show how questions of culture and identity can be addressed early and how an operating model can emerge that secures performance without losing cultural DNA."
       },
       {
         "title": "Change governance",
@@ -404,7 +404,7 @@
   "contact": {
     "eyebrow": "Schedule a conversation",
     "title": "Contact",
-    "intro": "In a non-binding conversation, I clarify whether and how collaboration makes sense in your situation. Write to me or book an appointment directly. I usually respond within 24–48 hours.",
+    "intro": "In a non-binding conversation, I clarify whether and how collaboration makes sense in your situation. Write to me or book an appointment directly. I respond within 24 hours.",
     "formEyebrow": "Send a message",
     "formIntro": "Briefly describe your situation and I will get back to you promptly.",
     "responseHint": "Please do not send any confidential information via the form.",

@@ -13,19 +13,18 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
-  // SEO-optimierte (unsichtbare) Titles
   const title: Record<string, string> = {
-    de: "Transformationsberatung für Industrie & Mittelstand | M&A, Restrukturierung, Umsetzung",
-    en: "Transformational Change & Implementation Support for Industry & SMEs",
-    es: "Consultoría de transformación e implementación para industria y medianas empresas",
-    tr: "Sanayi ve KOBİ'ler için dönüşüm ve uygulama danışmanlığı",
+    de: "Change-Beratung & Shopfloor-Umsetzung | Produzierender Mittelstand",
+    en: "Hands-on Change Management & Shop Floor Execution | Manufacturing SMEs",
+    es: "Consultoría de cambio operativo en planta | Pymes industriales",
+    tr: "Operasyonel Değişim Danışmanlığı & Saha Uygulaması | Üretim KOBİ'leri",
   };
 
   const description: Record<string, string> = {
-    de: "Ich begleite Führung und Teams in anspruchsvollen Transformations-, M&A- und Restrukturierungsprojekten. Werkstattansatz mit klarem Fokus auf wirksame Umsetzung.",
-    en: "I support leadership and teams in industrial and mid-market transformations, M&A integrations and restructuring with a hands-on execution mindset.",
-    es: "Acompaño a líderes y equipos en transformaciones, integraciones M&A y reestructuraciones con un enfoque práctico y orientado a resultados.",
-    tr: "Liderlik ve ekipleri dönüşüm, M&A entegrasyonu ve yeniden yapılanma süreçlerinde uygulama odaklı bir yaklaşımla destekliyorum.",
+    de: "Wenn Umsetzung im Betrieb nicht greift: Ich arbeite direkt mit Führung und Teams am Shopfloor – für operative Change-Beratung, Post-Merger Integration und Lean-Umsetzung im produzierenden Mittelstand.",
+    en: "When execution stalls: I work directly with leadership and teams on the shop floor – hands-on change management, post-merger integration and lean execution for manufacturing SMEs.",
+    es: "Cuando la ejecución no avanza: trabajo directamente con líderes y equipos en planta – gestión del cambio operativo, integración post-fusión y lean para pymes industriales.",
+    tr: "Uygulama durduğunda: Liderlik ve ekiplerle doğrudan sahada çalışıyorum – üretim KOBİ'leri için operasyonel değişim yönetimi, birleşme sonrası entegrasyon ve lean uygulaması.",
   };
 
   const ogLocale: Record<string, string> = {

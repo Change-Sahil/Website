@@ -14,17 +14,17 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const title: Record<string, string> = {
-    de: "Kontakt | Change-Werkstatt Sahil",
-    en: "Contact | Change-Werkstatt Sahil",
-    es: "Contacto | Change-Werkstatt Sahil",
-    tr: "İletişim | Change-Werkstatt Sahil",
+    de: "Kontakt | Change-Beratung Aalen, Baden-Württemberg | Seref Sahil",
+    en: "Contact | Change Management Consulting | Seref Sahil",
+    es: "Contacto | Consultoría de cambio | Seref Sahil",
+    tr: "İletişim | Değişim Yönetimi Danışmanlığı | Seref Sahil",
   };
 
   const description: Record<string, string> = {
-    de: "Kontakt für ein kurzes Orientierungsgespräch und den nächsten sinnvollen Schritt in der Umsetzung.",
-    en: "Get in touch for a short orientation call and the next practical step.",
-    es: "Contacto para una breve llamada de orientación y definir el siguiente paso.",
-    tr: "Kısa bir görüşme ve sonraki adım için iletişime geçin.",
+    de: "15-minütiges Orientierungsgespräch für Führungskräfte im produzierenden Mittelstand. Beratungsstandort: Aalen, Baden-Württemberg – deutschlandweit tätig.",
+    en: "15-minute orientation call for leaders in manufacturing SMEs. Advisory base: Aalen, Baden-Württemberg – active throughout Germany.",
+    es: "Llamada de orientación de 15 minutos para directivos de pymes industriales. Base de consultoría: Aalen, Baden-Württemberg – activo en toda Alemania.",
+    tr: "Üretim KOBİ'lerindeki liderler için 15 dakikalık oryantasyon görüşmesi. Danışmanlık merkezi: Aalen, Baden-Württemberg – Almanya genelinde aktif.",
   };
 
   const url = `${BASE_URL}/${locale}/contact`;

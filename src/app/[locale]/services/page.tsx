@@ -12,17 +12,17 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const title: Record<string, string> = {
-    de: "Transformationsberatung, Workshops & Executive Sparring für Industrie",
-    en: "Transformation Consulting, Workshops & Executive Sparring",
-    es: "Consultoría de transformación, talleres y sparring ejecutivo",
-    tr: "Dönüşüm danışmanlığı, atölyeler ve executive sparring",
+    de: "Shopfloor-Beratung & Workshops | Operative Umsetzung Mittelstand",
+    en: "Shop Floor Consulting & Workshops | Operational Execution for SMEs",
+    es: "Consultoría en planta & talleres | Ejecución operativa para pymes",
+    tr: "Saha Danışmanlığı & Atölyeler | KOBİ'lerde Operasyonel Uygulama",
   };
 
   const description: Record<string, string> = {
-    de: "Formate für Industrie- und Mittelstandsunternehmen: Transformationspartnerschaft, Werkstatt-Workshops und Executive Sparring für anspruchsvolle Umsetzungssituationen.",
-    en: "Formats for industrial and mid-market companies: transformation partnership, workshops and executive sparring for complex implementation challenges.",
-    es: "Formatos para empresas industriales y medianas: alianza de transformación, talleres y sparring ejecutivo para retos complejos de implementación.",
-    tr: "Sanayi ve orta ölçekli şirketler için formatlar: dönüşüm ortaklığı, atölyeler ve karmaşık uygulama süreçleri için executive sparring.",
+    de: "Operative Beratungsformate für den produzierenden Mittelstand: Klärungsworkshops, monatliche Umsetzungspartnerschaft am Shopfloor und Executive Sparring für Führungsentscheidungen.",
+    en: "Operational consulting formats for manufacturing SMEs: clarification workshops, monthly implementation partnership on the shop floor, and executive sparring for leadership decisions.",
+    es: "Formatos de consultoría operativa para pymes industriales: talleres de clarificación, alianza de implementación mensual en planta y sparring ejecutivo para decisiones de liderazgo.",
+    tr: "Üretim KOBİ'leri için operasyonel danışmanlık formatları: netleştirme atölyeleri, sahada aylık uygulama ortaklığı ve liderlik kararları için executive sparring.",
   };
 
   const ogLocale: Record<string, string> = {

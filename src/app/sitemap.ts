@@ -23,7 +23,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
       entries.push({
         url,
-        lastModified:  new Date(),
         changeFrequency: page === "" ? "weekly" : "monthly",
         priority:      page === "" ? 1.0 : 0.8,
         alternates:    { languages },

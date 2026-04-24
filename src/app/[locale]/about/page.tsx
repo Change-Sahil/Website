@@ -13,17 +13,17 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const title: Record<string, string> = {
-    de: "Transformationsberater mit Industrie- und M&A-Erfahrung | Seref Sahil",
-    en: "Transformation advisor with industry & M&A experience | Seref Sahil",
-    es: "Consultor de transformación con experiencia en industria y M&A | Seref Sahil",
-    tr: "Sanayi ve M&A deneyimli dönüşüm danışmanı | Seref Sahil",
+    de: "Seref Sahil | Change-Berater mit Shopfloor- & M&A-Erfahrung",
+    en: "Seref Sahil | Change Advisor with Shop Floor & M&A Experience",
+    es: "Seref Sahil | Consultor de cambio con experiencia en planta y M&A",
+    tr: "Seref Sahil | Saha & M&A Deneyimli Değişim Danışmanı",
   };
 
   const description: Record<string, string> = {
-    de: "Erfahrung in Industrie, Mittelstand und komplexen Transformationssituationen. Fokus auf Umsetzung, Führung und nachhaltige Performance.",
-    en: "Experience across industry, mid-market and complex transformation situations. Focus on execution, leadership and sustainable performance.",
-    es: "Experiencia en industria, medianas empresas y transformaciones complejas. Enfoque en ejecución, liderazgo y rendimiento sostenible.",
-    tr: "Sanayi, orta ölçekli şirketler ve karmaşık dönüşüm durumlarında deneyim. Odak: uygulama, liderlik ve sürdürülebilir performans.",
+    de: "25 Jahre operative Verantwortung im produzierenden Mittelstand – vom Shopfloor bis zur standortübergreifenden Führung. Heute Change- und Integrationsberatung aus Praxistiefe, nicht aus Fallstudien.",
+    en: "25 years of operational responsibility in manufacturing – from the shop floor to cross-site leadership. Today: change and integration consulting grounded in firsthand experience, not case studies.",
+    es: "25 años de responsabilidad operativa en industria – desde la planta hasta la dirección multiplanta. Hoy: consultoría de cambio e integración desde la experiencia real, no desde casos de estudio.",
+    tr: "Üretimde 25 yıllık operasyonel sorumluluk – sahadan çok lokasyonlu liderliğe. Bugün: vaka çalışmalarından değil, doğrudan deneyimden gelen değişim ve entegrasyon danışmanlığı.",
   };
 
   const ogLocale: Record<string, string> = {

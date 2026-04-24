@@ -13,17 +13,17 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const title: Record<string, string> = {
-    de: "Vorträge zu Transformation, Führung & Umsetzung | Industrie",
-    en: "Speaking on transformation, leadership & execution",
-    es: "Ponencias sobre transformación, liderazgo y ejecución",
-    tr: "Dönüşüm, liderlik ve uygulama üzerine konuşmalar",
+    de: "Vorträge zu M&A-Integration, Shopfloor-Führung & Lean | Industrie",
+    en: "Speaking on M&A Integration, Shop Floor Leadership & Lean | Industry",
+    es: "Ponencias sobre integración M&A, liderazgo en planta y lean | Industria",
+    tr: "M&A Entegrasyonu, Saha Liderliği & Lean Üzerine Konuşmalar | Sanayi",
   };
 
   const description: Record<string, string> = {
-    de: "Keynotes, Trainings und Lehre zu Transformationsführung, Umsetzung im Alltag sowie M&A-Integration und Restrukturierung im industriellen Umfeld.",
-    en: "Keynotes, trainings and teaching on transformation leadership, day-to-day execution, M&A integration and restructuring in industrial contexts.",
-    es: "Keynotes, talleres y docencia sobre liderazgo en transformación, ejecución en el día a día, integración M&A y reestructuración.",
-    tr: "Transformasyon liderliği, günlük uygulama, M&A entegrasyonu ve yeniden yapılanma üzerine keynote ve eğitimler.",
+    de: "Praxisnahe Keynotes und Lehraufträge zu Post-Merger Integration, Shopfloor Management und operativer Change-Umsetzung im produzierenden Mittelstand – basierend auf eigener Erfahrung und laufender Forschung.",
+    en: "Hands-on keynotes and teaching on post-merger integration, shop floor management and operational change execution in manufacturing SMEs – grounded in firsthand experience and ongoing research.",
+    es: "Keynotes y docencia sobre integración post-fusión, gestión en planta y ejecución operativa del cambio en pymes industriales – basadas en experiencia directa e investigación en curso.",
+    tr: "Birleşme sonrası entegrasyon, saha yönetimi ve üretim KOBİ'lerinde operasyonel değişim uygulaması üzerine uygulamalı keynote ve dersler – doğrudan deneyim ve devam eden araştırmaya dayalı.",
   };
 
   const ogLocale: Record<string, string> = {

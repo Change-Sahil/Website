@@ -1,23 +1,11 @@
 // src/app/layout.tsx
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
-
-// Inter Variable Font – unterstützt alle Gewichte 100–900,
-// inkl. der im CSS genutzten Zwischenwerte (650, 750, 780).
-// latin-ext deckt türkische Sonderzeichen (ğ, ı, ş, ü …) ab.
-const inter = Inter({
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-inter",
-  display: "swap",
-});
 
 function getBaseUrl() {
   const raw =
     process.env.NEXT_PUBLIC_SITE_URL?.trim() ||
     "https://change-werkstatt-sahil.de";
-
   if (!raw.startsWith("http://") && !raw.startsWith("https://")) {
     return `https://${raw}`;
   }
@@ -35,11 +23,11 @@ export const metadata: Metadata = {
 
   title: {
     default: "Change-Werkstatt Sahil",
-    template: "%s | Change-Werkstatt Sahil",
+    template: "%s",
   },
 
   description:
-    "Transformations- und Umsetzungsbegleitung für Industrie & Mittelstand.",
+    "Operative Change-Beratung für den produzierenden Mittelstand.",
 
   icons: {
     icon: [
@@ -68,12 +56,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="de" suppressHydrationWarning className={inter.variable}>
-      <body>
-        {children}
-        <Analytics />
-      </body>
-    </html>
-  );
+  return children as unknown as React.ReactElement;
 }

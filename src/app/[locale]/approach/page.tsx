@@ -13,17 +13,17 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const title: Record<string, string> = {
-    de: "Vorgehen in Transformationsprojekten | Klären, Etablieren, Verankern",
-    en: "Approach in transformation projects | Clarify, establish, embed",
-    es: "Enfoque en proyectos de transformación | Aclarar, establecer, consolidar",
-    tr: "Dönüşüm projelerinde yaklaşım | Netleştir, kur, kalıcılaştır",
+    de: "Operative Umsetzung im Mittelstand | Klären, Führen, Verankern",
+    en: "Operational Execution in SMEs | Clarify, Lead, Embed",
+    es: "Ejecución operativa en pymes | Aclarar, liderar, consolidar",
+    tr: "KOBİ'lerde Operasyonel Uygulama | Netleştir, Yönet, Kalıcılaştır",
   };
 
   const description: Record<string, string> = {
-    de: "Strukturiertes Vorgehen in Transformations-, M&A- und Restrukturierungsprojekten: Diagnose, Intervention und nachhaltige Verankerung in Führung und Organisation.",
-    en: "A structured approach for transformations, M&A integrations and restructurings: diagnosis, interventions and sustainable embedding in leadership and organization.",
-    es: "Enfoque estructurado para transformaciones, integraciones M&A y reestructuraciones: diagnóstico, intervención y consolidación sostenible.",
-    tr: "Dönüşüm, M&A entegrasyonu ve yeniden yapılanma süreçleri için yapılandırılmış yaklaşım: teşhis, müdahale ve kalıcılaştırma.",
+    de: "Wie Veränderung im produzierenden Betrieb tatsächlich greift: Diagnose am Shopfloor, Führungsroutinen aufbauen, Umsetzung verankern – statt Konzepte abliefern und weitergehen.",
+    en: "How change actually takes hold in manufacturing: diagnosis on the shop floor, building leadership routines, embedding execution – not delivering concepts and moving on.",
+    es: "Cómo el cambio realmente arraiga en la industria: diagnóstico en planta, construcción de rutinas de liderazgo, consolidación de la ejecución – sin limitarse a entregar conceptos.",
+    tr: "Değişim üretimde nasıl gerçekten işler: sahada teşhis, liderlik rutinleri oluşturma, uygulamayı kalıcılaştırma – sadece konsept teslim edip gitmek yerine.",
   };
 
   const ogLocale: Record<string, string> = {

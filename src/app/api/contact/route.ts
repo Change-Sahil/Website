@@ -64,7 +64,7 @@ export async function POST(req: Request) {
 
     const { name, email, company, details } = parsed.data;
 
-    const to = "info@change-werkstatt-sahil.com";
+    const to = process.env.CONTACT_TO_EMAIL || "info@change-werkstatt-sahil.com";
     const from = process.env.CONTACT_FROM_EMAIL || "info@change-werkstatt-sahil.com";
 
     const resend = getResend();

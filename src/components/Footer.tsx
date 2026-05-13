@@ -16,51 +16,63 @@ export default function Footer() {
       <div className="h-px bg-gradient-to-r from-transparent via-[rgba(0,168,165,0.28)] to-transparent" />
       <div className="border-t border-slate-100" />
 
-      <div className="page-wrap py-4 sm:py-5">
+      <div className="page-wrap py-6 sm:py-8">
 
-        {/* Haupt-Zeile: Logo + Navigation */}
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-8 sm:flex-row sm:justify-between">
 
-          {/* Links: Logo + Standort */}
-          <div className="flex items-center gap-4">
+          {/* Links: Logo + BVMW Badge */}
+          <div className="flex flex-row items-center gap-5 divide-x divide-slate-200">
             <Link href={`/${locale}`} className="inline-flex items-center transition-opacity hover:opacity-90">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/Change-Werkstatt_Vector.svg"
                 alt="Change-Werkstatt Sahil"
-                className="h-[40px] w-auto"
+                className="h-[52px] w-auto"
               />
             </Link>
-            <p className="text-xs leading-5 text-slate-400 tracking-wide">
-              {tFooter("location")}
-            </p>
+            <a
+              href="https://www.bvmw.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Mitgliedsunternehmen Der Mittelstand. BVMW e.V."
+              className="pl-7"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/bvmw-mitgliedsunternehmen.jpg"
+                alt="Mitgliedsunternehmen Der Mittelstand. BVMW e.V."
+                className="h-14 w-auto opacity-80 hover:opacity-100 transition-opacity duration-150"
+              />
+            </a>
           </div>
 
-          {/* Navigation (nur Hauptlinks) */}
-          <nav
-            aria-label="Footer navigation"
-            className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-500"
-          >
-            <Link href={`/${locale}/services`}  className="hover:text-slate-900 transition-colors duration-150">{tNav("services")}</Link>
-            <Link href={`/${locale}/approach`}  className="hover:text-slate-900 transition-colors duration-150">{tNav("approach")}</Link>
-            <Link href={`/${locale}/about`}     className="hover:text-slate-900 transition-colors duration-150">{tNav("about")}</Link>
-            <Link href={`/${locale}/speaking`}  className="hover:text-slate-900 transition-colors duration-150">{tNav("speaking")}</Link>
-            <Link href={`/${locale}/contact`}   className="hover:text-slate-900 transition-colors duration-150 font-medium">{tNav("cta")}</Link>
-          </nav>
+          {/* Rechts: Navigation + Tagline + Legal */}
+          <div className="flex flex-col gap-3 sm:items-end sm:text-right">
 
-        </div>
+            <nav
+              aria-label="Footer navigation"
+              className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-500 sm:justify-end"
+            >
+              <Link href={`/${locale}/services`}  className="hover:text-slate-900 transition-colors duration-150">{tNav("services")}</Link>
+              <Link href={`/${locale}/approach`}  className="hover:text-slate-900 transition-colors duration-150">{tNav("approach")}</Link>
+              <Link href={`/${locale}/about`}     className="hover:text-slate-900 transition-colors duration-150">{tNav("about")}</Link>
+              <Link href={`/${locale}/speaking`}  className="hover:text-slate-900 transition-colors duration-150">{tNav("speaking")}</Link>
+              <Link href={`/${locale}/contact`}   className="hover:text-slate-900 transition-colors duration-150 font-medium">{tNav("cta")}</Link>
+            </nav>
 
-        {/* Trennlinie */}
-        <div className="mt-4 h-px bg-gradient-to-r from-slate-100 via-slate-200/60 to-slate-100" />
+            <p className="text-xs text-slate-400 tracking-wide">{tFooter("bottomLine")}</p>
 
-        {/* Untere Zeile: Copyright + Legal */}
-        <div className="mt-3 flex flex-col gap-2 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center gap-4">
-            <span>© {year} Change-Werkstatt Sahil</span>
-            <Link href={`/${locale}/impressum`}   className="hover:text-slate-600 transition-colors duration-150">{tFooter("imprint")}</Link>
-            <Link href={`/${locale}/datenschutz`} className="hover:text-slate-600 transition-colors duration-150">{tFooter("privacy")}</Link>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-400 sm:justify-end">
+              <span>© {year} Change-Werkstatt Sahil</span>
+              <span className="text-slate-200">·</span>
+              <span>{tFooter("location")}</span>
+              <span className="text-slate-200">·</span>
+              <Link href={`/${locale}/impressum`}   className="hover:text-slate-600 transition-colors duration-150">{tFooter("imprint")}</Link>
+              <Link href={`/${locale}/datenschutz`} className="hover:text-slate-600 transition-colors duration-150">{tFooter("privacy")}</Link>
+            </div>
+
           </div>
-          <div className="tracking-wide">{tFooter("bottomLine")}</div>
+
         </div>
 
       </div>

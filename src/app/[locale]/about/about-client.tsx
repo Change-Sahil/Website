@@ -158,7 +158,7 @@ export default function AboutClient() {
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             {practiceItems.map((item, i) => (
               <Reveal key={i} delay={i * 70}>
-                <article className="panel h-full border border-slate-200/70 bg-white/80 px-6 py-7 md:px-7 md:py-8">
+                <article className="card h-full">
                   <div className="flex items-start gap-3">
                     <span className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-[rgb(var(--accent))]" />
                     <div>
@@ -196,7 +196,7 @@ export default function AboutClient() {
           <div className="mt-10 grid gap-5 lg:grid-cols-3">
             {testimonials.map((item, i) => (
               <Reveal key={i} delay={i * 80}>
-                <article className="panel h-full border border-slate-200/70 bg-white/80 px-6 py-7 md:px-7 md:py-8">
+                <article className="card h-full">
                   <div className="flex h-full flex-col">
                     {item.quote && (
                       <blockquote className="text-[1rem] leading-8 text-slate-900 hyphens-auto break-words">

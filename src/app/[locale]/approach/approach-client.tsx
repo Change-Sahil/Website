@@ -95,14 +95,7 @@ export default function ApproachClient() {
           </div>
           <div className="grid gap-4 md:grid-cols-3">
             {asArray<{ verb: string; text: string; out: string[] }>(t.raw("how.steps")).map((s, i) => (
-              <div
-                key={i}
-                className="rounded-[18px] bg-white px-5 py-6 h-full"
-                style={{
-                  border: "1px solid rgba(15,23,42,.09)",
-                  boxShadow: "0 2px 6px rgba(15,23,42,.06), 0 10px 28px rgba(15,23,42,.10), inset 0 1px 0 rgba(255,255,255,.85)"
-                }}
-              >
+              <div key={i} className="card h-full">
                 <div className="text-[10px] tracking-[0.26em] uppercase font-semibold mb-2" style={{ color: "rgb(var(--accent))", opacity: 0.75 }}>
                   {t("how.stepLabel")} {String(i + 1).padStart(2, "0")}
                 </div>

@@ -53,7 +53,7 @@ export default function AboutClient() {
 
           <div className="lg:col-span-5">
             <div className="panel overflow-hidden p-0">
-              <div className="relative h-[340px] w-full md:h-[440px]">
+              <div className="relative h-[300px] w-full md:h-[390px]">
                 <Image
                   src={t("heroImage", { defaultValue: "/seref-sahil-change-werkstatt.jpg" })}
                   alt={t("heroImageAlt", { defaultValue: "Seref Sahil" })}

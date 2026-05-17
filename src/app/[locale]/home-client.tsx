@@ -31,7 +31,7 @@ export default function HomeClient() {
       <section className="mt-6">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-5">
-              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
+              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
                 <Image
                   src="/images/home-01.jpg"
                   alt="Strategische Ausrichtung"
@@ -57,7 +57,10 @@ export default function HomeClient() {
 
       {/* ── ZIELGRUPPEN ── */}
       <Reveal>
-        <section>
+        <section
+          className="rounded-[26px] px-7 py-10 sm:px-10 sm:py-12"
+          style={{ background: "rgba(15,23,42,.04)", border: "1px solid rgba(15,23,42,.06)" }}
+        >
           <div className="section-eyebrow"><span className="dot" /><span>{audience?.subtitle ?? ""}</span></div>
           <h2 className="mt-3 section-title">{audience?.title ?? ""}</h2>
 
@@ -65,7 +68,7 @@ export default function HomeClient() {
             {triggers.map((x, i) => (
               <Reveal key={i} delay={i * 70}>
                 <div className="card h-full">
-                  <div className="text-xs font-semibold text-slate-400 mb-4">
+                  <div className="text-xs font-semibold mb-4" style={{ color: "rgb(var(--accent))", opacity: 0.7 }}>
                     {String(i + 1).padStart(2, "0")}
                   </div>
                   <p className="text-[15px] leading-7 muted">{x}</p>
@@ -114,7 +117,7 @@ export default function HomeClient() {
               <div className="card h-full">
                 <div className="flex items-start justify-between gap-4">
                   <div className="text-base font-semibold" style={{ color: "rgba(var(--ink),.88)" }}>{p.title}</div>
-                  <div className="text-xs font-semibold text-slate-400">
+                  <div className="text-xs font-semibold" style={{ color: "rgb(var(--accent))", opacity: 0.7 }}>
                     {String(i + 1).padStart(2, "0")}
                   </div>
                 </div>

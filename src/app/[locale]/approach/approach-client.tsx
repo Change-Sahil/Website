@@ -97,18 +97,24 @@ export default function ApproachClient() {
             {asArray<{ verb: string; text: string; out: string[] }>(t.raw("how.steps")).map((s, i) => (
               <div
                 key={i}
-                className="rounded-2xl px-5 py-5"
-                style={{ border: "1px solid rgba(15,23,42,.08)", background: "rgba(248,250,252,.80)" }}
+                className="rounded-[18px] bg-white px-5 py-6 h-full"
+                style={{
+                  border: "1px solid rgba(15,23,42,.09)",
+                  boxShadow: "0 2px 6px rgba(15,23,42,.06), 0 10px 28px rgba(15,23,42,.10), inset 0 1px 0 rgba(255,255,255,.85)"
+                }}
               >
-                <div className="text-[11px] tracking-[0.26em] uppercase mb-1" style={{ color: "rgba(var(--ink), .45)" }}>
+                <div className="text-[10px] tracking-[0.26em] uppercase font-semibold mb-2" style={{ color: "rgb(var(--accent))", opacity: 0.75 }}>
                   {t("how.stepLabel")} {String(i + 1).padStart(2, "0")}
                 </div>
-                <div className="text-[15px] font-semibold mb-3" style={{ color: "rgba(var(--ink), .88)" }}>{s.verb}</div>
-                <p className="text-[13px] leading-6 mb-4" style={{ color: "rgba(var(--ink), .65)" }}>{s.text}</p>
+                <div className="text-[17px] font-semibold mb-3" style={{ color: "rgba(var(--ink), .92)" }}>{s.verb}</div>
+                <p className="text-[14px] leading-6 mb-5" style={{ color: "rgba(var(--ink), .65)" }}>{s.text}</p>
                 <div className="hr-soft mb-4" />
-                <ul className="space-y-1.5">
+                <ul className="space-y-2">
                   {s.out.map((x, j) => (
-                    <li key={j} className="text-[12px] leading-5" style={{ color: "rgba(var(--ink), .60)" }}>{x}</li>
+                    <li key={j} className="flex gap-2.5" style={{ color: "rgba(var(--ink), .62)" }}>
+                      <span className="mt-[7px] h-1 w-1 flex-none rounded-full shrink-0" style={{ background: "rgba(var(--accent), .55)" }} />
+                      <span className="text-[13px] leading-5">{x}</span>
+                    </li>
                   ))}
                 </ul>
               </div>

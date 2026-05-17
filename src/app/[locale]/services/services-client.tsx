@@ -108,9 +108,12 @@ export default function ServicesClient() {
             <div className="mt-6 grid gap-5 md:grid-cols-2">
               {themes.map((item, i) => (
                 <Reveal key={i} delay={i * 50}>
-                  <div className="rounded-2xl border border-slate-200 bg-white px-5 py-4 h-full">
+                  <div
+                    className="rounded-2xl border border-slate-200/70 bg-white px-5 py-4 h-full"
+                    style={{ boxShadow: "0 1px 3px rgba(15,23,42,.06), 0 6px 16px rgba(15,23,42,.08), inset 0 1px 0 rgba(255,255,255,.80)" }}
+                  >
                     <div className="flex items-start min-w-0 gap-3">
-                      <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-accent-90" />
+                      <span className="mt-[9px] h-1.5 w-1.5 flex-none rounded-full shrink-0" style={{ background: "rgb(var(--accent))" }} />
                       <p className="min-w-0 text-[15px] leading-6 text-slate-700">{item}</p>
                     </div>
                   </div>

@@ -7,7 +7,7 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Reveal } from "@/components/Reveal";
 import { blurDataURL } from "@/lib/blur";
-import type { ServiceUi, ServiceKey } from "@/types/i18n";
+import type { ServiceUi, ServiceKey, TeaserSection } from "@/types/i18n";
 
 const KEYS: ServiceKey[] = ["workshops", "partnership", "sparring"];
 
@@ -27,18 +27,23 @@ export default function ServicesClient() {
 
   const tabRoles = ui?.tabRole;
 
-  const cards = useMemo(() => KEYS.map((k) => ({
-    key: k,
-    title:        titles?.[k] ?? k,
-    role:         tabRoles?.[k] ?? "",
-    teaser:       t(`ui.teaser.${k}`),
-    when:         t(`ui.when.${k}`),
-    notSuitable:  asArray<string>(t.raw(`ui.notSuitable.${k}`)),
-    tags:         asArray<string>(t.raw(`ui.tags.${k}`)),
-    duration:     t(`ui.duration.${k}`),
-    deliverables: asArray<string>(t.raw(`ui.deliverables.${k}`)),
-    topics:       asArray<string>(t.raw(`ui.topics.${k}`)),
-  })), [t, titles, tabRoles]);
+  const cards = useMemo(() => {
+    const teaserSections = (ui?.teaserSections ?? {}) as Record<string, TeaserSection[]>;
+    return KEYS.map((k) => ({
+      key: k,
+      title:        titles?.[k] ?? k,
+      role:         tabRoles?.[k] ?? "",
+      teaser:       t(`ui.teaser.${k}`),
+      subtitle:     t(`ui.detailSubtitle.${k}`),
+      sections:     asArray<TeaserSection>(teaserSections[k]),
+      when:         t(`ui.when.${k}`),
+      notSuitable:  asArray<string>(t.raw(`ui.notSuitable.${k}`)),
+      tags:         asArray<string>(t.raw(`ui.tags.${k}`)),
+      duration:     t(`ui.duration.${k}`),
+      deliverables: asArray<string>(t.raw(`ui.deliverables.${k}`)),
+      topics:       asArray<string>(t.raw(`ui.topics.${k}`)),
+    }));
+  }, [t, titles, tabRoles, ui]);
 
   const [activeKey, setActiveKey] = useState<ServiceKey>("partnership");
   const active = cards.find((c) => c.key === activeKey) ?? cards[0];
@@ -68,9 +73,6 @@ export default function ServicesClient() {
             </div>
             <h1 className="mt-4 title">{t("title")}</h1>
             <p className="mt-5 text-lg leading-8 muted whitespace-pre-line">{t("intro")}</p>
-            <div className="mt-8">
-              <Link href={`/${locale}/approach`} className="btn-primary">{nav("approach")}</Link>
-            </div>
           </div>
 
           <div className="lg:col-span-6 lg:-mt-4 min-w-0">
@@ -100,7 +102,7 @@ export default function ServicesClient() {
                 <span>{t("themes.kicker")}</span>
               </div>
               <h2 className="mt-3 section-title">{t("themes.title")}</h2>
-              <p className="mt-4 text-base leading-7 muted">{t("themes.intro")}</p>
+              {t("themes.intro") && <p className="mt-4 text-base leading-7 muted">{t("themes.intro")}</p>}
             </div>
 
             <div className="mt-6 grid gap-5 md:grid-cols-2">
@@ -162,102 +164,135 @@ export default function ServicesClient() {
       {/* ── AUSWAHL + DETAILS ── */}
       <Reveal>
         <section className="pt-2 pb-8 md:pt-3 md:pb-10" ref={detailRef}>
-          <div>
-            {/* DETAIL PANEL – full width */}
-            <div role="tabpanel" id={`panel-${activeKey}`}>
-              <div className="panel min-w-0">
-                <div className="section-eyebrow">
-                  <span className="dot" />
-                  <span>{t("ui.labels.detailsTitle")}</span>
+          <div role="tabpanel" id={`panel-${activeKey}`}>
+            <div className="panel min-w-0">
+              <div className="section-eyebrow">
+                <span className="dot" />
+                <span>{t("ui.labels.detailsTitle")}</span>
+              </div>
+              <h2 className="mt-3 section-title break-words hyphens-auto max-w-full">{active.title}</h2>
+
+              {/* Intro sentence + optional subtitle */}
+              <p className="mt-4 text-[16px] leading-7 muted">{active.teaser}</p>
+              {active.subtitle && (
+                <p className="mt-2 text-[17px] font-[550] leading-7" style={{ color: "rgba(var(--ink), .68)" }}>{active.subtitle}</p>
+              )}
+
+              {/* Thought modules – Steuerungsrhythmus full-width, then Rolle + Ziel side by side */}
+              {active.sections.length > 0 && (
+                <div className="mt-8 space-y-4">
+                  <div className="rounded-2xl border border-slate-100 bg-slate-50/60 px-6 py-5">
+                    <div className="mb-2 text-[11px] tracking-[0.18em] uppercase font-semibold" style={{ color: "rgb(var(--accent))" }}>{active.sections[0]?.label}</div>
+                    <p className="text-[15px] leading-7 muted">{active.sections[0]?.text}</p>
+                  </div>
+                  {active.sections.length > 1 && (
+                    <div className="grid gap-4 sm:grid-cols-2">
+                      {active.sections.slice(1).map((s, i) => (
+                        <div key={i} className="rounded-2xl border border-slate-100 bg-slate-50/60 px-5 py-5">
+                          <div className="mb-2 text-[11px] tracking-[0.18em] uppercase font-semibold" style={{ color: "rgb(var(--accent))" }}>{s.label}</div>
+                          <p className="text-[14px] leading-7 muted whitespace-pre-line">{s.text}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
-                <h2 className="mt-3 section-title break-words hyphens-auto max-w-full">{active.title}</h2>
-                <p className="mt-4 text-[15px] leading-7 muted whitespace-pre-line">{active.teaser}</p>
+              )}
 
-                <div className="mt-8 hr-soft" />
+              <div className="mt-8 hr-soft" />
 
-                <div className="mt-8 grid gap-10 md:grid-cols-2">
-                  <div className="min-w-0">
-                    <div className="section-eyebrow">
-                      <span className="dot" />
-                      <span>{t("ui.labels.whenTitle")}</span>
-                    </div>
-                    {active.when.includes('\n') ? (
-                      <ul className="mt-3 grid gap-y-2">
-                        {active.when.split('\n').map((line, i) => (
-                          <li key={i} className="flex gap-3 text-[15px] leading-7 break-words" style={{ color: "rgba(var(--ink), .74)" }}>
-                            <span className="mt-[11px] h-1.5 w-1.5 flex-none rounded-full" style={{ background: "rgb(var(--accent))" }} />
-                            <span>{line}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <p className="mt-3 pl-[18px] text-[15px] leading-7 break-words" style={{ color: "rgba(var(--ink), .74)" }}>
-                        {active.when}
-                      </p>
-                    )}
-                    {active.topics.length ? (
-                      <div className="mt-8">
-                        <div className="section-eyebrow">
-                          <span className="dot" />
-                          <span>{t("ui.labels.topicsTitle")}</span>
-                        </div>
-                        <ul className="mt-4 list break-words">
-                          {active.topics.map((x, i) => <li key={i}>{x}</li>)}
-                        </ul>
-                      </div>
-                    ) : null}
+              {/* 2-col: Wann sinnvoll | Was Sie bekommen */}
+              <div className="mt-8 grid gap-10 md:grid-cols-2 md:items-start">
+                <div className="min-w-0">
+                  <div className="section-eyebrow">
+                    <span className="dot" />
+                    <span>{t("ui.labels.whenTitle")}</span>
                   </div>
-
-                  <div className="min-w-0">
-                    {active.notSuitable.length ? (
-                      <div className="mb-8 rounded-2xl border px-5 py-4" style={{ borderColor: "rgba(239,68,68,.20)", background: "rgba(239,68,68,.03)" }}>
-                        <div className="inline-flex items-center gap-2 text-[11px] tracking-[0.20em] uppercase font-semibold" style={{ color: "rgba(185,28,28,.75)" }}>
-                          <svg width="13" height="13" viewBox="0 0 20 20" fill="none" aria-hidden style={{ flexShrink: 0 }}>
-                            <circle cx="10" cy="10" r="9" stroke="currentColor" strokeWidth="1.8"/>
-                            <path d="M10 6v5M10 14v.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
-                          </svg>
-                          <span>{t("ui.labels.notSuitableTitle")}</span>
-                        </div>
-                        <ul className="mt-3 grid gap-y-2">
-                          {active.notSuitable.map((x, i) => (
-                            <li key={i} className="flex min-w-0 gap-3 text-[13px] leading-6" style={{ color: "rgba(var(--ink), .70)" }}>
-                              <span className="mt-[9px] h-1.5 w-1.5 flex-none rounded-full" style={{ background: "rgba(185,28,28,.45)" }} />
-                              <span className="min-w-0">{x}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ) : null}
-                    <div className="section-eyebrow">
-                      <span className="dot" />
-                      <span>{t("ui.labels.deliverablesTitle")}</span>
-                    </div>
-                    <ul className="mt-4 list break-words">
-                      {active.deliverables.map((x, i) => <li key={i}>{x}</li>)}
+                  {active.when.includes('\n') ? (
+                    <ul className="mt-3 grid gap-y-2">
+                      {active.when.split('\n').map((line, i) => (
+                        <li key={i} className="flex gap-3 text-[15px] leading-7 break-words" style={{ color: "rgba(var(--ink), .74)" }}>
+                          <span className="mt-[10px] h-1.5 w-1.5 flex-none rounded-full shrink-0" style={{ background: "rgb(var(--accent))" }} />
+                          <span>{line}</span>
+                        </li>
+                      ))}
                     </ul>
-                    {active.duration && (
-                      <div className="mt-8">
-                        <div className="section-eyebrow">
-                          <span className="dot" />
-                          <span>{t("ui.labels.durationTitle")}</span>
-                        </div>
-                        <p className="mt-1 pl-[18px] text-sm" style={{ color: "rgba(var(--ink), .74)" }}>
-                          {active.duration}
-                        </p>
-                      </div>
-                    )}
+                  ) : (
+                    <p className="mt-3 pl-[18px] text-[15px] leading-7 break-words" style={{ color: "rgba(var(--ink), .74)" }}>
+                      {active.when}
+                    </p>
+                  )}
+                </div>
+
+                {/* Was Sie bekommen – visually stronger */}
+                <div className="min-w-0">
+                  <div className="section-eyebrow">
+                    <span className="dot" />
+                    <span>{t("ui.labels.deliverablesTitle")}</span>
                   </div>
+                  <ul className="mt-4 grid gap-y-4">
+                    {active.deliverables.map((x, i) => (
+                      <li key={i} className="flex gap-3 break-words">
+                        <span className="mt-[10px] h-1.5 w-1.5 flex-none rounded-full shrink-0" style={{ background: "rgb(var(--accent))" }} />
+                        <span className="text-[15px] leading-7" style={{ color: "rgba(var(--ink), .82)", fontWeight: 450 }}>{x}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
-            </div>
 
+              {/* Typische Anlässe – eigene Zeile, dunklere Bullets */}
+              {active.topics.length > 0 && (
+                <div className="mt-10">
+                  <div className="section-eyebrow">
+                    <span className="dot" />
+                    <span>{t("ui.labels.topicsTitle")}</span>
+                  </div>
+                  <ul className="mt-4 grid gap-y-3">
+                    {active.topics.map((x, i) => (
+                      <li key={i} className="flex gap-3 break-words">
+                        <span className="mt-[10px] h-1.5 w-1.5 flex-none rounded-full shrink-0" style={{ background: "rgb(var(--accent))" }} />
+                        <span className="text-[15px] leading-7" style={{ color: "rgba(var(--ink), .70)" }}>{x}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Nicht passend – ans Ende, souverän */}
+              {active.notSuitable.length > 0 && (
+                <div className="mt-8 rounded-2xl border px-4 py-4" style={{ borderColor: "rgba(239,68,68,.18)", background: "rgba(239,68,68,.025)" }}>
+                  <div className="inline-flex items-center gap-2 text-[11px] tracking-[0.18em] uppercase font-semibold" style={{ color: "rgba(185,28,28,.68)" }}>
+                    <svg width="12" height="12" viewBox="0 0 20 20" fill="none" aria-hidden style={{ flexShrink: 0 }}>
+                      <circle cx="10" cy="10" r="9" stroke="currentColor" strokeWidth="1.8"/>
+                      <path d="M10 6v5M10 14v.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
+                    </svg>
+                    <span>{t("ui.labels.notSuitableTitle")}</span>
+                  </div>
+                  <ul className="mt-3 grid gap-y-1.5 sm:grid-cols-2">
+                    {active.notSuitable.map((x, i) => (
+                      <li key={i} className="flex min-w-0 gap-2.5 text-[12px] leading-5" style={{ color: "rgba(var(--ink), .62)" }}>
+                        <span className="mt-[7px] h-1.5 w-1.5 flex-none rounded-full" style={{ background: "rgba(185,28,28,.38)" }} />
+                        <span className="min-w-0">{x}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Laufzeit – small info line */}
+              {active.duration && (
+                <p className="mt-6 pt-4 border-t border-slate-100 text-xs text-slate-400">
+                  {t("ui.labels.durationTitle")}: {active.duration}
+                </p>
+              )}
+            </div>
           </div>
         </section>
       </Reveal>
 
       {/* ── CTA ── */}
       <Reveal>
-        <section className="pt-8 pb-12 md:pt-10 md:pb-16">
+        <section className="pt-6 pb-10 md:pt-8 md:pb-14">
           <div className="dark-block p-8 sm:p-10">
             <div className="flex flex-wrap items-center justify-between gap-8">
               <div className="min-w-0">

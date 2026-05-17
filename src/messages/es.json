@@ -23,7 +23,7 @@
     "hero": {
       "kicker": "Para directores generales y directores de planta en pymes industriales",
       "title": "La decisión está tomada. ¿Por qué sigue cambiando tan poco en la operación?",
-      "intro": "El motivo rara vez es la falta de voluntad. Está en un liderazgo poco claro, responsabilidades sin definir y falta de coordinación en los puntos críticos. Ahí es exactamente donde entro.\n\nTrabajo con la dirección y directamente en el shopfloor de empresas industriales. No en conceptos, sino en la cuestión de por qué la ejecución no funciona y qué debe cambiar en concreto. No en la sala de reuniones, sino allí donde las decisiones deben producir efecto. En situaciones de liderazgo. En la coordinación. En la operación."
+      "intro": "El motivo rara vez es la falta de voluntad. Está en un liderazgo poco claro, responsabilidades sin definir y falta de coordinación en los puntos críticos. Ahí es exactamente donde entro."
     },
     "pillars": {
       "title": "Qué distingue mi trabajo",
@@ -31,15 +31,15 @@
       "items": [
         {
           "title": "Ejecución en lugar de conceptos excesivos",
-          "text": "El cambio no se planifica por encima de todo lo demás, sino que se hace efectivo dentro de la operación — junto con los responsables. Con estructura clara, responsabilidades aclaradas y sin añadir nueva complejidad. Estoy con usted en la planta, con botas de seguridad en lugar de traje."
+          "text": "Estoy con usted en la planta, con botas de seguridad en lugar de traje, y hago efectivo el cambio junto con los responsables."
         },
         {
           "title": "Claridad en responsabilidad y coordinación",
-          "text": "No trabajo con programas adicionales al margen de la organización, sino dentro de la operación diaria. Allí donde se toman decisiones, se asume responsabilidad y se generan resultados."
+          "text": "No trabajo al margen de la organización, sino donde se toman decisiones y se generan resultados."
         },
         {
           "title": "Experiencia en planta, liderazgo y dirección",
-          "text": "Mi perspectiva se basa en la responsabilidad directa asumida en funciones operativas y de liderazgo dentro de entornos industriales. Forjada en la responsabilidad en la operación, afinada en paralelo a través del estudio y la investigación."
+          "text": "Forjado en la responsabilidad operativa en la empresa, afinado a través del estudio y la investigación en entornos industriales."
         }
       ]
     },
@@ -47,28 +47,20 @@
     "divider": {
       "kicker": "Breve. Práctico. Eficaz.",
       "title": "Menos abstracción\nMás realidad operativa",
-      "text": "Obtiene la combinación de mi experiencia desde distintos ángulos: responsabilidad operativa de primera mano en la empresa, profundidad académica en M&A, integración cultural y desarrollo organizativo, y la capacidad de trabajar en cinco idiomas directamente con la dirección y la plantilla."
+      "text": ""
     },
     "audience": {
-      "title": "Con quién trabajo y cuándo se concreta",
-      "subtitle": "Clientes y situaciones típicas en pymes industriales",
+      "title": "Cuándo la ejecución no funciona en la empresa",
+      "subtitle": "Situaciones típicas",
       "boxTitles": [
         "Quién me contrata",
         "El problema concreto"
       ],
-      "targets": [
-        "Quien ha pasado por una adquisición y nota que la integración se estanca y que las culturas no terminan de encontrarse",
-        "Quien ha tomado una decisión que no termina de llegar a la organización y ya no sabe por qué",
-        "Quien ha construido una nueva estructura de liderazgo que funciona sobre el papel, pero no se vive en la realidad",
-        "Quien aplica Lean, pero los indicadores apenas se mueven y la dirección no sostiene el tema",
-        "Quien, tras un crecimiento, una reestructuración o un cambio de liderazgo, nota que responsabilidades, procesos y rendición de cuentas ya no encajan con la nueva realidad"
-      ],
+      "targets": [],
       "triggers": [
-        "Tras una adquisición surgen tensiones culturales entre estructuras antiguas y nuevas que nadie nombra oficialmente, pero que todos perciben operativamente",
-        "Las decisiones se toman a nivel directivo, pero en el shopfloor no está claro qué debe cambiar en concreto ni quién es responsable de ello",
-        "Una estructura de liderazgo matricial o multisede debe funcionar, pero las responsabilidades y las vías de decisión permanecen permanentemente poco claras",
-        "Una iniciativa Lean o de mejora continua lleva meses en marcha, pero los indicadores, el comportamiento directivo y las rutinas en planta todavía no han cambiado",
-        "Las responsabilidades formales se han redistribuido, pero en el día a día siguen decidiendo quienes siempre lo han hecho"
+        "Tras una reestructuración, un crecimiento o una adquisición, los procesos y las decisiones funcionan formalmente de otra manera, pero en el día a día la empresa sigue orientándose por las estructuras antiguas.",
+        "Las decisiones están tomadas y las medidas acordadas, pero los bucles de coordinación, el pensamiento por silos y las prioridades contradictorias siguen frenando la ejecución.",
+        "Se han introducido nuevos estándares, rutinas de liderazgo o responsabilidades, pero van perdiendo progresivamente su carácter vinculante en el negocio diario."
       ]
     },
     "orientation": {
@@ -85,14 +77,12 @@
     "themes": {
       "kicker": "Áreas de enfoque",
       "title": "En qué apoyo de forma concreta",
-      "intro": "Según la situación y el formato, trabajo en los temas que sostienen el liderazgo, la colaboración y una ejecución eficaz en el contexto operativo.",
+      "intro": "",
       "items": [
-        "Liderazgo, roles y capacidad de decisión",
-        "Coordinación y colaboración entre interfaces",
-        "Dirección y estabilización de procesos operativos en producción, logística y calidad",
-        "Comunicación en situaciones de cambio y transición",
-        "Cultura e identidad en transformación, M&A y sucesión",
-        "Anclaje de nuevas formas de trabajo en la operación diaria"
+        "Liderazgo & capacidad de decisión",
+        "Ejecución & responsabilidad",
+        "Interfaces & colaboración",
+        "Cultura & integración en fases de transición"
       ]
     },
     "ui": {
@@ -113,14 +103,21 @@
       },
       "ctaPrimary": "Solicitar una consulta",
       "when": {
-        "workshops": "Cuando se necesita claridad sobre la situación de partida, las prioridades y las decisiones, y cuando hace falta un inicio estructurado de la ejecución, tanto en lo operativo como en lo cultural.",
-        "partnership": "Cuando la ejecución durante varios meses requiere liderazgo, claridad y continuidad.",
-        "sparring": "Cuando la coordinación interna está bloqueada y no surge ninguna decisión clara\nCuando intereses divergentes impiden avanzar\nCuando se necesita una perspectiva independiente para crear claridad"
+        "workshops": "Cuando las decisiones se posponen una y otra vez\nCuando las prioridades se entienden de forma diferente entre áreas\nCuando no está claro quién asume la responsabilidad\nCuando las iniciativas arrancan pero no surge ninguna dirección",
+        "partnership": "Las decisiones pierden su efecto en el día a día\nLiderazgo y áreas trabajan unos contra otros\nEl cambio recae constantemente en patrones antiguos\nLa cultura y la colaboración pierden estabilidad en fases de transición",
+        "sparring": "Cuando las decisiones siguen abiertas a pesar de numerosas reuniones\nCuando los conflictos de objetivos entre áreas bloquean el liderazgo\nCuando las consecuencias son conocidas pero nadie quiere nombrarlas"
       },
       "teaser": {
-        "workshops": "Tras uno o dos días juntos, sabe dónde está el verdadero cuello de botella, quién es concretamente responsable de qué y qué ocurrirá en los próximos 90 días. La pregunta de por dónde empezar deja de plantearse. No un concepto. Un primer paso efectivo.",
-        "partnership": "Cuando el cambio debe sostenerse durante meses, un solo taller no es suficiente. Se requiere un ritmo estable de liderazgo y toma de decisiones.\n\nLa alianza de implementación no significa que esté con usted todos los días. Se lleva a cabo, por ejemplo, mediante 1 o 2 días fijos presenciales por semana en su planta o mediante reuniones directivas intensivas y semanales con los responsables. Esta alianza de implementación no debe entenderse como la externalización de su ejecución operativa. Más bien, actúo directamente en la planta como su sparring partner: modero las interfaces críticas, establezco rutinas de liderazgo vinculantes y ayudo a resolver las tensiones ocultas exactamente donde surgen.\n\nMi objetivo es hacerme prescindible: permanezco a su lado hasta que sus líderes mantengan el ritmo de forma autónoma y el cambio se haya convertido en parte del día a día.",
-        "sparring": "Se enfrenta a una decisión que no puede delegar y que no quiere tomar solo. Sin coaching. Sin recomendaciones generales. Una valoración sólida y un siguiente paso claro."
+        "workshops": "Cuando las decisiones, prioridades y responsabilidades no encajan, no hay ejecución. El workshop crea una base común.",
+        "partnership": "Cuando las decisiones deben generar un efecto duradero en la organización, un solo taller no es suficiente.",
+        "sparring": "Cuando el liderazgo ya no produce decisiones claras pese a muchas conversaciones, hace falta una perspectiva independiente."
+      },
+      "teaserSections": {
+        "partnership": [
+          {"label": "Ritmo de dirección", "text": "La colaboración se desarrolla mediante días presenciales fijos en su planta o reuniones de dirección periódicas con los responsables. Directamente en la planta. No al margen del día a día, sino dentro de él."},
+          {"label": "Rol", "text": "Modero las interfaces críticas, establezco rutinas de liderazgo vinculantes y ayudo a resolver las tensiones exactamente donde tienen impacto operativo."},
+          {"label": "Objetivo", "text": "Mi objetivo es hacerme prescindible.\nLa ejecución no debe depender del acompañamiento externo, sino convertirse en parte del ritmo de liderazgo diario."}
+        ]
       },
       "notSuitable": {
         "workshops": [
@@ -129,8 +126,7 @@
         ],
         "partnership": [
           "La ejecución operativa se va a externalizar por completo",
-          "El liderazgo no está activamente implicado",
-          "El foco está en los métodos, no en su implementación efectiva"
+          "El liderazgo no quiere asumir la responsabilidad por sí mismo"
         ],
         "sparring": [
           "El problema real aún no puede o no debe ser nombrado",
@@ -138,27 +134,19 @@
         ]
       },
       "topics": {
-        "workshops": [
-          "Lean / Excelencia Operativa (estabilidad, calidad, tiempo de ciclo, productividad)",
-          "Prioridades poco claras, bloqueos de decisión o conflictos en interfaces",
-          "Inicio o reinicio de iniciativas de mejora y transformación"
-        ],
-        "partnership": [
-          "Las decisiones estratégicas ya están tomadas, pero no generan un efecto estable en la organización",
-          "El liderazgo se enfrenta a expectativas contradictorias, falta de claridad de roles y alta presión de decisión",
-          "Tensiones recurrentes entre áreas, niveles o centros consumen atención y energía de forma permanente",
-          "Las fricciones culturales en transiciones como M&A, integración o sucesión dificultan la dirección y la colaboración"
-        ],
-        "sparring": [
-          "Decisiones críticas, conflictos de objetivos o alta presión de stakeholders",
-          "Cuestiones de cultura e identidad en crecimiento, reestructuración o integración",
-          "Preguntas de liderazgo: rol, impacto, claridad y consecuencia"
-        ]
+        "workshops": [],
+        "partnership": [],
+        "sparring": []
       },
       "cardTitles": {
         "workshops": "Workshop de clarificación",
         "partnership": "Alianza de implementación",
         "sparring": "Claridad en la decisión"
+      },
+      "detailSubtitle": {
+        "workshops": "",
+        "partnership": "",
+        "sparring": ""
       },
       "tagline": {
         "workshops": "Sin concepto. Un primer paso efectivo.",
@@ -183,18 +171,17 @@
       "deliverables": {
         "workshops": [
           "Una imagen compartida del objetivo y focos priorizados",
-          "Decisiones sobre roles, ritmo de liderazgo y estándares",
-          "Un plan concreto de ejecución (30/60/90 días) con responsabilidades claras"
+          "Decisiones sobre roles, ritmo de liderazgo y estándares"
         ],
         "partnership": [
-          "Un ritmo claro de dirección y decisión, diseñado conjuntamente, con responsabilidades definidas a nivel de liderazgo y organización",
-          "Transparencia sobre avances, bloqueos y efecto de las medidas",
+          "Rutinas de liderazgo y toma de decisiones vinculantes",
+          "Transparencia sobre avances, bloqueos e impacto",
           "Anclaje de colaboración, cultura e identidad en liderazgo y organización"
         ],
         "sparring": [
-          "Claridad en situaciones complejas o críticas",
-          "Priorización y lógica de decisión a nivel directivo",
-          "Reflexión confidencial y próximos pasos claros"
+          "Evaluación independiente de situaciones críticas",
+          "Lógica de decisión y priorización a nivel directivo",
+          "Próximos pasos claros y consecuencias"
         ],
         "speaking": [
           "Conferencia, formación o formato docente adecuado a la ocasión",
@@ -211,62 +198,76 @@
   "approach": {
     "eyebrow": "Mi enfoque",
     "title": "Enfoque",
-    "intro": "El cambio rara vez fracasa por falta de conceptos. Fracasa porque las decisiones no se sostienen, no se priorizan o no se ejecutan de manera consistente.\n\nAquí es exactamente donde intervengo, en la interacción entre liderazgo, priorización y ejecución en la operación diaria.",
-    "principlesEyebrow": "Actitud y orientación",
-    "principlesTitle": "Principios",
-    "principles": [
-      "Trabajar en la operación diaria:\nJunto con la dirección se configuran roles claros y ritmos de decisión y dirección, de modo que la responsabilidad pueda asumirse de forma efectiva.",
-      "Hacer medible el impacto:\nLos indicadores, estándares y rutinas relevantes se definen conjuntamente y se hace su seguimiento a través de rutinas de liderazgo y toma de decisiones.",
-      "Anclar el cambio de forma sostenible:\nLas nuevas formas de trabajo se integran en las rutinas, la colaboración, la cultura y la identidad."
-    ],
+    "intro": "El cambio rara vez fracasa por falta de conocimiento.\nFracasa porque las decisiones no se sostienen en el día a día.\n\nAquí es exactamente donde trabajo: en liderazgo, priorización y ejecución en la operación diaria.",
     "how": {
       "kicker": "Mi modelo de actuación",
       "title": "Del motivo a la ejecución en tres pasos",
-      "subtitle": "No como un concepto, sino para que funcione en el día a día: clarificar juntos, liderar operativamente y anclar con consistencia.",
+      "subtitle": "No como un concepto, sino para que funcione en la operación.",
       "stepLabel": "Paso",
       "outTitle": "Resultado",
-      "restriction": "Este enfoque no está pensado para todas las situaciones. Tiene sentido cuando ya está claro que el cambio es necesario, pero no funciona.",
       "steps": [
         {
           "verb": "Clarificar",
-          "text": "Entiendo la situación de partida, los cuellos de botella y las dinámicas y creo la base para las primeras decisiones sólidas sobre el objetivo y las prioridades.",
+          "text": "Claridad sobre cuellos de botella, prioridades y responsabilidad.",
           "out": [
             "Objetivo compartido",
-            "Prioridades clave",
-            "Decisiones y próximos pasos"
+            "Prioridades",
+            "Próximas decisiones"
           ]
         },
         {
           "verb": "Establecer",
-          "text": "Diseño y acompaño la implantación de un ritmo de liderazgo y dirección que permite de forma estable claridad, priorización y ejecución.",
+          "text": "El liderazgo y la colaboración se vuelven gestionables de forma vinculante.",
           "out": [
-            "Las decisiones se toman con mayor claridad",
-            "La coordinación se vuelve más corta y vinculante",
-            "La responsabilidad se hace tangible"
+            "Las decisiones se vuelven más claras",
+            "La coordinación se acorta",
+            "La responsabilidad se hace visible"
           ]
         },
         {
           "verb": "Anclar",
-          "text": "Aseguro el impacto mediante seguimiento, responsabilidades y encaje cultural, hasta que forme parte del sistema sin necesidad de impulsos externos.",
+          "text": "La ejecución pasa a formar parte de la rutina de liderazgo.",
           "out": [
-            "Funciona sin apoyo externo",
-            "El cambio forma parte del día a día",
-            "El liderazgo dirige de forma autónoma"
+            "El liderazgo dirige de forma autónoma",
+            "Los estándares se mantienen estables",
+            "El cambio funciona sin impulsos externos"
           ]
         }
       ]
     },
-    "toolboxEyebrow": "Medios para un fin",
-    "toolboxTitle": "Herramientas",
-    "toolboxSubtitle": "Según necesidad.",
-    "toolbox": [
-      "Shopfloor management y rutinas de liderazgo",
-      "Optimización de tiempos de preparación, flujos ágiles y resolución sistemática de problemas",
-      "Vías de decisión claras y comunicación fiable",
-      "Integración cultural y trabajo de identidad antes y después de adquisiciones"
-    ],
-    "bridge": "Según el contexto y el punto de partida, trabajo en distintos formatos, desde un workshop compacto hasta un acompañamiento a más largo plazo.",
-    "bridgeCta": "Ver servicios →",
+    "collaboration": {
+      "kicker": "Cómo trabajo en la práctica",
+      "title": "Cómo es la colaboración",
+      "groups": [
+        {
+          "label": "En la operación, no al margen",
+          "items": [
+            "Días de presencia fija en la planta",
+            "Directamente con la dirección y en las interfaces",
+            "Decisiones donde se genera el impacto",
+            "Shopfloor, no sala de presentaciones"
+          ]
+        },
+        {
+          "label": "Hacer el liderazgo gobernable",
+          "items": [
+            "Responsabilidades claras",
+            "Rutinas fijas de decisión y liderazgo",
+            "Prioridades transparentes",
+            "Seguimiento consistente"
+          ]
+        },
+        {
+          "label": "Estabilizar la ejecución",
+          "items": [
+            "Hacer visibles las tensiones",
+            "Reducir los bucles de coordinación",
+            "Anclar los estándares en la operación",
+            "Responsabilidad independiente del apoyo externo"
+          ]
+        }
+      ]
+    },
     "cta": {
       "kicker": "15 minutos de orientación",
       "text": "En una breve conversación aclaramos si esta es su situación y qué formato encaja."
@@ -279,24 +280,24 @@
     "heroImage": "/seref-sahil-change-werkstatt.jpg",
     "heroImageAlt": "Seref Sahil",
     "intro": [
-      "Conozco estas situaciones no por workshops, sino por responsabilidad.\nDesde la producción y el liderazgo. Desde fases en las que hubo que tomar decisiones bajo presión.",
-      "Hoy trabajo con líderes y organizaciones en pymes industriales exactamente en estos puntos.\nDonde el cambio está decidido, pero no funciona.\nDonde liderazgo, cultura y organización deben traducirse en una ejecución eficaz."
+      "No desde workshops, sino desde la producción, la responsabilidad y el liderazgo.",
+      "Hoy acompaño a directivos y organizaciones en pymes industriales exactamente en estos puntos. Donde la ejecución necesita claridad, liderazgo y compromiso."
     ],
     "profileTitle": "Perfil",
-    "profileText": "La aceptación surge allí donde el lenguaje, la realidad y la responsabilidad encajan.\n\nEn situaciones de M&A, integración y transformación, la ejecución rara vez fracasa por objetivos formales, sino por tensiones culturales y de identidad ocultas. Mi acceso multilingüe a las organizaciones y mi trabajo académico sobre estas dinámicas me permiten hacer visibles esas tensiones de forma temprana, antes de que desplieguen efectos operativos o políticos.\n\nMi investigación en la integración de M&A no se centra en debates académicos, sino en identificar los costosos errores que surgen cuando se ignoran la cultura y la identidad después de un acuerdo.\n\nMi trabajo se basa en experiencia directa en planta, liderazgo y dirección dentro de entornos industriales. De ahí surge un enfoque claro: el cambio debe encajar con la realidad operativa, ser asumido por el liderazgo y estar anclado en el trabajo diario.\n\nAsí surge una ejecución que no necesita explicación, sino que se sostiene y se vive.",
-    "clarityText": "Trabajo directamente con usted en la planta, pero evito deliberadamente asumir el trabajo de sus líderes. Mi función es actuar como sparring partner: modero las interfaces críticas, establezco rutinas de liderazgo vinculantes y ayudo a resolver las tensiones ocultas exactamente donde surgen. Así, empodero a su equipo para que dirija con éxito la implementación por sí mismo, en lugar de generar una dependencia de mí como proveedor de servicios externo.",
+    "profileText": "La aceptación surge allí donde el lenguaje, la realidad y la responsabilidad coinciden.\n\nMi trayectoria profesional comenzó en entornos industriales y se desarrolló a través de la producción, el liderazgo y la responsabilidad interplanta. En paralelo, realicé una formación como mecánico industrial, la especialización como técnico superior en ingeniería mecánica, y estudios de administración de empresas y psicología organizacional — y hoy, un doctorado. Siempre en paralelo a la actividad profesional y cerca de la realidad operativa.\n\nEsta combinación de experiencia en planta, liderazgo y reflexión científica marca mi trabajo hasta hoy. Mi enfoque no consiste solo en preparar decisiones, sino en hacerlas efectivas en la práctica junto con los responsables.",
+    "clarityText": "",
     "bulletsEyebrow": "Base de mi trabajo",
     "bullets": [
-      "Más de 25 años de experiencia operativa: desde trabajos de verano hasta la responsabilidad interplanta de producción y logística",
-      "15 años de formación continua en paralelo a la actividad profesional: de ingeniería mecánica a administración de empresas y psicología empresarial, con foco en liderazgo y organización",
-      "Diseño y organización de procesos industriales a lo largo de la cadena de valor, complementado con certificación en Six Sigma y REFA",
-      "Doctorado práctico en curso (Doctor of Business Administration) sobre integración M&A, cultura e identidad en pymes industriales",
-      "Colaboración multilingüe en liderazgo y ejecución: alemán, inglés, turco, español y árabe"
+      "Más de 25 años de responsabilidad operativa en producción, logística y liderazgo interplanta",
+      "Experiencia en situaciones de cambio, reestructuración e integración en entornos industriales",
+      "Combinación de práctica operativa, responsabilidad de liderazgo y reflexión científica",
+      "Doctorado en curso sobre integración M&A, cultura y ejecución organizacional en pymes",
+      "Colaboración multilingüe en alemán, inglés, turco, español y árabe"
     ],
     "linkedInLabel": "Ver perfil de LinkedIn",
     "practiceEyebrow": "Experiencia de proyectos",
     "practiceTitle": "Experiencia desde la práctica",
-    "practiceIntro": "Durante 25 años estuve en su lado de la mesa: desde un trabajo de verano hasta la dirección de producción en múltiples plantas. Conozco la operación, el liderazgo y la presión por experiencia propia, no por casos de estudio. Por eso, hoy no trabajo como un consultor tradicional con conceptos abstractos, sino que aporto el pragmatismo de un experto desde dentro (insider), que sabe exactamente cómo se implementan realmente las decisiones en la realidad operativa.",
+    "practiceIntro": "Situaciones y responsabilidades que han formado mi mirada sobre el liderazgo y la ejecución.",
     "practiceItems": [
       {
         "title": "Integración post-merger",
@@ -313,19 +314,11 @@
       {
         "title": "Reestructuración y anclaje cultural",
         "text": "Acompañamiento de fases de reestructuración con foco en claridad de liderazgo, comunicación y anclaje sostenible del cambio en el trabajo diario."
-      },
-      {
-        "title": "Certificación ISO y sistemas de gestión",
-        "text": "Acompañamiento exitoso de procesos de recertificación conforme a DIN ISO 9001, incluida la reorganización en entornos de producción como base de una garantía de calidad sostenible."
-      },
-      {
-        "title": "Clarificación de flujos de valor e interfaces",
-        "text": "Flujos ágiles en interfaces críticas: responsabilidad presupuestaria, gestión de centros de coste y gestión multiproyecto en producción y logística."
       }
     ],
     "testimonialsEyebrow": "Lo que dicen otros",
     "testimonialsTitle": "Voces de la colaboración",
-    "testimonialsIntro": "Las siguientes valoraciones proceden de situaciones reales de liderazgo y ejecución en entornos industriales, de la etapa anterior a la fundación de Change-Werkstatt.",
+    "testimonialsIntro": "",
     "testimonials": [
       {
         "quote": "Alta claridad profesional, sólido criterio analítico y un valioso sparring partner para la dirección.",

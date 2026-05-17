@@ -23,7 +23,7 @@
     "hero": {
       "kicker": "For managing directors and plant managers in manufacturing SMEs",
       "title": "The decision has been made. Why is so little changing in operations?",
-      "intro": "The reason is rarely a lack of will. It lies in unclear leadership, unresolved responsibilities, and a lack of alignment at the critical points. That is exactly where I come in.\n\nI work with leadership and directly on the shop floor in manufacturing companies. Not on concepts, but on the question of why execution is not taking hold and what specifically needs to change. Not in the meeting room, but where decisions are meant to have an effect. In leadership situations. In coordination. In operations."
+      "intro": "The reason is rarely a lack of will. It lies in unclear leadership, unresolved responsibilities, and a lack of alignment at the critical points. That is exactly where I come in."
     },
     "pillars": {
       "title": "What distinguishes my work",
@@ -31,15 +31,15 @@
       "items": [
         {
           "title": "Execution instead of concept-heavy work",
-          "text": "Change is not planned on top of everything else, but made effective within operations — together with those responsible. With clear structure, clarified responsibilities, and without adding new complexity. I stand with you on the shop floor, in safety boots rather than a suit."
+          "text": "I stand with you on the shop floor, in safety boots rather than a suit, and make change effective together with those responsible."
         },
         {
           "title": "Clarity in responsibility and alignment",
-          "text": "I do not work with additional programs alongside the organization, but within ongoing operations. Where decisions are made, responsibility is taken, and results emerge."
+          "text": "I work not alongside the organization, but where decisions are made and results emerge."
         },
         {
           "title": "Experience from shop floor, leadership, and management",
-          "text": "My perspective is grounded in direct responsibility in operational and leadership roles within industrial environments. It has grown out of accountability in operations and has been sharpened in parallel through study and research."
+          "text": "Grown from direct accountability in operations, sharpened through study and research in industrial environments."
         }
       ]
     },
@@ -47,28 +47,20 @@
     "divider": {
       "kicker": "Concise. Practical. Effective.",
       "title": "Less abstraction\nMore operational reality",
-      "text": "You get the combination of my expertise from different angles: firsthand operational responsibility in manufacturing, academic depth in M&A, cultural integration, and organizational development, and the ability to work directly with leadership and workforce in five languages."
+      "text": ""
     },
     "audience": {
-      "title": "Who I work with and when it becomes concrete",
-      "subtitle": "Typical clients and situations in manufacturing SMEs",
+      "title": "When implementation fails to take hold",
+      "subtitle": "Typical situations",
       "boxTitles": [
         "Who hires me",
         "The concrete problem"
       ],
-      "targets": [
-        "Those who have gone through an acquisition and notice that integration is stalling and the cultures are not coming together",
-        "Those who have made a decision that is not landing in the organization and no longer know why",
-        "Those who have built a new leadership structure that works on paper, but is not actually being practiced",
-        "Those who run Lean, but the numbers barely move and leadership is not backing it",
-        "Those who, after growth, restructuring, or a leadership change, notice that responsibilities, processes, and accountability no longer fit the new reality"
-      ],
+      "targets": [],
       "triggers": [
-        "After an acquisition, cultural tensions arise between old and new structures that no one officially names, but everyone feels operationally",
-        "Decisions are made at leadership level, but on the shop floor it is unclear what should change specifically and who is accountable",
-        "A cross-site or matrix leadership structure is supposed to work, but responsibilities and decision paths remain permanently unclear",
-        "A Lean implementation or continuous improvement initiative has been running for months, but KPIs, leadership behavior, and shop floor routines have still not changed",
-        "Formal responsibilities have been redistributed, but in day-to-day operations those who have always decided still decide"
+        "After restructuring, growth, or an acquisition, processes and decisions run formally new — but in day-to-day operations the organization still orients itself to the old structures.",
+        "Decisions have been made and measures agreed, but coordination loops, silo thinking, and conflicting priorities continue to hold up implementation.",
+        "New standards, leadership routines, or responsibilities have been introduced, but gradually lose their binding force in the daily business."
       ]
     },
     "orientation": {
@@ -85,14 +77,12 @@
     "themes": {
       "kicker": "Focus areas",
       "title": "Where I provide concrete support",
-      "intro": "Depending on the situation and format, I work on the topics that support leadership, collaboration, and effective execution in operational contexts.",
+      "intro": "",
       "items": [
-        "Leadership, roles, and decision-making capability",
-        "Alignment and collaboration across interfaces",
-        "Steering and stabilizing operational processes in production, logistics, and quality",
-        "Communication in change and transition situations",
-        "Culture and identity in transformation, M&A, and succession",
-        "Embedding new ways of working in ongoing operations"
+        "Leadership & decision-making",
+        "Execution & accountability",
+        "Interfaces & collaboration",
+        "Culture & integration in transition phases"
       ]
     },
     "ui": {
@@ -113,14 +103,21 @@
       },
       "ctaPrimary": "Request a consultation",
       "when": {
-        "workshops": "When clarity is needed on the starting point, priorities, and decisions, and when a structured start to execution is needed, operationally as well as culturally.",
-        "partnership": "When execution over several months requires leadership, clarity, and continuity.",
-        "sparring": "When internal alignment has stalled and no clear decision is emerging\nWhen conflicting interests are blocking decisions\nWhen an independent perspective is needed to create clarity"
+        "workshops": "When decisions keep getting postponed\nWhen priorities are understood differently across teams\nWhen it's unclear who carries responsibility\nWhen initiatives start but no direction emerges",
+        "partnership": "Decisions lose their impact in day-to-day operations\nLeadership and departments work against each other\nChange keeps reverting to old patterns\nCulture and collaboration lose stability in transition phases",
+        "sparring": "When decisions remain open despite numerous meetings\nWhen goal conflicts between teams block leadership\nWhen consequences are known but no one is willing to name them"
       },
       "teaser": {
-        "workshops": "After one or two days together, you know where the real bottleneck lies, who is specifically responsible for what, and what will happen over the next 90 days. The question of where to start no longer arises. Not a concept. A first effective step.",
-        "partnership": "When change needs to be sustained over months, a single workshop is not enough. It requires a stable leadership and decision-making rhythm.\n\nThe implementation partnership does not mean I am with you every day. It takes place, for example, through 1 to 2 fixed days on-site per week or through intensive weekly steering meetings with the decision-makers. The implementation partnership is not an outsourcing of your operational execution. Instead, I act directly on the shop floor as your sparring partner: I moderate critical interfaces, establish binding leadership routines, and help resolve hidden tensions exactly where they arise.\n\nMy goal is to make myself redundant: I remain by your side until your leadership team can sustain the rhythm independently and the change has become a natural part of everyday operations.",
-        "sparring": "You are facing a decision you cannot delegate and do not want to make alone. No coaching. No general recommendations. A sound assessment and a clear next step."
+        "workshops": "When decisions, priorities, and responsibilities are out of alignment, execution stalls. The workshop creates a shared foundation.",
+        "partnership": "When decisions are to have lasting impact in the organisation, a single workshop is not enough.",
+        "sparring": "When leadership no longer produces clear decisions despite many conversations, an independent assessment is needed."
+      },
+      "teaserSections": {
+        "partnership": [
+          {"label": "Steering rhythm", "text": "The collaboration runs through fixed on-site days or regular steering meetings with those responsible. Directly on the shop floor. Not alongside everyday operations, but within them."},
+          {"label": "Role", "text": "I moderate critical interfaces, establish binding leadership routines, and help resolve tensions exactly where they have operational impact."},
+          {"label": "Goal", "text": "My goal is to make myself redundant.\nExecution should not depend on external support — it should become part of leadership's everyday rhythm."}
+        ]
       },
       "notSuitable": {
         "workshops": [
@@ -129,8 +126,7 @@
         ],
         "partnership": [
           "Operational execution is to be fully outsourced",
-          "Leadership is not actively involved",
-          "The focus is on methods, not on their effective implementation"
+          "Leadership is unwilling to take responsibility itself"
         ],
         "sparring": [
           "The real problem cannot or should not yet be named",
@@ -138,27 +134,19 @@
         ]
       },
       "topics": {
-        "workshops": [
-          "Lean / Operational Excellence (stability, quality, lead time, productivity)",
-          "Unclear priorities, decision bottlenecks, or interface conflicts",
-          "Start or restart of improvement and transformation initiatives"
-        ],
-        "partnership": [
-          "Strategic decisions have been made, but do not create stable impact in the organization",
-          "Leadership is confronted with conflicting expectations, unclear roles, and high decision pressure",
-          "Recurring tensions between functions, levels, or sites consume attention and energy over time",
-          "Cultural friction in transition situations such as M&A, integration, or succession complicates steering and collaboration"
-        ],
-        "sparring": [
-          "Critical decisions, goal conflicts, or high stakeholder pressure",
-          "Culture and identity questions in growth, restructuring, or integration",
-          "Leadership questions: role, impact, clarity, and consequence"
-        ]
+        "workshops": [],
+        "partnership": [],
+        "sparring": []
       },
       "cardTitles": {
         "workshops": "Clarification Workshop",
         "partnership": "Implementation Partnership",
         "sparring": "Decision Clarity"
+      },
+      "detailSubtitle": {
+        "workshops": "",
+        "partnership": "",
+        "sparring": ""
       },
       "tagline": {
         "workshops": "No concept. A first effective step.",
@@ -182,19 +170,18 @@
       },
       "deliverables": {
         "workshops": [
-          "A shared target state and prioritized focus areas",
-          "Decisions on roles, leadership rhythm, and standards",
-          "A concrete execution plan (30/60/90 days) with clear responsibilities"
+          "A shared target state and prioritised focus areas",
+          "Decisions on roles, leadership rhythm, and standards"
         ],
         "partnership": [
-          "A clear steering and decision rhythm, jointly designed, with defined responsibilities at leadership and organizational level",
-          "Transparency on progress, blockers, and the effect of measures",
-          "Embedding collaboration, culture, and identity in leadership and organization"
+          "Binding leadership and decision-making routines",
+          "Transparency on progress, blockers, and impact",
+          "Embedding collaboration, culture, and identity in leadership and organisation"
         ],
         "sparring": [
-          "Clarity in complex or critical situations",
-          "Prioritization and decision logic at leadership level",
-          "Confidential reflection and clear next steps"
+          "Independent assessment of critical situations",
+          "Decision logic and prioritisation at leadership level",
+          "Clear next steps and consequences"
         ],
         "speaking": [
           "A keynote, training, or teaching format suited to the occasion",
@@ -211,62 +198,76 @@
   "approach": {
     "eyebrow": "My approach",
     "title": "Approach",
-    "intro": "Change rarely fails because of missing concepts. It fails because decisions are not carried, not prioritized, or not executed consistently.\n\nThat is exactly where I step in, in the interplay of leadership, prioritization, and execution in ongoing operations.",
-    "principlesEyebrow": "Mindset & Orientation",
-    "principlesTitle": "Principles",
-    "principles": [
-      "Working within ongoing operations:\nClear roles and decision-making and steering rhythms are developed together with leadership so that responsibility can be effectively assumed.",
-      "Making impact measurable:\nRelevant metrics, standards, and routines are defined together and followed up through leadership and decision-making routines.",
-      "Embedding change sustainably:\nNew ways of working are integrated into routines, collaboration, as well as culture and identity."
-    ],
+    "intro": "Change rarely fails because of missing knowledge.\nIt fails because decisions are not carried in day-to-day operations.\n\nThat is exactly where I work: in leadership, prioritization, and execution in ongoing operations.",
     "how": {
       "kicker": "My process model",
       "title": "From trigger to execution in three steps",
-      "subtitle": "Not as a concept, but in a way that works in day-to-day operations: clarify together, lead operationally, embed consistently.",
+      "subtitle": "Not as a concept, but in a way that works in operations.",
       "stepLabel": "Step",
       "outTitle": "Outcome",
-      "restriction": "This approach is not intended for every situation. It makes sense when it is already clear that change is necessary, but is not taking hold.",
       "steps": [
         {
           "verb": "Clarify",
-          "text": "I understand the starting point, bottlenecks, and dynamics and create the foundation for first robust decisions on target state and priorities.",
+          "text": "Clarity on bottlenecks, priorities, and responsibility.",
           "out": [
             "Shared target state",
-            "Top priorities",
-            "Decisions & next steps"
+            "Priorities",
+            "Next decisions"
           ]
         },
         {
           "verb": "Establish",
-          "text": "I design and support the establishment of a leadership and steering rhythm that reliably enables clarity, prioritization, and execution.",
+          "text": "Leadership and collaboration become reliably manageable.",
           "out": [
-            "Decisions are made more clearly",
-            "Coordination becomes shorter and more binding",
-            "Responsibility becomes tangible"
+            "Decisions become clearer",
+            "Coordination gets shorter",
+            "Responsibility becomes visible"
           ]
         },
         {
           "verb": "Embed",
-          "text": "I secure impact through follow-up, responsibilities, and cultural fit, until it belongs to the system without external input.",
+          "text": "Execution becomes part of leadership routine.",
           "out": [
-            "It works without external support",
-            "Change becomes part of everyday work",
-            "Leadership steers independently"
+            "Leadership steers independently",
+            "Standards remain stable",
+            "Change works without external input"
           ]
         }
       ]
     },
-    "toolboxEyebrow": "Means to an end",
-    "toolboxTitle": "Tools",
-    "toolboxSubtitle": "Selected as needed.",
-    "toolbox": [
-      "Shop floor management and leadership routines",
-      "Setup time reduction, smooth workflows, and systematic problem-solving",
-      "Clear decision paths and reliable communication",
-      "Cultural integration and identity work before and after acquisitions"
-    ],
-    "bridge": "Depending on the situation and starting point, I work in different formats, from a focused workshop to longer-term support.",
-    "bridgeCta": "View services →",
+    "collaboration": {
+      "kicker": "How I work in practice",
+      "title": "What collaboration looks like",
+      "groups": [
+        {
+          "label": "In the operation, not beside it",
+          "items": [
+            "Fixed presence days on site",
+            "Directly with leadership and at interfaces",
+            "Decisions where impact happens",
+            "Shop floor, not presentation room"
+          ]
+        },
+        {
+          "label": "Making leadership manageable",
+          "items": [
+            "Clear responsibilities",
+            "Fixed decision and leadership routines",
+            "Transparent priorities",
+            "Consistent follow-through"
+          ]
+        },
+        {
+          "label": "Stabilising execution",
+          "items": [
+            "Making tensions visible",
+            "Reducing coordination loops",
+            "Embedding standards in operations",
+            "Responsibility independent of external support"
+          ]
+        }
+      ]
+    },
     "cta": {
       "kicker": "15-minute orientation",
       "text": "In a brief conversation, we clarify whether this is your situation and which format fits."
@@ -279,25 +280,24 @@
     "heroImage": "/seref-sahil-change-werkstatt.jpg",
     "heroImageAlt": "Seref Sahil",
     "intro": [
-      "I know these situations not from workshops, but from responsibility.\nFrom production and leadership. From phases in which decisions had to be made under pressure.",
-      "Today I work with leaders and organizations in industrial SMEs on exactly these points.\nWhere change has been decided, but is not taking hold.\nWhere leadership, culture, and organization need to be translated into effective implementation."
+      "Not from workshops, but from production, responsibility, and leadership.",
+      "Today I work with leaders and organisations in industrial SMEs on exactly these points. Where implementation requires clarity, leadership, and commitment."
     ],
     "profileTitle": "Profile",
-    "profileText": "Acceptance emerges where language, reality, and responsibility fit together.\n\nIn M&A, integration, and transformation situations, execution rarely fails because of formal targets, but because of hidden cultural and identity-related tensions. My multilingual access to organizations and my academic work on these dynamics make it possible to surface such tensions early, before they unfold operationally or politically.\n\nMy research in M&A integration focuses not on academic debate but on identifying costly pitfalls that arise when culture and identity are ignored after a deal.\n\nMy work is grounded in firsthand experience in plant, leadership, and management roles within industrial environments. This leads to a clear approach: change must fit operational reality, be owned by leadership, and be embedded in everyday work.\n\nThis is how execution emerges, not as something that needs to be explained, but as something that is carried and lived."
-    ,
-    "clarityText": "I work directly with you on the shop floor, but I consciously avoid taking over the jobs of your leadership team. My role is to act as a sparring partner: I moderate critical interfaces, establish binding leadership routines, and help resolve hidden tensions exactly where they arise. In doing so, I empower your team to successfully drive the implementation themselves, rather than creating a dependency on me as an external service provider.",
+    "profileText": "Acceptance arises where language, reality and responsibility align.\n\nMy professional path began in an industrial environment and developed through production, leadership, and cross-site responsibility. In parallel, I completed training as an industrial mechanic, further qualification as a state-certified mechanical engineering technician, and studies in business administration and organisational psychology — and today I am working on my doctorate. Always alongside professional practice and close to operational reality.\n\nThis combination of plant experience, leadership, and academic engagement shapes my work to this day. My focus is not just on preparing decisions, but on making them effective in practice together with those responsible.",
+    "clarityText": "",
     "bulletsEyebrow": "Foundation of my work",
     "bullets": [
-      "25+ years of operational experience: from summer jobs to cross-site responsibility for production and logistics",
-      "15 years of continuous professional development: from mechanical engineering through business administration and business psychology, with a focus on leadership and organization",
-      "Design and organization of industrial processes along the value chain, complemented by Six Sigma and REFA certification",
-      "Ongoing practice-oriented doctorate (Doctor of Business Administration) on M&A integration, culture, and identity in industrial SMEs",
-      "Multilingual collaboration in leadership and execution: German, English, Turkish, Spanish, and Arabic"
+      "Over 25 years of operational responsibility in production, logistics, and cross-site leadership",
+      "Experience in change, restructuring, and integration situations in industrial environments",
+      "Combination of operational practice, leadership responsibility, and academic engagement",
+      "Ongoing doctorate on M&A integration, culture, and organisational execution in industrial SMEs",
+      "Multilingual collaboration in German, English, Turkish, Spanish, and Arabic"
     ],
     "linkedInLabel": "View LinkedIn profile",
     "practiceEyebrow": "Project experience",
     "practiceTitle": "Experience from practice",
-    "practiceIntro": "For 25 years, I was on your side of the table – from a summer job to multi-site production management. I know the operations, the leadership dynamics, and the pressure from first-hand experience, not from case studies. That is why I do not operate like a traditional consultant with abstract concepts. Instead, I bring the pragmatism of an experienced insider who knows exactly how decisions are actually executed in operational reality.",
+    "practiceIntro": "Situations and responsibilities that have shaped my perspective on leadership and implementation.",
     "practiceItems": [
       {
         "title": "Post-merger integration",
@@ -314,19 +314,11 @@
       {
         "title": "Restructuring & cultural embedding",
         "text": "Support through restructuring phases with a focus on leadership clarity, communication, and the sustainable embedding of change in everyday work."
-      },
-      {
-        "title": "ISO certification & management systems",
-        "text": "Successful support of recertification processes under DIN ISO 9001, including reorganization in the production environment as a basis for sustainable quality assurance."
-      },
-      {
-        "title": "Value stream & interface clarification",
-        "text": "Smooth workflows at critical interfaces: budget responsibility, cost center steering, and multi-project management in production and logistics."
       }
     ],
     "testimonialsEyebrow": "What others say",
     "testimonialsTitle": "Voices from collaboration",
-    "testimonialsIntro": "The following assessments come from real leadership and execution situations in industrial environments, from the time before the founding of Change-Werkstatt.",
+    "testimonialsIntro": "",
     "testimonials": [
       {
         "quote": "High professional clarity, strong analytical judgment, and a valuable sparring partner for executive management.",

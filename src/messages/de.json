@@ -23,7 +23,7 @@
     "hero": {
       "kicker": "Für Geschäftsführer und Werkleiter im produzierenden Mittelstand",
       "title": "Ihre Entscheidung ist gefallen. Warum bewegt sich im Betrieb trotzdem zu wenig?",
-      "intro": "Der Grund liegt selten am fehlenden Willen. Er liegt an unklarer Führung, ungeklärten Verantwortlichkeiten und fehlender Abstimmung an den entscheidenden Stellen. Genau dort komme ich dazu.\n\nIch arbeite mit der Führung und direkt auf dem Shopfloor in produzierenden Unternehmen. Nicht an Konzepten, sondern an der Frage, warum Umsetzung nicht greift und was sich konkret ändern muss. Nicht im Besprechungsraum, sondern dort, wo Entscheidungen Wirkung entfalten sollen. In Führungssituationen. In Abstimmungen. Im Betrieb."
+      "intro": "Der Grund liegt selten am fehlenden Willen. Er liegt an unklarer Führung, ungeklärten Verantwortlichkeiten und fehlender Abstimmung an den entscheidenden Stellen. Genau dort komme ich dazu."
     },
     "pillars": {
       "title": "Was meine Arbeit unterscheidet",
@@ -31,15 +31,15 @@
       "items": [
         {
           "title": "Umsetzung statt Konzeptlast",
-          "text": "Veränderung wird nicht zusätzlich geplant, sondern gemeinsam mit den Verantwortlichen im Betrieb wirksam gemacht. Mit klarer Struktur, geklärten Verantwortlichkeiten und ohne neue Komplexität. Ich stehe mit Ihnen am Shopfloor, in Sicherheitsschuhen statt Anzug."
+          "text": "Ich stehe mit Ihnen am Shopfloor, in Sicherheitsschuhen statt Anzug, und mache Veränderung mit den Verantwortlichen wirksam."
         },
         {
           "title": "Klarheit in Verantwortung und Abstimmung",
-          "text": "Ich arbeite nicht mit zusätzlichen Programmen neben der Organisation, sondern im laufenden Betrieb. Dort, wo entschieden und Verantwortung übernommen wird und Ergebnisse entstehen."
+          "text": "Ich arbeite nicht neben der Organisation, sondern dort, wo entschieden wird und Ergebnisse entstehen."
         },
         {
           "title": "Erfahrung aus Werk, Führung und Management",
-          "text": "Meine Perspektive beruht auf eigener Verantwortung in operativen und führungsbezogenen Rollen im industriellen Umfeld. Gewachsen aus Verantwortung im Betrieb, parallel geschärft durch Studium und Forschung."
+          "text": "Gewachsen aus operativer Verantwortung im Betrieb, geschärft durch Studium und Forschung im industriellen Umfeld."
         }
       ]
     },
@@ -47,28 +47,20 @@
     "divider": {
       "kicker": "Kurz. Praxisnah. Wirksam.",
       "title": "Weniger Abstraktion.\nMehr operative Realität.",
-      "text": "Sie bekommen die Kombination meiner Expertise aus verschiedenen Zugängen: operative Verantwortung im Betrieb aus erster Hand, wissenschaftliche Tiefe zu M&A, Kulturintegration und Organisationsentwicklung, und die Fähigkeit, in fünf Sprachen direkt mit Führung und Belegschaft zu arbeiten."
+      "text": ""
     },
     "audience": {
-      "title": "Für wen ich arbeite und wann es konkret wird",
-      "subtitle": "Typische Auftraggeber und Situationen",
+      "title": "Wenn Umsetzung im Betrieb nicht greift",
+      "subtitle": "Typische Situationen",
       "boxTitles": [
         "Wer mich beauftragt",
         "Das konkrete Problem"
       ],
-      "targets": [
-        "Wer eine Übernahme hinter sich hat und merkt, dass die Integration stockt und die Kulturen nicht zusammenfinden",
-        "Wer eine Entscheidung getroffen hat, die im Betrieb nicht ankommt, und nicht mehr weiß, woran das liegt",
-        "Wer eine neue Führungsstruktur aufgebaut hat, die auf dem Papier funktioniert, aber in der Realität nicht gelebt wird",
-        "Wer Lean betreibt, aber die Kennzahlen sich kaum bewegen und die Führung das Thema nicht trägt",
-        "Wer nach Wachstum, Restrukturierung oder einem Führungswechsel merkt, dass Zuständigkeiten, Abläufe und Verantwortung nicht mehr zur neuen Realität passen"
-      ],
+      "targets": [],
       "triggers": [
-        "Nach einer Übernahme entstehen kulturelle Spannungen zwischen alten und neuen Strukturen, die offiziell niemand benennt, aber alle operativ spüren",
-        "Entscheidungen werden auf Führungsebene getroffen, aber am Shopfloor ist unklar, was sich konkret ändern soll und wer das verantwortet",
-        "Eine standortübergreifende oder matrixartige Führungsstruktur soll funktionieren, aber Verantwortlichkeiten und Entscheidungswege bleiben dauerhaft unklar",
-        "Eine Lean-Einführung oder KVP-Initiative läuft seit Monaten, aber Kennzahlen, Führungsverhalten und Shopfloor-Routinen haben sich noch nicht verändert",
-        "Formale Zuständigkeiten wurden neu verteilt, aber im Alltag entscheiden weiterhin die, die es schon immer getan haben"
+        "Nach Restrukturierung, Wachstum oder einer Übernahme laufen Abläufe und Entscheidungen formal neu, im Alltag orientiert sich der Betrieb jedoch weiter an den alten Strukturen.",
+        "Entscheidungen sind getroffen und Maßnahmen beschlossen, aber Abstimmungsschleifen, Bereichsdenken und widersprüchliche Prioritäten bremsen die Umsetzung weiterhin aus.",
+        "Neue Standards, Führungsroutinen oder Verantwortlichkeiten wurden eingeführt, verlieren im Tagesgeschäft jedoch Schritt für Schritt an Verbindlichkeit."
       ]
     },
     "orientation": {
@@ -85,14 +77,12 @@
     "themes": {
       "kicker": "Themenschwerpunkte",
       "title": "Wobei ich konkret unterstütze",
-      "intro": "Je nach Anlass und Format arbeite ich an den Themen, die Führung, Zusammenarbeit und wirksame Umsetzung im operativen Kontext tragen.",
+      "intro": "",
       "items": [
-        "Führung, Rollen und Entscheidungsfähigkeit",
-        "Abstimmung und Zusammenarbeit an Schnittstellen",
-        "Steuerung und Stabilisierung operativer Abläufe in Produktion, Logistik und Qualität",
-        "Kommunikation in Veränderungs- und Übergangssituationen",
-        "Kultur und Identität in Transformation, M&A und Nachfolge",
-        "Verankerung neuer Arbeitsweisen im laufenden Betrieb"
+        "Führung & Entscheidungsfähigkeit",
+        "Umsetzung & Verantwortlichkeit",
+        "Schnittstellen & Zusammenarbeit",
+        "Kultur & Integration in Übergangsphasen"
       ]
     },
     "ui": {
@@ -113,14 +103,21 @@
       },
       "ctaPrimary": "Gespräch anfragen",
       "when": {
-        "workshops": "Wenn Klarheit über Ausgangslage, Prioritäten und Entscheidungen benötigt wird und ein strukturierter Start in die Umsetzung erfolgen soll: operativ wie kulturell.",
-        "partnership": "Wenn Umsetzung über Monate hinweg Führung, Klarheit und Kontinuität erfordert.",
-        "sparring": "Wenn interne Abstimmungen festgefahren sind und keine klare Entscheidung entsteht\nWenn unterschiedliche Interessen Entscheidungen blockieren\nWenn eine unabhängige Einordnung notwendig ist, um Klarheit zu schaffen"
+        "workshops": "Wenn Entscheidungen immer wieder vertagt werden\nWenn Prioritäten zwischen Bereichen unterschiedlich verstanden werden\nWenn unklar ist, wer Verantwortung trägt\nWenn Initiativen starten, aber keine Richtung entsteht",
+        "partnership": "Entscheidungen verlieren im Betrieb ihre Wirkung\nFührung und Bereiche arbeiten gegeneinander\nVeränderung fällt immer wieder in alte Muster zurück\nKultur und Zusammenarbeit geraten in Übergangsphasen aus dem Gleichgewicht",
+        "sparring": "Wenn Entscheidungen trotz zahlreicher Meetings offen bleiben\nWenn Zielkonflikte zwischen Bereichen Führung blockieren\nWenn Konsequenzen bekannt sind, aber niemand sie aussprechen will"
       },
       "teaser": {
-        "workshops": "Nach einem oder zwei gemeinsamen Tagen wissen Sie, wo der eigentliche Engpass liegt, wer konkret was verantwortet, und was in den nächsten 90 Tagen passiert. Die Frage, womit Sie anfangen sollen, stellt sich danach nicht mehr. Kein Konzept. Ein erster wirkungsvoller Schritt.",
-        "partnership": "Wenn Veränderung über Monate hinweg getragen werden muss, reicht ein einzelner Workshop nicht. Dann braucht es einen stabilen Führungs- und Entscheidungsrhythmus.\n\nDie Umsetzungspartnerschaft bedeutet nicht, dass ich jeden Tag bei Ihnen bin. Sie erfolgt beispielsweise durch 1 bis 2 feste Präsenztage pro Woche in Ihrem Betrieb oder durch wöchentliche, intensive Steuerungstermine mit den Verantwortlichen. Die Umsetzungspartnerschaft versteht sich nicht als Auslagerung Ihrer operativen Umsetzung. Vielmehr agiere ich direkt auf dem Shopfloor als Ihr Sparringspartner: Ich moderiere kritische Schnittstellen, etabliere verbindliche Führungsroutinen und helfe, verdeckte Spannungen dort aufzulösen, wo sie entstehen.\n\nMein Ziel ist es, mich selbst überflüssig zu machen: Ich bleibe an Ihrer Seite, bis Ihre Führungskräfte den Rhythmus selbstständig tragen und die Veränderung Teil des Alltags geworden ist.",
-        "sparring": "Sie stehen vor einer Entscheidung, die Sie nicht delegieren können und nicht allein treffen wollen. Kein Coaching. Keine allgemeinen Empfehlungen. Sondern eine fundierte Einschätzung und ein klarer nächster Schritt."
+        "workshops": "Wenn Entscheidungen, Prioritäten und Verantwortung nicht zusammenpassen, entsteht keine Umsetzung. Der Workshop schafft dafür eine gemeinsame Grundlage.",
+        "partnership": "Wenn Entscheidungen im Betrieb dauerhaft Wirkung entfalten sollen, reicht ein einzelner Workshop nicht.",
+        "sparring": "Wenn Führung trotz vieler Gespräche keine klare Entscheidung mehr hervorbringt, braucht es eine unabhängige Einordnung."
+      },
+      "teaserSections": {
+        "partnership": [
+          {"label": "Steuerungsrhythmus", "text": "Die Zusammenarbeit erfolgt über feste Präsenztage im Betrieb oder regelmäßige Steuerungstermine mit den Verantwortlichen. Direkt auf dem Shopfloor. Nicht neben dem Alltag, sondern darin."},
+          {"label": "Rolle", "text": "Ich moderiere kritische Schnittstellen, etabliere verbindliche Führungsroutinen und helfe, Spannungen dort aufzulösen, wo sie operative Wirkung entfalten."},
+          {"label": "Ziel", "text": "Mein Ziel ist es, mich selbst überflüssig zu machen.\nDie Umsetzung soll nicht von externer Begleitung abhängen, sondern Teil des Führungsalltags werden."}
+        ]
       },
       "notSuitable": {
         "workshops": [
@@ -129,8 +126,7 @@
         ],
         "partnership": [
           "Operative Umsetzung vollständig ausgelagert werden soll",
-          "Führung nicht aktiv eingebunden ist",
-          "Der Fokus auf Methoden liegt, nicht auf deren wirksamer Umsetzung"
+          "Führung Verantwortung nicht selbst tragen will"
         ],
         "sparring": [
           "Das eigentliche Problem noch nicht benannt werden kann oder soll",
@@ -138,27 +134,19 @@
         ]
       },
       "topics": {
-        "workshops": [
-          "Lean / Operational Excellence (Stabilität, Qualität, Durchlaufzeit, Produktivität)",
-          "Unklare Prioritäten, Entscheidungsstaus oder Schnittstellenkonflikte",
-          "Start oder Neustart von Verbesserungs- und Transformationsinitiativen"
-        ],
-        "partnership": [
-          "Strategische Entscheidungen sind getroffen, entfalten jedoch keine stabile Wirkung in der Organisation",
-          "Führung ist mit widersprüchlichen Erwartungen, Rollenunklarheit und hohem Entscheidungsdruck konfrontiert",
-          "Wiederkehrende Spannungen zwischen Bereichen, Ebenen oder Standorten binden dauerhaft Aufmerksamkeit und Energie",
-          "Kulturelle Reibungen in Übergangssituationen wie M&A, Integration oder Nachfolge erschweren Steuerung und Zusammenarbeit"
-        ],
-        "sparring": [
-          "Kritische Entscheidungen, Zielkonflikte oder hoher Stakeholder-Druck",
-          "Kultur-/Identitätsfragen bei Wachstum, Restrukturierung oder Integration",
-          "Führungsfragen: Rolle, Wirkung, Klarheit und Konsequenz"
-        ]
+        "workshops": [],
+        "partnership": [],
+        "sparring": []
       },
       "cardTitles": {
         "workshops": "Klärungsworkshop",
         "partnership": "Umsetzungspartnerschaft",
         "sparring": "Entscheidungsklarheit"
+      },
+      "detailSubtitle": {
+        "workshops": "",
+        "partnership": "",
+        "sparring": ""
       },
       "tagline": {
         "workshops": "Kein Konzept. Ein erster wirkungsvoller Schritt.",
@@ -183,18 +171,17 @@
       "deliverables": {
         "workshops": [
           "Gemeinsames Zielbild und priorisierte Schwerpunkte",
-          "Entscheidungen zu Rollen, Führungsrhythmus und Standards",
-          "Konkreter Umsetzungsplan (30/60/90 Tage) mit klaren Verantwortlichkeiten"
+          "Entscheidungen zu Rollen, Führungsrhythmus und Standards"
         ],
         "partnership": [
-          "Einen klaren, gemeinsam gestalteten Steuerungs- und Entscheidungsrhythmus mit definierten Verantwortlichkeiten auf Führungs- und Organisationsebene",
-          "Transparenz über Fortschritt, Blockaden und Wirkung von Maßnahmen",
+          "Verbindliche Führungs- und Entscheidungsroutinen",
+          "Transparenz über Fortschritt, Blockaden und Wirkung",
           "Verankerung von Zusammenarbeit, Kultur und Identität in Führung und Organisation"
         ],
         "sparring": [
-          "Klarheit in komplexen oder kritischen Situationen",
-          "Priorisierung und Entscheidungslogik auf Führungsebene",
-          "Vertrauliche Reflexion und klare nächste Schritte"
+          "Unabhängige Einordnung kritischer Situationen",
+          "Entscheidungslogik und Priorisierung auf Führungsebene",
+          "Klare nächste Schritte und Konsequenzen"
         ],
         "speaking": [
           "Impuls, Training oder Lehrformat passend zum Anlass",
@@ -211,62 +198,76 @@
   "approach": {
     "eyebrow": "Mein Ansatz",
     "title": "Vorgehen",
-    "intro": "Veränderung scheitert selten an fehlenden Konzepten. Sie scheitert daran, dass Entscheidungen nicht getragen, priorisiert oder konsequent umgesetzt werden.\n\nGenau dort setze ich an, im Zusammenspiel von Führung, Priorisierung und Umsetzung im laufenden Betrieb.",
-    "principlesEyebrow": "Haltung & Orientierung",
-    "principlesTitle": "Prinzipien",
-    "principles": [
-      "Im laufenden Betrieb arbeiten:\nGemeinsam mit der Führung entstehen klare Rollen, Entscheidungs- und Steuerungsrhythmen, sodass Verantwortung wirksam übernommen werden kann.",
-      "Wirkung messbar machen:\nRelevante Kennzahlen, Standards und Routinen werden gemeinsam definiert und über Führungs- und Entscheidungsroutinen nachgehalten.",
-      "Veränderung nachhaltig verankern:\nNeue Arbeitsweisen werden in Routinen, Zusammenarbeit sowie Kultur und Identität integriert."
-    ],
+    "intro": "Veränderung scheitert selten an fehlendem Wissen.\nSondern daran, dass Entscheidungen im Betrieb nicht getragen werden.\n\nGenau dort arbeite ich: in Führung, Priorisierung und Umsetzung im laufenden Betrieb.",
     "how": {
       "kicker": "Mein Vorgehensmodell",
       "title": "Vom Anlass zur Umsetzung in drei Schritten",
-      "subtitle": "Nicht als Konzept, sondern so, dass es im Tagesgeschäft funktioniert: gemeinsam klären, operativ führen, konsequent verankern.",
+      "subtitle": "Nicht als Konzept, sondern so, dass es im Tagesgeschäft trägt.",
       "stepLabel": "Schritt",
       "outTitle": "Ergebnis",
-      "restriction": "Dieses Vorgehen ist nicht für jede Situation gedacht. Es ist sinnvoll, wenn bereits klar ist, dass Veränderung notwendig ist, aber nicht greift.",
       "steps": [
         {
           "verb": "Klären",
-          "text": "Ich verstehe die Ausgangslage, Engpässe und Dynamiken und schaffe die Grundlage für erste tragfähige Entscheidungen zu Zielbild und Prioritäten.",
+          "text": "Klarheit über Engpässe, Prioritäten und Verantwortung.",
           "out": [
             "Gemeinsames Zielbild",
-            "Top-Prioritäten",
-            "Entscheidungen & nächste Schritte"
+            "Prioritäten",
+            "Nächste Entscheidungen"
           ]
         },
         {
           "verb": "Etablieren",
-          "text": "Ich gestalte und begleite den Aufbau eines Führungs- und Steuerungsrhythmus, der Klarheit, Priorisierung und Umsetzung stabil ermöglicht.",
+          "text": "Führung und Zusammenarbeit werden verbindlich steuerbar.",
           "out": [
-            "Entscheidungen werden klarer getroffen",
-            "Abstimmungen werden kürzer und verbindlicher",
-            "Verantwortung ist spürbar"
+            "Entscheidungen werden klarer",
+            "Abstimmungen kürzer",
+            "Verantwortung sichtbar"
           ]
         },
         {
           "verb": "Verankern",
-          "text": "Ich sichere die Wirkung über Nachhalten, Verantwortlichkeiten und kulturelle Anschlussfähigkeit, bis sie ohne externe Impulse zum System gehört.",
+          "text": "Umsetzung gehört zur Führungsroutine.",
           "out": [
-            "Es trägt ohne externe Unterstützung",
-            "Veränderung ist Teil des Alltags",
-            "Die Führung steuert eigenständig nach"
+            "Führung steuert eigenständig",
+            "Standards bleiben stabil",
+            "Veränderung trägt ohne externe Impulse"
           ]
         }
       ]
     },
-    "toolboxEyebrow": "Mittel zum Zweck",
-    "toolboxTitle": "Werkzeuge",
-    "toolboxSubtitle": "Auswahlweise, je nach Bedarf.",
-    "toolbox": [
-      "Shopfloor Management und Führungsroutinen",
-      "Rüstzeitoptimierung, fließende Abläufe und systematische Problemlösung",
-      "Klare Entscheidungswege und verlässliche Kommunikation",
-      "Kulturelle Integration und Identitätsarbeit vor und nach Übernahmen"
-    ],
-    "bridge": "Je nach Anlass und Ausgangslage arbeite ich in unterschiedlichen Formaten: vom kompakten Workshop bis zur längerfristigen Begleitung.",
-    "bridgeCta": "Leistungen ansehen →",
+    "collaboration": {
+      "kicker": "Wie ich konkret arbeite",
+      "title": "Wie Zusammenarbeit aussieht",
+      "groups": [
+        {
+          "label": "Nicht neben dem Betrieb",
+          "items": [
+            "Feste Präsenztage im Betrieb",
+            "Direkt mit Führung und an den Schnittstellen",
+            "Entscheidungen dort, wo Wirkung entsteht",
+            "Shopfloor statt Präsentationsraum"
+          ]
+        },
+        {
+          "label": "Führung steuerbar machen",
+          "items": [
+            "Klare Verantwortlichkeiten",
+            "Feste Entscheidungs- und Führungsroutinen",
+            "Transparente Prioritäten",
+            "Konsequentes Nachhalten"
+          ]
+        },
+        {
+          "label": "Umsetzung stabilisieren",
+          "items": [
+            "Spannungen sichtbar machen",
+            "Abstimmungsschleifen reduzieren",
+            "Standards im Betrieb verankern",
+            "Verantwortung unabhängig von externer Begleitung tragen"
+          ]
+        }
+      ]
+    },
     "cta": {
       "kicker": "15 Minuten Orientierung",
       "text": "In einem kurzen Gespräch klären wir, ob das gerade Ihre Situation ist und welches Format passt."
@@ -279,24 +280,24 @@
     "heroImage": "/seref-sahil-change-werkstatt.jpg",
     "heroImageAlt": "Seref Sahil",
     "intro": [
-      "Ich kenne diese Situationen nicht aus Workshops, sondern aus Verantwortung.\nAus Produktion und Führung. Aus Phasen, in denen Entscheidungen unter Druck getroffen werden mussten.",
-      "Heute arbeite ich mit Führungskräften und Organisationen im industriellen Mittelstand genau an diesen Punkten.\nDort, wo Veränderung entschieden ist, aber nicht greift.\nWo Führung, Kultur und Organisation in wirksame Umsetzung übersetzt werden müssen."
+      "Nicht aus Workshops, sondern aus Produktion, Verantwortung und Führung.",
+      "Heute begleite ich Führungskräfte und Organisationen im industriellen Mittelstand genau an diesen Punkten. Dort, wo die Umsetzung Klarheit, Führung und Verbindlichkeit braucht."
     ],
     "profileTitle": "Profil",
-    "profileText": "Akzeptanz entsteht dort, wo Sprache, Realität und Verantwortung zusammenpassen.\n\nIn M&A-, Integrations- und Transformationssituationen scheitert Umsetzung selten an formalen Zielsetzungen, sondern an verdeckten kulturellen und identitätsbezogenen Spannungen. Mein mehrsprachiger Zugang zur Organisation und die wissenschaftliche Auseinandersetzung mit diesen Zusammenhängen ermöglichen es, solche Spannungen früh sichtbar zu machen, bevor sie operative oder politische Wirkung entfalten.\n\nMeine Forschung im Bereich M&A-Integration zielt nicht auf akademische Debatten ab, sondern auf das Erkennen kostspieliger Fallstricke, die entstehen, wenn Kultur und Identität nach einer Übernahme ignoriert werden.\n\nMeine Arbeit basiert auf eigener Erfahrung in Werk, Führung und Management im industriellen Umfeld. Daraus ergibt sich ein klarer Ansatz: Veränderungen müssen zur operativen Realität passen, von Führung übernommen werden und im Arbeitsalltag verankert sein.\n\nSo entsteht Umsetzung, die nicht erklärt werden muss, sondern getragen und gelebt wird.",
-    "clarityText": "Ich arbeite direkt mit Ihnen auf dem Shopfloor, übernehme aber bewusst nicht den Job Ihrer Führungskräfte. Meine Rolle ist es, als Sparringspartner zu agieren: Ich moderiere kritische Schnittstellen, etabliere verbindliche Führungsroutinen und helfe, verdeckte Spannungen direkt dort aufzulösen, wo sie entstehen. So befähige ich Ihr Team, die Umsetzung selbst erfolgreich zu steuern, anstatt eine Abhängigkeit von mir als externem Dienstleister aufzubauen.",
+    "profileText": "Akzeptanz entsteht dort, wo Sprache, Realität und Verantwortung zusammenpassen.\n\nMein beruflicher Weg begann im industriellen Umfeld und entwickelte sich über Produktion, Führung und standortübergreifende Verantwortung weiter. Parallel dazu folgten eine Ausbildung zum Industriemechaniker, die Weiterbildung zum staatlich geprüften Techniker Maschinenbau, das Studium der Betriebswirtschaft und Wirtschaftspsychologie und heute die Promotion. Immer berufsbegleitend und nah an der operativen Realität.\n\nDiese Verbindung aus Werk, Führung und wissenschaftlicher Auseinandersetzung prägt meine Arbeit bis heute. Mein Fokus liegt darauf, Entscheidungen nicht nur vorzubereiten, sondern gemeinsam mit den Verantwortlichen in der Praxis wirksam werden zu lassen.",
+    "clarityText": "",
     "bulletsEyebrow": "Fundament meiner Arbeit",
     "bullets": [
-      "25+ Jahre operative Praxiserfahrung: vom Ferienjob bis zur standortübergreifenden Verantwortung für Produktion und Logistik",
-      "15 Jahre berufsbegleitende Weiterqualifikation: von Maschinentechnik über Betriebswirtschaft und Wirtschaftspsychologie, mit Fokus auf Führung und Organisation",
-      "Gestaltung und Organisation industrieller Abläufe entlang der Wertschöpfung, ergänzt durch Zertifizierung in Six Sigma und REFA",
-      "Laufende praxisorientierte Promotion (Doctor of Business Administration) zu M&A-Integration, Kultur und Identität im industriellen Mittelstand",
-      "Mehrsprachige Zusammenarbeit in Führung und Umsetzung: Deutsch, Englisch, Türkisch, Spanisch und Arabisch"
+      "Über 25 Jahre operative Verantwortung in Produktion, Logistik und standortübergreifender Führung",
+      "Erfahrung in Veränderungs-, Restrukturierungs- und Integrationssituationen im industriellen Umfeld",
+      "Verbindung aus operativer Praxis, Führungsverantwortung und wissenschaftlicher Auseinandersetzung",
+      "Laufende Promotion zu M&A-Integration, Kultur und organisationaler Umsetzung im Mittelstand",
+      "Mehrsprachige Zusammenarbeit in Deutsch, Englisch, Türkisch, Spanisch und Arabisch"
     ],
     "linkedInLabel": "LinkedIn-Profil ansehen",
     "practiceEyebrow": "Projekterfahrung",
     "practiceTitle": "Erfahrung aus der Praxis",
-    "practiceIntro": "Ich war 25 Jahre lang auf Ihrer Seite des Tisches, vom Ferienjob bis zur standortübergreifenden Produktionsleitung. Ich kenne den Betrieb, die Führung und den Druck aus eigener Erfahrung, nicht aus Fallstudien. Deshalb arbeite ich heute nicht wie ein klassischer Berater mit abstrakten Konzepten, sondern bringe den Pragmatismus eines erfahrenen Insiders mit, der weiß, wie Entscheidungen in der operativen Realität tatsächlich umgesetzt werden.",
+    "practiceIntro": "Situationen und Verantwortung, die meinen Blick auf Führung und Umsetzung geprägt haben.",
     "practiceItems": [
       {
         "title": "Post-Merger-Integration",
@@ -313,19 +314,11 @@
       {
         "title": "Restrukturierung & Kulturverankerung",
         "text": "Begleitung von Restrukturierungsphasen mit Fokus auf Führungsklarheit, Kommunikation und nachhaltige Verankerung von Veränderungen im Arbeitsalltag."
-      },
-      {
-        "title": "ISO-Zertifizierung & Managementsysteme",
-        "text": "Erfolgreiche Begleitung von Rezertifizierungsprozessen nach DIN ISO 9001 – inklusive Neuorganisation im Produktionsumfeld als Grundlage nachhaltiger Qualitätssicherung."
-      },
-      {
-        "title": "Wertstrom- & Schnittstellenklärung",
-        "text": "Reibungslose Abläufe an kritischen Schnittstellen: Budgetverantwortung, Kostenstellensteuerung und Multiprojektmanagement in Fertigung und Logistik."
       }
     ],
     "testimonialsEyebrow": "Was andere sagen",
     "testimonialsTitle": "Stimmen aus der Zusammenarbeit",
-    "testimonialsIntro": "Die folgenden Einschätzungen stammen aus realen Führungs- und Umsetzungssituationen im industriellen Umfeld. Aus der Zeit vor der Gründung der Change-Werkstatt.",
+    "testimonialsIntro": "",
     "testimonials": [
       {
         "quote": "Hohe fachliche Klarheit, ausgeprägtes analytisches Urteilsvermögen und ein wertvoller Sparringspartner der Geschäftsführung.",

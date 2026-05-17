@@ -40,12 +40,19 @@ export interface ServiceCta {
   text: string;
 }
 
+export interface TeaserSection {
+  label: string;
+  text: string;
+}
+
 export interface ServiceUi {
   kicker: string;
   navTitle: string;
   cardTitles: Record<ServiceKey, string>;
   tabRole: Record<ServiceKey, string>;
   teaser: Record<string, string>;
+  teaserSections?: Record<string, TeaserSection[]>;
+  detailSubtitle?: Record<ServiceKey, string>;
   when: Record<string, string>;
   tags: Record<string, string[]>;
   duration: Record<string, string>;

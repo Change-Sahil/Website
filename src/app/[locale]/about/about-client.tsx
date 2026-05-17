@@ -53,7 +53,7 @@ export default function AboutClient() {
 
           <div className="lg:col-span-5">
             <div className="panel overflow-hidden p-0">
-              <div className="relative h-[400px] w-full md:h-[520px]">
+              <div className="relative h-[340px] w-full md:h-[440px]">
                 <Image
                   src={t("heroImage", { defaultValue: "/seref-sahil-change-werkstatt.jpg" })}
                   alt={t("heroImageAlt", { defaultValue: "Seref Sahil" })}
@@ -83,48 +83,40 @@ export default function AboutClient() {
             </div>
           </div>
 
-          <div className="mt-8 grid gap-6 lg:grid-cols-12 lg:items-start">
-            <div className="lg:col-span-7">
-              <div className="panel h-full">
-                <div className="space-y-4">
-                  {t("profileText")
-                    .split("\n\n")
-                    .map((p, i) => (
-                      <p
-                        key={i}
-                        className={
-                          i === 0
-                            ? "text-[15px] font-medium leading-7 text-slate-800"
-                            : "text-[15px] leading-7 text-slate-700"
-                        }
-                      >
-                        {p}
-                      </p>
-                    ))}
+          <div className="mt-8">
+            <div className="panel">
+              <div className="grid gap-8 lg:grid-cols-12 lg:items-start">
+                <div className="lg:col-span-7">
+                  <div className="space-y-4">
+                    {t("profileText")
+                      .split("\n\n")
+                      .map((p, i) => (
+                        <p key={i} className="text-[15px] leading-7 text-slate-700">
+                          {p}
+                        </p>
+                      ))}
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="lg:col-span-5">
-              <div className="panel h-full">
-                <div className="section-eyebrow">
-                  <span className="dot" />
-                  <span>{t("bulletsEyebrow")}</span>
+                <div className="border-t border-slate-200/70 pt-6 lg:col-span-5 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-8">
+                  <div className="section-eyebrow">
+                    <span className="dot" />
+                    <span>{t("bulletsEyebrow")}</span>
+                  </div>
+                  <ul className="list mt-4">
+                    {bullets.map((b, i) => <li key={i}>{b}</li>)}
+                  </ul>
+                  <div className="mt-6 border-t border-slate-200/70" />
+                  <p className="mt-5 text-sm text-slate-600">
+                    <a
+                      href="https://www.linkedin.com/in/seref-sahil-78304aa4/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline underline-offset-2 hover:text-slate-800"
+                    >
+                      {t("linkedInLabel", { defaultValue: "LinkedIn-Profil ansehen" })}
+                    </a>
+                  </p>
                 </div>
-                <ul className="list mt-4">
-                  {bullets.map((b, i) => <li key={i}>{b}</li>)}
-                </ul>
-                <div className="mt-6 border-t border-slate-200/70 pt-5" />
-                <p className="mt-4 text-sm text-slate-600">
-                  <a
-                    href="https://www.linkedin.com/in/seref-sahil-78304aa4/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline underline-offset-2 hover:text-slate-800"
-                  >
-                    {t("linkedInLabel", { defaultValue: "LinkedIn-Profil ansehen" })}
-                  </a>
-                </p>
               </div>
             </div>
           </div>
@@ -163,7 +155,7 @@ export default function AboutClient() {
             </div>
           </Reveal>
 
-          <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
             {practiceItems.map((item, i) => (
               <Reveal key={i} delay={i * 70}>
                 <article className="panel h-full border border-slate-200/70 bg-white/80 px-6 py-7 md:px-7 md:py-8">

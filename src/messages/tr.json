@@ -23,7 +23,7 @@
     "hero": {
       "kicker": "İmalat sektöründeki genel müdürler ve fabrika müdürleri için",
       "title": "Karar verildi. Peki işletmede neden hâlâ bu kadar az şey değişiyor?",
-      "intro": "Nedeni genellikle irade eksikliği değildir. Sorun, belirsiz liderlikte, netleşmemiş sorumluluklarda ve kritik noktalardaki koordinasyon eksikliğinde yatar. Ben tam da burada devreye giriyorum.\n\nİmalat şirketlerinde yönetimle ve doğrudan shopfloor’da çalışıyorum. Konseptlerle değil, uygulamanın neden işlemediği ve somut olarak neyin değişmesi gerektiği sorusuyla çalışıyorum. Toplantı odasında değil, kararların etki yaratması gereken yerde. Liderlik durumlarında. Koordinasyonda. İşletmenin içinde."
+      "intro": "Nedeni genellikle irade eksikliği değildir. Sorun, belirsiz liderlikte, netleşmemiş sorumluluklarda ve kritik noktalardaki koordinasyon eksikliğinde yatar. Ben tam da burada devreye giriyorum."
     },
     "pillars": {
       "title": "Çalışmamı farklı kılan",
@@ -31,15 +31,15 @@
       "items": [
         {
           "title": "Konsept ağırlığı yerine uygulama",
-          "text": "Değişim ayrıca planlanmaz, sorumluların katılımıyla işletmenin içinde etkili hâle getirilir. Net yapı, netleştirilmiş sorumluluklar ve yeni karmaşıklık yaratmadan. Takım elbise değil, güvenlik botlarıyla sahada sizin yanınızda duruyorum."
+          "text": "Takım elbise değil, güvenlik botlarıyla sahada sizin yanınızda duruyorum ve sorumluların katılımıyla değişimi etkili hâle getiriyorum."
         },
         {
           "title": "Sorumluluk ve koordinasyonda netlik",
-          "text": "Organizasyonun yanında ek programlarla değil, devam eden operasyonun içinde çalışıyorum. Kararların alındığı, sorumluluğun üstlenildiği ve sonuçların ortaya çıktığı yerde."
+          "text": "Organizasyonun yanında değil, kararların alındığı ve sonuçların ortaya çıktığı yerde çalışıyorum."
         },
         {
           "title": "Saha, liderlik ve yönetim deneyimi",
-          "text": "Bakış açım, endüstriyel ortamda operasyonel ve liderlik rollerinde üstlenilmiş doğrudan sorumluluğa dayanır. İşletmedeki sorumluluktan doğmuş, aynı zamanda eğitim ve araştırmayla keskinleşmiştir."
+          "text": "İşletmedeki operasyonel sorumluluktan doğmuş, endüstriyel ortamda eğitim ve araştırmayla keskinleşmiştir."
         }
       ]
     },
@@ -47,28 +47,20 @@
     "divider": {
       "kicker": "Kısa. Pratik. Etkili.",
       "title": "Daha az soyutluk\nDaha fazla operasyonel gerçeklik",
-      "text": "Farklı açılardan gelen uzmanlığımın birleşimini elde edersiniz: işletmede birinci elden operasyonel sorumluluk, M&A, kültürel entegrasyon ve organizasyon geliştirme konularında akademik derinlik ve beş dilde doğrudan yönetimle ve çalışanlarla çalışabilme yetkinliği."
+      "text": ""
     },
     "audience": {
-      "title": "Kimlerle çalışıyorum ve ne zaman somutlaşıyor",
-      "subtitle": "İmalat KOBİ’lerinde tipik müşteriler ve durumlar",
+      "title": "Uygulamanın işletmede işlemediği durumlar",
+      "subtitle": "Tipik durumlar",
       "boxTitles": [
         "Beni kim görevlendiriyor",
         "Somut sorun"
       ],
-      "targets": [
-        "Bir satın almanın ardından entegrasyonun durakladığını ve kültürlerin bir araya gelmediğini fark edenler",
-        "İşletmede karşılık bulmayan bir karar almış olanlar ve bunun nedenini artık anlayamayanlar",
-        "Kâğıt üzerinde işleyen ama gerçekte yaşanmayan yeni bir liderlik yapısı kuranlar",
-        "Lean uygulayan ama rakamların neredeyse hiç değişmediğini ve liderliğin konuyu sahiplenmediğini görenler",
-        "Büyüme, yeniden yapılanma veya bir liderlik değişikliğinin ardından sorumlulukların, süreçlerin ve görevlerin artık yeni gerçekliğe uymadığını fark edenler"
-      ],
+      "targets": [],
       "triggers": [
-        "Bir satın almanın ardından, eski ve yeni yapılar arasında resmî olarak kimsenin dile getirmediği ama herkesin operasyonel olarak hissettiği kültürel gerilimler ortaya çıkar",
-        "Kararlar liderlik düzeyinde alınır, ancak shopfloor’da somut olarak neyin değişmesi gerektiği ve bundan kimin sorumlu olduğu belirsiz kalır",
-        "Çok lokasyonlu veya matris bir liderlik yapısının işlemesi beklenir, ancak sorumluluklar ve karar yolları kalıcı olarak belirsiz kalır",
-        "Bir Lean uygulaması veya sürekli iyileştirme girişimi aylardır sürmektedir, ancak KPI’lar, liderlik davranışları ve shopfloor rutinleri hâlâ değişmemiştir",
-        "Resmî sorumluluklar yeniden dağıtılmıştır, ancak günlük işleyişte kararları yine her zamanki kişiler vermeye devam eder"
+        "Yeniden yapılanma, büyüme veya bir satın almanın ardından süreçler ve kararlar resmî olarak yeniden düzenlenmiş olsa da günlük işleyişte işletme eski yapılara göre yönelmeye devam eder.",
+        "Kararlar alınmış ve önlemler belirlenmiş olsa da koordinasyon döngüleri, bölümsel bakış açısı ve çelişkili öncelikler uygulamayı engellemeye devam eder.",
+        "Yeni standartlar, liderlik rutinleri veya sorumluluklar hayata geçirilmiş, ancak günlük işlerde giderek bağlayıcılığını kaybetmektedir."
       ]
     },
     "orientation": {
@@ -85,14 +77,12 @@
     "themes": {
       "kicker": "Odak alanları",
       "title": "Somut olarak hangi konularda destek sağlıyorum",
-      "intro": "Duruma ve formata bağlı olarak, liderliği, iş birliğini ve operasyonel bağlamda etkili uygulamayı taşıyan konular üzerinde çalışıyorum.",
+      "intro": "",
       "items": [
-        "Liderlik, roller ve karar verme yetkinliği",
-        "Arayüzlerde koordinasyon ve iş birliği",
-        "Üretim, lojistik ve kalitede operasyonel süreçlerin yönlendirilmesi ve istikrara kavuşturulması",
-        "Değişim ve geçiş durumlarında iletişim",
-        "Dönüşüm, M&A ve devir süreçlerinde kültür ve kimlik",
-        "Yeni çalışma biçimlerinin devam eden operasyon içinde yerleştirilmesi"
+        "Liderlik & karar verme yetkinliği",
+        "Uygulama & sorumluluk",
+        "Arayüzler & iş birliği",
+        "Geçiş süreçlerinde kültür & entegrasyon"
       ]
     },
     "ui": {
@@ -113,14 +103,21 @@
       },
       "ctaPrimary": "Görüşme talep et",
       "when": {
-        "workshops": "Başlangıç durumu, öncelikler ve kararlar konusunda netliğe ihtiyaç duyulduğunda ve uygulamaya hem operasyonel hem kültürel olarak yapılandırılmış bir başlangıç gerektiğinde.",
-        "partnership": "Uygulamanın aylar boyunca liderlik, netlik ve süreklilik gerektirdiği durumlarda.",
-        "sparring": "İç uyum süreci tıkandığında ve net bir karar oluşmadığında\nFarklı çıkarlar kararları engellediğinde\nNetlik sağlamak için bağımsız bir değerlendirme gerektiğinde"
+        "workshops": "Kararlar tekrar tekrar ertelendiğinde\nÖncelikler birimler arasında farklı anlaşıldığında\nKimin sorumluluk üstleneceği belirsiz olduğunda\nGirişimler başladığında ancak hiçbir yön ortaya çıkmadığında",
+        "partnership": "Kararlar günlük işleyişte etkisini yitiriyor\nLiderlik ve birimler birbirine karşı çalışıyor\nDeğişim tekrar tekrar eski kalıplara dönüyor\nGeçiş dönemlerinde kültür ve iş birliği istikrarını yitiriyor",
+        "sparring": "Çok sayıda toplantıya rağmen kararlar açık kaldığında\nBirimler arasındaki hedef çatışmaları liderliği engellediğinde\nSonuçlar bilindiğinde ancak kimse onları dile getirmek istemediğinde"
       },
       "teaser": {
-        "workshops": "Bir veya iki günün ardından gerçek darboğazın nerede olduğunu, kimin somut olarak neden sorumlu olduğunu ve önümüzdeki 90 günde ne olacağını bilirsiniz. Nereden başlamanız gerektiği sorusu artık ortadan kalkar. Konsept değil. Etkili bir ilk adım.",
-        "partnership": "Değişimin aylar boyunca sürdürülmesi gerektiğinde, tek bir atölye çalışması yeterli olmaz. İstikrarlı bir liderlik ve karar alma ritmine ihtiyaç vardır.\n\nUygulama ortaklığı, her gün yanınızda olacağım anlamına gelmez. Örneğin, işletmenizde haftada 1 ila 2 sabit gün bulunarak veya sorumlularla haftalık yoğun yönlendirme toplantıları yapılarak gerçekleştirilir. Bu ortaklık, operasyonel uygulamanızın dışarıya devredilmesi olarak anlaşılmamalıdır. Aksine, doğrudan sahada sizin bir fikir ortağınız (sparring partner) olarak hareket ediyorum: Kritik kesişim noktalarını yönetiyor, bağlayıcı liderlik rutinleri oluşturuyor ve gizli gerilimleri tam da ortaya çıktıkları yerde çözmeye yardımcı oluyorum.\n\nAmacım kendi varlığımı gereksiz kılmaktır: Yöneticileriniz bu ritmi kendi başlarına sürdürebilir hale gelene ve değişim günlük işleyişin doğal bir parçası olana kadar yanınızda kalmaya devam edeceğim.",
-        "sparring": "Devredemeyeceğiniz ve tek başınıza almak istemediğiniz bir kararla karşı karşıyasınız. Koçluk değil. Genel tavsiyeler değil. Sağlam bir değerlendirme ve net bir sonraki adım."
+        "workshops": "Kararlar, öncelikler ve sorumluluklar örtüşmediğinde uygulama durur. Atölye bunun için ortak bir zemin oluşturur.",
+        "partnership": "Kararların işletmede kalıcı etki yaratması için tek bir atölye çalışması yeterli olmaz.",
+        "sparring": "Liderlik, pek çok görüşmeye rağmen artık net kararlar üretemiyorsa, bağımsız bir değerlendirme gerekir."
+      },
+      "teaserSections": {
+        "partnership": [
+          {"label": "Yönlendirme ritmi", "text": "İş birliği, işletmenizde sabit gün bulunarak veya sorumlularla düzenli yönlendirme toplantıları üzerinden yürütülür. Doğrudan sahada. Günlük işleyişin yanında değil, tam içinde."},
+          {"label": "Rol", "text": "Kritik kesişim noktalarını yönetiyor, bağlayıcı liderlik rutinleri oluşturuyor ve gerilimleri operasyonel etki yarattıkları yerde tam olarak çözmeye yardımcı oluyorum."},
+          {"label": "Hedef", "text": "Amacım kendi varlığımı gereksiz kılmaktır.\nUygulama, dış desteğe bağlı olmamalı — liderlik günlük ritmin bir parçası haline gelmelidir."}
+        ]
       },
       "notSuitable": {
         "workshops": [
@@ -129,8 +126,7 @@
         ],
         "partnership": [
           "Operasyonel uygulama tamamen dış kaynağa devredilecekse",
-          "Liderlik aktif olarak dahil değilse",
-          "Odak yöntemlerin kendisinde, uygulamalarının etkinliğinde değilse"
+          "Liderlik sorumluluğu bizzat üstlenmek istemiyorsa"
         ],
         "sparring": [
           "Asıl sorun henüz dile getirilemiyor veya getirilmek istenmiyor",
@@ -138,27 +134,19 @@
         ]
       },
       "topics": {
-        "workshops": [
-          "Lean / Operasyonel Mükemmellik (istikrar, kalite, çevrim süresi, verimlilik)",
-          "Belirsiz öncelikler, karar tıkanıklıkları veya arayüz çatışmaları",
-          "İyileştirme ve dönüşüm girişimlerinin başlatılması veya yeniden başlatılması"
-        ],
-        "partnership": [
-          "Stratejik kararlar alınmıştır, ancak organizasyonda istikrarlı bir etki yaratmamaktadır",
-          "Liderlik, çelişkili beklentiler, rol belirsizliği ve yüksek karar baskısıyla karşı karşıyadır",
-          "Birimler, seviyeler veya lokasyonlar arasındaki tekrar eden gerilimler dikkat ve enerjiyi kalıcı olarak tüketir",
-          "M&A, entegrasyon veya devir gibi geçiş durumlarındaki kültürel sürtüşmeler yönlendirmeyi ve iş birliğini zorlaştırır"
-        ],
-        "sparring": [
-          "Kritik kararlar, hedef çatışmaları veya yüksek paydaş baskısı",
-          "Büyüme, yeniden yapılanma veya entegrasyon sırasında kültür ve kimlik soruları",
-          "Liderlik soruları: rol, etki, netlik ve tutarlılık"
-        ]
+        "workshops": [],
+        "partnership": [],
+        "sparring": []
       },
       "cardTitles": {
         "workshops": "Netleştirme Atölyesi",
         "partnership": "Uygulama Ortaklığı",
         "sparring": "Karar Netliği"
+      },
+      "detailSubtitle": {
+        "workshops": "",
+        "partnership": "",
+        "sparring": ""
       },
       "tagline": {
         "workshops": "Konsept yok. Etkili bir ilk adım.",
@@ -183,18 +171,17 @@
       "deliverables": {
         "workshops": [
           "Ortak bir hedef resmi ve önceliklendirilmiş odak alanları",
-          "Roller, liderlik ritmi ve standartlar konusunda kararlar",
-          "Net sorumluluklarla somut bir uygulama planı (30/60/90 gün)"
+          "Roller, liderlik ritmi ve standartlar konusunda kararlar"
         ],
         "partnership": [
-          "Liderlik ve organizasyon düzeyinde tanımlı sorumluluklarla birlikte tasarlanmış açık bir yönlendirme ve karar ritmi",
-          "İlerleme, blokajlar ve alınan önlemlerin etkisi konusunda şeffaflık",
+          "Bağlayıcı liderlik ve karar alma rutinleri",
+          "İlerleme, blokajlar ve etki üzerinde şeffaflık",
           "İş birliği, kültür ve kimliğin liderlik ve organizasyon içinde yerleşmesi"
         ],
         "sparring": [
-          "Karmaşık veya kritik durumlarda netlik",
-          "Yönetim düzeyinde önceliklendirme ve karar mantığı",
-          "Gizli değerlendirme ve net sonraki adımlar"
+          "Kritik durumların bağımsız değerlendirmesi",
+          "Yönetim düzeyinde karar mantığı ve önceliklendirme",
+          "Net sonraki adımlar ve sonuçlar"
         ],
         "speaking": [
           "Duruma uygun bir konuşma, eğitim veya öğretim formatı",
@@ -211,62 +198,76 @@
   "approach": {
     "eyebrow": "Benim yaklaşımım",
     "title": "Yaklaşım",
-    "intro": "Değişim nadiren konsept eksikliğinden dolayı başarısız olur. Kararlar taşınmadığı, önceliklendirilmediği veya tutarlı biçimde uygulanmadığı için başarısız olur.\n\nBen tam olarak burada devreye girerim, liderlik, önceliklendirme ve uygulamanın devam eden operasyon içindeki etkileşiminde.",
-    "principlesEyebrow": "Duruş ve yönelim",
-    "principlesTitle": "İlkeler",
-    "principles": [
-      "Devam eden operasyonun içinde çalışmak:\nLiderlikle birlikte net roller ile karar ve yönlendirme ritimleri oluşturulur; böylece sorumluluk etkili biçimde üstlenilebilir.",
-      "Etkiyi ölçülebilir kılmak:\nİlgili göstergeler, standartlar ve rutinler birlikte tanımlanır ve liderlik ile karar rutinleri üzerinden takip edilir.",
-      "Değişimi kalıcı biçimde yerleştirmek:\nYeni çalışma biçimleri rutinlere, iş birliğine, kültüre ve kimliğe entegre edilir."
-    ],
+    "intro": "Değişim nadiren bilgi eksikliğinden dolayı başarısız olur.\nOperasyonda kararlar taşınmadığı için başarısız olur.\n\nBen tam olarak burada çalışırım: liderlik, önceliklendirme ve devam eden operasyondaki uygulama içinde.",
     "how": {
       "kicker": "Benim ilerleme modelim",
       "title": "Tetikleyiciden uygulamaya üç adımda",
-      "subtitle": "Bir konsept olarak değil, günlük işleyişte çalışacak şekilde: birlikte netleştirir, operasyonel olarak yönetir ve tutarlı biçimde yerleştiririz.",
+      "subtitle": "Bir konsept olarak değil, operasyonda çalışacak şekilde.",
       "stepLabel": "Adım",
       "outTitle": "Sonuç",
-      "restriction": "Bu yaklaşım her durum için düşünülmemiştir. Değişimin gerekli olduğu açık olduğu hâlde işlemediği durumlarda anlamlıdır.",
       "steps": [
         {
           "verb": "Netleştir",
-          "text": "Başlangıç durumunu, darboğazları ve dinamikleri anlıyor; hedef resmi ve önceliklere ilişkin ilk sağlam kararların temelini oluşturuyorum.",
+          "text": "Darboğazlar, öncelikler ve sorumluluk konusunda netlik.",
           "out": [
             "Ortak hedef resmi",
-            "En önemli öncelikler",
-            "Kararlar ve sonraki adımlar"
+            "Öncelikler",
+            "Sonraki kararlar"
           ]
         },
         {
           "verb": "Kur",
-          "text": "Netliği, önceliklendirmeyi ve uygulamayı istikrarlı biçimde mümkün kılan bir liderlik ve yönlendirme ritminin kurulmasını tasarlıyor ve buna eşlik ediyorum.",
+          "text": "Liderlik ve iş birliği bağlayıcı biçimde yönetilebilir hâle gelir.",
           "out": [
             "Kararlar daha net alınır",
-            "Koordinasyon daha kısa ve bağlayıcı olur",
-            "Sorumluluk hissedilir hâle gelir"
+            "Koordinasyon kısalır",
+            "Sorumluluk görünür olur"
           ]
         },
         {
           "verb": "Yerleştir",
-          "text": "Takip, sorumluluklar ve kültürel uyum yoluyla etkiyi güvence altına alıyorum; ta ki dış müdahale olmaksızın sistemin bir parçası hâline gelene kadar.",
+          "text": "Uygulama, liderlik rutininin bir parçası hâline gelir.",
           "out": [
-            "Dış destek olmadan işler",
-            "Değişim günlük işin parçası olur",
-            "Liderlik bağımsız olarak yönlendirir"
+            "Liderlik bağımsız olarak yönlendirir",
+            "Standartlar kararlı kalır",
+            "Değişim dış müdahale olmadan işler"
           ]
         }
       ]
     },
-    "toolboxEyebrow": "Amaç değil, araç",
-    "toolboxTitle": "Araçlar",
-    "toolboxSubtitle": "İhtiyaca göre seçilir.",
-    "toolbox": [
-      "Shopfloor yönetimi ve liderlik rutinleri",
-      "Hazırlık süresi optimizasyonu, akıcı süreçler ve sistematik problem çözme",
-      "Net karar yolları ve güvenilir iletişim",
-      "Devralma öncesi ve sonrası kültürel entegrasyon ve kimlik çalışması"
-    ],
-    "bridge": "Duruma ve başlangıç noktasına göre farklı formatlarda çalışırım, odaklı bir atölyeden daha uzun süreli eşliğe kadar.",
-    "bridgeCta": "Hizmetleri incele →",
+    "collaboration": {
+      "kicker": "Pratikte nasıl çalışırım",
+      "title": "İş birliği nasıl görünür",
+      "groups": [
+        {
+          "label": "Operasyonun içinde, dışında değil",
+          "items": [
+            "Sahada sabit varlık günleri",
+            "Doğrudan liderlikle ve arayüzlerde",
+            "Etkinin oluştuğu yerde kararlar",
+            "Shopfloor, sunum odası değil"
+          ]
+        },
+        {
+          "label": "Liderliği yönetilebilir kılmak",
+          "items": [
+            "Net sorumluluklar",
+            "Sabit karar ve liderlik rutinleri",
+            "Şeffaf öncelikler",
+            "Tutarlı takip"
+          ]
+        },
+        {
+          "label": "Uygulamayı stabilize etmek",
+          "items": [
+            "Gerilimleri görünür kılmak",
+            "Koordinasyon döngülerini azaltmak",
+            "Standartları operasyonda yerleştirmek",
+            "Sorumluluğu dış destekten bağımsız taşımak"
+          ]
+        }
+      ]
+    },
     "cta": {
       "kicker": "15 dakikalık yön bulma",
       "text": "Kısa bir görüşmede bunun sizin durumunuz olup olmadığını ve hangi formatın uygun olduğunu netleştiririz."
@@ -279,24 +280,24 @@
     "heroImage": "/seref-sahil-change-werkstatt.jpg",
     "heroImageAlt": "Seref Sahil",
     "intro": [
-      "Bu durumları atölyelerden değil, sorumluluktan biliyorum.\nÜretimden ve liderlikten. Kararların baskı altında alınmak zorunda kaldığı dönemlerden.",
-      "Bugün endüstriyel KOBİ’lerde liderlerle ve organizasyonlarla tam da bu noktalarda çalışıyorum.\nDeğişimin kararlaştırıldığı ama işlemediği yerde.\nLiderliğin, kültürün ve organizasyonun etkin uygulamaya dönüştürülmesi gereken yerde."
+      "Atölyelerden değil, üretimden, sorumluluktan ve liderlikten.",
+      "Bugün endüstriyel KOBİ'lerde liderler ve organizasyonlarla tam da bu noktalarda çalışıyorum. Uygulamanın netlik, liderlik ve bağlayıcılık gerektirdiği yerde."
     ],
     "profileTitle": "Profil",
-    "profileText": "Kabul, dil, gerçeklik ve sorumluluk birbirine uyduğunda ortaya çıkar.\n\nM&A, entegrasyon ve dönüşüm durumlarında uygulama nadiren resmî hedefler nedeniyle başarısız olur; asıl neden çoğu zaman gizli kültürel ve kimlikle ilgili gerilimlerdir. Organizasyonlara çok dilli erişimim ve bu dinamikler üzerine akademik çalışmam, bu tür gerilimleri erken aşamada görünür kılmayı mümkün hâle getirir, daha operasyonel veya politik etki ortaya çıkmadan önce.\n\nM&A entegrasyonu üzerine yürüttüğüm araştırma akademik tartışmalara değil; bir anlaşma sonrasında kültür ve kimlik göz ardı edildiğinde ortaya çıkan ve ağır bedeller ödeten hataları tespit etmeye odaklanmaktadır.\n\nÇalışmam, endüstriyel ortamda saha, liderlik ve yönetim rollerinde edindiğim doğrudan deneyime dayanır. Bundan net bir yaklaşım ortaya çıkar: değişim operasyonel gerçekliğe uymalı, liderlik tarafından sahiplenilmeli ve günlük işe yerleşmelidir.\n\nBöylece açıklanması gerekmeyen, sahiplenilen ve yaşanan bir uygulama ortaya çıkar.",
-    "clarityText": "Sizinle doğrudan sahada çalışıyorum, ancak yöneticilerinizin görevlerini bilinçli olarak devralmıyorum. Benim rolüm bir fikir ortağı (sparring partner) olarak hareket etmektir: Kritik kesişim noktalarını yönetiyor, bağlayıcı liderlik rutinleri oluşturuyor ve gizli gerilimleri tam da ortaya çıktıkları yerde çözmeye yardımcı oluyorum. Böylece, harici bir hizmet sağlayıcı olarak bana bağımlı olmak yerine, ekibinizin uygulama sürecini kendi başlarına başarıyla yönetmelerini sağlıyorum.",
+    "profileText": "Kabul, dil, gerçeklik ve sorumluluğun bir araya geldiği yerde ortaya çıkar.\n\nMesleki yolculuğum endüstriyel bir ortamda başladı ve üretim, liderlik ve lokasyonlar arası sorumluluk üzerinden gelişti. Paralel olarak endüstri mekaniği eğitimi, devlet onaylı makine mühendisi teknikeri sertifikasyonu ve işletme ile örgütsel psikoloji eğitimi tamamlandı — bugün ise doktora çalışması sürmektedir. Her zaman profesyonel sorumlulukla eş zamanlı ve operasyonel gerçekliğe yakın.\n\nİşletme deneyimi, liderlik ve akademik çalışmanın bu birleşimi bugün de çalışmamı şekillendirmektedir. Odağım yalnızca kararları hazırlamak değil, sorumlu kişilerle birlikte onları pratikte etkili kılmaktır.",
+    "clarityText": "",
     "bulletsEyebrow": "Çalışmamın temeli",
     "bullets": [
-      "25+ yıllık operasyonel deneyim: yaz işlerinden üretim ve lojistikte lokasyonlar arası sorumluluğa",
-      "15 yıllık iş hayatıyla eş zamanlı mesleki gelişim: makine mühendisliğinden işletme ve iş psikolojisine, liderlik ve organizasyon odaklı",
-      "Değer zinciri boyunca endüstriyel süreçlerin tasarımı ve organizasyonu, Six Sigma ve REFA sertifikasyonuyla desteklenerek",
-      "Endüstriyel KOBİ'lerde M&A entegrasyonu, kültür ve kimlik üzerine devam eden uygulamaya yönelik doktora çalışması (Doctor of Business Administration)",
-      "Liderlik ve uygulamada çok dilli iş birliği: Almanca, İngilizce, Türkçe, İspanyolca ve Arapça"
+      "Üretim, lojistik ve lokasyonlar arası liderlikte 25 yılı aşkın operasyonel sorumluluk",
+      "Endüstriyel ortamda değişim, yeniden yapılanma ve entegrasyon durumlarında deneyim",
+      "Operasyonel pratik, liderlik sorumluluğu ve akademik çalışmanın bileşimi",
+      "Endüstriyel KOBİ'lerde M&A entegrasyonu, kültür ve örgütsel uygulama üzerine devam eden doktora çalışması",
+      "Almanca, İngilizce, Türkçe, İspanyolca ve Arapça çok dilli iş birliği"
     ],
     "linkedInLabel": "LinkedIn profilini görüntüle",
     "practiceEyebrow": "Proje deneyimi",
     "practiceTitle": "Pratikten gelen deneyim",
-    "practiceIntro": "25 yıl boyunca masanın sizin tarafındaydım; bir yaz işçiliğinden, birden fazla tesisi kapsayan üretim yöneticiliğine kadar. İşletmeyi, liderliği ve yaşanan baskıyı vaka çalışmalarından değil, bizzat kendi deneyimlerimden biliyorum. Bu nedenle bugün soyut kavramlarla çalışan klasik bir danışman gibi değil; kararların operasyonel gerçeklikte fiilen nasıl hayata geçirildiğini çok iyi bilen, sektörün içinden deneyimli birinin pragmatizmiyle çalışıyorum.",
+    "practiceIntro": "Liderlik ve uygulama anlayışımı şekillendiren durumlar ve sorumluluklar.",
     "practiceItems": [
       {
         "title": "Post-merger entegrasyonu",
@@ -313,19 +314,11 @@
       {
         "title": "Yeniden yapılanma ve kültürel yerleşim",
         "text": "Yeniden yapılanma dönemlerinde liderlik netliği, iletişim ve değişimin günlük işe kalıcı biçimde yerleşmesine odaklanan destek."
-      },
-      {
-        "title": "ISO sertifikasyonu ve yönetim sistemleri",
-        "text": "DIN ISO 9001’e göre yeniden belgelendirme süreçlerinin başarıyla desteklenmesi, ayrıca üretim ortamında yeniden organizasyonun sürdürülebilir kalite güvencesinin temeli olarak ele alınması."
-      },
-      {
-        "title": "Değer akışı ve arayüz netleştirmesi",
-        "text": "Kritik arayüzlerde akıcı süreçler: bütçe sorumluluğu, maliyet merkezi yönlendirmesi ve üretim ile lojistikte çok projeli yönetim."
       }
     ],
     "testimonialsEyebrow": "Başkaları ne diyor",
     "testimonialsTitle": "İş birliğinden gelen sesler",
-    "testimonialsIntro": "Aşağıdaki değerlendirmeler, Change-Werkstatt’ın kuruluşundan önceki dönemde endüstriyel ortamlardaki gerçek liderlik ve uygulama durumlarından gelmektedir.",
+    "testimonialsIntro": "",
     "testimonials": [
       {
         "quote": "Yüksek mesleki netlik, güçlü analitik muhakeme ve üst yönetim için değerli bir sparring partner.",

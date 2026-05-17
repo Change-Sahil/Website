@@ -3,7 +3,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Reveal } from "@/components/Reveal";
 import { blurDataURL } from "@/lib/blur";
@@ -23,9 +22,7 @@ export default function HomeClient() {
   const audience = t.raw("audience") as HomeAudience;
 
   const pillarItems = asArray<{ title: string; text: string; meta?: string }>(pillars?.items);
-  const targets  = asArray<string>(audience?.targets);
   const triggers = asArray<string>(audience?.triggers);
-  const [activeTab, setActiveTab] = useState<0 | 1>(0);
 
   return (
     <div className="space-y-14 md:space-y-16">
@@ -33,7 +30,7 @@ export default function HomeClient() {
       {/* ── HERO (kein Reveal – above the fold) ── */}
       <section className="mt-6">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
-            <div className="lg:col-span-6">
+            <div className="lg:col-span-5">
               <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
                 <Image
                   src="/images/home-01.jpg"
@@ -43,12 +40,12 @@ export default function HomeClient() {
                   priority
                   placeholder="blur"
                   blurDataURL={blurDataURL}
-                  className="h-[320px] w-full object-cover object-[left_65%] md:h-[410px] lg:h-[450px] xl:h-[490px]"
+                  className="h-[260px] w-full object-cover object-[left_65%] md:h-[340px] lg:h-[380px] xl:h-[410px]"
                 />
               </div>
             </div>
 
-            <div className="lg:col-span-6">
+            <div className="lg:col-span-7">
               <div className="section-eyebrow"><span>{hero?.kicker ?? ""}</span></div>
               <h1 className="mt-3 text-3xl font-[760] leading-[1.12] tracking-[-0.025em] sm:text-4xl" style={{ color: "rgba(var(--ink),.94)" }}>{hero?.title ?? ""}</h1>
               <p className="mt-5 max-w-xl text-lg leading-8 muted whitespace-pre-line">
@@ -64,51 +61,17 @@ export default function HomeClient() {
           <div className="section-eyebrow"><span className="dot" /><span>{audience?.subtitle ?? ""}</span></div>
           <h2 className="mt-3 section-title">{audience?.title ?? ""}</h2>
 
-          <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50/40 overflow-hidden">
-            {/* Tab-Leiste */}
-            <div className="flex border-b border-slate-200">
-              {[audience?.boxTitles?.[0] ?? "", audience?.boxTitles?.[1] ?? ""].map((label, i) => (
-                <button
-                  key={i}
-                  onClick={() => setActiveTab(i as 0 | 1)}
-                  className="group flex-1 px-6 py-4 text-left transition-colors"
-                  style={{
-                    background: activeTab === i ? "#fff" : "transparent",
-                    borderBottom: activeTab === i ? "2px solid rgb(var(--accent))" : "2px solid transparent",
-                    marginBottom: "-1px",
-                    cursor: activeTab === i ? "default" : "pointer",
-                  }}
-                >
-                  <span
-                    className="flex items-center gap-2 text-[11px] font-[700] tracking-[0.20em] uppercase transition-colors"
-                    style={{ color: activeTab === i ? "rgb(var(--accent))" : "rgba(var(--ink),.55)" }}
-                  >
-                    {label}
-                    {activeTab === i ? (
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style={{ flexShrink: 0 }}>
-                        <path d="M6 2v8M2 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    ) : (
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style={{ opacity: 0.5, flexShrink: 0 }}>
-                        <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    )}
-                  </span>
-                </button>
-              ))}
-            </div>
-
-            {/* Tab-Inhalt */}
-            <div className="p-6">
-              <ul className="grid gap-y-3 text-[15px] leading-7 text-slate-700">
-                {(activeTab === 0 ? targets : triggers).map((x, i) => (
-                  <li key={i} className="flex min-w-0 gap-3">
-                    <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-accent-90" />
-                    <span className="min-w-0">{x}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="mt-6 grid gap-6 md:grid-cols-3">
+            {triggers.map((x, i) => (
+              <Reveal key={i} delay={i * 70}>
+                <div className="card h-full">
+                  <div className="text-xs font-semibold text-slate-400 mb-4">
+                    {String(i + 1).padStart(2, "0")}
+                  </div>
+                  <p className="text-[15px] leading-7 muted">{x}</p>
+                </div>
+              </Reveal>
+            ))}
           </div>
         </section>
       </Reveal>
@@ -118,21 +81,6 @@ export default function HomeClient() {
         <Reveal>
           <div className="section-eyebrow"><span className="dot" /><span>{pillars?.subtitle ?? ""}</span></div>
           <h2 className="mt-3 section-title">{pillars?.title ?? ""}</h2>
-        </Reveal>
-
-        {/* Warum extern */}
-        <Reveal delay={40}>
-          <div
-            className="mt-8 px-6 py-5 text-[15px] leading-7"
-            style={{
-              borderLeft: "3px solid rgb(var(--accent))",
-              background: "rgba(0,168,165,.04)",
-              borderRadius: "0 14px 14px 0",
-              color: "rgba(var(--ink), .82)",
-            }}
-          >
-            {t("externalReason")}
-          </div>
         </Reveal>
 
         {/* Bild + Text */}
@@ -175,6 +123,21 @@ export default function HomeClient() {
             </Reveal>
           ))}
         </div>
+
+        {/* Warum extern */}
+        <Reveal>
+          <div
+            className="mt-10 px-6 py-5 text-[15px] leading-7"
+            style={{
+              borderLeft: "3px solid rgb(var(--accent))",
+              background: "rgba(0,168,165,.04)",
+              borderRadius: "0 14px 14px 0",
+              color: "rgba(var(--ink), .82)",
+            }}
+          >
+            {t("externalReason")}
+          </div>
+        </Reveal>
       </section>
 
       {/* ── ORIENTIERUNG ── */}

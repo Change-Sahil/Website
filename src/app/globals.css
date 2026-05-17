@@ -144,9 +144,9 @@ body {
   background: conic-gradient(
     from var(--card-border-angle) at 50% 50%,
     transparent 0deg,
-    rgba(0,168,165,.95) 22deg,
-    rgba(0,112,125,.70) 52deg,
-    transparent 75deg,
+    rgba(0,168,165,.95) 20deg,
+    rgba(0,112,125,.70) 60deg,
+    transparent 90deg,
     transparent 360deg
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -159,7 +159,7 @@ body {
 }
 .card:hover::before {
   opacity: 1;
-  animation: card-border-sweep 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: card-border-sweep 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 .card:hover {
   transform: translateY(-3px);
@@ -167,7 +167,7 @@ body {
 }
 @keyframes card-border-sweep {
   from { --card-border-angle: 315deg; }
-  to   { --card-border-angle: 675deg; }
+  to   { --card-border-angle: 495deg; }
 }
 
 /* ========= TAGS ========= */

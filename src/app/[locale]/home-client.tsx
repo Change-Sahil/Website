@@ -4,7 +4,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
-import { Reveal } from "@/components/Reveal";
 import { blurDataURL } from "@/lib/blur";
 import type { HomeHero, HomePillars, HomeAudience } from "@/types/i18n";
 
@@ -14,167 +13,267 @@ function asArray<T = unknown>(value: unknown): T[] {
 
 export default function HomeClient() {
   const locale = useLocale();
-  const t = useTranslations("home");
-  const nav = useTranslations("nav");
+  const t      = useTranslations("home");
+  const nav    = useTranslations("nav");
 
   const hero     = t.raw("hero")     as HomeHero;
   const pillars  = t.raw("pillars")  as HomePillars;
   const audience = t.raw("audience") as HomeAudience;
 
-  const pillarItems = asArray<{ title: string; text: string; meta?: string }>(pillars?.items);
-  const triggers = asArray<string>(audience?.triggers);
+  const pillarItems = asArray<{ title: string; text: string }>(pillars?.items);
+  const triggers    = asArray<string>(audience?.triggers);
+
+
+  const titleRaw  = hero?.title ?? "";
+  const splitAt   = titleRaw.indexOf(". ");
+  const heroPartA = splitAt > 0 ? titleRaw.slice(0, splitAt + 1) : titleRaw;
+  const heroPartB = splitAt > 0 ? titleRaw.slice(splitAt + 2)    : "";
 
   return (
-    <div className="space-y-14 md:space-y-16">
+    <div>
 
-      {/* ── HERO (kein Reveal – above the fold) ── */}
-      <section className="mt-6">
-        <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
-            <div className="lg:col-span-5">
-              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
-                <Image
-                  src="/images/home-01.jpg"
-                  alt="Strategische Ausrichtung"
-                  width={1600}
-                  height={1000}
-                  priority
-                  placeholder="blur"
-                  blurDataURL={blurDataURL}
-                  className="h-[260px] w-full object-cover object-[left_65%] md:h-[340px] lg:h-[380px] xl:h-[410px]"
-                />
-              </div>
-            </div>
+      {/* ════════════════════════════════════════════
+          HERO — Vollbild, Bild im Hintergrund, Text oben
+      ════════════════════════════════════════════ */}
+      <section className="hero-bleed relative flex flex-col" style={{ marginTop: "-6rem", minHeight: "100vh" }}>
 
-            <div className="lg:col-span-7">
-              <div className="section-eyebrow"><span>{hero?.kicker ?? ""}</span></div>
-              <h1 className="mt-3 text-3xl font-[760] leading-[1.12] tracking-[-0.025em] sm:text-4xl" style={{ color: "rgba(var(--ink),.94)" }}>{hero?.title ?? ""}</h1>
-              <p className="mt-5 max-w-xl text-lg leading-8 muted whitespace-pre-line">
-                {hero?.intro ?? ""}
-              </p>
-            </div>
+        {/* Hintergrundbild */}
+        <Image
+          src="/images/services-hero.jpg"
+          alt=""
+          fill
+          priority
+          placeholder="blur"
+          blurDataURL={blurDataURL}
+          className="object-cover object-center"
+          aria-hidden
+        />
+
+        {/* Warmer Overlay — lässt das Bild durchscheinen, hält Text lesbar */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to bottom, rgba(248,247,243,0.74) 0%, rgba(248,247,243,0.52) 55%, rgba(248,247,243,0.70) 100%)",
+          }}
+          aria-hidden
+        />
+
+        {/* Inhalt */}
+        <div className="relative z-10 page-wrap flex flex-col flex-1 pt-28 pb-10 md:pt-32 md:pb-14">
+
+
+          {/* Typografie — Das Gap */}
+          <div className="flex-1 flex flex-col justify-center">
+            <h1
+              aria-label={titleRaw}
+              style={{
+                textShadow:
+                  "0 0 28px rgba(248,247,243,1), 0 0 56px rgba(248,247,243,0.85), 0 0 90px rgba(248,247,243,0.60)",
+              }}
+            >
+              <span className="home-display home-display--thin">
+                {heroPartA}
+              </span>
+
+              <span className="block mt-16 mb-12 md:mt-20 md:mb-16" aria-hidden="true" />
+<span className="home-display home-display--heavy">
+                {heroPartB}
+              </span>
+            </h1>
           </div>
+
+          {/* Scroll-Hinweis */}
+          <div className="pb-4">
+            <span
+              className="text-[11px] tracking-[0.20em] uppercase"
+              style={{ color: "rgba(var(--ink), .28)" }}
+            >
+              ↓
+            </span>
+          </div>
+
+        </div>
       </section>
 
-      {/* ── ZIELGRUPPEN ── */}
-      <Reveal>
-        <section
-          className="rounded-[26px] px-7 py-10 sm:px-10 sm:py-12"
-          style={{ background: "rgba(15,23,42,.04)", border: "1px solid rgba(15,23,42,.06)" }}
-        >
-          <div className="section-eyebrow"><span className="dot" /><span>{audience?.subtitle ?? ""}</span></div>
-          <h2 className="mt-3 section-title">{audience?.title ?? ""}</h2>
 
-          <div className="mt-6 grid gap-6 md:grid-cols-3">
-            {triggers.map((x, i) => (
-              <Reveal key={i} delay={i * 70}>
-                <div className="card h-full">
-                  <div className="text-xs font-semibold mb-4" style={{ color: "rgb(var(--accent))", opacity: 0.7 }}>
+      {/* ════════════════════════════════════════════
+          INTRO — Text links, Seref-Foto rechts
+      ════════════════════════════════════════════ */}
+      <section className="py-12 md:py-16">
+
+        <div className="grid gap-10 items-center lg:grid-cols-2">
+          <div>
+            <p className="text-lg leading-[1.85] muted">
+              {hero?.intro}
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link href={`/${locale}/contact`} className="btn-primary">
+                {nav("cta")}
+              </Link>
+              <Link href={`/${locale}/services`} className="btn-secondary">
+                {nav("services")}
+              </Link>
+            </div>
+          </div>
+
+          <div className="relative overflow-hidden" style={{ height: "520px" }}>
+            <Image
+              src="/Seref_home.png"
+              alt="Seref Sahil"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover object-top"
+            />
+          </div>
+        </div>
+      </section>
+
+
+      {/* ════════════════════════════════════════════
+          DIE SITUATION — Trigger
+      ════════════════════════════════════════════ */}
+      <section className="hero-bleed py-14 md:py-18" style={{ background: "rgb(237,236,231)" }}>
+        <div className="page-wrap">
+          <div className="grid gap-12 lg:grid-cols-12">
+            <div className="lg:col-span-4 lg:pt-1">
+              <p
+                className="text-[11px] tracking-[0.24em] uppercase"
+                style={{ color: "rgba(var(--ink), .40)" }}
+              >
+                {audience?.subtitle}
+              </p>
+              <h2 className="mt-3 text-[1.6rem] font-[760] leading-[1.2] tracking-[-0.02em]">
+                {audience?.title}
+              </h2>
+            </div>
+
+            <div className="lg:col-span-8">
+              {triggers.map((text, i) => (
+                <div
+                  key={i}
+                  className={`flex gap-6 ${
+                    i > 0 ? "mt-8 pt-8 border-t border-[rgba(14,20,32,.09)]" : ""
+                  }`}
+                >
+                  <span
+                    className="shrink-0 text-[11px] font-[700] tracking-[0.08em] mt-[3px] tabular-nums"
+                    style={{ color: "rgb(var(--accent))" }}
+                  >
                     {String(i + 1).padStart(2, "0")}
-                  </div>
-                  <p className="text-[15px] leading-7 muted">{x}</p>
+                  </span>
+                  <p className="text-[15px] leading-[1.78] text-slate-700">{text}</p>
                 </div>
-              </Reveal>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* ════════════════════════════════════════════
+          WAS UNTERSCHEIDET — Bild + Säulen
+      ════════════════════════════════════════════ */}
+      <section className="py-14 md:py-18">
+
+        <div className="grid lg:grid-cols-2 lg:items-stretch gap-0">
+          <div className="overflow-hidden">
+            <Image
+              src="/images/home-02.jpg"
+              alt="Zusammenarbeit in der Umsetzung"
+              width={1600}
+              height={900}
+              placeholder="blur"
+              blurDataURL={blurDataURL}
+              className="home-img-pillar"
+            />
+          </div>
+
+          <div className="py-10 lg:pl-14 flex flex-col justify-center">
+            {pillarItems.slice(0, 3).map((p, i) => (
+              <div
+                key={i}
+                className={
+                  i > 0
+                    ? "mt-8 pt-8 border-t border-[rgba(14,20,32,.07)]"
+                    : ""
+                }
+              >
+                <h3
+                  className="text-[1.05rem] font-[740] leading-[1.3] tracking-[-0.01em]"
+                  style={{ color: "rgba(var(--ink), .90)" }}
+                >
+                  {p.title}
+                </h3>
+                <p className="mt-2.5 text-[14.5px] leading-[1.78] text-slate-600">
+                  {p.text}
+                </p>
+              </div>
             ))}
           </div>
-        </section>
-      </Reveal>
-
-      {/* ── PILLARS ── */}
-      <section>
-        <Reveal>
-          <div className="section-eyebrow"><span className="dot" /><span>{pillars?.subtitle ?? ""}</span></div>
-          <h2 className="mt-3 section-title">{pillars?.title ?? ""}</h2>
-        </Reveal>
-
-        {/* Bild + Text */}
-        <Reveal delay={80}>
-          <div className="mt-10 grid gap-6 lg:grid-cols-2 lg:items-stretch">
-            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-              <Image
-                src="/images/home-02.jpg"
-                alt="Zusammenarbeit in der Umsetzung"
-                width={1600}
-                height={900}
-                placeholder="blur"
-                blurDataURL={blurDataURL}
-                className="h-[320px] w-full object-cover md:h-[380px]"
-              />
-            </div>
-            <div className="panel flex items-center">
-              <div>
-                <div className="section-eyebrow"><span className="dot" /><span>{t("divider.kicker")}</span></div>
-                <h3 className="mt-3 section-title">{t("divider.title")}</h3>
-                <p className="mt-4 max-w-md text-[15px] leading-7 muted">{t("divider.text")}</p>
-              </div>
-            </div>
-          </div>
-        </Reveal>
-
-        {/* Kacheln – gestaffelt */}
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {pillarItems.slice(0, 3).map((p, i) => (
-            <Reveal key={i} delay={i * 80}>
-              <div className="card h-full">
-                <div className="flex items-start justify-between gap-4">
-                  <div className="text-base font-semibold" style={{ color: "rgba(var(--ink),.88)" }}>{p.title}</div>
-                  <div className="text-xs font-semibold" style={{ color: "rgb(var(--accent))", opacity: 0.7 }}>
-                    {String(i + 1).padStart(2, "0")}
-                  </div>
-                </div>
-                <p className="mt-3 text-[15px] leading-7 muted">{p.text}</p>
-              </div>
-            </Reveal>
-          ))}
         </div>
 
-        {/* Warum extern */}
-        <Reveal>
-          <div
-            className="mt-10 px-6 py-5 text-[15px] leading-7"
-            style={{
-              borderLeft: "3px solid rgb(var(--accent))",
-              background: "rgba(0,168,165,.04)",
-              borderRadius: "0 14px 14px 0",
-              color: "rgba(var(--ink), .82)",
-            }}
-          >
-            {t("externalReason")}
-          </div>
-        </Reveal>
       </section>
 
-      {/* ── ORIENTIERUNG ── */}
-      <Reveal>
-        <div className="panel">
-          <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
-            <div className="lg:col-span-7">
-              <div className="section-eyebrow"><span className="dot" /><span>{t("orientation.kicker")}</span></div>
-              <h3 className="mt-3 section-title">{t("orientation.title")}</h3>
-              <p className="mt-4 max-w-xl text-[15px] leading-7 muted whitespace-pre-line">
+
+      {/* ════════════════════════════════════════════
+          CTA — dunkler Abschluss
+      ════════════════════════════════════════════ */}
+      <section className="hero-bleed py-14 md:py-20" style={{ background: "rgb(10,15,26)" }}>
+        <div className="page-wrap">
+          <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
+            <div className="lg:col-span-8">
+              <h2
+                className="whitespace-pre-line"
+                style={{
+                  fontSize: "clamp(2rem, 4.6vw, 3.8rem)",
+                  fontWeight: 840,
+                  lineHeight: 1.1,
+                  letterSpacing: "-0.036em",
+                  color: "rgba(255,255,255,.92)",
+                }}
+              >
+                {t("orientation.title")}
+              </h2>
+              <p
+                className="mt-6 max-w-lg text-[15px] leading-[1.80] whitespace-pre-line"
+                style={{ color: "rgba(255,255,255,.52)" }}
+              >
                 {t("orientation.text")}
               </p>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <Link href={`/${locale}/contact`} className="btn-primary">{nav("cta")}</Link>
-                <Link href={`/${locale}/services`} className="btn-secondary">{nav("services")}</Link>
-              </div>
             </div>
 
-            <div className="lg:col-span-5">
-              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50/50">
-                <Image
-                  src="/images/home-03.jpg"
-                  alt="Atmosphäre"
-                  width={1200}
-                  height={800}
-                  placeholder="blur"
-                  blurDataURL={blurDataURL}
-                  className="h-[220px] w-full object-cover opacity-95 md:h-[240px]"
-                />
+            <div className="lg:col-span-4 lg:flex lg:justify-end">
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href={`/${locale}/contact`}
+                  className="inline-flex items-center justify-center font-semibold px-5 py-3"
+                  style={{
+                    borderRadius: "5px",
+                    background: "rgba(255,255,255,.96)",
+                    color: "rgb(10,15,26)",
+                    boxShadow: "0 2px 10px rgba(0,0,0,.15)",
+                  }}
+                >
+                  {nav("cta")}
+                </Link>
+                <Link
+                  href={`/${locale}/services`}
+                  className="inline-flex items-center justify-center font-semibold px-5 py-3"
+                  style={{
+                    borderRadius: "5px",
+                    color: "rgba(255,255,255,.82)",
+                    border: "1px solid rgba(255,255,255,.32)",
+                    background: "transparent",
+                  }}
+                >
+                  {nav("services")}
+                </Link>
               </div>
             </div>
           </div>
         </div>
-      </Reveal>
+      </section>
 
     </div>
   );

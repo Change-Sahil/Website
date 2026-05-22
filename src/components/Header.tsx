@@ -13,7 +13,17 @@ export default function Header() {
   const locale = useLocale();
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+
+  const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
+
+  useEffect(() => {
+    const handler = () => setScrolled(window.scrollY > 80);
+    window.addEventListener("scroll", handler, { passive: true });
+    handler();
+    return () => window.removeEventListener("scroll", handler);
+  }, []);
 
   const closeMenu = () => setMenuOpen(false);
 
@@ -82,7 +92,14 @@ export default function Header() {
   );
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-slate-200/80 bg-white/85 backdrop-blur-md">
+    <header
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+      style={
+        isHome && !scrolled
+          ? { background: "transparent", borderBottom: "none" }
+          : { background: "rgba(255,255,255,0.85)", backdropFilter: "blur(12px)", borderBottom: "1px solid rgba(203,213,225,0.8)" }
+      }
+    >
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex items-center justify-between gap-4 py-4">
 
@@ -121,10 +138,11 @@ export default function Header() {
 
             <Link
               href={`/${locale}/contact`}
-              className="inline-flex items-center justify-center rounded-full px-3 py-2 sm:px-4 text-sm font-semibold text-white shadow-sm"
+              className="inline-flex items-center justify-center px-3 py-2 sm:px-4 text-sm font-semibold text-white shadow-sm"
               style={{
-                background: "linear-gradient(135deg, rgba(0,168,165,0.92), rgba(0,140,150,0.92))",
-                boxShadow: "0 10px 30px rgba(2,6,23,0.10), inset 0 0 0 1px rgba(255,255,255,0.10)",
+                borderRadius: "5px",
+                background: "rgb(10,15,26)",
+                boxShadow: "0 4px 14px rgba(10,15,26,.18)",
                 transition: "box-shadow 200ms ease, transform 130ms ease",
               }}
               onClick={closeMenu}

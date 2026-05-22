@@ -25,174 +25,188 @@ export default function SpeakingClient() {
   const [openIndex, setOpenIndex] = React.useState<number | null>(null);
 
   return (
-    <div className="page-stack">
+    <div>
 
-      {/* ── HERO (kein Reveal) ── */}
-      <section className="py-8 md:py-10">
-        <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
-          <div className="lg:col-span-7">
-            <div className="section-eyebrow">
-              <span className="dot" />
-              <span>{t("eyebrow")}</span>
-            </div>
-            <h1 className="mt-4 title">{t("title")}</h1>
-            <p className="mt-5 max-w-2xl text-base leading-7 muted md:text-lg whitespace-pre-line">{t("intro")}</p>
-          </div>
-
-          <div className="lg:col-span-5">
-            <div
-              className="overflow-hidden rounded-[28px]"
+      {/* ── HERO ── */}
+      <section className="hero-bleed relative flex flex-col" style={{ marginTop: "-6rem", minHeight: "calc(62vh + 6rem)" }}>
+        <Image
+          src="/images/speaking-hero.jpg"
+          alt=""
+          fill
+          priority
+          placeholder="blur"
+          blurDataURL={blurDataURL}
+          className="object-cover"
+          style={{ filter: "grayscale(0.15) brightness(0.92)", objectPosition: "50% 30%" }}
+          aria-hidden
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right, rgba(10,15,26,0.80) 0%, rgba(10,15,26,0.72) 45%, rgba(10,15,26,0.44) 100%)",
+          }}
+          aria-hidden
+        />
+        <div className="relative z-10 page-wrap flex flex-col flex-1 pt-28 pb-14 md:pt-32 md:pb-16">
+          <div className="flex-1 flex flex-col justify-center max-w-2xl">
+            <h1
               style={{
-                border: "1px solid rgba(15,23,42,.10)",
-                background: "rgba(255,255,255,.98)",
-                boxShadow: "0 16px 40px rgba(15,23,42,.10)",
+                fontSize: "clamp(2.4rem, 5vw, 4.2rem)",
+                fontWeight: 850,
+                lineHeight: 1.08,
+                letterSpacing: "-0.036em",
+                color: "rgba(255,255,255,.95)",
               }}
             >
-              <Image
-                src="/images/speaking-hero.jpg"
-                alt={t("title")}
-                width={1200}
-                height={900}
-                priority
-                placeholder="blur"
-                blurDataURL={blurDataURL}
-                className="h-[420px] w-full object-cover md:h-[340px] saturate-[0.9] contrast-[1.05]"
-              />
-            </div>
+              {t("title")}
+            </h1>
+            <p
+              className="mt-5 text-lg leading-[1.75] whitespace-pre-line"
+              style={{ color: "rgba(255,255,255,.62)" }}
+            >
+              {t("intro")}
+            </p>
           </div>
         </div>
       </section>
 
-      {/* ── CONTENT ── */}
-      <section className="section-pad">
-        <div className="grid gap-8 lg:grid-cols-12">
 
-          {/* Akkordeon */}
-          <Reveal className="lg:col-span-7">
-            <div className="panel h-full">
-              <div className="section-eyebrow">
-                <span className="dot" />
-                <span>{t("topicsTitle")}</span>
-              </div>
-              <p className="mt-2 text-xs tracking-wide" style={{ color: "rgba(var(--accent), .80)" }}>
+      {/* ── THEMEN + FORMATE ── */}
+      <Reveal>
+        <section className="py-14 md:py-16">
+          <div className="grid gap-14 lg:grid-cols-12 lg:items-start">
+
+            {/* Akkordeon: Themen */}
+            <div className="lg:col-span-7">
+              <h2 className="text-[1.6rem] font-[760] tracking-[-0.02em] leading-[1.2] mb-2">
+                {t("topicsTitle")}
+              </h2>
+              <p className="mb-8 text-[12px]" style={{ color: "rgba(var(--accent), .75)" }}>
                 ↓ {t("topicsHint")}
               </p>
 
-              <div className="mt-5">
-                {topics.map((topic, i) => {
-                  const open = openIndex === i;
-                  return (
-                    <div key={i} className={i === 0 ? "" : "border-t border-slate-200/70"}>
-                      <button
-                        type="button"
-                        id={`accordion-trigger-${i}`}
-                        aria-expanded={open}
-                        aria-controls={`accordion-panel-${i}`}
-                        onClick={() => setOpenIndex(open ? null : i)}
-                        className="flex w-full items-start justify-between gap-4 py-4 text-left group"
-                      >
-                        <div className="flex gap-3">
-                          <span
-                            aria-hidden
-                            className="mt-[10px] h-2 w-2 flex-none rounded-full transition-all duration-200"
-                            style={{
-                              background: open ? "rgb(var(--accent))" : "rgba(var(--accent), .60)",
-                              boxShadow: open ? "0 0 0 8px rgba(0,168,165,.12)" : "0 0 0 6px rgba(0,168,165,.06)",
-                            }}
-                          />
-                          <div>
-                            <p
-                              className="text-[15px] font-medium leading-7 transition-colors duration-150"
-                              style={{ color: open ? "rgba(var(--ink), .95)" : "rgba(var(--ink), .88)" }}
-                            >
-                              {topic.title}
-                            </p>
-                            <p className="mt-1 text-[15px] leading-6 text-slate-500">{topic.subtitle}</p>
-                          </div>
-                        </div>
-                        <span
-                          aria-hidden
-                          className="mt-1 flex-none flex items-center justify-center w-6 h-6 rounded-full text-sm font-medium select-none transition-all duration-200"
-                          style={{
-                            transform: open ? "rotate(45deg)" : "none",
-                            background: open ? "rgba(var(--accent), .12)" : "rgba(var(--ink), .06)",
-                            color: open ? "rgb(var(--accent))" : "rgba(var(--ink), .45)",
-                          }}
+              {topics.map((topic, i) => {
+                const open = openIndex === i;
+                return (
+                  <div
+                    key={i}
+                    className={i === 0 ? "" : "border-t border-[rgba(14,20,32,.08)]"}
+                  >
+                    <button
+                      type="button"
+                      id={`accordion-trigger-${i}`}
+                      aria-expanded={open}
+                      aria-controls={`accordion-panel-${i}`}
+                      onClick={() => setOpenIndex(open ? null : i)}
+                      className="flex w-full items-start justify-between gap-4 py-4 text-left"
+                    >
+                      <div>
+                        <p
+                          className="text-[15px] font-[580] leading-[1.5] transition-colors duration-150"
+                          style={{ color: open ? "rgba(var(--ink), .95)" : "rgba(var(--ink), .82)" }}
                         >
-                          +
-                        </span>
-                      </button>
-
-                      <div
-                        id={`accordion-panel-${i}`}
-                        role="region"
-                        aria-labelledby={`accordion-trigger-${i}`}
-                        hidden={!open}
-                        className="pb-5 pl-5 pr-2"
-                      >
-                        <p className="text-[15px] leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
-                          {topic.description}
+                          {topic.title}
+                        </p>
+                        <p className="mt-0.5 text-[13.5px] leading-[1.5]"
+                           style={{ color: "rgba(var(--ink), .45)" }}>
+                          {topic.subtitle}
                         </p>
                       </div>
+                      <span
+                        aria-hidden
+                        className="mt-1 flex-none text-[18px] font-[300] select-none transition-transform duration-200"
+                        style={{
+                          transform: open ? "rotate(45deg)" : "none",
+                          color: open ? "rgb(var(--accent))" : "rgba(var(--ink), .35)",
+                          lineHeight: 1,
+                        }}
+                      >
+                        +
+                      </span>
+                    </button>
+
+                    <div
+                      id={`accordion-panel-${i}`}
+                      role="region"
+                      aria-labelledby={`accordion-trigger-${i}`}
+                      hidden={!open}
+                      className="pb-5"
+                    >
+                      <p className="text-[14.5px] leading-[1.78]"
+                         style={{ color: "rgba(var(--ink), .72)" }}>
+                        {topic.description}
+                      </p>
                     </div>
-                  );
-                })}
-              </div>
+                  </div>
+                );
+              })}
             </div>
-          </Reveal>
 
-          {/* Formate */}
-          <Reveal className="lg:col-span-5" delay={80}>
-            <div className="panel">
-              <div className="section-eyebrow">
-                <span className="dot" />
-                <span>{t("formatsTitle")}</span>
-              </div>
-              <p className="mt-2 text-[15px] leading-6" style={{ color: "rgba(var(--ink), .60)" }}>{t("formatsSubtitle")}</p>
+            {/* Formate */}
+            <div className="lg:col-span-5 lg:pl-10 lg:border-l border-[rgba(14,20,32,.08)]">
+              <h2 className="text-[1.6rem] font-[760] tracking-[-0.02em] leading-[1.2] mb-2">
+                {t("formatsTitle")}
+              </h2>
+              {t("formatsSubtitle", { defaultValue: "" }) && (
+                <p className="mt-2 text-[14px] leading-[1.6] mb-8"
+                   style={{ color: "rgba(var(--ink), .52)" }}>
+                  {t("formatsSubtitle")}
+                </p>
+              )}
 
-              <ul className="mt-5 space-y-3">
+              <ul className="space-y-0">
                 {formats.map((x, i) => (
-                  <li key={i} className="flex gap-3">
-                    <span
-                      aria-hidden
-                      className="mt-[10px] h-2 w-2 flex-none rounded-full"
-                      style={{ background: "rgba(var(--accent), .92)", boxShadow: "0 0 0 8px rgba(0,168,165,.08)" }}
-                    />
-                    <p className="text-[15px] leading-7" style={{ color: "rgba(var(--ink), .78)" }}>{x}</p>
+                  <li
+                    key={i}
+                    className={`text-[15px] leading-[1.72] text-slate-700 ${
+                      i > 0 ? "pt-4 mt-4 border-t border-[rgba(14,20,32,.07)]" : ""
+                    }`}
+                  >
+                    {x}
                   </li>
                 ))}
               </ul>
-
-              <div className="mt-6 hr-soft" />
-
-              <p className="mt-5 text-[15px] leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
-                {t("ctaText")}
-              </p>
-
-              <div className="mt-5">
-                <Link href={`/${locale}/contact`} className="btn-primary">{nav("cta")}</Link>
-              </div>
             </div>
-          </Reveal>
 
-        </div>
-      </section>
+          </div>
+        </section>
+      </Reveal>
 
-      {/* ── CTA ── */}
+
+      {/* ── CTA — dunkler Abschluss ── */}
       <Reveal>
-        <section className="pt-4 pb-12 md:pb-16">
-          <div className="dark-block p-8 sm:p-10">
-            <div className="flex flex-wrap items-center justify-between gap-8">
-              <div>
-                <div className="section-eyebrow" style={{ color: "rgba(255,255,255,.70)" }}>
-                  <span className="dot" style={{ boxShadow: "0 0 0 7px rgba(0,168,165,.16)" }} />
-                  <span>{t("cta.kicker")}</span>
-                </div>
-                <p className="mt-4 max-w-2xl" style={{ color: "rgba(255,255,255,.72)", lineHeight: 1.7 }}>
+        <section className="hero-bleed py-14 md:py-20" style={{ background: "rgb(10,15,26)" }}>
+          <div className="page-wrap">
+            <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
+              <div className="lg:col-span-8">
+                <p
+                  className="text-[1.35rem] font-[760] leading-[1.35] tracking-[-0.02em]"
+                  style={{ color: "rgba(255,255,255,.92)" }}
+                >
+                  {t("cta.kicker")}
+                </p>
+                <p
+                  className="mt-4 max-w-lg text-[15px] leading-[1.80]"
+                  style={{ color: "rgba(255,255,255,.52)" }}
+                >
                   {t("cta.text")}
                 </p>
               </div>
-              <Link href={`/${locale}/contact`} className="btn-primary">{nav("cta")}</Link>
+              <div className="lg:col-span-4 lg:flex lg:justify-end">
+                <Link
+                  href={`/${locale}/contact`}
+                  className="inline-flex items-center justify-center font-semibold px-5 py-3"
+                  style={{
+                    borderRadius: "5px",
+                    background: "rgba(255,255,255,.96)",
+                    color: "rgb(10,15,26)",
+                    boxShadow: "0 2px 10px rgba(0,0,0,.15)",
+                  }}
+                >
+                  {nav("cta")}
+                </Link>
+              </div>
             </div>
           </div>
         </section>

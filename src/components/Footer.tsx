@@ -11,10 +11,8 @@ export default function Footer() {
   const year     = new Date().getFullYear();
 
   return (
-    <footer className="mt-auto bg-white">
-      {/* Accent-Trennlinie oben */}
-      <div className="h-px bg-gradient-to-r from-transparent via-[rgba(0,168,165,0.28)] to-transparent" />
-      <div className="border-t border-slate-100" />
+    <footer className="mt-auto" style={{ background: "rgb(248,247,243)" }}>
+      <div className="page-rule" />
 
       <div className="page-wrap py-6 sm:py-8">
 

@@ -35,9 +35,9 @@ export default function ContactPage() {
 
     try {
       const res = await fetch("/api/contact", {
-        method: "POST",
+        method:  "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+        body:    JSON.stringify(payload),
       });
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
@@ -67,127 +67,182 @@ export default function ContactPage() {
   } as Record<string, string>)[locale] ?? "https://outlook.office.com/bookwithme/user/6de68b0b8be247aea52fe665683a25e3@change-werkstatt-sahil.com/meetingtype/6IciwIU95kSU87UB6uKcUA2?anonymous";
 
   const inputClass =
-    "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition-all duration-150 " +
+    "w-full border border-[rgba(14,20,32,.12)] bg-white px-4 py-3 text-sm text-slate-900 outline-none transition-all duration-150 " +
     "placeholder:text-slate-400 " +
-    "focus:border-[rgb(var(--accent))] focus:ring-4 focus:ring-[rgba(0,168,165,.12)] " +
-    "hover:border-slate-300";
+    "focus:border-[rgb(var(--accent))] focus:ring-4 focus:ring-[rgba(0,168,165,.10)] " +
+    "hover:border-[rgba(14,20,32,.22)]";
 
   return (
-    <div className="page-stack">
+    <div>
 
-      <Reveal>
-        <section className="panel shadow-[0_18px_55px_rgba(15,23,42,0.07)] mt-6 md:mt-10">
-          <div className="grid gap-10 md:grid-cols-2 md:items-stretch">
+      {/* ── HERO — dunkle Text-Fläche ── */}
+      <section
+        className="hero-bleed flex flex-col justify-end"
+        style={{
+          marginTop: "-6rem",
+          minHeight: "calc(48vh + 6rem)",
+          background: "rgb(10,15,26)",
+        }}
+      >
+        <div className="page-wrap pb-14 pt-28 md:pt-32 md:pb-16">
+          <div className="max-w-2xl">
+            <h1
+              style={{
+                fontSize: "clamp(2.4rem, 5vw, 4.2rem)",
+                fontWeight: 850,
+                lineHeight: 1.08,
+                letterSpacing: "-0.036em",
+                color: "rgba(255,255,255,.95)",
+              }}
+            >
+              {t("title")}
+            </h1>
+            <p
+              className="mt-5 text-lg leading-[1.75] whitespace-pre-line"
+              style={{ color: "rgba(255,255,255,.55)" }}
+            >
+              {t("intro")}
+            </p>
+          </div>
+        </div>
+      </section>
 
-            {/* LINKS */}
-            <div className="flex flex-col">
-              <div className="section-eyebrow">
-                <span className="dot" />
-                <span>{t("eyebrow")}</span>
-              </div>
-              <h1 className="mt-6 title">{t("title")}</h1>
-              <p className="mt-4 max-w-2xl text-base leading-7 muted md:text-lg">{t("intro")}</p>
 
-              {/* Termin buchen */}
-              <div className="mt-8 panel" style={{ background: "rgba(0,168,165,.04)", border: "1px solid rgba(0,168,165,.18)" }}>
-                <div className="section-eyebrow">
-                  <span className="dot" />
-                  <span>{t("tabSchedule")}</span>
-                </div>
-                <p className="mt-3 text-[15px] leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
-                  {t("scheduleHint")}
-                </p>
-                <a
-                  href={bookingUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary mt-5 w-full text-center block"
-                >
-                  {t("scheduleButton")}
-                </a>
-                <p className="mt-3 text-xs text-center" style={{ color: "rgba(var(--ink), .45)" }}>
-                  {t("scheduleNote")}
-                </p>
-              </div>
+      {/* ── FORMULAR + TERMIN + DIREKTKONTAKT ── */}
+      <section className="py-14 md:py-16">
+        <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
 
-              {/* Direktkontakt */}
-              <div className="mt-auto pt-8">
-                <div className="panel">
-                  <div className="section-eyebrow">
-                    <span className="dot" />
-                    <span>{d("title")}</span>
-                  </div>
-                  <p className="mt-3 text-[15px] leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
-                    {d("text")}
-                  </p>
-                  <div className="mt-6 grid gap-3">
-                    <a
-                      href={`mailto:${email}`}
-                      className="rounded-2xl border border-slate-200 bg-white/90 px-5 py-4 text-sm font-semibold text-slate-900 transition-colors duration-150 hover:bg-slate-50 hover:border-slate-300"
-                      style={{ wordBreak: "break-word" }}
-                    >
-                      {email}
-                    </a>
-                    <a
-                      href={`tel:${phoneHref}`}
-                      className="rounded-2xl border border-slate-200 bg-white/90 px-5 py-4 text-sm font-semibold text-slate-900 transition-colors duration-150 hover:bg-slate-50 hover:border-slate-300"
-                    >
-                      {phoneRaw}
-                    </a>
-                  </div>
-                </div>
-              </div>
+          {/* Links: Termin + Direktkontakt */}
+          <div className="lg:col-span-5 space-y-12">
+
+            {/* Termin buchen */}
+            <div
+              className="p-7"
+              style={{
+                border: "1px solid rgba(0,168,165,.22)",
+                background: "rgba(0,168,165,.03)",
+              }}
+            >
+              <h2 className="text-[1rem] font-[720] leading-[1.3] tracking-[-0.01em]"
+                  style={{ color: "rgba(var(--ink), .90)" }}>
+                {t("tabSchedule")}
+              </h2>
+              <p className="mt-4 text-[15px] leading-[1.78]"
+                 style={{ color: "rgba(var(--ink), .70)" }}>
+                {t("scheduleHint")}
+              </p>
+              <a
+                href={bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 w-full text-center inline-flex items-center justify-center font-semibold px-5 py-3 text-sm"
+                style={{
+                  borderRadius: "5px",
+                  background: "linear-gradient(135deg, rgb(0,168,165), rgb(0,112,125))",
+                  color: "rgba(255,255,255,.96)",
+                  boxShadow: "0 8px 22px rgba(0,168,165,.22)",
+                }}
+              >
+                {t("scheduleButton")}
+              </a>
+              <p className="mt-3 text-[11px] text-center"
+                 style={{ color: "rgba(var(--ink), .40)" }}>
+                {t("scheduleNote")}
+              </p>
             </div>
 
-            {/* RECHTS – Formular */}
-            <div className="panel h-fit shadow-[0_24px_70px_rgba(2,6,23,0.12)]">
-              <div className="section-eyebrow">
-                <span className="dot" />
-                <span>{t("formEyebrow")}</span>
+            {/* Direktkontakt */}
+            <div>
+              <h2 className="text-[1rem] font-[720] leading-[1.3] tracking-[-0.01em] mb-5"
+                  style={{ color: "rgba(var(--ink), .90)" }}>
+                {d("title")}
+              </h2>
+              <div className="space-y-2">
+                <a
+                  href={`mailto:${email}`}
+                  className="flex items-center px-4 py-3 text-sm font-[560] transition-colors duration-150 hover:border-[rgba(14,20,32,.18)]"
+                  style={{
+                    border: "1px solid rgba(14,20,32,.09)",
+                    background: "rgba(255,255,255,.80)",
+                    color: "rgba(var(--ink), .85)",
+                    wordBreak: "break-word",
+                  }}
+                >
+                  {email}
+                </a>
+                <a
+                  href={`tel:${phoneHref}`}
+                  className="flex items-center px-4 py-3 text-sm font-[560] transition-colors duration-150 hover:border-[rgba(14,20,32,.18)]"
+                  style={{
+                    border: "1px solid rgba(14,20,32,.09)",
+                    background: "rgba(255,255,255,.80)",
+                    color: "rgba(var(--ink), .85)",
+                  }}
+                >
+                  {phoneRaw}
+                </a>
               </div>
-              <p className="mt-3 text-[15px] leading-7" style={{ color: "rgba(var(--ink), .74)" }}>
+            </div>
+          </div>
+
+          {/* Rechts: Formular */}
+          <div className="lg:col-span-7">
+            <div className="panel">
+              <h2 className="text-[1rem] font-[720] leading-[1.3] tracking-[-0.01em]"
+                  style={{ color: "rgba(var(--ink), .90)" }}>
+                {t("formEyebrow")}
+              </h2>
+              <p className="mt-2 text-[15px] leading-[1.78]"
+                 style={{ color: "rgba(var(--ink), .68)" }}>
                 {t("formIntro")}
               </p>
 
-              <div className="mt-5 hr-soft" />
+              <div className="mt-6 hr-soft" />
 
-              <form onSubmit={onSubmit} className="mt-5 grid gap-5">
+              <form onSubmit={onSubmit} className="mt-6 grid gap-5">
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div className="space-y-2">
-                    <label className="block text-sm font-semibold text-slate-900">{f("name")}</label>
-                    <input name="name" required autoComplete="name" placeholder={f("namePlaceholder")} className={inputClass} />
+                    <label className="block text-sm font-[620] text-slate-900">{f("name")}</label>
+                    <input name="name" required autoComplete="name"
+                           placeholder={f("namePlaceholder")} className={inputClass} />
                   </div>
                   <div className="space-y-2">
-                    <label className="block text-sm font-semibold text-slate-900">{f("email")}</label>
-                    <input name="email" type="email" required autoComplete="email" placeholder={f("emailPlaceholder")} className={inputClass} />
+                    <label className="block text-sm font-[620] text-slate-900">{f("email")}</label>
+                    <input name="email" type="email" required autoComplete="email"
+                           placeholder={f("emailPlaceholder")} className={inputClass} />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <label className="block text-sm font-semibold text-slate-900">{f("company")}</label>
-                  <input name="company" autoComplete="organization" placeholder={f("companyPlaceholder")} className={inputClass} />
+                  <label className="block text-sm font-[620] text-slate-900">{f("company")}</label>
+                  <input name="company" autoComplete="organization"
+                         placeholder={f("companyPlaceholder")} className={inputClass} />
                 </div>
 
                 <div className="space-y-2">
-                  <label className="block text-sm font-semibold text-slate-900">{f("details")}</label>
+                  <label className="block text-sm font-[620] text-slate-900">{f("details")}</label>
                   <textarea
                     name="details"
                     required
                     placeholder={f("detailsPlaceholder")}
-                    className={`min-h-[180px] resize-y ${inputClass}`}
+                    className={`min-h-[120px] resize-y ${inputClass}`}
                   />
                 </div>
 
-                <label className="mt-1 flex items-start gap-3 rounded-2xl border border-slate-200 bg-white/70 p-4 text-sm transition-colors duration-150 hover:bg-white/90 cursor-pointer">
+                <label
+                  className="flex items-start gap-3 p-4 text-sm transition-colors duration-150 cursor-pointer"
+                  style={{ border: "1px solid rgba(14,20,32,.09)", background: "rgba(255,255,255,.70)" }}
+                >
                   <input
                     type="checkbox"
                     required
-                    className="mt-1 h-4 w-4 rounded border-slate-300 text-[rgb(var(--accent))] focus:ring-4 focus:ring-[rgba(0,168,165,.14)]"
+                    className="mt-1 h-4 w-4 border-slate-300 text-[rgb(var(--accent))] focus:ring-4 focus:ring-[rgba(0,168,165,.12)]"
                   />
-                  <span style={{ color: "rgba(var(--ink), .74)" }}>
+                  <span style={{ color: "rgba(var(--ink), .70)" }}>
                     {f.rich("consent", {
                       privacy: (chunks) => (
-                        <Link href={`/${locale}/datenschutz`} className="underline underline-offset-2 hover:text-slate-900">
+                        <Link href={`/${locale}/datenschutz`}
+                              className="underline underline-offset-2 hover:text-slate-900">
                           {chunks}
                         </Link>
                       ),
@@ -196,50 +251,71 @@ export default function ContactPage() {
                 </label>
 
                 {status === "success" && (
-                  <p className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900">
+                  <p className="border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900">
                     {f("success")}
                   </p>
                 )}
                 {status === "error" && (
-                  <p className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-900">
+                  <p className="border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-900">
                     {errorMsg}
                   </p>
                 )}
 
-                <button type="submit" className="btn-primary w-full" disabled={sending}>
+                <button
+                  type="submit"
+                  className="w-full inline-flex items-center justify-center font-semibold px-5 py-3 text-sm transition-all duration-150 disabled:opacity-60"
+                  style={{
+                    borderRadius: "5px",
+                    background: "rgb(10,15,26)",
+                    color: "rgba(255,255,255,.92)",
+                    boxShadow: "0 4px 14px rgba(10,15,26,.18)",
+                  }}
+                  disabled={sending}
+                >
                   {sending ? f("sending") : f("submit")}
                 </button>
 
-                <p className="text-xs" style={{ color: "rgba(var(--ink), .55)" }}>{t("responseHint")}</p>
+                <p className="text-[12px]" style={{ color: "rgba(var(--ink), .45)" }}>
+                  {t("responseHint")}
+                </p>
               </form>
             </div>
-
           </div>
-        </section>
-      </Reveal>
 
-      {/* ── SO BEGINNT DIE ZUSAMMENARBEIT ── */}
-      <Reveal>
-        <div className="dark-block p-8 sm:p-10">
-          <div className="section-eyebrow" style={{ color: "rgba(255,255,255,.70)" }}>
-            <span className="dot" style={{ boxShadow: "0 0 0 7px rgba(0,168,165,.16)" }} />
-            <span>{t("stepsTitle")}</span>
-          </div>
-          <ol className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {steps.map((step, i) => (
-              <li key={i} className="flex items-center gap-3">
-                <span
-                  className="flex h-7 w-7 flex-none items-center justify-center rounded-full text-[11px] font-semibold"
-                  style={{ background: "rgba(0,168,165,.25)", color: "rgb(var(--accent))" }}
-                >
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <span className="text-[15px] leading-6" style={{ color: "rgba(255,255,255,.78)" }}>{step}</span>
-              </li>
-            ))}
-          </ol>
         </div>
-      </Reveal>
+      </section>
+
+
+      {/* ── SO BEGINNT DIE ZUSAMMENARBEIT — warmgrau ── */}
+      {steps.length > 0 && (
+        <Reveal>
+          <section className="hero-bleed py-14 md:py-16" style={{ background: "rgb(237,236,231)" }}>
+            <div className="page-wrap">
+              <div className="grid gap-10 lg:grid-cols-12">
+                <div className="lg:col-span-4">
+                  <h2 className="text-[1.6rem] font-[760] tracking-[-0.02em] leading-[1.2]">
+                    {t("stepsTitle")}
+                  </h2>
+                </div>
+                <ol className="lg:col-span-8 grid gap-6 sm:grid-cols-2">
+                  {steps.map((step, i) => (
+                    <li key={i} className="flex items-start gap-4">
+                      <span
+                        className="shrink-0 text-[11px] font-[700] tracking-[0.08em] mt-[3px] tabular-nums"
+                        style={{ color: "rgb(var(--accent))" }}
+                      >
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <span className="text-[14.5px] leading-[1.68] text-slate-700">{step}</span>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </div>
+          </section>
+        </Reveal>
+      )}
+
     </div>
   );
 }

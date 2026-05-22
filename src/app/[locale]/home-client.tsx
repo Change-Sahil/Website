@@ -43,6 +43,7 @@ export default function HomeClient() {
           alt=""
           fill
           priority
+          sizes="100vw"
           placeholder="blur"
           blurDataURL={blurDataURL}
           className="object-cover object-center"
@@ -183,6 +184,7 @@ export default function HomeClient() {
               alt="Zusammenarbeit in der Umsetzung"
               width={1600}
               height={900}
+              sizes="(max-width: 1024px) 100vw, 50vw"
               placeholder="blur"
               blurDataURL={blurDataURL}
               className="home-img-pillar"

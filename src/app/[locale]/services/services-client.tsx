@@ -66,6 +66,7 @@ export default function ServicesClient() {
           alt=""
           fill
           priority
+          sizes="100vw"
           className="object-cover"
           style={{ filter: "grayscale(1) contrast(1.05) brightness(0.97)", objectPosition: "50% 55%" }}
           aria-hidden

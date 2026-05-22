@@ -30,6 +30,7 @@ export default function ApproachClient() {
           alt=""
           fill
           priority
+          sizes="100vw"
           placeholder="blur"
           blurDataURL={blurDataURL}
           className="object-cover"

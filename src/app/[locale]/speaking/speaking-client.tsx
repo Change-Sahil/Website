@@ -34,6 +34,7 @@ export default function SpeakingClient() {
           alt=""
           fill
           priority
+          sizes="100vw"
           placeholder="blur"
           blurDataURL={blurDataURL}
           className="object-cover"

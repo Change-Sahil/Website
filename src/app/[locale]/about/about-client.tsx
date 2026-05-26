@@ -23,6 +23,7 @@ export default function AboutClient() {
   const intro         = asArray<string>(t.raw("intro"));
   const practiceItems = asArray<PracticeItem>(t.raw("practiceItems"));
   const testimonials  = asArray<TestimonialItem>(t.raw("testimonials"));
+  const notForYou     = asArray<string>(t.raw("notForYou"));
 
   const hasPractice    = !!t("practiceTitle", { defaultValue: "" }) && practiceItems.length > 0;
   const hasTestimonials = !!t("testimonialsTitle", { defaultValue: "" }) && testimonials.length > 0;
@@ -131,9 +132,40 @@ export default function AboutClient() {
       </Reveal>
 
 
+      {/* ── WAS SIE BEI MIR NICHT BEKOMMEN ── */}
+      {notForYou.length > 0 && (
+        <Reveal>
+          <section className="hero-bleed py-20 md:py-28" style={{ background: "rgb(237,236,231)" }}>
+            <div className="page-wrap">
+            <div className="grid gap-8 lg:grid-cols-12 lg:items-start">
+              <div className="lg:col-span-4">
+                <h2 className="text-[1.3rem] font-[720] tracking-[-0.018em] leading-[1.25]"
+                    style={{ color: "rgba(var(--ink),.78)" }}>
+                  {t("notForYouTitle")}
+                </h2>
+              </div>
+              <div className="lg:col-span-7 lg:col-start-6">
+                <ul className="space-y-7">
+                  {notForYou.map((item, i) => (
+                    <li key={i} className="flex gap-4 text-[15px] leading-[1.78]"
+                        style={{ color: "rgba(var(--ink),.65)" }}>
+                      <span className="shrink-0 select-none mt-px" style={{ color: "rgba(var(--ink),.30)" }}>—</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            </div>
+          </section>
+        </Reveal>
+      )}
+
+
       {/* ── ERFAHRUNG AUS DER PRAXIS ── */}
       {hasPractice && (
-        <section className="hero-bleed py-14 md:py-16" style={{ background: "rgb(237,236,231)" }}>
+        <Reveal>
+        <section className="hero-bleed py-14 md:py-16" style={{ background: "rgb(224,222,216)" }}>
           <div className="page-wrap">
           <div className="grid gap-12 lg:grid-cols-12">
             <div className="lg:col-span-4">
@@ -182,11 +214,13 @@ export default function AboutClient() {
           </div>
           </div>
         </section>
+        </Reveal>
       )}
 
 
       {/* ── TESTIMONIALS ── */}
       {hasTestimonials && (
+        <Reveal>
         <section className="py-14 md:py-18">
           <h2 className="text-[1.6rem] font-[760] tracking-[-0.02em] leading-[1.2] mb-12">
             {t("testimonialsTitle")}
@@ -239,6 +273,7 @@ export default function AboutClient() {
             ))}
           </div>
         </section>
+        </Reveal>
       )}
 
 

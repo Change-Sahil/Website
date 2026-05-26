@@ -23,7 +23,7 @@
     "hero": {
       "kicker": "Für Geschäftsführer und Werkleiter im produzierenden Mittelstand",
       "title": "Ihre Entscheidung ist gefallen. Warum bewegt sich im Betrieb trotzdem zu wenig?",
-      "intro": "Ich werde nicht geholt, um Veränderung zu erklären. Sondern wenn Entscheidungen ihre Wirkung verlieren, Bereiche nicht mehr synchron arbeiten und operative Verlässlichkeit schrittweise verloren geht."
+      "intro": "Ich werde nicht geholt, um Veränderung zu erklären.\nSondern wenn die wirksame Umsetzung in der Praxis ausbleibt."
     },
     "pillars": {
       "title": "Was meine Arbeit unterscheidet",
@@ -58,7 +58,6 @@
       ],
       "targets": [],
       "triggers": [
-        "Nach Restrukturierung, Wachstum oder einer Übernahme laufen Abläufe und Entscheidungen formal neu, im Alltag orientiert sich der Betrieb jedoch weiter an den alten Strukturen.",
         "Entscheidungen sind getroffen und Maßnahmen beschlossen, aber Abstimmungsschleifen, Bereichsdenken und widersprüchliche Prioritäten bremsen die Umsetzung weiterhin aus.",
         "Neue Standards, Führungsroutinen oder Verantwortlichkeiten wurden eingeführt, verlieren im Tagesgeschäft jedoch Schritt für Schritt an Verbindlichkeit."
       ]
@@ -72,133 +71,71 @@
     }
   },
   "services": {
-    "title": "Was Sie von mir bekommen",
-    "intro": "Die Zusammenarbeit beginnt fast immer mit einer klar abgegrenzten Situation. Ein konkreter Anlass, eine konkrete Frage, ein erster überschaubarer Schritt.\n\nJe nach Situation arbeite ich einmalig zur Klärung, im Rhythmus zur Steuerung oder kontinuierlich bis Umsetzung im Tagesgeschäft trägt.",
-    "themes": {
-      "kicker": "Themenschwerpunkte",
-      "title": "Wobei ich konkret unterstütze",
-      "intro": "",
-      "items": [
-        "Führung & Entscheidungsfähigkeit",
-        "Umsetzung & Verantwortlichkeit",
-        "Schnittstellen & Zusammenarbeit",
-        "Kultur & Integration in Übergangsphasen"
-      ]
+    "title": "Nicht jede Situation braucht dieselbe Form der Zusammenarbeit.",
+    "intro": "Manche Situationen brauchen schnelle Entscheidungsklarheit.\nAndere erfordern operative Begleitung über Monate hinweg.\n\nDie Zusammenarbeit richtet sich nach Ausgangslage, Führungsrealität und Umsetzungsdynamik im Betrieb.",
+    "labels": {
+      "when": "Sinnvoll wenn",
+      "notWhen": "Nicht passend wenn"
     },
-    "ui": {
-      "kicker": "Leistungen",
-      "navTitle": "Formate",
-      "labels": {
-        "whenTitle": "Wann sinnvoll",
-        "notSuitableTitle": "Nicht passend, wenn",
-        "topicsTitle": "Typische Anlässe",
-        "deliverablesTitle": "Was Sie bekommen",
-        "detailsTitle": "Details",
-        "durationTitle": "Laufzeit"
-      },
-      "tags": {
-        "workshops": "Workshops",
-        "partnership": "Partnerschaft",
-        "sparring": "Entscheidung"
-      },
-      "ctaPrimary": "Gespräch anfragen",
-      "when": {
-        "workshops": "Wenn Entscheidungen immer wieder vertagt werden\nWenn Prioritäten zwischen Bereichen unterschiedlich verstanden werden\nWenn unklar ist, wer Verantwortung trägt\nWenn Initiativen starten, aber keine Richtung entsteht",
-        "partnership": "Entscheidungen verlieren im Betrieb ihre Wirkung\nFührung und Bereiche arbeiten gegeneinander\nVeränderung fällt immer wieder in alte Muster zurück\nKultur und Zusammenarbeit geraten in Übergangsphasen aus dem Gleichgewicht",
-        "sparring": "Wenn Entscheidungen trotz zahlreicher Meetings offen bleiben\nWenn Zielkonflikte zwischen Bereichen Führung blockieren\nWenn Konsequenzen bekannt sind, aber niemand sie aussprechen will"
-      },
-      "teaser": {
-        "workshops": "Wenn Entscheidungen, Prioritäten und Verantwortung nicht zusammenpassen, entsteht keine Umsetzung. Der Workshop schafft dafür eine gemeinsame Grundlage.",
-        "partnership": "Wenn Entscheidungen im Betrieb dauerhaft Wirkung entfalten sollen, reicht ein einzelner Workshop nicht.",
-        "sparring": "Wenn Führung trotz vieler Gespräche keine klare Entscheidung mehr hervorbringt, braucht es eine unabhängige Einordnung."
-      },
-      "teaserSections": {
-        "partnership": [
-          {"label": "Steuerungsrhythmus", "text": "Die Zusammenarbeit erfolgt über feste Präsenztage im Betrieb oder regelmäßige Steuerungstermine mit den Verantwortlichen. Direkt auf dem Shopfloor. Nicht neben dem Alltag, sondern darin."},
-          {"label": "Rolle", "text": "Ich moderiere kritische Schnittstellen, etabliere verbindliche Führungsroutinen und helfe, Spannungen dort aufzulösen, wo sie operative Wirkung entfalten."},
-          {"label": "Ziel", "text": "Mein Ziel ist es, mich selbst überflüssig zu machen.\nDie Umsetzung soll nicht von externer Begleitung abhängen, sondern Teil des Führungsalltags werden."}
+    "formats": [
+      {
+        "trigger": "Wenn Entscheidungen trotz vieler Gespräche offen bleiben",
+        "name": "Entscheidungsklarheit",
+        "description": "Punktuelle Entscheidungs- und Priorisierungsarbeit auf Führungsebene.\nTypisch: 2–4 gezielte Arbeitssitzungen.",
+        "when": [
+          "Dieselben Themen kehren in mehreren Runden ungelöst wieder",
+          "Zielkonflikte blockieren Entscheidungen intern",
+          "Führung vermeidet klare Konsequenzen",
+          "Eine externe Perspektive ohne Eigeninteresse fehlt"
+        ],
+        "notWhen": [
+          "Operative Begleitung über Wochen oder Monate gefragt ist",
+          "Gruppenarbeit mit mehreren Bereichen gefragt ist",
+          "Die Situation noch nicht klar benannt werden kann"
         ]
       },
-      "notSuitable": {
-        "workshops": [
-          "Der Auftrag darin besteht, eine intern bereits getroffene Entscheidung extern zu legitimieren",
-          "Entscheidungen vermieden oder vertagt werden sollen"
+      {
+        "trigger": "Wenn Umsetzung im Alltag an Wirkung verliert",
+        "name": "Umsetzungspartnerschaft",
+        "description": "Mehrmonatige Begleitung direkt im operativen Alltag.\nFokus auf Führungsrhythmus, Abstimmung und Verbindlichkeit in der Umsetzung.",
+        "when": [
+          "Entscheidungen sind getroffen, der Betrieb zieht nicht nach",
+          "Bereiche arbeiten nebeneinander statt miteinander",
+          "Führung steuert nach, ohne Wirkung zu erzeugen",
+          "Operative Spannungen wiederholen sich trotz Korrekturen"
         ],
-        "partnership": [
-          "Operative Umsetzung vollständig ausgelagert werden soll",
-          "Führung Verantwortung nicht selbst tragen will"
-        ],
-        "sparring": [
-          "Das eigentliche Problem noch nicht benannt werden kann oder soll",
-          "Keine Bereitschaft für klare Konsequenzen besteht"
+        "notWhen": [
+          "Ein einmaliger Klärungsimpuls ausreicht",
+          "Führung Verantwortung nicht selbst tragen will",
+          "Die Situation strukturell neu ausgerichtet werden muss"
         ]
       },
-      "topics": {
-        "workshops": [],
-        "partnership": [],
-        "sparring": []
-      },
-      "cardTitles": {
-        "workshops": "Klärungsworkshop",
-        "partnership": "Umsetzungspartnerschaft",
-        "sparring": "Entscheidungsklarheit"
-      },
-      "detailSubtitle": {
-        "workshops": "",
-        "partnership": "",
-        "sparring": ""
-      },
-      "tagline": {
-        "workshops": "Kein Konzept. Ein erster wirkungsvoller Schritt.",
-        "partnership": "Ich bleibe, bis Ihr Team die Umsetzung selbst trägt.",
-        "sparring": "Kein Coaching. Eine fundierte Einschätzung."
-      },
-      "tabRole": {
-        "workshops": "Einstieg & Klärung",
-        "partnership": "Kontinuierliche Umsetzung",
-        "sparring": "Kritische Entscheidungen"
-      },
-      "durationShort": {
-        "workshops": "1–2 Tage",
-        "partnership": "Mehrere Monate",
-        "sparring": "Mehrere Monate"
-      },
-      "duration": {
-        "workshops": "1-2 Tage",
-        "partnership": "Die Zusammenarbeit erfolgt monatsweise und orientiert sich an der jeweiligen Situation und Fortschrittsdynamik.",
-        "sparring": "Die Zusammenarbeit erfolgt monatsweise und orientiert sich an der jeweiligen Situation und Fortschrittsdynamik."
-      },
-      "deliverables": {
-        "workshops": [
-          "Gemeinsames Zielbild und priorisierte Schwerpunkte",
-          "Entscheidungen zu Rollen, Führungsrhythmus und Standards"
+      {
+        "trigger": "Wenn Verantwortung, Prioritäten und Führung nicht zusammenpassen",
+        "name": "Klärungsworkshop",
+        "description": "Gemeinsame Arbeitssitzung mit Führung und Schlüsselpersonen.\nZiel ist eine belastbare Grundlage für Entscheidungen, Prioritäten und Verantwortlichkeiten.",
+        "when": [
+          "Bereiche ziehen erkennbar in unterschiedliche Richtungen",
+          "Verantwortung und Prioritäten sind zwischen Ebenen unklar",
+          "Ein strukturierter Neuanfang gefragt ist",
+          "Führungsentscheidungen verlieren im Betrieb Verbindlichkeit"
         ],
-        "partnership": [
-          "Verbindliche Führungs- und Entscheidungsroutinen",
-          "Transparenz über Fortschritt, Blockaden und Wirkung",
-          "Verankerung von Zusammenarbeit, Kultur und Identität in Führung und Organisation"
-        ],
-        "sparring": [
-          "Unabhängige Einordnung kritischer Situationen",
-          "Entscheidungslogik und Priorisierung auf Führungsebene",
-          "Klare nächste Schritte und Konsequenzen"
-        ],
-        "speaking": [
-          "Impuls, Training oder Lehrformat passend zum Anlass",
-          "Praxisnahe Beispiele und Transferlogik",
-          "Dialog, Q&A und Anschlussfähigkeit"
+        "notWhen": [
+          "Tiefgreifende strukturelle Neuausrichtung gefragt ist",
+          "Die Situation operative Dauerpräsenz erfordert",
+          "Entscheidungen bewusst vermieden werden sollen"
         ]
-      },
-      "cta": {
-        "kicker": "15 Minuten Orientierung",
-        "text": "Viele Mandate beginnen mit einem Workshop oder Sparring und gehen dann, wenn Wirkung entstehen soll, in eine längere Begleitung über. Wenn Sie unsicher sind, wo Ihre Situation gerade steht, klären wir das in einem kurzen Gespräch."
       }
+    ],
+    "cta": {
+      "kicker": "15 Minuten Orientierung",
+      "text": "Viele Mandate beginnen mit einem Workshop oder Sparring und gehen dann, wenn Wirkung entstehen soll, in eine längere Begleitung über. Wenn Sie unsicher sind, wo Ihre Situation gerade steht, klären wir das in einem kurzen Gespräch."
     }
   },
   "approach": {
     "eyebrow": "Mein Ansatz",
     "title": "Vorgehen",
-    "intro": "Veränderung scheitert selten an fehlendem Wissen.\nSondern daran, dass Entscheidungen im Betrieb nicht getragen werden.\n\nGenau dort arbeite ich: in Führung, Priorisierung und Umsetzung im laufenden Betrieb.",
+    "intro": "Je nach Situation werden unterschiedliche Elemente dieses Vorgehens kombiniert, von Beobachtung und Entscheidungsarbeit bis zur Begleitung operativer Umsetzung.",
     "how": {
       "kicker": "Mein Vorgehensmodell",
       "title": "Vom Anlass zur Umsetzung in drei Schritten",
@@ -207,31 +144,45 @@
       "outTitle": "Ergebnis",
       "steps": [
         {
-          "verb": "Klären",
-          "text": "Klarheit über Engpässe, Prioritäten und Verantwortung.",
-          "out": [
-            "Gemeinsames Zielbild",
-            "Prioritäten",
-            "Nächste Entscheidungen"
-          ]
+          "phase": "Diagnose-Logik",
+          "title": "Realität sichtbar machen",
+          "intro": "Probleme sind im Unternehmen meist bekannt.\nEntscheidend ist, sie gemeinsam sichtbar, besprechbar und entscheidbar zu machen.",
+          "items": [
+            "Teilnahme an Führungsrunden und Steuerungsmeetings",
+            "Beobachtung von Abstimmungen zwischen Bereichen",
+            "Gespräche über Prioritäten, Verantwortung und Reibungspunkte",
+            "Sichtung von Routinen, Kennzahlen und Entscheidungsmustern",
+            "Analyse, welche Entscheidungen umgangen oder nicht getroffen werden"
+          ],
+          "note": "Dabei geht es nicht darum, zusätzliche Reports zu erzeugen, sondern sichtbar zu machen: wo Verantwortung unklar wird, wo Bereiche gegeneinander arbeiten, wo Prioritäten kollidieren, und an welchen Stellen operative Umsetzung ihre Verbindlichkeit verliert."
         },
         {
-          "verb": "Etablieren",
-          "text": "Führung und Zusammenarbeit werden verbindlich steuerbar.",
-          "out": [
-            "Entscheidungen werden klarer",
-            "Abstimmungen kürzer",
-            "Verantwortung sichtbar"
-          ]
+          "phase": "Arbeitsmodus",
+          "title": "Führung und Umsetzung synchronisieren",
+          "intro": "Gemeinsam mit den Beteiligten kläre ich Prioritäten, strukturiere kritische Entscheidungen und bearbeite Abstimmungen dort, wo Umsetzung ins Stocken gerät.",
+          "items": [
+            "Moderation kritischer Abstimmungen zwischen Führungskräften und Bereichen",
+            "Klärung von Verantwortlichkeiten, die im Alltag unscharf geworden sind",
+            "Priorisierung, wenn Ressourcen und Anforderungen kollidieren",
+            "Strukturierung kritischer Entscheidungen, die intern nicht gelöst werden",
+            "Sichtbarmachen organisationaler Reibung ohne Schuldzuweisung",
+            "Gemeinsame Maßnahmenableitung, die im Betrieb umsetzbar ist"
+          ],
+          "note": "Der Fokus liegt dabei nicht auf Methodik, sondern auf wirksamer Zusammenarbeit und klarer Führungsfähigkeit im operativen Alltag."
         },
         {
-          "verb": "Verankern",
-          "text": "Umsetzung gehört zur Führungsroutine.",
-          "out": [
-            "Führung steuert eigenständig",
-            "Standards bleiben stabil",
-            "Veränderung trägt ohne externe Impulse"
-          ]
+          "phase": "Veränderungslogik",
+          "title": "Umsetzung im Alltag stabilisieren",
+          "intro": "Umsetzung wird erst dann stabil, wenn sie auch unter Belastung funktioniert.",
+          "items": [
+            "Reflexion und Nachverfolgung getroffener Entscheidungen und Maßnahmen",
+            "Überprüfung, ob Umsetzung dort ankommt, wo sie wirksam sein soll",
+            "Anpassung von Führungsroutinen, wenn Realität von Plan abweicht",
+            "Begleitung kritischer Phasen, in denen Verbindlichkeit droht zu erodieren",
+            "Sichtbarmachen neuer Reibungen, die durch Veränderung entstehen",
+            "Nachschärfung von Prioritäten, wenn sich Anforderungen verschieben"
+          ],
+          "note": "Ziel ist nicht kurzfristige Aktivität, sondern eine Organisation, in der Entscheidungen wieder Wirkung entfalten und Umsetzung dauerhaft tragfähig wird."
         }
       ]
     },
@@ -284,14 +235,13 @@
       "Heute begleite ich Führungskräfte und Organisationen im industriellen Mittelstand genau an diesen Punkten. Dort, wo die Umsetzung Klarheit, Führung und Verbindlichkeit braucht."
     ],
     "profileTitle": "Profil",
-    "profileText": "Akzeptanz entsteht dort, wo Sprache, Realität und Verantwortung zusammenpassen.\n\nMein beruflicher Weg begann im industriellen Umfeld und entwickelte sich über Produktion, Führung und standortübergreifende Verantwortung weiter. Parallel dazu folgten eine Ausbildung zum Industriemechaniker, die Weiterbildung zum staatlich geprüften Techniker Maschinenbau, das Studium der Betriebswirtschaft und Wirtschaftspsychologie und heute die Promotion. Immer berufsbegleitend und nah an der operativen Realität.\n\nDiese Verbindung aus Werk, Führung und wissenschaftlicher Auseinandersetzung prägt meine Arbeit bis heute. Mein Fokus liegt darauf, Entscheidungen nicht nur vorzubereiten, sondern gemeinsam mit den Verantwortlichen in der Praxis wirksam werden zu lassen.",
+    "profileText": "Ich komme nicht aus der Beratung, sondern aus operativer Verantwortung.\n\nProduktion, Führung, standortübergreifende Steuerung und Restrukturierung unter realem Druck waren meine Realität, lange bevor daraus Beratung wurde.\n\nDeshalb arbeite ich nicht mit idealisierten Organisationsbildern, sondern mit dem, was in Betrieben tatsächlich passiert: widersprüchliche Prioritäten, Führungsreibung und Entscheidungen, die im Alltag ihre Wirkung verlieren.",
     "clarityText": "",
     "bulletsEyebrow": "Fundament meiner Arbeit",
     "bullets": [
-      "Über 25 Jahre operative Verantwortung in Produktion, Logistik und standortübergreifender Führung",
-      "Erfahrung in Veränderungs-, Restrukturierungs- und Integrationssituationen im industriellen Umfeld",
-      "Verbindung aus operativer Praxis, Führungsverantwortung und wissenschaftlicher Auseinandersetzung",
-      "Laufende Promotion zu M&A-Integration, Kultur und organisationaler Umsetzung im Mittelstand",
+      "Vom Hilfsarbeiter am Band bis zur standortübergreifenden Bereichsleitung: 25 Jahre operative Realität aus eigener Erfahrung auf jeder Ebene",
+      "Techniker Maschinenbau, Betriebswirt und Wirtschaftspsychologe: berufsbegleitend, immer nah an der Praxis",
+      "Laufende Promotion zu M&A-Integration und Umsetzung",
       "Mehrsprachige Zusammenarbeit in Deutsch, Englisch, Türkisch, Spanisch und Arabisch"
     ],
     "linkedInLabel": "LinkedIn-Profil ansehen",
@@ -300,21 +250,24 @@
     "practiceIntro": "Situationen und Verantwortung, die meinen Blick auf Führung und Umsetzung geprägt haben.",
     "practiceItems": [
       {
-        "title": "Post-Merger-Integration",
-        "text": "Standortübergreifende Begleitung nach Unternehmensübernahme: Führungsstrukturen, Prozessverantwortung, Kulturarbeit und Kompetenzaufbau über mehrere Jahre."
-      },
-      {
-        "title": "Lean & Operational Excellence",
+        "title": "Standards und Effizienz in der Produktion ohne Methoden-Rollout verankern",
         "text": "Einführung und Verstetigung effizienter Produktions- und Rüstprozesse: nicht als Methoden-Rollout, sondern als Führungsarbeit im Tagesgeschäft."
       },
       {
-        "title": "Reorganisation & Führungsentwicklung",
+        "title": "Führungsstrukturen und Verantwortlichkeiten unter laufendem Betrieb klären",
         "text": "Aufbau standortübergreifender Führungsstrukturen und Klärung von Verantwortlichkeiten über Bereichsgrenzen hinweg unter laufendem Betrieb."
       },
       {
-        "title": "Restrukturierung & Kulturverankerung",
+        "title": "Führungsklarheit und Verbindlichkeit in Restrukturierungsphasen stabilisieren",
         "text": "Begleitung von Restrukturierungsphasen mit Fokus auf Führungsklarheit, Kommunikation und nachhaltige Verankerung von Veränderungen im Arbeitsalltag."
       }
+    ],
+    "notForYouTitle": "Was Sie bei mir nicht bekommen",
+    "notForYou": [
+      "Begleitung, die neben dem Betrieb läuft statt darin",
+      "Externe Steuerung als Ersatz für Führungsverantwortung",
+      "Konzepte ohne gemeinsame Entscheidungsarbeit",
+      "Umsetzung ohne klare Verantwortungsübernahme"
     ],
     "testimonialsEyebrow": "Was andere sagen",
     "testimonialsTitle": "Stimmen aus der Zusammenarbeit",

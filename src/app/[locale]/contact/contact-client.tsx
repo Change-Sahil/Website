@@ -109,6 +109,7 @@ export default function ContactPage() {
 
 
       {/* ── FORMULAR + TERMIN + DIREKTKONTAKT ── */}
+      <Reveal>
       <section className="py-14 md:py-16">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
 
@@ -284,6 +285,7 @@ export default function ContactPage() {
 
         </div>
       </section>
+      </Reveal>
 
 
       {/* ── SO BEGINNT DIE ZUSAMMENARBEIT — warmgrau ── */}

@@ -23,7 +23,7 @@
     "hero": {
       "kicker": "For managing directors and plant managers in manufacturing SMEs",
       "title": "The decision has been made. Why is so little changing in operations?",
-      "intro": "I'm not brought in to explain change. But when decisions lose their impact, departments fall out of sync, and operational reliability gradually erodes."
+      "intro": "I'm not brought in to explain change.\nBut when effective implementation fails to take hold in practice."
     },
     "pillars": {
       "title": "What distinguishes my work",
@@ -58,7 +58,6 @@
       ],
       "targets": [],
       "triggers": [
-        "After restructuring, growth, or an acquisition, processes and decisions run formally new — but in day-to-day operations the organization still orients itself to the old structures.",
         "Decisions have been made and measures agreed, but coordination loops, silo thinking, and conflicting priorities continue to hold up implementation.",
         "New standards, leadership routines, or responsibilities have been introduced, but gradually lose their binding force in the daily business."
       ]
@@ -72,127 +71,65 @@
     }
   },
   "services": {
-    "title": "What you get from me",
-    "intro": "The collaboration almost always begins with a clearly defined situation. A specific trigger, a specific question, an initial step that is manageable in scope.\n\nDepending on the situation, I work on a one-off basis to create clarity, in a recurring rhythm to provide guidance, or continuously until execution is sustained in day-to-day operations.",
-    "themes": {
-      "kicker": "Focus areas",
-      "title": "Where I provide concrete support",
-      "intro": "",
-      "items": [
-        "Leadership & decision-making",
-        "Execution & accountability",
-        "Interfaces & collaboration",
-        "Culture & integration in transition phases"
-      ]
+    "title": "Not every situation calls for the same form of collaboration.",
+    "intro": "Some situations need rapid decision clarity.\nOthers require operational support over several months.\n\nThe collaboration follows the starting point, leadership reality and execution dynamics in the organisation.",
+    "labels": {
+      "when": "Makes sense when",
+      "notWhen": "Not suited when"
     },
-    "ui": {
-      "kicker": "Services",
-      "navTitle": "Formats",
-      "labels": {
-        "whenTitle": "When it makes sense",
-        "notSuitableTitle": "Not the right fit when",
-        "topicsTitle": "Typical situations",
-        "deliverablesTitle": "What you get",
-        "detailsTitle": "Details",
-        "durationTitle": "Duration"
-      },
-      "tags": {
-        "workshops": "Workshops",
-        "partnership": "Partnership",
-        "sparring": "Decision Sparring"
-      },
-      "ctaPrimary": "Request a consultation",
-      "when": {
-        "workshops": "When decisions keep getting postponed\nWhen priorities are understood differently across teams\nWhen it's unclear who carries responsibility\nWhen initiatives start but no direction emerges",
-        "partnership": "Decisions lose their impact in day-to-day operations\nLeadership and departments work against each other\nChange keeps reverting to old patterns\nCulture and collaboration lose stability in transition phases",
-        "sparring": "When decisions remain open despite numerous meetings\nWhen goal conflicts between teams block leadership\nWhen consequences are known but no one is willing to name them"
-      },
-      "teaser": {
-        "workshops": "When decisions, priorities, and responsibilities are out of alignment, execution stalls. The workshop creates a shared foundation.",
-        "partnership": "When decisions are to have lasting impact in the organisation, a single workshop is not enough.",
-        "sparring": "When leadership no longer produces clear decisions despite many conversations, an independent assessment is needed."
-      },
-      "teaserSections": {
-        "partnership": [
-          {"label": "Steering rhythm", "text": "The collaboration runs through fixed on-site days or regular steering meetings with those responsible. Directly on the shop floor. Not alongside everyday operations, but within them."},
-          {"label": "Role", "text": "I moderate critical interfaces, establish binding leadership routines, and help resolve tensions exactly where they have operational impact."},
-          {"label": "Goal", "text": "My goal is to make myself redundant.\nExecution should not depend on external support — it should become part of leadership's everyday rhythm."}
+    "formats": [
+      {
+        "trigger": "When decisions remain open despite many conversations",
+        "name": "Decision Clarity",
+        "description": "Targeted decision-making and prioritisation work at leadership level.\nTypically: 2–4 focused working sessions.",
+        "when": [
+          "The same topics return unsolved across multiple rounds",
+          "Goal conflicts block decisions internally",
+          "Leadership avoids clear consequences",
+          "An external perspective without self-interest is missing"
+        ],
+        "notWhen": [
+          "Operational support over weeks or months is needed",
+          "Group work with multiple departments is required",
+          "The situation cannot yet be clearly articulated"
         ]
       },
-      "notSuitable": {
-        "workshops": [
-          "The mandate is to externally legitimise a decision that has already been made internally",
-          "Decisions are to be avoided or deferred"
+      {
+        "trigger": "When execution loses traction in day-to-day operations",
+        "name": "Implementation Partnership",
+        "description": "Multi-month accompaniment directly in operational day-to-day life.\nFocus on leadership rhythm, coordination and accountability in execution.",
+        "when": [
+          "Decisions are made, but operations don't follow through",
+          "Departments work alongside rather than with each other",
+          "Leadership corrects without creating effect",
+          "Operational tensions repeat despite corrections"
         ],
-        "partnership": [
-          "Operational execution is to be fully outsourced",
-          "Leadership is unwilling to take responsibility itself"
-        ],
-        "sparring": [
-          "The real problem cannot or should not yet be named",
-          "There is no willingness to accept clear consequences"
+        "notWhen": [
+          "A one-off clarification impulse is sufficient",
+          "Leadership is unwilling to carry responsibility",
+          "The situation requires structural realignment"
         ]
       },
-      "topics": {
-        "workshops": [],
-        "partnership": [],
-        "sparring": []
-      },
-      "cardTitles": {
-        "workshops": "Clarification Workshop",
-        "partnership": "Implementation Partnership",
-        "sparring": "Decision Clarity"
-      },
-      "detailSubtitle": {
-        "workshops": "",
-        "partnership": "",
-        "sparring": ""
-      },
-      "tagline": {
-        "workshops": "No concept. A first effective step.",
-        "partnership": "I stay until your team carries implementation on its own.",
-        "sparring": "No coaching. A sound, independent assessment."
-      },
-      "tabRole": {
-        "workshops": "Entry & clarification",
-        "partnership": "Continuous execution",
-        "sparring": "Critical decisions"
-      },
-      "durationShort": {
-        "workshops": "1–2 days",
-        "partnership": "Several months",
-        "sparring": "Several months"
-      },
-      "duration": {
-        "workshops": "1-2 days",
-        "partnership": "Collaboration is structured on a monthly basis, aligned with the situation and the dynamics of progress.",
-        "sparring": "Collaboration is structured on a monthly basis, aligned with the situation and the dynamics of progress."
-      },
-      "deliverables": {
-        "workshops": [
-          "A shared target state and prioritised focus areas",
-          "Decisions on roles, leadership rhythm, and standards"
+      {
+        "trigger": "When responsibility, priorities and leadership no longer align",
+        "name": "Clarification Workshop",
+        "description": "A joint working session with leadership and key people.\nThe goal: a solid foundation for decisions, priorities and responsibilities.",
+        "when": [
+          "Departments are visibly pulling in different directions",
+          "Responsibility and priorities are unclear between levels",
+          "A structured fresh start is needed",
+          "Leadership decisions lose binding force in operations"
         ],
-        "partnership": [
-          "Binding leadership and decision-making routines",
-          "Transparency on progress, blockers, and impact",
-          "Embedding collaboration, culture, and identity in leadership and organisation"
-        ],
-        "sparring": [
-          "Independent assessment of critical situations",
-          "Decision logic and prioritisation at leadership level",
-          "Clear next steps and consequences"
-        ],
-        "speaking": [
-          "A keynote, training, or teaching format suited to the occasion",
-          "Practical examples and transfer logic",
-          "Dialogue, Q&A, and relevance for the audience"
+        "notWhen": [
+          "Deep structural realignment is needed",
+          "The situation requires sustained operational presence",
+          "Decisions are being deliberately avoided"
         ]
-      },
-      "cta": {
-        "kicker": "15-minute orientation",
-        "text": "Many engagements begin with a workshop or sparring and then, when impact is meant to emerge, move into a longer support format. If you are unsure where your situation currently stands, we can clarify that in a brief conversation."
       }
+    ],
+    "cta": {
+      "kicker": "15 minutes of orientation",
+      "text": "Many mandates begin with a workshop or sparring session and, when impact is needed, transition into longer-term accompaniment. If you are unsure where your situation currently stands, we can clarify that in a brief conversation."
     }
   },
   "approach": {
@@ -207,31 +144,45 @@
       "outTitle": "Outcome",
       "steps": [
         {
-          "verb": "Clarify",
-          "text": "Clarity on bottlenecks, priorities, and responsibility.",
-          "out": [
-            "Shared target state",
-            "Priorities",
-            "Next decisions"
-          ]
+          "phase": "Diagnostic Logic",
+          "title": "Making Reality Visible",
+          "intro": "I don't start with presentations or target images, but where implementation is already losing its impact in everyday operations. I work directly with management, executives, and operational areas in the company:",
+          "items": [
+            "Participation in leadership rounds and steering meetings",
+            "Observation of coordination between departments",
+            "Conversations about priorities, responsibilities, and friction points",
+            "Review of routines, KPIs, and decision patterns",
+            "Analysis of which decisions are being avoided or not made"
+          ],
+          "note": "The goal is not to generate additional reports, but to make visible: where responsibility becomes unclear, where departments work against each other, where priorities collide, and at which points operational implementation is losing its binding force."
         },
         {
-          "verb": "Establish",
-          "text": "Leadership and collaboration become reliably manageable.",
-          "out": [
-            "Decisions become clearer",
-            "Coordination gets shorter",
-            "Responsibility becomes visible"
-          ]
+          "phase": "Working Mode",
+          "title": "Synchronizing Leadership and Implementation",
+          "intro": "Most problems are already known within the organization. What matters is making them jointly visible, discussable, and workable — without building additional parallel structures. I work directly with the responsible parties involved:",
+          "items": [
+            "Facilitation of critical coordination between leaders and departments",
+            "Clarification of responsibilities that have become blurred in day-to-day operations",
+            "Prioritization when resources and requirements collide",
+            "Structuring critical decisions that cannot be resolved internally",
+            "Making organizational friction visible without assigning blame",
+            "Joint derivation of measures that are implementable in the company"
+          ],
+          "note": "The focus is not on methodology, but on effective collaboration and clear leadership capacity in everyday operations."
         },
         {
-          "verb": "Embed",
-          "text": "Execution becomes part of leadership routine.",
-          "out": [
-            "Leadership steers independently",
-            "Standards remain stable",
-            "Change works without external input"
-          ]
+          "phase": "Change Logic",
+          "title": "Stabilizing Implementation in Everyday Operations",
+          "intro": "New standards don't emerge through communication alone, but only when they function stably in everyday life even under pressure. That's why I accompany change directly in operational reality:",
+          "items": [
+            "Reflection and follow-up on decisions and measures taken",
+            "Checking whether implementation reaches where it needs to have effect",
+            "Adapting leadership routines when reality deviates from plan",
+            "Accompanying critical phases where binding commitment is at risk of eroding",
+            "Making new friction points visible that emerge through change",
+            "Resharpening priorities when requirements shift"
+          ],
+          "note": "The goal is not short-term activity, but an organization in which decisions regain their impact and implementation becomes sustainably viable."
         }
       ]
     },
@@ -284,14 +235,13 @@
       "Today I work with leaders and organisations in industrial SMEs on exactly these points. Where implementation requires clarity, leadership, and commitment."
     ],
     "profileTitle": "Profile",
-    "profileText": "Acceptance arises where language, reality and responsibility align.\n\nMy professional path began in an industrial environment and developed through production, leadership, and cross-site responsibility. In parallel, I completed training as an industrial mechanic, further qualification as a state-certified mechanical engineering technician, and studies in business administration and organisational psychology — and today I am working on my doctorate. Always alongside professional practice and close to operational reality.\n\nThis combination of plant experience, leadership, and academic engagement shapes my work to this day. My focus is not just on preparing decisions, but on making them effective in practice together with those responsible.",
+    "profileText": "I don't come from consulting. I come from operational responsibility.\n\nProduction, leadership, cross-site management and restructuring under real pressure were my reality, long before it became consulting.\n\nThat is why I don't work with idealised organisational models, but with what actually happens in organisations: conflicting priorities, leadership friction, and decisions that lose their effect in day-to-day operations.",
     "clarityText": "",
     "bulletsEyebrow": "Foundation of my work",
     "bullets": [
-      "Over 25 years of operational responsibility in production, logistics, and cross-site leadership",
-      "Experience in change, restructuring, and integration situations in industrial environments",
-      "Combination of operational practice, leadership responsibility, and academic engagement",
-      "Ongoing doctorate on M&A integration, culture, and organisational execution in industrial SMEs",
+      "From assembly line to cross-site divisional management: 25 years of operational reality from direct experience at every level",
+      "Mechanical engineering technician, business administrator and organisational psychologist: studied alongside practice, always close to operational reality",
+      "Ongoing doctorate on M&A integration and implementation",
       "Multilingual collaboration in German, English, Turkish, Spanish, and Arabic"
     ],
     "linkedInLabel": "View LinkedIn profile",
@@ -300,21 +250,24 @@
     "practiceIntro": "Situations and responsibilities that have shaped my perspective on leadership and implementation.",
     "practiceItems": [
       {
-        "title": "Post-merger integration",
-        "text": "Cross-site support after an acquisition: leadership structures, process responsibility, culture work, and capability development over several years."
-      },
-      {
-        "title": "Lean & Operational Excellence",
+        "title": "Embedding standards and efficiency in production without a method rollout",
         "text": "Introduction and stabilization of efficient production and changeover processes, not as a method rollout, but as leadership work in day-to-day operations."
       },
       {
-        "title": "Reorganization & leadership development",
+        "title": "Clarifying leadership structures and responsibilities during ongoing operations",
         "text": "Building cross-site leadership structures and clarifying responsibilities across functional boundaries during ongoing operations."
       },
       {
-        "title": "Restructuring & cultural embedding",
+        "title": "Stabilising leadership clarity and accountability through restructuring phases",
         "text": "Support through restructuring phases with a focus on leadership clarity, communication, and the sustainable embedding of change in everyday work."
       }
+    ],
+    "notForYouTitle": "What you won't get from me",
+    "notForYou": [
+      "Support that runs alongside the business instead of within it",
+      "External steering as a substitute for leadership responsibility",
+      "Concepts without shared decision-making work",
+      "Execution without clear assumption of responsibility"
     ],
     "testimonialsEyebrow": "What others say",
     "testimonialsTitle": "Voices from collaboration",

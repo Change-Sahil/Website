@@ -26,38 +26,15 @@ export interface HomeAudience {
   triggers: string[];
 }
 
-export type ServiceKey = "workshops" | "partnership" | "sparring";
-
-export interface ServiceLabels {
-  detailsTitle: string;
-  whenTitle: string;
-  topicsTitle: string;
-  deliverablesTitle: string;
+export interface ServiceFormat {
+  trigger: string;
+  name: string;
+  description: string;
+  when: string[];
+  notWhen: string[];
 }
 
 export interface ServiceCta {
   kicker: string;
   text: string;
-}
-
-export interface TeaserSection {
-  label: string;
-  text: string;
-}
-
-export interface ServiceUi {
-  kicker: string;
-  navTitle: string;
-  cardTitles: Record<ServiceKey, string>;
-  tabRole: Record<ServiceKey, string>;
-  teaser: Record<string, string>;
-  teaserSections?: Record<string, TeaserSection[]>;
-  detailSubtitle?: Record<ServiceKey, string>;
-  when: Record<string, string>;
-  tags: Record<string, string[]>;
-  duration: Record<string, string>;
-  deliverables: Record<string, string[]>;
-  topics: Record<string, string[]>;
-  labels: ServiceLabels;
-  cta: ServiceCta;
 }

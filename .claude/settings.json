@@ -27,7 +27,18 @@
       "Bash(powershell -Command ':*)",
       "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\seref\\\\change-werkstatt-sahil\\\\create-shortcut.ps1\")",
       "Bash(powershell -Command \"[Environment]::GetFolderPath\\('Desktop'\\)\")",
-      "Bash(where node:*)"
+      "Bash(where node:*)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git commit *)",
+      "WebFetch(domain:www.bvmw.de)",
+      "Bash(node -e \"const fs = require\\('fs'\\); const html = fs.readFileSync\\('c:/Users/seref/change-werkstatt-sahil/kundenradar.html','utf8'\\); const m = html.match\\(/<script>\\([\\\\s\\\\S]*?\\)<\\\\/script>/\\); eval\\(m[1].replace\\(/\\\\/proxy/,''\\).replace\\(/\\\\/brave/,''\\)\\); console.log\\('OK - SIG_QUERIES keys:', Object.keys\\(SIG_QUERIES\\).length\\);\")",
+      "Bash(node -e \"const fs = require\\('fs'\\); const html = fs.readFileSync\\('c:/Users/seref/change-werkstatt-sahil/kundenradar.html','utf8'\\); const m = html.match\\(/<script>\\([\\\\s\\\\S]*?\\)<\\\\/script>/\\); const js = m[1]; const keys = js.match\\(/'[^']+'\\\\s*:/g\\); const sigQ = js.indexOf\\('SIG_QUERIES'\\); console.log\\('Script length:', js.length, 'chars'\\); console.log\\('SIG_QUERIES found at char:', sigQ\\); const match = js.match\\(/const SIG_QUERIES = \\\\{\\([\\\\s\\\\S]*?\\)\\\\n\\\\};/\\); console.log\\('SIG_QUERIES keys count:', \\(match?.[1].match\\(/^\\\\s+'[^']+': \\\\[/gm\\)||[]\\).length\\);\")",
+      "Bash(powershell -Command \"\\(Select-String -Path 'c:\\\\Users\\\\seref\\\\change-werkstatt-sahil\\\\kundenradar.html' -Pattern 'data-sig='\\).Count\")",
+      "Bash(node -e ' *)",
+      "WebFetch(domain:www.linkedin.com)",
+      "Bash(git diff *)"
     ],
     "additionalDirectories": [
       "C:\\Users\\seref\\poker-gruppe\\src\\app",

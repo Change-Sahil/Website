@@ -33,13 +33,27 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Mitgliedsunternehmen Der Mittelstand. BVMW e.V."
-              className="pl-7"
+              className="pl-4"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/bvmw-mitgliedsunternehmen.jpg"
                 alt="Mitgliedsunternehmen Der Mittelstand. BVMW e.V."
                 className="h-14 w-auto opacity-80 hover:opacity-100 transition-opacity duration-150"
+              />
+            </a>
+            <a
+              href="https://beratungsnetzwerkmittelstand.de/berater/seref-sahil/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Zertifizierter Berater für mittelständische Unternehmen – BVMW"
+              className="pl-4"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/Siegel Beratungsnetzwerk Mittelstand@2x.png"
+                alt="Zertifizierter Berater für mittelständische Unternehmen – BVMW"
+                className="h-28 w-auto opacity-80 hover:opacity-100 transition-opacity duration-150"
               />
             </a>
           </div>
@@ -55,12 +69,11 @@ export default function Footer() {
               <Link href={`/${locale}/approach`}  className="hover:text-slate-900 transition-colors duration-150">{tNav("approach")}</Link>
               <Link href={`/${locale}/about`}     className="hover:text-slate-900 transition-colors duration-150">{tNav("about")}</Link>
               <Link href={`/${locale}/speaking`}  className="hover:text-slate-900 transition-colors duration-150">{tNav("speaking")}</Link>
-              <Link href={`/${locale}/contact`}   className="hover:text-slate-900 transition-colors duration-150 font-medium">{tNav("cta")}</Link>
             </nav>
 
             <p className="text-xs text-slate-400 tracking-wide">{tFooter("bottomLine")}</p>
 
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-400 sm:justify-end">
+            <div className="flex items-center gap-x-4 text-xs text-slate-400 sm:justify-end whitespace-nowrap">
               <span>© {year} Change-Werkstatt Sahil</span>
               <span className="text-slate-200">·</span>
               <span>{tFooter("location")}</span>

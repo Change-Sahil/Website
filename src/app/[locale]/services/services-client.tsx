@@ -67,6 +67,60 @@ export default function ServicesClient() {
       </section>
 
 
+      {/* ── WERKSTATTGESPRÄCH HINT ── */}
+      <Reveal>
+        <section className="hero-bleed py-12 md:py-16" style={{ background: "rgb(226,237,237)" }}>
+          <div className="page-wrap">
+            <div
+              className="rounded-[14px] px-7 py-8 sm:px-10 sm:py-9"
+              style={{
+                background: "rgba(255,255,255,.75)",
+                border: "1px solid rgba(0,112,125,.12)",
+              }}
+            >
+              <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+                <div className="flex-1">
+                  <p
+                    className="text-[10px] tracking-[0.28em] uppercase font-[700] mb-4"
+                    style={{ color: "rgb(var(--accent))" }}
+                  >
+                    {t("werkstattHint.eyebrow")}
+                  </p>
+                  <h2
+                    className="text-[1.2rem] font-[740] leading-[1.3] tracking-[-0.016em] mb-3"
+                    style={{ color: "rgba(14,20,32,.86)" }}
+                  >
+                    {t("werkstattHint.text")}
+                  </h2>
+                  <p
+                    className="text-[13px] leading-[1.7] max-w-lg"
+                    style={{ color: "rgba(14,20,32,.50)" }}
+                  >
+                    {t("werkstattHint.subtext")}
+                  </p>
+                  <p
+                    className="mt-4 text-[12px] font-[640] tracking-[0.01em]"
+                    style={{ color: "rgba(14,20,32,.34)" }}
+                  >
+                    {t("werkstattHint.meta")}
+                  </p>
+                </div>
+                <div className="shrink-0 sm:pb-0.5">
+                  <Link
+                    href={`/${locale}/werkstattgespraech`}
+                    className="inline-flex items-center gap-2 text-[15.5px] font-[700] tracking-[-0.01em] transition-opacity hover:opacity-75"
+                    style={{ color: "rgb(var(--accent))" }}
+                  >
+                    {t("werkstattHint.cta")} →
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </Reveal>
+
+
       {/* ── FORMAT-SEKTIONEN — Editorial Vollbreite ── */}
       <section className="hero-bleed">
         {formats.map((f, i) => {
@@ -102,7 +156,7 @@ export default function ServicesClient() {
                   <div className="mt-8 flex items-center gap-5">
                     <div className="h-px flex-1" style={{ background: "rgb(var(--accent))", opacity: 0.35 }} />
                     <p
-                      className="text-[12px] tracking-[0.26em] uppercase font-[700] shrink-0"
+                      className="text-[15px] tracking-[0.32em] uppercase font-[780] shrink-0"
                       style={{ color: "rgb(var(--accent))" }}
                     >
                       {f.name}

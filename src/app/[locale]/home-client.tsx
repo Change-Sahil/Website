@@ -216,6 +216,60 @@ export default function HomeClient() {
 
 
       {/* ════════════════════════════════════════════
+          WERKSTATTGESPRÄCH — Einstiegsformat-Karte
+      ════════════════════════════════════════════ */}
+      <Reveal>
+        <section className="py-10 md:py-14">
+          <div
+            className="rounded-[16px] px-7 py-8 sm:px-10 sm:py-9"
+            style={{
+              background: "rgb(237,236,231)",
+              border: "1px solid rgba(14,20,32,.09)",
+            }}
+          >
+            <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+              <div className="flex-1">
+                <p
+                  className="text-[10px] tracking-[0.28em] uppercase font-[700] mb-4"
+                  style={{ color: "rgb(var(--accent))" }}
+                >
+                  {t("werkstattTeaser.eyebrow")}
+                </p>
+                <h2
+                  className="text-[1.25rem] font-[760] leading-[1.25] tracking-[-0.018em] mb-3"
+                  style={{ color: "rgba(var(--ink),.88)" }}
+                >
+                  {t("werkstattTeaser.question")}
+                </h2>
+                <p
+                  className="text-[14px] leading-[1.76] max-w-lg"
+                  style={{ color: "rgba(var(--ink),.54)" }}
+                >
+                  {t("werkstattTeaser.text")}
+                </p>
+                <p
+                  className="mt-4 text-[12px] font-[640] tracking-[0.01em]"
+                  style={{ color: "rgba(var(--ink),.36)" }}
+                >
+                  {t("werkstattTeaser.meta")}
+                </p>
+              </div>
+              <div className="shrink-0 sm:pb-0.5">
+                <Link
+                  href={`/${locale}/werkstattgespraech`}
+                  className="inline-flex items-center gap-2 text-[15.5px] font-[700] tracking-[-0.01em] transition-colors hover:opacity-80"
+                  style={{ color: "rgba(var(--ink),.68)" }}
+                >
+                  {t("werkstattTeaser.cta")} →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </Reveal>
+
+
+      {/* ════════════════════════════════════════════
           CTA — dunkler Abschluss
       ════════════════════════════════════════════ */}
       <Reveal>

@@ -68,6 +68,13 @@
       "text": "Lo que queda sin resolver tiene un coste: tiempo en bucles de coordinación, energía en fricciones de liderazgo y credibilidad en decisiones que no aterrizan.\n\nSi se pregunta si esta es su situación ahora mismo, lo aclaramos en 15 minutos.",
       "ctaPrimary": "Solicitar una consulta",
       "ctaSecondary": "Ver servicios"
+    },
+    "werkstattTeaser": {
+      "eyebrow": "Punto de Partida",
+      "question": "¿Un tema que lleva meses sin avanzar?",
+      "text": "No toda situación requiere inmediatamente un taller o un acompañamiento prolongado. Con una Sesión de Trabajo obtendrá en dos horas una perspectiva externa, claridad sobre la causa real y posibles pasos siguientes.",
+      "meta": "2 horas presencial · 990 € · Informe en 48 horas",
+      "cta": "Ver Sesión de Trabajo"
     }
   },
   "services": {
@@ -79,19 +86,19 @@
     },
     "formats": [
       {
-        "trigger": "Cuando las decisiones siguen abiertas pese a muchas conversaciones",
-        "name": "Claridad en las Decisiones",
-        "description": "Trabajo puntual de decisión y priorización a nivel directivo.\nHabitualmente: 2–4 sesiones de trabajo focalizadas.",
+        "trigger": "Cuando responsabilidad, prioridades y liderazgo no encajan",
+        "name": "Taller de Clarificación",
+        "description": "Una sesión de trabajo conjunta con la dirección y personas clave.\nEl objetivo: una base sólida para decisiones, prioridades y responsabilidades.",
         "when": [
-          "Los mismos temas vuelven sin resolver en varias rondas",
-          "Los conflictos de objetivos bloquean decisiones internamente",
-          "La dirección evita asumir consecuencias claras",
-          "Falta una perspectiva externa sin intereses propios"
+          "Los departamentos tiran visiblemente en direcciones distintas",
+          "La responsabilidad y las prioridades son poco claras entre niveles",
+          "Se necesita un nuevo comienzo estructurado",
+          "Las decisiones de liderazgo pierden carácter vinculante en las operaciones"
         ],
         "notWhen": [
-          "Se necesita acompañamiento operativo durante semanas o meses",
-          "Se requiere trabajo en grupo con varios departamentos",
-          "La situación aún no puede articularse con claridad"
+          "Se necesita una reorientación estructural profunda",
+          "La situación requiere presencia operativa sostenida",
+          "Las decisiones están siendo deliberadamente evitadas"
         ]
       },
       {
@@ -111,22 +118,29 @@
         ]
       },
       {
-        "trigger": "Cuando responsabilidad, prioridades y liderazgo no encajan",
-        "name": "Taller de Clarificación",
-        "description": "Una sesión de trabajo conjunta con la dirección y personas clave.\nEl objetivo: una base sólida para decisiones, prioridades y responsabilidades.",
+        "trigger": "Cuando las decisiones siguen abiertas pese a muchas conversaciones",
+        "name": "Claridad en las Decisiones",
+        "description": "Trabajo puntual de decisión y priorización a nivel directivo.\nHabitualmente: 2–4 sesiones de trabajo focalizadas.",
         "when": [
-          "Los departamentos tiran visiblemente en direcciones distintas",
-          "La responsabilidad y las prioridades son poco claras entre niveles",
-          "Se necesita un nuevo comienzo estructurado",
-          "Las decisiones de liderazgo pierden carácter vinculante en las operaciones"
+          "Los mismos temas vuelven sin resolver en varias rondas",
+          "Los conflictos de objetivos bloquean decisiones internamente",
+          "La dirección evita asumir consecuencias claras",
+          "Falta una perspectiva externa sin intereses propios"
         ],
         "notWhen": [
-          "Se necesita una reorientación estructural profunda",
-          "La situación requiere presencia operativa sostenida",
-          "Las decisiones están siendo deliberadamente evitadas"
+          "Se necesita acompañamiento operativo durante semanas o meses",
+          "Se requiere trabajo en grupo con varios departamentos",
+          "La situación aún no puede articularse con claridad"
         ]
       }
     ],
+    "werkstattHint": {
+      "eyebrow": "Punto de Partida",
+      "text": "¿Un tema que lleva meses sin avanzar?",
+      "subtext": "Si la causa real aún no está clara, empiece con una Sesión de Trabajo.",
+      "meta": "2 horas presencial · 990 € · Informe en 48 horas",
+      "cta": "Ver Sesión de Trabajo"
+    },
     "cta": {
       "kicker": "15 minutos de orientación",
       "text": "Muchos mandatos comienzan con un taller o una sesión de trabajo y, cuando se necesita generar impacto, evolucionan hacia un acompañamiento más prolongado. Si no está seguro de dónde se encuentra su situación en este momento, podemos aclararlo en una breve conversación."
@@ -488,5 +502,54 @@
     "text": "La página que busca no existe o ha sido trasladada.",
     "home": "Ir al inicio",
     "contact": "Ponerse en contacto"
+  },
+  "werkstattgespraech": {
+    "meta": {
+      "title": "Werkstattgespräch | Dos horas. Un tema. Una imagen clara.",
+      "description": "Un formato de asesoría de dos horas para temas que no avanzan internamente. En sus instalaciones. 990 € más IVA. Incluye preparación y seguimiento."
+    },
+    "eyebrow": "Punto de Partida",
+    "title": "Sesión de Trabajo",
+    "tagline": "Dos horas. Un tema. Una imagen clara.",
+    "intro": "En toda organización hay temas que se conocen internamente pero son difíciles de mover desde dentro. Porque todos están demasiado cerca. Porque hay intereses propios en juego. Porque nadie puede nombrarlos sin consecuencias.\n\nEl Werkstattgespräch es un formato de dos horas en el que trabaja exactamente ese tema con una perspectiva externa. En sus instalaciones, enfocado, orientado a resultados, sin presión de cierre.",
+    "processTitle": "Cómo funciona",
+    "steps": [
+      { "label": "Llamada previa", "duration": "15 min · Teléfono", "text": "Usted describe el tema. Evaluamos juntos si el formato encaja." },
+      { "label": "Sesión presencial", "duration": "2 horas", "text": "Usted y hasta 2 personas clave estratégicas. Trabajo estructurado." },
+      { "label": "Informe de resultados", "duration": "en 48 h", "text": "Una página concisa con observaciones, hipótesis y posibles próximos pasos." }
+    ],
+    "deliverablesTitle": "Qué obtiene",
+    "deliverables": [
+      "Tras dos horas tendrá una imagen clara de si la causa raíz está en el liderazgo, la estructura o la ejecución.",
+      "Una perspectiva externa sobre su tema, libre de intereses organizativos.",
+      "Claridad sobre dónde empezar primero y qué puede esperar.",
+      "Un documento escrito que puede usar internamente."
+    ],
+    "whenYesTitle": "Tiene sentido cuando …",
+    "whenYes": [
+      "Un tema lleva meses debatiéndose sin avanzar.",
+      "Se han tomado decisiones pero la implementación está estancada.",
+      "Los directivos tienen visiones diferentes sobre el mismo problema.",
+      "Las responsabilidades están formalmente claras pero son inciertas en la práctica.",
+      "La causa real aún no es visible."
+    ],
+    "whenNoTitle": "No es adecuado cuando …",
+    "whenNo": [
+      "Busca un proyecto claramente delimitado con pliego de condiciones.",
+      "El tema es exclusivamente técnico o de tecnología especializada.",
+      "Busca validación externa de una decisión ya tomada."
+    ],
+    "investmentTitle": "Inversión y condiciones",
+    "price": "990 €",
+    "priceSuffix": "más IVA",
+    "priceNote": "incl. preparación y seguimiento",
+    "conditions": [
+      { "label": "Gastos de viaje", "text": "Para distancias superiores a 200 km desde Aalen, según gasto." },
+      { "label": "Confidencialidad", "text": "Todo lo hablado queda entre nosotros. NDA a solicitud." },
+      { "label": "Fecha", "text": "En las próximas 4 semanas, mañana o tarde." }
+    ],
+    "pdfLabel": "Descargar resumen (PDF)",
+    "ctaLabel": "Solicitar ahora",
+    "ctaNote": "Sin presión de venta. Sin honorarios sin resultado claro."
   }
 }

@@ -68,6 +68,13 @@
       "text": "Was ungeklärt bleibt, kostet: Zeit in Abstimmungsschleifen, Energie in Führungsreibung, Glaubwürdigkeit in Entscheidungen, die nicht ankommen.\n\nWenn Sie sich fragen, ob das gerade Ihre Situation ist, klären wir das in 15 Minuten.",
       "ctaPrimary": "Gespräch anfragen",
       "ctaSecondary": "Leistungen ansehen"
+    },
+    "werkstattTeaser": {
+      "eyebrow": "Einstiegsformat",
+      "question": "Ein Thema kommt seit Monaten nicht voran?",
+      "text": "Nicht jede Situation braucht sofort einen Workshop oder eine längere Begleitung. Mit dem Werkstattgespräch erhalten Sie in zwei Stunden eine externe Einordnung, Klarheit über die eigentliche Ursache und mögliche nächste Schritte.",
+      "meta": "2 Stunden vor Ort · 990 € · Ergebnisprotokoll innerhalb von 48 Stunden",
+      "cta": "Werkstattgespräch ansehen"
     }
   },
   "services": {
@@ -79,19 +86,19 @@
     },
     "formats": [
       {
-        "trigger": "Wenn Entscheidungen trotz vieler Gespräche offen bleiben",
-        "name": "Entscheidungsklarheit",
-        "description": "Punktuelle Entscheidungs- und Priorisierungsarbeit auf Führungsebene.\nTypisch: 2–4 gezielte Arbeitssitzungen.",
+        "trigger": "Wenn Verantwortung, Prioritäten und Führung nicht zusammenpassen",
+        "name": "Klärungsworkshop",
+        "description": "Gemeinsame Arbeitssitzung mit Führung und Schlüsselpersonen.\nZiel ist eine belastbare Grundlage für Entscheidungen, Prioritäten und Verantwortlichkeiten.",
         "when": [
-          "Dieselben Themen kehren in mehreren Runden ungelöst wieder",
-          "Zielkonflikte blockieren Entscheidungen intern",
-          "Führung vermeidet klare Konsequenzen",
-          "Eine externe Perspektive ohne Eigeninteresse fehlt"
+          "Bereiche ziehen erkennbar in unterschiedliche Richtungen",
+          "Verantwortung und Prioritäten sind zwischen Ebenen unklar",
+          "Ein strukturierter Neuanfang gefragt ist",
+          "Führungsentscheidungen verlieren im Betrieb Verbindlichkeit"
         ],
         "notWhen": [
-          "Operative Begleitung über Wochen oder Monate gefragt ist",
-          "Gruppenarbeit mit mehreren Bereichen gefragt ist",
-          "Die Situation noch nicht klar benannt werden kann"
+          "Tiefgreifende strukturelle Neuausrichtung gefragt ist",
+          "Die Situation operative Dauerpräsenz erfordert",
+          "Entscheidungen bewusst vermieden werden sollen"
         ]
       },
       {
@@ -111,22 +118,29 @@
         ]
       },
       {
-        "trigger": "Wenn Verantwortung, Prioritäten und Führung nicht zusammenpassen",
-        "name": "Klärungsworkshop",
-        "description": "Gemeinsame Arbeitssitzung mit Führung und Schlüsselpersonen.\nZiel ist eine belastbare Grundlage für Entscheidungen, Prioritäten und Verantwortlichkeiten.",
+        "trigger": "Wenn Entscheidungen trotz vieler Gespräche offen bleiben",
+        "name": "Entscheidungsklarheit",
+        "description": "Punktuelle Entscheidungs- und Priorisierungsarbeit auf Führungsebene.\nTypisch: 2–4 gezielte Arbeitssitzungen.",
         "when": [
-          "Bereiche ziehen erkennbar in unterschiedliche Richtungen",
-          "Verantwortung und Prioritäten sind zwischen Ebenen unklar",
-          "Ein strukturierter Neuanfang gefragt ist",
-          "Führungsentscheidungen verlieren im Betrieb Verbindlichkeit"
+          "Dieselben Themen kehren in mehreren Runden ungelöst wieder",
+          "Zielkonflikte blockieren Entscheidungen intern",
+          "Führung vermeidet klare Konsequenzen",
+          "Eine externe Perspektive ohne Eigeninteresse fehlt"
         ],
         "notWhen": [
-          "Tiefgreifende strukturelle Neuausrichtung gefragt ist",
-          "Die Situation operative Dauerpräsenz erfordert",
-          "Entscheidungen bewusst vermieden werden sollen"
+          "Operative Begleitung über Wochen oder Monate gefragt ist",
+          "Gruppenarbeit mit mehreren Bereichen gefragt ist",
+          "Die Situation noch nicht klar benannt werden kann"
         ]
       }
     ],
+    "werkstattHint": {
+      "eyebrow": "Einstiegsformat",
+      "text": "Ein Thema kommt seit Monaten nicht voran?",
+      "subtext": "Wenn die eigentliche Ursache noch nicht klar ist, starten Sie mit einem Werkstattgespräch.",
+      "meta": "2 Stunden vor Ort · 990 € · Ergebnisprotokoll innerhalb von 48 Stunden",
+      "cta": "Werkstattgespräch ansehen"
+    },
     "cta": {
       "kicker": "15 Minuten Orientierung",
       "text": "Viele Mandate beginnen mit einem Workshop oder Sparring und gehen dann, wenn Wirkung entstehen soll, in eine längere Begleitung über. Wenn Sie unsicher sind, wo Ihre Situation gerade steht, klären wir das in einem kurzen Gespräch."
@@ -488,5 +502,54 @@
     "text": "Die gesuchte Seite existiert leider nicht oder wurde verschoben.",
     "home": "Zur Startseite",
     "contact": "Kontakt aufnehmen"
+  },
+  "werkstattgespraech": {
+    "meta": {
+      "title": "Werkstattgespräch | Zwei Stunden. Ein Thema. Ein klares Bild.",
+      "description": "Ein zweistündiges Beratungsformat für Themen, die intern nicht vorankommen. Vor Ort bei Ihnen. 990 € zzgl. MwSt. Inkl. Vor- und Nachbereitung."
+    },
+    "eyebrow": "Einstiegsformat",
+    "title": "Werkstattgespräch",
+    "tagline": "Zwei Stunden. Ein Thema. Ein klares Bild.",
+    "intro": "In jedem Unternehmen gibt es Themen, die intern bekannt sind, intern aber schwer zu bewegen sind. Weil zu nah dran. Weil andere Eigeninteressen mitlaufen. Weil niemand sie ohne Konsequenzen aussprechen kann.\n\nDas Werkstattgespräch ist ein zweistündiges Format, in dem Sie genau ein solches Thema mit einem externen Blick gemeinsam bearbeiten. Vor Ort bei Ihnen, fokussiert, ergebnisorientiert, ohne Abschlussdruck.",
+    "processTitle": "Ablauf",
+    "steps": [
+      { "label": "Vorgespräch", "duration": "15 Min. · Telefon", "text": "Sie schildern das Thema. Wir prüfen gemeinsam, ob das Format passt." },
+      { "label": "Vor-Ort-Termin", "duration": "2 Stunden", "text": "Sie und maximal 2 strategische Schlüsselpersonen. Strukturierte Bearbeitung." },
+      { "label": "Ergebnis-Protokoll", "duration": "innerhalb 48 Std.", "text": "Eine pointierte Seite mit Beobachtungen, Hypothesen und möglichen nächsten Schritten." }
+    ],
+    "deliverablesTitle": "Was Sie bekommen",
+    "deliverables": [
+      "Nach zwei Stunden haben Sie ein klares Bild, ob die Ursache eher in Führung, Struktur oder Umsetzung liegt.",
+      "Eine externe Einordnung Ihres Themas, ohne organisationale Eigeninteressen.",
+      "Klarheit darüber, wo Sie als Erstes ansetzen sollten und was warten kann.",
+      "Eine schriftliche Dokumentation, die Sie intern weiterverwenden können."
+    ],
+    "whenYesTitle": "Sinnvoll, wenn …",
+    "whenYes": [
+      "Ein Thema seit Monaten diskutiert wird, ohne voranzukommen.",
+      "Entscheidungen getroffen wurden, deren Umsetzung stockt.",
+      "Führungskräfte unterschiedliche Sichtweisen auf dasselbe Problem haben.",
+      "Verantwortlichkeiten formal geklärt, im Alltag aber unsicher sind.",
+      "Die eigentliche Ursache noch nicht sichtbar ist."
+    ],
+    "whenNoTitle": "Nicht sinnvoll, wenn …",
+    "whenNo": [
+      "Sie ein klar definiertes Projekt mit Lastenheft suchen.",
+      "Es ausschließlich um fachliche Spezial- oder Technologiethemen geht.",
+      "Sie lediglich eine externe Bestätigung für eine bereits getroffene Entscheidung suchen."
+    ],
+    "investmentTitle": "Investition & Rahmenbedingungen",
+    "price": "990 €",
+    "priceSuffix": "zzgl. MwSt.",
+    "priceNote": "inkl. Vor- und Nachbereitung",
+    "conditions": [
+      { "label": "Reisekosten", "text": "Bei mehr als 200 km Anfahrt ab Aalen nach Aufwand." },
+      { "label": "Vertraulichkeit", "text": "Alles Besprochene bleibt zwischen uns. NDA auf Wunsch." },
+      { "label": "Termin", "text": "In den nächsten 4 Wochen, Vormittag oder Nachmittag." }
+    ],
+    "pdfLabel": "One-Pager herunterladen (PDF)",
+    "ctaLabel": "Jetzt anfragen",
+    "ctaNote": "Kein Abschlussdruck. Kein Honorar ohne klares Ergebnis."
   }
 }

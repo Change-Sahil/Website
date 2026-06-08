@@ -68,6 +68,13 @@
       "text": "Netleşmeden kalan her şeyin bir maliyeti vardır: koordinasyon döngülerinde zaman, liderlik sürtüşmelerinde enerji, karşılık bulmayan kararlarda güvenilirlik.\n\nBunun şu an sizin durumunuz olup olmadığını düşünüyorsanız, bunu 15 dakikada netleştirebiliriz.",
       "ctaPrimary": "Görüşme talep et",
       "ctaSecondary": "Hizmetleri incele"
+    },
+    "werkstattTeaser": {
+      "eyebrow": "Başlangıç Noktası",
+      "question": "Aylardır ilerlemeyen bir konu mu var?",
+      "text": "Her durum hemen bir atölye veya uzun soluklu bir çalışma gerektirmez. Çalışma Oturumu ile iki saat içinde konunun dışarıdan bir değerlendirmesini, gerçek nedenin netliğini ve olası sonraki adımları alırsınız.",
+      "meta": "2 saat yerinde · 990 € · 48 saat içinde sonuç tutanağı",
+      "cta": "Çalışma Oturumu'na git"
     }
   },
   "services": {
@@ -79,19 +86,19 @@
     },
     "formats": [
       {
-        "trigger": "Kararlar pek çok görüşmeye rağmen askıda kalıyorsa",
-        "name": "Karar Netliği",
-        "description": "Liderlik düzeyinde nokta atışı karar ve önceliklendirme çalışması.\nGenellikle: 2–4 odaklı çalışma oturumu.",
+        "trigger": "Sorumluluk, öncelikler ve liderlik uyuşmuyorsa",
+        "name": "Netleştirme Atölyesi",
+        "description": "Liderlik ve kilit kişilerle ortak çalışma oturumu.\nHedef: kararlar, öncelikler ve sorumluluklar için sağlam bir temel.",
         "when": [
-          "Aynı konular birden fazla toplantıda çözümsüz geri dönüyor",
-          "Hedef çatışmaları kararları iç iletişimde engelliyor",
-          "Liderlik net sonuçlardan kaçınıyor",
-          "Kendi çıkarı olmayan dışarıdan bir bakış eksik"
+          "Bölümler belirgin biçimde farklı yönlere çekiyor",
+          "Sorumluluk ve öncelikler kademeler arasında belirsiz",
+          "Yapılandırılmış yeni bir başlangıç gerekiyor",
+          "Liderlik kararları operasyonda bağlayıcılığını yitiriyor"
         ],
         "notWhen": [
-          "Haftalarca veya aylarca operasyonel destek gerekiyorsa",
-          "Birden fazla bölümle grup çalışması isteniyorsa",
-          "Durum henüz net olarak tanımlanamıyorsa"
+          "Derin yapısal yeniden düzenleme gerekiyorsa",
+          "Durum sürekli operasyonel varlık gerektiriyorsa",
+          "Kararlar bilinçli olarak erteleniyorsa"
         ]
       },
       {
@@ -111,22 +118,29 @@
         ]
       },
       {
-        "trigger": "Sorumluluk, öncelikler ve liderlik uyuşmuyorsa",
-        "name": "Netleştirme Atölyesi",
-        "description": "Liderlik ve kilit kişilerle ortak çalışma oturumu.\nHedef: kararlar, öncelikler ve sorumluluklar için sağlam bir temel.",
+        "trigger": "Kararlar pek çok görüşmeye rağmen askıda kalıyorsa",
+        "name": "Karar Netliği",
+        "description": "Liderlik düzeyinde nokta atışı karar ve önceliklendirme çalışması.\nGenellikle: 2–4 odaklı çalışma oturumu.",
         "when": [
-          "Bölümler belirgin biçimde farklı yönlere çekiyor",
-          "Sorumluluk ve öncelikler kademeler arasında belirsiz",
-          "Yapılandırılmış yeni bir başlangıç gerekiyor",
-          "Liderlik kararları operasyonda bağlayıcılığını yitiriyor"
+          "Aynı konular birden fazla toplantıda çözümsüz geri dönüyor",
+          "Hedef çatışmaları kararları iç iletişimde engelliyor",
+          "Liderlik net sonuçlardan kaçınıyor",
+          "Kendi çıkarı olmayan dışarıdan bir bakış eksik"
         ],
         "notWhen": [
-          "Derin yapısal yeniden düzenleme gerekiyorsa",
-          "Durum sürekli operasyonel varlık gerektiriyorsa",
-          "Kararlar bilinçli olarak erteleniyorsa"
+          "Haftalarca veya aylarca operasyonel destek gerekiyorsa",
+          "Birden fazla bölümle grup çalışması isteniyorsa",
+          "Durum henüz net olarak tanımlanamıyorsa"
         ]
       }
     ],
+    "werkstattHint": {
+      "eyebrow": "Başlangıç Noktası",
+      "text": "Aylardır ilerlemeyen bir konu mu var?",
+      "subtext": "Gerçek kök neden henüz belirsizse, bir Çalışma Oturumu ile başlayın.",
+      "meta": "2 saat yerinde · 990 € · 48 saat içinde sonuç tutanağı",
+      "cta": "Çalışma Oturumu'na git"
+    },
     "cta": {
       "kicker": "15 dakika yön tayini",
       "text": "Pek çok görev bir atölye veya sparring seansıyla başlar; etki yaratılması gerektiğinde ise daha uzun süreli bir eşliğe dönüşür. Durumunuzun şu an nerede olduğundan emin değilseniz, bunu kısa bir görüşmede netleştirebiliriz."
@@ -488,5 +502,54 @@
     "text": "Aradığınız sayfa mevcut değil veya taşınmış.",
     "home": "Ana sayfaya git",
     "contact": "İletişime geç"
+  },
+  "werkstattgespraech": {
+    "meta": {
+      "title": "Werkstattgespräch | İki Saat. Bir Konu. Net Bir Tablo.",
+      "description": "Kurumsal olarak ilerleme kaydedilemeyen konular için odaklı iki saatlik bir danışmanlık formatı. Yerinde, 990 € + KDV. Hazırlık ve takip dahil."
+    },
+    "eyebrow": "Başlangıç Noktası",
+    "title": "Çalışma Oturumu",
+    "tagline": "İki saat. Bir konu. Net bir tablo.",
+    "intro": "Her organizasyonda, içeriden bilinen ancak içeriden çözülmesi güç konular vardır. Çünkü herkes çok yakın. Çünkü başka çıkarlar devrede. Çünkü kimse sonuçsuz konuşamıyor.\n\nWerkstattgespräch, tam olarak böyle bir konuyu dışarıdan bir bakışla birlikte ele aldığınız iki saatlik bir formattır. Yanınızda, odaklı, sonuç odaklı, satış baskısı olmadan.",
+    "processTitle": "Süreç",
+    "steps": [
+      { "label": "Ön görüşme", "duration": "15 dk · Telefon", "text": "Konuyu anlatırsınız. Formatın uygun olup olmadığını birlikte değerlendiririz." },
+      { "label": "Yerinde oturum", "duration": "2 saat", "text": "Siz ve en fazla 2 stratejik kilit kişi. Yapılandırılmış çalışma seansı." },
+      { "label": "Sonuç tutanağı", "duration": "48 saat içinde", "text": "Gözlemler, hipotezler ve olası sonraki adımları içeren özlü bir sayfa." }
+    ],
+    "deliverablesTitle": "Ne elde edersiniz",
+    "deliverables": [
+      "İki saat sonra sorunun liderlik, yapı veya uygulama kaynaklı olduğuna dair net bir tablo.",
+      "Konunuza kurumsal çıkarlardan bağımsız, dışarıdan bir değerlendirme.",
+      "Önce nereden başlamanız gerektiğine dair netlik.",
+      "Kurumsal olarak kullanabileceğiniz yazılı bir belge."
+    ],
+    "whenYesTitle": "Uygundur, eğer …",
+    "whenYes": [
+      "Aylardır ilerleme kaydedilemeyen bir konu varsa.",
+      "Kararlar alınmış ancak uygulama duraksıyorsa.",
+      "Yöneticiler aynı soruna farklı bakıyorsa.",
+      "Sorumluluklar resmi olarak tanımlanmış, pratikte belirsizse.",
+      "Gerçek kök neden henüz görünmüyorsa."
+    ],
+    "whenNoTitle": "Uygun değildir, eğer …",
+    "whenNo": [
+      "Spesifikasyon belgesi olan net bir proje arıyorsanız.",
+      "Konu yalnızca teknik veya teknoloji odaklıysa.",
+      "Zaten verilmiş bir kararın dışarıdan onayını arıyorsanız."
+    ],
+    "investmentTitle": "Yatırım ve koşullar",
+    "price": "990 €",
+    "priceSuffix": "+ KDV",
+    "priceNote": "hazırlık ve takip dahil",
+    "conditions": [
+      { "label": "Seyahat masrafları", "text": "Aalen'den 200 km'den fazla mesafe için ayrıca." },
+      { "label": "Gizlilik", "text": "Konuşulanlar aramızda kalır. İstek üzerine NDA." },
+      { "label": "Zaman", "text": "Önümüzdeki 4 hafta içinde, sabah veya öğleden sonra." }
+    ],
+    "pdfLabel": "Tek sayfalık özeti indir (PDF)",
+    "ctaLabel": "Hemen başvurun",
+    "ctaNote": "Satış baskısı yok. Net sonuç olmadan ücret yok."
   }
 }

@@ -68,6 +68,13 @@
       "text": "What remains unresolved comes at a cost: time in coordination loops, energy in leadership friction, and credibility in decisions that do not land.\n\nIf you are wondering whether this is your situation right now, we can clarify that in 15 minutes.",
       "ctaPrimary": "Request a consultation",
       "ctaSecondary": "View services"
+    },
+    "werkstattTeaser": {
+      "eyebrow": "Starting Point",
+      "question": "A topic that hasn't moved forward in months?",
+      "text": "Not every situation immediately calls for a workshop or a longer engagement. With a Working Session you receive an external perspective in two hours — clarity on the actual cause and possible next steps.",
+      "meta": "2 hours on-site · 990 € · Result memo within 48 hours",
+      "cta": "View Working Session"
     }
   },
   "services": {
@@ -79,19 +86,19 @@
     },
     "formats": [
       {
-        "trigger": "When decisions remain open despite many conversations",
-        "name": "Decision Clarity",
-        "description": "Targeted decision-making and prioritisation work at leadership level.\nTypically: 2–4 focused working sessions.",
+        "trigger": "When responsibility, priorities and leadership no longer align",
+        "name": "Clarification Workshop",
+        "description": "A joint working session with leadership and key people.\nThe goal: a solid foundation for decisions, priorities and responsibilities.",
         "when": [
-          "The same topics return unsolved across multiple rounds",
-          "Goal conflicts block decisions internally",
-          "Leadership avoids clear consequences",
-          "An external perspective without self-interest is missing"
+          "Departments are visibly pulling in different directions",
+          "Responsibility and priorities are unclear between levels",
+          "A structured fresh start is needed",
+          "Leadership decisions lose binding force in operations"
         ],
         "notWhen": [
-          "Operational support over weeks or months is needed",
-          "Group work with multiple departments is required",
-          "The situation cannot yet be clearly articulated"
+          "Deep structural realignment is needed",
+          "The situation requires sustained operational presence",
+          "Decisions are being deliberately avoided"
         ]
       },
       {
@@ -111,22 +118,29 @@
         ]
       },
       {
-        "trigger": "When responsibility, priorities and leadership no longer align",
-        "name": "Clarification Workshop",
-        "description": "A joint working session with leadership and key people.\nThe goal: a solid foundation for decisions, priorities and responsibilities.",
+        "trigger": "When decisions remain open despite many conversations",
+        "name": "Decision Clarity",
+        "description": "Targeted decision-making and prioritisation work at leadership level.\nTypically: 2–4 focused working sessions.",
         "when": [
-          "Departments are visibly pulling in different directions",
-          "Responsibility and priorities are unclear between levels",
-          "A structured fresh start is needed",
-          "Leadership decisions lose binding force in operations"
+          "The same topics return unsolved across multiple rounds",
+          "Goal conflicts block decisions internally",
+          "Leadership avoids clear consequences",
+          "An external perspective without self-interest is missing"
         ],
         "notWhen": [
-          "Deep structural realignment is needed",
-          "The situation requires sustained operational presence",
-          "Decisions are being deliberately avoided"
+          "Operational support over weeks or months is needed",
+          "Group work with multiple departments is required",
+          "The situation cannot yet be clearly articulated"
         ]
       }
     ],
+    "werkstattHint": {
+      "eyebrow": "Starting Point",
+      "text": "A topic that hasn't moved forward in months?",
+      "subtext": "If the actual root cause is not yet clear, start with a Working Session.",
+      "meta": "2 hours on-site · 990 € · Result memo within 48 hours",
+      "cta": "View Working Session"
+    },
     "cta": {
       "kicker": "15 minutes of orientation",
       "text": "Many mandates begin with a workshop or sparring session and, when impact is needed, transition into longer-term accompaniment. If you are unsure where your situation currently stands, we can clarify that in a brief conversation."
@@ -488,5 +502,54 @@
     "text": "The page you are looking for does not exist or has been moved.",
     "home": "Go to homepage",
     "contact": "Get in touch"
+  },
+  "werkstattgespraech": {
+    "meta": {
+      "title": "Werkstattgespräch | Two Hours. One Topic. One Clear Picture.",
+      "description": "A focused two-hour advisory session for topics that are stuck internally. On-site with you. 990 € plus VAT. Includes preparation and follow-up."
+    },
+    "eyebrow": "Starting Point",
+    "title": "Working Session",
+    "tagline": "Two hours. One topic. One clear picture.",
+    "intro": "Every organisation has topics that are known internally, but hard to move internally. Because everyone is too close. Because other interests are at play. Because no one can name them without consequences.\n\nThe Werkstattgespräch is a two-hour format in which you work through exactly one such topic with an external perspective. On-site with you, focused, results-oriented, without pressure to close.",
+    "processTitle": "How it works",
+    "steps": [
+      { "label": "Pre-call", "duration": "15 min · Phone", "text": "You describe the topic. We assess together whether the format fits." },
+      { "label": "On-site session", "duration": "2 hours", "text": "You and up to 2 strategic key people. Structured working session." },
+      { "label": "Result memo", "duration": "within 48 hrs", "text": "A concise page with observations, hypotheses and possible next steps." }
+    ],
+    "deliverablesTitle": "What you get",
+    "deliverables": [
+      "After two hours you have a clear picture of whether the root cause lies in leadership, structure or execution.",
+      "An external perspective on your topic, free from organisational self-interest.",
+      "Clarity on where to start first and what can wait.",
+      "A written document you can use internally."
+    ],
+    "whenYesTitle": "Makes sense when …",
+    "whenYes": [
+      "A topic has been discussed for months without progress.",
+      "Decisions have been made but implementation is stalling.",
+      "Leaders hold different views on the same problem.",
+      "Responsibilities are formally clear but uncertain in practice.",
+      "The actual root cause is not yet visible."
+    ],
+    "whenNoTitle": "Not suited when …",
+    "whenNo": [
+      "You are looking for a clearly scoped project with a specification sheet.",
+      "The topic is exclusively technical or technology-specific.",
+      "You are looking for external validation of a decision already made."
+    ],
+    "investmentTitle": "Investment & conditions",
+    "price": "990 €",
+    "priceSuffix": "plus VAT",
+    "priceNote": "incl. preparation and follow-up",
+    "conditions": [
+      { "label": "Travel costs", "text": "For travel over 200 km from Aalen, by arrangement." },
+      { "label": "Confidentiality", "text": "Everything discussed remains between us. NDA on request." },
+      { "label": "Timing", "text": "Within the next 4 weeks, morning or afternoon." }
+    ],
+    "pdfLabel": "Download one-pager (PDF)",
+    "ctaLabel": "Request now",
+    "ctaNote": "No sales pressure. No fee without a clear result."
   }
 }

@@ -22,7 +22,7 @@
 }
 
 /* ========= BASE ========= */
-html, body { height: 100%; }
+html, body { height: 100%; overflow-x: hidden; }
 
 body {
   font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system,

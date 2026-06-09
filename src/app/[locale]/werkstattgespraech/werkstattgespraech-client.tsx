@@ -35,7 +35,7 @@ export default function WerkstattgespraechClient() {
         style={{ marginTop: "-6rem", minHeight: "calc(52vh + 6rem)" }}
       >
         <Image
-          src="/images/Hero_Werkstattgespraech.png"
+          src="/images/Hero_Werkstattgespraech2.png"
           alt=""
           fill
           priority

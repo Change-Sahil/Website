@@ -283,6 +283,45 @@ export default function WerkstattgespraechClient() {
       </Reveal>
 
 
+      {/* ── WEITERFÜHRENDE IMPULSE ── */}
+      <Reveal>
+        <section className="pb-10 md:pb-12">
+          <div className="h-px mb-10" style={{ background: "rgba(14,20,32,.09)" }} />
+          <p
+            className="text-[11px] tracking-[0.22em] uppercase mb-6"
+            style={{ color: "rgba(var(--ink), .38)" }}
+          >
+            Weiterführende Impulse
+          </p>
+          <div className="flex flex-col gap-4">
+            {[
+              { slug: "umsetzungsluecke",       title: "Die Umsetzungslücke" },
+              { slug: "fuehrung-meeting-bremsen", title: "Der unsichtbare Widerstand" },
+            ].map(({ slug, title }) => (
+              <Link
+                key={slug}
+                href={`/de/impulse/${slug}`}
+                className="group inline-flex items-start gap-3 transition-opacity hover:opacity-75"
+              >
+                <span
+                  className="mt-[3px] text-[18px] font-[300] select-none"
+                  style={{ color: "rgb(var(--accent))" }}
+                >
+                  →
+                </span>
+                <span
+                  className="text-[1.05rem] font-[650] leading-[1.35] tracking-[-0.01em]"
+                  style={{ color: "rgba(var(--ink), .88)" }}
+                >
+                  {title}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      </Reveal>
+
+
       {/* ── CTA + PDF ── */}
       <Reveal>
         <section className="py-14 md:py-20">

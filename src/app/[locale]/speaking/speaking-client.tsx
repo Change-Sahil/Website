@@ -175,6 +175,32 @@ export default function SpeakingClient() {
       </Reveal>
 
 
+      {/* ── WEITERFÜHRENDE FACHBEITRÄGE ── */}
+      <Reveal>
+        <section className="pb-10 md:pb-14 border-t border-[rgba(14,20,32,.09)] pt-10 md:pt-12">
+          <p
+            className="text-[11px] tracking-[0.22em] uppercase mb-3"
+            style={{ color: "rgba(var(--ink), .38)" }}
+          >
+            Weiterführende Fachbeiträge
+          </p>
+          <p
+            className="text-[15px] leading-[1.72] mb-5 max-w-lg"
+            style={{ color: "rgba(var(--ink), .56)" }}
+          >
+            Einige der Vortragsthemen finden Sie auch als ausführliche Fachbeiträge.
+          </p>
+          <Link
+            href={`/${locale}/impulse`}
+            className="inline-flex items-center gap-2 text-[14px] font-[640] transition-opacity hover:opacity-70"
+            style={{ color: "rgb(var(--accent))" }}
+          >
+            → Zu den Impulsen
+          </Link>
+        </section>
+      </Reveal>
+
+
       {/* ── CTA — dunkler Abschluss ── */}
       <Reveal>
         <section className="hero-bleed py-14 md:py-20" style={{ background: "rgb(10,15,26)" }}>

@@ -24,6 +24,7 @@ export interface HomeAudience {
   boxTitles: [string, string];
   targets: string[];
   triggers: string[];
+  closing?: string;
 }
 
 export interface ServiceFormat {

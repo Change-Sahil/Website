@@ -6,10 +6,24 @@
     "services": "Leistungen",
     "approach": "Vorgehen",
     "about": "Über mich",
+    "impulse": "Impulse",
     "speaking": "Vorträge & Lehre",
     "contact": "Kontakt",
     "menuOpen": "Menü öffnen",
     "menuClose": "Menü schließen"
+  },
+  "impulse": {
+    "eyebrow": "Fachbeiträge",
+    "title": "Impulse",
+    "intro": "Beiträge aus Industrie, Führung und Veränderung: zur Umsetzungslücke, zu Führungsdynamiken und zu dem, was Veränderung im produzierenden Mittelstand tatsächlich aufhält.",
+    "readMore": "Weiterlesen",
+    "back": "Alle Beiträge",
+    "by": "Seref Sahil",
+    "germanOnly": "Dieser Beitrag ist derzeit nur auf Deutsch verfügbar.",
+    "germanOnlyShort": "Nur auf Deutsch verfügbar",
+    "relatedTitle": "Weiterer Beitrag",
+    "ctaTitle": "Ein Thema, das in Ihrem Betrieb gerade nicht vorankommt?",
+    "ctaText": "Ein Werkstattgespräch gibt in zwei Stunden Klarheit: externer Blick, konkrete Einschätzung, nächste Schritte."
   },
   "footer": {
     "location": "Aalen · Deutschland",
@@ -50,7 +64,7 @@
       "text": ""
     },
     "audience": {
-      "title": "Wenn Umsetzung im Betrieb nicht greift",
+      "title": "Wenn Sie gerade hier sind, weil …",
       "subtitle": "Typische Situationen",
       "boxTitles": [
         "Wer mich beauftragt",
@@ -58,9 +72,12 @@
       ],
       "targets": [],
       "triggers": [
-        "Entscheidungen sind getroffen und Maßnahmen beschlossen, aber Abstimmungsschleifen, Bereichsdenken und widersprüchliche Prioritäten bremsen die Umsetzung weiterhin aus.",
-        "Neue Standards, Führungsroutinen oder Verantwortlichkeiten wurden eingeführt, verlieren im Tagesgeschäft jedoch Schritt für Schritt an Verbindlichkeit."
-      ]
+        "die Restrukturierung beschlossen ist, sich im Betrieb aber wenig verändert.",
+        "die Übernahme abgeschlossen wurde, die Zusammenarbeit aber nicht in Gang kommt.",
+        "neue Standards eingeführt wurden, die im Alltag wieder an Verbindlichkeit verlieren.",
+        "Entscheidungen getroffen sind, die Wirkung im Unternehmen jedoch ausbleibt."
+      ],
+      "closing": "Dann sind Sie hier richtig."
     },
     "orientation": {
       "kicker": "15 Minuten Orientierung",

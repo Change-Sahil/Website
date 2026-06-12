@@ -3,7 +3,6 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
@@ -19,10 +18,17 @@ export default function Header() {
   const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
 
   useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 80);
+    const handler = () => {
+      const el = document.scrollingElement ?? document.documentElement;
+      setScrolled(el.scrollTop > 80);
+    };
     window.addEventListener("scroll", handler, { passive: true });
+    document.body.addEventListener("scroll", handler, { passive: true });
     handler();
-    return () => window.removeEventListener("scroll", handler);
+    return () => {
+      window.removeEventListener("scroll", handler);
+      document.body.removeEventListener("scroll", handler);
+    };
   }, []);
 
   const closeMenu = () => setMenuOpen(false);
@@ -63,7 +69,7 @@ export default function Header() {
 
   const navLinkClass = (href: string) =>
     [
-      "relative text-sm text-slate-600 hover:text-slate-900 transition-colors duration-150",
+      "relative text-[13px] text-slate-600 hover:text-slate-900 transition-colors duration-150 whitespace-nowrap",
       isActive(href) ? "text-slate-900" : "",
     ].join(" ");
 
@@ -77,6 +83,7 @@ export default function Header() {
   const hrefServices = `/${locale}/services`;
   const hrefApproach = `/${locale}/approach`;
   const hrefAbout    = `/${locale}/about`;
+  const hrefImpulse  = `/${locale}/impulse`;
   const hrefSpeaking = `/${locale}/speaking`;
   const hrefContact  = `/${locale}/contact`;
 
@@ -114,12 +121,13 @@ export default function Header() {
           </Link>
 
           {/* DESKTOP NAV */}
-          <nav className="hidden items-center gap-6 md:flex">
+          <nav className="hidden items-center gap-[14px] lg:gap-5 md:flex">
             {[
               { href: hrefHome,     label: tNav("home") },
               { href: hrefServices, label: tNav("services") },
               { href: hrefApproach, label: tNav("approach") },
               { href: hrefAbout,    label: tNav("about") },
+              { href: hrefImpulse,  label: tNav("impulse") },
               { href: hrefSpeaking, label: tNav("speaking") },
               { href: hrefContact,  label: tNav("contact") },
             ].map(({ href, label }) => (
@@ -194,6 +202,7 @@ export default function Header() {
               <Link className={mobileLinkClass(hrefServices)} href={hrefServices} onClick={closeMenu}>{tNav("services")}</Link>
               <Link className={mobileLinkClass(hrefApproach)} href={hrefApproach} onClick={closeMenu}>{tNav("approach")}</Link>
               <Link className={mobileLinkClass(hrefAbout)}    href={hrefAbout}    onClick={closeMenu}>{tNav("about")}</Link>
+              <Link className={mobileLinkClass(hrefImpulse)}  href={hrefImpulse}  onClick={closeMenu}>{tNav("impulse")}</Link>
               <Link className={mobileLinkClass(hrefSpeaking)} href={hrefSpeaking} onClick={closeMenu}>{tNav("speaking")}</Link>
               <Link className={mobileLinkClass(hrefContact)}  href={hrefContact}  onClick={closeMenu}>{tNav("contact")}</Link>
               <div className="my-2 border-t border-slate-200/70" />

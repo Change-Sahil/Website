@@ -6,10 +6,24 @@
     "services": "Hizmetler",
     "approach": "Yaklaşım",
     "about": "Hakkımda",
+    "impulse": "Impulse",
     "speaking": "Konuşmalar ve eğitim",
     "contact": "İletişim",
     "menuOpen": "Menüyü aç",
     "menuClose": "Menüyü kapat"
+  },
+  "impulse": {
+    "eyebrow": "Makaleler",
+    "title": "Impulse",
+    "intro": "Sanayi, liderlik ve değişim üzerine makaleler: uygulama boşluğu, liderlik dinamikleri ve değişimi üretim KOBİ'lerinde fiilen neyin engellediği hakkında.",
+    "readMore": "Devamını oku",
+    "back": "Tüm makaleler",
+    "by": "Seref Sahil",
+    "germanOnly": "Bu makale şu anda yalnızca Almanca olarak mevcuttur. Türkçe versiyonu talep üzerine sunulmaktadır.",
+    "germanOnlyShort": "Yalnızca Almanca mevcut",
+    "relatedTitle": "İlgili makale",
+    "ctaTitle": "Kuruluşunuzda ilerleyemeyen bir konu mu var?",
+    "ctaText": "Bir çalışma oturumu iki saatte netlik sağlar: dışarıdan bir bakış, somut bir değerlendirme, sonraki adımlar."
   },
   "footer": {
     "location": "Aalen · Almanya",
@@ -50,7 +64,7 @@
       "text": ""
     },
     "audience": {
-      "title": "Uygulamanın işletmede işlemediği durumlar",
+      "title": "Eğer buradaysanız çünkü …",
       "subtitle": "Tipik durumlar",
       "boxTitles": [
         "Beni kim görevlendiriyor",
@@ -58,9 +72,12 @@
       ],
       "targets": [],
       "triggers": [
-        "Kararlar alınmış ve önlemler belirlenmiş olsa da koordinasyon döngüleri, bölümsel bakış açısı ve çelişkili öncelikler uygulamayı engellemeye devam eder.",
-        "Yeni standartlar, liderlik rutinleri veya sorumluluklar hayata geçirilmiş, ancak günlük işlerde giderek bağlayıcılığını kaybetmektedir."
-      ]
+        "yeniden yapılanma kararlaştırıldı ama işletmede çok az şey değişti.",
+        "satın alma tamamlandı ama iş birliği bir türlü rayına girmiyor.",
+        "yeni standartlar hayata geçirildi ama günlük işlerde bağlayıcılığını yitiriyor.",
+        "kararlar alındı ama şirket içindeki etkisi hâlâ görünmüyor."
+      ],
+      "closing": "O zaman doğru yerdesiniz."
     },
     "orientation": {
       "kicker": "15 dakikalık yön bulma",

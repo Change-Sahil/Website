@@ -19,10 +19,10 @@ export async function generateMetadata({
   };
 
   const description: Record<string, string> = {
-    de: "Operative Beratungsformate für den produzierenden Mittelstand: Klärungsworkshops, monatliche Umsetzungspartnerschaft am Shopfloor und Executive Sparring für Führungsentscheidungen.",
-    en: "Operational consulting formats for manufacturing SMEs: clarification workshops, monthly implementation partnership on the shop floor, and executive sparring for leadership decisions.",
-    es: "Formatos de consultoría operativa para pymes industriales: talleres de clarificación, alianza de implementación mensual en planta y sparring ejecutivo para decisiones de liderazgo.",
-    tr: "Üretim KOBİ'leri için operasyonel danışmanlık formatları: netleştirme atölyeleri, sahada aylık uygulama ortaklığı ve liderlik kararları için executive sparring.",
+    de: "Wenn internes Klären nicht mehr reicht: drei Formate vom ersten Klärungsgespräch bis zur mehrmonatigen Begleitung direkt am Shopfloor — für Geschäftsführer im produzierenden Mittelstand.",
+    en: "When internal clarification no longer suffices: three formats from a first working session to months of direct shop floor partnership — for manufacturing SME leaders under pressure.",
+    es: "Cuando la clarificación interna ya no basta: tres formatos desde la primera sesión hasta meses de acompañamiento en planta — para directivos de pymes industriales.",
+    tr: "İç netleştirme artık yeterli olmadığında: ilk çalışma oturumundan aylarca süren saha ortaklığına kadar üç format — üretim KOBİ'lerindeki yöneticiler için.",
   };
 
   const ogLocale: Record<string, string> = {

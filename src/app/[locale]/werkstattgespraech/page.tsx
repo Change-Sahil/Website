@@ -19,10 +19,10 @@ export async function generateMetadata({
   };
 
   const description: Record<string, string> = {
-    de: "Ein zweistündiges Beratungsformat für Themen, die intern nicht vorankommen. Vor Ort bei Ihnen. 990 € zzgl. MwSt. Inkl. Vor- und Nachbereitung.",
-    en: "A focused two-hour advisory session for topics that are stuck internally. On-site with you. 990 € plus VAT. Includes preparation and follow-up.",
-    es: "Un formato de asesoría de dos horas para temas que no avanzan internamente. En sus instalaciones. 990 € más IVA.",
-    tr: "Kurumsal olarak ilerleme kaydedilemeyen konular için odaklı iki saatlik bir danışmanlık formatı. Yerinde, 990 € + KDV.",
+    de: "Ein Thema kommt seit Monaten nicht voran? Zwei Stunden, externer Blick, klares Bild: was es ist, was es braucht, was als Nächstes. Vor Ort. 990 € zzgl. MwSt.",
+    en: "A topic stuck for months? Two hours, outside perspective, clear picture: what it is, what it needs, what comes next. On-site. 990 € plus VAT.",
+    es: "¿Un tema sin avanzar desde hace meses? Dos horas, perspectiva externa, imagen clara: qué es, qué necesita, qué sigue. Presencial. 990 € más IVA.",
+    tr: "Aylardır ilerlemeyen bir konu mu var? İki saat, dış bakış açısı, net tablo: ne olduğu, ne gerektiği, bir sonraki adım. Yerinde. 990 € + KDV.",
   };
 
   const ogLocale: Record<string, string> = {

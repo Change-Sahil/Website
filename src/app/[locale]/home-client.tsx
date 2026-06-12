@@ -159,14 +159,22 @@ export default function HomeClient() {
                     }`}
                   >
                     <span
-                      className="shrink-0 text-[11px] font-[700] tracking-[0.08em] mt-[3px] tabular-nums"
+                      className="shrink-0 text-[15px] font-[500] mt-[1px] select-none"
                       style={{ color: "rgb(var(--accent))" }}
                     >
-                      {String(i + 1).padStart(2, "0")}
+                      …
                     </span>
                     <p className="text-[15px] leading-[1.78] text-slate-700">{text}</p>
                   </div>
                 ))}
+                {audience?.closing && (
+                  <p
+                    className="mt-10 pt-8 text-[15px] font-[680] tracking-[-0.01em] border-t border-[rgba(14,20,32,.09)]"
+                    style={{ color: "rgba(14,20,32,.88)" }}
+                  >
+                    {audience.closing}
+                  </p>
+                )}
               </div>
             </div>
           </div>

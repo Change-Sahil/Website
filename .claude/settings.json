@@ -38,7 +38,18 @@
       "Bash(powershell -Command \"\\(Select-String -Path 'c:\\\\Users\\\\seref\\\\change-werkstatt-sahil\\\\kundenradar.html' -Pattern 'data-sig='\\).Count\")",
       "Bash(node -e ' *)",
       "WebFetch(domain:www.linkedin.com)",
-      "Bash(git diff *)"
+      "Bash(git diff *)",
+      "Bash(node -e \"require\\('./serve-kundenradar.js'\\); setTimeout\\(\\(\\) => { console.log\\('serve-kundenradar.js OK'\\); process.exit\\(0\\); }, 200\\);\")",
+      "Bash(dir \"c:\\\\Users\\\\seref\\\\change-werkstatt-sahil\\\\public\")",
+      "Bash(Copy-Item \"C:\\\\Users\\\\seref\\\\OneDrive\\\\Desktop\\\\Change-Werkstatt\\\\Verträge Formate\\\\Werkstattgespraech-OnePager.pdf\" \"C:\\\\Users\\\\seref\\\\change-werkstatt-sahil\\\\public\\\\werkstattgespraech-onepager.pdf\")",
+      "Bash(node -e \"const f = require\\('./src/messages/de.json'\\); console.log\\('werkstattgespraech title:', f.werkstattgespraech?.title\\); console.log\\('home teaser:', f.home?.werkstattTeaser?.question\\);\")",
+      "Bash(copy \"C:\\\\Users\\\\seref\\\\OneDrive\\\\Desktop\\\\Change-Werkstatt\\\\Verträge Formate\\\\Werkstattgespraech-OnePager.pdf\" \"C:\\\\Users\\\\seref\\\\change-werkstatt-sahil\\\\public\\\\werkstattgespraech-onepager.pdf\")",
+      "PowerShell(Copy-Item \"C:\\\\Users\\\\seref\\\\OneDrive\\\\Desktop\\\\Change-Werkstatt\\\\Vertr�ge Formate\\\\Werkstattgespraech-OnePager.pdf\" \"C:\\\\Users\\\\seref\\\\change-werkstatt-sahil\\\\public\\\\werkstattgespraech-onepager.pdf\" -Force)",
+      "Bash(Remove-Item -Recurse -Force \"c:\\\\Users\\\\seref\\\\change-werkstatt-sahil\\\\.next\\\\cache\\\\images\" -ErrorAction SilentlyContinue)",
+      "Bash(Write-Output \"Cache gelöscht\")",
+      "Bash(git rm *)",
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\seref\\\\change-werkstatt-sahil\" | Where-Object { $_.Name -notmatch \"node_modules|\\\\.next\" } | Select-Object Name)",
+      "Read(//c/Users/seref/change-werkstatt-sahil/src/app/**)"
     ],
     "additionalDirectories": [
       "C:\\Users\\seref\\poker-gruppe\\src\\app",
@@ -48,7 +59,10 @@
       "C:\\Users\\seref\\poker-gruppe",
       "c:\\Users\\seref\\change-werkstatt-sahil\\src\\app\\[locale]\\about",
       "c:\\Users\\seref\\change-werkstatt-sahil\\src\\app\\[locale]\\services",
-      "c:\\Users\\seref\\change-werkstatt-sahil\\src"
+      "c:\\Users\\seref\\change-werkstatt-sahil\\src",
+      "C:\\Users\\seref\\OneDrive\\Desktop\\Change-Werkstatt\\Vertr�ge Formate",
+      "C:\\Users\\seref\\change-werkstatt-sahil\\src\\app\\[locale]",
+      "c:\\Users\\seref\\change-werkstatt-sahil\\public\\images"
     ]
   }
 }

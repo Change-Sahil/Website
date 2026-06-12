@@ -6,10 +6,24 @@
     "services": "Services",
     "approach": "Approach",
     "about": "About",
+    "impulse": "Impulse",
     "speaking": "Speaking & Teaching",
     "contact": "Contact",
     "menuOpen": "Open menu",
     "menuClose": "Close menu"
+  },
+  "impulse": {
+    "eyebrow": "Articles",
+    "title": "Impulse",
+    "intro": "Articles on industry, leadership, and change: on the implementation gap, leadership dynamics, and what actually stalls change in manufacturing SMEs.",
+    "readMore": "Read more",
+    "back": "All articles",
+    "by": "Seref Sahil",
+    "germanOnly": "This article is currently only available in German. English version available on request.",
+    "germanOnlyShort": "Available in German only",
+    "relatedTitle": "Related article",
+    "ctaTitle": "A topic in your organisation that isn't moving forward?",
+    "ctaText": "A working session gives you clarity in two hours: an outside perspective, a concrete assessment, next steps."
   },
   "footer": {
     "location": "Aalen · Germany",
@@ -50,7 +64,7 @@
       "text": ""
     },
     "audience": {
-      "title": "When implementation fails to take hold",
+      "title": "If you're here because …",
       "subtitle": "Typical situations",
       "boxTitles": [
         "Who hires me",
@@ -58,9 +72,12 @@
       ],
       "targets": [],
       "triggers": [
-        "Decisions have been made and measures agreed, but coordination loops, silo thinking, and conflicting priorities continue to hold up implementation.",
-        "New standards, leadership routines, or responsibilities have been introduced, but gradually lose their binding force in the daily business."
-      ]
+        "restructuring has been decided, but little has actually changed in the business.",
+        "the acquisition closed, but working together isn't coming together.",
+        "new standards were introduced that are quietly losing their grip in daily operations.",
+        "decisions have been made, but their impact on the organisation remains absent."
+      ],
+      "closing": "Then you're in the right place."
     },
     "orientation": {
       "kicker": "15-minute orientation",

@@ -20,10 +20,10 @@ export async function generateMetadata({
   };
 
   const description: Record<string, string> = {
-    de: "25 Jahre operative Verantwortung im produzierenden Mittelstand – vom Shopfloor bis zur standortübergreifenden Führung. Heute Change- und Integrationsberatung aus Praxistiefe, nicht aus Fallstudien.",
-    en: "25 years of operational responsibility in manufacturing – from the shop floor to cross-site leadership. Today: change and integration consulting grounded in firsthand experience, not case studies.",
-    es: "25 años de responsabilidad operativa en industria – desde la planta hasta la dirección multiplanta. Hoy: consultoría de cambio e integración desde la experiencia real, no desde casos de estudio.",
-    tr: "Üretimde 25 yıllık operasyonel sorumluluk – sahadan çok lokasyonlu liderliğe. Bugün: vaka çalışmalarından değil, doğrudan deneyimden gelen değişim ve entegrasyon danışmanlığı.",
+    de: "25 Jahre GF, Werksleiter, M&A-Verantwortung im produzierenden Mittelstand. Seref Sahil berät, weil er selbst umgebaut hat — nicht weil er es aus Fallstudien kennt.",
+    en: "25 years as operations leader, plant manager and M&A responsible in manufacturing. Seref Sahil advises because he's rebuilt companies himself — not from case studies.",
+    es: "25 años como director de operaciones, jefe de planta y responsable de M&A en industria. Seref Sahil asesora porque él mismo ha liderado transformaciones, no desde casos de estudio.",
+    tr: "Üretimde 25 yıl operasyon liderliği, fabrika müdürlüğü ve M&A sorumluluğu. Seref Sahil danışmanlık yapıyor çünkü kendisi şirketleri yeniden yapılandırdı — vaka çalışmalarından değil.",
   };
 
   const ogLocale: Record<string, string> = {

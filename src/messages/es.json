@@ -6,10 +6,24 @@
     "services": "Servicios",
     "approach": "Enfoque",
     "about": "Sobre mí",
+    "impulse": "Impulse",
     "speaking": "Conferencias y docencia",
     "contact": "Contacto",
     "menuOpen": "Abrir menú",
     "menuClose": "Cerrar menú"
+  },
+  "impulse": {
+    "eyebrow": "Artículos",
+    "title": "Impulse",
+    "intro": "Artículos sobre industria, liderazgo y cambio: sobre la brecha de implementación, dinámicas de liderazgo y lo que realmente frena el cambio en pymes industriales.",
+    "readMore": "Leer más",
+    "back": "Todos los artículos",
+    "by": "Seref Sahil",
+    "germanOnly": "Este artículo está disponible actualmente solo en alemán. Versión en español disponible bajo petición.",
+    "germanOnlyShort": "Solo disponible en alemán",
+    "relatedTitle": "Artículo relacionado",
+    "ctaTitle": "¿Un tema en su empresa que no avanza?",
+    "ctaText": "Una sesión de trabajo le da claridad en dos horas: perspectiva externa, evaluación concreta, próximos pasos."
   },
   "footer": {
     "location": "Aalen · Alemania",
@@ -50,7 +64,7 @@
       "text": ""
     },
     "audience": {
-      "title": "Cuándo la ejecución no funciona en la empresa",
+      "title": "Si está aquí porque …",
       "subtitle": "Situaciones típicas",
       "boxTitles": [
         "Quién me contrata",
@@ -58,9 +72,12 @@
       ],
       "targets": [],
       "triggers": [
-        "Las decisiones están tomadas y las medidas acordadas, pero los bucles de coordinación, el pensamiento por silos y las prioridades contradictorias siguen frenando la ejecución.",
-        "Se han introducido nuevos estándares, rutinas de liderazgo o responsabilidades, pero van perdiendo progresivamente su carácter vinculante en el negocio diario."
-      ]
+        "la reestructuración está decidida, pero en la empresa apenas ha cambiado nada.",
+        "la adquisición se cerró, pero la colaboración no acaba de arrancar.",
+        "se introdujeron nuevos estándares que en el día a día van perdiendo vigencia.",
+        "las decisiones están tomadas, pero su impacto en la empresa todavía no llega."
+      ],
+      "closing": "Entonces está en el lugar correcto."
     },
     "orientation": {
       "kicker": "15 minutos de orientación",

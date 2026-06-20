@@ -49,7 +49,14 @@
       "Bash(Write-Output \"Cache gelöscht\")",
       "Bash(git rm *)",
       "PowerShell(Get-ChildItem \"c:\\\\Users\\\\seref\\\\change-werkstatt-sahil\" | Where-Object { $_.Name -notmatch \"node_modules|\\\\.next\" } | Select-Object Name)",
-      "Read(//c/Users/seref/change-werkstatt-sahil/src/app/**)"
+      "Read(//c/Users/seref/change-werkstatt-sahil/src/app/**)",
+      "Bash(dir /s /b src\\\\app\\\\*.tsx)",
+      "Bash(findstr /i \"werkstatt speaking\")",
+      "Bash(dir /s /b \"c:\\\\Users\\\\seref\\\\change-werkstatt-sahil\\\\src\\\\middleware*\")",
+      "Bash(dir /s /b \"c:\\\\Users\\\\seref\\\\change-werkstatt-sahil\\\\middleware*\")",
+      "Bash(grep -E \"\\\\.ts$|\\\\.tsx$\")",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)"
     ],
     "additionalDirectories": [
       "C:\\Users\\seref\\poker-gruppe\\src\\app",

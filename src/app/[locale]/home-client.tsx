@@ -36,7 +36,7 @@ export default function HomeClient() {
       {/* ════════════════════════════════════════════
           HERO — Vollbild, Bild im Hintergrund, Text oben
       ════════════════════════════════════════════ */}
-      <section className="hero-bleed relative flex flex-col" style={{ marginTop: "-6rem", minHeight: "100vh" }}>
+      <section className="hero-bleed relative flex flex-col" style={{ marginTop: "-6rem", minHeight: "100dvh" }}>
 
         {/* Hintergrundbild */}
         <Image

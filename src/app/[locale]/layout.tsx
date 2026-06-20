@@ -294,7 +294,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
       />
 
       <Header />
-      <main className="page-wrap pt-24 pb-10 sm:pt-24 sm:pb-12">
+      <main id="main-content" className="page-wrap pt-24 pb-10 sm:pt-24 sm:pb-12">
         <div className="page-stack">{children}</div>
       </main>
       <Footer />

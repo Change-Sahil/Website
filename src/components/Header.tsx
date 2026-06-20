@@ -7,15 +7,27 @@ import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
 
+const SKIP_LABELS: Record<string, string> = {
+  de: "Zum Inhalt springen",
+  en: "Skip to content",
+  es: "Ir al contenido",
+  tr: "İçeriğe geç",
+};
+
 export default function Header() {
   const tNav = useTranslations("nav");
   const locale = useLocale();
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
+
+  useEffect(() => {
+    setReducedMotion(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  }, []);
 
   useEffect(() => {
     const handler = () => {
@@ -74,10 +86,9 @@ export default function Header() {
     ].join(" ");
 
   const mobileLinkClass = (href: string) =>
-    [
-      "block rounded-xl px-3 py-2 text-sm transition-colors duration-150",
-      isActive(href) ? "bg-slate-50 text-slate-900" : "text-slate-700 hover:bg-slate-50",
-    ].join(" ");
+    isActive(href)
+      ? "block rounded-xl px-3 py-2 text-sm font-[600] bg-slate-100 text-slate-900"
+      : "block rounded-xl px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 transition-colors duration-150";
 
   const hrefHome     = `/${locale}`;
   const hrefServices = `/${locale}/services`;
@@ -99,6 +110,10 @@ export default function Header() {
   );
 
   return (
+    <>
+    <a href="#main-content" className="skip-link">
+      {SKIP_LABELS[locale] ?? SKIP_LABELS.de}
+    </a>
     <header
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
       style={
@@ -191,7 +206,7 @@ export default function Header() {
             maxHeight: menuOpen ? "500px" : "0px",
             opacity: menuOpen ? 1 : 0,
             pointerEvents: menuOpen ? "auto" : "none",
-            transition: menuOpen
+            transition: reducedMotion ? undefined : menuOpen
               ? "max-height 0.32s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.22s ease"
               : "max-height 0.24s ease-in, opacity 0.18s ease",
           }}
@@ -215,5 +230,6 @@ export default function Header() {
 
       </div>
     </header>
+    </>
   );
 }

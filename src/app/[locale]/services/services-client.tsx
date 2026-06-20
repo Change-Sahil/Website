@@ -121,6 +121,31 @@ export default function ServicesClient() {
       </Reveal>
 
 
+      {/* ── BRIDGE: DIE DREI FORMATE ── */}
+      <Reveal>
+        <div className="hero-bleed py-10 md:py-12" style={{ background: "rgb(248,247,243)" }}>
+          <div className="page-wrap">
+            <div className="flex items-center gap-5 mb-4">
+              <div className="h-px flex-1" style={{ background: "rgb(var(--accent))", opacity: 0.22 }} />
+              <p
+                className="text-[10.5px] tracking-[0.30em] uppercase font-[720] shrink-0"
+                style={{ color: "rgb(var(--accent))" }}
+              >
+                {t("sectionBridge.eyebrow")}
+              </p>
+              <div className="h-px flex-1" style={{ background: "rgb(var(--accent))", opacity: 0.22 }} />
+            </div>
+            <p
+              className="text-center text-[13px] leading-[1.7]"
+              style={{ color: "rgba(var(--ink), .42)" }}
+            >
+              {t("sectionBridge.subtitle")}
+            </p>
+          </div>
+        </div>
+      </Reveal>
+
+
       {/* ── FORMAT-SEKTIONEN — Editorial Vollbreite ── */}
       <section className="hero-bleed">
         {formats.map((f, i) => {
@@ -132,11 +157,20 @@ export default function ServicesClient() {
           const dotWhen     = "rgb(var(--accent))";
           const dotNotWhen   = isDark ? "rgba(220,90,90,.50)" : "rgba(160,35,35,.42)";
           const labelNotWhen = isDark ? "rgba(220,90,90,.72)" : "rgba(160,35,35,.65)";
+          const numLabel    = `${String(i + 1).padStart(2, "0")} / ${String(formats.length).padStart(2, "0")}`;
 
           return (
             <Reveal key={i}>
               <div className="py-20 md:py-28 px-4 sm:px-6 lg:px-8" style={{ background: bg }}>
                 <div className="max-w-4xl mx-auto">
+
+                  {/* Formatnummer */}
+                  <p
+                    className="mb-6 text-[11px] tracking-[0.22em] font-[600] tabular-nums"
+                    style={{ color: isDark ? "rgba(255,255,255,.22)" : "rgba(var(--accent), .55)" }}
+                  >
+                    {numLabel}
+                  </p>
 
                   {/* Mandatsauslöser */}
                   <p

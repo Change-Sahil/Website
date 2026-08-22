@@ -1,6 +1,8 @@
 // src/app/[locale]/datenschutz/page.tsx
 import { getTranslations } from "next-intl/server";
 
+import DatenschutzDe from "./datenschutz-de";
+
 function asArray<T = unknown>(value: unknown): T[] {
   return Array.isArray(value) ? (value as T[]) : [];
 }
@@ -11,6 +13,15 @@ export default async function DatenschutzPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+
+  // Die deutsche Fassung deckt zusätzlich den Schnellcheck ab (Supabase,
+  // Resend, Speicherfristen) und liegt deshalb außerhalb der Message-Dateien.
+  // Der Schnellcheck ist ein deutschsprachiges Angebot und verlinkt auf
+  // /de/datenschutz, damit ist diese Fassung die einschlägige.
+  //
+  // TODO vor dem öffentlichen MVP: en/tr/es auf denselben Stand bringen.
+  if (locale === "de") return <DatenschutzDe />;
+
   const t = await getTranslations({ locale, namespace: "privacy" });
 
   const purposes = asArray<string>(t.raw("purposes.list"));

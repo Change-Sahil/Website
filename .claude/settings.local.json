@@ -2,7 +2,47 @@
   "permissions": {
     "allow": [
       "Bash(grep -E \"\\\\.\\(ts|js|json\\)$\")",
-      "Bash(grep -rn \"panel-elev\\\\|panel-soft\\\\|hover-lift\\\\|hover-3d\\\\|icon-puck\\\\|icon-dot\\\\|step-card\\\\|step-num\\\\|kicker-dot\\\\|hero-inset\\\\|kicker\\\\b\" c:/Users/seref/change-werkstatt-sahil/src --include=*.tsx --include=*.ts --include=*.css)"
+      "Bash(grep -rn \"panel-elev\\\\|panel-soft\\\\|hover-lift\\\\|hover-3d\\\\|icon-puck\\\\|icon-dot\\\\|step-card\\\\|step-num\\\\|kicker-dot\\\\|hero-inset\\\\|kicker\\\\b\" c:/Users/seref/change-werkstatt-sahil/src --include=*.tsx --include=*.ts --include=*.css)",
+
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx eslint:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(curl -s http://localhost:*)",
+      "Bash(curl -s -o /dev/null:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(sed:*)",
+      "Bash(grep:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(cp:*)",
+      "Bash(wc:*)",
+      "Bash(until curl:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+
+      "PowerShell(npm run build:*)",
+      "PowerShell(npm run dev:*)",
+      "PowerShell(npm install:*)",
+      "PowerShell(npx tsc:*)",
+      "PowerShell(npx eslint:*)",
+      "PowerShell(python:*)",
+      "PowerShell(git status:*)",
+      "PowerShell(git diff:*)",
+      "PowerShell(Get-CimInstance:*)",
+      "PowerShell(Get-ChildItem:*)",
+      "PowerShell(Get-Item:*)",
+      "PowerShell(Test-Path:*)",
+      "PowerShell(Remove-Item:*)",
+      "PowerShell(Start-Sleep:*)",
+      "PowerShell($ud =:*)",
+      "PowerShell($out =:*)",
+      "PowerShell($ok=$false:*)"
     ]
   }
 }

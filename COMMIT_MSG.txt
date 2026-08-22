@@ -1,0 +1,20 @@
+feat: Briefkopf, Corporate Design und Kontaktabschluss im PDF
+
+Der Ausdruck kam bisher ohne jede Absenderkennung heraus, weil im Druck
+Website-Header und -Footer ausgeblendet werden. Wer den Bericht im
+Führungskreis herumreicht, konnte nicht erkennen, woher er stammt.
+
+- PrintFrame mit Briefkopf (Logo, Titelzeile, Datum, Akzentlinie) und
+  Abschluss (Handlungsaufforderung, Kontaktdaten, Terminlink, Hinweis)
+- print-color-adjust: exact, sonst verwerfen Browser die Farben der
+  Reifegradstufen und die Akzentkanten
+- @page-Ränder für den Satzspiegel
+- eingeklappte Zusatzhinweise erscheinen im Ausdruck aufgeklappt
+
+Zwei Korrekturen am Druck-Stylesheet:
+- Die Regel traf bisher jedes header-Element und damit auch die
+  Berichtsüberschrift. Jetzt auf body > header und body > footer begrenzt.
+- Der Kasten "Zusätzlich in diesem Bericht" entfällt im Druck. Er erklärt
+  den Mehrwert gegenüber der freien Ergebnisseite, der im Ausdruck vorliegt.
+
+Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>

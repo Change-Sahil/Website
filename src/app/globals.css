@@ -549,13 +549,48 @@ html {
 
 /* ========= ÜBERGABE-CHECK — DRUCK / PDF ========= */
 /* Der Ergebnisbericht soll über „Als PDF sichern“ sauber aus dem Browser
-   fallen: kein Header/Footer, keine Formulare, keine Schatten. */
+   fallen: kein Website-Header/Footer, keine Formulare, keine Schatten, dafür
+   ein eigener Briefkopf und Kontaktabschluss. */
+
+/* Nur im Ausdruck sichtbar. */
+.uc-print-only {
+  display: none;
+}
+
+@page {
+  margin: 14mm 13mm;
+}
+
 @media print {
-  header,
-  footer,
+  /* Nur das Website-Chrome ausblenden. Ein pauschales „header“ würde auch das
+     <header>-Element mit der Berichtsüberschrift treffen. */
+  body > header,
+  body > footer,
   .uc-no-print,
-  .skip-link {
+  .skip-link,
+  .uc-wash {
     display: none !important;
+  }
+
+  .uc-print-only {
+    display: block !important;
+  }
+
+  /* Ohne das drucken Browser keine Hintergrundfarben. Die Reifegradfarben
+     und Akzentkanten sind hier aber Teil der Aussage, nicht Dekoration. */
+  .uc-report,
+  .uc-report *,
+  .uc-print-only,
+  .uc-print-only * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .uc-print-footer {
+    margin-top: 18px;
+    padding-top: 4px;
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 
   body {

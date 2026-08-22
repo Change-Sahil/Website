@@ -11,6 +11,10 @@ import { notFound, redirect } from "next/navigation";
 import PersonalReportExtras, {
   ReportContentsNote,
 } from "@/components/uebergabe-check/PersonalReportExtras";
+import {
+  PrintFooter,
+  PrintHeader,
+} from "@/components/uebergabe-check/PrintFrame";
 import Report from "@/components/uebergabe-check/Report";
 import ResultCtas from "@/components/uebergabe-check/ResultCtas";
 import { getAssessment } from "@/lib/uebergabe-check/db";
@@ -47,6 +51,8 @@ export default async function Page({
     <div className="relative space-y-6 md:space-y-8">
       <div aria-hidden className="uc-wash" />
 
+      <PrintHeader date={created} />
+
       <header className="max-w-3xl">
         <div className="page-eyebrow">Ergebnis vom {created}</div>
         <h1 className="title mt-3">
@@ -62,6 +68,7 @@ export default async function Page({
       <Report scores={scores} answers={assessment.answers} />
       <PersonalReportExtras scores={scores} answers={assessment.answers} />
       <ResultCtas variant="report" />
+      <PrintFooter />
 
       <p className="uc-no-print text-sm muted">
         Dieser Link ist persönlich und nicht öffentlich auffindbar. Sie können

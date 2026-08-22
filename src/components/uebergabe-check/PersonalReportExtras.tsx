@@ -49,8 +49,10 @@ export function ReportContentsNote({
       : `${entries.slice(0, -1).join(", ")} sowie ${entries[entries.length - 1]}`;
 
   return (
+    // Nicht im Druck: Der Kasten erklärt den Mehrwert gegenüber der freien
+    // Ergebnisseite. Im ausgedruckten Bericht liegt dieser Mehrwert vor.
     <div
-      className="rounded-2xl border p-5 sm:p-6"
+      className="uc-no-print rounded-2xl border p-5 sm:p-6"
       style={{
         borderColor: "rgba(0,168,165,0.30)",
         background: "rgba(0,168,165,0.06)",

@@ -53,3 +53,6 @@ start-kundenradar.bat
 start-kundenradar.vbs
 test-kundenradar.bat
 create-shortcut.ps1
+
+# Temporaere Commit-Nachrichten
+COMMIT_MSG.txt

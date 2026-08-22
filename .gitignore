@@ -42,8 +42,12 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Kundenradar (lokales Tool, nicht für Deployment)
+# Lokale Tools (persönliche Daten / API-Keys — nie committen)
 kundenradar.html
+veranstaltungsradar.html
+interview-radar.html
+crm.html
+glasfaser.html
 serve-kundenradar.js
 start-kundenradar.bat
 start-kundenradar.vbs

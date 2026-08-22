@@ -483,3 +483,112 @@ html {
     background: #f1f5f9;
   }
 }
+
+/* ========= ÜBERGABE-CHECK — DEZENTE AKZENTE ========= */
+
+/* Weicher Markenschimmer hinter dem oberen Seitenbereich. Ersetzt das
+   Hero-Bild der übrigen Seiten: ein Foto würde mit dem sachlichen Charakter
+   des Instruments konkurrieren, reines Weiß wirkt aber leblos. */
+.uc-wash {
+  position: absolute;
+  top: -6rem;
+  left: 0;
+  /* Hinter allen Inhalten, aber über dem Seitenhintergrund. So müssen die
+     Geschwister-Elemente nicht selbst positioniert werden. */
+  z-index: -1;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  height: 26rem;
+  pointer-events: none;
+  background:
+    radial-gradient(760px 380px at 14% 0%, rgba(0, 168, 165, 0.14), transparent 62%),
+    radial-gradient(660px 360px at 88% 6%, rgba(0, 112, 125, 0.10), transparent 60%);
+}
+
+/* Feine Akzentkante oben auf einer Fläche. Die Farbe kommt per --uc-accent.
+   Nicht auf .card anwenden: das overflow würde deren animierte Hover-Kante
+   (.card::before, inset -1.5px) abschneiden. */
+.uc-topline {
+  position: relative;
+  overflow: hidden;
+}
+.uc-topline::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: var(--uc-accent, rgb(0, 168, 165));
+  opacity: 0.9;
+}
+
+/* Segmentierter Fortschritt: sechs Abschnitte für sechs Dimensionen. */
+.uc-steps {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+}
+.uc-step {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.10);
+  overflow: hidden;
+}
+.uc-step > span {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgb(0, 168, 165), rgb(0, 112, 125));
+  transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uc-step > span {
+    transition: none;
+  }
+}
+
+/* ========= ÜBERGABE-CHECK — DRUCK / PDF ========= */
+/* Der Ergebnisbericht soll über „Als PDF sichern“ sauber aus dem Browser
+   fallen: kein Header/Footer, keine Formulare, keine Schatten. */
+@media print {
+  header,
+  footer,
+  .uc-no-print,
+  .skip-link {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  main {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .uc-report .panel,
+  .uc-report .card {
+    box-shadow: none !important;
+    border: 1px solid #d8dce3 !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .uc-report .card::before {
+    display: none !important;
+  }
+
+  .uc-report section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Eingeklappte Zusatz-Hinweise gehören in den Ausdruck. */
+  .uc-report details > *:not(summary) {
+    display: block !important;
+  }
+  .uc-report details > summary {
+    display: none !important;
+  }
+}

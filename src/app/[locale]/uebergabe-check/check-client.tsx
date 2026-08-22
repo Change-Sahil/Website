@@ -35,8 +35,13 @@ const TOTAL_STEPS = DIMENSIONS.length;
 
 type Stage = "intro" | "questions" | "result";
 
-/** Zeigt die fünf Beta-Feedbackfragen. Nach der Pilotphase auf false setzen. */
-const BETA_MODE = true;
+/**
+ * Steuert die fünf Rückmeldefragen zum Instrument am Ende der Ergebnisseite.
+ *
+ * Aktuell aus. Komponente, API-Route und Tabelle uc_feedback bleiben bestehen:
+ * für die begleitete Pilotphase genügt es, hier wieder auf true zu setzen.
+ */
+const BETA_MODE = false;
 
 export default function CheckClient() {
   const [stage, setStage] = useState<Stage>("intro");

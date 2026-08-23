@@ -12,6 +12,11 @@ import { headers } from "next/headers";
 
 import ComparisonManager from "@/components/uebergabe-check/ComparisonManager";
 import ComparisonReport from "@/components/uebergabe-check/ComparisonReport";
+import {
+  PrintComparisonClosing,
+  PrintComparisonCover,
+  PrintHeader,
+} from "@/components/uebergabe-check/PrintFrame";
 import { buildComparison } from "@/lib/uebergabe-check/comparison";
 import {
   getComparisonByManageToken,
@@ -20,6 +25,12 @@ import {
 } from "@/lib/uebergabe-check/comparison-db";
 
 export const dynamic = "force-dynamic";
+
+const DATE_FORMAT = new Intl.DateTimeFormat("de-DE", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
 
 export const metadata: Metadata = {
   title: "Perspektivvergleich",
@@ -75,11 +86,27 @@ export default async function VergleichPage({
   );
 
   const open = invites.filter((invite) => !invite.used_at).length;
+  const created = DATE_FORMAT.format(new Date(comparison.created_at));
 
   return (
     <main className="mx-auto max-w-5xl px-5 py-14 sm:py-20">
       <div className="space-y-6 md:space-y-8">
-        <header className="max-w-3xl">
+        {result.ready && (
+          <>
+            <PrintComparisonCover
+              roles={result.profiles.map((profile) => ({
+                label: profile.label,
+                participants: profile.participants,
+              }))}
+              label={comparison.label}
+              date={created}
+            />
+            <PrintHeader date={created} title="Ihr Perspektivvergleich" />
+          </>
+        )}
+
+        {/* Bildschirmteile: im Ausdruck ersetzt sie das Deckblatt. */}
+        <header className="uc-no-print max-w-3xl">
           <div className="page-eyebrow">Perspektivvergleich</div>
           <h1 className="title mt-3">
             {comparison.label ?? "Wie sehen andere Ihr Unternehmen?"}
@@ -94,7 +121,7 @@ export default async function VergleichPage({
 
         {/* Ohne diesen Hinweis ist der Zugang beim Schließen des Tabs weg. */}
         <div
-          className="rounded-2xl border p-5 text-[14px] leading-6"
+          className="uc-no-print rounded-2xl border p-5 text-[14px] leading-6"
           style={{
             borderColor: "rgba(0,168,165,0.30)",
             background: "rgba(0,168,165,0.06)",
@@ -107,15 +134,21 @@ export default async function VergleichPage({
           Vergleich. Wir können ihn nicht wiederherstellen.
         </div>
 
-        <ComparisonManager
-          manageToken={token}
-          label={comparison.label}
-          invites={invites}
-          origin={origin}
-        />
+        {/* Einladungsverwaltung gehört nicht in den ausgedruckten Bericht. */}
+        <div className="uc-no-print">
+          <ComparisonManager
+            manageToken={token}
+            label={comparison.label}
+            invites={invites}
+            origin={origin}
+          />
+        </div>
 
         {result.ready ? (
-          <ComparisonReport result={result} />
+          <>
+            <ComparisonReport result={result} />
+            <PrintComparisonClosing />
+          </>
         ) : (
           <div className="panel">
             <h2 className="text-lg font-bold text-slate-900">

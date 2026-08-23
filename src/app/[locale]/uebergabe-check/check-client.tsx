@@ -453,7 +453,7 @@ export default function CheckClient({ invite }: { invite?: InviteContext }) {
               "24 alltagsnahe Aussagen auf einer fünfstufigen Skala.",
               "Direkt danach sehen Sie Ihr Profil über sechs Dimensionen der Übergabefähigkeit.",
               "Zu jeder Dimension erhalten Sie eine Einordnung und einen konkreten nächsten Schritt.",
-              "Auf einen Gesamtscore wird bewusst verzichtet: Er könnte kritische Abhängigkeiten verdecken.",
+              "Auf einen Gesamtscore wird bewusst verzichtet: Er könnte einzelne relevante Abhängigkeiten verdecken.",
             ].map((line) => (
               <li
                 key={line}

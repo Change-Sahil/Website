@@ -259,6 +259,8 @@ export function divergentDimensions(
 export type ItemComparison = {
   itemId: string;
   dimension: DimensionId;
+  /** Kurzbezeichnung des Sachverhalts, Überschrift des Blocks. */
+  topic: string;
   /** Wortlaut in der Inhaberfassung, als gemeinsame Bezugsformulierung. */
   statement: string;
   /** Rohmittelwerte 1 bis 5 je Rolle. */
@@ -268,29 +270,25 @@ export type ItemComparison = {
   question: string;
 };
 
+/** Höchstens fünf Klärungsfragen, sonst ist die Auswertung nicht besprechbar. */
+export const MAX_ITEM_COMPARISONS = 5;
+
 /**
- * Offene Klärungsfragen zu einzelnen Items.
- *
- * NUR TEILWEISE BEFÜLLT. Formulierungen sind Modellinhalt und werden nicht aus
- * der Programmierung heraus erfunden. Wo nichts hinterlegt ist, greift die
- * Dimensionsfrage aus report-blocks.ts. Das funktioniert, ist aber weniger
- * konkret als eine eigens formulierte Frage.
+ * Höchstens zwei Fragen aus derselben Dimension. Sonst dreht sich das ganze
+ * Gespräch um einen einzigen Bereich, obwohl die Abweichungen breiter liegen.
  */
-const ITEM_COMPARISON_QUESTIONS: Record<string, string> = {
-  "3.1":
-    "Bei welchen Entscheidungen erleben beide Seiten den Handlungsspielraum unterschiedlich, und woran zeigt sich das im Alltag?",
-};
+export const MAX_ITEMS_PER_DIMENSION = 2;
 
 /**
  * Die größten Itemabweichungen innerhalb der übergebenen Dimensionen.
  *
  * Spezifikation Abschnitt 6 und 7: nicht alle 24 Differenzen zeigen, sondern
- * die drei bis fünf relevantesten. Sonst wird die Auswertung unlesbar.
+ * die relevantesten, priorisiert nach der größten Abweichung.
  */
 export function compareItems(
   profiles: RoleProfile[],
   dimensions: DimensionId[],
-  limit = 4
+  limit = MAX_ITEM_COMPARISONS
 ): ItemComparison[] {
   if (profiles.length < 2) return [];
 
@@ -317,50 +315,48 @@ export function compareItems(
     results.push({
       itemId: item.id,
       dimension: item.dimension,
+      topic: item.topic,
       statement: item.text,
       values,
       spread,
-      question:
-        ITEM_COMPARISON_QUESTIONS[item.id] ?? DIMENSION_QUESTIONS[item.dimension],
+      question: item.clarificationQuestion,
     });
   }
 
-  return results
+  // Nach Abweichung priorisieren, dann je Dimension deckeln.
+  const ranked = results
     .filter((entry) => entry.spread >= SPREAD_BANDS.differing.minSpread)
-    .sort((a, b) => b.spread - a.spread || a.itemId.localeCompare(b.itemId))
-    .slice(0, limit);
+    .sort((a, b) => b.spread - a.spread || a.itemId.localeCompare(b.itemId));
+
+  const perDimension = new Map<DimensionId, number>();
+  const selected: ItemComparison[] = [];
+  for (const entry of ranked) {
+    if (selected.length >= limit) break;
+    const used = perDimension.get(entry.dimension) ?? 0;
+    if (used >= MAX_ITEMS_PER_DIMENSION) continue;
+    perDimension.set(entry.dimension, used + 1);
+    selected.push(entry);
+  }
+  return selected;
 }
 
 // ── Gesprächsfragen ─────────────────────────────────────────────────────────
 
+export const CLARIFICATION_INTRO =
+  "Ziel der Klärung ist nicht festzustellen, wer richtig liegt, sondern zu verstehen, welche unterschiedlichen Erfahrungen oder Handlungsspielräume hinter den Einschätzungen stehen.";
+
 /**
- * Fragen für das gemeinsame Gespräch: zuerst die Fragen zu den auffälligen
- * Items, danach mit Dimensionsfragen auffüllen. Duplikate entfallen.
+ * Rückfallebene, falls eine Dimension auffällt, ohne dass ein einzelnes Item
+ * die Schwelle erreicht. Dann steht wenigstens die Dimensionsfrage zur
+ * Verfügung, statt gar keine Gesprächsgrundlage.
  */
-export function buildComparisonQuestions(
-  items: ItemComparison[],
+export function fallbackQuestions(
   dimensions: DimensionComparison[],
-  limit = 5
+  limit = MAX_ITEM_COMPARISONS
 ): string[] {
-  const questions: string[] = [];
-  const seen = new Set<string>();
-
-  for (const item of items) {
-    if (questions.length >= limit) break;
-    if (seen.has(item.question)) continue;
-    seen.add(item.question);
-    questions.push(item.question);
-  }
-
-  for (const entry of dimensions) {
-    if (questions.length >= limit) break;
-    const question = DIMENSION_QUESTIONS[entry.dimension];
-    if (seen.has(question)) continue;
-    seen.add(question);
-    questions.push(question);
-  }
-
-  return questions;
+  return dimensions
+    .slice(0, limit)
+    .map((entry) => DIMENSION_QUESTIONS[entry.dimension]);
 }
 
 // ── Gesamtauswertung ────────────────────────────────────────────────────────
@@ -371,7 +367,8 @@ export type ComparisonResult = {
   aligned: DimensionComparison[];
   divergent: DimensionComparison[];
   items: ItemComparison[];
-  questions: string[];
+  /** Nur gefüllt, wenn keine einzelne Itemabweichung die Schwelle erreicht. */
+  fallback: string[];
   /** Mindestens zwei unterschiedliche Rollen liegen vor. */
   ready: boolean;
   totalParticipants: number;
@@ -393,7 +390,7 @@ export function buildComparison(entries: Participation[]): ComparisonResult {
     aligned,
     divergent,
     items,
-    questions: buildComparisonQuestions(items, divergent),
+    fallback: items.length === 0 ? fallbackQuestions(divergent) : [],
     ready: profiles.length >= 2,
     totalParticipants: entries.length,
   };

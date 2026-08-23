@@ -173,7 +173,7 @@ export const DIMENSIONS: readonly DimensionContent[] = [
         interpretation:
           "Die Antworten sprechen dafür, dass zentrale Aufgaben und Wissen stark auf einzelne Personen konzentriert sind. Eine Übergabe wäre damit nicht nur vom Wechsel des Inhabers betroffen, sondern zusätzlich von der Verfügbarkeit einzelner Schlüsselkräfte abhängig. Das erhöht die Verletzlichkeit der Organisation in einer ohnehin sensiblen Phase.",
         impulse:
-          "Beginnen Sie mit einer einfachen Risikofrage: Welche drei Personen dürften morgen keinesfalls für längere Zeit ausfallen? Prüfen Sie für deren wichtigste Aufgaben, welches Wissen übertragen, welche Vertretung aufgebaut und welche Abhängigkeit zumindest transparent gemacht werden muss.",
+          "Beginnen Sie mit einer einfachen Schlüsselfrage: Welche drei Personen dürften morgen keinesfalls für längere Zeit ausfallen? Prüfen Sie für deren wichtigste Aufgaben, welches Wissen übertragen, welche Vertretung aufgebaut und welche Abhängigkeit zumindest transparent gemacht werden muss.",
       },
     },
   },
@@ -315,7 +315,7 @@ export const DIMENSIONS: readonly DimensionContent[] = [
       },
       elevated: {
         interpretation:
-          "Die Antworten sprechen dafür, dass substanzielle Veränderungen in Ihrer Organisation auf erhebliche Beharrungskräfte treffen können. Bei einer Nachfolge besteht deshalb das Risiko, dass neue Zuständigkeiten oder Führungsimpulse formal eingeführt werden, im Arbeitsalltag aber nur langsam wirksam werden. Der eigentliche Übergang kann dadurch deutlich länger dauern als der rechtliche Eigentümerwechsel.",
+          "Die Antworten sprechen dafür, dass substanzielle Veränderungen in Ihrer Organisation auf erhebliche Beharrungskräfte treffen können. Bei einer Nachfolge kann dies dazu führen, dass neue Zuständigkeiten oder Führungsimpulse formal eingeführt werden, im Arbeitsalltag aber nur langsam wirksam werden. Der eigentliche Übergang kann dadurch deutlich länger dauern als der rechtliche Eigentümerwechsel.",
         impulse:
           "Behandeln Sie die Nachfolge nicht nur als Wechsel an der Spitze. Erfassen Sie, welche Veränderungen sie für einzelne Gruppen und Schlüsselpersonen bedeutet: Wer gewinnt oder verliert Verantwortung, Einfluss, Nähe zur Führung oder gewohnte Sonderstellungen? Daraus lässt sich früh erkennen, wo Kommunikation, Beteiligung und klare Entscheidungen besonders wichtig werden.",
       },

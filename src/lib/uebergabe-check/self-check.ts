@@ -42,6 +42,12 @@ export function checkInstrumentIntegrity(): string[] {
     if (!item.text.trim()) {
       problems.push(`Item ${item.id} hat keinen Text.`);
     }
+    if (!item.topic.trim()) {
+      problems.push(`Item ${item.id} hat keine Kurzbezeichnung.`);
+    }
+    if (!item.clarificationQuestion.trim()) {
+      problems.push(`Item ${item.id} hat keine Klärungsfrage für den Vergleich.`);
+    }
     for (const [role, text] of Object.entries(item.roleText ?? {})) {
       if (!text.trim()) {
         problems.push(`Item ${item.id} hat eine leere Variante für Rolle ${role}.`);

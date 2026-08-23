@@ -337,11 +337,12 @@ aus ihrer jeweiligen Rolle. Sichtbar wird die Wahrnehmungslücke: „Inhaber sag
 81, Führungsebene sagt 44" erzeugt Gesprächsbedarf, den ein einzelnes Profil
 nicht erzeugt.
 
-> **Vor der ersten Nutzung:**
-> [`uebergabe-check-perspektivvergleich.sql`](../supabase/uebergabe-check-perspektivvergleich.sql)
-> im Supabase SQL Editor ausführen. Ohne die Migration bleibt der Einzelcheck
-> vollständig funktionsfähig; der Button „Perspektivvergleich starten" meldet
-> dann sauber, dass die Einrichtung fehlt.
+> **Migrationen** (Supabase SQL Editor, in dieser Reihenfolge):
+> [`uebergabe-check-perspektivvergleich.sql`](../supabase/uebergabe-check-perspektivvergleich.sql),
+> danach
+> [`uebergabe-check-loeschlogik-vergleich.sql`](../supabase/uebergabe-check-loeschlogik-vergleich.sql).
+> Ohne die erste bleibt der Einzelcheck vollständig funktionsfähig; der Button
+> „Perspektivvergleich starten" meldet dann sauber, dass die Einrichtung fehlt.
 
 ### Ablauf
 
@@ -429,23 +430,72 @@ nicht „Perspektive Führungsebene“. `roleLabel()` entscheidet das anhand der
 Gruppengröße. Von einer zusammengefassten Sicht darf erst ab zwei Teilnehmern
 gesprochen werden.
 
+### Klärungsfragen auf Itemebene
+
+Jedes der 24 Items trägt in [`items.ts`](../src/lib/uebergabe-check/items.ts)
+zwei Felder für den Vergleich:
+
+* `topic` – Kurzbezeichnung, Überschrift des Blocks
+* `clarificationQuestion` – offene Frage für das gemeinsame Gespräch
+
+Sie liegen bewusst direkt am Item und nicht in einer eigenen Tabelle: dieselbe
+Begründung wie bei der Polung. Was zusammengehört, soll nicht auseinanderlaufen.
+`self-check.ts` prüft, dass beide Felder gefüllt sind.
+
+Ausgabe:
+
+```
+Unterschiedliche Wahrnehmung bei
+[topic]
+[Itemwortlaut in der Inhaberfassung]
+
+  Inhaber/Geschäftsführung   4,5 / 5
+  Perspektive Führungsebene  2,3 / 5
+
+Für das gemeinsame Gespräch
+[clarificationQuestion]
+```
+
+Regeln: höchstens fünf Blöcke (`MAX_ITEM_COMPARISONS`), höchstens zwei je
+Dimension (`MAX_ITEMS_PER_DIMENSION`), priorisiert nach der größten Abweichung.
+`CLARIFICATION_INTRO` steht **einmal** über dem Abschnitt, nicht bei jeder
+Frage.
+
+Die Fragen erscheinen ausschließlich im Perspektivvergleich und nur bei
+tatsächlicher Abweichung. Sie sind keine Diagnose darüber, welche Perspektive
+richtig ist. Item 5.4 fragt deshalb nach der Herkunft der unterschiedlichen
+Einschätzungen und nicht nach den Gründen der Skepsis: Letzteres würde
+voraussetzen, dass Skepsis besteht.
+
+Erreicht keine einzelne Aussage die Schwelle, obwohl eine Dimension auffällt,
+greift `fallbackQuestions()` mit der allgemeineren Dimensionsfrage.
+
+### Speicherfrist
+
+[`uebergabe-check-loeschlogik-vergleich.sql`](../supabase/uebergabe-check-loeschlogik-vergleich.sql)
+erweitert `uc_purge_expired()`: Ein Vergleich wird **zwölf Monate nach der
+letzten Aktivität** gelöscht. Letzte Aktivität ist das jüngste aus Anlage,
+Einladung und eingegangener Einschätzung, berechnet in der View
+`uc_comparison_activity`.
+
+Zwölf Monate, weil ein Vergleich personenbezogen nutzbar ist: Der
+Verwaltungslink identifiziert den Initiator, und bei kleinen Gruppen sind
+Einzelantworten faktisch zuordenbar. Die Einladungen hängen per
+`ON DELETE CASCADE` daran, die Assessments per `ON DELETE SET NULL` – sie
+verlieren nur die Zuordnung zueinander und fallen danach unter die bestehende
+Sechsmonatsregel. Der Cron-Job ruft dieselbe Funktion auf und muss nicht neu
+eingerichtet werden.
+
 ### Was noch offen ist
 
-* **Klärungsfragen auf Itemebene.** `ITEM_COMPARISON_QUESTIONS` in
-  `comparison.ts` enthält bisher nur die Frage zu Item 3.1 aus der
-  Spezifikation. Für die übrigen 23 Items greift die allgemeinere
-  Dimensionsfrage. Das funktioniert, ist aber deutlich weniger konkret. Die
-  Formulierungen sind Modellinhalt und werden nicht aus der Programmierung
-  heraus erfunden.
 * **Kein E-Mail-Versand an Teilnehmer.** Eingeladen wird über kopierbare Links.
   Würden hier die Adressen der Führungskräfte eingetragen, verarbeiteten wir
   personenbezogene Daten Dritter, die nie eingewilligt haben. Das braucht
-  vorher eine Ergänzung der Datenschutzerklärung.
-* **Kein persönlicher Vergleichsbericht.** Die Vergleichsseite ist druckbar,
-  aber Deckblatt, Briefkopf und Schlussblatt sind bisher auf den Einzelbericht
-  zugeschnitten.
-* **Keine Löschfrist für Vergleiche.** `uc_purge_expired()` kennt
-  `uc_comparisons` und `uc_comparison_invites` noch nicht.
+  vorher eine Ergänzung der Datenschutzerklärung. Bewusste Entscheidung, nicht
+  Rückstand: nachrüsten, wenn sich im Einsatz zeigt, dass es gebraucht wird.
+* **Die Datenschutzerklärung nennt den Perspektivvergleich noch nicht.** Vor
+  dem öffentlichen Start ergänzen: Vergleichsdaten, Zwölfmonatsfrist, Hinweis
+  auf die faktische Zuordenbarkeit bei kleinen Gruppen.
 
 
 

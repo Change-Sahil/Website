@@ -16,6 +16,7 @@
 
 import SpiderWeb, { SERIES_COLORS } from "./SpiderWeb";
 import {
+  CLARIFICATION_INTRO,
   HEURISTIC_DISCLOSURE,
   SMALL_GROUP_NOTE,
   SPREAD_BANDS,
@@ -56,7 +57,7 @@ export default function ComparisonReport({
 }: {
   result: ComparisonResult;
 }) {
-  const { profiles, aligned, divergent, items, questions } = result;
+  const { profiles, aligned, divergent, items, fallback } = result;
 
   return (
     <div className="uc-report space-y-6 md:space-y-8">
@@ -164,16 +165,23 @@ export default function ComparisonReport({
         )}
       </section>
 
-      {/* ── 4. Itemabweichungen ──────────────────────────────────────────── */}
-      {items.length > 0 && (
+      {/* ── 4. und 5. Itemabweichungen mit ihrer Klärungsfrage ───────────── */}
+      {/* Bewusst ein Abschnitt statt zwei: Eine separate Fragenliste würde
+          jede Frage ein zweites Mal wörtlich wiederholen. Die Frage steht
+          dort, wo der Befund steht, mit dem sie zu tun hat. */}
+      {(items.length > 0 || fallback.length > 0) && (
         <section className="panel">
           <h2 className="text-xl font-bold text-slate-900">
             Was hinter den Unterschieden steckt
           </h2>
           <p className="mt-2 max-w-3xl text-[15px] leading-7 muted">
-            Die einzelnen Aussagen, bei denen die Einschätzungen innerhalb
-            dieser Dimensionen am weitesten auseinanderliegen. Angegeben ist
-            jeweils der Mittelwert der Antworten auf der fünfstufigen Skala.
+            Die einzelnen Aussagen, bei denen die Einschätzungen am weitesten
+            auseinanderliegen. Angegeben ist jeweils der Mittelwert der
+            Antworten auf der fünfstufigen Skala.
+          </p>
+          {/* Steht einmal für den ganzen Abschnitt, nicht bei jeder Frage. */}
+          <p className="mt-3 max-w-3xl text-[14px] leading-6 text-slate-500">
+            {CLARIFICATION_INTRO}
           </p>
 
           <div className="mt-6 space-y-4">
@@ -184,9 +192,12 @@ export default function ComparisonReport({
                 style={{ borderLeftColor: ACCENT }}
               >
                 <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-400">
-                  {dimensionContent(item.dimension).title}
+                  Unterschiedliche Wahrnehmung bei
                 </div>
-                <p className="mt-1.5 text-[15px] font-semibold leading-7 text-slate-900">
+                <div className="mt-1 text-[16px] font-bold text-slate-900">
+                  {item.topic}
+                </div>
+                <p className="mt-2 text-[14px] leading-6 text-slate-600">
                   {item.statement}
                 </p>
 
@@ -214,40 +225,30 @@ export default function ComparisonReport({
 
                 <div className="mt-4 rounded-xl bg-slate-50/80 p-4">
                   <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">
-                    Frage zur gemeinsamen Klärung
+                    Für das gemeinsame Gespräch
                   </div>
-                  <p className="mt-1.5 text-[14px] leading-6 text-slate-700">
+                  <p className="mt-1.5 text-[15px] font-semibold leading-7 text-slate-800">
                     {item.question}
                   </p>
                 </div>
               </div>
             ))}
-          </div>
-        </section>
-      )}
 
-      {/* ── 5. Gesprächsfragen ───────────────────────────────────────────── */}
-      {questions.length > 0 && (
-        <section className="panel">
-          <h2 className="text-xl font-bold text-slate-900">
-            Fragen für Ihr gemeinsames Gespräch
-          </h2>
-          <ol className="mt-5 space-y-4">
-            {questions.map((question, index) => (
-              <li key={question} className="uc-avoid-break flex gap-4">
-                <span
-                  aria-hidden
-                  className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[13px] font-bold text-white"
-                  style={{ background: ACCENT_DARK }}
-                >
-                  {index + 1}
-                </span>
-                <p className="text-[15px] font-semibold leading-7 text-slate-900">
+            {/* Nur wenn keine einzelne Aussage die Schwelle erreicht hat. */}
+            {fallback.map((question) => (
+              <div
+                key={question}
+                className="uc-avoid-break rounded-xl bg-slate-50/80 p-4"
+              >
+                <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">
+                  Für das gemeinsame Gespräch
+                </div>
+                <p className="mt-1.5 text-[15px] font-semibold leading-7 text-slate-800">
                   {question}
                 </p>
-              </li>
+              </div>
             ))}
-          </ol>
+          </div>
         </section>
       )}
 

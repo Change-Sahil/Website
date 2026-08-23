@@ -149,8 +149,171 @@ export function PrintCover({
   );
 }
 
+/**
+ * Deckblatt des Perspektivvergleichs.
+ *
+ * Eigenes Deckblatt statt des Einzelberichts: Der Vergleich ist ein
+ * eigenständiges Ergebnis und soll sich auch so anfühlen. Statt der sechs
+ * Punktwerte steht hier die Teilnehmerübersicht, denn genau die macht das
+ * Dokument aus.
+ */
+export function PrintComparisonCover({
+  roles,
+  label,
+  date,
+}: {
+  roles: { label: string; participants: number }[];
+  label?: string | null;
+  date?: string;
+}) {
+  return (
+    <div className="uc-print-only uc-print-cover">
+      <div className="uc-print-cover-inner">
+        <div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo.png"
+            alt="Change-Werkstatt Sahil"
+            style={{ height: "44px", width: "auto" }}
+          />
+        </div>
+
+        <div className="uc-print-cover-title">
+          <h1 className="text-[38px] font-bold leading-[1.08] tracking-[-0.03em] text-slate-900">
+            Ihr Perspektivvergleich zur Übergabefähigkeit
+          </h1>
+          <p className="mt-5 max-w-[36em] text-[14px] leading-7 text-slate-600">
+            Wie Inhaber, Führung und Schlüsselpersonen die Organisation
+            einschätzen, und wo sich unterschiedliche Wahrnehmungen zeigen.
+          </p>
+          {label && (
+            <p className="mt-4 text-[13px] font-semibold text-slate-700">
+              {label}
+            </p>
+          )}
+          {date && (
+            <p className="mt-4 text-[12px] text-slate-500">Erstellt am {date}</p>
+          )}
+
+          <div className="mt-9">
+            <AccentRule />
+            <table
+              style={{ width: "100%", borderCollapse: "collapse" }}
+              className="mt-4"
+            >
+              <tbody>
+                {roles.map((role) => (
+                  <tr key={role.label}>
+                    <td
+                      style={{
+                        padding: "7px 0",
+                        borderBottom: "1px solid #e8eaee",
+                        fontSize: "13px",
+                        color: "#1f2937",
+                      }}
+                    >
+                      {role.label}
+                    </td>
+                    <td
+                      style={{
+                        padding: "7px 0",
+                        borderBottom: "1px solid #e8eaee",
+                        fontSize: "12px",
+                        textAlign: "right",
+                        whiteSpace: "nowrap",
+                        color: "#6b7280",
+                      }}
+                    >
+                      {role.participants === 1
+                        ? "1 Einschätzung"
+                        : `${role.participants} Einschätzungen`}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div className="text-[11px] leading-5 text-slate-500">
+          {CONTACT.name} · {CONTACT.company} · {CONTACT.website}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/** Schlussblatt des Perspektivvergleichs. */
+export function PrintComparisonClosing() {
+  return (
+    <div className="uc-print-only uc-print-closing">
+      <div className="uc-print-cover-inner">
+        <div>
+          <AccentRule thick />
+        </div>
+
+        <div>
+          <h2 className="text-[24px] font-bold leading-tight tracking-[-0.02em] text-slate-900">
+            Wo unterschiedliche Perspektiven sichtbar werden, beginnt die
+            eigentliche Klärung.
+          </h2>
+
+          <p className="mt-5 max-w-[38em] text-[14px] leading-7 text-slate-600">
+            Der Vergleich zeigt nicht, wer recht hat. Er macht sichtbar, an
+            welchen Stellen ein gemeinsames Verständnis für die Übergabe noch
+            hergestellt werden sollte.
+          </p>
+
+          <div
+            className="mt-7 inline-block rounded-[6px] px-6 py-4"
+            style={{
+              background: "rgba(0,168,165,0.08)",
+              border: `1px solid ${ACCENT}`,
+            }}
+          >
+            <div className="text-[16px] font-bold" style={{ color: ACCENT_DARK }}>
+              Perspektivvergleich gemeinsam einordnen
+            </div>
+            <div className="mt-1 break-all text-[11px] leading-5 text-slate-600">
+              {CONTACT.booking}
+            </div>
+          </div>
+
+          <div className="mt-8 grid grid-cols-2 gap-8 text-[13px] leading-6">
+            <div>
+              <div className="text-[15px] font-bold text-slate-900">
+                {CONTACT.name}
+              </div>
+              <div className="text-slate-600">{CONTACT.company}</div>
+              <div className="mt-1" style={{ color: ACCENT_DARK }}>
+                {CONTACT.claim}
+              </div>
+            </div>
+            <div className="text-slate-600">
+              <div>{CONTACT.phone}</div>
+              <div>{CONTACT.email}</div>
+              <div>{CONTACT.website}</div>
+            </div>
+          </div>
+        </div>
+
+        <p className="uc-avoid-break text-[10.5px] leading-5 text-slate-500">
+          <strong className="font-semibold text-slate-600">Hinweis:</strong>{" "}
+          {METHOD_NOTE}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 /** Schmaler Briefkopf über dem Inhalt, ab der zweiten Seite. */
-export function PrintHeader({ date }: { date?: string }) {
+export function PrintHeader({
+  date,
+  title = "Ihr Übergabeprofil",
+}: {
+  date?: string;
+  title?: string;
+}) {
   return (
     <div className="uc-print-only">
       <div className="flex items-end justify-between gap-6">
@@ -165,7 +328,7 @@ export function PrintHeader({ date }: { date?: string }) {
             className="text-[10.5px] font-semibold uppercase tracking-[0.18em]"
             style={{ color: ACCENT_DARK }}
           >
-            Ihr Übergabeprofil
+            {title}
           </div>
           {date && (
             <div className="mt-0.5 text-[10.5px] text-slate-500">{date}</div>

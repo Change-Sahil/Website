@@ -10,6 +10,7 @@
 // Einordnung sein, nicht ein Disclaimer. Der methodische Hinweis steht deshalb
 // kompakt am Fuß derselben Seite und nicht auf einer eigenen.
 
+import { BOOKING_URL_PRINT } from "@/lib/booking";
 import { DIMENSIONS, LEVEL_META, METHOD_NOTE } from "@/lib/uebergabe-check/content";
 import { formatScore, type DimensionScore } from "@/lib/uebergabe-check/scoring";
 
@@ -20,8 +21,9 @@ const CONTACT = {
   phone: "+49 176 84076507",
   email: "seref.sahil@change-werkstatt-sahil.com",
   website: "change-werkstatt-sahil.de",
-  booking:
-    "https://outlook.office.com/bookwithme/user/6de68b0b8be247aea52fe665683a25e3",
+  // Im Ausdruck wird die URL abgetippt oder abfotografiert, deshalb ohne den
+  // technischen Query-Parameter.
+  booking: BOOKING_URL_PRINT,
 };
 
 const ACCENT = "rgb(0,168,165)";

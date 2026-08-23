@@ -266,7 +266,6 @@ export default function CheckClient({ invite }: { invite?: InviteContext }) {
 
         <ResultCtas
           discussionCount={discussionCount}
-          assessmentId={assessmentId}
           onRequestReport={() => setReportFormOpen(true)}
         />
         <LeadForm assessmentId={assessmentId} open={reportFormOpen} />

@@ -15,6 +15,7 @@
 // unterschätzt, eine Ursache für eine Abweichung, oder ein Gesamtscore.
 
 import SpiderWeb, { SERIES_COLORS } from "./SpiderWeb";
+import { BOOKING_URL_DE } from "@/lib/booking";
 import {
   CLARIFICATION_INTRO,
   HEURISTIC_DISCLOSURE,
@@ -29,8 +30,6 @@ import { formatScore } from "@/lib/uebergabe-check/scoring";
 
 const ACCENT = "rgb(0,168,165)";
 const ACCENT_DARK = "rgb(0,112,125)";
-const BOOKING_URL =
-  "https://outlook.office.com/bookwithme/user/6de68b0b8be247aea52fe665683a25e3";
 
 function RoleValues({ entry }: { entry: DimensionComparison }) {
   return (
@@ -266,7 +265,7 @@ export default function ComparisonReport({
         </p>
         <div className="mt-7">
           <a
-            href={BOOKING_URL}
+            href={BOOKING_URL_DE}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-[5px] bg-white px-5 py-3 font-semibold text-slate-900 transition-opacity duration-150 hover:opacity-90"

@@ -71,6 +71,7 @@ angezeigt, aber nicht gespeichert, und die Zusendung per Mail entfällt.
 | Vergleichsauswertung | [`src/components/uebergabe-check/ComparisonReport.tsx`](../src/components/uebergabe-check/ComparisonReport.tsx) |
 | Einladungen verwalten | [`src/components/uebergabe-check/ComparisonManager.tsx`](../src/components/uebergabe-check/ComparisonManager.tsx) |
 | Einstieg in den Vergleich (CTA) | [`src/components/uebergabe-check/PerspectiveBlock.tsx`](../src/components/uebergabe-check/PerspectiveBlock.tsx) |
+| Buchungslinks, alle Sprachen | [`src/lib/booking.ts`](../src/lib/booking.ts) |
 | Deckblatt, Briefkopf, Schlussblatt im Druck | [`src/components/uebergabe-check/PrintFrame.tsx`](../src/components/uebergabe-check/PrintFrame.tsx) |
 | Ergebnismail an den Nutzer | [`src/lib/uebergabe-check/report-email.ts`](../src/lib/uebergabe-check/report-email.ts) |
 | Interne Benachrichtigung | [`src/lib/uebergabe-check/emails.ts`](../src/lib/uebergabe-check/emails.ts) |
@@ -260,6 +261,21 @@ geändert werden:
   kamen Rollenvarianten hinzu, dreizehn Itemtexte wurden angepasst und bei
   Item 1.4 sowie Item 5.4 die **Polarität gedreht** (1.4 jetzt positiv,
   5.4 jetzt invers).
+
+### Buchungslinks
+
+Alle „Bookings with me"-Links stehen in [`booking.ts`](../src/lib/booking.ts)
+und nirgends sonst. Eine gültige URL hat die Form
+
+```
+.../bookwithme/user/<id>@<domain>/meetingtype/<typ>?anonymous
+```
+
+Der Teil ab `@` ist **nicht** optional. Im Übergabe-Check war an vier Stellen
+eine gekürzte Fassung ohne Domain und ohne `meetingtype` in Umlauf; Microsoft
+antwortet darauf mit „Dieser Link ist ungültig". Betroffen waren Ergebnisseite,
+Bericht, Vergleichsauswertung, PDF-Schlussblatt und die Ergebnismail. Dieselbe
+Fehlerklasse wie bei der Polung: dieselbe Information an mehreren Stellen.
 
 ### Die Polungsregel
 

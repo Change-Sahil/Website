@@ -1,31 +1,27 @@
 // src/components/uebergabe-check/ResultCtas.tsx
 //
-// Abschluss der Ergebnisseite. Drei Wege mit klarer Rangfolge statt eines
-// einzelnen Angebots:
+// Abschluss der Ergebnisseite.
 //
-//   1. Ergebnis gemeinsam einordnen   für alle, die direkt sprechen wollen
-//   2. Perspektivvergleich starten    für alle, die zuerst intern weiterarbeiten
-//   3. Persönlichen Bericht erhalten  für alle, die dokumentieren und vertiefen
+// Drei Wege stehen zur Wahl, aber NICHT alle drei in diesem Block:
 //
-// Weg 2 hält diejenigen im Funnel, die noch keinen Beraterkontakt möchten. Er
-// erzeugt zugleich den natürlichen Kreislauf: Inhaber macht den Check, lädt
-// Führungskräfte ein, unterschiedliche Wahrnehmungen werden sichtbar, daraus
-// entsteht Gesprächsbedarf.
+//   1. Ergebnis gemeinsam einordnen   hier, als primärer Weg
+//   2. Perspektivvergleich starten    im Abschnitt unmittelbar darüber
+//   3. Persönlichen Bericht erhalten  hier, als zweiter Weg
+//
+// Weg 2 hatte hier zunächst einen zweiten Button. Direkt unter einem Abschnitt,
+// der denselben Button bereits samt Begründung zeigt, wirkte das wie ein
+// Fehler. Der erklärende Abschnitt gewinnt: Er trägt den Inhalt, dieser Block
+// nur die Handlung.
 
 "use client";
 
 import Link from "next/link";
 
-import { useStartComparison } from "./PerspectiveBlock";
-import { PERSPECTIVE_CTA } from "@/lib/uebergabe-check/report-blocks";
-
-const BOOKING_URL =
-  "https://outlook.office.com/bookwithme/user/6de68b0b8be247aea52fe665683a25e3";
+import { BOOKING_URL_DE } from "@/lib/booking";
 
 export default function ResultCtas({
   variant = "live",
   discussionCount,
-  assessmentId = null,
   onRequestReport,
 }: {
   variant?: "live" | "report";
@@ -34,13 +30,9 @@ export default function ResultCtas({
    * verdrahtet, weil sie je nach Antwortprofil zwischen drei und fünf liegt.
    */
   discussionCount?: number;
-  /** Für den Einstieg in den Perspektivvergleich. */
-  assessmentId?: string | null;
   /** Klappt das Formular für die Zusendung auf. Nur in der Variante "live". */
   onRequestReport?: () => void;
 }) {
-  const comparison = useStartComparison(assessmentId);
-
   const secondaryClass =
     "inline-flex items-center justify-center rounded-[5px] border border-white/25 px-5 py-3 font-semibold text-white transition-colors duration-150 hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-50";
 
@@ -65,22 +57,13 @@ export default function ResultCtas({
 
       <div className="mt-7 flex flex-wrap items-center gap-3">
         <a
-          href={BOOKING_URL}
+          href={BOOKING_URL_DE}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center rounded-[5px] bg-white px-5 py-3 font-semibold text-slate-900 transition-opacity duration-150 hover:opacity-90"
         >
           Ergebnis gemeinsam einordnen
         </a>
-
-        <button
-          type="button"
-          onClick={comparison.start}
-          disabled={comparison.pending}
-          className={secondaryClass}
-        >
-          {comparison.pending ? "Wird angelegt …" : PERSPECTIVE_CTA}
-        </button>
 
         {variant === "live" ? (
           <button type="button" onClick={onRequestReport} className={secondaryClass}>
@@ -96,12 +79,6 @@ export default function ResultCtas({
           </button>
         )}
       </div>
-
-      {comparison.error && (
-        <p role="alert" className="mt-4 text-[14px] font-medium text-red-300">
-          {comparison.error}
-        </p>
-      )}
 
       {/* Ohne diesen Satz ist nicht ersichtlich, warum jemand nach dem bereits
           sichtbaren Ergebnis noch eine E-Mail-Adresse hinterlassen sollte. */}

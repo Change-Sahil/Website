@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { Reveal } from "@/components/Reveal";
+import { bookingUrl as getBookingUrl } from "@/lib/booking";
 
 export default function ContactPage() {
   const locale = useLocale();
@@ -59,12 +60,10 @@ export default function ContactPage() {
   const phoneRaw = String(d("phone"));
   const phoneHref = phoneRaw.replace(/[^\d+]/g, "");
 
-  const bookingUrl = ({
-    de: "https://outlook.office.com/bookwithme/user/6de68b0b8be247aea52fe665683a25e3@change-werkstatt-sahil.com/meetingtype/6IciwIU95kSU87UB6uKcUA2?anonymous",
-    en: "https://outlook.office.com/bookwithme/user/6de68b0b8be247aea52fe665683a25e3@change-werkstatt-sahil.com/meetingtype/LTbeWL46bUWoOR-oXljwUA2?anonymous",
-    tr: "https://outlook.office.com/bookwithme/user/6de68b0b8be247aea52fe665683a25e3@change-werkstatt-sahil.com/meetingtype/wh5p9216QE6pcRhcpP0fQA2?anonymous",
-    es: "https://outlook.office.com/bookwithme/user/6de68b0b8be247aea52fe665683a25e3@change-werkstatt-sahil.com/meetingtype/xp-hh-yFWkSVpnYPdqC0Eg2?anonymous",
-  } as Record<string, string>)[locale] ?? "https://outlook.office.com/bookwithme/user/6de68b0b8be247aea52fe665683a25e3@change-werkstatt-sahil.com/meetingtype/6IciwIU95kSU87UB6uKcUA2?anonymous";
+  // Zentral in @/lib/booking, damit die Links auf allen Seiten identisch
+  // bleiben. Im Übergabe-Check war unbemerkt eine gekürzte, ungültige Fassung
+  // in Umlauf.
+  const bookingUrl = getBookingUrl(locale);
 
   const inputClass =
     "w-full border border-[rgba(14,20,32,.12)] bg-white px-4 py-3 text-sm text-slate-900 outline-none transition-all duration-150 " +

@@ -9,6 +9,7 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { z } from "zod";
 
+import { BOOKING_URL_DE } from "@/lib/booking";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
 import { getAssessment, getDb } from "@/lib/uebergabe-check/db";
 import { buildInternalNotification } from "@/lib/uebergabe-check/emails";
@@ -20,9 +21,6 @@ import { computeScores } from "@/lib/uebergabe-check/scoring";
 
 const BASE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://change-werkstatt-sahil.de";
-
-const BOOKING_URL =
-  "https://outlook.office.com/bookwithme/user/6de68b0b8be247aea52fe665683a25e3";
 
 const leadSchema = z.object({
   assessmentId: z.uuid(),
@@ -108,7 +106,7 @@ export async function POST(req: Request) {
   const report = buildReportEmail({
     name,
     resultUrl,
-    bookingUrl: BOOKING_URL,
+    bookingUrl: BOOKING_URL_DE,
     baseUrl: BASE_URL,
   });
 

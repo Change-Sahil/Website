@@ -74,7 +74,7 @@ export default async function Page({
         answers={assessment.answers}
         assessmentId={assessment.id}
       />
-      <ResultCtas variant="report" assessmentId={assessment.id} />
+      <ResultCtas variant="report" />
 
       {/* Der einzige methodische Vorbehalt am Bildschirm. Im Ausdruck steht er
           am Fuß der Schlussseite, siehe PrintClosing. */}

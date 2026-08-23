@@ -13,7 +13,8 @@ import BetaFeedback from "@/components/uebergabe-check/BetaFeedback";
 import LeadForm from "@/components/uebergabe-check/LeadForm";
 import LikertScale from "@/components/uebergabe-check/LikertScale";
 import {
-  PrintFooter,
+  PrintClosing,
+  PrintCover,
   PrintHeader,
 } from "@/components/uebergabe-check/PrintFrame";
 import Report from "@/components/uebergabe-check/Report";
@@ -187,6 +188,7 @@ export default function CheckClient() {
 
         {/* Auch wer die Live-Ansicht über Strg+P druckt, soll ein gebrandetes
             Dokument bekommen. */}
+        <PrintCover scores={scores} />
         <PrintHeader />
 
         <header className="max-w-3xl">
@@ -206,7 +208,7 @@ export default function CheckClient() {
         />
         <LeadForm assessmentId={assessmentId} open={reportFormOpen} />
         {BETA_MODE && <BetaFeedback assessmentId={assessmentId} />}
-        <PrintFooter />
+        <PrintClosing />
 
         <div className="uc-no-print pt-2">
           <button

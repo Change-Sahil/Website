@@ -557,7 +557,10 @@ html {
   display: none;
 }
 
+/* A4 festlegen. Ohne size druckt Chrome je nach Systemvorgabe auch US Letter,
+   und das Deckblatt ist auf die A4-Höhe bemessen. */
 @page {
+  size: A4;
   margin: 14mm 13mm;
 }
 
@@ -586,11 +589,108 @@ html {
     print-color-adjust: exact;
   }
 
-  .uc-print-footer {
-    margin-top: 18px;
-    padding-top: 4px;
+  /* Deckblatt und Schlussblatt füllen je eine eigene Seite. Die Höhe ist am
+     Satzspiegel bemessen: 297mm Seite minus 2 × 14mm Rand. */
+  .uc-print-cover,
+  .uc-print-closing {
     break-inside: avoid;
     page-break-inside: avoid;
+  }
+  .uc-print-cover {
+    break-after: page;
+    page-break-after: always;
+  }
+  .uc-print-closing {
+    break-before: page;
+    page-break-before: always;
+  }
+  .uc-print-cover-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 265mm;
+  }
+  .uc-print-cover-title {
+    padding-bottom: 8mm;
+  }
+
+  /* Umbruchverhalten im Fließteil. Ganze Abschnitte NICHT schützen: eine
+     Dimension mit mehreren Hinweisen ist oft länger als eine Seite, und ein
+     unerfüllbares avoid erzeugt nur große Leerräume. Geschützt wird stattdessen
+     das, was tatsächlich zusammengehört. */
+  .uc-avoid-break {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .uc-report h1,
+  .uc-report h2,
+  .uc-report h3,
+  .uc-report h4 {
+    break-inside: avoid;
+  }
+
+  .uc-report p,
+  .uc-report li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Verdichtung für Papier. Das Bildschirmlayout lebt von großzügigen
+     Abständen und runden Flächen; auf A4 kostet das ohne Gewinn viele Seiten.
+
+     Die Schriftgrößen müssen einzeln überschrieben werden: fast jeder Text
+     trägt eine explizite Tailwind-Klasse wie text-[15px], und die schlägt eine
+     geerbte Größe am Container. Eine Angabe an .uc-report allein bliebe
+     wirkungslos. */
+  .uc-report {
+    font-size: 10.5pt;
+    line-height: 1.45;
+  }
+  .uc-report .text-3xl { font-size: 17pt !important; }
+  .uc-report .text-2xl { font-size: 14pt !important; }
+  .uc-report .text-xl { font-size: 13pt !important; }
+  .uc-report .text-lg { font-size: 12pt !important; }
+  .uc-report .text-base,
+  .uc-report .text-\[16px\] { font-size: 10.5pt !important; }
+  .uc-report .text-sm,
+  .uc-report .text-\[15px\] { font-size: 10pt !important; line-height: 1.5 !important; }
+  .uc-report .text-\[14px\] { font-size: 9.5pt !important; line-height: 1.45 !important; }
+  .uc-report .text-\[13px\] { font-size: 9pt !important; line-height: 1.45 !important; }
+  /* Der Punkt in einem arbiträren Wert wird von Tailwind zu \. maskiert. */
+  .uc-report .text-\[12px\],
+  .uc-report .text-\[12\.5px\] { font-size: 8.5pt !important; }
+  .uc-report .text-\[11px\],
+  .uc-report .text-\[10\.5px\] { font-size: 8pt !important; }
+  .uc-report .panel {
+    padding: 12px 14px !important;
+    border-radius: 7px !important;
+  }
+  .uc-report .rounded-2xl,
+  .uc-report .rounded-xl {
+    border-radius: 7px !important;
+  }
+  /* Tailwinds space-y-Abstände zwischen den Blöcken zusammenziehen. */
+  .uc-report > * + *,
+  .uc-report .space-y-6 > * + *,
+  .uc-report .space-y-8 > * + * {
+    margin-top: 10px !important;
+  }
+  .uc-report .space-y-4 > * + *,
+  .uc-report .space-y-5 > * + *,
+  .uc-report .space-y-3 > * + * {
+    margin-top: 7px !important;
+  }
+  .uc-report .p-5 {
+    padding: 10px 12px !important;
+  }
+  .uc-report .mt-5,
+  .uc-report .mt-6 {
+    margin-top: 10px !important;
+  }
+  /* Das Diagramm braucht auf Papier weniger Fläche als am Bildschirm. */
+  .uc-report svg {
+    max-width: 340px !important;
   }
 
   body {
@@ -606,18 +706,17 @@ html {
   .uc-report .card {
     box-shadow: none !important;
     border: 1px solid #d8dce3 !important;
-    break-inside: avoid;
-    page-break-inside: avoid;
   }
 
   .uc-report .card::before {
     display: none !important;
   }
 
-  .uc-report section {
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
+  /* Bewusst KEIN break-inside: avoid auf Panels und Sections. Mit den
+     ausführlicheren Einordnungstexten füllt eine Dimension oft zwei Drittel
+     einer Seite. Ein Umbruchverbot zwingt dann jede Dimension auf eine neue
+     Seite und lässt jedes Mal ein Drittel leer, was das Dokument fast
+     verdoppelt. Geschützt wird nur, was wirklich zusammengehört: .uc-avoid-break. */
 
   /* Eingeklappte Zusatz-Hinweise gehören in den Ausdruck. */
   .uc-report details > *:not(summary) {

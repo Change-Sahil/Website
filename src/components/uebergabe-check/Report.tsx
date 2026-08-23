@@ -21,6 +21,7 @@ import {
   CONTEXT_NOTE,
   FLAGS_SECTION_HINT,
   FLAGS_SECTION_TITLE,
+  INTERPRETATION_NOTE,
   LEVEL_META,
   NO_TOTAL_SCORE_NOTE,
   RESULT_DISCLAIMER,
@@ -91,7 +92,7 @@ function LevelBadge({ level }: { level: MaturityLevel }) {
 function FlagCard({ flag }: { flag: FlagDefinition }) {
   return (
     <div
-      className="rounded-2xl border border-slate-200 border-l-[3px] bg-white p-5"
+      className="uc-avoid-break rounded-2xl border border-slate-200 border-l-[3px] bg-white p-5"
       style={{ borderLeftColor: "rgb(0,168,165)" }}
     >
       {/* Befund */}
@@ -149,7 +150,7 @@ export default function Report({
 
       {/* ── Diagramm und Stufenlegende ───────────────────────────────────── */}
       <div className="panel">
-        <div className="grid gap-8 md:grid-cols-[minmax(0,1fr)_220px] md:items-center">
+        <div className="uc-avoid-break grid gap-8 md:grid-cols-[minmax(0,1fr)_220px] md:items-center">
           <div className="flex justify-center">
             {/* Eine Serie. Der Perspektivvergleich reicht später weitere nach. */}
             <SpiderWeb
@@ -193,7 +194,7 @@ export default function Report({
       </div>
 
       {/* ── Die sechs Werte auf einen Blick ──────────────────────────────── */}
-      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="uc-avoid-break grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {scores.map((entry) => {
           const content = dimensionContent(entry.dimension);
           const meta = LEVEL_META[entry.level];
@@ -265,6 +266,16 @@ export default function Report({
       </div>
 
       {/* ── Detailauswertung je Dimension ────────────────────────────────── */}
+      {/* Einmalig, damit die Einordnungstexte darunter etwas Substanzielles
+          sagen dürfen, statt jeden Satz zu relativieren. */}
+      <p
+        className="uc-avoid-break border-l-[3px] py-1 pl-4 text-[13px] leading-6 text-slate-600"
+        style={{ borderLeftColor: "rgb(202,138,4)" }}
+      >
+        <strong className="font-semibold text-slate-800">Zur Einordnung:</strong>{" "}
+        {INTERPRETATION_NOTE}
+      </p>
+
       <div className="space-y-4">
         {scores.map((entry, index) => {
           const content = dimensionContent(entry.dimension);
@@ -324,6 +335,11 @@ export default function Report({
                 {content.explanation}
               </p>
 
+              {/* Bewusst umbrechbar: Dieser Block ist der längste im Bericht.
+                  Hält man ihn zusammen, rutscht er häufig komplett auf die
+                  nächste Seite und hinterlässt eine große Lücke. Fließtext
+                  über einen Seitenwechsel zu lesen ist unproblematisch,
+                  orphans/widows verhindern einzelne Restzeilen. */}
               <div className="mt-5 space-y-4 rounded-2xl bg-slate-50/80 p-5">
                 <div>
                   <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">

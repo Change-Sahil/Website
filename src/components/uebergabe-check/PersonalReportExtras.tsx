@@ -121,7 +121,7 @@ export default function PersonalReportExtras({
 
           <ol className="mt-6 space-y-5">
             {discussion.map((point, index) => (
-              <li key={point.id} className="flex gap-4">
+              <li key={point.id} className="uc-avoid-break flex gap-4">
                 <span
                   aria-hidden
                   className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[13px] font-bold text-white"
@@ -152,7 +152,7 @@ export default function PersonalReportExtras({
 
         <div className="mt-6 space-y-8">
           {WORKSHEET_FIELDS.map((field) => (
-            <div key={field.label}>
+            <div key={field.label} className="uc-avoid-break">
               <div className="text-[15px] font-semibold text-slate-800">
                 {field.label}
               </div>

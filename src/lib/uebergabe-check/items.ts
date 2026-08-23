@@ -18,12 +18,36 @@ export type Polarity = "positive" | "inverse";
 
 export type DimensionId = 1 | 2 | 3 | 4 | 5 | 6;
 
+/**
+ * Rollen, für die eine eigene Formulierung hinterlegt werden kann.
+ * Deckungsgleich mit RespondentRole in comparison.ts, hier bewusst lokal
+ * gehalten, damit items.ts keine Abhängigkeit zum Vergleichsmodul hat.
+ */
+export type ItemRole = "owner" | "management" | "leader" | "key_person" | "other";
+
 export type Item = {
   /** Stabile ID, wird als Schlüssel im gespeicherten Antwort-Objekt genutzt. */
   id: string;
   dimension: DimensionId;
   polarity: Polarity;
+  /**
+   * Standardformulierung. Sie gilt für die Inhaberperspektive und überall
+   * dort, wo keine rollenspezifische Variante hinterlegt ist.
+   */
   text: string;
+  /**
+   * Rollenspezifische Varianten für den späteren Perspektivvergleich.
+   *
+   * Eine Variante misst denselben Sachverhalt und behält Item-ID, Dimension,
+   * Polung und Scoringlogik unverändert bei. Nur der Wortlaut wechselt die
+   * Perspektive, etwa von „Führungskräfte binden mich ein“ zu
+   * „Der Inhaber wird einbezogen“.
+   *
+   * NOCH NICHT BEFÜLLT: Die Formulierungen werden fachlich freigegeben und
+   * nicht aus der Programmierung heraus erfunden. Bis dahin greift überall
+   * `text`.
+   */
+  roleText?: Partial<Record<ItemRole, string>>;
 };
 
 export const ITEMS: readonly Item[] = [
@@ -206,4 +230,13 @@ export function itemsForDimension(dimension: DimensionId): Item[] {
 
 export function itemById(id: string): Item | undefined {
   return ITEMS.find((item) => item.id === id);
+}
+
+/**
+ * Liefert die für eine Rolle passende Formulierung. Solange keine Variante
+ * hinterlegt ist, kommt die Standardformulierung zurück. Damit lässt sich der
+ * Perspektivvergleich später aktivieren, ohne Aufrufstellen zu ändern.
+ */
+export function itemText(item: Item, role: ItemRole = "owner"): string {
+  return item.roleText?.[role] ?? item.text;
 }

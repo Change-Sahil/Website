@@ -66,7 +66,7 @@ export default function ResultCtas({
             onClick={onRequestReport}
             className="inline-flex items-center justify-center rounded-[5px] border border-white/25 px-5 py-3 font-semibold text-white transition-colors duration-150 hover:bg-white/10"
           >
-            Ergebnisbericht per E-Mail erhalten
+            Persönlichen Arbeitsbericht erhalten
           </button>
         ) : (
           <button
@@ -83,10 +83,9 @@ export default function ResultCtas({
           sichtbaren Ergebnis noch eine E-Mail-Adresse hinterlassen sollte. */}
       {variant === "live" && (
         <p className="mt-4 max-w-2xl text-[14px] leading-6 text-white/60">
-          Der Bericht enthält Ihre Auswertung plus eine persönliche
-          Zusammenfassung,{" "}
-          {discussionCount ? `${discussionCount} Fragen` : "Fragen"} für die
-          interne Diskussion und eine Arbeitsseite für die nächsten Schritte.
+          Mit persönlicher Profilzusammenfassung, ausgewählten Prüffeldern,{" "}
+          {discussionCount ? `${discussionCount} Fragen` : "Fragen"} für Ihre
+          interne Diskussion und einer Arbeitsseite für Ihre nächsten Schritte.
         </p>
       )}
 

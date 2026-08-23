@@ -1,12 +1,14 @@
 // src/components/uebergabe-check/PrintFrame.tsx
 //
-// Deckblatt, Briefkopf und Schlussblatt, die ausschließlich im Ausdruck
-// erscheinen.
+// Deckblatt, Briefkopf und Schlussblatt, ausschließlich im Ausdruck sichtbar.
 //
 // Im Druck werden Website-Header und -Footer ausgeblendet. Ohne diese Bausteine
 // stünde das PDF ohne Absenderkennung da. Der Bericht soll ausgedruckt und im
-// Führungskreis herumgereicht werden können, ohne dass jemand fragen muss,
-// woher er stammt.
+// Führungskreis herumgereicht werden können.
+//
+// Der letzte inhaltliche Eindruck soll die Möglichkeit zur gemeinsamen
+// Einordnung sein, nicht ein Disclaimer. Der methodische Hinweis steht deshalb
+// kompakt am Fuß derselben Seite und nicht auf einer eigenen.
 
 import { DIMENSIONS, LEVEL_META } from "@/lib/uebergabe-check/content";
 import { formatScore, type DimensionScore } from "@/lib/uebergabe-check/scoring";
@@ -25,6 +27,10 @@ const CONTACT = {
 const ACCENT = "rgb(0,168,165)";
 const ACCENT_DARK = "rgb(0,112,125)";
 
+/** Kompakter methodischer Hinweis. Steht am Fuß der Schlussseite. */
+export const REPORT_DISCLAIMER =
+  "Der Schnellcheck liefert eine strukturierte Erstindikation. Die Auswertung leitet aus Ihren Antworten typische Zusammenhänge und Ansatzpunkte ab; nicht jede Interpretation muss Ihre individuelle Situation vollständig treffen. Eine vertiefende Organisations- oder Nachfolgeanalyse ersetzt der Bericht nicht.";
+
 function AccentRule({ thick = false }: { thick?: boolean }) {
   return (
     <div
@@ -37,12 +43,59 @@ function AccentRule({ thick = false }: { thick?: boolean }) {
   );
 }
 
-/**
- * Deckblatt, erste Seite des Ausdrucks.
- *
- * Enthält bewusst schon die sechs Werte: Wer das PDF weiterreicht, soll auf der
- * ersten Seite erkennen, worum es geht, ohne blättern zu müssen.
- */
+function ScoreTable({ scores }: { scores: DimensionScore[] }) {
+  return (
+    <table style={{ width: "100%", borderCollapse: "collapse" }}>
+      <tbody>
+        {scores.map((entry) => {
+          const meta = LEVEL_META[entry.level];
+          const content = DIMENSIONS[entry.dimension - 1];
+          return (
+            <tr key={entry.dimension}>
+              <td
+                style={{
+                  padding: "7px 0",
+                  borderBottom: "1px solid #e8eaee",
+                  fontSize: "13px",
+                  color: "#1f2937",
+                }}
+              >
+                {content.title}
+              </td>
+              <td
+                style={{
+                  padding: "7px 0",
+                  borderBottom: "1px solid #e8eaee",
+                  fontSize: "13px",
+                  fontWeight: 700,
+                  textAlign: "right",
+                  whiteSpace: "nowrap",
+                  color: meta.color,
+                }}
+              >
+                {formatScore(entry.score)}
+              </td>
+              <td
+                style={{
+                  padding: "7px 0 7px 18px",
+                  borderBottom: "1px solid #e8eaee",
+                  fontSize: "12px",
+                  textAlign: "right",
+                  whiteSpace: "nowrap",
+                  color: meta.color,
+                }}
+              >
+                {meta.label}
+              </td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  );
+}
+
+/** Deckblatt, erste Seite des Ausdrucks. */
 export function PrintCover({
   scores,
   date,
@@ -63,19 +116,19 @@ export function PrintCover({
         </div>
 
         <div className="uc-print-cover-title">
-          <div
-            className="text-[12px] font-semibold uppercase tracking-[0.22em]"
-            style={{ color: ACCENT_DARK }}
-          >
-            Schnellcheck Übergabefähigkeit
-          </div>
-          <h1 className="mt-3 text-[40px] font-bold leading-[1.08] tracking-[-0.03em] text-slate-900">
+          <h1 className="text-[42px] font-bold leading-[1.05] tracking-[-0.03em] text-slate-900">
             Ihr Übergabeprofil
           </h1>
-          <p className="mt-4 max-w-[34em] text-[14px] leading-7 text-slate-600">
-            Ergebnis- und Arbeitsbericht zur organisationalen Übergabefähigkeit.
-            Sechs Dimensionen, jeweils auf einer Skala von 0 bis 100, mit
-            Einordnung, Prüfimpulsen und Fragen für die interne Diskussion.
+          <div
+            className="mt-3 text-[15px] font-semibold"
+            style={{ color: ACCENT_DARK }}
+          >
+            Persönlicher Ergebnis- und Arbeitsbericht
+          </div>
+          <p className="mt-5 max-w-[36em] text-[14px] leading-7 text-slate-600">
+            Wo Ihr Unternehmen bereits gute Voraussetzungen für eine Übergabe
+            mitbringt, welche Abhängigkeiten Aufmerksamkeit verdienen und welche
+            Fragen Sie vor einer Nachfolge klären sollten.
           </p>
           {date && (
             <p className="mt-5 text-[12px] text-slate-500">Erstellt am {date}</p>
@@ -83,59 +136,9 @@ export function PrintCover({
 
           <div className="mt-9">
             <AccentRule />
-            <table
-              style={{ width: "100%", borderCollapse: "collapse" }}
-              className="mt-4"
-            >
-              <tbody>
-                {scores.map((entry) => {
-                  const meta = LEVEL_META[entry.level];
-                  const content = DIMENSIONS[entry.dimension - 1];
-                  return (
-                    <tr key={entry.dimension}>
-                      <td
-                        style={{
-                          padding: "7px 0",
-                          borderBottom: "1px solid #e8eaee",
-                          fontSize: "13px",
-                          color: "#1f2937",
-                        }}
-                      >
-                        {content.title}
-                      </td>
-                      <td
-                        style={{
-                          padding: "7px 0",
-                          borderBottom: "1px solid #e8eaee",
-                          fontSize: "13px",
-                          fontWeight: 700,
-                          textAlign: "right",
-                          whiteSpace: "nowrap",
-                          color: meta.color,
-                        }}
-                      >
-                        {formatScore(entry.score)}
-                        <span style={{ color: "#9aa3af", fontWeight: 400 }}>
-                          /100
-                        </span>
-                      </td>
-                      <td
-                        style={{
-                          padding: "7px 0 7px 18px",
-                          borderBottom: "1px solid #e8eaee",
-                          fontSize: "12px",
-                          textAlign: "right",
-                          whiteSpace: "nowrap",
-                          color: meta.color,
-                        }}
-                      >
-                        {meta.label}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+            <div className="mt-4">
+              <ScoreTable scores={scores} />
+            </div>
           </div>
         </div>
 
@@ -187,22 +190,37 @@ export function PrintClosing() {
         </div>
 
         <div>
-          <div
-            className="text-[12px] font-semibold uppercase tracking-[0.22em]"
-            style={{ color: ACCENT_DARK }}
-          >
-            Nächster Schritt
-          </div>
-          <h2 className="mt-3 text-[26px] font-bold leading-tight tracking-[-0.02em] text-slate-900">
+          <h2 className="text-[26px] font-bold leading-tight tracking-[-0.02em] text-slate-900">
             Was bedeutet das für Ihre konkrete Nachfolge?
           </h2>
-          <p className="mt-4 max-w-[36em] text-[14px] leading-7 text-slate-600">
-            Der Schnellcheck zeigt, wo sich eine genauere Betrachtung lohnt.
-            Welche Punkte für Ihre konkrete Übergabesituation tatsächlich
-            relevant sind, hängt unter anderem von Nachfolgeform, Zeithorizont
-            und der zukünftigen Rolle des heutigen Inhabers ab. Genau diese
-            Einordnung lässt sich im Gespräch klären.
+
+          <p className="mt-5 max-w-[38em] text-[15px] font-semibold leading-7 text-slate-800">
+            Sie wissen jetzt, wo Ihr Unternehmen bereits gute Voraussetzungen
+            für eine Übergabe mitbringt und welche Punkte Sie genauer betrachten
+            sollten.
           </p>
+          <p className="mt-3 max-w-[38em] text-[14px] leading-7 text-slate-600">
+            Welche dieser Themen für Ihre konkrete Nachfolge tatsächlich
+            entscheidend sind, hängt unter anderem von der Nachfolgeform, dem
+            Zeithorizont und Ihrer zukünftigen Rolle im Unternehmen ab.
+          </p>
+          <p className="mt-3 max-w-[38em] text-[15px] font-semibold leading-7 text-slate-800">
+            Wenn Sie Ihr Übergabeprofil gemeinsam einordnen möchten, besprechen
+            wir, welche Themen für Ihre Situation besonders relevant sind und wo
+            es sinnvoll ist, zuerst anzusetzen.
+          </p>
+
+          <div
+            className="mt-7 inline-block rounded-[6px] px-6 py-4"
+            style={{ background: "rgba(0,168,165,0.08)", border: `1px solid ${ACCENT}` }}
+          >
+            <div className="text-[16px] font-bold" style={{ color: ACCENT_DARK }}>
+              Ergebnis gemeinsam einordnen
+            </div>
+            <div className="mt-1 break-all text-[11px] leading-5 text-slate-600">
+              {CONTACT.booking}
+            </div>
+          </div>
 
           <div className="mt-8 grid grid-cols-2 gap-8 text-[13px] leading-6">
             <div>
@@ -218,23 +236,14 @@ export function PrintClosing() {
               <div>{CONTACT.phone}</div>
               <div>{CONTACT.email}</div>
               <div>{CONTACT.website}</div>
-              <div className="mt-3 text-[11px] leading-5 text-slate-500">
-                Termin vereinbaren:
-                <br />
-                <span className="break-all">{CONTACT.booking}</span>
-              </div>
             </div>
           </div>
         </div>
 
-        <p className="text-[10.5px] leading-5 text-slate-500">
-          Der Schnellcheck dient einer strukturierten Erstindikation der
-          organisationalen Übergabefähigkeit. Er zeigt Ansatzpunkte für eine
-          vertiefte Betrachtung, ersetzt aber keine individuelle Analyse der
-          konkreten Nachfolgesituation oder eine persönliche Nachfolgeberatung.
-          Die Auswertung leitet aus den gegebenen Antworten Hinweise ab; nicht
-          jede Interpretation muss die individuelle Situation vollständig
-          treffen.
+        {/* Kompakt und am Fuß derselben Seite, nicht als eigener Abschnitt. */}
+        <p className="uc-avoid-break text-[10.5px] leading-5 text-slate-500">
+          <strong className="font-semibold text-slate-600">Hinweis:</strong>{" "}
+          {REPORT_DISCLAIMER}
         </p>
       </div>
     </div>

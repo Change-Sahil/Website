@@ -15,6 +15,16 @@ export type AssessmentRow = {
   locale: string;
   organization_id: string | null;
   respondent_role: string;
+  /**
+   * Klammert mehrere Assessments zu einem Perspektivvergleich.
+   *
+   * Optional, weil die Spalte erst durch
+   * supabase/uebergabe-check-perspektivvergleich.sql angelegt wird. Sie wird
+   * bewusst noch nicht mitgelesen: ein Select auf eine fehlende Spalte lässt
+   * Supabase mit 42703 fehlschlagen und die Ergebnisseite liefe ins Leere.
+   * Erst mitselektieren, wenn die Auswertung sie tatsächlich braucht.
+   */
+  comparison_id?: string | null;
   answers: Answers;
   scores: Scores;
   /** IDs der ausgelösten Item-Hinweise, z. B. "D2_I3_KEY_PERSON_RISK". */

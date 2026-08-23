@@ -604,11 +604,15 @@ html {
     break-before: page;
     page-break-before: always;
   }
+  /* Die Höhe bewusst deutlich unter dem Satzspiegel (269mm = 297mm minus
+     2 × 14mm Rand). Bei 265mm schob die Fußzeile des Deckblatts eine zweite,
+     ansonsten leere Seite an: Chrome rechnet Rand und Zeilenhöhe zusätzlich
+     auf, und das Blatt hat unten ohnehin Luft. */
   .uc-print-cover-inner {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 265mm;
+    min-height: 238mm;
   }
   .uc-print-cover-title {
     padding-bottom: 8mm;
@@ -623,11 +627,17 @@ html {
     page-break-inside: avoid;
   }
 
+  /* Eine Überschrift darf nicht als letzte Zeile einer Seite stehen. Ohne
+     break-after landete „Fragen für Ihre interne Diskussion“ am Seitenfuß und
+     der zugehörige Text erst auf der Folgeseite. */
   .uc-report h1,
   .uc-report h2,
   .uc-report h3,
-  .uc-report h4 {
+  .uc-report h4,
+  .uc-report .section-eyebrow {
     break-inside: avoid;
+    break-after: avoid;
+    page-break-after: avoid;
   }
 
   .uc-report p,
@@ -688,6 +698,22 @@ html {
   .uc-report .mt-6 {
     margin-top: 10px !important;
   }
+  /* Die Arbeitsseite ist die einzige Ausnahme von der Verdichtung: Hier wird
+     mit der Hand geschrieben. Die Abstände sind deshalb in mm bemessen, nicht
+     am Bildschirmlayout. */
+  .uc-report .uc-worksheet .mt-6 {
+    margin-top: 9mm !important;
+  }
+  .uc-report .uc-worksheet .mt-4 {
+    margin-top: 8mm !important;
+  }
+  .uc-report .uc-worksheet .space-y-7 > * + * {
+    margin-top: 13mm !important;
+  }
+  .uc-report .uc-worksheet > div > .uc-avoid-break + .uc-avoid-break {
+    margin-top: 15mm !important;
+  }
+
   /* Das Diagramm braucht auf Papier weniger Fläche als am Bildschirm. */
   .uc-report svg {
     max-width: 340px !important;

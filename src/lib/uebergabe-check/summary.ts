@@ -33,40 +33,38 @@ export const SUMMARY_TITLE = "Was Sie aus diesem Ergebnis mitnehmen sollten";
  * ohne die Regeln anzufassen.
  */
 const TEXT = {
-  // Bewusst „im direkten Vergleich“ statt „können unterschiedlich ausgeprägt
-  // sein“: der Satz muss auch dann elegant sein, wenn alle sechs Werte
-  // identisch ausfallen.
+  // „im direkten Vergleich“ statt „können unterschiedlich ausgeprägt sein“:
+  // der Satz muss auch dann tragen, wenn alle sechs Werte identisch ausfallen.
   intro:
-    "Ihr Übergabeprofil zeigt die Ausprägung der sechs betrachteten Bereiche im direkten Vergleich. Entscheidend ist dabei nicht ein Gesamtwert, sondern der Blick auf die einzelnen Dimensionen und die für Ihre konkrete Übergabesituation relevanten Abhängigkeiten.",
+    "Ihr Übergabeprofil zeigt die sechs betrachteten Bereiche im direkten Vergleich. Aussagekräftig ist dabei nicht ein Gesamtwert, sondern das Muster: wo Ihr Unternehmen bereits gute Voraussetzungen mitbringt und wo eine Übergabe auf Abhängigkeiten treffen würde.",
 
   strongSingle: (name: string) =>
-    `Besonders gut ausgeprägt ist in Ihrer Einschätzung der Bereich ${name}.`,
+    `Besonders tragfähig wirkt ${name}. Für eine Übergabe ist das ein realer Vorteil, weil ein Nachfolger hier auf Funktionierendes trifft und nicht erst etwas aufbauen muss.`,
   strongFew: (list: string) =>
-    `Besonders gut ausgeprägt sind in Ihrer Einschätzung die Bereiche ${list}.`,
+    `Besonders tragfähig wirken ${list}. Für eine Übergabe ist das ein realer Vorteil, weil ein Nachfolger hier auf Funktionierendes trifft und nicht erst etwas aufbauen muss.`,
   strongMany: (list: string) =>
-    `Mehrere der betrachteten Bereiche sind in Ihrer Einschätzung bereits gut ausgeprägt. Dazu zählen insbesondere ${list}.`,
+    `Mehrere Bereiche wirken bereits tragfähig, darunter vor allem ${list}. Ein Nachfolger trifft dort auf Funktionierendes und muss nicht erst etwas aufbauen.`,
   strongAll:
-    "Die im Schnellcheck betrachteten Voraussetzungen sind in Ihrer Einschätzung über alle sechs Dimensionen hinweg gut ausgeprägt.",
+    "Über alle sechs Dimensionen hinweg wirkt Ihr Unternehmen bereits weitgehend unabhängig von einzelnen Personen aufgestellt. Das ist für einen inhabergeführten Betrieb eine ungewöhnlich gute Ausgangslage.",
 
   developSingle: (name: string, low: boolean) =>
-    `Eine genauere Betrachtung bietet sich insbesondere bei ${name} an. Die dort betrachteten Voraussetzungen sind in Ihrer Einschätzung bislang ${low ? "gering" : "nur teilweise"} ausgeprägt.`,
+    `Genauer hinsehen sollten Sie vor allem bei ${name}. Die Antworten legen nahe, dass die Organisation hier ${low ? "stark" : "noch spürbar"} an Personen hängt statt an Regeln, und genau das lässt sich bei einem Wechsel nicht mit übergeben.`,
   developFew: (list: string, low: boolean) =>
-    `Eine genauere Betrachtung bietet sich insbesondere bei ${list} an. Die dort betrachteten Voraussetzungen sind in Ihrer Einschätzung bislang ${low ? "nur teilweise beziehungsweise gering" : "nur teilweise"} ausgeprägt.`,
+    `Genauer hinsehen sollten Sie vor allem bei ${list}. Die Antworten legen nahe, dass die Organisation dort ${low ? "stark" : "noch spürbar"} an Personen hängt statt an Regeln, und genau das lässt sich bei einem Wechsel nicht mit übergeben.`,
   developAll:
-    "In mehreren Bereichen zeigt Ihr Profil Entwicklungsbedarf im Hinblick auf eine spätere Übergabe. Das bedeutet nicht, dass die heutige Organisation schlecht funktioniert. Vielmehr lohnt sich eine gezielte Betrachtung der bestehenden Abhängigkeiten und ihrer Bedeutung für die geplante Nachfolge.",
+    "Ihr Profil spricht dafür, dass die Organisation an vielen Stellen noch stark von einzelnen Personen getragen wird. Das ist im inhabergeführten Mittelstand der Normalfall und kein Zeichen schlechter Führung. Für eine Übergabe wird daraus allerdings Arbeit, weil sich persönliche Routinen und Beziehungen nicht zusammen mit dem Eigentum übertragen lassen.",
 
   middleAll:
-    "Die betrachteten Voraussetzungen sind in Ihrer Einschätzung über die sechs Dimensionen hinweg überwiegend ausgeprägt. Die Einzelwerte liegen dabei in einem Bereich, in dem sich eine differenzierte Betrachtung der jeweiligen Teilaspekte lohnt.",
+    "Über alle sechs Dimensionen hinweg liegt Ihr Profil in einem mittleren Bereich. Das spricht für eine Organisation, die im Alltag zuverlässig funktioniert, deren Belastbarkeit sich aber erst zeigt, wenn gewohnte Personen und eingespielte Wege wegfallen.",
 
   itemFindings:
-    "Zusätzlich fallen einzelne Antworten auf, die unabhängig vom jeweiligen Dimensionswert für eine Übergabe relevant sein können. Diese Hinweise finden Sie bei den entsprechenden Dimensionen unter „Auffällig in Ihren Antworten“.",
-  // Bei durchgehend hohen Werten wäre „zusätzlich fallen Antworten auf“ ein
-  // Bruch. Der Satz greift das starke Profil auf und behält den Verweis bei.
+    "Besonders ins Auge fallen einzelne Antworten, die unabhängig vom jeweiligen Dimensionswert für eine Übergabe bedeutsam sein können. Sie finden sie bei den betreffenden Dimensionen unter „Auffällig in Ihren Antworten“ und gebündelt in den ausgewählten Prüffeldern.",
+  // Bei durchgehend hohen Werten wäre „besonders ins Auge fallen“ ein Bruch.
   itemFindingsStrongProfile:
-    "Auch bei einem insgesamt starken Profil können einzelne Antworten auf Abhängigkeiten hinweisen, die für die konkrete Übergabesituation relevant sind. Diese Hinweise finden Sie bei den entsprechenden Dimensionen unter „Auffällig in Ihren Antworten“.",
+    "Auch bei einem insgesamt starken Profil fallen einzelne Antworten auf, die für eine Übergabe bedeutsam sein können. Sie finden sie bei den betreffenden Dimensionen unter „Auffällig in Ihren Antworten“.",
 
   close:
-    "Welche dieser Punkte tatsächlich Priorität haben, lässt sich aus dem Schnellcheck allein nicht ableiten. Das hängt unter anderem von der geplanten Nachfolgeform, dem Zeithorizont und der zukünftigen Rolle des heutigen Inhabers ab.",
+    "Welche dieser Punkte für Sie tatsächlich Priorität haben, hängt von der Nachfolgeform, dem Zeithorizont und Ihrer künftigen Rolle im Unternehmen ab. Für eine Übergabe dürfte es sich lohnen, zuerst dort anzusetzen, wo eine deutliche Abhängigkeit und ein naher Zeitpunkt zusammenfallen.",
 };
 
 function joinNames(ids: DimensionId[]): string {

@@ -1,32 +1,42 @@
 // src/components/uebergabe-check/PersonalReportExtras.tsx
 //
-// Die Zusatzteile, die den persönlichen Ergebnisbericht von der frei
-// zugänglichen Ergebnisseite unterscheiden. Erscheinen ausschließlich auf der
-// Seite hinter dem Ergebnislink aus der E-Mail.
+// Die Zusatzteile, die den persönlichen Ergebnis- und Arbeitsbericht von der
+// frei zugänglichen Ergebnisseite unterscheiden. Erscheinen ausschließlich auf
+// der Seite hinter dem Ergebnislink aus der E-Mail.
 //
-// Aus dem Bericht soll eine Arbeitsgrundlage werden, kein längerer Ausdruck
-// desselben Inhalts.
+// Reihenfolge:
+//   1. Was Sie aus diesem Ergebnis mitnehmen sollten
+//   2. Ihre ausgewählten Prüffelder
+//   3. Fragen für Ihre interne Diskussion
+//   4. Wie sehen andere Ihr Unternehmen?
+//   5. Ihr nächster Schritt (Arbeitsseite)
 
+import { dimensionContent } from "@/lib/uebergabe-check/content";
+import type { Answers } from "@/lib/uebergabe-check/items";
+import {
+  PRUEFFELDER_INTRO,
+  PRUEFFELDER_TITLE,
+  buildPruefelder,
+} from "@/lib/uebergabe-check/pruefelder";
 import {
   DISCUSSION_INTRO,
   DISCUSSION_TITLE,
+  PERSPECTIVE_PARAGRAPHS,
+  PERSPECTIVE_TITLE,
   WORKSHEET_FIELDS,
   WORKSHEET_INTRO,
   WORKSHEET_TITLE,
   buildDiscussionPoints,
 } from "@/lib/uebergabe-check/report-blocks";
-import { SUMMARY_TITLE, buildSummary } from "@/lib/uebergabe-check/summary";
-import { dimensionContent } from "@/lib/uebergabe-check/content";
-import type { Answers } from "@/lib/uebergabe-check/items";
 import { computeFlags, type DimensionScore } from "@/lib/uebergabe-check/scoring";
+import { SUMMARY_TITLE, buildSummary } from "@/lib/uebergabe-check/summary";
+
+const ACCENT = "rgb(0,168,165)";
+const ACCENT_DARK = "rgb(0,112,125)";
 
 /**
  * Kurzer Hinweis an der Spitze der Berichtsseite: Was enthält dieser Bericht
- * über die frei zugängliche Ergebnisseite hinaus? Ohne diesen Hinweis sieht der
- * Bericht auf den ersten Blick aus wie dieselbe Seite, und der Gegenwert für die
- * E-Mail-Adresse bleibt unsichtbar.
- *
- * Aufgezählt wird nur, was tatsächlich gerendert wird.
+ * über die frei zugängliche Ergebnisseite hinaus?
  */
 export function ReportContentsNote({
   scores,
@@ -36,17 +46,15 @@ export function ReportContentsNote({
   answers: Answers;
 }) {
   const flags = computeFlags(answers);
-  const entries: string[] = ["eine Zusammenfassung Ihres Profils"];
+  const entries: string[] = ["eine persönliche Profilzusammenfassung"];
 
-  if (buildDiscussionPoints(scores, flags).length > 0) {
-    entries.push("Fragen für Ihre interne Diskussion");
+  if (buildPruefelder(scores, flags).length > 0) {
+    entries.push("ausgewählte Prüffelder");
   }
+  entries.push("Fragen für Ihre interne Diskussion");
   entries.push("eine Arbeitsseite zum Ausfüllen");
 
-  const list =
-    entries.length === 1
-      ? entries[0]
-      : `${entries.slice(0, -1).join(", ")} sowie ${entries[entries.length - 1]}`;
+  const list = `${entries.slice(0, -1).join(", ")} sowie ${entries[entries.length - 1]}`;
 
   return (
     // Nicht im Druck: Der Kasten erklärt den Mehrwert gegenüber der freien
@@ -71,16 +79,31 @@ export function ReportContentsNote({
 }
 
 /** Beschreibbare Linien, die auch im Ausdruck stehen bleiben. */
-function WriteLines({ count }: { count: number }) {
+function WriteLines({
+  count,
+  numbered = false,
+}: {
+  count: number;
+  numbered?: boolean;
+}) {
   return (
-    <div className="mt-4 space-y-8">
+    <div className="mt-4 space-y-7">
       {Array.from({ length: count }, (_, index) => (
-        <div
-          key={index}
-          aria-hidden
-          className="h-px w-full"
-          style={{ background: "rgba(15,23,42,0.16)" }}
-        />
+        <div key={index} className="flex items-end gap-3">
+          {numbered && (
+            <span
+              aria-hidden
+              className="shrink-0 text-[13px] font-semibold text-slate-400"
+            >
+              {index + 1}.
+            </span>
+          )}
+          <span
+            aria-hidden
+            className="block h-px w-full"
+            style={{ background: "rgba(15,23,42,0.16)" }}
+          />
+        </div>
       ))}
     </div>
   );
@@ -95,10 +118,12 @@ export default function PersonalReportExtras({
 }) {
   const flags = computeFlags(answers);
   const summary = buildSummary(scores, flags);
+  const pruefelder = buildPruefelder(scores, flags);
   const discussion = buildDiscussionPoints(scores, flags);
 
   return (
     <div className="uc-report space-y-6 md:space-y-8">
+      {/* ── Profilzusammenfassung ────────────────────────────────────────── */}
       <section className="panel">
         <h2 className="text-xl font-bold text-slate-900">{SUMMARY_TITLE}</h2>
         <div className="mt-4 space-y-3">
@@ -110,6 +135,64 @@ export default function PersonalReportExtras({
         </div>
       </section>
 
+      {/* ── Prüffelder. Entfällt bei einem guten Profil ohne Hinweise. ───── */}
+      {pruefelder.length > 0 && (
+        <section className="panel">
+          <h2 className="text-xl font-bold text-slate-900">
+            {PRUEFFELDER_TITLE}
+          </h2>
+          <p className="mt-2 max-w-2xl text-[15px] leading-7 muted">
+            {PRUEFFELDER_INTRO}
+          </p>
+
+          <div className="mt-6 space-y-4">
+            {pruefelder.map((feld) => (
+              <div
+                key={feld.dimension}
+                className="uc-avoid-break rounded-2xl border border-slate-200 border-l-[3px] bg-white p-5"
+                style={{ borderLeftColor: ACCENT }}
+              >
+                <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-400">
+                  {dimensionContent(feld.dimension).title}
+                </div>
+                <div className="mt-1 text-[16px] font-bold text-slate-900">
+                  {feld.title}
+                </div>
+
+                <div className="mt-3">
+                  <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">
+                    Warum für eine Übergabe relevant
+                  </div>
+                  <p className="mt-1.5 text-[14px] leading-6 text-slate-600">
+                    {feld.why}
+                  </p>
+                </div>
+
+                <div className="mt-4 grid gap-4 rounded-xl bg-slate-50/80 p-4 sm:grid-cols-2">
+                  <div>
+                    <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">
+                      Frage zur internen Klärung
+                    </div>
+                    <p className="mt-1.5 text-[14px] leading-6 text-slate-700">
+                      {feld.question}
+                    </p>
+                  </div>
+                  <div>
+                    <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">
+                      Möglicher erster Schritt
+                    </div>
+                    <p className="mt-1.5 text-[14px] leading-6 text-slate-700">
+                      {feld.step}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ── Fragen für die interne Diskussion ────────────────────────────── */}
       {discussion.length > 0 && (
         <section className="panel">
           <h2 className="text-xl font-bold text-slate-900">
@@ -125,18 +208,15 @@ export default function PersonalReportExtras({
                 <span
                   aria-hidden
                   className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[13px] font-bold text-white"
-                  style={{ background: "rgb(0,112,125)" }}
+                  style={{ background: ACCENT_DARK }}
                 >
                   {index + 1}
                 </span>
                 <div>
-                  <div className="text-[12px] font-semibold uppercase tracking-[0.14em] text-slate-400">
+                  <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-400">
                     {dimensionContent(point.dimension).title}
                   </div>
-                  <div className="mt-1 text-[15px] font-semibold text-slate-900">
-                    {point.topic}
-                  </div>
-                  <p className="mt-1.5 text-[15px] leading-7 text-slate-600">
+                  <p className="mt-1 text-[15px] font-semibold leading-7 text-slate-900">
                     {point.question}
                   </p>
                 </div>
@@ -146,17 +226,48 @@ export default function PersonalReportExtras({
         </section>
       )}
 
-      <section className="panel">
+      {/* ── Perspektivvergleich ankündigen ───────────────────────────────── */}
+      <section
+        className="uc-avoid-break rounded-2xl border p-6 sm:p-8"
+        style={{
+          borderColor: "rgba(0,168,165,0.30)",
+          background: "rgba(0,168,165,0.05)",
+        }}
+      >
+        <h2 className="text-xl font-bold text-slate-900">
+          {PERSPECTIVE_TITLE}
+        </h2>
+        <div className="mt-3 space-y-3">
+          {PERSPECTIVE_PARAGRAPHS.map((paragraph, index) => (
+            <p
+              key={index}
+              className={
+                index < 2
+                  ? "text-[15px] font-semibold leading-7 text-slate-800"
+                  : "text-[15px] leading-7 text-slate-600"
+              }
+            >
+              {paragraph}
+            </p>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Arbeitsseite ─────────────────────────────────────────────────── */}
+      {/* Als Ganzes geschützt: aufgeteilt landete regelmäßig das letzte Feld
+          allein auf einer sonst leeren Seite. Zusammenhängend ist sie außerdem
+          das, was sie sein soll, nämlich eine Seite zum Ausfüllen. */}
+      <section className="panel uc-avoid-break uc-worksheet">
         <h2 className="text-xl font-bold text-slate-900">{WORKSHEET_TITLE}</h2>
         <p className="mt-2 text-[15px] leading-7 muted">{WORKSHEET_INTRO}</p>
 
-        <div className="mt-6 space-y-8">
+        <div className="mt-6 space-y-7">
           {WORKSHEET_FIELDS.map((field) => (
             <div key={field.label} className="uc-avoid-break">
               <div className="text-[15px] font-semibold text-slate-800">
                 {field.label}
               </div>
-              <WriteLines count={field.lines} />
+              <WriteLines count={field.lines} numbered={field.numbered} />
             </div>
           ))}
         </div>

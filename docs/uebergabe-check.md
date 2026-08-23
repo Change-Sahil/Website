@@ -64,29 +64,44 @@ angezeigt, aber nicht gespeichert, und die Zusendung per Mail entfällt.
 | Ergebnisbericht | [`src/components/uebergabe-check/Report.tsx`](../src/components/uebergabe-check/Report.tsx) |
 | Zusatzteile des persönlichen Berichts | [`src/lib/uebergabe-check/report-blocks.ts`](../src/lib/uebergabe-check/report-blocks.ts) |
 | Profilzusammenfassung | [`src/lib/uebergabe-check/summary.ts`](../src/lib/uebergabe-check/summary.ts) |
+| Auswahl der Prüffelder | [`src/lib/uebergabe-check/pruefelder.ts`](../src/lib/uebergabe-check/pruefelder.ts) |
+| Perspektivvergleich (Schalter, Rollen, Vergleichslogik) | [`src/lib/uebergabe-check/comparison.ts`](../src/lib/uebergabe-check/comparison.ts) |
+| Deckblatt, Briefkopf, Schlussblatt im Druck | [`src/components/uebergabe-check/PrintFrame.tsx`](../src/components/uebergabe-check/PrintFrame.tsx) |
 | Ergebnismail an den Nutzer | [`src/lib/uebergabe-check/report-email.ts`](../src/lib/uebergabe-check/report-email.ts) |
 | Interne Benachrichtigung | [`src/lib/uebergabe-check/emails.ts`](../src/lib/uebergabe-check/emails.ts) |
 | Datenbankschema | [`supabase/uebergabe-check.sql`](../supabase/uebergabe-check.sql) |
+| Erweiterung Perspektivvergleich | [`supabase/uebergabe-check-perspektivvergleich.sql`](../supabase/uebergabe-check-perspektivvergleich.sql) |
 
 Item-Texte und Berichtstexte sind reine Daten. Formulierungen lassen sich
 ändern, ohne die Logik anzufassen.
 
 ---
 
-## 2a. Zwei Stufen: Ergebnisseite und persönlicher Bericht
+## 2a. Die Wertstufen
 
-Der Funnel unterscheidet bewusst zwischen *Ergebnis ansehen* und *Ergebnis
-mitnehmen*. Zurückgehalten wird dabei nichts, was zum Verstehen des Profils
-nötig ist.
+Vier Stufen mit steigender Verbindlichkeit. Jede Stufe ist für sich nützlich,
+keine hält etwas zurück, was zum Verstehen der vorherigen nötig wäre.
+
+| Stufe | Was | Preis |
+| :--- | :--- | :--- |
+| 1 | Schnellcheck mit vollständigem Ergebnis | kostenlos, ohne Registrierung |
+| 2 | Persönlicher Ergebnis- und Arbeitsbericht | gegen E-Mail-Adresse |
+| 3 | Perspektivvergleich mehrerer Rollen | kostenpflichtig, **noch nicht gebaut**, siehe Abschnitt 6 |
+| 4 | Gemeinsame Einordnung im Gespräch | Mandatsanbahnung |
+
+Stufe 1 gegen Stufe 2 im Detail:
 
 | | Ergebnisseite (frei) | Persönlicher Bericht (nach E-Mail) |
 | :--- | :--- | :--- |
 | Netzdiagramm und sechs Werte | ✓ | ✓ |
 | Einordnung und Prüfimpuls je Dimension | ✓ | ✓ |
 | Auffällig in Ihren Antworten | ✓ | ✓ |
-| Zusammenfassung des Profils | – | ✓ (Texte offen, siehe unten) |
+| Zusammenfassung des Profils | – | ✓ |
+| Ihre ausgewählten Prüffelder | – | ✓ (entfällt bei gutem Profil) |
 | Fragen für die interne Diskussion | – | ✓ |
+| Ausblick Perspektivvergleich | – | ✓ |
 | Arbeitsseite „Ihr nächster Schritt" | – | ✓ |
+| Deckblatt, Briefkopf, Schlussblatt im Druck | – | ✓ |
 | Als PDF sichern | – | ✓ |
 
 Der Bericht ist die Seite unter `/de/uebergabe-check/ergebnis/<uuid>`, erreichbar
@@ -142,10 +157,28 @@ es „gering" statt „nur teilweise" ausgeprägt, und bei durchgehend hohen Wer
 ersetzt ein eigener Satz den Standardhinweis auf die Item-Befunde, statt beide
 nacheinander zu zeigen.
 
-Die *Fragen für die interne Diskussion* sind vorläufig aus bereits freigegebenen
-Prüfimpulsen der Item-Hinweise zusammengesetzt, enthalten also keine neue
-inhaltliche Aussage. Sobald eigens formulierte Diskussionsfragen vorliegen, wird
-in `buildDiscussionPoints()` nur die Quelle getauscht.
+### Ihre ausgewählten Prüffelder
+
+[`pruefelder.ts`](../src/lib/uebergabe-check/pruefelder.ts) wählt **höchstens
+drei** Felder, je Dimension eines. Jedes Feld nennt: warum es für eine Übergabe
+relevant ist, eine Frage zur internen Klärung und einen möglichen ersten
+Schritt.
+
+Die Auswahl gewichtet zwei Signale, die interne Flag-Priorität
+(`PRIORITY_WEIGHT`) und die Dimensionsstufe (`LEVEL_WEIGHT`). Sichtbar wird
+davon nichts, weder Rangnummer noch Punktzahl.
+
+> Bei einem guten Profil ohne Hinweise bleibt die Liste **leer** und der ganze
+> Abschnitt entfällt. Das ist Absicht: ein Bedarf wird nicht erfunden, nur weil
+> der Bericht sonst dünner aussieht.
+
+### Fragen für die interne Diskussion
+
+`buildDiscussionPoints()` liefert bis zu `DISCUSSION_COUNT` (aktuell fünf)
+offene Fragen. Grundlage sind die ausgelösten Item-Hinweise über
+`FLAG_QUESTIONS`; reichen die nicht, füllen dimensionsbezogene Fragen aus
+`DIMENSION_QUESTIONS` auf. Es sind echte Fragen, keine als Frage getarnten
+Handlungsaufforderungen.
 
 ---
 
@@ -235,8 +268,10 @@ https://change-werkstatt-sahil.de/de/uebergabe-check?src=pretest-01
 
 ### Phase 1 – Online-Piloten (n=10–20)
 
-Unverändert derselbe Stand. Die fünf Feedbackfragen sind über `BETA_MODE`
-in `check-client.tsx` aktiv.
+Unverändert derselbe Stand. `BETA_MODE` in `check-client.tsx` steht auf `false`,
+die fünf Feedbackfragen erscheinen also **nicht**. Tabelle, API-Route und
+Formularkomponente bleiben erhalten: ein Umschalten auf `true` blendet sie
+wieder ein.
 
 Auswertung im Supabase SQL Editor:
 
@@ -247,7 +282,7 @@ select * from uc_beta_overview;
 ### Phase 2 – Öffentlicher MVP
 
 1. `INDEXABLE = true` in [`src/app/[locale]/uebergabe-check/page.tsx`](../src/app/%5Blocale%5D/uebergabe-check/page.tsx)
-2. `BETA_MODE = false` in `check-client.tsx` (blendet die Feedbackfragen aus)
+2. `BETA_MODE` in `check-client.tsx` steht bereits auf `false`
 3. `/uebergabe-check` in `staticPages` in [`src/app/sitemap.ts`](../src/app/sitemap.ts) ergänzen
 4. Navigationseintrag in [`src/components/Header.tsx`](../src/components/Header.tsx) und Einstiegspunkte
    auf Startseite, Leistungen und in den Impulse-Artikeln setzen
@@ -266,13 +301,30 @@ Gesprächsbedarf, den ein einzelnes Profil nicht erzeugt.
 
 * `uc_assessments` hat `organization_id` und `respondent_role`, dazu die Tabelle
   `uc_organizations`. Mehrere Assessments je Unternehmen sind schreibbar.
+* [`uebergabe-check-perspektivvergleich.sql`](../supabase/uebergabe-check-perspektivvergleich.sql)
+  ergänzt `uc_comparisons` (klammert die Einzelchecks), `uc_comparison_invites`
+  (ein Token je Teilnehmer), die Spalte `uc_assessments.comparison_id` und die
+  View `uc_comparison_scores`. Die Rollenliste wächst auf `owner`, `management`,
+  `leader`, `key_person`, `other`.
+  **Noch nicht ausgeführt.** Bis dahin gilt: `comparison_id` darf nicht
+  mitselektiert werden, sonst antwortet Supabase mit `42703` und die
+  Ergebnisseite läuft ins Leere. Deshalb ist das Feld in
+  [`db.ts`](../src/lib/uebergabe-check/db.ts) optional und aus dem Select
+  ausgenommen.
+* [`comparison.ts`](../src/lib/uebergabe-check/comparison.ts) enthält
+  Rollenmodell, Gruppierung, Dimensions- und Itemvergleich sowie
+  `MIN_GROUP_SIZE_FOR_AGGREGATE`. Der Hauptschalter `COMPARISON_ENABLED` steht
+  auf `false`; **nur er** gibt den Vergleich frei, nicht die Migration.
+* [`items.ts`](../src/lib/uebergabe-check/items.ts) kennt `roleText` und
+  `itemText(item, role)`. Die Varianten sind bewusst **leer**, siehe Punkt 2.
 * [`SpiderWeb.tsx`](../src/components/uebergabe-check/SpiderWeb.tsx) nimmt
   `series: ChartSeries[]` entgegen und zeichnet beliebig viele Profile
   übereinander, inklusive Legende. Achsenwerte erscheinen nur bei einer Serie.
   Ein überlagertes Diagramm ist damit eine Datenfrage, keine Neuentwicklung.
   Farbreihenfolge in `SERIES_COLORS`.
 
-**Was fachlich vorher geklärt sein muss:**
+**Was fachlich vorher geklärt sein muss** (alles Sache des Modellentwicklers,
+nicht der Umsetzung):
 
 1. **Wer darf teilnehmen?** Rollenmodell, Mindestzahl je Rolle, Umgang mit
    Anonymität bei kleinen Gruppen (bei zwei Führungskräften ist eine Einzelantwort
@@ -287,5 +339,54 @@ Gesprächsbedarf, den ein einzelnes Profil nicht erzeugt.
    Wahrnehmungen übereinstimmen und wo sie auseinanderliegen. Er zeigt nicht die
    „tatsächliche Übergabefähigkeit".
 
+4. **Ab welcher Differenz ist eine Abweichung berichtenswert?**
+   `HEURISTIC_SPREAD_BANDS` in `comparison.ts` enthält vorläufige Schwellen,
+   ausdrücklich als Heuristik gekennzeichnet. Sie sind nicht validiert und
+   dürfen ohne fachliche Freigabe nicht in einen ausgelieferten Bericht.
+5. **Die Texte des Perspektivberichts** existieren noch nicht. Im persönlichen
+   Bericht steht bisher nur der Ausblick `PERSPECTIVE_PARAGRAPHS`.
+
 Erst danach programmieren. In Beta v1.0 laufen alle Datensätze mit
-`organization_id = null` und `respondent_role = 'owner'`.
+`organization_id = null`, `comparison_id = null` und `respondent_role = 'owner'`.
+
+---
+
+## 7. Drucklayout
+
+Der Bericht wird nicht als PDF gerendert, sondern über das Print-Stylesheet in
+[`globals.css`](../src/app/globals.css) gedruckt (Block `@media print`).
+
+* `@page { size: A4 }` ist zwingend. Ohne die Angabe druckt Chrome je nach
+  Systemvorgabe US Letter, und das Deckblatt ist auf A4 bemessen.
+* Die Schriftgrößen müssen **einzeln** überschrieben werden. Fast jeder Text
+  trägt eine explizite Tailwind-Klasse wie `text-[15px]`, und die schlägt eine
+  am Container geerbte Größe. Der Punkt in einem arbiträren Wert wird von
+  Tailwind zu `\.` maskiert: `.text-\[12\.5px\]`.
+* Ausgeblendet wird `body > header` und `body > footer`, nicht `header`.
+  Ein pauschaler Selektor träfe auch die Überschrift des Berichts.
+* **Kein** `break-inside: avoid` auf Panels und Sections. Eine Dimension füllt
+  oft zwei Drittel einer Seite; ein unerfüllbares Umbruchverbot zwingt jede
+  Dimension auf eine neue Seite und verdoppelt das Dokument fast. Geschützt wird
+  nur, was zusammengehört: `.uc-avoid-break`.
+* Überschriften tragen `break-after: avoid`, sonst steht eine Abschnitts-
+  überschrift als letzte Zeile einer Seite.
+* `.uc-print-cover-inner { min-height: 238mm }` liegt bewusst deutlich unter dem
+  Satzspiegel von 269mm. Bei 265mm schob die Fußzeile des Deckblatts eine
+  zweite, ansonsten leere Seite an.
+* Die Arbeitsseite ist die einzige Ausnahme von der Verdichtung. Ihre Abstände
+  sind über `.uc-worksheet` in Millimetern bemessen, weil dort mit der Hand
+  geschrieben wird.
+
+Geprüfter Stand über vier Antwortprofile, ohne leere Seiten, Waisenzeilen oder
+Überschriften am Seitenfuß:
+
+| Profil | Seiten |
+| :--- | ---: |
+| alle Dimensionen 100, keine Hinweise | 9 |
+| alle Dimensionen 50, keine Hinweise | 9 |
+| gemischt, sechs Hinweise | 12 |
+| alle Dimensionen 0, dreizehn Hinweise | 13 |
+
+Die Seitenzahl schwankt mit der Zahl der Hinweise, und das ist richtig so: bei
+dreizehn Hinweisen steht mehr im Bericht. Nicht künstlich auf eine feste
+Seitenzahl optimieren.

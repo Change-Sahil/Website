@@ -27,6 +27,14 @@ create table if not exists public.uc_comparisons (
   organization_id uuid references public.uc_organizations (id) on delete set null
 );
 
+-- Das Assessment des Initiators. Ueber dessen Eintrag in uc_leads werden Name
+-- und E-Mail aufgeloest, wenn eine neue Einschaetzung eingeht. Bewusst keine
+-- zweite Kopie der Kontaktdaten: sie soll nur an einer Stelle liegen und mit
+-- der bestehenden Loeschfrist verschwinden.
+alter table public.uc_comparisons
+  add column if not exists initiator_assessment_id uuid
+    references public.uc_assessments (id) on delete set null;
+
 create index if not exists uc_comparisons_created_at_idx
   on public.uc_comparisons (created_at desc);
 

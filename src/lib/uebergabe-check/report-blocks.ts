@@ -124,7 +124,7 @@ export function buildDiscussionPoints(
 export const PERSPECTIVE_TITLE = "Wie sehen andere Ihr Unternehmen?";
 
 export const PERSPECTIVE_INTRO =
-  "Sie haben den Schnellcheck aus Ihrer Perspektive beantwortet. Führungskräfte oder Schlüsselpersonen können dieselben Themen anders einschätzen, gerade bei Verantwortung, Wissen, informellen Strukturen und Kultur.";
+  "Sie haben den Schnellcheck aus Ihrer Perspektive beantwortet. Führungskräfte und Schlüsselpersonen können dieselben Strukturen anders erleben, gerade bei Verantwortung, Wissen, informellen Strukturen und Kultur.";
 
 export const PERSPECTIVE_HOOK =
   "Der Vergleich ist besonders aufschlussreich: Wo stimmen die Perspektiven überein? Wo liegen sie auseinander? Und welche Unterschiede sollten vor einer Übergabe geklärt werden?";
@@ -133,6 +133,17 @@ export const PERSPECTIVE_CTA = "Perspektivvergleich starten";
 
 export const PERSPECTIVE_CTA_HINT =
   "Laden Sie ausgewählte Führungskräfte oder Schlüsselpersonen zu einer eigenen Einschätzung ein und vergleichen Sie anschließend die Ergebnisse.";
+
+/**
+ * Begründet die E-Mail-Adresse, bevor danach gefragt wird.
+ *
+ * Der Satz muss die tatsächliche Funktion benennen, nicht eine Gegenleistung
+ * behaupten. Genau das unterscheidet ihn von einem E-Mail-Gate: Ohne Adresse
+ * gäbe es niemanden, dem die eingehenden Einschätzungen zugeordnet und
+ * zugestellt werden könnten.
+ */
+export const PERSPECTIVE_EMAIL_NOTE =
+  "Für den Perspektivvergleich benötigen wir Ihre E-Mail-Adresse. Darüber informieren wir Sie, sobald weitere Einschätzungen vorliegen, und stellen Ihnen den persönlichen Vergleichsbericht bereit.";
 
 // ── Arbeitsseite ────────────────────────────────────────────────────────────
 //

@@ -56,6 +56,30 @@ export function isDbConfigured(): boolean {
   return Boolean(process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY);
 }
 
+/**
+ * Liegen zu diesem Durchlauf bereits Kontaktdaten vor?
+ *
+ * Entscheidet, ob der Einstieg in den Perspektivvergleich noch einmal nach
+ * Name und E-Mail fragt. Wer den Bericht bereits angefordert hat, soll das
+ * Formular nicht ein zweites Mal sehen.
+ */
+export async function hasLead(assessmentId: string): Promise<boolean> {
+  const db = getDb();
+  if (!db) return false;
+
+  const { data, error } = await db
+    .from("uc_leads")
+    .select("assessment_id")
+    .eq("assessment_id", assessmentId)
+    .maybeSingle();
+
+  if (error) {
+    console.error("UC_DB_HAS_LEAD", error);
+    return false;
+  }
+  return Boolean(data);
+}
+
 /** Lädt einen Datensatz für die permanente Ergebnisseite. */
 export async function getAssessment(id: string): Promise<AssessmentRow | null> {
   const db = getDb();

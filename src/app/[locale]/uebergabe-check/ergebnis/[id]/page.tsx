@@ -19,7 +19,7 @@ import {
 import Report from "@/components/uebergabe-check/Report";
 import ResultCtas from "@/components/uebergabe-check/ResultCtas";
 import { METHOD_NOTE } from "@/lib/uebergabe-check/content";
-import { getAssessment } from "@/lib/uebergabe-check/db";
+import { getAssessment, hasLead } from "@/lib/uebergabe-check/db";
 import { computeScores } from "@/lib/uebergabe-check/scoring";
 
 export const dynamic = "force-dynamic";
@@ -46,6 +46,10 @@ export default async function Page({
   const assessment = await getAssessment(id);
   if (!assessment) notFound();
 
+  // In aller Regel true, denn diese Seite erreicht man über den Link aus der
+  // Ergebnismail. Trotzdem abgefragt statt angenommen: Der Link lässt sich
+  // weitergeben, und dann stimmte die Annahme nicht mehr.
+  const contactKnown = await hasLead(id);
   const scores = computeScores(assessment.answers);
   const created = DATE_FORMAT.format(new Date(assessment.created_at));
 
@@ -73,6 +77,7 @@ export default async function Page({
         scores={scores}
         answers={assessment.answers}
         assessmentId={assessment.id}
+        contactKnown={contactKnown}
       />
       <ResultCtas variant="report" />
 

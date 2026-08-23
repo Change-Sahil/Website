@@ -90,6 +90,17 @@ export const PARTICIPANT_INTRO =
 export const PARTICIPANT_INTRO_DETAIL =
   "Es geht nicht darum, die Einschätzung anderer Personen zu bestätigen. Unterschiedliche Wahrnehmungen sind ausdrücklich möglich und können wertvolle Hinweise für die weitere Vorbereitung einer Übergabe geben.";
 
+/**
+ * Steht VOR der Teilnahme, nicht danach.
+ *
+ * Ohne diesen Hinweis füllt jemand 24 Aussagen aus und merkt erst hinterher,
+ * dass die Auswertung an die Person zurückläuft, die den Vergleich angelegt
+ * hat. Das wäre kein fairer Umgang und würde beim nächsten Mal ehrliche
+ * Antworten kosten.
+ */
+export const PARTICIPANT_TRANSPARENCY =
+  "Ihre Einschätzung wird für den Perspektivvergleich mit den Einschätzungen anderer Teilnehmer zusammengeführt. Der Initiator erhält die daraus entstehende Vergleichsauswertung. Bei kleinen Teilnehmergruppen können einzelne Einschätzungen unter Umständen einer Person zugeordnet werden.";
+
 // ── Abweichungsbänder ───────────────────────────────────────────────────────
 
 export type SpreadBand = "aligned" | "differing" | "distinct";

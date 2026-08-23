@@ -11,6 +11,7 @@ import { z } from "zod";
 
 import { BOOKING_URL_DE } from "@/lib/booking";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
+import { createComparison } from "@/lib/uebergabe-check/comparison-db";
 import { getAssessment, getDb } from "@/lib/uebergabe-check/db";
 import { buildInternalNotification } from "@/lib/uebergabe-check/emails";
 import {
@@ -30,6 +31,13 @@ const leadSchema = z.object({
   // Ohne diese Einwilligung wird nichts gespeichert und nichts versendet.
   consentReport: z.literal(true),
   consentMarketing: z.boolean().optional().default(false),
+  /**
+   * Gesetzt, wenn die Anmeldung aus dem Einstieg in den Perspektivvergleich
+   * kommt. Dann wird zusätzlich der Vergleich angelegt und sein
+   * Verwaltungstoken zurückgegeben. Eine Handlung, zwei Ergebnisse: der
+   * Nutzer soll nicht zweimal dieselben Felder ausfüllen.
+   */
+  startComparison: z.boolean().optional().default(false),
 });
 
 export async function POST(req: Request) {
@@ -54,7 +62,8 @@ export async function POST(req: Request) {
     );
   }
 
-  const { assessmentId, name, email, company, consentMarketing } = parsed.data;
+  const { assessmentId, name, email, company, consentMarketing, startComparison } =
+    parsed.data;
 
   const db = getDb();
   const assessment = await getAssessment(assessmentId);
@@ -161,5 +170,23 @@ export async function POST(req: Request) {
     console.error("UC_LEAD_NOTIFY_ERROR", err);
   }
 
-  return NextResponse.json({ ok: true, resultUrl });
+  // Erst nach erfolgreichem Versand: Wäre die Mail gescheitert, hätte der
+  // Nutzer sonst einen Vergleich ohne den zugesagten Bericht.
+  let manageToken: string | null = null;
+  if (startComparison) {
+    const created = await createComparison(assessmentId, company || undefined);
+    if (!created) {
+      return NextResponse.json(
+        {
+          ok: false,
+          error:
+            "Ihr Bericht ist unterwegs, der Perspektivvergleich konnte aber nicht angelegt werden. Bitte versuchen Sie es später über den Link in der E-Mail.",
+        },
+        { status: 503 }
+      );
+    }
+    manageToken = created.manageToken;
+  }
+
+  return NextResponse.json({ ok: true, resultUrl, manageToken });
 }

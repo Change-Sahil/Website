@@ -24,6 +24,7 @@ import { DIMENSIONS, METHOD_NOTE } from "@/lib/uebergabe-check/content";
 import {
   PARTICIPANT_INTRO,
   PARTICIPANT_INTRO_DETAIL,
+  PARTICIPANT_TRANSPARENCY,
   roleMeta,
   type RespondentRole,
 } from "@/lib/uebergabe-check/comparison";
@@ -83,6 +84,11 @@ export default function CheckClient({ invite }: { invite?: InviteContext }) {
   const [restored, setRestored] = useState(false);
   /** Das Formular für die Zusendung erscheint erst auf ausdrücklichen Wunsch. */
   const [reportFormOpen, setReportFormOpen] = useState(false);
+  /**
+   * Sobald Kontaktdaten vorliegen, fragt der Einstieg in den
+   * Perspektivvergleich nicht erneut danach.
+   */
+  const [contactKnown, setContactKnown] = useState(false);
 
   const topRef = useRef<HTMLDivElement>(null);
 
@@ -195,6 +201,7 @@ export default function CheckClient({ invite }: { invite?: InviteContext }) {
     setStage("intro");
     setRestored(false);
     setReportFormOpen(false);
+    setContactKnown(false);
     try {
       window.localStorage.removeItem(storageKey);
     } catch {
@@ -259,16 +266,28 @@ export default function CheckClient({ invite }: { invite?: InviteContext }) {
 
         <Report scores={scores} answers={answers} />
 
-        {/* Der Perspektivvergleich steht schon auf der kostenlosen Seite: er
-            ist der logische nächste Erkenntnisschritt, nicht ein Zusatzangebot
-            hinter der E-Mail-Adresse. */}
-        <PerspectiveBlock assessmentId={assessmentId} />
+        {/* Reihenfolge nach Nähe zum gerade Erlebten:
+              1. Ergebnis
+              2. Wie sehen andere das? -> Perspektivvergleich
+              3. Persönlicher Ergebnis- und Arbeitsbericht
+              4. Ergebnis gemeinsam einordnen
+            Das Beratungsgespräch steht damit am Ende einer Bewegung und nicht
+            als Verkaufsangebot direkt hinter dem Diagramm. */}
+        <PerspectiveBlock
+          assessmentId={assessmentId}
+          contactKnown={contactKnown}
+        />
+
+        <LeadForm
+          assessmentId={assessmentId}
+          open={reportFormOpen}
+          onSuccess={() => setContactKnown(true)}
+        />
 
         <ResultCtas
           discussionCount={discussionCount}
           onRequestReport={() => setReportFormOpen(true)}
         />
-        <LeadForm assessmentId={assessmentId} open={reportFormOpen} />
         {BETA_MODE && <BetaFeedback assessmentId={assessmentId} />}
 
         {/* Der einzige methodische Vorbehalt, klein und am Ende. */}
@@ -331,8 +350,8 @@ export default function CheckClient({ invite }: { invite?: InviteContext }) {
           <ul className="mt-6 space-y-3">
             {[
               "24 alltagsnahe Aussagen auf einer fünfstufigen Skala, etwa fünf Minuten.",
-              "Ihre Antworten werden mit den Einschätzungen der übrigen Rollen zusammengefasst.",
-              "Es werden keine einzelnen Antworten namentlich ausgewiesen.",
+              "Die Auswertung fasst die Einschätzungen je Rolle zusammen, einzelne Antworten werden nicht namentlich ausgewiesen.",
+              "Sie sehen die Vergleichsauswertung nicht selbst; sie geht an den Initiator.",
             ].map((line) => (
               <li
                 key={line}
@@ -348,13 +367,11 @@ export default function CheckClient({ invite }: { invite?: InviteContext }) {
             ))}
           </ul>
 
+          {/* Vor der Teilnahme, nicht danach: Wer 24 Aussagen beantwortet,
+              soll vorher wissen, wohin die Auswertung läuft. */}
           <div className="mt-6 rounded-2xl bg-slate-50/80 p-5 text-[13px] leading-6 muted">
-            {/* Keine Anonymität behaupten: bei zwei Führungskräften ist eine
-                Einzelantwort faktisch zuordenbar. */}
             <strong className="font-semibold text-slate-700">Bitte beachten:</strong>{" "}
-            Bei kleinen Teilnehmergruppen können Einschätzungen trotz
-            zusammengefasster Darstellung unter Umständen einzelnen Personen
-            zugeordnet werden.
+            {PARTICIPANT_TRANSPARENCY}
           </div>
 
           <div className="mt-7 flex flex-wrap items-center gap-3">

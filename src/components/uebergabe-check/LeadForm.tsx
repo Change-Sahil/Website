@@ -1,7 +1,16 @@
-// src/components/uebergabe-check/LeadForm.tsx
+﻿// src/components/uebergabe-check/LeadForm.tsx
 //
-// Optionale Zusendung des Berichts. Das Ergebnis ist zu diesem Zeitpunkt
-// bereits vollständig sichtbar – dieses Formular ist ein Angebot, keine Hürde.
+// Erfassung der Kontaktdaten, für zwei Zwecke:
+//
+//   purpose="report"      Zusendung des Ergebnis- und Arbeitsberichts.
+//   purpose="comparison"  Anlage eines Perspektivvergleichs. Die Adresse wird
+//                         dort funktional gebraucht: Der Initiator wird über
+//                         eingehende Einschätzungen informiert und bekommt die
+//                         Auswertung zugestellt. Der Bericht kommt mit.
+//
+// Wichtig für den zweiten Fall: Das ist kein vorgeschaltetes E-Mail-Gate. Das
+// individuelle Ergebnis ist zu diesem Zeitpunkt vollständig sichtbar, und die
+// Adresse wird für den Vergleich tatsächlich benötigt.
 //
 // Datenschutz: Das Assessment liegt anonym in der Datenbank. Erst mit dem
 // Absenden dieses Formulars wird eine E-Mail-Adresse damit verknüpft. Die
@@ -12,21 +21,65 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 type Status = "idle" | "sending" | "sent" | "error";
+
+export type LeadPurpose = "report" | "comparison";
+
+const COPY: Record<
+  LeadPurpose,
+  {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    consent: string;
+    submit: string;
+    pending: string;
+  }
+> = {
+  report: {
+    eyebrow: "Optional",
+    title: "Ihr persönlicher Ergebnisbericht",
+    intro:
+      "Sie erhalten Ihr Übergabeprofil als Arbeitsgrundlage für die weitere Nachfolgevorbereitung. Der Bericht enthält zusätzlich Fragen für die interne Diskussion und eine Seite zum Ausfüllen, damit Sie das Ergebnis mit Ihrer Führungsebene besprechen können.",
+    consent:
+      "Ich möchte den Ergebnisbericht per E-Mail erhalten. Meine Angaben werden dafür mit meinem Testdurchlauf verknüpft, der bislang nur unter einer technischen Kennung gespeichert ist.",
+    submit: "Ergebnisbericht anfordern",
+    pending: "Wird gesendet …",
+  },
+  comparison: {
+    eyebrow: "Perspektivvergleich",
+    title: "Perspektivvergleich anlegen",
+    intro:
+      "Damit wir die einzelnen Einschätzungen Ihrem Vergleich zuordnen und Sie informieren können, sobald weitere Perspektiven vorliegen, benötigen wir Ihre E-Mail-Adresse. Sie erhalten außerdem Ihren persönlichen Ergebnis- und Arbeitsbericht.",
+    consent:
+      "Ich möchte den Perspektivvergleich anlegen und den Ergebnisbericht per E-Mail erhalten. Meine Angaben werden dafür mit meinem Testdurchlauf verknüpft, der bislang nur unter einer technischen Kennung gespeichert ist.",
+    submit: "Perspektivvergleich anlegen",
+    pending: "Wird angelegt …",
+  },
+};
 
 export default function LeadForm({
   assessmentId,
   open,
+  purpose = "report",
+  onSuccess,
 }: {
   assessmentId: string | null;
   /**
-   * Das Formular ist eingeklappt, bis der Nutzer den Bericht ausdrücklich
-   * anfordert. Ein dauerhaft sichtbares Kontaktformular unter dem fertigen
-   * Ergebnis wirkt wie eine nachgereichte Hürde.
+   * Das Formular ist eingeklappt, bis der Nutzer es ausdrücklich anfordert.
+   * Ein dauerhaft sichtbares Kontaktformular unter dem fertigen Ergebnis wirkt
+   * wie eine nachgereichte Hürde.
    */
   open: boolean;
+  purpose?: LeadPurpose;
+  /** Meldet, dass jetzt Kontaktdaten vorliegen. */
+  onSuccess?: () => void;
 }) {
+  const router = useRouter();
+  const copy = COPY[purpose];
+  const prefix = purpose === "comparison" ? "ucv" : "uc";
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
@@ -49,19 +102,22 @@ export default function LeadForm({
 
   // Solange nichts angefordert wurde, bleibt nur der Sprunganker stehen.
   if (!open && status !== "sent") {
-    return <div id="ergebnisbericht" className="scroll-mt-28" />;
+    return <div id={`${prefix}-formular`} className="scroll-mt-28" />;
   }
 
   if (!assessmentId) {
     return (
       <div className="panel">
         <h2 className="text-lg font-bold text-slate-900">
-          Ergebnis per E-Mail
+          {purpose === "comparison"
+            ? "Perspektivvergleich nicht möglich"
+            : "Ergebnis per E-Mail"}
         </h2>
         <p className="mt-2 text-sm leading-6 muted">
-          Die Zusendung ist gerade nicht möglich, weil dieser Durchlauf nicht
-          gespeichert werden konnte. Ihr Ergebnis oben bleibt vollständig
-          sichtbar. Sie können die Seite ausdrucken oder als PDF sichern.
+          Dieser Durchlauf konnte nicht gespeichert werden, deshalb lässt sich
+          weder etwas zusenden noch ein Vergleich daran knüpfen. Ihr Ergebnis
+          oben bleibt vollständig sichtbar. Sie können die Seite ausdrucken oder
+          als PDF sichern.
         </p>
       </div>
     );
@@ -111,6 +167,7 @@ export default function LeadForm({
           company: company.trim(),
           consentReport,
           consentMarketing,
+          startComparison: purpose === "comparison",
         }),
       });
       const data = await response.json();
@@ -118,6 +175,16 @@ export default function LeadForm({
       if (!response.ok || !data.ok) {
         setError(data.error ?? "Der Versand hat nicht geklappt.");
         setStatus("error");
+        return;
+      }
+
+      onSuccess?.();
+
+      // Beim Vergleich geht es direkt weiter zur Verwaltungsseite. Eine
+      // Bestätigungsmeldung wäre hier eine Sackgasse: Einladen ist der
+      // eigentliche nächste Schritt.
+      if (purpose === "comparison" && data.manageToken) {
+        router.push(`/de/uebergabe-check/vergleich/${data.manageToken}`);
         return;
       }
       setStatus("sent");
@@ -131,29 +198,26 @@ export default function LeadForm({
     "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-[15px] text-slate-800 outline-none transition-colors duration-150 placeholder:text-slate-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20";
 
   return (
-    <div id="ergebnisbericht" ref={containerRef} className="panel scroll-mt-28">
+    <div
+      id={`${prefix}-formular`}
+      ref={containerRef}
+      className="panel scroll-mt-28"
+    >
       <div className="section-eyebrow">
         <span className="dot" />
-        <span>Optional</span>
+        <span>{copy.eyebrow}</span>
       </div>
-      <h2 className="mt-2 text-xl font-bold text-slate-900">
-        Ihr persönlicher Ergebnisbericht
-      </h2>
-      <p className="mt-2 max-w-2xl text-[15px] leading-7 muted">
-        Sie erhalten Ihr Übergabeprofil als Arbeitsgrundlage für die weitere
-        Nachfolgevorbereitung. Der Bericht enthält zusätzlich Fragen für die
-        interne Diskussion und eine Seite zum Ausfüllen, damit Sie das Ergebnis
-        mit Ihrer Führungsebene besprechen können.
-      </p>
+      <h2 className="mt-2 text-xl font-bold text-slate-900">{copy.title}</h2>
+      <p className="mt-2 max-w-2xl text-[15px] leading-7 muted">{copy.intro}</p>
 
       <form onSubmit={handleSubmit} className="mt-6 space-y-4" noValidate>
         <div className="grid gap-4 sm:grid-cols-2">
           <div>
-            <label htmlFor="uc-name" className="mb-1.5 block text-sm font-medium text-slate-700">
+            <label htmlFor={`${prefix}-name`} className="mb-1.5 block text-sm font-medium text-slate-700">
               Name <span className="text-slate-400">*</span>
             </label>
             <input
-              id="uc-name"
+              id={`${prefix}-name`}
               ref={nameRef}
               type="text"
               required
@@ -165,11 +229,11 @@ export default function LeadForm({
             />
           </div>
           <div>
-            <label htmlFor="uc-email" className="mb-1.5 block text-sm font-medium text-slate-700">
+            <label htmlFor={`${prefix}-email`} className="mb-1.5 block text-sm font-medium text-slate-700">
               E-Mail <span className="text-slate-400">*</span>
             </label>
             <input
-              id="uc-email"
+              id={`${prefix}-email`}
               type="email"
               required
               autoComplete="email"
@@ -182,11 +246,11 @@ export default function LeadForm({
         </div>
 
         <div>
-          <label htmlFor="uc-company" className="mb-1.5 block text-sm font-medium text-slate-700">
+          <label htmlFor={`${prefix}-company`} className="mb-1.5 block text-sm font-medium text-slate-700">
             Unternehmen
           </label>
           <input
-            id="uc-company"
+            id={`${prefix}-company`}
             type="text"
             autoComplete="organization"
             value={company}
@@ -208,9 +272,7 @@ export default function LeadForm({
             <span>
               {/* Formulierung deckungsgleich mit der Datenschutzerklärung:
                   „anonym“ wäre falsch, sobald die Verknüpfung erfolgt. */}
-              Ich möchte den Ergebnisbericht per E-Mail erhalten. Meine Angaben
-              werden dafür mit meinem Testdurchlauf verknüpft, der bislang nur
-              unter einer technischen Kennung gespeichert ist.{" "}
+              {copy.consent}{" "}
               <Link
                 href="/de/datenschutz"
                 className="font-medium text-teal-700 underline underline-offset-2"
@@ -220,7 +282,9 @@ export default function LeadForm({
               {/* Der Hinweis gehört unmittelbar an diesen Haken. Unter beiden
                   Haken sah er aus, als gälte er für den freiwilligen. */}
               <span className="mt-1 block text-[12px] text-slate-400">
-                Pflichtangabe für den Versand
+                {purpose === "comparison"
+                  ? "Pflichtangabe für den Perspektivvergleich"
+                  : "Pflichtangabe für den Versand"}
               </span>
             </span>
           </label>
@@ -253,7 +317,7 @@ export default function LeadForm({
           disabled={status === "sending" || !consentReport}
           className="btn-primary disabled:cursor-not-allowed disabled:opacity-45"
         >
-          {status === "sending" ? "Wird gesendet …" : "Ergebnisbericht anfordern"}
+          {status === "sending" ? copy.pending : copy.submit}
         </button>
       </form>
     </div>

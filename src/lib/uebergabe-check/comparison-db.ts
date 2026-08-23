@@ -22,6 +22,19 @@ function newToken(): string {
   return randomBytes(24).toString("base64url");
 }
 
+/**
+ * Meldet Supabase, dass die Spalte initiator_assessment_id fehlt?
+ *
+ * PostgREST antwortet beim Insert mit PGRST204 und einer Meldung wie
+ * „Could not find the 'x' column of 'y' in the schema cache“, Postgres selbst
+ * mit dem SQLSTATE 42703.
+ */
+function isMissingColumn(error: { code?: string; message?: string } | null): boolean {
+  if (!error) return false;
+  if (error.code === "42703" || error.code === "PGRST204") return true;
+  return Boolean(error.message?.includes("initiator_assessment_id"));
+}
+
 export type ComparisonRow = {
   id: string;
   created_at: string;
@@ -53,11 +66,30 @@ export async function createComparison(
   if (!db) return null;
 
   const manageToken = newToken();
-  const { data, error } = await db
+  const base = { manage_token: manageToken, label: label ?? null };
+
+  let { data, error } = await db
     .from("uc_comparisons")
-    .insert({ manage_token: manageToken, label: label ?? null })
+    .insert({ ...base, initiator_assessment_id: assessmentId })
     .select("id")
     .single();
+
+  // Spalte existiert noch nicht. Tritt zwischen Deploy und Migration auf.
+  // PostgREST meldet beim INSERT PGRST204 (Spalte nicht im Schema-Cache),
+  // Postgres selbst 42703. Beide abfangen.
+  //
+  // Der Vergleich soll dann trotzdem funktionieren; nur die Benachrichtigung
+  // über neue Einschätzungen entfällt, weil der Initiator nicht auflösbar ist.
+  if (isMissingColumn(error)) {
+    console.warn(
+      "UC_COMPARISON_NO_INITIATOR_COLUMN: Bitte supabase/uebergabe-check-perspektivvergleich.sql erneut ausführen. Ohne initiator_assessment_id werden keine Benachrichtigungen versendet."
+    );
+    ({ data, error } = await db
+      .from("uc_comparisons")
+      .insert(base)
+      .select("id")
+      .single());
+  }
 
   if (error || !data) {
     console.error("UC_COMPARISON_CREATE", error);
@@ -218,6 +250,57 @@ export async function getInviteByToken(
     },
     comparisonId: joined.comparison_id,
     label: related?.label ?? null,
+  };
+}
+
+/**
+ * Kontaktdaten und Verwaltungslink des Initiators, für die Benachrichtigung
+ * über eine neu eingegangene Einschätzung.
+ *
+ * Gibt null zurück, wenn kein Lead hängt. Das kann bei Vergleichen aus der
+ * Zeit vor der Registrierungspflicht vorkommen; dann wird eben nicht
+ * benachrichtigt, statt zu raten.
+ */
+export async function getInitiatorContact(comparisonId: string): Promise<{
+  name: string;
+  email: string;
+  manageToken: string;
+  label: string | null;
+} | null> {
+  const db = getDb();
+  if (!db) return null;
+
+  const { data, error } = await db
+    .from("uc_comparisons")
+    .select("manage_token, label, initiator_assessment_id")
+    .eq("id", comparisonId)
+    .maybeSingle();
+
+  // Fehlt die Spalte noch, gibt es niemanden zu benachrichtigen. Kein Fehler:
+  // dann wurde beim Anlegen auch nichts zugesagt.
+  if (error || !data?.initiator_assessment_id) {
+    if (error && !isMissingColumn(error)) {
+      console.error("UC_INITIATOR_LOOKUP", error);
+    }
+    return null;
+  }
+
+  const { data: lead, error: leadError } = await db
+    .from("uc_leads")
+    .select("name, email")
+    .eq("assessment_id", data.initiator_assessment_id)
+    .maybeSingle();
+
+  if (leadError || !lead?.email) {
+    if (leadError) console.error("UC_INITIATOR_LEAD", leadError);
+    return null;
+  }
+
+  return {
+    name: lead.name as string,
+    email: lead.email as string,
+    manageToken: data.manage_token as string,
+    label: (data.label as string | null) ?? null,
   };
 }
 

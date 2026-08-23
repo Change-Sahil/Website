@@ -112,11 +112,14 @@ export default function PersonalReportExtras({
   scores,
   answers,
   assessmentId,
+  contactKnown = false,
 }: {
   scores: DimensionScore[];
   answers: Answers;
   /** Für den Einstieg in den Perspektivvergleich. */
   assessmentId: string | null;
+  /** Liegen bereits Kontaktdaten vor? Dann kein zweites Formular. */
+  contactKnown?: boolean;
 }) {
   const flags = computeFlags(answers);
   const summary = buildSummary(scores, flags);
@@ -234,7 +237,10 @@ export default function PersonalReportExtras({
       )}
 
       {/* ── Perspektivvergleich als nächster Schritt ─────────────────────── */}
-      <PerspectiveBlock assessmentId={assessmentId} />
+      <PerspectiveBlock
+        assessmentId={assessmentId}
+        contactKnown={contactKnown}
+      />
 
       {/* ── Arbeitsseite ─────────────────────────────────────────────────── */}
       {/* Als Ganzes geschützt: aufgeteilt landete regelmäßig das letzte Feld

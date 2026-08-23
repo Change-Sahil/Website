@@ -365,7 +365,12 @@ nicht erzeugt.
 ```
 Einzelcheck abschließen
       ↓  „Perspektivvergleich starten“
-POST /api/uebergabe-check/vergleich  { action: "create" }
+Kontaktdaten vorhanden?
+   nein → Formular: Name, E-Mail, Einwilligung
+          POST /api/uebergabe-check/lead  { startComparison: true }
+          → legt den Lead an, versendet den Arbeitsbericht
+            und legt den Vergleich an. Eine Handlung, zwei Ergebnisse.
+   ja   → POST /api/uebergabe-check/vergleich  { action: "create" }
       ↓  legt uc_comparisons an, hängt das eigene Assessment als owner daran
 /de/uebergabe-check/vergleich/<manage_token>
       ├─ Vergleich benennen
@@ -376,6 +381,50 @@ POST /api/uebergabe-check/vergleich  { action: "create" }
       Rollenspezifische Itemtexte, danach eine Dankseite. KEIN Einzelbericht:
       alle Einordnungstexte sind an den Inhaber adressiert.
 ```
+
+### Warum der Vergleich eine E-Mail-Adresse verlangt
+
+Der Einzelcheck bleibt ohne jede Angabe vollständig nutzbar. Für den Vergleich
+wird die Adresse dagegen **funktional gebraucht**: Der Initiator wird über
+eingehende Einschätzungen informiert, und die Auswertung muss zustellbar sein.
+Genau das steht auch unter dem Button (`PERSPECTIVE_EMAIL_NOTE`), bevor
+gefragt wird.
+
+Der Unterschied zu einem E-Mail-Gate ist nicht kosmetisch: Das individuelle
+Ergebnis ist zu diesem Zeitpunkt vollständig sichtbar, und ohne Adresse gäbe es
+niemanden, dem die eingehenden Einschätzungen zugeordnet werden könnten.
+
+Wer den Bericht bereits angefordert hat, wird **nicht erneut gefragt**
+(`contactKnown`). Auf der Ergebnisseite kommt der Zustand aus dem lokalen
+State, auf der Berichtsseite aus `hasLead()`. Dort wird er abgefragt und nicht
+angenommen: Der Berichtslink lässt sich weitergeben.
+
+Daraus ergeben sich drei Nutzerpfade, ohne jemanden zu blockieren:
+
+| Pfad | Verhalten | Daten |
+| :--- | :--- | :--- |
+| A | Check machen, Ergebnis lesen, gehen | keine |
+| B | Arbeitsbericht anfordern | Name, E-Mail |
+| C | Perspektivvergleich starten | Name, E-Mail, Bericht kommt mit |
+
+### Benachrichtigung des Initiators
+
+Geht eine Einschätzung ein, erhält der Initiator eine transaktionale Nachricht
+([`comparison-email.ts`](../src/lib/uebergabe-check/comparison-email.ts)) mit
+Anzahl der vorliegenden Einschätzungen, Zahl der offenen Einladungen und dem
+Link zur Auswertung.
+
+Bewusst **ohne Ergebnisdaten**. Erstens gehört die Auswertung auf die
+geschützte Seite und nicht in ein Postfach, das mitgelesen werden kann.
+Zweitens wäre „in mehreren Bereichen liegen die Perspektiven auseinander"
+bereits eine Interpretation, bevor der Empfänger die Zahlen gesehen hat.
+
+Aufgelöst wird der Empfänger über `uc_comparisons.initiator_assessment_id` und
+den daran hängenden Lead. Die Kontaktdaten liegen damit weiterhin nur an einer
+Stelle und verschwinden mit der bestehenden Zwölfmonatsfrist. Fehlt die Spalte
+noch, wird der Vergleich trotzdem angelegt und lediglich nicht benachrichtigt;
+`createComparison()` fängt PGRST204 und 42703 ab und schreibt eine Warnung ins
+Log.
 
 ### Zugangsmodell
 
@@ -504,6 +553,9 @@ eingerichtet werden.
 
 ### Was noch offen ist
 
+* **Die Datenschutzerklärung nennt die Benachrichtigung noch nicht.** Neben den
+  Vergleichsdaten selbst ist auch die transaktionale Nachricht an den Initiator
+  aufzunehmen.
 * **Kein E-Mail-Versand an Teilnehmer.** Eingeladen wird über kopierbare Links.
   Würden hier die Adressen der Führungskräfte eingetragen, verarbeiteten wir
   personenbezogene Daten Dritter, die nie eingewilligt haben. Das braucht

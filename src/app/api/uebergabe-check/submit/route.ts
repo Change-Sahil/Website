@@ -7,12 +7,20 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 
+import { Resend } from "resend";
+
 import { clientIp, rateLimit } from "@/lib/rate-limit";
+import { buildRoleProfiles } from "@/lib/uebergabe-check/comparison";
 import {
   completeInvite,
+  getInitiatorContact,
   getInviteByToken,
+  listInvites,
+  listParticipations,
 } from "@/lib/uebergabe-check/comparison-db";
+import { buildComparisonUpdateEmail } from "@/lib/uebergabe-check/comparison-email";
 import { getDb } from "@/lib/uebergabe-check/db";
+import { senderWithName } from "@/lib/uebergabe-check/report-email";
 import { ITEMS, ITEM_VERSION, type Answers } from "@/lib/uebergabe-check/items";
 import {
   computeFlagIds,
@@ -39,6 +47,57 @@ const submitSchema = z.object({
    */
   inviteToken: z.string().min(16).max(64).optional(),
 });
+
+const BASE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://change-werkstatt-sahil.de";
+
+/**
+ * Informiert den Initiator über eine neu eingegangene Einschätzung.
+ *
+ * Ohne hinterlegte Kontaktdaten passiert nichts. Das betrifft Vergleiche aus
+ * der Zeit vor der Registrierungspflicht; dort wurde nie etwas zugesagt.
+ */
+async function notifyInitiator(comparisonId: string): Promise<void> {
+  const contact = await getInitiatorContact(comparisonId);
+  if (!contact) return;
+
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) return;
+
+  const [participations, invites] = await Promise.all([
+    listParticipations(comparisonId),
+    listInvites(comparisonId),
+  ]);
+
+  const mail = buildComparisonUpdateEmail({
+    name: contact.name,
+    total: participations.length,
+    open: invites.filter((invite) => !invite.used_at).length,
+    ready:
+      buildRoleProfiles(
+        participations.map((entry) => ({
+          id: entry.id,
+          role: entry.respondent_role,
+          answers: entry.answers,
+        }))
+      ).length >= 2,
+    comparisonUrl: `${BASE_URL}/de/uebergabe-check/vergleich/${contact.manageToken}`,
+    label: contact.label,
+    baseUrl: BASE_URL,
+  });
+
+  const fromEmail =
+    process.env.CONTACT_FROM_EMAIL || "info@change-werkstatt-sahil.de";
+
+  await new Resend(apiKey).emails.send({
+    from: senderWithName(fromEmail),
+    replyTo: process.env.CONTACT_TO_EMAIL || "info@change-werkstatt-sahil.com",
+    to: contact.email,
+    subject: mail.subject,
+    html: mail.html,
+    text: mail.text,
+  });
+}
 
 export async function POST(req: Request) {
   if (!rateLimit("uc-submit", clientIp(req), { limit: 10, windowMs: 60_000 })) {
@@ -125,7 +184,17 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true, id: null, persisted: false });
   }
 
-  if (invite) await completeInvite(invite.invite.id, data.id as string);
+  if (invite) {
+    await completeInvite(invite.invite.id, data.id as string);
+    // Beim Anlegen des Vergleichs wurde zugesagt, über neue Einschätzungen zu
+    // informieren. Ein Fehler beim Versand darf die Teilnahme aber nicht
+    // scheitern lassen: die Antwort ist gespeichert, das ist das Wesentliche.
+    try {
+      await notifyInitiator(invite.comparisonId);
+    } catch (err) {
+      console.error("UC_COMPARISON_NOTIFY_ERROR", err);
+    }
+  }
 
   return NextResponse.json({
     ok: true,

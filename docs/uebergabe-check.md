@@ -1,4 +1,4 @@
-# Übergabe-Check – Betriebsanleitung
+﻿# Übergabe-Check – Betriebsanleitung
 
 Kostenloser Schnellcheck zur organisationalen Übergabefähigkeit.
 Umsetzung der Gesamtspezifikation Beta v1.0 (24 Items, 6 Dimensionen).
@@ -56,8 +56,9 @@ angezeigt, aber nicht gespeichert, und die Zusendung per Mail entfällt.
 
 | Zweck | Datei |
 | :--- | :--- |
-| 24 Items, Polarität, Item-Version | [`src/lib/uebergabe-check/items.ts`](../src/lib/uebergabe-check/items.ts) |
+| 24 Items, Polarität, Rollenvarianten, Item-Version | [`src/lib/uebergabe-check/items.ts`](../src/lib/uebergabe-check/items.ts) |
 | Scoring, Reifegradstufen, Flags | [`src/lib/uebergabe-check/scoring.ts`](../src/lib/uebergabe-check/scoring.ts) |
+| Strukturprüfung des Instruments | [`src/lib/uebergabe-check/self-check.ts`](../src/lib/uebergabe-check/self-check.ts) |
 | Berichtstexte, Feedbackfragen | [`src/lib/uebergabe-check/content.ts`](../src/lib/uebergabe-check/content.ts) |
 | Ablauf des Fragebogens | [`src/app/[locale]/uebergabe-check/check-client.tsx`](../src/app/%5Blocale%5D/uebergabe-check/check-client.tsx) |
 | Netzdiagramm (Inline-SVG) | [`src/components/uebergabe-check/SpiderWeb.tsx`](../src/components/uebergabe-check/SpiderWeb.tsx) |
@@ -65,7 +66,11 @@ angezeigt, aber nicht gespeichert, und die Zusendung per Mail entfällt.
 | Zusatzteile des persönlichen Berichts | [`src/lib/uebergabe-check/report-blocks.ts`](../src/lib/uebergabe-check/report-blocks.ts) |
 | Profilzusammenfassung | [`src/lib/uebergabe-check/summary.ts`](../src/lib/uebergabe-check/summary.ts) |
 | Auswahl der Prüffelder | [`src/lib/uebergabe-check/pruefelder.ts`](../src/lib/uebergabe-check/pruefelder.ts) |
-| Perspektivvergleich (Schalter, Rollen, Vergleichslogik) | [`src/lib/uebergabe-check/comparison.ts`](../src/lib/uebergabe-check/comparison.ts) |
+| Perspektivvergleich, Rollen und Vergleichslogik | [`src/lib/uebergabe-check/comparison.ts`](../src/lib/uebergabe-check/comparison.ts) |
+| Perspektivvergleich, Datenzugriff | [`src/lib/uebergabe-check/comparison-db.ts`](../src/lib/uebergabe-check/comparison-db.ts) |
+| Vergleichsauswertung | [`src/components/uebergabe-check/ComparisonReport.tsx`](../src/components/uebergabe-check/ComparisonReport.tsx) |
+| Einladungen verwalten | [`src/components/uebergabe-check/ComparisonManager.tsx`](../src/components/uebergabe-check/ComparisonManager.tsx) |
+| Einstieg in den Vergleich (CTA) | [`src/components/uebergabe-check/PerspectiveBlock.tsx`](../src/components/uebergabe-check/PerspectiveBlock.tsx) |
 | Deckblatt, Briefkopf, Schlussblatt im Druck | [`src/components/uebergabe-check/PrintFrame.tsx`](../src/components/uebergabe-check/PrintFrame.tsx) |
 | Ergebnismail an den Nutzer | [`src/lib/uebergabe-check/report-email.ts`](../src/lib/uebergabe-check/report-email.ts) |
 | Interne Benachrichtigung | [`src/lib/uebergabe-check/emails.ts`](../src/lib/uebergabe-check/emails.ts) |
@@ -82,12 +87,17 @@ Item-Texte und Berichtstexte sind reine Daten. Formulierungen lassen sich
 Vier Stufen mit steigender Verbindlichkeit. Jede Stufe ist für sich nützlich,
 keine hält etwas zurück, was zum Verstehen der vorherigen nötig wäre.
 
-| Stufe | Was | Preis |
+| Stufe | Beantwortet die Frage | Preis |
 | :--- | :--- | :--- |
-| 1 | Schnellcheck mit vollständigem Ergebnis | kostenlos, ohne Registrierung |
-| 2 | Persönlicher Ergebnis- und Arbeitsbericht | gegen E-Mail-Adresse |
-| 3 | Perspektivvergleich mehrerer Rollen | kostenpflichtig, **noch nicht gebaut**, siehe Abschnitt 6 |
-| 4 | Gemeinsame Einordnung im Gespräch | Mandatsanbahnung |
+| 1 | „Wie sehe ich die Übergabefähigkeit meines Unternehmens?“ | kostenlos, ohne Registrierung |
+| 2 | dasselbe, dokumentiert und vertieft als Arbeitsbericht | gegen E-Mail-Adresse |
+| 3 | „Sehen die Menschen, die das Unternehmen mittragen müssen, es genauso?“ | kostenlos, siehe Abschnitt 6 |
+| 4 | „Was bedeuten diese Unterschiede für unsere konkrete Übergabe?“ | Einordnungsgespräch, Mandatsanbahnung |
+
+Der Perspektivvergleich liegt bewusst **nicht** hinter einer Bezahlschranke.
+Er soll genug Erkenntnis erzeugen, dass ein relevanter Klärungsbedarf sichtbar
+wird, ohne dessen Ursache oder Lösung zu behaupten. Genau dort beginnt die
+Beratungsleistung.
 
 Stufe 1 gegen Stufe 2 im Detail:
 
@@ -96,11 +106,11 @@ Stufe 1 gegen Stufe 2 im Detail:
 | Netzdiagramm und sechs Werte | ✓ | ✓ |
 | Einordnung und Prüfimpuls je Dimension | ✓ | ✓ |
 | Auffällig in Ihren Antworten | ✓ | ✓ |
+| Einstieg in den Perspektivvergleich | ✓ | ✓ |
 | Zusammenfassung des Profils | – | ✓ |
-| Ihre ausgewählten Prüffelder | – | ✓ (entfällt bei gutem Profil) |
+| Prüffelder für Ihre Übergabe | – | ✓ (entfällt bei gutem Profil) |
 | Fragen für die interne Diskussion | – | ✓ |
-| Ausblick Perspektivvergleich | – | ✓ |
-| Arbeitsseite „Ihr nächster Schritt" | – | ✓ |
+| Arbeitsseite „Vom Ergebnis zur nächsten Klärung" | – | ✓ |
 | Deckblatt, Briefkopf, Schlussblatt im Druck | – | ✓ |
 | Als PDF sichern | – | ✓ |
 
@@ -126,41 +136,38 @@ Marketingmail. Bewusst so gebaut und nicht ohne Grund ändern:
 
 ### Profilzusammenfassung
 
-Implementiert in [`summary.ts`](../src/lib/uebergabe-check/summary.ts), fünf
-Bausteine, drei bis fünf Sätze:
+Implementiert in [`summary.ts`](../src/lib/uebergabe-check/summary.ts). **Genau
+drei** beschriftete Absätze, feste Länge, nur der Inhalt hängt vom Profil ab:
 
-| Baustein | Bedingung |
+| Absatz | Inhalt |
 | :--- | :--- |
-| `intro` | immer |
-| `strong_dimensions` | mindestens eine Dimension ≥ 75 |
-| `development_dimensions` | mindestens eine Dimension < 50 |
-| `item_findings` | mindestens ein Item-Hinweis ausgelöst |
-| `context_close` | immer |
+| Was bereits trägt | Dimensionen ≥ 75. Gibt es keine, der vergleichsweise stabilste Bereich. |
+| Wo genaueres Hinsehen lohnt | Dimensionen < 50. Gibt es keine, der schwächste Bereich. |
+| Was das für eine Übergabe bedeutet | Kontext, plus ein Satz zu den Item-Hinweisen, falls welche vorliegen. |
 
-Drei Sonderfälle ersetzen Baustein 2 und 3 durch eine Gesamtaussage: alle sechs
-≥ 75, alle sechs < 50 (bewusst ohne Defizitlabel) und alle sechs zwischen 50 und
-74. Genannt werden höchstens drei Dimensionen, sortiert nach Punktwert und bei
-Gleichstand nach Dimensionsnummer.
+Jeder Absatz wird immer gefüllt: eine Überschrift ohne Text sähe aus wie ein
+Fehler. Genannt werden höchstens zwei Dimensionen je Absatz.
+
+Frühere Fassungen hatten bis zu fünf Bausteine samt Einleitung und einer
+Erläuterung der Item-Hinweise. Beides ist bewusst entfallen. Der Abschnitt
+markiert den Übergang von „Auswertung lesen" zu „damit arbeiten" und führt
+direkt in die Prüffelder.
 
 Methodische Leitplanken, die beim Ändern von Texten gelten:
 
-* nur bereits erhobene Dimensionsstufen und vorhandene Item-Hinweise
-  zusammenführen, keine Ursachen, Dringlichkeiten oder Prioritäten behaupten
+* nur bereits erhobene Dimensionsstufen zusammenführen, keine Ursachen,
+  Dringlichkeiten oder Prioritäten behaupten
 * nie von „Stärken" oder „Schwächen" sprechen, immer von den „betrachteten
   Voraussetzungen"
-* keine Anzahl der Item-Hinweise nennen. „Fünf Risiken" würde dramatisieren
-* für jede Scorekonstellation sachlich zutreffend bleiben
+* keine Anzahl der Item-Hinweise nennen, das würde dramatisieren
+* für jede Scorekonstellation sachlich zutreffend bleiben, auch wenn alle sechs
+  Werte identisch sind
 
-Alle vier Sonderfälle sind gegen die Spezifikation geprüft. Zwei Stellen sind
-Auslegung und leicht änderbar: bei genannten Dimensionen unter 25 Punkten heißt
-es „gering" statt „nur teilweise" ausgeprägt, und bei durchgehend hohen Werten
-ersetzt ein eigener Satz den Standardhinweis auf die Item-Befunde, statt beide
-nacheinander zu zeigen.
-
-### Ihre ausgewählten Prüffelder
+### Prüffelder für Ihre Übergabe
 
 [`pruefelder.ts`](../src/lib/uebergabe-check/pruefelder.ts) wählt **höchstens
-drei** Felder, je Dimension eines. Jedes Feld nennt: warum es für eine Übergabe
+drei** Felder, je Dimension eines. Die Anzahl steht in der Überschrift
+(`pruefelderTitle`), sie muss deshalb zur tatsächlichen Liste passen. Jedes Feld nennt: warum es für eine Übergabe
 relevant ist, eine Frage zur internen Klärung und einen möglichen ersten
 Schritt.
 
@@ -248,9 +255,42 @@ geändert werden:
   darf nicht behaupten, ein Betrieb sei objektiv übergabefähig oder nicht
   (Spec 2.4). Deshalb steht dieser Hinweis hier und nicht auf der Ergebnisseite.
 * **`ITEM_VERSION`.** Bei *jeder* Änderung an Itemtext oder Polarität in
-  `items.ts` hochzählen. Aktueller Stand: `beta-1.5`, entsprechend der finalen
-  konsolidierten Spezifikation. Gegenüber der Vorfassung wurden neun Itemtexte
-  angepasst und bei Item 1.4 sowie Item 5.4 die **Polarität gedreht**.
+  `items.ts` hochzählen. Aktueller Stand: `beta-2.0`, entsprechend der finalen
+  Item-Matrix der Spezifikation Perspektivvergleich. Gegenüber `beta-1.5`
+  kamen Rollenvarianten hinzu, dreizehn Itemtexte wurden angepasst und bei
+  Item 1.4 sowie Item 5.4 die **Polarität gedreht** (1.4 jetzt positiv,
+  5.4 jetzt invers).
+
+### Die Polungsregel
+
+Itemtext und Polarität liegen zwangsläufig an getrennten Stellen. Wird ein Item
+umformuliert und die Polung nicht mitgezogen, rechnet das System still falsch,
+ohne dass etwas abstürzt. Genau so ist der Fehler bei Item 1.4 entstanden.
+
+> **Kontrollregel.** Bedeutet „Trifft voll zu“ eine **bessere
+> Übergabevoraussetzung**, ist das Item **positiv**. Bedeutet es eine
+> **stärkere Abhängigkeit oder Hürde**, ist es **invers**.
+
+Diese Frage muss beim Ändern eines Itemtexts von Hand entschieden werden, Code
+kann sie nicht beantworten. Was Code prüfen kann, prüft
+[`self-check.ts`](../src/lib/uebergabe-check/self-check.ts) bei jedem Start,
+ausgelöst vom ersten `computeScores()`:
+
+* 24 Items, eindeutige IDs, vier je Dimension, kein leerer Text oder Rollentext
+* volle Punktzahl entspricht immer der besseren Voraussetzung
+* **Flag-Trigger gegen die Polung:** Ein Hinweis markiert immer eine Hürde. Bei
+  einem positiv gepolten Item liegt sie bei 1 und 2, bei einem invers gepolten
+  bei 4 und 5. Jede andere Kombination ist ein Fehler.
+
+In der Entwicklung wirft die Prüfung, in der Produktion loggt sie nur: ein
+Textfehler soll nicht die ganze Seite lahmlegen. Es gibt bewusst nur **eine**
+Scoring-Implementierung (`transformItem`), die Client, API-Route,
+Berichtsseite und Vergleichslogik gemeinsam nutzen. Eine zweite Polungstabelle
+an anderer Stelle wäre genau die Altlast, die auseinanderläuft.
+
+Stand der Prüfung: alle 24 Items und alle 13 Flag-Trigger sind konsistent,
+neun Items invers (1.1, 1.2, 2.3, 3.3, 4.3, 5.1, 5.3, 5.4, 6.4), fünfzehn
+positiv.
 
 ---
 
@@ -290,66 +330,124 @@ select * from uc_beta_overview;
 
 ---
 
-## 6. Perspektivvergleich: vorbereitet, bewusst nicht gebaut
+## 6. Perspektivvergleich
 
-Ziel ist, dass Inhaber, Führungsebene und Schlüsselrollen dieselben 24 Items
-beantworten und die Wahrnehmungslücke sichtbar wird. Beratungspraktisch ist das
-der interessanteste Teil: „Inhaber sagt 81, Führungsteam sagt 44" erzeugt
-Gesprächsbedarf, den ein einzelnes Profil nicht erzeugt.
+Inhaber, Führungskräfte und Schlüsselpersonen beantworten dieselben 24 Items
+aus ihrer jeweiligen Rolle. Sichtbar wird die Wahrnehmungslücke: „Inhaber sagt
+81, Führungsebene sagt 44" erzeugt Gesprächsbedarf, den ein einzelnes Profil
+nicht erzeugt.
 
-**Was bereits vorbereitet ist:**
+> **Vor der ersten Nutzung:**
+> [`uebergabe-check-perspektivvergleich.sql`](../supabase/uebergabe-check-perspektivvergleich.sql)
+> im Supabase SQL Editor ausführen. Ohne die Migration bleibt der Einzelcheck
+> vollständig funktionsfähig; der Button „Perspektivvergleich starten" meldet
+> dann sauber, dass die Einrichtung fehlt.
 
-* `uc_assessments` hat `organization_id` und `respondent_role`, dazu die Tabelle
-  `uc_organizations`. Mehrere Assessments je Unternehmen sind schreibbar.
-* [`uebergabe-check-perspektivvergleich.sql`](../supabase/uebergabe-check-perspektivvergleich.sql)
-  ergänzt `uc_comparisons` (klammert die Einzelchecks), `uc_comparison_invites`
-  (ein Token je Teilnehmer), die Spalte `uc_assessments.comparison_id` und die
-  View `uc_comparison_scores`. Die Rollenliste wächst auf `owner`, `management`,
-  `leader`, `key_person`, `other`.
-  **Noch nicht ausgeführt.** Bis dahin gilt: `comparison_id` darf nicht
-  mitselektiert werden, sonst antwortet Supabase mit `42703` und die
-  Ergebnisseite läuft ins Leere. Deshalb ist das Feld in
-  [`db.ts`](../src/lib/uebergabe-check/db.ts) optional und aus dem Select
-  ausgenommen.
-* [`comparison.ts`](../src/lib/uebergabe-check/comparison.ts) enthält
-  Rollenmodell, Gruppierung, Dimensions- und Itemvergleich sowie
-  `MIN_GROUP_SIZE_FOR_AGGREGATE`. Der Hauptschalter `COMPARISON_ENABLED` steht
-  auf `false`; **nur er** gibt den Vergleich frei, nicht die Migration.
-* [`items.ts`](../src/lib/uebergabe-check/items.ts) kennt `roleText` und
-  `itemText(item, role)`. Die Varianten sind bewusst **leer**, siehe Punkt 2.
-* [`SpiderWeb.tsx`](../src/components/uebergabe-check/SpiderWeb.tsx) nimmt
-  `series: ChartSeries[]` entgegen und zeichnet beliebig viele Profile
-  übereinander, inklusive Legende. Achsenwerte erscheinen nur bei einer Serie.
-  Ein überlagertes Diagramm ist damit eine Datenfrage, keine Neuentwicklung.
-  Farbreihenfolge in `SERIES_COLORS`.
+### Ablauf
 
-**Was fachlich vorher geklärt sein muss** (alles Sache des Modellentwicklers,
-nicht der Umsetzung):
+```
+Einzelcheck abschließen
+      ↓  „Perspektivvergleich starten“
+POST /api/uebergabe-check/vergleich  { action: "create" }
+      ↓  legt uc_comparisons an, hängt das eigene Assessment als owner daran
+/de/uebergabe-check/vergleich/<manage_token>
+      ├─ Vergleich benennen
+      ├─ je Teilnehmer einen Einladungslink erzeugen (Rolle + optionale Notiz)
+      └─ Auswertung, sobald eine zweite Rolle geantwortet hat
+                  ↑
+/de/uebergabe-check/teilnehmen/<invite_token>
+      Rollenspezifische Itemtexte, danach eine Dankseite. KEIN Einzelbericht:
+      alle Einordnungstexte sind an den Inhaber adressiert.
+```
 
-1. **Wer darf teilnehmen?** Rollenmodell, Mindestzahl je Rolle, Umgang mit
-   Anonymität bei kleinen Gruppen (bei zwei Führungskräften ist eine Einzelantwort
-   faktisch zuordenbar).
-2. **Welche Items brauchen rollenspezifische Formulierungen?** Mehrere Items sind
-   derzeit aus der Inhabersicht formuliert („ohne vorherige Freigabe des
-   Inhabers"). Entweder bleiben sie identisch, oder es braucht minimale Varianten.
-   Ohne diese Prüfung wird später nicht dasselbe Konstrukt verglichen.
-3. **Wie werden Abweichungen interpretiert,** ohne daraus eine vermeintliche
-   Wahrheit abzuleiten? Ab welcher Differenz gilt eine Abweichung als
-   berichtenswert, und mit welcher Sprachregelung? Der Vergleich zeigt, wo
-   Wahrnehmungen übereinstimmen und wo sie auseinanderliegen. Er zeigt nicht die
-   „tatsächliche Übergabefähigkeit".
+### Zugangsmodell
 
-4. **Ab welcher Differenz ist eine Abweichung berichtenswert?**
-   `HEURISTIC_SPREAD_BANDS` in `comparison.ts` enthält vorläufige Schwellen,
-   ausdrücklich als Heuristik gekennzeichnet. Sie sind nicht validiert und
-   dürfen ohne fachliche Freigabe nicht in einen ausgelieferten Bericht.
-5. **Die Texte des Perspektivberichts** existieren noch nicht. Im persönlichen
-   Bericht steht bisher nur der Ausblick `PERSPECTIVE_PARAGRAPHS`.
+Kein Login, der Check ist anonym nutzbar. Zugriff regeln zwei Geheimnisse:
 
-Erst danach programmieren. In Beta v1.0 laufen alle Datensätze mit
-`organization_id = null`, `comparison_id = null` und `respondent_role = 'owner'`.
+| Token | Wer | Darf |
+| :--- | :--- | :--- |
+| `manage_token` | Initiator | Auswertung sehen, einladen, zurückziehen, umbenennen |
+| `invite token` | Teilnehmer | genau einmal antworten, sieht die Auswertung **nicht** |
 
----
+Beide stehen nur im jeweiligen Link. Der Verwaltungslink lässt sich nicht
+wiederherstellen, deshalb steht auf der Seite die Aufforderung, ihn als
+Lesezeichen zu speichern. Rolle und Vergleichszuordnung liest der Server
+ausschließlich aus dem Token, nie aus dem Request: sonst könnte jeder Antworten
+in einen fremden Vergleich schreiben oder sich eine andere Rolle geben.
+
+### Rollen und Itemvarianten
+
+Drei Rollen: `owner`, `leader`, `key_person`. Die Rollenvariante darf
+ausschließlich die Perspektive der Formulierung ändern, niemals das gemessene
+Konstrukt. Item-ID, Dimension, Polung und Scoring bleiben identisch, sonst
+vergleichen die Rollen nicht mehr dasselbe.
+
+Varianten hinterlegt bei **1.3, 3.1, 3.2, 3.3, 3.4, 5.1 und 5.3**. Die übrigen
+17 Items sind neutral formuliert und für alle Rollen gleich. Das ist Absicht:
+drei künstlich unterschiedliche Fragebögen wären methodisch schlechter.
+
+Bei 3.1 bis 3.3 antwortet die Führungskraft in der **Ich-Perspektive**. Gerade
+die Differenz zwischen zugestandener und erlebter Autonomie ist der
+interessante Befund.
+
+### Aggregation und Abweichung
+
+* Dimensionswert je Teilnehmer berechnen, **dann** je Rolle mitteln. Nicht
+  umgekehrt, sonst wäre die Polung nicht sauber angewendet.
+* Kein Gesamtscore, auch nicht über Rollen hinweg.
+* Abweichung = größter Abstand zweier Rollen in einer Dimension.
+
+| Differenz | Darstellung |
+| ---: | :--- |
+| 0–9 | weitgehend ähnliche Einschätzung |
+| 10–24 | unterschiedliche Einschätzung |
+| ab 25 | deutlich unterschiedliche Einschätzung |
+
+**Heuristische Orientierungswerte, keine validierten Cut-offs.** Sie steuern nur
+die Auswahl und Darstellung der Vergleichspunkte. `HEURISTIC_DISCLOSURE` sagt
+das dem Nutzer auch.
+
+Auf Itemebene gilt dieselbe Skala: ein Likert-Schritt entspricht 25 Punkten.
+Gezeigt werden höchstens vier Itemabweichungen, und nur innerhalb der
+auffälligen Dimensionen. Alle 24 anzuzeigen macht die Auswertung unlesbar.
+
+### Was der Vergleich nicht sagen darf
+
+Diese Grenze ist der eigentliche Kern, nicht die Technik:
+
+* keine Aussage, welche Perspektive zutrifft
+* kein „der Inhaber überschätzt seine Organisation"
+* kein „die Führungskräfte sehen die Realität kritischer"
+* kein „hier besteht ein Wahrnehmungsproblem"
+* keine Ursachendiagnose aus einer Differenz
+* **keine Anonymität behaupten.** Bei zwei Führungskräften ist eine
+  Einzelantwort faktisch zuordenbar. `SMALL_GROUP_NOTE` steht deshalb sowohl
+  beim Einladen als auch vor der Teilnahme.
+
+Sonderfall eine Person je Rolle: Dann heißt es „Perspektive Führungskraft“,
+nicht „Perspektive Führungsebene“. `roleLabel()` entscheidet das anhand der
+Gruppengröße. Von einer zusammengefassten Sicht darf erst ab zwei Teilnehmern
+gesprochen werden.
+
+### Was noch offen ist
+
+* **Klärungsfragen auf Itemebene.** `ITEM_COMPARISON_QUESTIONS` in
+  `comparison.ts` enthält bisher nur die Frage zu Item 3.1 aus der
+  Spezifikation. Für die übrigen 23 Items greift die allgemeinere
+  Dimensionsfrage. Das funktioniert, ist aber deutlich weniger konkret. Die
+  Formulierungen sind Modellinhalt und werden nicht aus der Programmierung
+  heraus erfunden.
+* **Kein E-Mail-Versand an Teilnehmer.** Eingeladen wird über kopierbare Links.
+  Würden hier die Adressen der Führungskräfte eingetragen, verarbeiteten wir
+  personenbezogene Daten Dritter, die nie eingewilligt haben. Das braucht
+  vorher eine Ergänzung der Datenschutzerklärung.
+* **Kein persönlicher Vergleichsbericht.** Die Vergleichsseite ist druckbar,
+  aber Deckblatt, Briefkopf und Schlussblatt sind bisher auf den Einzelbericht
+  zugeschnitten.
+* **Keine Löschfrist für Vergleiche.** `uc_purge_expired()` kennt
+  `uc_comparisons` und `uc_comparison_invites` noch nicht.
+
+
 
 ## 7. Drucklayout
 
@@ -384,8 +482,15 @@ Geprüfter Stand über vier Antwortprofile, ohne leere Seiten, Waisenzeilen oder
 | :--- | ---: |
 | alle Dimensionen 100, keine Hinweise | 9 |
 | alle Dimensionen 50, keine Hinweise | 9 |
-| gemischt, sechs Hinweise | 12 |
-| alle Dimensionen 0, dreizehn Hinweise | 13 |
+| gemischt, mehrere Hinweise | 12 |
+| alle Dimensionen 0, alle Hinweise | 13 |
+
+Geprüft wird maschinell mit PyMuPDF über den Textstrom je Seite: leere Seiten,
+Seiten mit höchstens drei Zeilen, und Überschriften, die als letzte Zeile einer
+Seite stehen. Zwei Fehlerklassen sind dabei aufgefallen und behoben: das
+Deckblatt schob eine leere Seite an, und der Kopf einer Dimension zerfiel in
+Titel/Punktwert am Seitenfuß und Reifegradstufe auf der Folgeseite
+(`uc-avoid-break` auf der Kopfzeile).
 
 Die Seitenzahl schwankt mit der Zahl der Hinweise, und das ist richtig so: bei
 dreizehn Hinweisen steht mehr im Bericht. Nicht künstlich auf eine feste

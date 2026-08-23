@@ -1,18 +1,23 @@
 // src/components/uebergabe-check/ResultCtas.tsx
 //
-// Abschluss der Ergebnisseite. Bewusst eine klare Rangfolge statt drei
-// gleichwertiger Buttons: der wertvollste nächste Schritt ist das Gespräch,
-// der Bericht ist der Auffangmechanismus für alle, die noch nicht so weit sind.
+// Abschluss der Ergebnisseite. Drei Wege mit klarer Rangfolge statt eines
+// einzelnen Angebots:
 //
-// Zwei Varianten:
-//  • "live"   direkt nach dem Ausfüllen. Zweiter Button führt zum Formular für
-//             den Ergebnisbericht.
-//  • "report" auf der permanenten Berichtsseite. Dort liegt der Bericht bereits
-//             vor, deshalb steht hier das Sichern als PDF.
+//   1. Ergebnis gemeinsam einordnen   für alle, die direkt sprechen wollen
+//   2. Perspektivvergleich starten    für alle, die zuerst intern weiterarbeiten
+//   3. Persönlichen Bericht erhalten  für alle, die dokumentieren und vertiefen
+//
+// Weg 2 hält diejenigen im Funnel, die noch keinen Beraterkontakt möchten. Er
+// erzeugt zugleich den natürlichen Kreislauf: Inhaber macht den Check, lädt
+// Führungskräfte ein, unterschiedliche Wahrnehmungen werden sichtbar, daraus
+// entsteht Gesprächsbedarf.
 
 "use client";
 
 import Link from "next/link";
+
+import { useStartComparison } from "./PerspectiveBlock";
+import { PERSPECTIVE_CTA } from "@/lib/uebergabe-check/report-blocks";
 
 const BOOKING_URL =
   "https://outlook.office.com/bookwithme/user/6de68b0b8be247aea52fe665683a25e3";
@@ -20,6 +25,7 @@ const BOOKING_URL =
 export default function ResultCtas({
   variant = "live",
   discussionCount,
+  assessmentId = null,
   onRequestReport,
 }: {
   variant?: "live" | "report";
@@ -28,9 +34,16 @@ export default function ResultCtas({
    * verdrahtet, weil sie je nach Antwortprofil zwischen drei und fünf liegt.
    */
   discussionCount?: number;
+  /** Für den Einstieg in den Perspektivvergleich. */
+  assessmentId?: string | null;
   /** Klappt das Formular für die Zusendung auf. Nur in der Variante "live". */
   onRequestReport?: () => void;
 }) {
+  const comparison = useStartComparison(assessmentId);
+
+  const secondaryClass =
+    "inline-flex items-center justify-center rounded-[5px] border border-white/25 px-5 py-3 font-semibold text-white transition-colors duration-150 hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-50";
+
   return (
     <div className="dark-block uc-no-print p-7 sm:p-10">
       <div className="section-eyebrow" style={{ color: "rgba(255,255,255,0.62)" }}>
@@ -60,24 +73,35 @@ export default function ResultCtas({
           Ergebnis gemeinsam einordnen
         </a>
 
+        <button
+          type="button"
+          onClick={comparison.start}
+          disabled={comparison.pending}
+          className={secondaryClass}
+        >
+          {comparison.pending ? "Wird angelegt …" : PERSPECTIVE_CTA}
+        </button>
+
         {variant === "live" ? (
-          <button
-            type="button"
-            onClick={onRequestReport}
-            className="inline-flex items-center justify-center rounded-[5px] border border-white/25 px-5 py-3 font-semibold text-white transition-colors duration-150 hover:bg-white/10"
-          >
+          <button type="button" onClick={onRequestReport} className={secondaryClass}>
             Persönlichen Arbeitsbericht erhalten
           </button>
         ) : (
           <button
             type="button"
             onClick={() => window.print()}
-            className="inline-flex items-center justify-center rounded-[5px] border border-white/25 px-5 py-3 font-semibold text-white transition-colors duration-150 hover:bg-white/10"
+            className={secondaryClass}
           >
             Als PDF sichern
           </button>
         )}
       </div>
+
+      {comparison.error && (
+        <p role="alert" className="mt-4 text-[14px] font-medium text-red-300">
+          {comparison.error}
+        </p>
+      )}
 
       {/* Ohne diesen Satz ist nicht ersichtlich, warum jemand nach dem bereits
           sichtbaren Ergebnis noch eine E-Mail-Adresse hinterlassen sollte. */}

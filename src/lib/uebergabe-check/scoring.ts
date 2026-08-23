@@ -1,10 +1,12 @@
 // src/lib/uebergabe-check/scoring.ts
 //
-// Scoring- und Ergebnislogik (v1.5).
-// Quelle: Gesamtspezifikation (finale, konsolidierte Fassung), Teil 3.
+// Scoring- und Ergebnislogik.
+// Quelle: Fachliche Spezifikation Perspektivvergleich, Abschnitt 4.
 //
-// Reine Funktionen ohne Seiteneffekte, identisch nutzbar im Browser (für die
-// sofortige Ergebnisanzeige) und im API-Route (für den gespeicherten Datensatz).
+// Reine Funktionen, identisch nutzbar im Browser (für die sofortige
+// Ergebnisanzeige) und in der API-Route (für den gespeicherten Datensatz).
+// Es gibt bewusst nur diese eine Scoring-Implementierung: eine zweite Tabelle
+// mit Polungen an anderer Stelle wäre genau die Altlast, die auseinanderläuft.
 
 import {
   DIMENSION_IDS,
@@ -14,6 +16,7 @@ import {
   type Item,
   type LikertValue,
 } from "./items";
+import { assertInstrumentIntegrity } from "./self-check";
 
 export type MaturityLevel = "stable" | "observe" | "develop" | "elevated";
 
@@ -73,6 +76,22 @@ export function maturityLevel(score: number): MaturityLevel {
 }
 
 /**
+ * Die Strukturprüfung des Instruments läuft einmal je Laufzeit, beim ersten
+ * Scoring.
+ *
+ * self-check.ts liest FLAG_DEFINITIONS aus dieser Datei, es besteht also ein
+ * Importzyklus. Er ist unkritisch, weil der Aufruf erst zur Laufzeit erfolgt
+ * und beide Module dann vollständig geladen sind. Auf Modulebene aufgerufen
+ * wäre er es nicht.
+ */
+let integrityChecked = false;
+function runIntegrityCheckOnce(): void {
+  if (integrityChecked) return;
+  integrityChecked = true;
+  assertInstrumentIntegrity();
+}
+
+/**
  * Berechnet alle sechs Dimensionen. Wirft, wenn der Fragebogen unvollständig
  * ist. Der Aufrufer muss vorher mit isComplete() prüfen.
  *
@@ -80,6 +99,7 @@ export function maturityLevel(score: number): MaturityLevel {
  * 24 Items würde schwere Einzelrisiken wegmitteln.
  */
 export function computeScores(answers: Answers): DimensionScore[] {
+  runIntegrityCheckOnce();
   return DIMENSION_IDS.map((dimension) => {
     const score = dimensionScore(dimension, answers);
     if (score === null) {
@@ -203,10 +223,12 @@ export const FLAG_DEFINITIONS: readonly FlagDefinition[] = [
     id: "D1_I4_LIMITS_MISSING",
     itemId: "1.4",
     dimension: 1,
-    trigger: [4, 5],
+    // Item 1.4 ist seit beta-2.0 positiv gepolt und fragt das Vorhandensein
+    // der Freigabegrenzen ab. Der Hinweis greift deshalb bei niedrigen Werten.
+    trigger: [1, 2],
     priority: "hinweis",
     heading: "Fehlen dezentraler Freigabegrenzen",
-    text: "Für nachgelagerte Funktionen sind keine operativen Freigabegrenzen definiert. Ihre Antwort deutet darauf hin, dass Routinefreigaben (z. B. finanzielle Entscheidungen) im Alltag von Ihnen persönlich autorisiert werden müssen.",
+    text: "Für finanzielle Freigaben bestehen nach Ihrer Einschätzung keine klar definierten Grenzen, innerhalb derer andere Personen eigenständig entscheiden können. Ihre Antwort deutet darauf hin, dass Routinefreigaben im Alltag von Ihnen persönlich autorisiert werden müssen.",
     check: "Prüfen Sie, ob die Festlegung klarer, betragsbezogener Freigabegrenzen Ihre Mitarbeiter im Alltag entlasten und zu eigenständigem Handeln anregen kann.",
     approach: "Einführung einer einfachen Freigaberichtlinie für Einkäufe oder Rabatte.",
   },
@@ -217,7 +239,7 @@ export const FLAG_DEFINITIONS: readonly FlagDefinition[] = [
     trigger: [1, 2],
     priority: "erhoehte_aufmerksamkeit",
     heading: "Fehlende Stellvertretungen bei geschäftskritischen Fachaufgaben",
-    text: "Für geschäftskritische Fachaufgaben sind nach Ihrer Einschätzung keine qualifizierten Stellvertretungen vorhanden. Ihre Antwort deutet darauf hin, dass das operative System an diesen Fachstellen personelle Engpassrisiken aufweist.",
+    text: "Für geschäftskritische Fachaufgaben sind nach Ihrer Einschätzung keine qualifizierten Stellvertretungen vorhanden. Ihre Antwort deutet darauf hin, dass an diesen Fachstellen mögliche personelle Engpässe bestehen.",
     check: "Prüfen Sie, bei welchen spezifischen Fachaufgaben (z. B. IT-Administration oder Betreuung von Kernsystemen) keine Vertretung existiert und wie hoch die Ausfallwahrscheinlichkeit ist.",
     approach: "Erstellung einer Qualifikationsübersicht, um systematisch Doppelbesetzungen vorzubereiten.",
   },
@@ -227,9 +249,9 @@ export const FLAG_DEFINITIONS: readonly FlagDefinition[] = [
     dimension: 2,
     trigger: [4, 5],
     priority: "kritisch",
-    heading: "Personelles Abhängigkeitsrisiko auf Fachebene",
-    text: "Die unvorhergesehene Kündigung einer einzelnen Fachkraft würde nach Ihrer Einschätzung die Leistungserstellung für mehrere Wochen spürbar beeinträchtigen. Ihre Antwort deutet darauf hin, dass in diesem Bereich ein personelles Kopfmonopol vorliegt.",
-    check: "Prüfen Sie, inwieweit das geschäftskritische Erfahrungswissen dieser Fachkraft schrittweise im Team geteilt werden kann, um das Ausfallrisiko zu senken.",
+    heading: "Personelle Abhängigkeit auf Fachebene",
+    text: "Die ungeplante Kündigung einer einzelnen Fachkraft könnte nach Ihrer Einschätzung die Leistungsfähigkeit eines geschäftskritischen Bereichs für mehrere Wochen deutlich beeinträchtigen. Ihre Antwort deutet darauf hin, dass in diesem Bereich ein personelles Kopfmonopol vorliegt.",
+    check: "Prüfen Sie, inwieweit das geschäftskritische Erfahrungswissen dieser Fachkraft schrittweise im Team geteilt werden kann, um die Abhängigkeit bei personellem Ausfall zu verringern.",
     approach: "Dokumentation von Einzelschritten oder gezielter Wissenstransfer an weitere Wissensträger im Team.",
   },
   {
@@ -272,7 +294,7 @@ export const FLAG_DEFINITIONS: readonly FlagDefinition[] = [
     trigger: [4, 5],
     priority: "hinweis",
     heading: "Dominanz informeller Absprachen im Alltag",
-    text: "Die tatsächlichen Arbeitsabläufe weichen nach Ihrer Einschätzung im Alltag stark von den offiziellen Vorgaben ab und basieren stattdessen auf informellen Absprachen. Ihre Antwort deutet darauf hin, dass das Tagesgeschäft über informelle Sonderwege gesteuert wird.",
+    text: "Die tatsächlichen Arbeitsabläufe weichen nach Ihrer Einschätzung im Alltag deutlich von den vorgesehenen Abläufen ab und beruhen stattdessen auf informellen Absprachen. Ihre Antwort deutet darauf hin, dass das Tagesgeschäft über informelle Sonderwege gesteuert wird.",
     check: "Prüfen Sie, inwieweit diese informellen Absprachen die Stabilität und Nachvollziehbarkeit des Systems bei einem Eigentümerwechsel beeinträchtigen könnten.",
     approach: "Anpassung veralteter Vorgaben an die tatsächlich gelebten Alltagsabläufe.",
   },
@@ -304,8 +326,8 @@ export const FLAG_DEFINITIONS: readonly FlagDefinition[] = [
     dimension: 6,
     trigger: [4, 5],
     priority: "erhoehte_aufmerksamkeit",
-    heading: "Reibungsrisiken bei der Anpassung von Sonderregelungen",
-    text: "Die Anpassung etablierter Sonderregelungen für einzelne Mitarbeiter führt nach Ihrer Einschätzung im Team im Regelfall zu spürbaren Widerständen. Ihre Antwort deutet darauf hin, dass das Team empfindlich auf die Veränderung gewohnter Sonderregelungen reagiert.",
+    heading: "Mögliche Reibung bei der Anpassung von Sonderregelungen",
+    text: "Veränderungen historisch gewachsener Sonderregelungen führen nach Ihrer Einschätzung häufig zu länger anhaltendem Widerstand. Ihre Antwort deutet darauf hin, dass das Team empfindlich auf die Veränderung gewohnter Sonderregelungen reagiert.",
     check: "Prüfen Sie, welche spezifischen Sonderregelungen oder Sonderrechte im Betrieb bestehen, die vor einer geplanten Übergabe transparent besprochen werden sollten.",
     approach: "Schrittweise Überprüfung und offene Kommunikation einheitlicher Standards im Team.",
   },

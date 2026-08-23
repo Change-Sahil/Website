@@ -10,41 +10,37 @@
 //
 //  Kenntlich gemacht wird der Interpretationscharakter über die Sprache
 //  („spricht dafür“, „dürfte“, „deutet darauf hin“, „kann“) und einmalig über
-//  INTERPRETATION_NOTE oberhalb der Detailauswertung. Deshalb muss nicht jeder
-//  einzelne Satz mit „möglicherweise“ und „gegebenenfalls“ überladen werden.
+//  METHOD_NOTE ganz am Ende. Deshalb muss nicht jeder einzelne Satz mit
+//  „möglicherweise“ und „gegebenenfalls“ überladen werden.
 //
 //  Konkrete Aussagen zu einzelnen Antworten entstehen weiterhin ausschließlich
 //  über die Item-Hinweise in scoring.ts.
+//
+//  ACHTUNG beim Ergänzen: Der methodische Vorbehalt steht GENAU EINMAL im
+//  Dokument, am Schluss. Mehrfach wiederholt unterbricht er die Bewegung
+//  Profil → verstehen → Prüffelder → diskutieren → handeln und schwächt jede
+//  Aussage, die der Bericht trifft.
 // ═══════════════════════════════════════════════════════════════════════════
 
 import type { DimensionId } from "./items";
 import type { MaturityLevel } from "./scoring";
 
-/** Callout an der Spitze der Ergebnisseite. */
-export const RESULT_DISCLAIMER =
-  "Der Schnellcheck dient einer strukturierten Erstindikation der organisationalen Übergabefähigkeit. Er zeigt Ansatzpunkte für eine vertiefte Betrachtung, ersetzt aber keine individuelle Analyse der konkreten Nachfolgesituation oder eine persönliche Nachfolgeberatung.";
+/**
+ * Kurze Lesehilfe unter den sechs Dimensionskarten. Ersetzt die frühere
+ * dreiteilige Erklärbox aus Diagrammlogik, Gesamtwert-Hinweis und
+ * Kontextualisierung.
+ */
+export const PROFILE_READING_TITLE = "So lesen Sie Ihr Profil";
+
+export const PROFILE_READING_TEXT =
+  "Je weiter außen eine Dimension liegt, desto stärker sind die im Schnellcheck betrachteten Voraussetzungen für eine organisationale Übergabe ausgeprägt. Entscheidend ist dabei weniger ein einzelner Wert als das Zusammenspiel der sechs Bereiche.";
 
 /**
- * Steht einmalig oberhalb der sechs Detailauswertungen und macht den
- * Interpretationscharakter transparent. Erlaubt den Einordnungstexten, etwas
- * Substanzielles zu sagen, statt jeden Satz zu relativieren.
+ * Der einzige methodische Vorbehalt im ganzen Bericht. Steht klein am Ende,
+ * nicht oben und nicht mehrfach.
  */
-export const INTERPRETATION_NOTE =
-  "Die Auswertung leitet aus Ihren Antworten Hinweise für eine mögliche Übergabesituation ab. Sie zeigt typische Zusammenhänge und Ansatzpunkte. Nicht jede Interpretation muss deshalb Ihre individuelle Situation vollständig treffen.";
-
-/** Semantische Erklärung des Diagramms. */
-export const CHART_EXPLANATION =
-  "Das Diagramm zeigt die Ausprägung der sechs Dimensionen auf einen Blick. Je weiter außen eine Achse liegt, desto stärker sind die im Schnellcheck betrachteten Voraussetzungen für eine organisationale Übergabe in diesem Bereich ausgeprägt.";
-
-export const NO_TOTAL_SCORE_NOTE =
-  "Ein Gesamtwert wird bewusst nicht ausgewiesen. Er würde einzelne kritische Abhängigkeiten im Mittel verschwinden lassen.";
-
-/**
- * Kontextualisierung statt Dringlichkeit. Ein niedriger Wert bedeutet je nach
- * Zeithorizont und Nachfolgeform etwas völlig anderes.
- */
-export const CONTEXT_NOTE =
-  "Ob und wann ein Bereich Aufmerksamkeit braucht, hängt von Ihrer konkreten Situation ab. Derselbe Wert bedeutet bei zehn Jahren Vorlauf etwas anderes als sechs Monate vor einer Übergabe.";
+export const METHOD_NOTE =
+  "Der Schnellcheck ist eine strukturierte Erstindikation auf Basis Ihrer Antworten. Die Ergebnisse sind keine abschließende Organisationsdiagnose und sollten im Kontext Ihrer konkreten Übergabesituation eingeordnet werden.";
 
 export const FLAGS_SECTION_TITLE = "Auffällig in Ihren Antworten";
 

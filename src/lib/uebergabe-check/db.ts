@@ -20,9 +20,9 @@ export type AssessmentRow = {
    *
    * Optional, weil die Spalte erst durch
    * supabase/uebergabe-check-perspektivvergleich.sql angelegt wird. Sie wird
-   * bewusst noch nicht mitgelesen: ein Select auf eine fehlende Spalte lässt
-   * Supabase mit 42703 fehlschlagen und die Ergebnisseite liefe ins Leere.
-   * Erst mitselektieren, wenn die Auswertung sie tatsächlich braucht.
+   * auf der Einzel-Ergebnisseite bewusst nicht mitgelesen: ein Select auf eine
+   * fehlende Spalte lässt Supabase mit 42703 fehlschlagen, und dann liefe die
+   * Ergebnisseite ins Leere, obwohl der Einzelcheck davon gar nichts braucht.
    */
   comparison_id?: string | null;
   answers: Answers;

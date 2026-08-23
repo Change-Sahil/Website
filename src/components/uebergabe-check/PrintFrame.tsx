@@ -10,7 +10,7 @@
 // Einordnung sein, nicht ein Disclaimer. Der methodische Hinweis steht deshalb
 // kompakt am Fuß derselben Seite und nicht auf einer eigenen.
 
-import { DIMENSIONS, LEVEL_META } from "@/lib/uebergabe-check/content";
+import { DIMENSIONS, LEVEL_META, METHOD_NOTE } from "@/lib/uebergabe-check/content";
 import { formatScore, type DimensionScore } from "@/lib/uebergabe-check/scoring";
 
 const CONTACT = {
@@ -27,9 +27,8 @@ const CONTACT = {
 const ACCENT = "rgb(0,168,165)";
 const ACCENT_DARK = "rgb(0,112,125)";
 
-/** Kompakter methodischer Hinweis. Steht am Fuß der Schlussseite. */
-export const REPORT_DISCLAIMER =
-  "Der Schnellcheck liefert eine strukturierte Erstindikation. Die Auswertung leitet aus Ihren Antworten typische Zusammenhänge und Ansatzpunkte ab; nicht jede Interpretation muss Ihre individuelle Situation vollständig treffen. Eine vertiefende Organisations- oder Nachfolgeanalyse ersetzt der Bericht nicht.";
+/* Der methodische Hinweis steht am Fuß der Schlussseite und nirgends sonst.
+   Text: METHOD_NOTE aus content.ts. */
 
 function AccentRule({ thick = false }: { thick?: boolean }) {
   return (
@@ -194,31 +193,59 @@ export function PrintClosing() {
             Was bedeutet das für Ihre konkrete Nachfolge?
           </h2>
 
-          <p className="mt-5 max-w-[38em] text-[15px] font-semibold leading-7 text-slate-800">
-            Sie wissen jetzt, wo Ihr Unternehmen bereits gute Voraussetzungen
-            für eine Übergabe mitbringt und welche Punkte Sie genauer betrachten
-            sollten.
-          </p>
-          <p className="mt-3 max-w-[38em] text-[14px] leading-7 text-slate-600">
-            Welche dieser Themen für Ihre konkrete Nachfolge tatsächlich
-            entscheidend sind, hängt unter anderem von der Nachfolgeform, dem
-            Zeithorizont und Ihrer zukünftigen Rolle im Unternehmen ab.
-          </p>
-          <p className="mt-3 max-w-[38em] text-[15px] font-semibold leading-7 text-slate-800">
-            Wenn Sie Ihr Übergabeprofil gemeinsam einordnen möchten, besprechen
-            wir, welche Themen für Ihre Situation besonders relevant sind und wo
-            es sinnvoll ist, zuerst anzusetzen.
+          <p className="mt-5 max-w-[38em] text-[14px] leading-7 text-slate-600">
+            Ihr Profil zeigt, wo Ihr Unternehmen bereits gute Voraussetzungen
+            für eine Übergabe mitbringt und welche Themen genauer betrachtet
+            werden sollten.
           </p>
 
-          <div
-            className="mt-7 inline-block rounded-[6px] px-6 py-4"
-            style={{ background: "rgba(0,168,165,0.08)", border: `1px solid ${ACCENT}` }}
-          >
-            <div className="text-[16px] font-bold" style={{ color: ACCENT_DARK }}>
-              Ergebnis gemeinsam einordnen
+          {/* Zwei Wege statt einem: externes Sparring oder interne Vertiefung.
+              Wer noch nicht sprechen möchte, bleibt über den Perspektivvergleich
+              trotzdem in Bewegung. */}
+          <div className="mt-7 grid gap-5 sm:grid-cols-2">
+            <div
+              className="rounded-[6px] px-5 py-4"
+              style={{
+                background: "rgba(0,168,165,0.08)",
+                border: `1px solid ${ACCENT}`,
+              }}
+            >
+              <div className="text-[13px] font-semibold leading-6 text-slate-800">
+                Sie möchten Ihre Ergebnisse einordnen?
+              </div>
+              <p className="mt-1 text-[12px] leading-5 text-slate-600">
+                Im persönlichen Gespräch betrachten wir, welche Themen für Ihre
+                konkrete Nachfolgesituation tatsächlich relevant sind.
+              </p>
+              <div
+                className="mt-3 text-[14px] font-bold"
+                style={{ color: ACCENT_DARK }}
+              >
+                Ergebnis gemeinsam einordnen
+              </div>
+              <div className="mt-1 break-all text-[10px] leading-4 text-slate-500">
+                {CONTACT.booking}
+              </div>
             </div>
-            <div className="mt-1 break-all text-[11px] leading-5 text-slate-600">
-              {CONTACT.booking}
+
+            <div className="rounded-[6px] border border-slate-300 px-5 py-4">
+              <div className="text-[13px] font-semibold leading-6 text-slate-800">
+                Oder möchten Sie zunächst wissen, wie andere Ihr Unternehmen
+                einschätzen?
+              </div>
+              <p className="mt-1 text-[12px] leading-5 text-slate-600">
+                Laden Sie Führungskräfte oder Schlüsselpersonen zum Schnellcheck
+                ein und vergleichen Sie anschließend die Perspektiven.
+              </p>
+              <div
+                className="mt-3 text-[14px] font-bold"
+                style={{ color: ACCENT_DARK }}
+              >
+                Perspektivvergleich starten
+              </div>
+              <div className="mt-1 text-[10px] leading-4 text-slate-500">
+                Über den Link zu Ihrem Ergebnis
+              </div>
             </div>
           </div>
 
@@ -243,7 +270,7 @@ export function PrintClosing() {
         {/* Kompakt und am Fuß derselben Seite, nicht als eigener Abschnitt. */}
         <p className="uc-avoid-break text-[10.5px] leading-5 text-slate-500">
           <strong className="font-semibold text-slate-600">Hinweis:</strong>{" "}
-          {REPORT_DISCLAIMER}
+          {METHOD_NOTE}
         </p>
       </div>
     </div>

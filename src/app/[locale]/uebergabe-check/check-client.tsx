@@ -1,4 +1,4 @@
-// src/app/[locale]/uebergabe-check/check-client.tsx
+﻿// src/app/[locale]/uebergabe-check/check-client.tsx
 //
 // Ablauf des Schnellchecks: Einstieg → sechs Schritte à vier Items → Ergebnis.
 // Die Auswertung wird sofort im Browser berechnet, damit kein Ladebalken
@@ -12,6 +12,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import BetaFeedback from "@/components/uebergabe-check/BetaFeedback";
 import LeadForm from "@/components/uebergabe-check/LeadForm";
 import LikertScale from "@/components/uebergabe-check/LikertScale";
+import PerspectiveBlock from "@/components/uebergabe-check/PerspectiveBlock";
 import {
   PrintClosing,
   PrintCover,
@@ -19,10 +20,17 @@ import {
 } from "@/components/uebergabe-check/PrintFrame";
 import Report from "@/components/uebergabe-check/Report";
 import ResultCtas from "@/components/uebergabe-check/ResultCtas";
-import { DIMENSIONS } from "@/lib/uebergabe-check/content";
+import { DIMENSIONS, METHOD_NOTE } from "@/lib/uebergabe-check/content";
+import {
+  PARTICIPANT_INTRO,
+  PARTICIPANT_INTRO_DETAIL,
+  roleMeta,
+  type RespondentRole,
+} from "@/lib/uebergabe-check/comparison";
 import {
   ITEMS,
   ITEM_VERSION,
+  itemText,
   itemsForDimension,
   type Answers,
   type LikertValue,
@@ -35,10 +43,20 @@ import {
   isComplete,
 } from "@/lib/uebergabe-check/scoring";
 
-const STORAGE_KEY = `uc-answers-${ITEM_VERSION}`;
 const TOTAL_STEPS = DIMENSIONS.length;
 
 type Stage = "intro" | "questions" | "result";
+
+/**
+ * Gesetzt, wenn der Check über einen Einladungslink läuft. Rolle und
+ * Zugehörigkeit bestimmt ausschließlich der Server anhand des Tokens; hier
+ * dienen sie nur der Anzeige und der Wahl der Itemformulierung.
+ */
+export type InviteContext = {
+  token: string;
+  role: RespondentRole;
+  label: string | null;
+};
 
 /**
  * Steuert die fünf Rückmeldefragen zum Instrument am Ende der Ergebnisseite.
@@ -48,7 +66,14 @@ type Stage = "intro" | "questions" | "result";
  */
 const BETA_MODE = false;
 
-export default function CheckClient() {
+export default function CheckClient({ invite }: { invite?: InviteContext }) {
+  const role: RespondentRole = invite?.role ?? "owner";
+  // Eigener Zwischenstand je Einladung: sonst überschreibt die Teilnahme am
+  // fremden Rechner den eigenen angefangenen Check und umgekehrt.
+  const storageKey = invite
+    ? `uc-answers-${ITEM_VERSION}-${invite.token.slice(0, 12)}`
+    : `uc-answers-${ITEM_VERSION}`;
+
   const [stage, setStage] = useState<Stage>("intro");
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
@@ -64,7 +89,7 @@ export default function CheckClient() {
   // ── Zwischenstand wiederherstellen ────────────────────────────────────────
   useEffect(() => {
     try {
-      const stored = window.localStorage.getItem(STORAGE_KEY);
+      const stored = window.localStorage.getItem(storageKey);
       if (!stored) return;
       const parsed = JSON.parse(stored) as Answers;
       if (parsed && typeof parsed === "object" && Object.keys(parsed).length > 0) {
@@ -79,7 +104,7 @@ export default function CheckClient() {
   useEffect(() => {
     if (Object.keys(answers).length === 0) return;
     try {
-      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
+      window.localStorage.setItem(storageKey, JSON.stringify(answers));
     } catch {
       // Privater Modus o. Ä. – der Check funktioniert auch ohne Speicherung.
     }
@@ -141,7 +166,11 @@ export default function CheckClient() {
       const response = await fetch("/api/uebergabe-check/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ answers, source: source.slice(0, 120) || undefined }),
+        body: JSON.stringify({
+          answers,
+          source: source.slice(0, 120) || undefined,
+          inviteToken: invite?.token,
+        }),
       });
       const data = await response.json();
       if (data?.id) setAssessmentId(data.id as string);
@@ -152,7 +181,7 @@ export default function CheckClient() {
     setSubmitting(false);
     setStage("result");
     try {
-      window.localStorage.removeItem(STORAGE_KEY);
+      window.localStorage.removeItem(storageKey);
     } catch {
       /* egal */
     }
@@ -167,11 +196,38 @@ export default function CheckClient() {
     setRestored(false);
     setReportFormOpen(false);
     try {
-      window.localStorage.removeItem(STORAGE_KEY);
+      window.localStorage.removeItem(storageKey);
     } catch {
       /* egal */
     }
     scrollToTop();
+  }
+
+  // ── Ergebnis nach einer Teilnahme am Perspektivvergleich ──────────────────
+  //
+  // Bewusst KEIN Einzelbericht: Einordnungen und Hinweise sind durchgehend an
+  // den Inhaber adressiert („ein Nachfolger trifft bei Ihnen auf …“). Einer
+  // Führungskraft diese Texte zu zeigen wäre die falsche Perspektive. Die
+  // Auswertung entsteht ohnehin erst aus dem Vergleich.
+  if (stage === "result" && invite) {
+    return (
+      <div ref={topRef} className="relative mx-auto max-w-3xl">
+        <div aria-hidden className="uc-wash" />
+        <div className="relative panel">
+          <div className="page-eyebrow">Vielen Dank</div>
+          <h1 className="title mt-3">Ihre Einschätzung ist eingegangen.</h1>
+          <p className="mt-5 text-[15px] leading-7 muted">
+            Ihre Antworten fließen in den Perspektivvergleich ein. Die
+            gemeinsame Auswertung erhält die Person, die den Vergleich
+            angelegt hat.
+          </p>
+          <p className="mt-3 text-[15px] leading-7 muted">
+            Dargestellt werden dort die zusammengefassten Werte je Rolle, nicht
+            einzelne Antworten. Sie können dieses Fenster jetzt schließen.
+          </p>
+        </div>
+      </div>
+    );
   }
 
   // ── Ergebnis ──────────────────────────────────────────────────────────────
@@ -202,12 +258,25 @@ export default function CheckClient() {
         </header>
 
         <Report scores={scores} answers={answers} />
+
+        {/* Der Perspektivvergleich steht schon auf der kostenlosen Seite: er
+            ist der logische nächste Erkenntnisschritt, nicht ein Zusatzangebot
+            hinter der E-Mail-Adresse. */}
+        <PerspectiveBlock assessmentId={assessmentId} />
+
         <ResultCtas
           discussionCount={discussionCount}
+          assessmentId={assessmentId}
           onRequestReport={() => setReportFormOpen(true)}
         />
         <LeadForm assessmentId={assessmentId} open={reportFormOpen} />
         {BETA_MODE && <BetaFeedback assessmentId={assessmentId} />}
+
+        {/* Der einzige methodische Vorbehalt, klein und am Ende. */}
+        <p className="uc-no-print text-[13px] leading-6 text-slate-500">
+          {METHOD_NOTE}
+        </p>
+
         <PrintClosing />
 
         <div className="uc-no-print pt-2">
@@ -218,6 +287,105 @@ export default function CheckClient() {
           >
             Check erneut durchführen
           </button>
+        </div>
+      </div>
+    );
+  }
+
+  // ── Einstieg für eingeladene Teilnehmer ───────────────────────────────────
+  //
+  // Eigener Einstieg statt der Verkaufsseite: Die eingeladene Person hat sich
+  // den Check nicht ausgesucht. Der Text macht ausdrücklich klar, dass es nicht
+  // darum geht, die Sicht des Inhabers zu bestätigen. Ohne diesen Hinweis
+  // liefert der Vergleich angepasste Antworten statt einer eigenen Perspektive.
+  if (stage === "intro" && invite) {
+    return (
+      <div ref={topRef} className="relative mx-auto max-w-3xl">
+        <div aria-hidden className="uc-wash" />
+
+        <div className="relative">
+          <div className="page-eyebrow">Perspektivvergleich</div>
+          <h1 className="title mt-3">Wie sehen Sie das Unternehmen?</h1>
+          {invite.label && (
+            <p className="mt-3 text-[15px] font-semibold text-slate-700">
+              {invite.label}
+            </p>
+          )}
+
+          <p className="mt-5 text-lg leading-8 muted">{PARTICIPANT_INTRO}</p>
+          <p className="mt-4 text-[15px] leading-7 muted">
+            {PARTICIPANT_INTRO_DETAIL}
+          </p>
+        </div>
+
+        <div className="mt-8 panel">
+          <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">
+            Ihre Perspektive
+          </div>
+          <div className="mt-1 text-[16px] font-bold text-slate-900">
+            {roleMeta(role).singular}
+          </div>
+          <p className="mt-1 text-[14px] leading-6 muted">
+            {roleMeta(role).description}
+          </p>
+
+          <ul className="mt-6 space-y-3">
+            {[
+              "24 alltagsnahe Aussagen auf einer fünfstufigen Skala, etwa fünf Minuten.",
+              "Ihre Antworten werden mit den Einschätzungen der übrigen Rollen zusammengefasst.",
+              "Es werden keine einzelnen Antworten namentlich ausgewiesen.",
+            ].map((line) => (
+              <li
+                key={line}
+                className="flex items-start gap-3 text-[15px] leading-7 text-slate-600"
+              >
+                <span
+                  aria-hidden
+                  className="mt-[10px] h-[7px] w-[7px] shrink-0 rounded-full"
+                  style={{ background: "rgb(0,168,165)" }}
+                />
+                <span>{line}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-6 rounded-2xl bg-slate-50/80 p-5 text-[13px] leading-6 muted">
+            {/* Keine Anonymität behaupten: bei zwei Führungskräften ist eine
+                Einzelantwort faktisch zuordenbar. */}
+            <strong className="font-semibold text-slate-700">Bitte beachten:</strong>{" "}
+            Bei kleinen Teilnehmergruppen können Einschätzungen trotz
+            zusammengefasster Darstellung unter Umständen einzelnen Personen
+            zugeordnet werden.
+          </div>
+
+          <div className="mt-7 flex flex-wrap items-center gap-3">
+            <button
+              type="button"
+              onClick={() => {
+                setStage("questions");
+                scrollToTop();
+              }}
+              className="btn-primary"
+            >
+              Einschätzung abgeben
+            </button>
+            {restored && progress > 0 && (
+              <button
+                type="button"
+                onClick={restart}
+                className="text-sm font-medium text-slate-500 underline underline-offset-4 hover:text-slate-800"
+              >
+                Von vorn beginnen
+              </button>
+            )}
+          </div>
+
+          {restored && progress > 0 && (
+            <p className="mt-3 text-[13px] muted">
+              Ein gespeicherter Zwischenstand liegt vor: {progress} von{" "}
+              {ITEMS.length} Aussagen sind bereits beantwortet.
+            </p>
+          )}
         </div>
       </div>
     );
@@ -421,7 +589,7 @@ export default function CheckClient() {
                 <span className="mr-2 text-slate-400 tabular-nums">
                   {index + 1}.
                 </span>
-                {item.text}
+                {itemText(item, role)}
               </p>
               <div className="mt-5">
                 <LikertScale

@@ -52,8 +52,12 @@ const FLAG_QUESTIONS: Record<string, string> = {
     "Welche gewachsenen Sonderregelungen gibt es bei uns, und wie würden wir reagieren, wenn ein Nachfolger sie infrage stellt?",
 };
 
-/** Auffüllfrage je Dimension, wenn zu wenige Item-Hinweise vorliegen. */
-const DIMENSION_QUESTIONS: Record<DimensionId, string> = {
+/**
+ * Auffüllfrage je Dimension, wenn zu wenige Item-Hinweise vorliegen.
+ * Wird zusätzlich vom Perspektivvergleich als Rückfallebene genutzt, wenn für
+ * eine Itemabweichung noch keine eigene Klärungsfrage hinterlegt ist.
+ */
+export const DIMENSION_QUESTIONS: Record<DimensionId, string> = {
   1: "Wo im Tagesgeschäft läuft heute noch etwas zwingend über den Inhaber, und was müsste sich ändern, damit es ohne ihn ginge?",
   2: "Bei welchen Aufgaben hängt unsere Leistungsfähigkeit an einer einzelnen Person?",
   3: "Welche Entscheidungen wollen wir künftig auf der Führungsebene sehen, die heute noch nach oben wandern?",
@@ -112,27 +116,34 @@ export function buildDiscussionPoints(
   return points;
 }
 
-// ── Hinweis auf den Perspektivvergleich ─────────────────────────────────────
+// ── Einstieg in den Perspektivvergleich ─────────────────────────────────────
 //
-// Erscheint im Bericht vor der Arbeitsseite. Der Vergleich selbst ist NICHT
-// Teil des kostenlosen Schnellchecks, siehe comparison.ts.
+// Kein bloßer Ausblick mehr, sondern ein echter nächster Schritt mit CTA.
+// Erscheint sowohl auf der kostenlosen Ergebnisseite als auch im Bericht.
 
 export const PERSPECTIVE_TITLE = "Wie sehen andere Ihr Unternehmen?";
 
-export const PERSPECTIVE_PARAGRAPHS: readonly string[] = [
-  "Sie haben den Schnellcheck aus Ihrer Perspektive beantwortet. Gerade bei Verantwortung, Schlüsselwissen, informellen Strukturen und Kultur können andere Personen im Unternehmen dieselbe Organisation anders erleben.",
-  "Eine interessante nächste Frage lautet deshalb: Wie würden Ihre Führungskräfte oder ausgewählte Schlüsselpersonen dieselben Themen einschätzen?",
-  "Unterschiedliche Einschätzungen sind dabei nicht automatisch richtig oder falsch. Sie können sichtbar machen, an welchen Stellen unterschiedliche Wahrnehmungen bestehen und ein gemeinsames Gespräch besonders sinnvoll ist.",
-];
+export const PERSPECTIVE_INTRO =
+  "Sie haben den Schnellcheck aus Ihrer Perspektive beantwortet. Führungskräfte oder Schlüsselpersonen können dieselben Themen anders einschätzen, gerade bei Verantwortung, Wissen, informellen Strukturen und Kultur.";
 
-// ── Arbeitsseite „Ihr nächster Schritt“ ─────────────────────────────────────
+export const PERSPECTIVE_HOOK =
+  "Der Vergleich ist besonders aufschlussreich: Wo stimmen die Perspektiven überein? Wo liegen sie auseinander? Und welche Unterschiede sollten vor einer Übergabe geklärt werden?";
+
+export const PERSPECTIVE_CTA = "Perspektivvergleich starten";
+
+export const PERSPECTIVE_CTA_HINT =
+  "Laden Sie ausgewählte Führungskräfte oder Schlüsselpersonen zu einer eigenen Einschätzung ein und vergleichen Sie anschließend die Ergebnisse.";
+
+// ── Arbeitsseite ────────────────────────────────────────────────────────────
 //
-// Reine Oberfläche, keine Modellinhalte.
+// Reine Oberfläche, keine Modellinhalte. Der Titel benennt jetzt den Zweck der
+// Seite statt nur „nächster Schritt“ zu sagen, und der Einleitungssatz stellt
+// die Verbindung zu Prüffeldern und Diskussionsfragen her.
 
-export const WORKSHEET_TITLE = "Ihr nächster Schritt";
+export const WORKSHEET_TITLE = "Vom Ergebnis zur nächsten Klärung";
 
 export const WORKSHEET_INTRO =
-  "Zum Ausdrucken und Ausfüllen, allein oder gemeinsam im Führungskreis.";
+  "Nutzen Sie diese Seite allein oder gemeinsam mit Ihrem Führungskreis. Wählen Sie aus den Prüffeldern und Diskussionsfragen die Punkte aus, die für Ihre Übergabesituation am wichtigsten erscheinen.";
 
 export const WORKSHEET_FIELDS: readonly {
   label: string;

@@ -19,10 +19,28 @@ import { dimensionContent } from "./content";
 import type { DimensionId } from "./items";
 import type { DimensionScore, FlagDefinition, FlagPriority } from "./scoring";
 
-export const PRUEFFELDER_TITLE = "Ihre ausgewählten Prüffelder";
+const COUNT_WORD = ["", "Ein", "Zwei", "Drei"] as const;
 
-export const PRUEFFELDER_INTRO =
-  "Aus Ihrem Profil ergeben sich einige Bereiche, die sich für eine vertiefte Betrachtung besonders anbieten. Die Auswahl ist keine automatische Prioritätenliste. Sie bündelt auffällige Punkte, mit denen Sie sinnvoll weiterarbeiten können.";
+/**
+ * Überschrift mit ausgeschriebener Anzahl. „Drei Prüffelder für Ihre Übergabe“
+ * ist konkreter und weniger technisch als „Ihre ausgewählten Prüffelder“.
+ * Die Anzahl steht im Titel, deshalb muss sie zur tatsächlichen Liste passen.
+ */
+export function pruefelderTitle(count: number): string {
+  if (count === 1) return "Ein Prüffeld für Ihre Übergabe";
+  const word = COUNT_WORD[count] ?? String(count);
+  return `${word} Prüffelder für Ihre Übergabe`;
+}
+
+export function pruefelderIntro(count: number): string {
+  const subject =
+    count === 1
+      ? "ergibt sich ein Thema, das sich"
+      : `ergeben sich ${COUNT_WORD[count]?.toLowerCase() ?? count} Themen, die sich`;
+  return `Aus Ihrem Profil ${subject} für eine genauere Betrachtung besonders ${
+    count === 1 ? "anbietet" : "anbieten"
+  }. Sie sind keine automatische Prioritätenliste, sondern Ausgangspunkte für Ihre weitere Klärung.`;
+}
 
 export type Pruefeld = {
   dimension: DimensionId;

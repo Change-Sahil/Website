@@ -8,6 +8,10 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 
 import { clientIp, rateLimit } from "@/lib/rate-limit";
+import {
+  completeInvite,
+  getInviteByToken,
+} from "@/lib/uebergabe-check/comparison-db";
 import { getDb } from "@/lib/uebergabe-check/db";
 import { ITEMS, ITEM_VERSION, type Answers } from "@/lib/uebergabe-check/items";
 import {
@@ -26,8 +30,14 @@ const answersSchema = z.object(
 const submitSchema = z.object({
   answers: answersSchema,
   source: z.string().max(120).optional(),
-  respondentRole: z.enum(["owner", "management", "other"]).optional(),
   organizationId: z.uuid().optional(),
+  /**
+   * Nur bei einer Teilnahme am Perspektivvergleich gesetzt. Rolle und
+   * Vergleichszuordnung werden bewusst NICHT vom Client übernommen, sondern
+   * aus der Einladung gelesen: sonst könnte jeder Antworten in einen fremden
+   * Vergleich schreiben oder sich eine andere Rolle geben.
+   */
+  inviteToken: z.string().min(16).max(64).optional(),
 });
 
 export async function POST(req: Request) {
@@ -55,7 +65,7 @@ export async function POST(req: Request) {
     );
   }
 
-  const { answers, source, respondentRole, organizationId } = parsed.data;
+  const { answers, source, organizationId, inviteToken } = parsed.data;
 
   // Scores und Flags werden serverseitig neu berechnet – der Client-Wert dient
   // nur der sofortigen Anzeige und wird nie übernommen.
@@ -70,18 +80,43 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true, id: null, persisted: false });
   }
 
+  // Einladung auflösen. Rolle und Vergleich stammen ausschließlich von hier.
+  let invite: Awaited<ReturnType<typeof getInviteByToken>> = null;
+  if (inviteToken) {
+    invite = await getInviteByToken(inviteToken);
+    if (!invite) {
+      return NextResponse.json(
+        { ok: false, error: "Dieser Einladungslink ist ungültig." },
+        { status: 404 }
+      );
+    }
+    if (invite.invite.used_at) {
+      return NextResponse.json(
+        { ok: false, error: "Dieser Einladungslink wurde bereits verwendet." },
+        { status: 409 }
+      );
+    }
+  }
+
+  // comparison_id nur mitschicken, wenn es wirklich einen Vergleich gibt.
+  // Ist die Migration noch nicht gelaufen, existiert die Spalte nicht und
+  // PostgREST würde den gesamten Insert ablehnen. Der Einzelcheck darf davon
+  // nicht abhängen.
+  const row: Record<string, unknown> = {
+    item_version: ITEM_VERSION,
+    locale: "de",
+    organization_id: organizationId ?? null,
+    respondent_role: invite?.invite.respondent_role ?? "owner",
+    answers,
+    scores: scoresToRecord(dimensionScores),
+    flags,
+    source: source ?? null,
+  };
+  if (invite) row.comparison_id = invite.comparisonId;
+
   const { data, error } = await db
     .from("uc_assessments")
-    .insert({
-      item_version: ITEM_VERSION,
-      locale: "de",
-      organization_id: organizationId ?? null,
-      respondent_role: respondentRole ?? "owner",
-      answers,
-      scores: scoresToRecord(dimensionScores),
-      flags,
-      source: source ?? null,
-    })
+    .insert(row)
     .select("id")
     .single();
 
@@ -90,5 +125,12 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true, id: null, persisted: false });
   }
 
-  return NextResponse.json({ ok: true, id: data.id, persisted: true });
+  if (invite) await completeInvite(invite.invite.id, data.id as string);
+
+  return NextResponse.json({
+    ok: true,
+    id: data.id,
+    persisted: true,
+    partOfComparison: Boolean(invite),
+  });
 }

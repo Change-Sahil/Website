@@ -11,18 +11,17 @@
 //   4. Wie sehen andere Ihr Unternehmen?
 //   5. Ihr nächster Schritt (Arbeitsseite)
 
+import PerspectiveBlock from "./PerspectiveBlock";
 import { dimensionContent } from "@/lib/uebergabe-check/content";
 import type { Answers } from "@/lib/uebergabe-check/items";
 import {
-  PRUEFFELDER_INTRO,
-  PRUEFFELDER_TITLE,
   buildPruefelder,
+  pruefelderIntro,
+  pruefelderTitle,
 } from "@/lib/uebergabe-check/pruefelder";
 import {
   DISCUSSION_INTRO,
   DISCUSSION_TITLE,
-  PERSPECTIVE_PARAGRAPHS,
-  PERSPECTIVE_TITLE,
   WORKSHEET_FIELDS,
   WORKSHEET_INTRO,
   WORKSHEET_TITLE,
@@ -112,9 +111,12 @@ function WriteLines({
 export default function PersonalReportExtras({
   scores,
   answers,
+  assessmentId,
 }: {
   scores: DimensionScore[];
   answers: Answers;
+  /** Für den Einstieg in den Perspektivvergleich. */
+  assessmentId: string | null;
 }) {
   const flags = computeFlags(answers);
   const summary = buildSummary(scores, flags);
@@ -123,14 +125,19 @@ export default function PersonalReportExtras({
 
   return (
     <div className="uc-report space-y-6 md:space-y-8">
-      {/* ── Profilzusammenfassung ────────────────────────────────────────── */}
+      {/* ── Profilzusammenfassung: genau drei beschriftete Absätze ───────── */}
       <section className="panel">
         <h2 className="text-xl font-bold text-slate-900">{SUMMARY_TITLE}</h2>
-        <div className="mt-4 space-y-3">
-          {summary.map((paragraph, index) => (
-            <p key={index} className="text-[15px] leading-7 text-slate-600">
-              {paragraph}
-            </p>
+        <div className="mt-4 space-y-4">
+          {summary.map((block) => (
+            <div key={block.label}>
+              <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">
+                {block.label}
+              </div>
+              <p className="mt-1 text-[15px] leading-7 text-slate-600">
+                {block.text}
+              </p>
+            </div>
           ))}
         </div>
       </section>
@@ -139,10 +146,10 @@ export default function PersonalReportExtras({
       {pruefelder.length > 0 && (
         <section className="panel">
           <h2 className="text-xl font-bold text-slate-900">
-            {PRUEFFELDER_TITLE}
+            {pruefelderTitle(pruefelder.length)}
           </h2>
           <p className="mt-2 max-w-2xl text-[15px] leading-7 muted">
-            {PRUEFFELDER_INTRO}
+            {pruefelderIntro(pruefelder.length)}
           </p>
 
           <div className="mt-6 space-y-4">
@@ -226,32 +233,8 @@ export default function PersonalReportExtras({
         </section>
       )}
 
-      {/* ── Perspektivvergleich ankündigen ───────────────────────────────── */}
-      <section
-        className="uc-avoid-break rounded-2xl border p-6 sm:p-8"
-        style={{
-          borderColor: "rgba(0,168,165,0.30)",
-          background: "rgba(0,168,165,0.05)",
-        }}
-      >
-        <h2 className="text-xl font-bold text-slate-900">
-          {PERSPECTIVE_TITLE}
-        </h2>
-        <div className="mt-3 space-y-3">
-          {PERSPECTIVE_PARAGRAPHS.map((paragraph, index) => (
-            <p
-              key={index}
-              className={
-                index < 2
-                  ? "text-[15px] font-semibold leading-7 text-slate-800"
-                  : "text-[15px] leading-7 text-slate-600"
-              }
-            >
-              {paragraph}
-            </p>
-          ))}
-        </div>
-      </section>
+      {/* ── Perspektivvergleich als nächster Schritt ─────────────────────── */}
+      <PerspectiveBlock assessmentId={assessmentId} />
 
       {/* ── Arbeitsseite ─────────────────────────────────────────────────── */}
       {/* Als Ganzes geschützt: aufgeteilt landete regelmäßig das letzte Feld

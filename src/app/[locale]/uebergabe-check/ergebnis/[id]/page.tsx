@@ -18,6 +18,7 @@ import {
 } from "@/components/uebergabe-check/PrintFrame";
 import Report from "@/components/uebergabe-check/Report";
 import ResultCtas from "@/components/uebergabe-check/ResultCtas";
+import { METHOD_NOTE } from "@/lib/uebergabe-check/content";
 import { getAssessment } from "@/lib/uebergabe-check/db";
 import { computeScores } from "@/lib/uebergabe-check/scoring";
 
@@ -68,8 +69,19 @@ export default async function Page({
 
       <ReportContentsNote scores={scores} answers={assessment.answers} />
       <Report scores={scores} answers={assessment.answers} />
-      <PersonalReportExtras scores={scores} answers={assessment.answers} />
-      <ResultCtas variant="report" />
+      <PersonalReportExtras
+        scores={scores}
+        answers={assessment.answers}
+        assessmentId={assessment.id}
+      />
+      <ResultCtas variant="report" assessmentId={assessment.id} />
+
+      {/* Der einzige methodische Vorbehalt am Bildschirm. Im Ausdruck steht er
+          am Fuß der Schlussseite, siehe PrintClosing. */}
+      <p className="uc-no-print text-[13px] leading-6 text-slate-500">
+        {METHOD_NOTE}
+      </p>
+
       <PrintClosing />
 
       <p className="uc-no-print text-sm muted">

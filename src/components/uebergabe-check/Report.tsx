@@ -17,14 +17,11 @@
 
 import SpiderWeb, { SERIES_COLORS } from "./SpiderWeb";
 import {
-  CHART_EXPLANATION,
-  CONTEXT_NOTE,
   FLAGS_SECTION_HINT,
   FLAGS_SECTION_TITLE,
-  INTERPRETATION_NOTE,
   LEVEL_META,
-  NO_TOTAL_SCORE_NOTE,
-  RESULT_DISCLAIMER,
+  PROFILE_READING_TEXT,
+  PROFILE_READING_TITLE,
   dimensionContent,
 } from "@/lib/uebergabe-check/content";
 import type { Answers } from "@/lib/uebergabe-check/items";
@@ -137,16 +134,8 @@ export default function Report({
 
   return (
     <div className="uc-report space-y-6 md:space-y-8">
-      {/* ── Kurzer methodischer Hinweis (Spec Teil 4, 1.1) ───────────────── */}
-      <p
-        className="border-l-[3px] py-1 pl-4 text-[13px] leading-6 text-slate-600"
-        style={{ borderLeftColor: "rgb(0,168,165)" }}
-      >
-        <strong className="font-semibold text-slate-800">
-          Hinweis zur Ergebniseinordnung:
-        </strong>{" "}
-        {RESULT_DISCLAIMER}
-      </p>
+      {/* Kein Disclaimer oberhalb des Diagramms. Der methodische Vorbehalt
+          steht genau einmal, ganz am Ende (METHOD_NOTE). */}
 
       {/* ── Diagramm und Stufenlegende ───────────────────────────────────── */}
       <div className="panel">
@@ -252,30 +241,17 @@ export default function Report({
         })}
       </div>
 
-      {/* ── Orientierung, erst nach den Zahlen ───────────────────────────── */}
-      <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 sm:p-6">
-        <p className="text-[14px] leading-7 text-slate-600">
-          {CHART_EXPLANATION}
-        </p>
-        <p className="mt-3 text-[14px] leading-7 text-slate-600">
-          {NO_TOTAL_SCORE_NOTE}
-        </p>
-        <p className="mt-3 text-[14px] leading-7 text-slate-600">
-          {CONTEXT_NOTE}
+      {/* ── Kurze Lesehilfe, dann direkt in die Dimensionen ──────────────── */}
+      <div className="uc-avoid-break">
+        <h2 className="text-[15px] font-bold text-slate-900">
+          {PROFILE_READING_TITLE}
+        </h2>
+        <p className="mt-1.5 max-w-3xl text-[14px] leading-7 text-slate-600">
+          {PROFILE_READING_TEXT}
         </p>
       </div>
 
       {/* ── Detailauswertung je Dimension ────────────────────────────────── */}
-      {/* Einmalig, damit die Einordnungstexte darunter etwas Substanzielles
-          sagen dürfen, statt jeden Satz zu relativieren. */}
-      <p
-        className="uc-avoid-break border-l-[3px] py-1 pl-4 text-[13px] leading-6 text-slate-600"
-        style={{ borderLeftColor: "rgb(202,138,4)" }}
-      >
-        <strong className="font-semibold text-slate-800">Zur Einordnung:</strong>{" "}
-        {INTERPRETATION_NOTE}
-      </p>
-
       <div className="space-y-4">
         {scores.map((entry, index) => {
           const content = dimensionContent(entry.dimension);
@@ -305,7 +281,9 @@ export default function Report({
               className="panel uc-topline scroll-mt-28"
               style={{ ["--uc-accent" as string]: meta.color }}
             >
-              <div className="flex flex-wrap items-start justify-between gap-4">
+              {/* Als Einheit geschützt: sonst standen Titel und Punktwert am
+                  Seitenfuß und die Reifegradstufe erst auf der Folgeseite. */}
+              <div className="uc-avoid-break flex flex-wrap items-start justify-between gap-4">
                 <div>
                   <div className="section-eyebrow">
                     <span className="dot" />

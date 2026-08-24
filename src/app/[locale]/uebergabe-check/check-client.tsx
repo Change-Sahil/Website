@@ -507,11 +507,11 @@ export default function CheckClient({ invite }: { invite?: InviteContext }) {
             <strong className="font-semibold text-slate-700">
               Ohne Registrierung:
             </strong>{" "}
-            Ihr Ergebnis sehen Sie direkt im Anschluss vollständig. Name und
-            E-Mail-Adresse brauchen Sie nur, wenn Sie zusätzlich Ihren
-            persönlichen Ergebnis- und Arbeitsbericht per E-Mail erhalten oder
-            anschließend die Einschätzungen Ihrer Führungs- und
-            Schlüsselpersonen vergleichen möchten.{" "}
+            Ihr vollständiges Ergebnis sehen Sie direkt im Anschluss. Name und
+            E-Mail-Adresse werden nur benötigt, wenn Sie zusätzlich Ihren
+            persönlichen Ergebnis- und Arbeitsbericht erhalten oder anschließend
+            Führungskräfte und Schlüsselpersonen zu einem Perspektivvergleich
+            einladen möchten.{" "}
             <strong className="font-semibold text-slate-700">
               Beides ist kostenlos.
             </strong>

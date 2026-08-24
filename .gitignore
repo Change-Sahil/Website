@@ -56,3 +56,6 @@ create-shortcut.ps1
 
 # Temporaere Commit-Nachrichten
 COMMIT_MSG.txt
+
+# Temporaere Pruefskripte des Uebergabe-Checks
+mailtest.py

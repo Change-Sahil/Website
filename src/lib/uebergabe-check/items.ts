@@ -9,13 +9,18 @@
 // Datensätze verschiedener Erhebungswellen später nicht sauber getrennt
 // auswerten.
 
-// beta-2.0 = finale Item-Matrix mit Rollenvarianten. Gegenüber beta-1.5:
+// 1.0 = erste öffentliche Fassung. Inhaltlich identisch mit der Vorfassung
+// beta-2.0; umbenannt beim Launch, weil zu diesem Zeitpunkt kein einziger
+// Datensatz in der Datenbank lag. Es kann also keine Verwechslung zwischen
+// Erhebungswellen geben, und Produktivdaten tragen nicht die Kennung „beta“.
+//
+// Gegenüber beta-1.5 waren die Änderungen:
 //  • Rollenvarianten für 1.3, 3.1, 3.2, 3.3, 3.4, 5.1 und 5.3
 //  • Polarität von 1.4 auf „positive“ und von 5.4 auf „inverse“ gedreht,
 //    jeweils mit neuem Wortlaut
 //  • Wortlaut in 1.1, 1.2, 2.3, 2.4, 4.1, 4.2, 4.3, 4.4, 5.2, 6.1, 6.2, 6.3
 //    und 6.4 angepasst
-export const ITEM_VERSION = "beta-2.0";
+export const ITEM_VERSION = "1.0";
 
 /** Polarität bestimmt die Punktetransformation (siehe scoring.ts). */
 export type Polarity = "positive" | "inverse";

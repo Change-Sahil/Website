@@ -27,8 +27,24 @@ function buildAlternates(path: string) {
   return { languages };
 }
 
+/**
+ * Seiten, die es nur auf Deutsch gibt. Sie stehen bewusst NICHT in
+ * staticPages: Dort würde für jede Locale eine URL samt hreflang-Alternative
+ * erzeugt, obwohl /en, /es und /tr auf /de umleiten. Das wären drei
+ * Weiterleitungs-URLs pro Seite in der Sitemap.
+ */
+const germanOnlyPages = ["/uebergabe-check"] as const;
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
+
+  for (const page of germanOnlyPages) {
+    entries.push({
+      url: `${BASE_URL}/de${page}`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    });
+  }
 
   // Static pages – all locales
   for (const page of staticPages) {

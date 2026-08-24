@@ -1,10 +1,15 @@
 ﻿# Übergabe-Check – Betriebsanleitung
 
-Kostenloser Schnellcheck zur organisationalen Übergabefähigkeit.
-Umsetzung der Gesamtspezifikation Beta v1.0 (24 Items, 6 Dimensionen).
+Kostenloser Schnellcheck zur organisationalen Übergabefähigkeit,
+24 Items, 6 Dimensionen, plus Perspektivvergleich mehrerer Rollen.
 
-**URL:** `/de/uebergabe-check` — in der Beta bewusst `noindex`, nicht in der
-Navigation und nicht in der Sitemap. Nur per direktem Link erreichbar.
+**Version 1.0, seit 24. August 2026 öffentlich.** URL: `/de/uebergabe-check`,
+indexierbar, in der Sitemap und in der deutschen Navigation.
+
+Nur auf Deutsch. Andere Locales leiten auf `/de` um; in deren Navigation
+erscheint der Check deshalb nicht, und in der Sitemap steht er ohne
+hreflang-Alternativen. Die Datenschutzerklärung deckt ihn in allen vier
+Sprachen ab.
 
 ---
 
@@ -263,7 +268,7 @@ geändert werden:
   darf nicht behaupten, ein Betrieb sei objektiv übergabefähig oder nicht
   (Spec 2.4). Deshalb steht dieser Hinweis hier und nicht auf der Ergebnisseite.
 * **`ITEM_VERSION`.** Bei *jeder* Änderung an Itemtext oder Polarität in
-  `items.ts` hochzählen. Aktueller Stand: `beta-2.0`, entsprechend der finalen
+  `items.ts` hochzählen. Aktueller Stand: `1.0`, entsprechend der finalen
   Item-Matrix der Spezifikation Perspektivvergleich. Gegenüber `beta-1.5`
   kamen Rollenvarianten hinzu, dreizehn Itemtexte wurden angepasst und bei
   Item 1.4 sowie Item 5.4 die **Polarität gedreht** (1.4 jetzt positiv,
@@ -342,14 +347,29 @@ Auswertung im Supabase SQL Editor:
 select * from uc_beta_overview;
 ```
 
-### Phase 2 – Öffentlicher MVP
+### Phase 2 – Öffentlich, seit Version 1.0 erledigt
 
-1. `INDEXABLE = true` in [`src/app/[locale]/uebergabe-check/page.tsx`](../src/app/%5Blocale%5D/uebergabe-check/page.tsx)
-2. `BETA_MODE` in `check-client.tsx` steht bereits auf `false`
-3. `/uebergabe-check` in `staticPages` in [`src/app/sitemap.ts`](../src/app/sitemap.ts) ergänzen
-4. Navigationseintrag in [`src/components/Header.tsx`](../src/components/Header.tsx) und Einstiegspunkte
-   auf Startseite, Leistungen und in den Impulse-Artikeln setzen
-5. `ITEM_VERSION` auf `mvp-1.0` setzen, falls Items überarbeitet wurden
+| Schritt | Stand |
+| :--- | :--- |
+| `INDEXABLE = true` in [`page.tsx`](../src/app/%5Blocale%5D/uebergabe-check/page.tsx) | erledigt |
+| `BETA_MODE = false` in `check-client.tsx` | erledigt |
+| Sitemap-Eintrag | erledigt, als `germanOnlyPages` in [`sitemap.ts`](../src/app/sitemap.ts), **nicht** in `staticPages` |
+| Navigationseintrag in [`Header.tsx`](../src/components/Header.tsx) | erledigt, nur für `locale === "de"` |
+| `ITEM_VERSION` | auf `1.0` gesetzt |
+
+Zwei Dinge, die dabei nicht offensichtlich waren:
+
+* **Nicht in `staticPages`.** Dort erzeugt die Sitemap für jede Locale eine URL
+  samt hreflang-Alternative. Da `/en`, `/es` und `/tr` auf `/de` umleiten,
+  wären das drei Weiterleitungs-URLs je Seite.
+* **Navigation erst ab `lg`, nicht ab `md`.** Mit dem achten Punkt quetschte
+  die deutsche Navigation bei rund 900px das Logo auf einen Splitter zusammen.
+  Zwischen 768 und 1024 übernimmt jetzt das Hamburger-Menü. Geprüft bei 768,
+  900, 1024 und 1440.
+
+**Noch offen und bewusst nicht gemacht:** Einstiegspunkte auf Startseite,
+Leistungen und in den Impulse-Artikeln. Das ist redaktionelle Arbeit an
+bestehenden Marketingseiten, keine Freischaltung.
 
 ---
 

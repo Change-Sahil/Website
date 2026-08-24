@@ -9,11 +9,14 @@ const BASE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://change-werkstatt-sahil.de";
 
 /**
- * Beta-Phase: nicht indexieren, nicht in der Navigation, nicht in der Sitemap.
- * Zum öffentlichen MVP hier auf true stellen und den Pfad in src/app/sitemap.ts
- * sowie in der Navigation ergänzen.
+ * Seit Version 1.0 öffentlich: indexierbar, in der Sitemap und in der
+ * deutschen Navigation.
+ *
+ * Nur die deutsche Fassung wird indexiert. Der Check ist ein
+ * deutschsprachiges Angebot, andere Locales leiten auf /de um. Deshalb steht
+ * er in der Sitemap ohne hreflang-Alternativen.
  */
-const INDEXABLE = false;
+const INDEXABLE = true;
 
 export async function generateMetadata(): Promise<Metadata> {
   const url = `${BASE_URL}/de/uebergabe-check`;

@@ -98,6 +98,27 @@ export default function Header() {
   const hrefSpeaking = `/${locale}/speaking`;
   const hrefContact  = `/${locale}/contact`;
 
+  const navItems: { href: string; label: string }[] = [
+    { href: hrefHome,     label: tNav("home") },
+    { href: hrefServices, label: tNav("services") },
+    { href: hrefApproach, label: tNav("approach") },
+    { href: hrefAbout,    label: tNav("about") },
+    { href: hrefImpulse,  label: tNav("impulse") },
+    { href: hrefSpeaking, label: tNav("speaking") },
+    { href: hrefContact,  label: tNav("contact") },
+  ];
+
+  // Der Übergabe-Check ist ein rein deutschsprachiges Angebot; andere Locales
+  // leiten auf /de um. Ein Menüpunkt in der englischen Navigation, der zu einer
+  // deutschen Seite führt, wäre eine Sackgasse. Deshalb nur auf Deutsch, und
+  // deshalb ohne Übersetzungsschlüssel.
+  if (locale === "de") {
+    navItems.splice(2, 0, {
+      href: `/${locale}/uebergabe-check`,
+      label: "Übergabe-Check",
+    });
+  }
+
   const activeBar = (
     <span
       aria-hidden
@@ -136,16 +157,12 @@ export default function Header() {
           </Link>
 
           {/* DESKTOP NAV */}
-          <nav className="hidden items-center gap-[14px] lg:gap-5 md:flex">
-            {[
-              { href: hrefHome,     label: tNav("home") },
-              { href: hrefServices, label: tNav("services") },
-              { href: hrefApproach, label: tNav("approach") },
-              { href: hrefAbout,    label: tNav("about") },
-              { href: hrefImpulse,  label: tNav("impulse") },
-              { href: hrefSpeaking, label: tNav("speaking") },
-              { href: hrefContact,  label: tNav("contact") },
-            ].map(({ href, label }) => (
+          {/* Erst ab lg: Mit dem achten Punkt "Übergabe-Check" quetschte die
+              Navigation bei rund 900px das Logo auf einen Splitter zusammen.
+              Zwischen 768 und 1024 übernimmt jetzt das Hamburger-Menü, das
+              acht Einträge problemlos trägt. */}
+          <nav className="hidden items-center gap-[14px] lg:gap-5 lg:flex">
+            {navItems.map(({ href, label }) => (
               <Link key={href} className={navLinkClass(href)} href={href}>
                 {label}
                 {isActive(href) && activeBar}
@@ -155,7 +172,7 @@ export default function Header() {
 
           {/* RECHTS */}
           <div className="flex items-center gap-3">
-            <div className="hidden md:flex">
+            <div className="hidden lg:flex">
               <LocaleSwitcher />
             </div>
 
@@ -177,7 +194,7 @@ export default function Header() {
             {/* HAMBURGER */}
             <button
               type="button"
-              className="md:hidden inline-flex items-center justify-center rounded-full border border-slate-200 bg-white/90 p-2 text-slate-700 shadow-sm transition-colors duration-150 hover:bg-slate-50"
+              className="lg:hidden inline-flex items-center justify-center rounded-full border border-slate-200 bg-white/90 p-2 text-slate-700 shadow-sm transition-colors duration-150 hover:bg-slate-50"
               aria-label={menuOpen ? tNav("menuClose") : tNav("menuOpen")}
               aria-expanded={menuOpen}
               aria-controls="mobile-nav"
@@ -201,7 +218,7 @@ export default function Header() {
           id="mobile-nav"
           ref={menuRef}
           aria-modal="true"
-          className="md:hidden overflow-hidden"
+          className="lg:hidden overflow-hidden"
           style={{
             maxHeight: menuOpen ? "500px" : "0px",
             opacity: menuOpen ? 1 : 0,
@@ -213,13 +230,18 @@ export default function Header() {
         >
           <div className="pb-4">
             <nav className="rounded-2xl border border-slate-200 bg-white/95 p-3 shadow-sm">
-              <Link className={mobileLinkClass(hrefHome)}     href={hrefHome}     onClick={closeMenu}>{tNav("home")}</Link>
-              <Link className={mobileLinkClass(hrefServices)} href={hrefServices} onClick={closeMenu}>{tNav("services")}</Link>
-              <Link className={mobileLinkClass(hrefApproach)} href={hrefApproach} onClick={closeMenu}>{tNav("approach")}</Link>
-              <Link className={mobileLinkClass(hrefAbout)}    href={hrefAbout}    onClick={closeMenu}>{tNav("about")}</Link>
-              <Link className={mobileLinkClass(hrefImpulse)}  href={hrefImpulse}  onClick={closeMenu}>{tNav("impulse")}</Link>
-              <Link className={mobileLinkClass(hrefSpeaking)} href={hrefSpeaking} onClick={closeMenu}>{tNav("speaking")}</Link>
-              <Link className={mobileLinkClass(hrefContact)}  href={hrefContact}  onClick={closeMenu}>{tNav("contact")}</Link>
+              {/* Dieselbe Liste wie in der Desktop-Navigation, damit der
+                  Übergabe-Check nicht an einer der beiden Stellen fehlt. */}
+              {navItems.map(({ href, label }) => (
+                <Link
+                  key={href}
+                  className={mobileLinkClass(href)}
+                  href={href}
+                  onClick={closeMenu}
+                >
+                  {label}
+                </Link>
+              ))}
               <div className="my-2 border-t border-slate-200/70" />
               <div className="px-1 py-1" onClick={closeMenu}>
                 <LocaleSwitcher />

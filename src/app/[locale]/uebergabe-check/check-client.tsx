@@ -25,6 +25,7 @@ import {
   PARTICIPANT_INTRO,
   PARTICIPANT_INTRO_DETAIL,
   PARTICIPANT_TRANSPARENCY,
+  PARTICIPANT_TRANSPARENCY_TITLE,
   roleMeta,
   type RespondentRole,
 } from "@/lib/uebergabe-check/comparison";
@@ -367,11 +368,25 @@ export default function CheckClient({ invite }: { invite?: InviteContext }) {
             ))}
           </ul>
 
-          {/* Vor der Teilnahme, nicht danach: Wer 24 Aussagen beantwortet,
-              soll vorher wissen, wohin die Auswertung läuft. */}
-          <div className="mt-6 rounded-2xl bg-slate-50/80 p-5 text-[13px] leading-6 muted">
-            <strong className="font-semibold text-slate-700">Bitte beachten:</strong>{" "}
-            {PARTICIPANT_TRANSPARENCY}
+          {/* Vor der Teilnahme, nicht danach, und bewusst deutlicher gesetzt
+              als ein Fußnotenhinweis: Wer 24 Aussagen beantwortet, soll vorher
+              wissen, wer die Auswertung bekommt und dass eine Zuordnung zur
+              eigenen Person möglich sein kann. Das ist für die eingeladene
+              Führungskraft wichtiger als jeder Absatz in der
+              Datenschutzerklärung. */}
+          <div
+            className="mt-6 rounded-2xl border p-5"
+            style={{
+              borderColor: "rgba(0,168,165,0.30)",
+              background: "rgba(0,168,165,0.06)",
+            }}
+          >
+            <div className="text-[14px] font-bold text-slate-900">
+              {PARTICIPANT_TRANSPARENCY_TITLE}
+            </div>
+            <p className="mt-1.5 text-[13px] leading-6 text-slate-600">
+              {PARTICIPANT_TRANSPARENCY}
+            </p>
           </div>
 
           <div className="mt-7 flex flex-wrap items-center gap-3">

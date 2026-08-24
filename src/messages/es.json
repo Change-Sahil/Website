@@ -456,6 +456,23 @@
       "legal": "La base jurídica es el art. 6.1 b) RGPD (medidas precontractuales) y el art. 6.1 f) RGPD (gestión eficiente de consultas).",
       "retention": "Conservo las solicitudes durante el tiempo necesario para su gestión y documentación, y después las elimino conforme a los plazos legales de conservación."
     },
+    "transitionCheck": {
+      "title": "Evaluación de preparación para la transición empresarial y comparación de perspectivas",
+      "p1": "En mi sitio web puede realizar una evaluación de preparación para la transición empresarial con el fin de obtener una valoración estructurada de determinadas condiciones organizativas relevantes para una transición o sucesión empresarial.",
+      "p2": "Para realizar la evaluación rápida individual, inicialmente no es necesario proporcionar su nombre ni su dirección de correo electrónico. Sus respuestas y los resultados calculados a partir de ellas se procesan con el fin de facilitarle la evaluación correspondiente.",
+      "p3": "Si solicita recibir su informe personal de resultados y trabajo o crea una comparación de perspectivas, también trataré los datos de contacto que proporcione, en particular su nombre y dirección de correo electrónico. Estos datos se utilizan para facilitarle el informe o el acceso a su comparación de perspectivas y para enviarle las notificaciones necesarias para este fin.",
+      "comparison": {
+        "title": "Comparación de perspectivas",
+        "p1": "La comparación de perspectivas permite reunir y comparar las valoraciones de varias personas sobre una misma empresa. La persona que inicia la comparación puede crear y compartir enlaces de invitación con otras personas, por ejemplo, directivos o personas que desempeñan funciones clave.",
+        "p2": "Durante la participación se procesan, en particular, el rol seleccionado o asignado mediante el enlace de invitación, las respuestas a la evaluación y las puntuaciones por dimensión calculadas a partir de ellas. Estos datos se asignan a la comparación de perspectivas correspondiente.",
+        "p3": "La evaluación comparativa puede mostrar resultados agregados de diferentes roles, así como diferencias entre las distintas valoraciones. Su finalidad es hacer visibles tanto las coincidencias como las diferencias de percepción.",
+        "p4": "Los resultados no se presentan como completamente anónimos. En particular, cuando los grupos de participantes son pequeños, puede ser posible atribuir determinadas valoraciones a una persona concreta a pesar de que los resultados se presenten de forma agregada o por roles. Los participantes serán informados de esta circunstancia antes de participar.",
+        "p5": "La persona que haya iniciado la comparación de perspectivas tendrá acceso a la evaluación comparativa prevista. También podrá recibir notificaciones por correo electrónico cuando otros participantes invitados hayan completado la evaluación o cuando haya nuevos resultados disponibles en la comparación que haya creado. Estas notificaciones se utilizan exclusivamente para gestionar y facilitar la comparación de perspectivas iniciada por dicha persona y no constituyen una suscripción a un boletín informativo ni a otras comunicaciones publicitarias."
+      },
+      "legal": "La base jurídica del tratamiento relacionado con la puesta a disposición solicitada del informe de resultados o de la comparación de perspectivas es el art. 6, apartado 1, letra b), del RGPD, en la medida en que el tratamiento sea necesario para prestar el servicio solicitado por el usuario. Cuando el tratamiento se base adicionalmente en el consentimiento, la base jurídica será el art. 6, apartado 1, letra a), del RGPD.",
+      "retention": "Los datos personales y los datos de comparación relacionados con una comparación de perspectivas se conservarán, por regla general, durante un máximo de doce meses desde la última actividad relacionada con dicha comparación y posteriormente se eliminarán, salvo que existan obligaciones legales de conservación u otra base jurídica que requiera un período de conservación más prolongado.",
+      "providers": "Para la prestación técnica y el almacenamiento de la evaluación y de la comparación de perspectivas se puede utilizar Supabase como proveedor técnico y encargado del tratamiento. Para el envío de correos electrónicos con resultados y notificaciones se utiliza Resend, el proveedor de servicios de correo electrónico ya mencionado en esta Política de Privacidad. Encontrará más información sobre destinatarios y posibles transferencias internacionales de datos en los apartados correspondientes de esta Política de Privacidad."
+    },
     "emailProvider": {
       "title": "Envío de correos electrónicos / proveedor de servicios (Resend)",
       "p1": "Para el envío y la entrega de correos electrónicos (p. ej., solicitudes de contacto) puede utilizarse un proveedor técnico (p. ej., Resend). En este contexto pueden tratarse datos personales (p. ej., nombre, dirección de correo electrónico, contenido del mensaje).",
@@ -535,9 +552,21 @@
     "intro": "En toda organización hay temas que se conocen internamente pero son difíciles de mover desde dentro. Porque todos están demasiado cerca. Porque hay intereses propios en juego. Porque nadie puede nombrarlos sin consecuencias.\n\nEl Werkstattgespräch es un formato de dos horas en el que trabaja exactamente ese tema con una perspectiva externa. En sus instalaciones, enfocado, orientado a resultados, sin presión de cierre.",
     "processTitle": "Cómo funciona",
     "steps": [
-      { "label": "Llamada previa", "duration": "15 min · Teléfono", "text": "Usted describe el tema. Evaluamos juntos si el formato encaja." },
-      { "label": "Sesión presencial", "duration": "2 horas", "text": "Usted y hasta 2 personas clave estratégicas. Trabajo estructurado." },
-      { "label": "Informe de resultados", "duration": "en 48 h", "text": "Una página concisa con observaciones, hipótesis y posibles próximos pasos." }
+      {
+        "label": "Llamada previa",
+        "duration": "15 min · Teléfono",
+        "text": "Usted describe el tema. Evaluamos juntos si el formato encaja."
+      },
+      {
+        "label": "Sesión presencial",
+        "duration": "2 horas",
+        "text": "Usted y hasta 2 personas clave estratégicas. Trabajo estructurado."
+      },
+      {
+        "label": "Informe de resultados",
+        "duration": "en 48 h",
+        "text": "Una página concisa con observaciones, hipótesis y posibles próximos pasos."
+      }
     ],
     "deliverablesTitle": "Qué obtiene",
     "deliverables": [
@@ -565,9 +594,18 @@
     "priceSuffix": "más IVA",
     "priceNote": "incl. preparación y seguimiento",
     "conditions": [
-      { "label": "Gastos de viaje", "text": "Para distancias superiores a 200 km desde Aalen, según gasto." },
-      { "label": "Confidencialidad", "text": "Todo lo hablado queda entre nosotros. NDA a solicitud." },
-      { "label": "Fecha", "text": "En las próximas 4 semanas, mañana o tarde." }
+      {
+        "label": "Gastos de viaje",
+        "text": "Para distancias superiores a 200 km desde Aalen, según gasto."
+      },
+      {
+        "label": "Confidencialidad",
+        "text": "Todo lo hablado queda entre nosotros. NDA a solicitud."
+      },
+      {
+        "label": "Fecha",
+        "text": "En las próximas 4 semanas, mañana o tarde."
+      }
     ],
     "pdfLabel": "Descargar resumen (PDF)",
     "ctaLabel": "Solicitar ahora",

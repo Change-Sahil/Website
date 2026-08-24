@@ -456,6 +456,23 @@
       "legal": "Hukuki dayanak GDPR Madde 6(1)(b) (sözleşme öncesi işlemler) ve GDPR Madde 6(1)(f) (taleplerin etkin biçimde işlenmesi) hükümleridir.",
       "retention": "Talepleri, işleme ve belgeleme için gerekli olduğu sürece saklar, ardından yasal saklama süreleri çerçevesinde silerim."
     },
+    "transitionCheck": {
+      "title": "İşletme Devir Kontrolü ve Perspektif Karşılaştırması",
+      "p1": "Web sitemde, bir işletme devri açısından seçilmiş organizasyonel koşullar hakkında yapılandırılmış bir değerlendirme elde etmek için İşletme Devir Kontrolü’nü gerçekleştirebilirsiniz.",
+      "p2": "Bireysel hızlı kontrolü gerçekleştirmek için başlangıçta adınızı veya e-posta adresinizi vermeniz gerekmez. Yanıtlarınız ve bunlardan hesaplanan sonuçlar, kontrolün değerlendirmesini size sunmak amacıyla işlenir.",
+      "p3": "Kişisel sonuç ve çalışma raporunuzun gönderilmesini talep etmeniz veya bir perspektif karşılaştırması oluşturmanız halinde, ayrıca verdiğiniz iletişim bilgilerini, özellikle adınızı ve e-posta adresinizi işlerim. Bu veriler, raporun veya perspektif karşılaştırmanıza erişimin sağlanması ve bunun için gerekli bildirimlerin gönderilmesi amacıyla kullanılır.",
+      "comparison": {
+        "title": "Perspektif Karşılaştırması",
+        "p1": "Perspektif karşılaştırması, aynı işletmeye ilişkin birden fazla kişinin değerlendirmelerinin bir araya getirilmesini ve karşılaştırılmasını sağlar. Perspektif karşılaştırmasını başlatan kişi, örneğin yöneticiler veya kilit çalışanlar gibi diğer kişiler için davet bağlantıları oluşturabilir ve paylaşabilir.",
+        "p2": "Katılım sırasında özellikle davet bağlantısı üzerinden seçilen veya atanan rol, İşletme Devir Kontrolü’ne verilen yanıtlar ve bunlardan hesaplanan boyut puanları işlenir ve ilgili perspektif karşılaştırmasına atanır.",
+        "p3": "Karşılaştırmalı değerlendirme, farklı rollerin birleştirilmiş sonuçlarını ve değerlendirmeler arasındaki farklılıkları gösterebilir. Amaç, ortak değerlendirmeleri ve farklı algıları görünür hale getirmektir.",
+        "p4": "Sonuçların tamamen anonim olduğu belirtilmez. Özellikle katılımcı gruplarının küçük olması halinde, sonuçlar toplu veya rol bazında gösterilse bile bazı değerlendirmelerin belirli bir kişiyle ilişkilendirilmesi mümkün olabilir. Katılımcılar katılımdan önce bu konuda bilgilendirilir.",
+        "p5": "Perspektif karşılaştırmasını başlatan kişi, öngörülen karşılaştırmalı değerlendirmeye erişebilir. Ayrıca davet edilen diğer kişilerin katılım sağlaması veya oluşturduğu perspektif karşılaştırmasında yeni sonuçların mevcut olması halinde e-posta yoluyla bilgilendirilebilir. Bu bildirimler yalnızca kişinin kendisinin başlattığı perspektif karşılaştırmasının yürütülmesi ve sunulması amacıyla gönderilir ve bir haber bültenine veya başka bir pazarlama iletişimine abonelik anlamına gelmez."
+      },
+      "legal": "Talep edilen sonuç raporunun veya perspektif karşılaştırmasının sunulmasıyla bağlantılı olarak gerçekleştirilen işlemenin hukuki dayanağı, işlemenin kullanıcı tarafından talep edilen hizmetin sunulması için gerekli olduğu ölçüde GDPR Madde 6(1)(b)’dir. İşlemenin ayrıca rızaya dayanması halinde hukuki dayanak GDPR Madde 6(1)(a)’dır.",
+      "retention": "Perspektif karşılaştırmasına ilişkin kişisel veriler ve karşılaştırma verileri, prensip olarak ilgili perspektif karşılaştırmasındaki son faaliyetten itibaren en fazla on iki ay saklanır ve ardından silinir; ancak yasal saklama yükümlülükleri veya başka bir hukuki dayanak daha uzun süre saklamayı gerektiriyorsa bu süre uzayabilir.",
+      "providers": "İşletme Devir Kontrolü’nün ve perspektif karşılaştırmasının teknik olarak sunulması ve verilerin saklanması için teknik hizmet sağlayıcı ve veri işleyen olarak Supabase kullanılabilir. Sonuç ve bildirim e-postalarının gönderilmesi için bu Gizlilik Politikasında daha önce belirtilen e-posta hizmet sağlayıcısı Resend kullanılmaktadır. Alıcılar ve olası üçüncü ülkelere veri aktarımları hakkında daha fazla bilgi bu Gizlilik Politikasının ilgili bölümlerinde yer almaktadır."
+    },
     "emailProvider": {
       "title": "E-posta gönderimi / hizmet sağlayıcı (Resend)",
       "p1": "E-postaların gönderimi ve teslimi için (ör. iletişim talepleri) teknik bir hizmet sağlayıcı kullanılabilir (ör. Resend). Bu kapsamda kişisel veriler (ör. ad, e-posta adresi, mesaj içeriği) işlenebilir.",
@@ -535,9 +552,21 @@
     "intro": "Her organizasyonda, içeriden bilinen ancak içeriden çözülmesi güç konular vardır. Çünkü herkes çok yakın. Çünkü başka çıkarlar devrede. Çünkü kimse sonuçsuz konuşamıyor.\n\nWerkstattgespräch, tam olarak böyle bir konuyu dışarıdan bir bakışla birlikte ele aldığınız iki saatlik bir formattır. Yanınızda, odaklı, sonuç odaklı, satış baskısı olmadan.",
     "processTitle": "Süreç",
     "steps": [
-      { "label": "Ön görüşme", "duration": "15 dk · Telefon", "text": "Konuyu anlatırsınız. Formatın uygun olup olmadığını birlikte değerlendiririz." },
-      { "label": "Yerinde oturum", "duration": "2 saat", "text": "Siz ve en fazla 2 stratejik kilit kişi. Yapılandırılmış çalışma seansı." },
-      { "label": "Sonuç tutanağı", "duration": "48 saat içinde", "text": "Gözlemler, hipotezler ve olası sonraki adımları içeren özlü bir sayfa." }
+      {
+        "label": "Ön görüşme",
+        "duration": "15 dk · Telefon",
+        "text": "Konuyu anlatırsınız. Formatın uygun olup olmadığını birlikte değerlendiririz."
+      },
+      {
+        "label": "Yerinde oturum",
+        "duration": "2 saat",
+        "text": "Siz ve en fazla 2 stratejik kilit kişi. Yapılandırılmış çalışma seansı."
+      },
+      {
+        "label": "Sonuç tutanağı",
+        "duration": "48 saat içinde",
+        "text": "Gözlemler, hipotezler ve olası sonraki adımları içeren özlü bir sayfa."
+      }
     ],
     "deliverablesTitle": "Ne elde edersiniz",
     "deliverables": [
@@ -565,9 +594,18 @@
     "priceSuffix": "+ KDV",
     "priceNote": "hazırlık ve takip dahil",
     "conditions": [
-      { "label": "Seyahat masrafları", "text": "Aalen'den 200 km'den fazla mesafe için ayrıca." },
-      { "label": "Gizlilik", "text": "Konuşulanlar aramızda kalır. İstek üzerine NDA." },
-      { "label": "Zaman", "text": "Önümüzdeki 4 hafta içinde, sabah veya öğleden sonra." }
+      {
+        "label": "Seyahat masrafları",
+        "text": "Aalen'den 200 km'den fazla mesafe için ayrıca."
+      },
+      {
+        "label": "Gizlilik",
+        "text": "Konuşulanlar aramızda kalır. İstek üzerine NDA."
+      },
+      {
+        "label": "Zaman",
+        "text": "Önümüzdeki 4 hafta içinde, sabah veya öğleden sonra."
+      }
     ],
     "pdfLabel": "Tek sayfalık özeti indir (PDF)",
     "ctaLabel": "Hemen başvurun",

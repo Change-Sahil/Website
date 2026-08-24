@@ -98,8 +98,10 @@ export const PARTICIPANT_INTRO_DETAIL =
  * hat. Das wäre kein fairer Umgang und würde beim nächsten Mal ehrliche
  * Antworten kosten.
  */
+export const PARTICIPANT_TRANSPARENCY_TITLE = "Hinweis zum Perspektivvergleich";
+
 export const PARTICIPANT_TRANSPARENCY =
-  "Ihre Einschätzung wird für den Perspektivvergleich mit den Einschätzungen anderer Teilnehmer zusammengeführt. Der Initiator erhält die daraus entstehende Vergleichsauswertung. Bei kleinen Teilnehmergruppen können einzelne Einschätzungen unter Umständen einer Person zugeordnet werden.";
+  "Ihre Antworten werden dem Perspektivvergleich zugeordnet und fließen in die Vergleichsauswertung ein, auf die der Initiator des Vergleichs Zugriff erhält. Bei kleinen Teilnehmergruppen kann Ihre Einschätzung unter Umständen Ihrer Person zugeordnet werden.";
 
 // ── Abweichungsbänder ───────────────────────────────────────────────────────
 

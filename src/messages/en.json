@@ -456,6 +456,23 @@
       "legal": "The legal basis is Art. 6(1)(b) GDPR (pre-contractual measures) and Art. 6(1)(f) GDPR (efficient handling of inquiries).",
       "retention": "I keep inquiries for as long as this is necessary for processing and documentation and then delete them in accordance with the statutory retention periods."
     },
+    "transitionCheck": {
+      "title": "Business Transition Check and Perspective Comparison",
+      "p1": "On my website, you can complete a Business Transition Check to obtain a structured assessment of selected organisational conditions relevant to a business transition.",
+      "p2": "You do not initially need to provide your name or email address to complete the individual quick check. Your answers and the results calculated from them are processed in order to provide you with the assessment.",
+      "p3": "If you request your personal results and working report or create a perspective comparison, I additionally process the contact details you provide, in particular your name and email address. These data are used to provide you with the report or access to your perspective comparison and to send notifications required for this purpose.",
+      "comparison": {
+        "title": "Perspective Comparison",
+        "p1": "The perspective comparison allows assessments from several people relating to the same company to be combined and compared. The person initiating the perspective comparison can create and share invitation links with other people, for example managers or key employees.",
+        "p2": "When participating, the role selected or assigned via the invitation link, the answers to the Business Transition Check and the resulting dimension scores are processed and assigned to the relevant perspective comparison.",
+        "p3": "The comparison may display aggregated results for different roles as well as differences between assessments. Its purpose is to make areas of agreement and differing perceptions visible.",
+        "p4": "The results are not described as fully anonymous. In particular, where participant groups are small, it may be possible to attribute individual assessments to a particular person despite aggregated or role-based presentation. Participants are informed of this before taking part.",
+        "p5": "The person who initiated the perspective comparison receives access to the intended comparison results. They may also receive email notifications when additional invited participants have completed the check or when new results are available in the perspective comparison they created. These notifications are used solely to operate and provide the perspective comparison initiated by that person and do not constitute subscription to a newsletter or other marketing communications."
+      },
+      "legal": "The legal basis for processing in connection with the requested provision of the results report or perspective comparison is Art. 6(1)(b) GDPR where processing is necessary to provide the service requested by the user. Where processing is additionally based on consent, the legal basis is Art. 6(1)(a) GDPR.",
+      "retention": "Personal data and comparison data relating to a perspective comparison are generally stored for no longer than twelve months after the last activity relating to that perspective comparison and are subsequently deleted, unless statutory retention obligations or another legal basis require longer storage.",
+      "providers": "Supabase may be used as a technical service provider and processor for the technical provision and storage of the Business Transition Check and perspective comparison. The email service provider Resend, already referred to in this Privacy Policy, is used to send results and notification emails. Further information about recipients and possible international data transfers can be found in the relevant sections of this Privacy Policy."
+    },
     "emailProvider": {
       "title": "Sending emails / service provider (Resend)",
       "p1": "A technical service provider may be used for the sending and delivery of emails (e.g. contact inquiries) (e.g. Resend). In this context, personal data (e.g. name, email address, message content) may be processed.",
@@ -535,9 +552,21 @@
     "intro": "Every organisation has topics that are known internally, but hard to move internally. Because everyone is too close. Because other interests are at play. Because no one can name them without consequences.\n\nThe Werkstattgespräch is a two-hour format in which you work through exactly one such topic with an external perspective. On-site with you, focused, results-oriented, without pressure to close.",
     "processTitle": "How it works",
     "steps": [
-      { "label": "Pre-call", "duration": "15 min · Phone", "text": "You describe the topic. We assess together whether the format fits." },
-      { "label": "On-site session", "duration": "2 hours", "text": "You and up to 2 strategic key people. Structured working session." },
-      { "label": "Result memo", "duration": "within 48 hrs", "text": "A concise page with observations, hypotheses and possible next steps." }
+      {
+        "label": "Pre-call",
+        "duration": "15 min · Phone",
+        "text": "You describe the topic. We assess together whether the format fits."
+      },
+      {
+        "label": "On-site session",
+        "duration": "2 hours",
+        "text": "You and up to 2 strategic key people. Structured working session."
+      },
+      {
+        "label": "Result memo",
+        "duration": "within 48 hrs",
+        "text": "A concise page with observations, hypotheses and possible next steps."
+      }
     ],
     "deliverablesTitle": "What you get",
     "deliverables": [
@@ -565,9 +594,18 @@
     "priceSuffix": "plus VAT",
     "priceNote": "incl. preparation and follow-up",
     "conditions": [
-      { "label": "Travel costs", "text": "For travel over 200 km from Aalen, by arrangement." },
-      { "label": "Confidentiality", "text": "Everything discussed remains between us. NDA on request." },
-      { "label": "Timing", "text": "Within the next 4 weeks, morning or afternoon." }
+      {
+        "label": "Travel costs",
+        "text": "For travel over 200 km from Aalen, by arrangement."
+      },
+      {
+        "label": "Confidentiality",
+        "text": "Everything discussed remains between us. NDA on request."
+      },
+      {
+        "label": "Timing",
+        "text": "Within the next 4 weeks, morning or afternoon."
+      }
     ],
     "pdfLabel": "Download one-pager (PDF)",
     "ctaLabel": "Request now",

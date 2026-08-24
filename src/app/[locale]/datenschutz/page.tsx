@@ -14,12 +14,14 @@ export default async function DatenschutzPage({
 }) {
   const { locale } = await params;
 
-  // Die deutsche Fassung deckt zusätzlich den Schnellcheck ab (Supabase,
-  // Resend, Speicherfristen) und liegt deshalb außerhalb der Message-Dateien.
-  // Der Schnellcheck ist ein deutschsprachiges Angebot und verlinkt auf
-  // /de/datenschutz, damit ist diese Fassung die einschlägige.
+  // Die deutsche Fassung ist ausführlicher (Supabase im Detail, Datenarten,
+  // getrennte Speicherfristen) und liegt deshalb außerhalb der
+  // Message-Dateien. Der Schnellcheck ist ein deutschsprachiges Angebot und
+  // verlinkt auf /de/datenschutz, damit ist diese Fassung die einschlägige.
   //
-  // TODO vor dem öffentlichen MVP: en/tr/es auf denselben Stand bringen.
+  // en/tr/es enthalten seit dem Perspektivvergleich einen eigenen Abschnitt
+  // dazu, bleiben aber knapper. Alle vier Fassungen brauchen vor der
+  // Veröffentlichung eine rechtliche Prüfung.
   if (locale === "de") return <DatenschutzDe />;
 
   const t = await getTranslations({ locale, namespace: "privacy" });
@@ -73,6 +75,30 @@ export default async function DatenschutzPage({
           <p>{t("contact.p1")}</p>
           <p>{t("contact.legal")}</p>
           <p>{t("contact.retention")}</p>
+        </section>
+
+        {/* Übergabe-Check und Perspektivvergleich. Steht zwischen
+            Kontaktaufnahme und E-Mail-Versand, weil er beides berührt. */}
+        <section className="space-y-3">
+          <h2 className="text-base font-semibold text-slate-900">
+            {t("transitionCheck.title")}
+          </h2>
+          <p>{t("transitionCheck.p1")}</p>
+          <p>{t("transitionCheck.p2")}</p>
+          <p>{t("transitionCheck.p3")}</p>
+
+          <h3 className="pt-2 text-sm font-semibold text-slate-900">
+            {t("transitionCheck.comparison.title")}
+          </h3>
+          <p>{t("transitionCheck.comparison.p1")}</p>
+          <p>{t("transitionCheck.comparison.p2")}</p>
+          <p>{t("transitionCheck.comparison.p3")}</p>
+          <p>{t("transitionCheck.comparison.p4")}</p>
+          <p>{t("transitionCheck.comparison.p5")}</p>
+
+          <p>{t("transitionCheck.legal")}</p>
+          <p>{t("transitionCheck.retention")}</p>
+          <p>{t("transitionCheck.providers")}</p>
         </section>
 
         <section className="space-y-3">

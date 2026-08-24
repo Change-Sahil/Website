@@ -553,9 +553,23 @@ eingerichtet werden.
 
 ### Was noch offen ist
 
-* **Die Datenschutzerklärung nennt die Benachrichtigung noch nicht.** Neben den
-  Vergleichsdaten selbst ist auch die transaktionale Nachricht an den Initiator
-  aufzunehmen.
+* **Rechtliche Prüfung der Datenschutzerklärung.** Der Abschnitt zum
+  Perspektivvergleich steht in allen vier Sprachfassungen (deutsch in
+  [`datenschutz-de.tsx`](../src/app/%5Blocale%5D/datenschutz/datenschutz-de.tsx),
+  en/tr/es unter `privacy.transitionCheck` in den Message-Dateien). Er ist
+  fachlich abgestimmt, aber **noch nicht juristisch geprüft**. Das muss vor der
+  Veröffentlichung passieren.
+
+  Was der Text zusagt und was das technisch bedeutet:
+
+  | Zusage | Umsetzung |
+  | :--- | :--- |
+  | zwölf Monate nach **letzter Aktivität** | `uc_comparison_activity`, nicht das Anlagedatum |
+  | keine Anonymität behauptet | `SMALL_GROUP_NOTE`, Hinweis vor der Teilnahme |
+  | Benachrichtigung ist kein Newsletter | rein transaktional, ohne Ergebnisdaten |
+  | Kontaktdaten nur für Bereitstellung | ein Lead je Assessment, keine zweite Kopie |
+
+  Ändert sich eine dieser Zusagen, muss der Text mitgeändert werden.
 * **Kein E-Mail-Versand an Teilnehmer.** Eingeladen wird über kopierbare Links.
   Würden hier die Adressen der Führungskräfte eingetragen, verarbeiteten wir
   personenbezogene Daten Dritter, die nie eingewilligt haben. Das braucht

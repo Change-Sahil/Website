@@ -108,6 +108,18 @@ const SECTIONS: Section[] = [
     ],
   },
   {
+    title: "Perspektivvergleich",
+    paragraphs: [
+      "Mit dem Perspektivvergleich können Einschätzungen mehrerer Personen zu einem gemeinsamen Unternehmen zusammengeführt und miteinander verglichen werden. Der Initiator des Perspektivvergleichs kann hierzu Einladungslinks für weitere Personen, beispielsweise Führungskräfte oder Schlüsselpersonen, erstellen und weitergeben.",
+      "Zum Anlegen eines Perspektivvergleichs sind Name und E-Mail-Adresse des Initiators erforderlich. Die Kontaktdaten werden benötigt, um den Zugang zum Vergleich bereitzustellen und die zugehörigen Benachrichtigungen zu versenden. Mit dem Anlegen wird zugleich der persönliche Ergebnis- und Arbeitsbericht bereitgestellt.",
+      "Bei der Teilnahme werden insbesondere die über den Einladungslink zugeordnete Rolle, die Antworten auf den Übergabe-Check sowie die daraus berechneten Dimensionswerte verarbeitet und dem jeweiligen Perspektivvergleich zugeordnet.",
+      "Die Vergleichsauswertung kann zusammengefasste Ergebnisse verschiedener Rollen sowie Unterschiede zwischen den Einschätzungen darstellen. Sie dient dazu, Übereinstimmungen und unterschiedliche Wahrnehmungen sichtbar zu machen.",
+      "Die Ergebnisse werden nicht als vollständig anonym bezeichnet. Insbesondere bei kleinen Teilnehmergruppen kann es trotz zusammengefasster oder rollenbezogener Darstellung möglich sein, einzelne Einschätzungen einer bestimmten Person zuzuordnen. Teilnehmer werden hierauf vor der Teilnahme hingewiesen.",
+      "Der Initiator des Perspektivvergleichs erhält Zugriff auf die vorgesehene Vergleichsauswertung. Er kann außerdem per E-Mail darüber informiert werden, wenn weitere eingeladene Personen teilgenommen haben oder neue Ergebnisse im von ihm angelegten Perspektivvergleich verfügbar sind. Diese Benachrichtigungen dienen ausschließlich der Durchführung und Bereitstellung des vom Initiator selbst angelegten Perspektivvergleichs und sind keine Anmeldung zu einem Newsletter oder zu sonstiger werblicher Kommunikation.",
+      "Rechtsgrundlage für die Verarbeitung im Zusammenhang mit der angeforderten Bereitstellung des Ergebnisberichts bzw. des Perspektivvergleichs ist Art. 6 Abs. 1 lit. b DSGVO, soweit die Verarbeitung zur Durchführung der vom Nutzer angeforderten Leistung erforderlich ist. Soweit eine Verarbeitung darüber hinaus auf einer Einwilligung beruht, ist Art. 6 Abs. 1 lit. a DSGVO die Rechtsgrundlage.",
+    ],
+  },
+  {
     title: "Speicherung der Daten des Schnellchecks / Supabase",
     paragraphs: [
       "Für die Speicherung und technische Verarbeitung der Daten des Schnellchecks nutze ich Supabase.",
@@ -119,7 +131,8 @@ const SECTIONS: Section[] = [
       "daraus berechnete Dimensionswerte",
       "aufgrund einzelner Antworten erzeugte Hinweise",
       "technische Angaben zum Testdurchlauf",
-      "gegebenenfalls Name und E-Mail-Adresse, wenn Sie einen persönlichen Ergebnis- und Arbeitsbericht anfordern",
+      "gegebenenfalls Name und E-Mail-Adresse, wenn Sie einen persönlichen Ergebnis- und Arbeitsbericht anfordern oder einen Perspektivvergleich anlegen",
+      "bei einem Perspektivvergleich zusätzlich dessen Bezeichnung, die zugeordnete Rolle je Teilnahme, der Bearbeitungsstand der Einladungen sowie die technischen Zugangskennungen der Beteiligten",
     ],
     after: [
       "Das für den Schnellcheck verwendete Supabase-Projekt wird in einer europäischen Serverregion betrieben.",
@@ -131,13 +144,14 @@ const SECTIONS: Section[] = [
     paragraphs: [
       "Testdurchläufe, die nicht mit personenbezogenen Kontaktdaten verknüpft wurden, werden grundsätzlich spätestens nach sechs Monaten gelöscht oder so anonymisiert, dass eine Zuordnung zu einer Person nicht mehr möglich ist.",
       "Wenn Sie einen persönlichen Ergebnis- und Arbeitsbericht anfordern und dadurch Ihre Kontaktdaten mit dem Testdurchlauf verknüpft werden, werden die damit verbundenen Daten grundsätzlich spätestens nach zwölf Monaten gelöscht, sofern sich daraus keine weitere Geschäftsbeziehung entwickelt und keine gesetzlichen Aufbewahrungspflichten oder sonstigen rechtlichen Gründe einer Löschung entgegenstehen.",
+      "Die personenbezogenen Daten und Vergleichsdaten eines Perspektivvergleichs werden grundsätzlich für höchstens zwölf Monate nach der letzten Aktivität des jeweiligen Perspektivvergleichs gespeichert und anschließend gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten oder andere Rechtsgründe eine längere Speicherung erfordern. Als letzte Aktivität gilt das jüngste der folgenden Ereignisse: das Anlegen des Vergleichs, das Erstellen einer Einladung oder der Eingang einer Einschätzung.",
       "Soweit Daten vollständig anonymisiert wurden und damit keinen Personenbezug mehr aufweisen, können sie darüber hinaus für statistische Auswertungen und zur Weiterentwicklung des Schnellchecks verwendet werden.",
     ],
   },
   {
     title: "Versand von E-Mails / Resend",
     paragraphs: [
-      "Für den technischen Versand von E-Mails nutze ich Resend. Dies betrifft insbesondere die Zustellung angeforderter persönlicher Ergebnis- und Arbeitsberichte sowie gegebenenfalls weitere über die Website ausgelöste E-Mail-Kommunikation.",
+      "Für den technischen Versand von E-Mails nutze ich Resend. Dies betrifft insbesondere die Zustellung angeforderter persönlicher Ergebnis- und Arbeitsberichte, die Benachrichtigungen an den Initiator eines Perspektivvergleichs sowie gegebenenfalls weitere über die Website ausgelöste E-Mail-Kommunikation.",
       "Dabei werden die für die Zustellung erforderlichen Daten verarbeitet. Hierzu können insbesondere Ihre E-Mail-Adresse, Ihr Name, der Inhalt der jeweiligen Nachricht sowie technische Informationen über den Versand gehören.",
       "Die Verarbeitung erfolgt zur Bereitstellung der von Ihnen angeforderten Kommunikation bzw. Leistung sowie zur zuverlässigen technischen Zustellung der E-Mail.",
       "Im Rahmen der Nutzung von Resend kann eine Verarbeitung personenbezogener Daten in den USA stattfinden. Für entsprechende internationale Datenübermittlungen werden die hierfür vorgesehenen datenschutzrechtlichen Garantien eingesetzt.",

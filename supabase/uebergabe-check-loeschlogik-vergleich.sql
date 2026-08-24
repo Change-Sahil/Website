@@ -25,6 +25,17 @@
 --  Einmalig im Supabase SQL Editor ausfuehren, NACHDEM
 --  uebergabe-check-perspektivvergleich.sql und uebergabe-check-loeschlogik.sql
 --  gelaufen sind. Wiederholbar.
+--
+--  Der SQL Editor warnt beim Ausfuehren vor "destructive operations". Das ist
+--  hier erwartbar und unbedenklich: Das Skript loescht die alte Funktions-
+--  DEFINITION (drop function) und legt eine Funktion an, in deren RUMPF
+--  delete-Anweisungen stehen. Ausgefuehrt werden diese erst beim Aufruf der
+--  Funktion, nicht beim Anlegen. Es werden durch dieses Skript keine Daten
+--  geloescht.
+--
+--  Diese Datei ersetzt die Funktion aus uebergabe-check-loeschlogik.sql.
+--  Danach nicht mehr die alte Datei nachtraeglich ausfuehren, sie wuerde am
+--  geaenderten Rueckgabetyp scheitern.
 -- ============================================================================
 
 -- ── Letzte Aktivitaet je Vergleich ──────────────────────────────────────────
@@ -47,6 +58,17 @@ comment on view public.uc_comparison_activity is
   'Letzte Aktivitaet je Vergleich, Grundlage der Zwoelfmonatsfrist.';
 
 -- ── Aufraeumfunktion erweitern ──────────────────────────────────────────────
+--
+-- Erst loeschen, dann neu anlegen. CREATE OR REPLACE darf den Rueckgabetyp
+-- einer bestehenden Funktion nicht aendern, und die bisherige Fassung liefert
+-- zwei Spalten statt drei. Postgres meldet sonst:
+--   42P13: cannot change return type of existing function
+--
+-- Unkritisch: Der pg_cron-Job speichert nur den Aufruftext
+-- "select public.uc_purge_expired();" und keine Abhaengigkeit auf die
+-- Funktion. Er greift nach dem Neuanlegen unveraendert.
+drop function if exists public.uc_purge_expired();
+
 create or replace function public.uc_purge_expired()
 returns table (
   anonymised_assessments integer,

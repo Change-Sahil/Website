@@ -23,6 +23,10 @@
 -- ============================================================================
 
 -- ── Aufraeumfunktion ────────────────────────────────────────────────────────
+--
+-- ACHTUNG: Sobald uebergabe-check-loeschlogik-vergleich.sql gelaufen ist, gilt
+-- die dortige Fassung mit drei Rueckgabespalten. Diese Datei dann NICHT mehr
+-- ausfuehren, sie scheitert am geaenderten Rueckgabetyp (42P13).
 create or replace function public.uc_purge_expired()
 returns table (anonymised_assessments integer, deleted_leads integer)
 language plpgsql

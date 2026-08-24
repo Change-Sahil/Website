@@ -156,6 +156,33 @@ export const WORKSHEET_TITLE = "Vom Ergebnis zur nächsten Klärung";
 export const WORKSHEET_INTRO =
   "Nutzen Sie diese Seite allein oder gemeinsam mit Ihrem Führungskreis. Wählen Sie aus den Prüffeldern und Diskussionsfragen die Punkte aus, die für Ihre Übergabesituation am wichtigsten erscheinen.";
 
+// ── Arbeitsseite des Perspektivvergleichs ───────────────────────────────────
+//
+// Eigene Felder, weil der Vergleich ein Gesprächsdokument ist und der
+// Einzelbericht eine persönliche Arbeitsunterlage. Die Fragen sind deshalb in
+// der Wir-Form gehalten.
+
+export const COMPARISON_WORKSHEET_TITLE =
+  "Was sollten wir vor einer Übergabe klären?";
+
+export const COMPARISON_WORKSHEET_INTRO =
+  "Zum Ausfüllen im gemeinsamen Gespräch. Halten Sie fest, welche Unterschiede für Ihre konkrete Übergabesituation tatsächlich eine Rolle spielen.";
+
+export const COMPARISON_WORKSHEET_FIELDS: readonly {
+  label: string;
+  lines: number;
+  numbered?: boolean;
+}[] = [
+  {
+    label: "Diese Unterschiede halten wir für relevant",
+    lines: 3,
+    numbered: true,
+  },
+  { label: "Woran könnten die unterschiedlichen Einschätzungen liegen?", lines: 2 },
+  { label: "Was wollen wir gemeinsam genauer betrachten?", lines: 2 },
+  { label: "Wer klärt was bis wann?", lines: 2 },
+];
+
 export const WORKSHEET_FIELDS: readonly {
   label: string;
   lines: number;

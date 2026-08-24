@@ -40,19 +40,22 @@ export function buildComparisonUpdateEmail(options: {
     : "Neue Einschätzung zu Ihrem Perspektivvergleich";
 
   const status = ready
-    ? "Damit liegen genug Perspektiven für eine Auswertung vor."
+    ? "Damit liegen genügend Einschätzungen für eine erste Vergleichsauswertung vor."
     : "Sobald eine weitere Rolle geantwortet hat, entsteht daraus die Vergleichsauswertung.";
 
+  // Bewusst keine Aussage darüber, dass "alle" Einladungen eingelöst seien.
+  // Der Initiator kann jederzeit weitere Links erzeugen; der Satz wäre dann
+  // schon im nächsten Moment falsch.
   const pending =
     open === 0
-      ? "Alle von Ihnen verschickten Einladungen sind damit eingelöst."
+      ? "Weitere Einschätzungen werden automatisch in den Perspektivvergleich aufgenommen."
       : open === 1
-        ? "Eine Einladung ist noch offen."
-        : `${open} Einladungen sind noch offen.`;
+        ? "Eine Einladung ist noch offen. Weitere Einschätzungen werden automatisch aufgenommen."
+        : `${open} Einladungen sind noch offen. Weitere Einschätzungen werden automatisch aufgenommen.`;
 
-  const intro = `zu Ihrem Perspektivvergleich liegt eine weitere Einschätzung vor. Insgesamt sind es jetzt ${
+  const intro = `zu Ihrem Perspektivvergleich liegt eine weitere Einschätzung vor. Insgesamt liegen jetzt ${
     total === 1 ? "eine Einschätzung" : `${total} Einschätzungen`
-  }. ${status}`;
+  } vor. ${status}`;
 
   const html = `<!doctype html>
 <html lang="de"><body style="margin:0;padding:24px;background:#f8f7f3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">

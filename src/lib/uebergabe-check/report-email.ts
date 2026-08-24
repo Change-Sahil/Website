@@ -68,7 +68,7 @@ export function buildReportEmail(options: {
         <tr>
           <td bgcolor="#0a0f1a" style="border-radius:5px;padding:14px 26px;">
             <a href="${resultUrl}" style="color:#ffffff;text-decoration:none;font-weight:600;font-size:15px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
-              <span style="color:#ffffff;">Persönlichen Ergebnisbericht öffnen</span>
+              <span style="color:#ffffff;">Ergebnis- und Arbeitsbericht öffnen</span>
             </a>
           </td>
         </tr>
@@ -127,7 +127,7 @@ export function buildReportEmail(options: {
     "",
     "Neben Ihrem Übergabeprofil enthält der Bericht die Einordnung der sechs Dimensionen, auffällige Einzelantworten sowie ausgewählte Fragen für die weitere interne Diskussion.",
     "",
-    `Persönlichen Ergebnisbericht öffnen: ${resultUrl}`,
+    `Ergebnis- und Arbeitsbericht öffnen: ${resultUrl}`,
     "",
     "Der Schnellcheck zeigt, wo sich eine genauere Betrachtung lohnen kann. Welche Punkte für Ihre konkrete Nachfolgesituation tatsächlich relevant sind, hängt unter anderem von Nachfolgeform, Zeithorizont und Ihrer zukünftigen Rolle im Unternehmen ab.",
     "",
@@ -145,7 +145,7 @@ export function buildReportEmail(options: {
   ].join("\n");
 
   return {
-    subject: "Ihr persönliches Übergabeprofil",
+    subject: "Ihr persönlicher Ergebnis- und Arbeitsbericht",
     html,
     text,
   };

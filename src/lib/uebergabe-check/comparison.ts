@@ -20,11 +20,13 @@
 
 import {
   ITEMS,
+  LIKERT_SCALE,
   itemById,
   type Answers,
   type DimensionId,
   type ItemRole,
   type LikertValue,
+  type Polarity,
 } from "./items";
 import { DIMENSION_QUESTIONS } from "./report-blocks";
 import { dimensionScore, type DimensionScore } from "./scoring";
@@ -51,7 +53,7 @@ export const RESPONDENT_ROLES: readonly {
   {
     id: "leader",
     singular: "Perspektive Führungskraft",
-    plural: "Perspektive Führungsebene",
+    plural: "Perspektive Führungskräfte",
     description: "Trägt Führungsverantwortung für einen Bereich oder ein Team.",
   },
   {
@@ -76,7 +78,10 @@ export function roleMeta(role: RespondentRole) {
  */
 export function roleLabel(role: RespondentRole, participants: number): string {
   const meta = roleMeta(role);
-  return participants > 1 ? meta.plural : meta.singular;
+  // Die Gruppengröße gehört sichtbar dazu. „Perspektive Führungskräfte“ ohne
+  // Angabe lässt offen, ob dahinter zwei oder zwölf Personen stehen, und das
+  // ändert die Aussagekraft erheblich.
+  return participants > 1 ? `${meta.plural} (n=${participants})` : meta.singular;
 }
 
 // ── Hinweise ────────────────────────────────────────────────────────────────
@@ -269,6 +274,27 @@ export function divergentDimensions(
 
 // ── Itemvergleich ───────────────────────────────────────────────────────────
 
+/**
+ * Beschriftung eines Rohwerts auf der Antwortskala.
+ *
+ * Ohne sie steht im Itemvergleich nur „5,0 / 5“, und das liest sich intuitiv
+ * als „besser“. Bei einem invers gepolten Item bedeutet hohe Zustimmung aber
+ * eine stärkere Abhängigkeit. Die Skalenbeschriftung ist wertfrei und löst
+ * genau dieses Missverständnis.
+ *
+ * Bei Mittelwerten mehrerer Personen liegt der Wert selten genau auf einer
+ * Stufe. Dann wird die nächstgelegene Stufe genannt und als Näherung
+ * gekennzeichnet, statt eine Genauigkeit zu behaupten, die es nicht gibt.
+ */
+export function scaleLabel(value: number): { text: string; approximate: boolean } {
+  const nearest = Math.min(5, Math.max(1, Math.round(value)));
+  const entry = LIKERT_SCALE.find((step) => step.value === nearest);
+  return {
+    text: entry?.label ?? "",
+    approximate: Math.abs(value - nearest) > 0.05,
+  };
+}
+
 export type ItemComparison = {
   itemId: string;
   dimension: DimensionId;
@@ -276,6 +302,11 @@ export type ItemComparison = {
   topic: string;
   /** Wortlaut in der Inhaberfassung, als gemeinsame Bezugsformulierung. */
   statement: string;
+  /**
+   * Bei „inverse“ bedeutet hohe Zustimmung eine stärkere Abhängigkeit. Die
+   * Darstellung weist darauf hin.
+   */
+  polarity: Polarity;
   /** Rohmittelwerte 1 bis 5 je Rolle. */
   values: { role: RespondentRole; label: string; value: number }[];
   /** Abstand auf der 0-bis-100-Skala, damit dieselben Bänder gelten. */
@@ -330,6 +361,7 @@ export function compareItems(
       dimension: item.dimension,
       topic: item.topic,
       statement: item.text,
+      polarity: item.polarity,
       values,
       spread,
       question: item.clarificationQuestion,
@@ -354,6 +386,14 @@ export function compareItems(
 }
 
 // ── Gesprächsfragen ─────────────────────────────────────────────────────────
+
+/**
+ * Steht bei invers gepolten Items unter den Werten. Ohne diesen Satz ist der
+ * Itemvergleich die einzige Stelle im ganzen Check, an der ein hoher Wert
+ * intuitiv falsch gelesen werden kann.
+ */
+export const INVERSE_ITEM_NOTE =
+  "Bei dieser Aussage bedeutet eine höhere Zustimmung eine stärkere wahrgenommene Abhängigkeit.";
 
 export const CLARIFICATION_INTRO =
   "Ziel der Klärung ist nicht festzustellen, wer richtig liegt, sondern zu verstehen, welche unterschiedlichen Erfahrungen oder Handlungsspielräume hinter den Einschätzungen stehen.";

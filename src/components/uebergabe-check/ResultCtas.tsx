@@ -67,7 +67,7 @@ export default function ResultCtas({
 
         {variant === "live" ? (
           <button type="button" onClick={onRequestReport} className={secondaryClass}>
-            Persönlichen Arbeitsbericht erhalten
+            Ergebnis- und Arbeitsbericht erhalten
           </button>
         ) : (
           <button

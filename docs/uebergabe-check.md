@@ -95,6 +95,13 @@ keine hält etwas zurück, was zum Verstehen der vorherigen nötig wäre.
 | 3 | „Sehen die Menschen, die das Unternehmen mittragen müssen, es genauso?“ | kostenlos, siehe Abschnitt 6 |
 | 4 | „Was bedeuten diese Unterschiede für unsere konkrete Übergabe?“ | Einordnungsgespräch, Mandatsanbahnung |
 
+> **Ein Name für ein Produkt.** Das Dokument aus Stufe 2 heißt überall
+> **„Persönlicher Ergebnis- und Arbeitsbericht"**: Button, Formular,
+> Mail-Betreff, PDF-Deckblatt und Briefkopf. Frühere Fassungen nannten
+> dasselbe Ding auch „Ergebnisbericht", „Arbeitsbericht" und „Ihr persönliches
+> Übergabeprofil". „Ihr Übergabeprofil" bezeichnet ausschließlich den *Inhalt*,
+> also das Profil über sechs Dimensionen, nie das Dokument.
+
 Der Perspektivvergleich liegt bewusst **nicht** hinter einer Bezahlschranke.
 Er soll genug Erkenntnis erzeugen, dass ein relevanter Klärungsbedarf sichtbar
 wird, ohne dessen Ursache oder Lösung zu behaupten. Genau dort beginnt die
@@ -477,6 +484,27 @@ Auf Itemebene gilt dieselbe Skala: ein Likert-Schritt entspricht 25 Punkten.
 Gezeigt werden höchstens vier Itemabweichungen, und nur innerhalb der
 auffälligen Dimensionen. Alle 24 anzuzeigen macht die Auswertung unlesbar.
 
+### Darstellung der Itemwerte
+
+Der Itemvergleich zeigt Rohmittelwerte der Antwortskala, nicht die
+transformierten Punktwerte. Ohne Beschriftung liest sich „5,0 / 5“ intuitiv
+als „besser“, was bei einem invers gepolten Item das Gegenteil der Aussage
+wäre. Deshalb:
+
+* neben der Zahl immer die Skalenstufe (`scaleLabel`), bei Mittelwerten mit
+  vorangestelltem `≈`, weil ein Gruppenmittel selten genau auf einer Stufe liegt
+* bei `polarity === "inverse"` zusätzlich `INVERSE_ITEM_NOTE`
+
+Das ist die einzige Stelle im gesamten Check, an der ein Wert intuitiv falsch
+gelesen werden kann. Beim Ändern der Darstellung nicht wegoptimieren.
+
+### Gruppengröße
+
+`roleLabel()` hängt ab zwei Teilnehmern `(n=…)` an. Ohne diese Angabe bleibt
+offen, ob hinter „Perspektive Führungskräfte“ zwei oder zwölf Personen stehen,
+und das ändert die Aussagekraft erheblich. Bei genau einer Person heißt es
+„Perspektive Führungskraft“ ohne Zusatz, siehe unten.
+
 ### Was der Vergleich nicht sagen darf
 
 Diese Grenze ist der eigentliche Kern, nicht die Technik:
@@ -616,6 +644,12 @@ Geprüfter Stand über vier Antwortprofile, ohne leere Seiten, Waisenzeilen oder
 | alle Dimensionen 50, keine Hinweise | 9 |
 | gemischt, mehrere Hinweise | 12 |
 | alle Dimensionen 0, alle Hinweise | 13 |
+| Perspektivvergleich, fünf Teilnehmer | 7 |
+
+Der Vergleichsbericht ist bewusst kürzer: Er ist ein **Gesprächsdokument**,
+kein persönliches Arbeitsheft. Deckblatt, Übereinstimmungen, Unterschiede,
+Itemabweichungen, Arbeitsseite, Schlussblatt. Der dunkle CTA-Block der
+Bildschirmfassung wird nicht gedruckt, dafür gibt es das Schlussblatt.
 
 Geprüft wird maschinell mit PyMuPDF über den Textstrom je Seite: leere Seiten,
 Seiten mit höchstens drei Zeilen, und Überschriften, die als letzte Zeile einer

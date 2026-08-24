@@ -117,14 +117,17 @@ export function PrintCover({
         </div>
 
         <div className="uc-print-cover-title">
-          <h1 className="text-[42px] font-bold leading-[1.05] tracking-[-0.03em] text-slate-900">
-            Ihr Übergabeprofil
+          {/* Das Dokument trägt den Produktnamen. „Ihr Übergabeprofil“ ist der
+              Inhalt und steht als Überschrift im Bericht selbst, nicht als
+              zweiter Name für dieselbe Sache. */}
+          <h1 className="text-[38px] font-bold leading-[1.08] tracking-[-0.03em] text-slate-900">
+            Ihr persönlicher Ergebnis- und Arbeitsbericht
           </h1>
           <div
             className="mt-3 text-[15px] font-semibold"
             style={{ color: ACCENT_DARK }}
           >
-            Persönlicher Ergebnis- und Arbeitsbericht
+            Schnellcheck zur organisationalen Übergabefähigkeit
           </div>
           <p className="mt-5 max-w-[36em] text-[14px] leading-7 text-slate-600">
             Wo Ihr Unternehmen bereits gute Voraussetzungen für eine Übergabe
@@ -311,7 +314,7 @@ export function PrintComparisonClosing() {
 /** Schmaler Briefkopf über dem Inhalt, ab der zweiten Seite. */
 export function PrintHeader({
   date,
-  title = "Ihr Übergabeprofil",
+  title = "Ergebnis- und Arbeitsbericht",
 }: {
   date?: string;
   title?: string;

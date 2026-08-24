@@ -40,12 +40,12 @@ const COPY: Record<
 > = {
   report: {
     eyebrow: "Optional",
-    title: "Ihr persönlicher Ergebnisbericht",
+    title: "Ihr persönlicher Ergebnis- und Arbeitsbericht",
     intro:
       "Sie erhalten Ihr Übergabeprofil als Arbeitsgrundlage für die weitere Nachfolgevorbereitung. Der Bericht enthält zusätzlich Fragen für die interne Diskussion und eine Seite zum Ausfüllen, damit Sie das Ergebnis mit Ihrer Führungsebene besprechen können.",
     consent:
-      "Ich möchte den Ergebnisbericht per E-Mail erhalten. Meine Angaben werden dafür mit meinem Testdurchlauf verknüpft, der bislang nur unter einer technischen Kennung gespeichert ist.",
-    submit: "Ergebnisbericht anfordern",
+      "Ich möchte den Ergebnis- und Arbeitsbericht per E-Mail erhalten. Meine Angaben werden dafür mit meinem Testdurchlauf verknüpft, der bislang nur unter einer technischen Kennung gespeichert ist.",
+    submit: "Ergebnis- und Arbeitsbericht anfordern",
     pending: "Wird gesendet …",
   },
   comparison: {
@@ -54,7 +54,7 @@ const COPY: Record<
     intro:
       "Damit wir die einzelnen Einschätzungen Ihrem Vergleich zuordnen und Sie informieren können, sobald weitere Perspektiven vorliegen, benötigen wir Ihre E-Mail-Adresse. Sie erhalten außerdem Ihren persönlichen Ergebnis- und Arbeitsbericht.",
     consent:
-      "Ich möchte den Perspektivvergleich anlegen und den Ergebnisbericht per E-Mail erhalten. Meine Angaben werden dafür mit meinem Testdurchlauf verknüpft, der bislang nur unter einer technischen Kennung gespeichert ist.",
+      "Ich möchte den Perspektivvergleich anlegen und den Ergebnis- und Arbeitsbericht per E-Mail erhalten. Meine Angaben werden dafür mit meinem Testdurchlauf verknüpft, der bislang nur unter einer technischen Kennung gespeichert ist.",
     submit: "Perspektivvergleich anlegen",
     pending: "Wird angelegt …",
   },

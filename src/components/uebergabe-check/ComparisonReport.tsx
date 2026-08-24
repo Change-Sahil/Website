@@ -14,11 +14,20 @@
 // Was hier NICHT stehen darf: welche Perspektive zutrifft, wer etwas über- oder
 // unterschätzt, eine Ursache für eine Abweichung, oder ein Gesamtscore.
 
+import PrintButton from "./PrintButton";
 import SpiderWeb, { SERIES_COLORS } from "./SpiderWeb";
+import WriteLines from "./WriteLines";
 import { BOOKING_URL_DE } from "@/lib/booking";
+import {
+  COMPARISON_WORKSHEET_FIELDS,
+  COMPARISON_WORKSHEET_INTRO,
+  COMPARISON_WORKSHEET_TITLE,
+} from "@/lib/uebergabe-check/report-blocks";
 import {
   CLARIFICATION_INTRO,
   HEURISTIC_DISCLOSURE,
+  INVERSE_ITEM_NOTE,
+  scaleLabel,
   SMALL_GROUP_NOTE,
   SPREAD_BANDS,
   formatMean,
@@ -74,9 +83,8 @@ export default function ComparisonReport({
           <SpiderWeb
             series={profiles.map((profile, index) => ({
               id: profile.role,
-              label: `${profile.label}${
-                profile.participants > 1 ? ` (${profile.participants})` : ""
-              }`,
+              // Die Gruppengröße steckt bereits in roleLabel().
+              label: profile.label,
               scores: profile.scores,
               color: SERIES_COLORS[index % SERIES_COLORS.length],
             }))}
@@ -200,27 +208,47 @@ export default function ComparisonReport({
                   {item.statement}
                 </p>
 
-                <div className="mt-4 space-y-1.5">
-                  {item.values.map((value, index) => (
-                    <div
-                      key={value.role}
-                      className="flex items-center gap-3 text-[14px]"
-                    >
-                      <span
-                        aria-hidden
-                        className="h-2.5 w-2.5 shrink-0 rounded-full"
-                        style={{
-                          background: SERIES_COLORS[index % SERIES_COLORS.length],
-                        }}
-                      />
-                      <span className="flex-1 text-slate-600">{value.label}</span>
-                      <span className="font-semibold tabular-nums text-slate-800">
-                        {formatMean(value.value)}
-                        <span className="font-medium text-slate-400"> / 5</span>
-                      </span>
-                    </div>
-                  ))}
+                {/* Zahl UND Skalenbeschriftung. „5,0 / 5“ allein liest sich
+                    intuitiv als „besser“, was bei invers gepolten Items das
+                    Gegenteil der Aussage wäre. */}
+                <div className="mt-4 space-y-2">
+                  {item.values.map((value, index) => {
+                    const scale = scaleLabel(value.value);
+                    return (
+                      <div
+                        key={value.role}
+                        className="flex items-baseline gap-3 text-[14px]"
+                      >
+                        <span
+                          aria-hidden
+                          className="relative top-[-2px] h-2.5 w-2.5 shrink-0 rounded-full"
+                          style={{
+                            background:
+                              SERIES_COLORS[index % SERIES_COLORS.length],
+                          }}
+                        />
+                        <span className="flex-1 text-slate-600">
+                          {value.label}
+                        </span>
+                        <span className="text-right">
+                          <span className="font-semibold text-slate-800">
+                            {scale.approximate ? "≈ " : ""}
+                            {scale.text}
+                          </span>
+                          <span className="ml-2 tabular-nums text-slate-500">
+                            {formatMean(value.value)} / 5
+                          </span>
+                        </span>
+                      </div>
+                    );
+                  })}
                 </div>
+
+                {item.polarity === "inverse" && (
+                  <p className="mt-3 text-[13px] italic leading-6 text-slate-500">
+                    {INVERSE_ITEM_NOTE}
+                  </p>
+                )}
 
                 <div className="mt-4 rounded-xl bg-slate-50/80 p-4">
                   <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">
@@ -251,8 +279,34 @@ export default function ComparisonReport({
         </section>
       )}
 
-      {/* ── 6. Abschluss und CTA ─────────────────────────────────────────── */}
-      <div className="dark-block p-7 sm:p-10">
+      {/* ── 6. Arbeitsseite für das gemeinsame Gespräch ──────────────────── */}
+      {/* Eigene Felder statt der Arbeitsseite des Einzelberichts: Der
+          Vergleich ist ein Gesprächsdokument, nicht eine persönliche
+          Arbeitsunterlage. Deshalb die Wir-Form. */}
+      <section className="panel uc-avoid-break uc-worksheet">
+        <h2 className="text-xl font-bold text-slate-900">
+          {COMPARISON_WORKSHEET_TITLE}
+        </h2>
+        <p className="mt-2 max-w-2xl text-[15px] leading-7 muted">
+          {COMPARISON_WORKSHEET_INTRO}
+        </p>
+
+        <div className="mt-6 space-y-7">
+          {COMPARISON_WORKSHEET_FIELDS.map((field) => (
+            <div key={field.label} className="uc-avoid-break">
+              <div className="text-[15px] font-semibold text-slate-800">
+                {field.label}
+              </div>
+              <WriteLines count={field.lines} numbered={field.numbered} />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── 7. Abschluss und CTA ─────────────────────────────────────────── */}
+      {/* Im Ausdruck übernimmt das Schlussblatt. Ein dunkler Block auf Papier
+          kostet nur Toner. */}
+      <div className="dark-block uc-no-print p-7 sm:p-10">
         <h2 className="text-2xl font-bold text-white">
           Was bedeutet das für Ihre Übergabe?
         </h2>
@@ -263,7 +317,9 @@ export default function ComparisonReport({
           wichtige Rolle spielt. Welche Unterschiede zuerst geklärt werden
           sollten, hängt deshalb von Ihrer konkreten Nachfolgekonstellation ab.
         </p>
-        <div className="mt-7">
+        {/* Zwei Wege, ohne weitere Hürde: Das Arbeitsergebnis ist kostenlos,
+            die gemeinsame Einordnung ist die Leistung. */}
+        <div className="mt-7 flex flex-wrap items-center gap-3">
           <a
             href={BOOKING_URL_DE}
             target="_blank"
@@ -272,6 +328,10 @@ export default function ComparisonReport({
           >
             Perspektivvergleich gemeinsam einordnen
           </a>
+          <PrintButton
+            variant="dark"
+            label="Perspektivvergleich als PDF herunterladen"
+          />
         </div>
       </div>
 

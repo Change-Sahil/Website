@@ -183,6 +183,65 @@ export default function HomeClient() {
 
 
       {/* ════════════════════════════════════════════
+          ÜBERGABE-CHECK — dezenter Teaser, nur Deutsch
+
+          Steht direkt unter den typischen Situationen, weil die
+          Nachfolge-Situation dort unmittelbar davor genannt wird. Bewusst
+          zurückhaltend gesetzt: ein Angebot am Ende eines Gedankens, kein
+          Werbeblock zwischen zwei Abschnitten.
+
+          Nur auf Deutsch, weil der Check ein deutschsprachiges Angebot ist
+          und andere Locales auf /de umleiten. Deshalb auch ohne
+          Übersetzungsschlüssel.
+      ════════════════════════════════════════════ */}
+      {locale === "de" && (
+        <Reveal>
+          {/* Anker, damit sich der Teaser direkt verlinken lässt, etwa aus
+              einem LinkedIn-Beitrag heraus. */}
+          <section id="uebergabe-check" className="scroll-mt-24 py-12 md:py-14">
+            <div className="page-wrap">
+              <div
+                className="rounded-2xl border p-7 sm:p-9"
+                style={{
+                  borderColor: "rgba(0,168,165,0.30)",
+                  background: "rgba(0,168,165,0.05)",
+                }}
+              >
+                <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_auto] md:items-center">
+                  <div>
+                    <h2 className="text-[1.35rem] font-[760] leading-[1.25] tracking-[-0.02em]">
+                      Wie übergabefähig ist Ihr Unternehmen?
+                    </h2>
+                    <p className="mt-3 max-w-2xl text-[15px] leading-[1.78] text-slate-700">
+                      Mit dem kostenlosen Schnellcheck erhalten Sie in etwa
+                      fünf Minuten eine erste Einschätzung über sechs
+                      Dimensionen der organisationalen Übergabefähigkeit.
+                    </p>
+                  </div>
+                  <div className="md:justify-self-end">
+                    <Link
+                      href="/de/uebergabe-check"
+                      className="group inline-flex items-center gap-2 text-[15px] font-[680] tracking-[-0.01em]"
+                      style={{ color: "rgb(0,112,125)" }}
+                    >
+                      Übergabefähigkeit prüfen
+                      <span
+                        aria-hidden
+                        className="transition-transform duration-200 group-hover:translate-x-1"
+                      >
+                        →
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </Reveal>
+      )}
+
+
+      {/* ════════════════════════════════════════════
           WAS UNTERSCHEIDET — Bild + Säulen
       ════════════════════════════════════════════ */}
       <Reveal>

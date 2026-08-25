@@ -74,6 +74,7 @@
       "triggers": [
         "die Restrukturierung beschlossen ist, sich im Betrieb aber wenig verändert.",
         "die Übernahme abgeschlossen wurde, die Zusammenarbeit aber nicht in Gang kommt.",
+        "die Unternehmensnachfolge ansteht, ein Teil der Organisation aber noch stark am bisherigen Inhaber hängt: bei Entscheidungen, Wissen, Kundenbeziehungen oder informellen Abläufen.",
         "neue Standards eingeführt wurden, die im Alltag wieder an Verbindlichkeit verlieren.",
         "Entscheidungen getroffen sind, die Wirkung im Unternehmen jedoch ausbleibt."
       ],
@@ -535,9 +536,21 @@
     "intro": "In jedem Unternehmen gibt es Themen, die intern bekannt sind, intern aber schwer zu bewegen sind. Weil zu nah dran. Weil andere Eigeninteressen mitlaufen. Weil niemand sie ohne Konsequenzen aussprechen kann.\n\nDas Werkstattgespräch ist ein zweistündiges Format, in dem Sie genau ein solches Thema mit einem externen Blick gemeinsam bearbeiten. Vor Ort bei Ihnen, fokussiert, ergebnisorientiert, ohne Abschlussdruck.",
     "processTitle": "Ablauf",
     "steps": [
-      { "label": "Vorgespräch", "duration": "15 Min. · Telefon", "text": "Sie schildern das Thema. Wir prüfen gemeinsam, ob das Format passt." },
-      { "label": "Vor-Ort-Termin", "duration": "2 Stunden", "text": "Sie und maximal 2 strategische Schlüsselpersonen. Strukturierte Bearbeitung." },
-      { "label": "Ergebnis-Protokoll", "duration": "innerhalb 48 Std.", "text": "Eine pointierte Seite mit Beobachtungen, Hypothesen und möglichen nächsten Schritten." }
+      {
+        "label": "Vorgespräch",
+        "duration": "15 Min. · Telefon",
+        "text": "Sie schildern das Thema. Wir prüfen gemeinsam, ob das Format passt."
+      },
+      {
+        "label": "Vor-Ort-Termin",
+        "duration": "2 Stunden",
+        "text": "Sie und maximal 2 strategische Schlüsselpersonen. Strukturierte Bearbeitung."
+      },
+      {
+        "label": "Ergebnis-Protokoll",
+        "duration": "innerhalb 48 Std.",
+        "text": "Eine pointierte Seite mit Beobachtungen, Hypothesen und möglichen nächsten Schritten."
+      }
     ],
     "deliverablesTitle": "Was Sie bekommen",
     "deliverables": [
@@ -565,9 +578,18 @@
     "priceSuffix": "zzgl. MwSt.",
     "priceNote": "inkl. Vor- und Nachbereitung",
     "conditions": [
-      { "label": "Reisekosten", "text": "Bei mehr als 200 km Anfahrt ab Aalen nach Aufwand." },
-      { "label": "Vertraulichkeit", "text": "Alles Besprochene bleibt zwischen uns. NDA auf Wunsch." },
-      { "label": "Termin", "text": "In den nächsten 4 Wochen, Vormittag oder Nachmittag." }
+      {
+        "label": "Reisekosten",
+        "text": "Bei mehr als 200 km Anfahrt ab Aalen nach Aufwand."
+      },
+      {
+        "label": "Vertraulichkeit",
+        "text": "Alles Besprochene bleibt zwischen uns. NDA auf Wunsch."
+      },
+      {
+        "label": "Termin",
+        "text": "In den nächsten 4 Wochen, Vormittag oder Nachmittag."
+      }
     ],
     "pdfLabel": "One-Pager herunterladen (PDF)",
     "ctaLabel": "Jetzt anfragen",
